@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "separate standard-library CSV arithmetic and released pixel-table cross-check; not independent human or independent skeleton algorithm acceptance",
+  "rows_checked": 236,
+  "paired_guard_differences": {
+    "precision": {
+      "mean": -0.003967956604951598,
+      "ci95": [
+        -0.005304217861723779,
+        -0.0027150193957407747
+      ]
+    },
+    "fp_fov": {
+      "mean": 0.00039992991440289345,
+      "ci95": [
+        0.00030217824347825764,
+        0.0004921123483822572
+      ]
+    },
+    "absolute_area_density_error": {
+      "mean": -0.00028718173344464124,
+      "ci95": [
+        -0.0005057638781624652,
+        -6.854960469948028e-05
+      ]
+    }
+  },
+  "tolerance_sensitivity": {
+    "0": {
+      "M0": {
+        "missing_gt_skeleton_fraction_d": 0.1111817864991266,
+        "extra_pred_skeleton_per_gt_d": 0.056355656359959934
+      },
+      "M1": {
+        "missing_gt_skeleton_fraction_d": 0.10280289547888218,
+        "extra_pred_skeleton_per_gt_d": 0.06361843754771485
+      }
+    },
+    "1": {
+      "M0": {
+        "missing_gt_skeleton_fraction_d": 0.10245409068774511,
+        "extra_pred_skeleton_per_gt_d": 0.0526963718972166
+      },
+      "M1": {
+        "missing_gt_skeleton_fraction_d": 0.0942896413275142,
+        "extra_pred_skeleton_per_gt_d": 0.059650675780036806
+      }
+    },
+    "2": {
+      "M0": {
+        "missing_gt_skeleton_fraction_d": 0.09547362835161213,
+        "extra_pred_skeleton_per_gt_d": 0.05041287086042214
+      },
+      "M1": {
+        "missing_gt_skeleton_fraction_d": 0.08761270109802648,
+        "extra_pred_skeleton_per_gt_d": 0.0570143911223196
+      }
+    }
+  },
+  "MARE_relative_reduction": 0.13085150442535054
+}

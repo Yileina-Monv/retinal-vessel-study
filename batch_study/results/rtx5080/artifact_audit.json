@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "completed_runs": 48,
+  "per_image_records": 384,
+  "test_external_images_opened_by_this_study": 0,
+  "training_crops_total": 98304,
+  "updates_total": 23552,
+  "training_loop_seconds_total": 2191.2103770001195,
+  "validation_seconds_accounted_total": 433.80800860001,
+  "timing_note": "Validation accounting includes an initial evaluation allowance for each arm; cached/shared initial evaluations are not all rerun. This is not end-to-end elapsed wall time.",
+  "same_seed_initial_weights_and_actual_input_sequences_match": true,
+  "finite_losses_and_gradients": true,
+  "amp_skipped_updates": 0,
+  "runs": [
+    {
+      "seed": 2026,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2026,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2026,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2026,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2026,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2026,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2027,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2028,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2029,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2030,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2031,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2032,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m2_a2_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m1_a4_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m4_a1_e4",
+      "updates": 512,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m2_a1_e2",
+      "updates": 1024,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m2_a4_e8",
+      "updates": 256,
+      "checkpoint_and_result_consistent": true
+    },
+    {
+      "seed": 2033,
+      "arm": "m2_a8_e16",
+      "updates": 128,
+      "checkpoint_and_result_consistent": true
+    }
+  ]
+}

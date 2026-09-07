@@ -1,0 +1,39 @@
+# Project-local Python environment, downloads, and runtime artifacts
+.venv/
+.runtime/
+__pycache__/
+*.pyc
+
+# Environment verification outputs are generated, not research results
+environment/artifacts/
+data_preparation/artifacts/
+runs/
+
+# Temporary chart exports
+.chart-data-*/
+
+# Public collaboration: local-only assets
+.env
+.env.*
+!.env.example
+.vscode/
+node_modules/
+data_checks/**/datasets/
+data_checks/**/downloads/
+data_checks/**/archives/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.zip
+*.7z
+*.tar
+*.gz
+*.log
+*probability*
+matplotlib-cache/
+*.jsonl
+~$*
+Thumbs.db
+desktop.ini

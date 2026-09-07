@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "horizontal 17",
+    "diagonal 17",
+    "identity",
+    "one-pixel gap",
+    "isolated extra branch",
+    "empty reference undefined",
+    "empty prediction total miss",
+    "thickening area increase",
+    "FOV clipping",
+    "empty FOV rejection"
+  ],
+  "scope": "basic measurement semantics only, not full graph geometry validation"
+}

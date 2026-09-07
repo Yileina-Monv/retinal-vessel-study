@@ -1,0 +1,21 @@
+{
+  "parent_release_id": "24d1ebfa59ee88379cd3dc06d364cf7b033ff61be067960692d5327d44f812b5",
+  "scope": "M0_M1_pretrial_engineering_only",
+  "tube_radius_pixels": 2,
+  "skeleton_method": "zhang",
+  "boundary_policy": "full_image_Y_intersection_FOV_then_skeletonize_no_pruning; primary_all_FOV; 2px_interior_sensitivity_only",
+  "radius_quantiles": {"thin": 0.25, "reference": 0.5, "method": "linear", "scope": "all_skeleton_pixels_of_470_training_images_only"},
+  "lambda_candidates": [0.1, 1.0],
+  "selected_lambda": null,
+  "microbatch": 4,
+  "accumulation": 1,
+  "effective_batch": 4,
+  "epsilon": 0.000001,
+  "thin_recall_tolerances_pixels": [0, 1, 2],
+  "diagnostic_probability_threshold": 0.5,
+  "selected_probability_threshold": null,
+  "precision_floor": null,
+  "training_steps": null,
+  "formal_training_ready": false,
+  "cross_gpu_resume_ready": false
+}

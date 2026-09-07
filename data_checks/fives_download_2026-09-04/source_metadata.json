@@ -1,0 +1,9 @@
+{
+  "ref": "nikitamanaenkov/fundus-image-dataset-for-vessel-segmentation",
+  "title": "Fundus Image Dataset for Vessel Segmentation",
+  "description": "The FIVES (Fundus Image Vessel Segmentation) dataset comprises 800 high-resolution color fundus photographs manually annotated at the pixel level for retinal vessel segmentation. The images represent a wide range of ages (4–83 years) and include various ocular conditions such as diabetic retinopathy, age-related macular degeneration, and glaucoma. The annotations were standardized via expert crowdsourcing. Each image was further assessed for three quality aspects (illumination and color distortion, blur, and low contrast) using published automatic algorithms. This dataset is currently the largest publicly available collection for retinal vessel segmentation and is designed to facilitate the development and evaluation of AI-based segmentation models.\n\nThe dataset supports automated analysis of retinal vasculature for ophthalmological and systemic disease assessment and contributes significantly to advancing the field of AI in medical imaging.",
+  "currentVersionNumber": 6,
+  "totalBytes": 1767604553,
+  "licenseName": "Attribution 4.0 International (CC BY 4.0)",
+  "lastUpdated": "2025-05-03T18:55:21.82Z"
+}

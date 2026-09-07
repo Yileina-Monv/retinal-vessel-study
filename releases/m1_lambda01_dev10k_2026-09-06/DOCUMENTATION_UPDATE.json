@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "local_links_checked": 16,
+  "historical_body_preserved": true,
+  "files": {
+    "项目全局状态与研究决策.md": "5254aeae3c20618e5e0ce1e845d33953f8f09b2f611310fb66e1ab33405e2eca",
+    "releases/m1_lambda01_dev10k_2026-09-06/ACCEPTANCE.md": "4a853ab0bacbb99bff68af82b773cfce3eeed669a9bc30625a06ba2044df0a4e",
+    "眼底血管分割_长期大纲与裁决路线.md": "ad72bd8e6cc3c429991ab93096925a551b3fe6aac7347f3db24b767084cd4328",
+    "项目粗方案与增量研究路线_2026-09-04.md": "ce12da0551b2bed2db1609eadcc9f98054bfb3a825f0c421b0dc315bedce5aaa",
+    "retinal_course_execution_spec_2026-09-04.md": "5d578f11acc5d1b21ee4aea8f6f6ea8cbcfb0eab482777212f4ad88352b49b74"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "checked_on": "2026-09-04",
+  "proxy_configuration_changed": false,
+  "http_and_https_used_existing_proxy": "http://127.0.0.1:7890",
+  "credential_headers_collected": false,
+  "figshare_observations": [
+    {
+      "client": "Python requests, existing proxy, normal GET and bounded Range GET",
+      "urls": [
+        "https://api.figshare.com/v2/articles/27938034",
+        "https://api.figshare.com/v2/articles/27938034/files",
+        "https://api.figshare.com/v2/file/download/54093641",
+        "https://figshare.com/ndownloader/files/54093641",
+        "https://ndownloader.figshare.com/files/54093641",
+        "https://springernature.figshare.com/ndownloader/files/54093641"
+      ],
+      "status": 403,
+      "server": "awselb/2.0",
+      "content_type": "text/html",
+      "content_length": 118,
+      "response_body": "Generic 403 Forbidden HTML, not a ZIP archive",
+      "redirects_observed": 0
+    },
+    {
+      "client": "Codex in-app browser",
+      "url": "https://figshare.com/articles/dataset/Fundus-AVSeg/27938034",
+      "observed_page_title": "403 Forbidden",
+      "note": "Tab creation initially timed out; a later browser-state inspection confirmed the tab existed and showed 403 Forbidden."
+    },
+    {
+      "client": "web tool",
+      "result": "Record text readable; official download redirect exposed an already-expired S3 URL. Fresh download and API routes did not yield a usable download URL.",
+      "observed_signed_url_date_utc": "2026-09-04T06:58:53Z",
+      "observed_signed_url_validity_seconds": 10,
+      "temporary_signed_query_retained": false
+    },
+    {
+      "client": "Python requests",
+      "url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/54093641/FundusAVSeg.zip",
+      "status": 403,
+      "server": "AmazonS3",
+      "content_type": "application/xml",
+      "error_code": "AccessDenied",
+      "interpretation": "The unsigned storage URL is not a public direct-download URL; use a legitimate fresh Figshare redirect."
+    },
+    {
+      "client": "Windows curl.exe",
+      "result": "Local Schannel SEC_E_NO_CREDENTIALS; HTTP status 000",
+      "interpretation": "A separate local TLS-client failure, not evidence for the cause of Figshare's HTTP 403."
+    }
+  ],
+  "working_download_routes": [
+    {
+      "dataset": "HRF",
+      "source": "https://www5.cs.fau.de/research/data/fundus-images/",
+      "bounded_glaucoma_archive_probe_status": 206,
+      "completed_archives": 9,
+      "completed_bytes": 76315721
+    },
+    {
+      "dataset": "Fundus-AVSeg",
+      "source": "https://www.kaggle.com/api/v1/datasets/download/darksoul007fedsdfds/fundusdataset?datasetVersionNumber=1",
+      "source_type": "Third-party public mirror, not the authors' official repository",
+      "status": 200,
+      "final_host": "storage.googleapis.com",
+      "completed_bytes": 212778115,
+      "response_etag_equals_local_md5": true
+    }
+  ],
+  "conclusion": "The repeatable Figshare failure occurs before file retrieval and returns an AWS load-balancer-layer HTML denial. A site gateway/WAF or exit-IP policy is plausible, but the exact rule is not disclosed and not proven. The original-site failure is not fixed; a public Kaggle mirror provides a completed file-level-validated copy.",
+  "prior_evidence": "../minimal_download_2026-09-04/fundus_access_evidence.json",
+  "official_public_access_policy": "https://help.figshare.com/article/data-access-policy"
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "kind": "images",
+    "source": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+    "local_path": "archives\\healthy.zip",
+    "http_status": 200,
+    "final_origin_path": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+    "advertised_bytes": 19295899,
+    "size_bytes": 19295899,
+    "sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "01_h.jpg",
+        "bytes": 2188303
+      },
+      {
+        "name": "02_h.jpg",
+        "bytes": 2198929
+      },
+      {
+        "name": "03_h.jpg",
+        "bytes": 2078216
+      },
+      {
+        "name": "04_h.jpg",
+        "bytes": 2069735
+      },
+      {
+        "name": "05_h.jpg",
+        "bytes": 1942042
+      },
+      {
+        "name": "06_h.jpg",
+        "bytes": 930522
+      },
+      {
+        "name": "07_h.jpg",
+        "bytes": 845373
+      },
+      {
+        "name": "08_h.jpg",
+        "bytes": 876648
+      },
+      {
+        "name": "09_h.jpg",
+        "bytes": 873320
+      },
+      {
+        "name": "10_h.jpg",
+        "bytes": 893670
+      },
+      {
+        "name": "11_h.jpg",
+        "bytes": 921223
+      },
+      {
+        "name": "12_h.jpg",
+        "bytes": 944887
+      },
+      {
+        "name": "13_h.jpg",
+        "bytes": 903560
+      },
+      {
+        "name": "14_h.jpg",
+        "bytes": 891343
+      },
+      {
+        "name": "15_h.jpg",
+        "bytes": 869118
+      }
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 2.907
+  },
+  {
+    "kind": "labels",
+    "source": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_manualsegm.zip",
+    "local_path": "archives\\healthy_manualsegm.zip",
+    "http_status": 200,
+    "final_origin_path": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_manualsegm.zip",
+    "advertised_bytes": 1648939,
+    "size_bytes": 1648939,
+    "sha256": "2f8c67ee83e9ba16707119aa9ad98ad978c70566d467fe84b328854528ef16b8",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "01_h.tif",
+        "bytes": 279412
+      },
+      {
+        "name": "02_h.tif",
+        "bytes": 262668
+      },
+      {
+        "name": "03_h.tif",
+        "bytes": 264922
+      },
+      {
+        "name": "04_h.tif",
+        "bytes": 256340
+      },
+      {
+        "name": "05_h.tif",
+        "bytes": 253374
+      },
+      {
+        "name": "06_h.tif",
+        "bytes": 281806
+      },
+      {
+        "name": "07_h.tif",
+        "bytes": 257554
+      },
+      {
+        "name": "08_h.tif",
+        "bytes": 270108
+      },
+      {
+        "name": "09_h.tif",
+        "bytes": 259884
+      },
+      {
+        "name": "10_h.tif",
+        "bytes": 276738
+      },
+      {
+        "name": "11_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "12_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "13_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "14_h.tif",
+        "bytes": 254310
+      },
+      {
+        "name": "15_h.tif",
+        "bytes": 241550
+      }
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 1.913
+  },
+  {
+    "kind": "fov",
+    "source": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_fovmask.zip",
+    "local_path": "archives\\healthy_fovmask.zip",
+    "http_status": 200,
+    "final_origin_path": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_fovmask.zip",
+    "advertised_bytes": 419883,
+    "size_bytes": 419883,
+    "sha256": "902395ade3d05c7e01a240bd0a41cb6b5eac903aab61b5c2d92655f0f9258b45",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "01_h_mask.tif",
+        "bytes": 107316
+      },
+      {
+        "name": "02_h_mask.tif",
+        "bytes": 107320
+      },
+      {
+        "name": "03_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "04_h_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "05_h_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "06_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "07_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "08_h_mask.tif",
+        "bytes": 107288
+      },
+      {
+        "name": "09_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "10_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "11_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "12_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "13_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "14_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "15_h_mask.tif",
+        "bytes": 107296
+      }
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 2.156
+  }
+]

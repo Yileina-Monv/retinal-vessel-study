@@ -1,0 +1,4251 @@
+{
+  "status": "PASS_MIRROR_FILE_AUDIT_WITH_PROVENANCE_LIMIT",
+  "archive_bytes": 212778115,
+  "archive_sha256": "12a5a9e579fbf6086a10434d260c79641f1a98c64b882a4c8bfb152ad0542c22",
+  "archive_md5": "0675db54ccb5dfa8d839b4d6076618f1",
+  "zip_crc_ok": true,
+  "extracted_files": 203,
+  "paired_count": 100,
+  "decoded_png_files": 200,
+  "dimensions": {
+    "(1280, 1280)": 79,
+    "(2656, 1992)": 21
+  },
+  "disease_counts": {
+    "Glaucoma": 20,
+    "Normal": 40,
+    "DR": 20,
+    "AMD": 20
+  },
+  "quality_counts": {
+    "Low-quality": 17,
+    "High-quality": 83
+  },
+  "source_split_counts": {
+    "training": 80,
+    "testing": 20
+  },
+  "source_split_disjoint_and_complete": true,
+  "palette_pixel_counts": {
+    "background": 219682384,
+    "vein": 11095273,
+    "crossing": 383762,
+    "artery": 9195159,
+    "uncertain_vessel": 182814
+  },
+  "unknown_palette_pixels": 0,
+  "exact_byte_duplicate_image_groups": [],
+  "metadata_identity_limit": "eye id contains laterality, not a unique patient identifier; patient independence cannot be verified from this workbook.",
+  "source": "https://www.kaggle.com/datasets/darksoul007fedsdfds/fundusdataset/versions/1",
+  "reference_archive_sha256": "6db5ff43c4e9c25aa93093aa295c67b10fa0c089ac650df6665c7a6bbae9539f",
+  "reference_checksum_source": "https://github.com/constantinpape/torch-em/blob/2c01ef9c0f8c274b217f1708e71b0a2732613ac5/torch_em/data/datasets/medical/fundus_avseg.py",
+  "archive_matches_reference": false,
+  "provenance_limit": "This is a third-party mirror archive. Its ZIP hash differs from the torch-em reference; different packaging may explain this but unmodified identity with the official archive is NOT established.",
+  "scope_limit": "No model evaluation, no clinical annotation correctness claim, and no independently verified patient identity. Source split audited for completeness only, not adopted for project use.",
+  "rows": [
+    {
+      "id": "001_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\001_G.png",
+      "images_sha256": "eae77945b464e93366929e96def6b485d50c4a8942382f8dded37746ef966e27",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\001_G.png",
+      "annotation_sha256": "293e634488ef82fd6b59d76b3e33308aefb1c91273716247541782577cd2a66d",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1486841,
+        "vein": 81546,
+        "crossing": 3754,
+        "artery": 65580,
+        "uncertain_vessel": 679
+      },
+      "vessel_pixels_nonblack": 151559
+    },
+    {
+      "id": "002_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\002_N.png",
+      "images_sha256": "e175e173b515cd7cb0638347c259bbac3d466e4ad837e92cd2cdd1014e23b419",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\002_N.png",
+      "annotation_sha256": "90ed79571123e25972ada42ddd653fae7cdd0f48e253d6ecfc1bed99af388fe2",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1473637,
+        "vein": 95309,
+        "crossing": 2612,
+        "artery": 66605,
+        "uncertain_vessel": 237
+      },
+      "vessel_pixels_nonblack": 164763
+    },
+    {
+      "id": "003_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\003_N.png",
+      "images_sha256": "0b4517bda5a3596134478aa75b9f9537705989d926d25687c4fb78c050e67dab",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\003_N.png",
+      "annotation_sha256": "48c22d742c60b981127f07139931e9d07679af75f7bb725ba27b8da2a70f8167",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1488782,
+        "vein": 89524,
+        "crossing": 2295,
+        "artery": 57799
+      },
+      "vessel_pixels_nonblack": 149618
+    },
+    {
+      "id": "004_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\004_D.png",
+      "images_sha256": "80431ad69d887ec8cd409a0ff44a8747e307db0b5b9d116963fe5cd9e476b06a",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\004_D.png",
+      "annotation_sha256": "3b7b4d5cc667fde90a5d678084876209605e4b59189d1b555655697c8152b105",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1520211,
+        "vein": 63851,
+        "crossing": 1979,
+        "artery": 52207,
+        "uncertain_vessel": 152
+      },
+      "vessel_pixels_nonblack": 118189
+    },
+    {
+      "id": "005_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\005_N.png",
+      "images_sha256": "d128fb41b538a046c70d158bf6b640687f4912a79e100861a924c76efd0ef761",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\005_N.png",
+      "annotation_sha256": "2edc0a0cb338c1fec29a1c234d4d635c912833089d35397726b77ca4e96b8e6c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1494420,
+        "vein": 72910,
+        "crossing": 2143,
+        "artery": 67993,
+        "uncertain_vessel": 934
+      },
+      "vessel_pixels_nonblack": 143980
+    },
+    {
+      "id": "006_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\006_A.png",
+      "images_sha256": "9ac58c476e77b881f0f0ff1b2dcc0d88b27b56a32c75f2030a5bd4601481f3b0",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\006_A.png",
+      "annotation_sha256": "632d06e7b544d930b842db1c50926152fa1343ecd0465a66fee985e860544709",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1484883,
+        "vein": 71660,
+        "crossing": 2708,
+        "artery": 79028,
+        "uncertain_vessel": 121
+      },
+      "vessel_pixels_nonblack": 153517
+    },
+    {
+      "id": "007_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\007_N.png",
+      "images_sha256": "d2f180c948b7a28b5011a1864f6869b789b106c291ac6c8a0cd5a1e8e4ea1094",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\007_N.png",
+      "annotation_sha256": "0f46325f946a70ce8833be838575be136855cd84f8e01e5231f9122dbcd34841",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1487243,
+        "vein": 64330,
+        "crossing": 2037,
+        "artery": 80761,
+        "uncertain_vessel": 4029
+      },
+      "vessel_pixels_nonblack": 151157
+    },
+    {
+      "id": "008_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\008_N.png",
+      "images_sha256": "5414526db388061a339f4c06f5403ea4eaf5b7ef9c9acbb86d76cce8c0bf4137",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\008_N.png",
+      "annotation_sha256": "349c59408e24b1576fc28caf55b5d87455ba3f5adc0c1e94dab846fa0cad13cf",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4886099,
+        "vein": 208412,
+        "crossing": 3645,
+        "artery": 184048,
+        "uncertain_vessel": 8548
+      },
+      "vessel_pixels_nonblack": 404653
+    },
+    {
+      "id": "009_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\009_D.png",
+      "images_sha256": "7c0299fa369899146d679c5528529623804cd4d83f60dfb8c043140b56e6fa58",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\009_D.png",
+      "annotation_sha256": "bbf5d899470d5ecdc0899e4a69dd1a94a58d8316cbdf3b998622af1afeed38c8",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4839397,
+        "vein": 234695,
+        "crossing": 6498,
+        "artery": 201116,
+        "uncertain_vessel": 9046
+      },
+      "vessel_pixels_nonblack": 451355
+    },
+    {
+      "id": "010_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\010_D.png",
+      "images_sha256": "8aabd8223566ce10c006b1cddcb939c5e6790b1aae50f0abde14b65fadb2fbe3",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\010_D.png",
+      "annotation_sha256": "e12ab612cdaa763204bad249b80726aa4426253e86d295edc5e0b50a33d7239d",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4869521,
+        "vein": 226542,
+        "crossing": 7668,
+        "artery": 178224,
+        "uncertain_vessel": 8797
+      },
+      "vessel_pixels_nonblack": 421231
+    },
+    {
+      "id": "011_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\011_N.png",
+      "images_sha256": "b53e540345d4b55528b735a3cccc6d1b1b298e62a7124ce2f5c57cb04d8f2a1b",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\011_N.png",
+      "annotation_sha256": "c73dc7317d4be0a60e005cf9b37bcba14123267fd7dc4835104bf9a687d4476d",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4909677,
+        "vein": 198871,
+        "crossing": 5633,
+        "artery": 170972,
+        "uncertain_vessel": 5599
+      },
+      "vessel_pixels_nonblack": 381075
+    },
+    {
+      "id": "012_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\012_N.png",
+      "images_sha256": "da3e68febc4d7f9ebf82f4c2fbf95619f53923606e70b4696c990f9be500a799",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\012_N.png",
+      "annotation_sha256": "077ad013f8404817fc0e525a07b424c73d7f52506e5a34b02eb641bdff6bf691",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4865584,
+        "vein": 210256,
+        "crossing": 4751,
+        "artery": 207008,
+        "uncertain_vessel": 3153
+      },
+      "vessel_pixels_nonblack": 425168
+    },
+    {
+      "id": "013_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\013_A.png",
+      "images_sha256": "f9ef8b41e0d6b97b57ba09b6c89f8bff6e688eccfbcdc6fe66d06d480927757f",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\013_A.png",
+      "annotation_sha256": "a4b850af59bf4e7bd3f0e386ac190ead958fa22f9f463382f0a044082c09fd46",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1465077,
+        "vein": 95357,
+        "crossing": 2891,
+        "artery": 73195,
+        "uncertain_vessel": 1880
+      },
+      "vessel_pixels_nonblack": 173323
+    },
+    {
+      "id": "014_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\014_D.png",
+      "images_sha256": "a63e4fe6e49f6133ca62e599319ff7dfef1f1d790cd0f0bdecf93903a115a13e",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\014_D.png",
+      "annotation_sha256": "a8f2d47b476a817850d0d7f1c3ba5b4c8b778e0e1b308f7905c367b6521a7eb7",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1466709,
+        "vein": 84534,
+        "crossing": 2790,
+        "artery": 83742,
+        "uncertain_vessel": 625
+      },
+      "vessel_pixels_nonblack": 171691
+    },
+    {
+      "id": "015_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\015_N.png",
+      "images_sha256": "8f2516bf2447ed78b26bfe83fef456c73108a05499fb0b154c60d6c01546ecd8",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\015_N.png",
+      "annotation_sha256": "f70210a2c33e557c0260151db5085642c16cd27797e6b8a6650dbf30cdbaa9b7",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1461475,
+        "vein": 95428,
+        "crossing": 5052,
+        "artery": 75136,
+        "uncertain_vessel": 1309
+      },
+      "vessel_pixels_nonblack": 176925
+    },
+    {
+      "id": "016_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\016_N.png",
+      "images_sha256": "242dced6d1a70791cabb9c4d7f7f64dbc729f5f14391e32e76ece685d6a8ba07",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\016_N.png",
+      "annotation_sha256": "6ec35e082d8002eb7de0169ac7ed45706c1153b3cf552482ee6d8de8785cf14b",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1468220,
+        "vein": 87279,
+        "crossing": 2898,
+        "artery": 79969,
+        "uncertain_vessel": 34
+      },
+      "vessel_pixels_nonblack": 170180
+    },
+    {
+      "id": "017_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\017_G.png",
+      "images_sha256": "1b817c12cb6f723e9eb8d35620a26cd9ce0f4624bf009d7f6336b7d9a27c0c9f",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\017_G.png",
+      "annotation_sha256": "0b01107f12578cbfc054087d41b213a7c23dd39413df9685927fd21435fea5d1",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1466476,
+        "vein": 85411,
+        "crossing": 4081,
+        "artery": 82100,
+        "uncertain_vessel": 332
+      },
+      "vessel_pixels_nonblack": 171924
+    },
+    {
+      "id": "018_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\018_N.png",
+      "images_sha256": "76d54b7e5b0d124480d19ecc0bf3790df9b0514346172e1ad0833514514a7b92",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\018_N.png",
+      "annotation_sha256": "9d61df6ad56857f0fc1266b220e8e8dc66013c5432327ea58dda13f558512481",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4889258,
+        "vein": 217702,
+        "crossing": 6021,
+        "artery": 175880,
+        "uncertain_vessel": 1891
+      },
+      "vessel_pixels_nonblack": 401494
+    },
+    {
+      "id": "019_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\019_G.png",
+      "images_sha256": "f91d220688e5309e16fbb5979047ac8cd7155835676c5aba8db1c1d59d10a528",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\019_G.png",
+      "annotation_sha256": "d6c7521bac7e6c7d987e333ac32608d0dd9c376140a9181d4015f2c4732b9c83",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1511344,
+        "vein": 60095,
+        "crossing": 3084,
+        "artery": 63627,
+        "uncertain_vessel": 250
+      },
+      "vessel_pixels_nonblack": 127056
+    },
+    {
+      "id": "020_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\020_N.png",
+      "images_sha256": "f317aac6ca7e1bb5395e8fc00324a9bd8df417f63967e4fbe0d34c1e2f791e4b",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\020_N.png",
+      "annotation_sha256": "4aeab309a96c91b12e11995b4a2d71d73ec3dad92ef71d48ea65913061c178cb",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4868226,
+        "vein": 228146,
+        "crossing": 5957,
+        "artery": 187629,
+        "uncertain_vessel": 794
+      },
+      "vessel_pixels_nonblack": 422526
+    },
+    {
+      "id": "021_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\021_N.png",
+      "images_sha256": "9b02499639311282bae908b5747ae12509e46191d2ab0f5adcb47adff3f2ce48",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\021_N.png",
+      "annotation_sha256": "d1635c0f731489a5ac1029b2963fa53ad16db21227207ab704025612c645c5c9",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4855887,
+        "vein": 221496,
+        "crossing": 6799,
+        "artery": 203934,
+        "uncertain_vessel": 2636
+      },
+      "vessel_pixels_nonblack": 434865
+    },
+    {
+      "id": "022_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\022_N.png",
+      "images_sha256": "ed6815c5bec27fb2dc7ee3abc4f3033f5989c5103a482fb781aaf590f197c3b4",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\022_N.png",
+      "annotation_sha256": "3835c4484424555edde0025c955c9ec57fab43d1b1520c387b28b50c153f23e5",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1471607,
+        "vein": 87476,
+        "crossing": 2571,
+        "artery": 76399,
+        "uncertain_vessel": 347
+      },
+      "vessel_pixels_nonblack": 166793
+    },
+    {
+      "id": "023_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\023_N.png",
+      "images_sha256": "88289fe73aa32f278b7b34cfa9c2a50d1292ecf7138f03d918ba0b78d3c71af3",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\023_N.png",
+      "annotation_sha256": "01c40bdcb7392be1cf1629dc43a5aeb8d561dc83e4965ea8301882db44f37b16",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1484139,
+        "vein": 80366,
+        "crossing": 2854,
+        "artery": 70310,
+        "uncertain_vessel": 731
+      },
+      "vessel_pixels_nonblack": 154261
+    },
+    {
+      "id": "024_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\024_N.png",
+      "images_sha256": "897691a207c6124755c49beeff25342d61e513e00c19ab369d7895dcce694505",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\024_N.png",
+      "annotation_sha256": "64ba19a2bad81779eb03c5ecc5faadd298ea7723b7231c704fd868b0fade7e88",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1481331,
+        "vein": 91672,
+        "crossing": 2806,
+        "artery": 62237,
+        "uncertain_vessel": 354
+      },
+      "vessel_pixels_nonblack": 157069
+    },
+    {
+      "id": "025_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\025_G.png",
+      "images_sha256": "d378b10467dcaf3a255ae6ae4732e1f63b2f7fef0f88021588a3ddfd98625b5a",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\025_G.png",
+      "annotation_sha256": "f442cea1a4df3009ca9f7993e27f30123162846eec81a2a8bceace68e0c86406",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4911059,
+        "vein": 183680,
+        "crossing": 7668,
+        "artery": 174137,
+        "uncertain_vessel": 14208
+      },
+      "vessel_pixels_nonblack": 379693
+    },
+    {
+      "id": "026_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\026_G.png",
+      "images_sha256": "9f8dbcde979c1c17f68ec861872e721c726f3d7c7a0c9552c772f0825cd68405",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\026_G.png",
+      "annotation_sha256": "91648441f33ac71006b6fdec9860b1c9086a5e900dc82362d8e7fa19b0968ec4",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4890189,
+        "vein": 209248,
+        "crossing": 6555,
+        "artery": 183323,
+        "uncertain_vessel": 1437
+      },
+      "vessel_pixels_nonblack": 400563
+    },
+    {
+      "id": "027_G",
+      "source_split": "testing",
+      "disease": "Glaucoma",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\027_G.png",
+      "images_sha256": "2d189aad3c2795b446f04a0e2aa41dc17e67e360cce7ee20fcac6b6f57511f5b",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\027_G.png",
+      "annotation_sha256": "2b23bb00629232d15b15c82316a9b2cbc10d3493b745f4cf5b4187581a1d29f3",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4929579,
+        "vein": 178451,
+        "crossing": 6643,
+        "artery": 176079
+      },
+      "vessel_pixels_nonblack": 361173
+    },
+    {
+      "id": "028_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\028_G.png",
+      "images_sha256": "46004a1fd6b05a202bbbfbccf99f05d6138fdeb498bce5c27b3db8336546ae0d",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\028_G.png",
+      "annotation_sha256": "a0d845af282d667ca3cceced5a5ecfd671f53ce01d49adc324ced9547679e581",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4883638,
+        "vein": 197866,
+        "crossing": 8017,
+        "artery": 188824,
+        "uncertain_vessel": 12407
+      },
+      "vessel_pixels_nonblack": 407114
+    },
+    {
+      "id": "029_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\029_D.png",
+      "images_sha256": "58addf323eab43ec6c7cf0a9b1b6adecbb01a0c73b6311e234785e14c2dc070b",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\029_D.png",
+      "annotation_sha256": "7a8e8475ce91b556eb6f6a5ec373d158b54171e6612cba416ffd7741d7770611",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4887964,
+        "vein": 248265,
+        "crossing": 6479,
+        "artery": 148044
+      },
+      "vessel_pixels_nonblack": 402788
+    },
+    {
+      "id": "030_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\030_A.png",
+      "images_sha256": "84ebb93945394dc44608491e5b1fecb59332ffc2b0ecf46f58684af23bd46b82",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\030_A.png",
+      "annotation_sha256": "eb33ec99057d5fd0c613765d9b971eeba313aae633afa7b7652757bc11fbefdc",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1467224,
+        "vein": 90103,
+        "crossing": 2797,
+        "artery": 78197,
+        "uncertain_vessel": 79
+      },
+      "vessel_pixels_nonblack": 171176
+    },
+    {
+      "id": "031_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\031_G.png",
+      "images_sha256": "7590c77326bad25344bb6dd8f274081d314ac1f6f9d01ab47393204948489c1b",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\031_G.png",
+      "annotation_sha256": "bfd455c3b836beaa96f3bf843e809e0a9d1683ba2c0287095354a8091d612c90",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1489526,
+        "vein": 77432,
+        "crossing": 3209,
+        "artery": 67725,
+        "uncertain_vessel": 508
+      },
+      "vessel_pixels_nonblack": 148874
+    },
+    {
+      "id": "032_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\032_A.png",
+      "images_sha256": "26e070eac09e3c186e2c4e88a534d6957e2e644a52620092db7bb6d620fb06bf",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\032_A.png",
+      "annotation_sha256": "8260bcf432d5d105c29a68a371e5cfb6cd91768024b94b6c90b94f7b48e35463",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1495686,
+        "vein": 75232,
+        "crossing": 2646,
+        "artery": 64784,
+        "uncertain_vessel": 52
+      },
+      "vessel_pixels_nonblack": 142714
+    },
+    {
+      "id": "033_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\033_G.png",
+      "images_sha256": "bcba509661d7d16a90395c6d5b0aa006ea7e677dcf4024cc516d8a57d73ab220",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\033_G.png",
+      "annotation_sha256": "ce4bad7c55193dd2e3685d3ee539d6c56d38fea1109dbfb81224cb6a7ef0418e",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1485173,
+        "vein": 80562,
+        "crossing": 4409,
+        "artery": 65587,
+        "uncertain_vessel": 2669
+      },
+      "vessel_pixels_nonblack": 153227
+    },
+    {
+      "id": "034_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\034_G.png",
+      "images_sha256": "c03045adb72c6a6fc0628ba2e015841d15aae52daf74c4e722ceb06fb699e7e1",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\034_G.png",
+      "annotation_sha256": "353deaaa4fde303ac967b98351b8eb5713b07e2d3a626479e9eb0dee4463273c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1482824,
+        "vein": 82254,
+        "crossing": 2887,
+        "artery": 69251,
+        "uncertain_vessel": 1184
+      },
+      "vessel_pixels_nonblack": 155576
+    },
+    {
+      "id": "035_A",
+      "source_split": "testing",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\035_A.png",
+      "images_sha256": "78e9704ea28aa23ea7a6e132283ad11409c889bb7c0bfbd96fe0848771f168cc",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\035_A.png",
+      "annotation_sha256": "8740e793600dadb6cfdc9af8ca93a779638fee8f7175215531b272ef440f275a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1483117,
+        "vein": 79949,
+        "crossing": 3018,
+        "artery": 72316
+      },
+      "vessel_pixels_nonblack": 155283
+    },
+    {
+      "id": "036_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\036_A.png",
+      "images_sha256": "ac4bd5b27d31043e9e31d583cb28821c5e584548366c9224ec942243dcaaa142",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\036_A.png",
+      "annotation_sha256": "9ca21cd5cc8f2db23246203242dec69215a34d5d2d2c1899d6d920c0b2eb3740",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4876671,
+        "vein": 236320,
+        "crossing": 6110,
+        "artery": 160319,
+        "uncertain_vessel": 11332
+      },
+      "vessel_pixels_nonblack": 414081
+    },
+    {
+      "id": "037_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\037_N.png",
+      "images_sha256": "1055d049d2adafda02efd2d07ff35609499d07708fdbb8ce23a3d2172ea46aae",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\037_N.png",
+      "annotation_sha256": "09235f99ebabebcfe6081926177289b7c0ee400cbbab495a30e89bc04a0646ce",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4905008,
+        "vein": 222675,
+        "crossing": 5104,
+        "artery": 151688,
+        "uncertain_vessel": 6277
+      },
+      "vessel_pixels_nonblack": 385744
+    },
+    {
+      "id": "038_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\038_N.png",
+      "images_sha256": "ec5fd46542761666a7c4e5099f2ad9836a54ce533d41c4e265bd856cffb7379c",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\038_N.png",
+      "annotation_sha256": "6f18d1f92ba5418dde8ef19ca012e618072ba0add686c8a0d22557c14a1bda4c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4877392,
+        "vein": 251534,
+        "crossing": 5916,
+        "artery": 155910
+      },
+      "vessel_pixels_nonblack": 413360
+    },
+    {
+      "id": "039_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\039_N.png",
+      "images_sha256": "4b9c13980fa94881ba3e77e8143f82453a38ab7b032a805b48ce2771261951eb",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\039_N.png",
+      "annotation_sha256": "de670d5a0c340087d7b7cc24a983ef6b93669d455cda37ddb0efca5f72c849ef",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1484515,
+        "vein": 76803,
+        "crossing": 2438,
+        "artery": 74474,
+        "uncertain_vessel": 170
+      },
+      "vessel_pixels_nonblack": 153885
+    },
+    {
+      "id": "040_G",
+      "source_split": "testing",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\040_G.png",
+      "images_sha256": "6498d8947cddce9afc276edc2232a97e6939b9357487eb80e6f26d544e77228d",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\040_G.png",
+      "annotation_sha256": "c0b2a366c0f16e10304998f5a2cadea937ad72f868255389403ee200ecefc412",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1476783,
+        "vein": 92913,
+        "crossing": 3110,
+        "artery": 65014,
+        "uncertain_vessel": 580
+      },
+      "vessel_pixels_nonblack": 161617
+    },
+    {
+      "id": "041_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\041_N.png",
+      "images_sha256": "83028cdfe15f554e0fb157180c80b8ea753f097505be7ea1a31caee13d527d22",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\041_N.png",
+      "annotation_sha256": "b465e324ec110d37246ec799d67c812bd93c3ed109594df68f3fa0cec3d857f2",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1489985,
+        "vein": 77478,
+        "crossing": 2556,
+        "artery": 67904,
+        "uncertain_vessel": 477
+      },
+      "vessel_pixels_nonblack": 148415
+    },
+    {
+      "id": "042_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\042_A.png",
+      "images_sha256": "687a9b771e3492548a24888812dffe1b7c919d7b09d4494f17435d0148187aa5",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\042_A.png",
+      "annotation_sha256": "56323fd372314aa510f9f5cd966524b293eba85857358a5d76f1a72b695ec225",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477769,
+        "vein": 75596,
+        "crossing": 2861,
+        "artery": 74979,
+        "uncertain_vessel": 7195
+      },
+      "vessel_pixels_nonblack": 160631
+    },
+    {
+      "id": "043_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\043_N.png",
+      "images_sha256": "5eb7b49624c820cd90ea1a0a039b0e619e177712fa1a8cd6cb7be3398465e923",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\043_N.png",
+      "annotation_sha256": "f1963bed55e8dd5b0bfdad34987fa1f2776771d7ca63e2bfd1cf9f7859f05993",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1483826,
+        "vein": 86427,
+        "crossing": 3123,
+        "artery": 65024
+      },
+      "vessel_pixels_nonblack": 154574
+    },
+    {
+      "id": "044_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\044_N.png",
+      "images_sha256": "3f5c77b485c6560029dd1bab53990fc4c178dffaf82c2920ff2148bc5c7722f1",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\044_N.png",
+      "annotation_sha256": "73ea41402401b60b06b652350362cbe78476a151602167a8bfb822a695b8a987",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1479050,
+        "vein": 84582,
+        "crossing": 2668,
+        "artery": 72100
+      },
+      "vessel_pixels_nonblack": 159350
+    },
+    {
+      "id": "045_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\045_A.png",
+      "images_sha256": "ad084813af59d20a1cc57996c2319205dbcb4cdc6678eda5173a8fd823ff0888",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\045_A.png",
+      "annotation_sha256": "d139d0d147e47bf52c33cd5caee3b8b8243d149f1d9db6f09ad152b0cf3a0afd",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1486654,
+        "vein": 70969,
+        "crossing": 1977,
+        "artery": 73097,
+        "uncertain_vessel": 5703
+      },
+      "vessel_pixels_nonblack": 151746
+    },
+    {
+      "id": "046_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\046_N.png",
+      "images_sha256": "e108ad9896864f2a8f4de3587180a5ccb8623a341007da88d6c0e1ab6bfa6499",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\046_N.png",
+      "annotation_sha256": "eab86912650d5348204ca098f9456b00b3b074e6e4aac56075c1ceec0a272838",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4848280,
+        "vein": 240984,
+        "crossing": 6508,
+        "artery": 186826,
+        "uncertain_vessel": 8154
+      },
+      "vessel_pixels_nonblack": 442472
+    },
+    {
+      "id": "047_A",
+      "source_split": "testing",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\047_A.png",
+      "images_sha256": "4f192dd3d960099d5bea4e53767fcc8f2e53e72ad8daafb4110ddd9658fbde1c",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\047_A.png",
+      "annotation_sha256": "fc82c49dbbdcd1469e255c5d59ff443f338e572c339a1851dc0e2926eba5dd26",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1485914,
+        "vein": 80779,
+        "crossing": 2202,
+        "artery": 68172,
+        "uncertain_vessel": 1333
+      },
+      "vessel_pixels_nonblack": 152486
+    },
+    {
+      "id": "048_D",
+      "source_split": "testing",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\048_D.png",
+      "images_sha256": "4bbfe7cacd7e64dab88de2de8c8956a87d531865672aad7caea7f5300b1e8b1d",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\048_D.png",
+      "annotation_sha256": "e4cf76ba2ff29a1562f25e51565434d52284c3fd8dc9afcbf996b4ac37eba284",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4900611,
+        "vein": 235564,
+        "crossing": 7587,
+        "artery": 146240,
+        "uncertain_vessel": 750
+      },
+      "vessel_pixels_nonblack": 390141
+    },
+    {
+      "id": "049_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\049_A.png",
+      "images_sha256": "02593e3b1b340696631d766364877cf13a1ca3fdc44f0826185e5ff9bcbf5e45",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\049_A.png",
+      "annotation_sha256": "53e4a54f76fb3727d1f89fd4aa2007e6995bdc41b9ab2ed029cc1de7cb599bf3",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1481490,
+        "vein": 78029,
+        "crossing": 2626,
+        "artery": 76255
+      },
+      "vessel_pixels_nonblack": 156910
+    },
+    {
+      "id": "050_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\050_A.png",
+      "images_sha256": "4ee010dd9581cd63cabb35b203a56f8f9b613e277a2a13c31302c5f5630ca535",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\050_A.png",
+      "annotation_sha256": "3e7966c2de1135392b1e51282bae6105ee82c1127d22ea08ed70adf10b2bd48a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1475911,
+        "vein": 81043,
+        "crossing": 2595,
+        "artery": 76344,
+        "uncertain_vessel": 2507
+      },
+      "vessel_pixels_nonblack": 162489
+    },
+    {
+      "id": "051_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\051_A.png",
+      "images_sha256": "35bea263682e1409f6655de00099fc3c329aec194cb9cea5462e6c8b5989878f",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\051_A.png",
+      "annotation_sha256": "22e3d6ae437bbaef2b1c8ae91007717637f416576c394178485b121f32c09bdc",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1483811,
+        "vein": 86540,
+        "crossing": 2907,
+        "artery": 64459,
+        "uncertain_vessel": 683
+      },
+      "vessel_pixels_nonblack": 154589
+    },
+    {
+      "id": "052_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\052_N.png",
+      "images_sha256": "4b2dc8c5f2163d0fe0592ac9082f6c4903742e19395bd97d23ef3072e344f0f6",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\052_N.png",
+      "annotation_sha256": "c9cef3536c9b8770bbe02633f022497107a50e379598673eb2bf71682d25a72b",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1505250,
+        "vein": 72990,
+        "crossing": 2820,
+        "artery": 57340
+      },
+      "vessel_pixels_nonblack": 133150
+    },
+    {
+      "id": "053_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\053_A.png",
+      "images_sha256": "9113d67566d770c0a0d0b8cf8e3b6ecbe5c825fa7aa3f21d966759d114f46971",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\053_A.png",
+      "annotation_sha256": "1dac6329eb8f694c9aa438bf14c83e134722be84ae34a9c7b2fe2acc421b044c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1471205,
+        "vein": 92297,
+        "crossing": 2565,
+        "artery": 70082,
+        "uncertain_vessel": 2251
+      },
+      "vessel_pixels_nonblack": 167195
+    },
+    {
+      "id": "054_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\054_G.png",
+      "images_sha256": "25e4f0312401a4e8ecdcf22752cc9ca123fe108bb21b6275cee80cba023752a4",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\054_G.png",
+      "annotation_sha256": "20b249e7fea35ccd79d8469d15180e2f799ddee7338daed03a45a622fa36f0c1",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1475188,
+        "vein": 85517,
+        "crossing": 3256,
+        "artery": 72601,
+        "uncertain_vessel": 1838
+      },
+      "vessel_pixels_nonblack": 163212
+    },
+    {
+      "id": "055_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\055_A.png",
+      "images_sha256": "16157f7139e2666777bfbccceea8d62beb59752cb9fff8c0dce11a6bd2b9d331",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\055_A.png",
+      "annotation_sha256": "3a16a6f2ea5bf2223e955c9434fa194290a0d9c1a3004907da861d17fd17ed3c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1494615,
+        "vein": 71228,
+        "crossing": 2833,
+        "artery": 67618,
+        "uncertain_vessel": 2106
+      },
+      "vessel_pixels_nonblack": 143785
+    },
+    {
+      "id": "056_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\056_A.png",
+      "images_sha256": "39b689248718708aca2f0f0066a17b5b6657138379ac2c6b54b7d5f1a0aa3f6b",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\056_A.png",
+      "annotation_sha256": "a7453ba730c6658aa19208cbfd5f95652bda4c1bbd575301c8ad86d2da98cd36",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1498598,
+        "vein": 75864,
+        "crossing": 2064,
+        "artery": 60475,
+        "uncertain_vessel": 1399
+      },
+      "vessel_pixels_nonblack": 139802
+    },
+    {
+      "id": "057_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\057_A.png",
+      "images_sha256": "373ac7c381c876d0b7f3f0168ba72096ca196b42125450ba16e86a9d37c31715",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\057_A.png",
+      "annotation_sha256": "41168482dcf46b2f67df873ebb964e029b54586b0cd8f6a0e431c3028fe67cd2",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1504675,
+        "vein": 78888,
+        "crossing": 3308,
+        "artery": 51211,
+        "uncertain_vessel": 318
+      },
+      "vessel_pixels_nonblack": 133725
+    },
+    {
+      "id": "058_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\058_D.png",
+      "images_sha256": "fe2e169bc0d3153b970a019afda9d6b3dd60fd6cc7876c87e7291d401592b4d6",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\058_D.png",
+      "annotation_sha256": "bb555b85e59b96ab80c08eeafd67d68c674e866beae2accb446f203ac32bc13c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1471823,
+        "vein": 96676,
+        "crossing": 2591,
+        "artery": 67012,
+        "uncertain_vessel": 298
+      },
+      "vessel_pixels_nonblack": 166577
+    },
+    {
+      "id": "059_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\059_D.png",
+      "images_sha256": "f8cece8925cbc654561c1b98741d44e9949b716d2e06fe790c1cff2286bce6e7",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\059_D.png",
+      "annotation_sha256": "b36841ca2e5598d4b910f3282c31ad46a7c0d08025d83d803581dca800d47829",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1486197,
+        "vein": 84224,
+        "crossing": 1734,
+        "artery": 65200,
+        "uncertain_vessel": 1045
+      },
+      "vessel_pixels_nonblack": 152203
+    },
+    {
+      "id": "060_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\060_N.png",
+      "images_sha256": "029457ab4c0d3750732c49e380dac8f79b5f8951f84fefbb9f91d0cf03df8e14",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\060_N.png",
+      "annotation_sha256": "8b60d36bec4373d03ca662f45a7b3cfc879b72f242c79c988516498e8d1e236e",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1489796,
+        "vein": 91904,
+        "crossing": 4378,
+        "artery": 49851,
+        "uncertain_vessel": 2471
+      },
+      "vessel_pixels_nonblack": 148604
+    },
+    {
+      "id": "061_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\061_A.png",
+      "images_sha256": "c79bca1561065afe8e027ecd3cabd58ae05d52370b44e59ac5e22bd71ec5f3d5",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\061_A.png",
+      "annotation_sha256": "aac4981f604c203a8d1cad41e4c746130215844cd689a43660cc2ed07151e138",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4901936,
+        "vein": 211047,
+        "crossing": 7034,
+        "artery": 163927,
+        "uncertain_vessel": 6808
+      },
+      "vessel_pixels_nonblack": 388816
+    },
+    {
+      "id": "062_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\062_G.png",
+      "images_sha256": "c3c167dd9a86aadf823a673833b9f1e19e7c464c5b079e52c5055811a310dac3",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\062_G.png",
+      "annotation_sha256": "998467cb1e60962686ed805d58923f135d2e44e48134237ae3b4cbcbeeaf1dad",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477838,
+        "vein": 85946,
+        "crossing": 3484,
+        "artery": 70985,
+        "uncertain_vessel": 147
+      },
+      "vessel_pixels_nonblack": 160562
+    },
+    {
+      "id": "063_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\063_A.png",
+      "images_sha256": "7a59d8d766d4e02a125e44f391673c48b9dcfa7a46775d5c3a979a26450d2bf9",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\063_A.png",
+      "annotation_sha256": "14ad1af6588dae1c1aaf0b87dea4efdcbe458fbbbe80b6bc65908be1a30b9548",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1497251,
+        "vein": 72445,
+        "crossing": 3410,
+        "artery": 64488,
+        "uncertain_vessel": 806
+      },
+      "vessel_pixels_nonblack": 141149
+    },
+    {
+      "id": "064_D",
+      "source_split": "testing",
+      "disease": "DR",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\064_D.png",
+      "images_sha256": "e5669a3d81da1aa9e479a06a4df34010e5fda6a16d8a3367e7abc31178b6baf3",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\064_D.png",
+      "annotation_sha256": "8cffccc43feb221314173e8d5a9478fc77c4dfd8da94c53109a3389cc0c3a1a1",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477497,
+        "vein": 81556,
+        "crossing": 3232,
+        "artery": 74865,
+        "uncertain_vessel": 1250
+      },
+      "vessel_pixels_nonblack": 160903
+    },
+    {
+      "id": "065_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\065_A.png",
+      "images_sha256": "c963166a2e38b6185ec4f2cc7c6a543077b80289d4ec63066bdb368bdeb4a777",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\065_A.png",
+      "annotation_sha256": "e62f27d9a3dba72d58cd5cdd31f3ac8eb0bc76e8b5ec0ef738ca2ce29b5960cf",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1494359,
+        "vein": 84191,
+        "crossing": 2934,
+        "artery": 55859,
+        "uncertain_vessel": 1057
+      },
+      "vessel_pixels_nonblack": 144041
+    },
+    {
+      "id": "066_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\066_N.png",
+      "images_sha256": "ba84e4bfc3e6ff3c8f8dd1c5e8926aa72abf223953e9eb637117afe2dabd1184",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\066_N.png",
+      "annotation_sha256": "d2369f7c2b1d3719d7c512aec3e79676d73336fb80da4b572172a112e167a0a4",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1508682,
+        "vein": 64237,
+        "crossing": 2398,
+        "artery": 61201,
+        "uncertain_vessel": 1882
+      },
+      "vessel_pixels_nonblack": 129718
+    },
+    {
+      "id": "067_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\067_G.png",
+      "images_sha256": "c65fd3043c4fb0c21e14b75a4760b52fee7480e2b934a12cb09a0d4c2d7aa588",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\067_G.png",
+      "annotation_sha256": "ea15e53a049240431f791fa2ffe19a50aad85bdd745fa3e91e7176b77be5dfaf",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1468511,
+        "vein": 87434,
+        "crossing": 4346,
+        "artery": 76360,
+        "uncertain_vessel": 1749
+      },
+      "vessel_pixels_nonblack": 169889
+    },
+    {
+      "id": "068_A",
+      "source_split": "training",
+      "disease": "AMD",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\068_A.png",
+      "images_sha256": "aaed9d542b318902c3d7661a774859122d7ddb22fb9d6ceb7756a9ef51428c25",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\068_A.png",
+      "annotation_sha256": "e57ccdecc3ca5db2aa69c0622041726ccc4c585faae24f9bcd3b4e51d04b5283",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1527483,
+        "vein": 61874,
+        "crossing": 1681,
+        "artery": 47341,
+        "uncertain_vessel": 21
+      },
+      "vessel_pixels_nonblack": 110917
+    },
+    {
+      "id": "069_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\069_N.png",
+      "images_sha256": "cfcdcd780b552567e732b4e1df9cebe8a332e6b8262ac4db19397b0d39314114",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\069_N.png",
+      "annotation_sha256": "f726723299f7b5228d23f37ef83308c34049fa1a8c842c4f5b38e451afaefc0f",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1480549,
+        "vein": 81333,
+        "crossing": 2153,
+        "artery": 69432,
+        "uncertain_vessel": 4933
+      },
+      "vessel_pixels_nonblack": 157851
+    },
+    {
+      "id": "070_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\070_G.png",
+      "images_sha256": "a23a8d9c3c5ca8b795a6a3cc27cdb7f5cfa3f8178142d17c8547a0000371b83f",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\070_G.png",
+      "annotation_sha256": "20f1c0dad52f0208fcb59f45db740bbb07c635b1a32fea18aeaf0969f0eaa0ae",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1475998,
+        "vein": 85385,
+        "crossing": 2487,
+        "artery": 73617,
+        "uncertain_vessel": 913
+      },
+      "vessel_pixels_nonblack": 162402
+    },
+    {
+      "id": "071_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\071_N.png",
+      "images_sha256": "ba83ad518906eb7e110e37fb9f1f9e046db2c8df2db40e5204c53a139e48d1e4",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\071_N.png",
+      "annotation_sha256": "78217376cb0898d15b72296638584919fe52b4e324305439f331a4956847fc8a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1462918,
+        "vein": 98769,
+        "crossing": 4002,
+        "artery": 72383,
+        "uncertain_vessel": 328
+      },
+      "vessel_pixels_nonblack": 175482
+    },
+    {
+      "id": "072_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\072_N.png",
+      "images_sha256": "935964fa162281fb9e7a3d0fb78e3cd71ddbba9944f7cbfcb38bcca3dc235262",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\072_N.png",
+      "annotation_sha256": "485f8631b0399a34d361db70fb84cc39c4db42560f00ba348a680fe879dd02f3",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1471748,
+        "vein": 83160,
+        "crossing": 2697,
+        "artery": 79720,
+        "uncertain_vessel": 1075
+      },
+      "vessel_pixels_nonblack": 166652
+    },
+    {
+      "id": "073_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\073_D.png",
+      "images_sha256": "7a9ca280d50c8dbae80baaaca3ee979646d3c4a8c111a4db803f055192068a28",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\073_D.png",
+      "annotation_sha256": "3dd993ac481677a4c53eddb53d73120cc0bca8a971a4b5756eb27856ba2b6cc8",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1472252,
+        "vein": 93847,
+        "crossing": 3081,
+        "artery": 69173,
+        "uncertain_vessel": 47
+      },
+      "vessel_pixels_nonblack": 166148
+    },
+    {
+      "id": "074_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\074_N.png",
+      "images_sha256": "776e2e4b2ce8a604bb676494a790968f2d83454dc682d127c038fa5e50f808ed",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\074_N.png",
+      "annotation_sha256": "287231f44a4e49a79f00cf5e3d9ceb6f1eb3889e19144a361028220011827d3a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1492154,
+        "vein": 75154,
+        "crossing": 3225,
+        "artery": 67309,
+        "uncertain_vessel": 558
+      },
+      "vessel_pixels_nonblack": 146246
+    },
+    {
+      "id": "075_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\075_D.png",
+      "images_sha256": "d43d6c331b9ef50cabd9d664074bb00b6754319680029291023eadad92b6dcd5",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\075_D.png",
+      "annotation_sha256": "eee3f130afffe2047f5653247d1834452b421240d31b167bd96c2b632abab530",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1483007,
+        "vein": 79688,
+        "crossing": 2558,
+        "artery": 71968,
+        "uncertain_vessel": 1179
+      },
+      "vessel_pixels_nonblack": 155393
+    },
+    {
+      "id": "076_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\076_D.png",
+      "images_sha256": "ac95b9730d7287890ed80bf97bc8e21305d32ab94c10eee6bb98150d3f7f7242",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\076_D.png",
+      "annotation_sha256": "5ae0d9aec738c4bf224bbddc125af63e660be70f017b2a21d439a9d8bbbc5dc0",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1494406,
+        "vein": 84222,
+        "crossing": 2748,
+        "artery": 55722,
+        "uncertain_vessel": 1302
+      },
+      "vessel_pixels_nonblack": 143994
+    },
+    {
+      "id": "077_G",
+      "source_split": "testing",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\077_G.png",
+      "images_sha256": "9a3a948519ff006adcf1a23e6640d5268bde3eee058a07c0aa3f805af6976f4d",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\077_G.png",
+      "annotation_sha256": "b761fbe107dff8e6a5751827454acc4ef95a307bc3baf8c0a4e797d9bcba0a21",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1495207,
+        "vein": 78767,
+        "crossing": 3459,
+        "artery": 60717,
+        "uncertain_vessel": 250
+      },
+      "vessel_pixels_nonblack": 143193
+    },
+    {
+      "id": "078_D",
+      "source_split": "testing",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\078_D.png",
+      "images_sha256": "2f3b8fadac0f50718583146075fc000191ba14e46dd2a7a6aa547122f4c7c26e",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\078_D.png",
+      "annotation_sha256": "bde46d384b19b066edf00a4f8b98d24618bc221006bab3a3be42050a1eb579b5",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1473671,
+        "vein": 90929,
+        "crossing": 4234,
+        "artery": 68328,
+        "uncertain_vessel": 1238
+      },
+      "vessel_pixels_nonblack": 164729
+    },
+    {
+      "id": "079_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\079_N.png",
+      "images_sha256": "f3b862e2814b494453681a67ee354dfcf93a494ee6987e45e687d12bd18500a8",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\079_N.png",
+      "annotation_sha256": "456acad967656349d196b4ac82caf2d780c8d3159ef3e12ce836337378a2858d",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1496148,
+        "vein": 73651,
+        "crossing": 2993,
+        "artery": 62144,
+        "uncertain_vessel": 3464
+      },
+      "vessel_pixels_nonblack": 142252
+    },
+    {
+      "id": "080_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\080_N.png",
+      "images_sha256": "d777d5701d2ee9dfaa8e525b61d563936fdbecd59de7b045fd7f5d95a52ca7bc",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\080_N.png",
+      "annotation_sha256": "91752c2183f52928a213e81c93032978407162e5b9c5953db141ba390cffa5c6",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1471419,
+        "vein": 88931,
+        "crossing": 2938,
+        "artery": 74152,
+        "uncertain_vessel": 960
+      },
+      "vessel_pixels_nonblack": 166981
+    },
+    {
+      "id": "081_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\081_D.png",
+      "images_sha256": "a215a49f6cbc030791c7c7000a8e3d97c275fcb12c3fa3647ad4197b6e7028cb",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\081_D.png",
+      "annotation_sha256": "8e13deb2e05bcfae29175caf1e30d6889365cbc73ddcece0948fca6dbe1d27c2",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1459433,
+        "vein": 91794,
+        "crossing": 4480,
+        "artery": 82693
+      },
+      "vessel_pixels_nonblack": 178967
+    },
+    {
+      "id": "082_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\082_N.png",
+      "images_sha256": "26e63f2d7bb3c0d0584d02ea275f6f0e66977632a798da814e6f296487e491ba",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\082_N.png",
+      "annotation_sha256": "ecbf5c61234dbf88b4e3e1e42eff0a7aac5079d14485e9f35fd1c9fa9dac26b1",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1488103,
+        "vein": 77034,
+        "crossing": 2566,
+        "artery": 70697
+      },
+      "vessel_pixels_nonblack": 150297
+    },
+    {
+      "id": "083_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\083_G.png",
+      "images_sha256": "543b21ef2c5bb7421e7d731ccc2d1d844ff6fb2956ce8629fe3277d5a9f1555e",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\083_G.png",
+      "annotation_sha256": "97747e6872310fdcce6a8ee018a74411d81d7e4d591dc509b002e8c7dea7da36",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1460231,
+        "vein": 87005,
+        "crossing": 3164,
+        "artery": 88000
+      },
+      "vessel_pixels_nonblack": 178169
+    },
+    {
+      "id": "084_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\084_D.png",
+      "images_sha256": "9893804101a3fa4e4c164a6681f94debb5525ab06fa994347c72b4e03adc82f0",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\084_D.png",
+      "annotation_sha256": "f7cbff96c7a371fe5532760cece06f52f32105179b4fcf179b72b15982ceed6d",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1466282,
+        "vein": 91130,
+        "crossing": 4120,
+        "artery": 76318,
+        "uncertain_vessel": 550
+      },
+      "vessel_pixels_nonblack": 172118
+    },
+    {
+      "id": "085_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\085_N.png",
+      "images_sha256": "79c6d3466187750ff914a886850118d7e4bbb3578597db7f3618d5dd0bc4165e",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\085_N.png",
+      "annotation_sha256": "15fc5deb9e0fd0fd8c8b5e934312b5c89a7395611c0631dc95b5731a4f560f5a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477233,
+        "vein": 83811,
+        "crossing": 3487,
+        "artery": 73718,
+        "uncertain_vessel": 151
+      },
+      "vessel_pixels_nonblack": 161167
+    },
+    {
+      "id": "086_N",
+      "source_split": "testing",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\086_N.png",
+      "images_sha256": "90c409ad4a260bdde69f5000f3ee07f16c15867de84128c9a767f71d924a25ee",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\086_N.png",
+      "annotation_sha256": "61d82a2c0bb07c76ddc501da6f120c05a2ffc219c21cf7071d7a53d0eb94ce32",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1500880,
+        "vein": 70883,
+        "crossing": 3955,
+        "artery": 60889,
+        "uncertain_vessel": 1793
+      },
+      "vessel_pixels_nonblack": 137520
+    },
+    {
+      "id": "087_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\087_D.png",
+      "images_sha256": "e292fa0e4a2ebe4f54fa4295dec987cc4b3191bf8a453824899a19ff71a0a118",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\087_D.png",
+      "annotation_sha256": "ac8c67c8469d315e4ea8a5a7564f51d6568f7a6b197955044156aef25f1c35b4",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1495242,
+        "vein": 71539,
+        "crossing": 2282,
+        "artery": 68291,
+        "uncertain_vessel": 1046
+      },
+      "vessel_pixels_nonblack": 143158
+    },
+    {
+      "id": "088_G",
+      "source_split": "training",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\088_G.png",
+      "images_sha256": "2e6ff437764d0634b7e6ec3cbe71264e488f10bdbea7c4e80515d1e3b41d624a",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\088_G.png",
+      "annotation_sha256": "21b8dcb7125949001a5adde38d549acf161e35f57223e9d0dd4b60fb86a85286",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1479587,
+        "vein": 82996,
+        "crossing": 3562,
+        "artery": 72057,
+        "uncertain_vessel": 198
+      },
+      "vessel_pixels_nonblack": 158813
+    },
+    {
+      "id": "089_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\089_N.png",
+      "images_sha256": "f7f498a549ea7a1ce6e3b4ce4c67e89767e72cff877b095a807374891921eb99",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\089_N.png",
+      "annotation_sha256": "8d3477b81b0ab20149c7a08988ce31ca3fb97363c90f94484a41a33edb5e9229",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1462918,
+        "vein": 98769,
+        "crossing": 4002,
+        "artery": 72383,
+        "uncertain_vessel": 328
+      },
+      "vessel_pixels_nonblack": 175482
+    },
+    {
+      "id": "090_G",
+      "source_split": "testing",
+      "disease": "Glaucoma",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\090_G.png",
+      "images_sha256": "45c547fbb8a3d6af941da9a9a84aa50ab3271c84cbc03f80696385018dda5c87",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\090_G.png",
+      "annotation_sha256": "23a870aa8d2bc2bc18d81c83ad5cf9c1236ff1b8d665ee069fbdf06e1c65bb2c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477708,
+        "vein": 85389,
+        "crossing": 3303,
+        "artery": 71552,
+        "uncertain_vessel": 448
+      },
+      "vessel_pixels_nonblack": 160692
+    },
+    {
+      "id": "091_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\091_N.png",
+      "images_sha256": "cef2c638ad2ace2a73958f355755314da2a128ea455f9c7a492e767da5158db7",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\091_N.png",
+      "annotation_sha256": "de7765b5adde33aea3712cb9fa377a22e4904694c3c2d65ae082e9d50f590f91",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1477216,
+        "vein": 77317,
+        "crossing": 4608,
+        "artery": 78656,
+        "uncertain_vessel": 603
+      },
+      "vessel_pixels_nonblack": 161184
+    },
+    {
+      "id": "092_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\092_N.png",
+      "images_sha256": "9f92f66db08fb991002ecc4bbcd156cb4f60fd0a06c2e26ba83a8e08fc3f12a9",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\092_N.png",
+      "annotation_sha256": "d45fe3484fefccbfb531c2c01a9ec4fdc261dab9aa0cfa19d31d5b26fa6ad2bc",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1474212,
+        "vein": 86723,
+        "crossing": 4883,
+        "artery": 72582
+      },
+      "vessel_pixels_nonblack": 164188
+    },
+    {
+      "id": "093_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "Low-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\093_N.png",
+      "images_sha256": "1570a4685b9d8ff16e7c7a008383e5cac7f902f2a685964ac225ed655eaaf85b",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\093_N.png",
+      "annotation_sha256": "d4d238e141f42fc6336ea66a4954c8187643a99f79cfae3c7785111b7df74f0a",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1487207,
+        "vein": 83394,
+        "crossing": 6727,
+        "artery": 61072
+      },
+      "vessel_pixels_nonblack": 151193
+    },
+    {
+      "id": "094_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\094_N.png",
+      "images_sha256": "5922d8441ccac9240ca1e347e33ece979d91f9de029c648d82673aa39eefd3d2",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\094_N.png",
+      "annotation_sha256": "81a4a4e29b6fe5a32db3194f4afa65f5f52fde8f9d91d214a9c398ff16001de0",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1487725,
+        "vein": 83878,
+        "crossing": 2813,
+        "artery": 63497,
+        "uncertain_vessel": 487
+      },
+      "vessel_pixels_nonblack": 150675
+    },
+    {
+      "id": "095_G",
+      "source_split": "testing",
+      "disease": "Glaucoma",
+      "quality": "Low-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\095_G.png",
+      "images_sha256": "b0b11bb7e4f55ff01b80b8e0981cd69aa6f36351f3e895c1ef5a9607d862542d",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\095_G.png",
+      "annotation_sha256": "2825ecacd1898cb3a117235d8c104b7d6a07d6e9d20b854da3ac94b5e09c12bd",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1482484,
+        "vein": 76778,
+        "crossing": 4825,
+        "artery": 71885,
+        "uncertain_vessel": 2428
+      },
+      "vessel_pixels_nonblack": 155916
+    },
+    {
+      "id": "096_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\096_D.png",
+      "images_sha256": "e2d704f8d1c9abe1cd494e5bb0138b5caba46e29dc8dd88e821c16230682ab51",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\096_D.png",
+      "annotation_sha256": "c4d4e76648eb62b8aeb1e734f3bbe091ac97683280cf81510568c42515fc2e88",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1456106,
+        "vein": 95725,
+        "crossing": 3095,
+        "artery": 83474
+      },
+      "vessel_pixels_nonblack": 182294
+    },
+    {
+      "id": "097_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\097_D.png",
+      "images_sha256": "03492050ddb8872392e99f7008b65be65d44b29d217cec83ca35c25c305cd078",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\097_D.png",
+      "annotation_sha256": "295b3ebdc06af8cdf6bdd09fb22f3502205467f0984a19cd4277745372d9bda1",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4856788,
+        "vein": 242681,
+        "crossing": 11696,
+        "artery": 179571,
+        "uncertain_vessel": 16
+      },
+      "vessel_pixels_nonblack": 433964
+    },
+    {
+      "id": "098_D",
+      "source_split": "training",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        2656,
+        1992
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\098_D.png",
+      "images_sha256": "819f5d556958902f48b026ba432fa8de2717230952852ef5b87ef7d8434eac44",
+      "annotation_size_wh": [
+        2656,
+        1992
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\098_D.png",
+      "annotation_sha256": "988b45638bac76d00937c45f4cf1171b7d9cf2fc894c89834f689744505bc7cf",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 4882119,
+        "vein": 221317,
+        "crossing": 5930,
+        "artery": 180971,
+        "uncertain_vessel": 415
+      },
+      "vessel_pixels_nonblack": 408633
+    },
+    {
+      "id": "099_D",
+      "source_split": "testing",
+      "disease": "DR",
+      "quality": "High-quality",
+      "eye_laterality": "left",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\099_D.png",
+      "images_sha256": "87b84ebf74f68ab681206912da5bf10bf87156ad7c68371eaa00bdfda5b35daf",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\099_D.png",
+      "annotation_sha256": "2292d7f16c117058039e73d1f420b02aca2d25d88806a2864290a44795c4ed34",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1479966,
+        "vein": 80479,
+        "crossing": 3469,
+        "artery": 74486
+      },
+      "vessel_pixels_nonblack": 158434
+    },
+    {
+      "id": "100_N",
+      "source_split": "training",
+      "disease": "Normal",
+      "quality": "High-quality",
+      "eye_laterality": "right",
+      "images_size_wh": [
+        1280,
+        1280
+      ],
+      "images_mode": "RGB",
+      "images_path": "datasets\\Fundus-AVSeg\\images\\100_N.png",
+      "images_sha256": "5253e9a6064e511125c99dc163d7e50d1d4baccd1d9160bdcd423ae6f1a12b30",
+      "annotation_size_wh": [
+        1280,
+        1280
+      ],
+      "annotation_mode": "RGB",
+      "annotation_path": "datasets\\Fundus-AVSeg\\annotation\\100_N.png",
+      "annotation_sha256": "9d8f949b308af591df6cc1ec111ad44fd26dcc3df57548bb57438794d9d69f5c",
+      "unknown_palette_pixels": 0,
+      "palette_counts": {
+        "background": 1494870,
+        "vein": 60331,
+        "crossing": 2009,
+        "artery": 78715,
+        "uncertain_vessel": 2475
+      },
+      "vessel_pixels_nonblack": 143530
+    }
+  ],
+  "files": [
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\001_G.png",
+      "bytes": 56765,
+      "zip_crc32": "31df9862",
+      "sha256": "293e634488ef82fd6b59d76b3e33308aefb1c91273716247541782577cd2a66d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\002_N.png",
+      "bytes": 63329,
+      "zip_crc32": "e67f0e5b",
+      "sha256": "90ed79571123e25972ada42ddd653fae7cdd0f48e253d6ecfc1bed99af388fe2"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\003_N.png",
+      "bytes": 55681,
+      "zip_crc32": "c0e910c9",
+      "sha256": "48c22d742c60b981127f07139931e9d07679af75f7bb725ba27b8da2a70f8167"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\004_D.png",
+      "bytes": 54346,
+      "zip_crc32": "0997c026",
+      "sha256": "3b7b4d5cc667fde90a5d678084876209605e4b59189d1b555655697c8152b105"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\005_N.png",
+      "bytes": 62243,
+      "zip_crc32": "96e5c7c5",
+      "sha256": "2edc0a0cb338c1fec29a1c234d4d635c912833089d35397726b77ca4e96b8e6c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\006_A.png",
+      "bytes": 55622,
+      "zip_crc32": "2d753c90",
+      "sha256": "632d06e7b544d930b842db1c50926152fa1343ecd0465a66fee985e860544709"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\007_N.png",
+      "bytes": 63091,
+      "zip_crc32": "c734176e",
+      "sha256": "0f46325f946a70ce8833be838575be136855cd84f8e01e5231f9122dbcd34841"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\008_N.png",
+      "bytes": 121002,
+      "zip_crc32": "7f5b47a5",
+      "sha256": "349c59408e24b1576fc28caf55b5d87455ba3f5adc0c1e94dab846fa0cad13cf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\009_D.png",
+      "bytes": 136241,
+      "zip_crc32": "396d72eb",
+      "sha256": "bbf5d899470d5ecdc0899e4a69dd1a94a58d8316cbdf3b998622af1afeed38c8"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\010_D.png",
+      "bytes": 129993,
+      "zip_crc32": "4358729a",
+      "sha256": "e12ab612cdaa763204bad249b80726aa4426253e86d295edc5e0b50a33d7239d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\011_N.png",
+      "bytes": 112716,
+      "zip_crc32": "be934567",
+      "sha256": "c73dc7317d4be0a60e005cf9b37bcba14123267fd7dc4835104bf9a687d4476d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\012_N.png",
+      "bytes": 122432,
+      "zip_crc32": "157e4c91",
+      "sha256": "077ad013f8404817fc0e525a07b424c73d7f52506e5a34b02eb641bdff6bf691"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\013_A.png",
+      "bytes": 57998,
+      "zip_crc32": "c14453a4",
+      "sha256": "a4b850af59bf4e7bd3f0e386ac190ead958fa22f9f463382f0a044082c09fd46"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\014_D.png",
+      "bytes": 63740,
+      "zip_crc32": "4ce52db3",
+      "sha256": "a8f2d47b476a817850d0d7f1c3ba5b4c8b778e0e1b308f7905c367b6521a7eb7"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\015_N.png",
+      "bytes": 66977,
+      "zip_crc32": "08063c4f",
+      "sha256": "f70210a2c33e557c0260151db5085642c16cd27797e6b8a6650dbf30cdbaa9b7"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\016_N.png",
+      "bytes": 66026,
+      "zip_crc32": "f633362f",
+      "sha256": "6ec35e082d8002eb7de0169ac7ed45706c1153b3cf552482ee6d8de8785cf14b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\017_G.png",
+      "bytes": 63819,
+      "zip_crc32": "11282304",
+      "sha256": "0b01107f12578cbfc054087d41b213a7c23dd39413df9685927fd21435fea5d1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\018_N.png",
+      "bytes": 123596,
+      "zip_crc32": "33cf11f0",
+      "sha256": "9d61df6ad56857f0fc1266b220e8e8dc66013c5432327ea58dda13f558512481"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\019_G.png",
+      "bytes": 55685,
+      "zip_crc32": "f12a698d",
+      "sha256": "d6c7521bac7e6c7d987e333ac32608d0dd9c376140a9181d4015f2c4732b9c83"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\020_N.png",
+      "bytes": 130621,
+      "zip_crc32": "97b3c87d",
+      "sha256": "4aeab309a96c91b12e11995b4a2d71d73ec3dad92ef71d48ea65913061c178cb"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\021_N.png",
+      "bytes": 138813,
+      "zip_crc32": "f9af43f3",
+      "sha256": "d1635c0f731489a5ac1029b2963fa53ad16db21227207ab704025612c645c5c9"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\022_N.png",
+      "bytes": 54975,
+      "zip_crc32": "02650e97",
+      "sha256": "3835c4484424555edde0025c955c9ec57fab43d1b1520c387b28b50c153f23e5"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\023_N.png",
+      "bytes": 55756,
+      "zip_crc32": "7c670e77",
+      "sha256": "01c40bdcb7392be1cf1629dc43a5aeb8d561dc83e4965ea8301882db44f37b16"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\024_N.png",
+      "bytes": 58888,
+      "zip_crc32": "5d206d1e",
+      "sha256": "64ba19a2bad81779eb03c5ecc5faadd298ea7723b7231c704fd868b0fade7e88"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\025_G.png",
+      "bytes": 116950,
+      "zip_crc32": "91f0ca72",
+      "sha256": "f442cea1a4df3009ca9f7993e27f30123162846eec81a2a8bceace68e0c86406"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\026_G.png",
+      "bytes": 118893,
+      "zip_crc32": "201bf9ac",
+      "sha256": "91648441f33ac71006b6fdec9860b1c9086a5e900dc82362d8e7fa19b0968ec4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\027_G.png",
+      "bytes": 101847,
+      "zip_crc32": "97025a2a",
+      "sha256": "2b23bb00629232d15b15c82316a9b2cbc10d3493b745f4cf5b4187581a1d29f3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\028_G.png",
+      "bytes": 116048,
+      "zip_crc32": "317eaa90",
+      "sha256": "a0d845af282d667ca3cceced5a5ecfd671f53ce01d49adc324ced9547679e581"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\029_D.png",
+      "bytes": 112657,
+      "zip_crc32": "5b153786",
+      "sha256": "7a8e8475ce91b556eb6f6a5ec373d158b54171e6612cba416ffd7741d7770611"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\030_A.png",
+      "bytes": 65934,
+      "zip_crc32": "206cc828",
+      "sha256": "eb33ec99057d5fd0c613765d9b971eeba313aae633afa7b7652757bc11fbefdc"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\031_G.png",
+      "bytes": 56152,
+      "zip_crc32": "f75c4dde",
+      "sha256": "bfd455c3b836beaa96f3bf843e809e0a9d1683ba2c0287095354a8091d612c90"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\032_A.png",
+      "bytes": 57135,
+      "zip_crc32": "35917a5a",
+      "sha256": "8260bcf432d5d105c29a68a371e5cfb6cd91768024b94b6c90b94f7b48e35463"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\033_G.png",
+      "bytes": 62838,
+      "zip_crc32": "8a003c97",
+      "sha256": "ce4bad7c55193dd2e3685d3ee539d6c56d38fea1109dbfb81224cb6a7ef0418e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\034_G.png",
+      "bytes": 62841,
+      "zip_crc32": "47067540",
+      "sha256": "353deaaa4fde303ac967b98351b8eb5713b07e2d3a626479e9eb0dee4463273c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\035_A.png",
+      "bytes": 59702,
+      "zip_crc32": "a42c0107",
+      "sha256": "8740e793600dadb6cfdc9af8ca93a779638fee8f7175215531b272ef440f275a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\036_A.png",
+      "bytes": 119616,
+      "zip_crc32": "c385454f",
+      "sha256": "9ca21cd5cc8f2db23246203242dec69215a34d5d2d2c1899d6d920c0b2eb3740"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\037_N.png",
+      "bytes": 112309,
+      "zip_crc32": "6f6c5bcf",
+      "sha256": "09235f99ebabebcfe6081926177289b7c0ee400cbbab495a30e89bc04a0646ce"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\038_N.png",
+      "bytes": 123183,
+      "zip_crc32": "476eb7db",
+      "sha256": "6f18d1f92ba5418dde8ef19ca012e618072ba0add686c8a0d22557c14a1bda4c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\039_N.png",
+      "bytes": 61936,
+      "zip_crc32": "cb168001",
+      "sha256": "de670d5a0c340087d7b7cc24a983ef6b93669d455cda37ddb0efca5f72c849ef"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\040_G.png",
+      "bytes": 57376,
+      "zip_crc32": "2cf36b5b",
+      "sha256": "c0b2a366c0f16e10304998f5a2cadea937ad72f868255389403ee200ecefc412"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\041_N.png",
+      "bytes": 63019,
+      "zip_crc32": "b4e60b09",
+      "sha256": "b465e324ec110d37246ec799d67c812bd93c3ed109594df68f3fa0cec3d857f2"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\042_A.png",
+      "bytes": 61893,
+      "zip_crc32": "f680d9bb",
+      "sha256": "56323fd372314aa510f9f5cd966524b293eba85857358a5d76f1a72b695ec225"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\043_N.png",
+      "bytes": 57511,
+      "zip_crc32": "11ebc685",
+      "sha256": "f1963bed55e8dd5b0bfdad34987fa1f2776771d7ca63e2bfd1cf9f7859f05993"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\044_N.png",
+      "bytes": 61088,
+      "zip_crc32": "c1c5ae57",
+      "sha256": "73ea41402401b60b06b652350362cbe78476a151602167a8bfb822a695b8a987"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\045_A.png",
+      "bytes": 56808,
+      "zip_crc32": "a8552d0d",
+      "sha256": "d139d0d147e47bf52c33cd5caee3b8b8243d149f1d9db6f09ad152b0cf3a0afd"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\046_N.png",
+      "bytes": 128442,
+      "zip_crc32": "276ead90",
+      "sha256": "eab86912650d5348204ca098f9456b00b3b074e6e4aac56075c1ceec0a272838"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\047_A.png",
+      "bytes": 59353,
+      "zip_crc32": "1a993732",
+      "sha256": "fc82c49dbbdcd1469e255c5d59ff443f338e572c339a1851dc0e2926eba5dd26"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\048_D.png",
+      "bytes": 117773,
+      "zip_crc32": "3b5ff958",
+      "sha256": "e4cf76ba2ff29a1562f25e51565434d52284c3fd8dc9afcbf996b4ac37eba284"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\049_A.png",
+      "bytes": 61480,
+      "zip_crc32": "dba52f0b",
+      "sha256": "53e4a54f76fb3727d1f89fd4aa2007e6995bdc41b9ab2ed029cc1de7cb599bf3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\050_A.png",
+      "bytes": 58231,
+      "zip_crc32": "cc3e12bc",
+      "sha256": "3e7966c2de1135392b1e51282bae6105ee82c1127d22ea08ed70adf10b2bd48a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\051_A.png",
+      "bytes": 56770,
+      "zip_crc32": "eb21a4ad",
+      "sha256": "22e3d6ae437bbaef2b1c8ae91007717637f416576c394178485b121f32c09bdc"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\052_N.png",
+      "bytes": 52643,
+      "zip_crc32": "1e2f6c13",
+      "sha256": "c9cef3536c9b8770bbe02633f022497107a50e379598673eb2bf71682d25a72b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\053_A.png",
+      "bytes": 63164,
+      "zip_crc32": "2bbf9009",
+      "sha256": "1dac6329eb8f694c9aa438bf14c83e134722be84ae34a9c7b2fe2acc421b044c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\054_G.png",
+      "bytes": 59598,
+      "zip_crc32": "0deec5f5",
+      "sha256": "20b249e7fea35ccd79d8469d15180e2f799ddee7338daed03a45a622fa36f0c1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\055_A.png",
+      "bytes": 56625,
+      "zip_crc32": "8196f5a9",
+      "sha256": "3a16a6f2ea5bf2223e955c9434fa194290a0d9c1a3004907da861d17fd17ed3c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\056_A.png",
+      "bytes": 55520,
+      "zip_crc32": "03e2d6d7",
+      "sha256": "a7453ba730c6658aa19208cbfd5f95652bda4c1bbd575301c8ad86d2da98cd36"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\057_A.png",
+      "bytes": 57327,
+      "zip_crc32": "2d43e530",
+      "sha256": "41168482dcf46b2f67df873ebb964e029b54586b0cd8f6a0e431c3028fe67cd2"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\058_D.png",
+      "bytes": 59355,
+      "zip_crc32": "ff1b70bf",
+      "sha256": "bb555b85e59b96ab80c08eeafd67d68c674e866beae2accb446f203ac32bc13c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\059_D.png",
+      "bytes": 57763,
+      "zip_crc32": "16b9d93c",
+      "sha256": "b36841ca2e5598d4b910f3282c31ad46a7c0d08025d83d803581dca800d47829"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\060_N.png",
+      "bytes": 51203,
+      "zip_crc32": "3da8737a",
+      "sha256": "8b60d36bec4373d03ca662f45a7b3cfc879b72f242c79c988516498e8d1e236e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\061_A.png",
+      "bytes": 109139,
+      "zip_crc32": "f83a692a",
+      "sha256": "aac4981f604c203a8d1cad41e4c746130215844cd689a43660cc2ed07151e138"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\062_G.png",
+      "bytes": 61895,
+      "zip_crc32": "e635ce20",
+      "sha256": "998467cb1e60962686ed805d58923f135d2e44e48134237ae3b4cbcbeeaf1dad"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\063_A.png",
+      "bytes": 54232,
+      "zip_crc32": "f4498efd",
+      "sha256": "14ad1af6588dae1c1aaf0b87dea4efdcbe458fbbbe80b6bc65908be1a30b9548"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\064_D.png",
+      "bytes": 60348,
+      "zip_crc32": "f92474de",
+      "sha256": "8cffccc43feb221314173e8d5a9478fc77c4dfd8da94c53109a3389cc0c3a1a1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\065_A.png",
+      "bytes": 60438,
+      "zip_crc32": "c891a16a",
+      "sha256": "e62f27d9a3dba72d58cd5cdd31f3ac8eb0bc76e8b5ec0ef738ca2ce29b5960cf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\066_N.png",
+      "bytes": 52919,
+      "zip_crc32": "ea065b97",
+      "sha256": "d2369f7c2b1d3719d7c512aec3e79676d73336fb80da4b572172a112e167a0a4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\067_G.png",
+      "bytes": 65187,
+      "zip_crc32": "5929e617",
+      "sha256": "ea15e53a049240431f791fa2ffe19a50aad85bdd745fa3e91e7176b77be5dfaf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\068_A.png",
+      "bytes": 50832,
+      "zip_crc32": "896442ed",
+      "sha256": "e57ccdecc3ca5db2aa69c0622041726ccc4c585faae24f9bcd3b4e51d04b5283"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\069_N.png",
+      "bytes": 63648,
+      "zip_crc32": "5ab5f2f8",
+      "sha256": "f726723299f7b5228d23f37ef83308c34049fa1a8c842c4f5b38e451afaefc0f"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\070_G.png",
+      "bytes": 63761,
+      "zip_crc32": "320b8cb3",
+      "sha256": "20f1c0dad52f0208fcb59f45db740bbb07c635b1a32fea18aeaf0969f0eaa0ae"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\071_N.png",
+      "bytes": 61872,
+      "zip_crc32": "50f45214",
+      "sha256": "78217376cb0898d15b72296638584919fe52b4e324305439f331a4956847fc8a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\072_N.png",
+      "bytes": 63683,
+      "zip_crc32": "13648f1f",
+      "sha256": "485f8631b0399a34d361db70fb84cc39c4db42560f00ba348a680fe879dd02f3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\073_D.png",
+      "bytes": 62923,
+      "zip_crc32": "bbcec25c",
+      "sha256": "3dd993ac481677a4c53eddb53d73120cc0bca8a971a4b5756eb27856ba2b6cc8"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\074_N.png",
+      "bytes": 59092,
+      "zip_crc32": "7eef9fee",
+      "sha256": "287231f44a4e49a79f00cf5e3d9ceb6f1eb3889e19144a361028220011827d3a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\075_D.png",
+      "bytes": 60127,
+      "zip_crc32": "3ba36953",
+      "sha256": "eee3f130afffe2047f5653247d1834452b421240d31b167bd96c2b632abab530"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\076_D.png",
+      "bytes": 59205,
+      "zip_crc32": "c8b3b011",
+      "sha256": "5ae0d9aec738c4bf224bbddc125af63e660be70f017b2a21d439a9d8bbbc5dc0"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\077_G.png",
+      "bytes": 58998,
+      "zip_crc32": "c68b7866",
+      "sha256": "b761fbe107dff8e6a5751827454acc4ef95a307bc3baf8c0a4e797d9bcba0a21"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\078_D.png",
+      "bytes": 53387,
+      "zip_crc32": "e7e494a5",
+      "sha256": "bde46d384b19b066edf00a4f8b98d24618bc221006bab3a3be42050a1eb579b5"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\079_N.png",
+      "bytes": 58994,
+      "zip_crc32": "09cbca1a",
+      "sha256": "456acad967656349d196b4ac82caf2d780c8d3159ef3e12ce836337378a2858d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\080_N.png",
+      "bytes": 63537,
+      "zip_crc32": "47154bae",
+      "sha256": "91752c2183f52928a213e81c93032978407162e5b9c5953db141ba390cffa5c6"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\081_D.png",
+      "bytes": 60554,
+      "zip_crc32": "b26036fe",
+      "sha256": "8e13deb2e05bcfae29175caf1e30d6889365cbc73ddcece0948fca6dbe1d27c2"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\082_N.png",
+      "bytes": 65639,
+      "zip_crc32": "dedb6f61",
+      "sha256": "ecbf5c61234dbf88b4e3e1e42eff0a7aac5079d14485e9f35fd1c9fa9dac26b1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\083_G.png",
+      "bytes": 66775,
+      "zip_crc32": "5b3188c6",
+      "sha256": "97747e6872310fdcce6a8ee018a74411d81d7e4d591dc509b002e8c7dea7da36"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\084_D.png",
+      "bytes": 60548,
+      "zip_crc32": "8641c1f5",
+      "sha256": "f7cbff96c7a371fe5532760cece06f52f32105179b4fcf179b72b15982ceed6d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\085_N.png",
+      "bytes": 62914,
+      "zip_crc32": "b3276283",
+      "sha256": "15fc5deb9e0fd0fd8c8b5e934312b5c89a7395611c0631dc95b5731a4f560f5a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\086_N.png",
+      "bytes": 57842,
+      "zip_crc32": "679d170b",
+      "sha256": "61d82a2c0bb07c76ddc501da6f120c05a2ffc219c21cf7071d7a53d0eb94ce32"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\087_D.png",
+      "bytes": 59145,
+      "zip_crc32": "e4732027",
+      "sha256": "ac8c67c8469d315e4ea8a5a7564f51d6568f7a6b197955044156aef25f1c35b4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\088_G.png",
+      "bytes": 63096,
+      "zip_crc32": "b237f22f",
+      "sha256": "21b8dcb7125949001a5adde38d549acf161e35f57223e9d0dd4b60fb86a85286"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\089_N.png",
+      "bytes": 61903,
+      "zip_crc32": "f77b545e",
+      "sha256": "8d3477b81b0ab20149c7a08988ce31ca3fb97363c90f94484a41a33edb5e9229"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\090_G.png",
+      "bytes": 60615,
+      "zip_crc32": "79542240",
+      "sha256": "23a870aa8d2bc2bc18d81c83ad5cf9c1236ff1b8d665ee069fbdf06e1c65bb2c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\091_N.png",
+      "bytes": 61528,
+      "zip_crc32": "661d61fd",
+      "sha256": "de7765b5adde33aea3712cb9fa377a22e4904694c3c2d65ae082e9d50f590f91"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\092_N.png",
+      "bytes": 56300,
+      "zip_crc32": "f63efd5e",
+      "sha256": "d45fe3484fefccbfb531c2c01a9ec4fdc261dab9aa0cfa19d31d5b26fa6ad2bc"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\093_N.png",
+      "bytes": 55554,
+      "zip_crc32": "828389fe",
+      "sha256": "d4d238e141f42fc6336ea66a4954c8187643a99f79cfae3c7785111b7df74f0a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\094_N.png",
+      "bytes": 52557,
+      "zip_crc32": "c225d477",
+      "sha256": "81a4a4e29b6fe5a32db3194f4afa65f5f52fde8f9d91d214a9c398ff16001de0"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\095_G.png",
+      "bytes": 55896,
+      "zip_crc32": "eec47535",
+      "sha256": "2825ecacd1898cb3a117235d8c104b7d6a07d6e9d20b854da3ac94b5e09c12bd"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\096_D.png",
+      "bytes": 65107,
+      "zip_crc32": "93ebe77f",
+      "sha256": "c4d4e76648eb62b8aeb1e734f3bbe091ac97683280cf81510568c42515fc2e88"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\097_D.png",
+      "bytes": 112681,
+      "zip_crc32": "63b3e85e",
+      "sha256": "295b3ebdc06af8cdf6bdd09fb22f3502205467f0984a19cd4277745372d9bda1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\098_D.png",
+      "bytes": 121622,
+      "zip_crc32": "3fc53488",
+      "sha256": "988b45638bac76d00937c45f4cf1171b7d9cf2fc894c89834f689744505bc7cf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\099_D.png",
+      "bytes": 61708,
+      "zip_crc32": "eeed23c4",
+      "sha256": "2292d7f16c117058039e73d1f420b02aca2d25d88806a2864290a44795c4ed34"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\annotation\\100_N.png",
+      "bytes": 57446,
+      "zip_crc32": "6999e873",
+      "sha256": "9d8f949b308af591df6cc1ec111ad44fd26dcc3df57548bb57438794d9d69f5c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\001_G.png",
+      "bytes": 1573064,
+      "zip_crc32": "e3333977",
+      "sha256": "eae77945b464e93366929e96def6b485d50c4a8942382f8dded37746ef966e27"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\002_N.png",
+      "bytes": 1738208,
+      "zip_crc32": "7d64120e",
+      "sha256": "e175e173b515cd7cb0638347c259bbac3d466e4ad837e92cd2cdd1014e23b419"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\003_N.png",
+      "bytes": 1632553,
+      "zip_crc32": "004cb8bd",
+      "sha256": "0b4517bda5a3596134478aa75b9f9537705989d926d25687c4fb78c050e67dab"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\004_D.png",
+      "bytes": 1394207,
+      "zip_crc32": "24a78b61",
+      "sha256": "80431ad69d887ec8cd409a0ff44a8747e307db0b5b9d116963fe5cd9e476b06a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\005_N.png",
+      "bytes": 1582334,
+      "zip_crc32": "3cd9a51e",
+      "sha256": "d128fb41b538a046c70d158bf6b640687f4912a79e100861a924c76efd0ef761"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\006_A.png",
+      "bytes": 1453490,
+      "zip_crc32": "ca233e85",
+      "sha256": "9ac58c476e77b881f0f0ff1b2dcc0d88b27b56a32c75f2030a5bd4601481f3b0"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\007_N.png",
+      "bytes": 1574946,
+      "zip_crc32": "57a83644",
+      "sha256": "d2f180c948b7a28b5011a1864f6869b789b106c291ac6c8a0cd5a1e8e4ea1094"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\008_N.png",
+      "bytes": 3811625,
+      "zip_crc32": "290ab963",
+      "sha256": "5414526db388061a339f4c06f5403ea4eaf5b7ef9c9acbb86d76cce8c0bf4137"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\009_D.png",
+      "bytes": 3860668,
+      "zip_crc32": "d493c5a6",
+      "sha256": "7c0299fa369899146d679c5528529623804cd4d83f60dfb8c043140b56e6fa58"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\010_D.png",
+      "bytes": 3816594,
+      "zip_crc32": "e421a369",
+      "sha256": "8aabd8223566ce10c006b1cddcb939c5e6790b1aae50f0abde14b65fadb2fbe3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\011_N.png",
+      "bytes": 3809599,
+      "zip_crc32": "48c7590e",
+      "sha256": "b53e540345d4b55528b735a3cccc6d1b1b298e62a7124ce2f5c57cb04d8f2a1b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\012_N.png",
+      "bytes": 3780492,
+      "zip_crc32": "a15ef74c",
+      "sha256": "da3e68febc4d7f9ebf82f4c2fbf95619f53923606e70b4696c990f9be500a799"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\013_A.png",
+      "bytes": 1403431,
+      "zip_crc32": "a37cb97b",
+      "sha256": "f9ef8b41e0d6b97b57ba09b6c89f8bff6e688eccfbcdc6fe66d06d480927757f"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\014_D.png",
+      "bytes": 1757306,
+      "zip_crc32": "977af9dc",
+      "sha256": "a63e4fe6e49f6133ca62e599319ff7dfef1f1d790cd0f0bdecf93903a115a13e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\015_N.png",
+      "bytes": 1378399,
+      "zip_crc32": "6c4d861e",
+      "sha256": "8f2516bf2447ed78b26bfe83fef456c73108a05499fb0b154c60d6c01546ecd8"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\016_N.png",
+      "bytes": 1476608,
+      "zip_crc32": "e6888d65",
+      "sha256": "242dced6d1a70791cabb9c4d7f7f64dbc729f5f14391e32e76ece685d6a8ba07"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\017_G.png",
+      "bytes": 1788768,
+      "zip_crc32": "bb3a7e59",
+      "sha256": "1b817c12cb6f723e9eb8d35620a26cd9ce0f4624bf009d7f6336b7d9a27c0c9f"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\018_N.png",
+      "bytes": 3894554,
+      "zip_crc32": "67f72741",
+      "sha256": "76d54b7e5b0d124480d19ecc0bf3790df9b0514346172e1ad0833514514a7b92"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\019_G.png",
+      "bytes": 1519633,
+      "zip_crc32": "afc3099c",
+      "sha256": "f91d220688e5309e16fbb5979047ac8cd7155835676c5aba8db1c1d59d10a528"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\020_N.png",
+      "bytes": 3956381,
+      "zip_crc32": "e4202645",
+      "sha256": "f317aac6ca7e1bb5395e8fc00324a9bd8df417f63967e4fbe0d34c1e2f791e4b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\021_N.png",
+      "bytes": 3994110,
+      "zip_crc32": "f99da881",
+      "sha256": "9b02499639311282bae908b5747ae12509e46191d2ab0f5adcb47adff3f2ce48"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\022_N.png",
+      "bytes": 1404948,
+      "zip_crc32": "83bb740b",
+      "sha256": "ed6815c5bec27fb2dc7ee3abc4f3033f5989c5103a482fb781aaf590f197c3b4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\023_N.png",
+      "bytes": 1418148,
+      "zip_crc32": "624c7f65",
+      "sha256": "88289fe73aa32f278b7b34cfa9c2a50d1292ecf7138f03d918ba0b78d3c71af3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\024_N.png",
+      "bytes": 1309870,
+      "zip_crc32": "f3ec74fa",
+      "sha256": "897691a207c6124755c49beeff25342d61e513e00c19ab369d7895dcce694505"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\025_G.png",
+      "bytes": 3849850,
+      "zip_crc32": "4e15a5e1",
+      "sha256": "d378b10467dcaf3a255ae6ae4732e1f63b2f7fef0f88021588a3ddfd98625b5a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\026_G.png",
+      "bytes": 3915685,
+      "zip_crc32": "ce68a378",
+      "sha256": "9f8dbcde979c1c17f68ec861872e721c726f3d7c7a0c9552c772f0825cd68405"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\027_G.png",
+      "bytes": 3718813,
+      "zip_crc32": "0c87e6ae",
+      "sha256": "2d189aad3c2795b446f04a0e2aa41dc17e67e360cce7ee20fcac6b6f57511f5b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\028_G.png",
+      "bytes": 3788569,
+      "zip_crc32": "2b3aaef7",
+      "sha256": "46004a1fd6b05a202bbbfbccf99f05d6138fdeb498bce5c27b3db8336546ae0d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\029_D.png",
+      "bytes": 3804016,
+      "zip_crc32": "1e5f25a9",
+      "sha256": "58addf323eab43ec6c7cf0a9b1b6adecbb01a0c73b6311e234785e14c2dc070b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\030_A.png",
+      "bytes": 1694892,
+      "zip_crc32": "70ddb9aa",
+      "sha256": "84ebb93945394dc44608491e5b1fecb59332ffc2b0ecf46f58684af23bd46b82"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\031_G.png",
+      "bytes": 1782268,
+      "zip_crc32": "59a58cd3",
+      "sha256": "7590c77326bad25344bb6dd8f274081d314ac1f6f9d01ab47393204948489c1b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\032_A.png",
+      "bytes": 1500820,
+      "zip_crc32": "fdcfeb32",
+      "sha256": "26e070eac09e3c186e2c4e88a534d6957e2e644a52620092db7bb6d620fb06bf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\033_G.png",
+      "bytes": 1626326,
+      "zip_crc32": "5cd51ae8",
+      "sha256": "bcba509661d7d16a90395c6d5b0aa006ea7e677dcf4024cc516d8a57d73ab220"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\034_G.png",
+      "bytes": 1164099,
+      "zip_crc32": "73e6d847",
+      "sha256": "c03045adb72c6a6fc0628ba2e015841d15aae52daf74c4e722ceb06fb699e7e1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\035_A.png",
+      "bytes": 1622408,
+      "zip_crc32": "097203aa",
+      "sha256": "78e9704ea28aa23ea7a6e132283ad11409c889bb7c0bfbd96fe0848771f168cc"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\036_A.png",
+      "bytes": 3904008,
+      "zip_crc32": "28448458",
+      "sha256": "ac4bd5b27d31043e9e31d583cb28821c5e584548366c9224ec942243dcaaa142"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\037_N.png",
+      "bytes": 3869241,
+      "zip_crc32": "d98b879f",
+      "sha256": "1055d049d2adafda02efd2d07ff35609499d07708fdbb8ce23a3d2172ea46aae"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\038_N.png",
+      "bytes": 3890361,
+      "zip_crc32": "01d69ddf",
+      "sha256": "ec5fd46542761666a7c4e5099f2ad9836a54ce533d41c4e265bd856cffb7379c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\039_N.png",
+      "bytes": 1643236,
+      "zip_crc32": "0d5d4f2f",
+      "sha256": "4b9c13980fa94881ba3e77e8143f82453a38ab7b032a805b48ce2771261951eb"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\040_G.png",
+      "bytes": 1474402,
+      "zip_crc32": "536099ef",
+      "sha256": "6498d8947cddce9afc276edc2232a97e6939b9357487eb80e6f26d544e77228d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\041_N.png",
+      "bytes": 1620420,
+      "zip_crc32": "7b0dab18",
+      "sha256": "83028cdfe15f554e0fb157180c80b8ea753f097505be7ea1a31caee13d527d22"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\042_A.png",
+      "bytes": 1563781,
+      "zip_crc32": "f44a3500",
+      "sha256": "687a9b771e3492548a24888812dffe1b7c919d7b09d4494f17435d0148187aa5"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\043_N.png",
+      "bytes": 1828404,
+      "zip_crc32": "d043b21b",
+      "sha256": "5eb7b49624c820cd90ea1a0a039b0e619e177712fa1a8cd6cb7be3398465e923"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\044_N.png",
+      "bytes": 1789052,
+      "zip_crc32": "9e85e834",
+      "sha256": "3f5c77b485c6560029dd1bab53990fc4c178dffaf82c2920ff2148bc5c7722f1"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\045_A.png",
+      "bytes": 1636323,
+      "zip_crc32": "ab322cf2",
+      "sha256": "ad084813af59d20a1cc57996c2319205dbcb4cdc6678eda5173a8fd823ff0888"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\046_N.png",
+      "bytes": 4049676,
+      "zip_crc32": "db2121f1",
+      "sha256": "e108ad9896864f2a8f4de3587180a5ccb8623a341007da88d6c0e1ab6bfa6499"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\047_A.png",
+      "bytes": 1649254,
+      "zip_crc32": "07372912",
+      "sha256": "4f192dd3d960099d5bea4e53767fcc8f2e53e72ad8daafb4110ddd9658fbde1c"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\048_D.png",
+      "bytes": 3943717,
+      "zip_crc32": "2a417e2e",
+      "sha256": "4bbfe7cacd7e64dab88de2de8c8956a87d531865672aad7caea7f5300b1e8b1d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\049_A.png",
+      "bytes": 1711660,
+      "zip_crc32": "6b6b3086",
+      "sha256": "02593e3b1b340696631d766364877cf13a1ca3fdc44f0826185e5ff9bcbf5e45"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\050_A.png",
+      "bytes": 1589082,
+      "zip_crc32": "31957f23",
+      "sha256": "4ee010dd9581cd63cabb35b203a56f8f9b613e277a2a13c31302c5f5630ca535"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\051_A.png",
+      "bytes": 1543234,
+      "zip_crc32": "049cf69b",
+      "sha256": "35bea263682e1409f6655de00099fc3c329aec194cb9cea5462e6c8b5989878f"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\052_N.png",
+      "bytes": 1361180,
+      "zip_crc32": "24fadcb7",
+      "sha256": "4b2dc8c5f2163d0fe0592ac9082f6c4903742e19395bd97d23ef3072e344f0f6"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\053_A.png",
+      "bytes": 1668800,
+      "zip_crc32": "1c1ac425",
+      "sha256": "9113d67566d770c0a0d0b8cf8e3b6ecbe5c825fa7aa3f21d966759d114f46971"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\054_G.png",
+      "bytes": 1459605,
+      "zip_crc32": "1b76b8da",
+      "sha256": "25e4f0312401a4e8ecdcf22752cc9ca123fe108bb21b6275cee80cba023752a4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\055_A.png",
+      "bytes": 1804307,
+      "zip_crc32": "51af2246",
+      "sha256": "16157f7139e2666777bfbccceea8d62beb59752cb9fff8c0dce11a6bd2b9d331"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\056_A.png",
+      "bytes": 1796521,
+      "zip_crc32": "a569227e",
+      "sha256": "39b689248718708aca2f0f0066a17b5b6657138379ac2c6b54b7d5f1a0aa3f6b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\057_A.png",
+      "bytes": 1517486,
+      "zip_crc32": "761df940",
+      "sha256": "373ac7c381c876d0b7f3f0168ba72096ca196b42125450ba16e86a9d37c31715"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\058_D.png",
+      "bytes": 1720234,
+      "zip_crc32": "260325e2",
+      "sha256": "fe2e169bc0d3153b970a019afda9d6b3dd60fd6cc7876c87e7291d401592b4d6"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\059_D.png",
+      "bytes": 1683269,
+      "zip_crc32": "92754283",
+      "sha256": "f8cece8925cbc654561c1b98741d44e9949b716d2e06fe790c1cff2286bce6e7"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\060_N.png",
+      "bytes": 1750782,
+      "zip_crc32": "d667b0d4",
+      "sha256": "029457ab4c0d3750732c49e380dac8f79b5f8951f84fefbb9f91d0cf03df8e14"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\061_A.png",
+      "bytes": 3830622,
+      "zip_crc32": "bf0551b1",
+      "sha256": "c79bca1561065afe8e027ecd3cabd58ae05d52370b44e59ac5e22bd71ec5f3d5"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\062_G.png",
+      "bytes": 1637037,
+      "zip_crc32": "312637a9",
+      "sha256": "c3c167dd9a86aadf823a673833b9f1e19e7c464c5b079e52c5055811a310dac3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\063_A.png",
+      "bytes": 1737881,
+      "zip_crc32": "6f98777d",
+      "sha256": "7a59d8d766d4e02a125e44f391673c48b9dcfa7a46775d5c3a979a26450d2bf9"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\064_D.png",
+      "bytes": 1506358,
+      "zip_crc32": "7880c892",
+      "sha256": "e5669a3d81da1aa9e479a06a4df34010e5fda6a16d8a3367e7abc31178b6baf3"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\065_A.png",
+      "bytes": 1515203,
+      "zip_crc32": "051b610c",
+      "sha256": "c963166a2e38b6185ec4f2cc7c6a543077b80289d4ec63066bdb368bdeb4a777"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\066_N.png",
+      "bytes": 1570624,
+      "zip_crc32": "ef8bc568",
+      "sha256": "ba84e4bfc3e6ff3c8f8dd1c5e8926aa72abf223953e9eb637117afe2dabd1184"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\067_G.png",
+      "bytes": 1734785,
+      "zip_crc32": "28ca5362",
+      "sha256": "c65fd3043c4fb0c21e14b75a4760b52fee7480e2b934a12cb09a0d4c2d7aa588"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\068_A.png",
+      "bytes": 1461458,
+      "zip_crc32": "75b077cd",
+      "sha256": "aaed9d542b318902c3d7661a774859122d7ddb22fb9d6ceb7756a9ef51428c25"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\069_N.png",
+      "bytes": 1634321,
+      "zip_crc32": "125e0c86",
+      "sha256": "cfcdcd780b552567e732b4e1df9cebe8a332e6b8262ac4db19397b0d39314114"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\070_G.png",
+      "bytes": 1699343,
+      "zip_crc32": "bf768623",
+      "sha256": "a23a8d9c3c5ca8b795a6a3cc27cdb7f5cfa3f8178142d17c8547a0000371b83f"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\071_N.png",
+      "bytes": 1636080,
+      "zip_crc32": "037996da",
+      "sha256": "ba83ad518906eb7e110e37fb9f1f9e046db2c8df2db40e5204c53a139e48d1e4"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\072_N.png",
+      "bytes": 1686831,
+      "zip_crc32": "babfcc75",
+      "sha256": "935964fa162281fb9e7a3d0fb78e3cd71ddbba9944f7cbfcb38bcca3dc235262"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\073_D.png",
+      "bytes": 1798995,
+      "zip_crc32": "695b8d6a",
+      "sha256": "7a9ca280d50c8dbae80baaaca3ee979646d3c4a8c111a4db803f055192068a28"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\074_N.png",
+      "bytes": 1498624,
+      "zip_crc32": "44861488",
+      "sha256": "776e2e4b2ce8a604bb676494a790968f2d83454dc682d127c038fa5e50f808ed"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\075_D.png",
+      "bytes": 1567381,
+      "zip_crc32": "8a944bb5",
+      "sha256": "d43d6c331b9ef50cabd9d664074bb00b6754319680029291023eadad92b6dcd5"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\076_D.png",
+      "bytes": 1526768,
+      "zip_crc32": "3904d3f7",
+      "sha256": "ac95b9730d7287890ed80bf97bc8e21305d32ab94c10eee6bb98150d3f7f7242"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\077_G.png",
+      "bytes": 1475264,
+      "zip_crc32": "0776c6cb",
+      "sha256": "9a3a948519ff006adcf1a23e6640d5268bde3eee058a07c0aa3f805af6976f4d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\078_D.png",
+      "bytes": 1383483,
+      "zip_crc32": "9e1fb31e",
+      "sha256": "2f3b8fadac0f50718583146075fc000191ba14e46dd2a7a6aa547122f4c7c26e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\079_N.png",
+      "bytes": 1466682,
+      "zip_crc32": "81017a9c",
+      "sha256": "f3b862e2814b494453681a67ee354dfcf93a494ee6987e45e687d12bd18500a8"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\080_N.png",
+      "bytes": 1739254,
+      "zip_crc32": "f187c60d",
+      "sha256": "d777d5701d2ee9dfaa8e525b61d563936fdbecd59de7b045fd7f5d95a52ca7bc"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\081_D.png",
+      "bytes": 1767429,
+      "zip_crc32": "244a490f",
+      "sha256": "a215a49f6cbc030791c7c7000a8e3d97c275fcb12c3fa3647ad4197b6e7028cb"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\082_N.png",
+      "bytes": 1540384,
+      "zip_crc32": "39573bc9",
+      "sha256": "26e63f2d7bb3c0d0584d02ea275f6f0e66977632a798da814e6f296487e491ba"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\083_G.png",
+      "bytes": 1799701,
+      "zip_crc32": "60128d03",
+      "sha256": "543b21ef2c5bb7421e7d731ccc2d1d844ff6fb2956ce8629fe3277d5a9f1555e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\084_D.png",
+      "bytes": 1673910,
+      "zip_crc32": "06a620cf",
+      "sha256": "9893804101a3fa4e4c164a6681f94debb5525ab06fa994347c72b4e03adc82f0"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\085_N.png",
+      "bytes": 1818149,
+      "zip_crc32": "dace0e3a",
+      "sha256": "79c6d3466187750ff914a886850118d7e4bbb3578597db7f3618d5dd0bc4165e"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\086_N.png",
+      "bytes": 1802836,
+      "zip_crc32": "9eab91c8",
+      "sha256": "90c409ad4a260bdde69f5000f3ee07f16c15867de84128c9a767f71d924a25ee"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\087_D.png",
+      "bytes": 1493000,
+      "zip_crc32": "29abf5d6",
+      "sha256": "e292fa0e4a2ebe4f54fa4295dec987cc4b3191bf8a453824899a19ff71a0a118"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\088_G.png",
+      "bytes": 1596238,
+      "zip_crc32": "08457f9f",
+      "sha256": "2e6ff437764d0634b7e6ec3cbe71264e488f10bdbea7c4e80515d1e3b41d624a"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\089_N.png",
+      "bytes": 1635994,
+      "zip_crc32": "149c7528",
+      "sha256": "f7f498a549ea7a1ce6e3b4ce4c67e89767e72cff877b095a807374891921eb99"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\090_G.png",
+      "bytes": 1363164,
+      "zip_crc32": "3e637ef9",
+      "sha256": "45c547fbb8a3d6af941da9a9a84aa50ab3271c84cbc03f80696385018dda5c87"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\091_N.png",
+      "bytes": 1379257,
+      "zip_crc32": "2c1385dd",
+      "sha256": "cef2c638ad2ace2a73958f355755314da2a128ea455f9c7a492e767da5158db7"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\092_N.png",
+      "bytes": 1461648,
+      "zip_crc32": "1982a676",
+      "sha256": "9f92f66db08fb991002ecc4bbcd156cb4f60fd0a06c2e26ba83a8e08fc3f12a9"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\093_N.png",
+      "bytes": 1725070,
+      "zip_crc32": "2f58a616",
+      "sha256": "1570a4685b9d8ff16e7c7a008383e5cac7f902f2a685964ac225ed655eaaf85b"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\094_N.png",
+      "bytes": 1468849,
+      "zip_crc32": "510f5a6f",
+      "sha256": "5922d8441ccac9240ca1e347e33ece979d91f9de029c648d82673aa39eefd3d2"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\095_G.png",
+      "bytes": 1382980,
+      "zip_crc32": "2c010d9d",
+      "sha256": "b0b11bb7e4f55ff01b80b8e0981cd69aa6f36351f3e895c1ef5a9607d862542d"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\096_D.png",
+      "bytes": 1683833,
+      "zip_crc32": "0336923a",
+      "sha256": "e2d704f8d1c9abe1cd494e5bb0138b5caba46e29dc8dd88e821c16230682ab51"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\097_D.png",
+      "bytes": 3927815,
+      "zip_crc32": "ea8a9650",
+      "sha256": "03492050ddb8872392e99f7008b65be65d44b29d217cec83ca35c25c305cd078"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\098_D.png",
+      "bytes": 3885166,
+      "zip_crc32": "7875389d",
+      "sha256": "819f5d556958902f48b026ba432fa8de2717230952852ef5b87ef7d8434eac44"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\099_D.png",
+      "bytes": 1644327,
+      "zip_crc32": "56375286",
+      "sha256": "87b84ebf74f68ab681206912da5bf10bf87156ad7c68371eaa00bdfda5b35daf"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\images\\100_N.png",
+      "bytes": 1628862,
+      "zip_crc32": "32faf72b",
+      "sha256": "5253e9a6064e511125c99dc163d7e50d1d4baccd1d9160bdcd423ae6f1a12b30"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\metadata.xlsx",
+      "bytes": 12893,
+      "zip_crc32": "e0542a02",
+      "sha256": "0791106fc5d87c41fca2329a522891330a35bbfedae8dbe9e68dd3765a88cd55"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\testing.txt",
+      "bytes": 200,
+      "zip_crc32": "2f827971",
+      "sha256": "d68c9c9a43b6997ffdd03db69654ff2c8f8aa5f495696a4106ca6ecda85b7e93"
+    },
+    {
+      "path": "datasets\\Fundus-AVSeg\\training.txt",
+      "bytes": 800,
+      "zip_crc32": "62cb4e6d",
+      "sha256": "f3f0aa3fd36c138e08cfe6af018afe998e37dcc8b15385307995db3cbebc0f1e"
+    }
+  ]
+}

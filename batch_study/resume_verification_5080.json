@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": {
+    "model": true,
+    "optimizer": true,
+    "scaler": true,
+    "rng": true,
+    "consumed": true,
+    "step": true,
+    "signatures": true,
+    "lr_next": true
+  },
+  "maximum_loss_difference": 0.0,
+  "updates_compared": 512,
+  "pause_at_draw": 256,
+  "resume_to_draw": 2048,
+  "scope": "RTX 5080 only, two independent processes vs uninterrupted"
+}

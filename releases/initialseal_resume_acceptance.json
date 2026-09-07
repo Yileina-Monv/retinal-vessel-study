@@ -1,0 +1,1 @@
+{"checks":{"consumed":true,"history":true,"initial_digest":true,"model":true,"optimizer":true,"rng":true,"scaler":true,"signatures":true,"step":true},"scope":"same_5080_new_process_resume_8_to_16_vs_uninterrupted_16","status":"passed"}

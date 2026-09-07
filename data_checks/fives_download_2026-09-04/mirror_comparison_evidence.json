@@ -1,0 +1,6413 @@
+{
+  "source": "https://www.kaggle.com/api/v1/datasets/download/sushanthreddypotu/fives-dataset?datasetVersionNumber=2",
+  "remote_archive_bytes": 1763510718,
+  "downloaded_index_bytes": 592318,
+  "signed_query_retained": false,
+  "comparison_png_entries": 1600,
+  "comparison_members": {
+    "test/Ground truth/100_D.png": {
+      "bytes": 58862,
+      "crc32": "5f13e8e5"
+    },
+    "test/Ground truth/101_G.png": {
+      "bytes": 45631,
+      "crc32": "228d6dfd"
+    },
+    "test/Ground truth/102_G.png": {
+      "bytes": 52525,
+      "crc32": "d6120c4c"
+    },
+    "test/Ground truth/103_G.png": {
+      "bytes": 55211,
+      "crc32": "23cd2dc0"
+    },
+    "test/Ground truth/104_G.png": {
+      "bytes": 65889,
+      "crc32": "2dbbf968"
+    },
+    "test/Ground truth/105_G.png": {
+      "bytes": 65776,
+      "crc32": "14d0dfa2"
+    },
+    "test/Ground truth/106_G.png": {
+      "bytes": 66869,
+      "crc32": "d749763c"
+    },
+    "test/Ground truth/107_G.png": {
+      "bytes": 79660,
+      "crc32": "3882ecf6"
+    },
+    "test/Ground truth/108_G.png": {
+      "bytes": 33701,
+      "crc32": "cbad009f"
+    },
+    "test/Ground truth/109_G.png": {
+      "bytes": 72610,
+      "crc32": "b61e69b0"
+    },
+    "test/Ground truth/10_A.png": {
+      "bytes": 54747,
+      "crc32": "2ae9c900"
+    },
+    "test/Ground truth/110_G.png": {
+      "bytes": 67004,
+      "crc32": "1b9d07b2"
+    },
+    "test/Ground truth/111_G.png": {
+      "bytes": 57232,
+      "crc32": "0fadbb4f"
+    },
+    "test/Ground truth/112_G.png": {
+      "bytes": 59988,
+      "crc32": "feb5c72c"
+    },
+    "test/Ground truth/113_G.png": {
+      "bytes": 29595,
+      "crc32": "4045ba21"
+    },
+    "test/Ground truth/114_G.png": {
+      "bytes": 28318,
+      "crc32": "c6a4ca74"
+    },
+    "test/Ground truth/115_G.png": {
+      "bytes": 69909,
+      "crc32": "57683407"
+    },
+    "test/Ground truth/116_G.png": {
+      "bytes": 56256,
+      "crc32": "29539d9f"
+    },
+    "test/Ground truth/117_G.png": {
+      "bytes": 64150,
+      "crc32": "d0a0962a"
+    },
+    "test/Ground truth/118_G.png": {
+      "bytes": 77264,
+      "crc32": "37103615"
+    },
+    "test/Ground truth/119_G.png": {
+      "bytes": 28265,
+      "crc32": "678b9ba5"
+    },
+    "test/Ground truth/11_A.png": {
+      "bytes": 59991,
+      "crc32": "4fca1be1"
+    },
+    "test/Ground truth/120_G.png": {
+      "bytes": 67394,
+      "crc32": "fd718eb6"
+    },
+    "test/Ground truth/121_G.png": {
+      "bytes": 36528,
+      "crc32": "fa590c60"
+    },
+    "test/Ground truth/122_G.png": {
+      "bytes": 21972,
+      "crc32": "f734d84b"
+    },
+    "test/Ground truth/123_G.png": {
+      "bytes": 24126,
+      "crc32": "6ffbf70c"
+    },
+    "test/Ground truth/124_G.png": {
+      "bytes": 51262,
+      "crc32": "a878c703"
+    },
+    "test/Ground truth/125_G.png": {
+      "bytes": 61053,
+      "crc32": "542ee831"
+    },
+    "test/Ground truth/126_G.png": {
+      "bytes": 57263,
+      "crc32": "866cd399"
+    },
+    "test/Ground truth/127_G.png": {
+      "bytes": 54086,
+      "crc32": "14f2d58e"
+    },
+    "test/Ground truth/128_G.png": {
+      "bytes": 59027,
+      "crc32": "60e6168e"
+    },
+    "test/Ground truth/129_G.png": {
+      "bytes": 50762,
+      "crc32": "81d24869"
+    },
+    "test/Ground truth/12_A.png": {
+      "bytes": 63164,
+      "crc32": "23b3eda6"
+    },
+    "test/Ground truth/130_G.png": {
+      "bytes": 67726,
+      "crc32": "495f8921"
+    },
+    "test/Ground truth/131_G.png": {
+      "bytes": 71387,
+      "crc32": "1180c4f4"
+    },
+    "test/Ground truth/132_G.png": {
+      "bytes": 62667,
+      "crc32": "6dfafc6a"
+    },
+    "test/Ground truth/133_G.png": {
+      "bytes": 33191,
+      "crc32": "4ba5340b"
+    },
+    "test/Ground truth/134_G.png": {
+      "bytes": 69490,
+      "crc32": "6979c8f4"
+    },
+    "test/Ground truth/135_G.png": {
+      "bytes": 46982,
+      "crc32": "d0bceb21"
+    },
+    "test/Ground truth/136_G.png": {
+      "bytes": 31078,
+      "crc32": "b039f827"
+    },
+    "test/Ground truth/137_G.png": {
+      "bytes": 35055,
+      "crc32": "70374bca"
+    },
+    "test/Ground truth/138_G.png": {
+      "bytes": 28740,
+      "crc32": "7e014e76"
+    },
+    "test/Ground truth/139_G.png": {
+      "bytes": 77804,
+      "crc32": "3ebf0d12"
+    },
+    "test/Ground truth/13_A.png": {
+      "bytes": 66258,
+      "crc32": "629ef7b8"
+    },
+    "test/Ground truth/140_G.png": {
+      "bytes": 55893,
+      "crc32": "3f4b50cb"
+    },
+    "test/Ground truth/141_G.png": {
+      "bytes": 70568,
+      "crc32": "61ac25d1"
+    },
+    "test/Ground truth/142_G.png": {
+      "bytes": 78748,
+      "crc32": "3701a182"
+    },
+    "test/Ground truth/143_G.png": {
+      "bytes": 77154,
+      "crc32": "bc8e8ca0"
+    },
+    "test/Ground truth/144_G.png": {
+      "bytes": 43186,
+      "crc32": "46e4efcf"
+    },
+    "test/Ground truth/145_G.png": {
+      "bytes": 40999,
+      "crc32": "3a9bc5fd"
+    },
+    "test/Ground truth/146_G.png": {
+      "bytes": 78713,
+      "crc32": "69600aa8"
+    },
+    "test/Ground truth/147_G.png": {
+      "bytes": 62676,
+      "crc32": "c9bb4508"
+    },
+    "test/Ground truth/148_G.png": {
+      "bytes": 39965,
+      "crc32": "caebc8cf"
+    },
+    "test/Ground truth/149_G.png": {
+      "bytes": 34798,
+      "crc32": "f7e61d92"
+    },
+    "test/Ground truth/14_A.png": {
+      "bytes": 69173,
+      "crc32": "f1990ace"
+    },
+    "test/Ground truth/150_G.png": {
+      "bytes": 69459,
+      "crc32": "06fd00bb"
+    },
+    "test/Ground truth/151_N.png": {
+      "bytes": 71887,
+      "crc32": "4e96c7f4"
+    },
+    "test/Ground truth/152_N.png": {
+      "bytes": 69307,
+      "crc32": "6295b126"
+    },
+    "test/Ground truth/153_N.png": {
+      "bytes": 57571,
+      "crc32": "11f5ebcd"
+    },
+    "test/Ground truth/154_N.png": {
+      "bytes": 52859,
+      "crc32": "46b1bbb2"
+    },
+    "test/Ground truth/155_N.png": {
+      "bytes": 56153,
+      "crc32": "178c5cd8"
+    },
+    "test/Ground truth/156_N.png": {
+      "bytes": 55983,
+      "crc32": "979f7b61"
+    },
+    "test/Ground truth/157_N.png": {
+      "bytes": 76943,
+      "crc32": "6cbd6086"
+    },
+    "test/Ground truth/158_N.png": {
+      "bytes": 69607,
+      "crc32": "71e87c04"
+    },
+    "test/Ground truth/159_N.png": {
+      "bytes": 72591,
+      "crc32": "93d212ad"
+    },
+    "test/Ground truth/15_A.png": {
+      "bytes": 66792,
+      "crc32": "d6e26e77"
+    },
+    "test/Ground truth/160_N.png": {
+      "bytes": 70046,
+      "crc32": "08c912d7"
+    },
+    "test/Ground truth/161_N.png": {
+      "bytes": 64635,
+      "crc32": "1e7d74b3"
+    },
+    "test/Ground truth/162_N.png": {
+      "bytes": 67085,
+      "crc32": "e6f432d1"
+    },
+    "test/Ground truth/163_N.png": {
+      "bytes": 62360,
+      "crc32": "e482384b"
+    },
+    "test/Ground truth/164_N.png": {
+      "bytes": 65860,
+      "crc32": "45fd7c09"
+    },
+    "test/Ground truth/165_N.png": {
+      "bytes": 76798,
+      "crc32": "c445cea0"
+    },
+    "test/Ground truth/166_N.png": {
+      "bytes": 74134,
+      "crc32": "718ae12a"
+    },
+    "test/Ground truth/167_N.png": {
+      "bytes": 67658,
+      "crc32": "ba142246"
+    },
+    "test/Ground truth/168_N.png": {
+      "bytes": 69455,
+      "crc32": "a554b399"
+    },
+    "test/Ground truth/169_N.png": {
+      "bytes": 69294,
+      "crc32": "1e3bc90f"
+    },
+    "test/Ground truth/16_A.png": {
+      "bytes": 65926,
+      "crc32": "ddaa71fe"
+    },
+    "test/Ground truth/170_N.png": {
+      "bytes": 70526,
+      "crc32": "f75c9145"
+    },
+    "test/Ground truth/171_N.png": {
+      "bytes": 79129,
+      "crc32": "d850a85c"
+    },
+    "test/Ground truth/172_N.png": {
+      "bytes": 75401,
+      "crc32": "ed220ff6"
+    },
+    "test/Ground truth/173_N.png": {
+      "bytes": 67683,
+      "crc32": "3ce021d7"
+    },
+    "test/Ground truth/174_N.png": {
+      "bytes": 77668,
+      "crc32": "9d227595"
+    },
+    "test/Ground truth/175_N.png": {
+      "bytes": 71079,
+      "crc32": "e92c96cd"
+    },
+    "test/Ground truth/176_N.png": {
+      "bytes": 74362,
+      "crc32": "927f6b5b"
+    },
+    "test/Ground truth/177_N.png": {
+      "bytes": 74452,
+      "crc32": "5ad628e1"
+    },
+    "test/Ground truth/178_N.png": {
+      "bytes": 73336,
+      "crc32": "a082a500"
+    },
+    "test/Ground truth/179_N.png": {
+      "bytes": 75819,
+      "crc32": "97d1a099"
+    },
+    "test/Ground truth/17_A.png": {
+      "bytes": 68004,
+      "crc32": "4ee10631"
+    },
+    "test/Ground truth/180_N.png": {
+      "bytes": 69922,
+      "crc32": "b80c5aa5"
+    },
+    "test/Ground truth/181_N.png": {
+      "bytes": 65178,
+      "crc32": "9832d181"
+    },
+    "test/Ground truth/182_N.png": {
+      "bytes": 73980,
+      "crc32": "0fc0eca9"
+    },
+    "test/Ground truth/183_N.png": {
+      "bytes": 68189,
+      "crc32": "7128cebe"
+    },
+    "test/Ground truth/184_N.png": {
+      "bytes": 75770,
+      "crc32": "c8eec666"
+    },
+    "test/Ground truth/185_N.png": {
+      "bytes": 73462,
+      "crc32": "073a86b3"
+    },
+    "test/Ground truth/186_N.png": {
+      "bytes": 74743,
+      "crc32": "19742cfb"
+    },
+    "test/Ground truth/187_N.png": {
+      "bytes": 74880,
+      "crc32": "138e988f"
+    },
+    "test/Ground truth/188_N.png": {
+      "bytes": 82234,
+      "crc32": "09b27e56"
+    },
+    "test/Ground truth/189_N.png": {
+      "bytes": 77825,
+      "crc32": "62e1e7b3"
+    },
+    "test/Ground truth/18_A.png": {
+      "bytes": 45835,
+      "crc32": "7c4ecf7d"
+    },
+    "test/Ground truth/190_N.png": {
+      "bytes": 74805,
+      "crc32": "6128ec51"
+    },
+    "test/Ground truth/191_N.png": {
+      "bytes": 74113,
+      "crc32": "480c4af4"
+    },
+    "test/Ground truth/192_N.png": {
+      "bytes": 72557,
+      "crc32": "9837eb4b"
+    },
+    "test/Ground truth/193_N.png": {
+      "bytes": 75939,
+      "crc32": "f62198bc"
+    },
+    "test/Ground truth/194_N.png": {
+      "bytes": 80208,
+      "crc32": "c2e9f45e"
+    },
+    "test/Ground truth/195_N.png": {
+      "bytes": 74044,
+      "crc32": "05bb015c"
+    },
+    "test/Ground truth/196_N.png": {
+      "bytes": 62559,
+      "crc32": "073966a7"
+    },
+    "test/Ground truth/197_N.png": {
+      "bytes": 72774,
+      "crc32": "8a7d7cea"
+    },
+    "test/Ground truth/198_N.png": {
+      "bytes": 79243,
+      "crc32": "6c89f27d"
+    },
+    "test/Ground truth/199_N.png": {
+      "bytes": 71412,
+      "crc32": "caa7a53c"
+    },
+    "test/Ground truth/19_A.png": {
+      "bytes": 55534,
+      "crc32": "3adc4cf6"
+    },
+    "test/Ground truth/1_A.png": {
+      "bytes": 77228,
+      "crc32": "e39f0ee1"
+    },
+    "test/Ground truth/200_N.png": {
+      "bytes": 78228,
+      "crc32": "c96f3cdc"
+    },
+    "test/Ground truth/20_A.png": {
+      "bytes": 75390,
+      "crc32": "ef32958c"
+    },
+    "test/Ground truth/21_A.png": {
+      "bytes": 59365,
+      "crc32": "f74225c9"
+    },
+    "test/Ground truth/22_A.png": {
+      "bytes": 71402,
+      "crc32": "93b0dd5b"
+    },
+    "test/Ground truth/23_A.png": {
+      "bytes": 71402,
+      "crc32": "93b0dd5b"
+    },
+    "test/Ground truth/24_A.png": {
+      "bytes": 52605,
+      "crc32": "773dd79b"
+    },
+    "test/Ground truth/25_A.png": {
+      "bytes": 63997,
+      "crc32": "7b89cb62"
+    },
+    "test/Ground truth/26_A.png": {
+      "bytes": 71092,
+      "crc32": "7e18bcd0"
+    },
+    "test/Ground truth/27_A.png": {
+      "bytes": 41034,
+      "crc32": "6f26a9aa"
+    },
+    "test/Ground truth/28_A.png": {
+      "bytes": 68200,
+      "crc32": "8fe9f455"
+    },
+    "test/Ground truth/29_A.png": {
+      "bytes": 69415,
+      "crc32": "cac17d78"
+    },
+    "test/Ground truth/2_A.png": {
+      "bytes": 85504,
+      "crc32": "3a427152"
+    },
+    "test/Ground truth/30_A.png": {
+      "bytes": 62984,
+      "crc32": "c74d0544"
+    },
+    "test/Ground truth/31_A.png": {
+      "bytes": 71046,
+      "crc32": "e367b8d4"
+    },
+    "test/Ground truth/32_A.png": {
+      "bytes": 72843,
+      "crc32": "3b86865a"
+    },
+    "test/Ground truth/33_A.png": {
+      "bytes": 91817,
+      "crc32": "38c0e4d8"
+    },
+    "test/Ground truth/34_A.png": {
+      "bytes": 57064,
+      "crc32": "a34049ef"
+    },
+    "test/Ground truth/35_A.png": {
+      "bytes": 78079,
+      "crc32": "ad875c5f"
+    },
+    "test/Ground truth/36_A.png": {
+      "bytes": 72358,
+      "crc32": "81808714"
+    },
+    "test/Ground truth/37_A.png": {
+      "bytes": 41220,
+      "crc32": "da5243d9"
+    },
+    "test/Ground truth/38_A.png": {
+      "bytes": 58172,
+      "crc32": "abd4b896"
+    },
+    "test/Ground truth/39_A.png": {
+      "bytes": 62766,
+      "crc32": "e52562e6"
+    },
+    "test/Ground truth/3_A.png": {
+      "bytes": 90487,
+      "crc32": "6f6b19b0"
+    },
+    "test/Ground truth/40_A.png": {
+      "bytes": 59599,
+      "crc32": "93d8b0fb"
+    },
+    "test/Ground truth/41_A.png": {
+      "bytes": 64428,
+      "crc32": "8f4c2513"
+    },
+    "test/Ground truth/42_A.png": {
+      "bytes": 68838,
+      "crc32": "2b3ff898"
+    },
+    "test/Ground truth/43_A.png": {
+      "bytes": 60447,
+      "crc32": "de082a96"
+    },
+    "test/Ground truth/44_A.png": {
+      "bytes": 71599,
+      "crc32": "7cce90de"
+    },
+    "test/Ground truth/45_A.png": {
+      "bytes": 56527,
+      "crc32": "3c8f6593"
+    },
+    "test/Ground truth/46_A.png": {
+      "bytes": 56423,
+      "crc32": "104a3c54"
+    },
+    "test/Ground truth/47_A.png": {
+      "bytes": 48517,
+      "crc32": "19fcfc35"
+    },
+    "test/Ground truth/48_A.png": {
+      "bytes": 73063,
+      "crc32": "286b8c13"
+    },
+    "test/Ground truth/49_A.png": {
+      "bytes": 69755,
+      "crc32": "0c22f502"
+    },
+    "test/Ground truth/4_A.png": {
+      "bytes": 76015,
+      "crc32": "5cf38ee5"
+    },
+    "test/Ground truth/50_A.png": {
+      "bytes": 62847,
+      "crc32": "867c7af5"
+    },
+    "test/Ground truth/51_D.png": {
+      "bytes": 29955,
+      "crc32": "4e5204d9"
+    },
+    "test/Ground truth/52_D.png": {
+      "bytes": 49635,
+      "crc32": "ad3efbd7"
+    },
+    "test/Ground truth/53_D.png": {
+      "bytes": 51712,
+      "crc32": "f1a2c766"
+    },
+    "test/Ground truth/54_D.png": {
+      "bytes": 74563,
+      "crc32": "083d835d"
+    },
+    "test/Ground truth/55_D.png": {
+      "bytes": 35290,
+      "crc32": "1510b594"
+    },
+    "test/Ground truth/56_D.png": {
+      "bytes": 62732,
+      "crc32": "d95abdde"
+    },
+    "test/Ground truth/57_D.png": {
+      "bytes": 30612,
+      "crc32": "cfba7e00"
+    },
+    "test/Ground truth/58_D.png": {
+      "bytes": 65679,
+      "crc32": "c64cccf1"
+    },
+    "test/Ground truth/59_D.png": {
+      "bytes": 70974,
+      "crc32": "d416d680"
+    },
+    "test/Ground truth/5_A.png": {
+      "bytes": 86399,
+      "crc32": "c8dfc5cb"
+    },
+    "test/Ground truth/60_D.png": {
+      "bytes": 68593,
+      "crc32": "9dc82a59"
+    },
+    "test/Ground truth/61_D.png": {
+      "bytes": 47624,
+      "crc32": "8e6b6110"
+    },
+    "test/Ground truth/62_D.png": {
+      "bytes": 54161,
+      "crc32": "ebbd0a37"
+    },
+    "test/Ground truth/63_D.png": {
+      "bytes": 58324,
+      "crc32": "f0a57151"
+    },
+    "test/Ground truth/64_D.png": {
+      "bytes": 61009,
+      "crc32": "2fccec19"
+    },
+    "test/Ground truth/65_D.png": {
+      "bytes": 57145,
+      "crc32": "c57ca521"
+    },
+    "test/Ground truth/66_D.png": {
+      "bytes": 48141,
+      "crc32": "73441e89"
+    },
+    "test/Ground truth/67_D.png": {
+      "bytes": 53638,
+      "crc32": "c97aed95"
+    },
+    "test/Ground truth/68_D.png": {
+      "bytes": 61528,
+      "crc32": "bbae3e04"
+    },
+    "test/Ground truth/69_D.png": {
+      "bytes": 69463,
+      "crc32": "102fd450"
+    },
+    "test/Ground truth/6_A.png": {
+      "bytes": 75618,
+      "crc32": "e7cba2b7"
+    },
+    "test/Ground truth/70_D.png": {
+      "bytes": 64921,
+      "crc32": "223644ed"
+    },
+    "test/Ground truth/71_D.png": {
+      "bytes": 46844,
+      "crc32": "4e457483"
+    },
+    "test/Ground truth/72_D.png": {
+      "bytes": 65168,
+      "crc32": "8fd1dd27"
+    },
+    "test/Ground truth/73_D.png": {
+      "bytes": 61544,
+      "crc32": "8357d622"
+    },
+    "test/Ground truth/74_D.png": {
+      "bytes": 65759,
+      "crc32": "f1d1b042"
+    },
+    "test/Ground truth/75_D.png": {
+      "bytes": 70178,
+      "crc32": "0a516469"
+    },
+    "test/Ground truth/76_D.png": {
+      "bytes": 41233,
+      "crc32": "6a0d6ed0"
+    },
+    "test/Ground truth/77_D.png": {
+      "bytes": 65930,
+      "crc32": "d308895c"
+    },
+    "test/Ground truth/78_D.png": {
+      "bytes": 38714,
+      "crc32": "db3c692b"
+    },
+    "test/Ground truth/79_D.png": {
+      "bytes": 59048,
+      "crc32": "126689bc"
+    },
+    "test/Ground truth/7_A.png": {
+      "bytes": 82624,
+      "crc32": "b55f6e1a"
+    },
+    "test/Ground truth/80_D.png": {
+      "bytes": 56194,
+      "crc32": "833cb657"
+    },
+    "test/Ground truth/81_D.png": {
+      "bytes": 65331,
+      "crc32": "4d06f2c6"
+    },
+    "test/Ground truth/82_D.png": {
+      "bytes": 44854,
+      "crc32": "c66d3648"
+    },
+    "test/Ground truth/83_D.png": {
+      "bytes": 55922,
+      "crc32": "5aefc1e2"
+    },
+    "test/Ground truth/84_D.png": {
+      "bytes": 68515,
+      "crc32": "116c047a"
+    },
+    "test/Ground truth/85_D.png": {
+      "bytes": 59908,
+      "crc32": "acf13e0b"
+    },
+    "test/Ground truth/86_D.png": {
+      "bytes": 64046,
+      "crc32": "5334d53b"
+    },
+    "test/Ground truth/87_D.png": {
+      "bytes": 61911,
+      "crc32": "9b556cf1"
+    },
+    "test/Ground truth/88_D.png": {
+      "bytes": 58592,
+      "crc32": "cc9e2c07"
+    },
+    "test/Ground truth/89_D.png": {
+      "bytes": 65726,
+      "crc32": "c4b7a9c9"
+    },
+    "test/Ground truth/8_A.png": {
+      "bytes": 71908,
+      "crc32": "a4e21cf6"
+    },
+    "test/Ground truth/90_D.png": {
+      "bytes": 58766,
+      "crc32": "926a5463"
+    },
+    "test/Ground truth/91_D.png": {
+      "bytes": 59965,
+      "crc32": "1d6487bc"
+    },
+    "test/Ground truth/92_D.png": {
+      "bytes": 62434,
+      "crc32": "ca0b7e67"
+    },
+    "test/Ground truth/93_D.png": {
+      "bytes": 60005,
+      "crc32": "e6640dd4"
+    },
+    "test/Ground truth/94_D.png": {
+      "bytes": 46851,
+      "crc32": "47bb7668"
+    },
+    "test/Ground truth/95_D.png": {
+      "bytes": 35501,
+      "crc32": "32fa6c9b"
+    },
+    "test/Ground truth/96_D.png": {
+      "bytes": 67243,
+      "crc32": "618d9d60"
+    },
+    "test/Ground truth/97_D.png": {
+      "bytes": 57330,
+      "crc32": "945f84f7"
+    },
+    "test/Ground truth/98_D.png": {
+      "bytes": 61777,
+      "crc32": "237ba7e9"
+    },
+    "test/Ground truth/99_D.png": {
+      "bytes": 64819,
+      "crc32": "2ee1fa95"
+    },
+    "test/Ground truth/9_A.png": {
+      "bytes": 76830,
+      "crc32": "90750e2e"
+    },
+    "test/Original/100_D.png": {
+      "bytes": 2130474,
+      "crc32": "020db029"
+    },
+    "test/Original/101_G.png": {
+      "bytes": 1471732,
+      "crc32": "3c7b7261"
+    },
+    "test/Original/102_G.png": {
+      "bytes": 1099721,
+      "crc32": "2263fb64"
+    },
+    "test/Original/103_G.png": {
+      "bytes": 2164615,
+      "crc32": "56c3a51f"
+    },
+    "test/Original/104_G.png": {
+      "bytes": 1754564,
+      "crc32": "48aefb45"
+    },
+    "test/Original/105_G.png": {
+      "bytes": 2005085,
+      "crc32": "79347a4e"
+    },
+    "test/Original/106_G.png": {
+      "bytes": 2147768,
+      "crc32": "c816604b"
+    },
+    "test/Original/107_G.png": {
+      "bytes": 2246236,
+      "crc32": "e3d73dca"
+    },
+    "test/Original/108_G.png": {
+      "bytes": 2354787,
+      "crc32": "f40f4075"
+    },
+    "test/Original/109_G.png": {
+      "bytes": 1982528,
+      "crc32": "a50d81b0"
+    },
+    "test/Original/10_A.png": {
+      "bytes": 2295251,
+      "crc32": "35bbe4ad"
+    },
+    "test/Original/110_G.png": {
+      "bytes": 1823255,
+      "crc32": "a11dc233"
+    },
+    "test/Original/111_G.png": {
+      "bytes": 2176672,
+      "crc32": "cdd9a6af"
+    },
+    "test/Original/112_G.png": {
+      "bytes": 1224530,
+      "crc32": "0d6652eb"
+    },
+    "test/Original/113_G.png": {
+      "bytes": 699943,
+      "crc32": "55c4114c"
+    },
+    "test/Original/114_G.png": {
+      "bytes": 899971,
+      "crc32": "eaf0dc01"
+    },
+    "test/Original/115_G.png": {
+      "bytes": 2156858,
+      "crc32": "6978aef5"
+    },
+    "test/Original/116_G.png": {
+      "bytes": 909330,
+      "crc32": "1f022145"
+    },
+    "test/Original/117_G.png": {
+      "bytes": 2103043,
+      "crc32": "b6a00cf3"
+    },
+    "test/Original/118_G.png": {
+      "bytes": 2256100,
+      "crc32": "3a8b86ab"
+    },
+    "test/Original/119_G.png": {
+      "bytes": 2143796,
+      "crc32": "8657d1ec"
+    },
+    "test/Original/11_A.png": {
+      "bytes": 1864048,
+      "crc32": "379d32c0"
+    },
+    "test/Original/120_G.png": {
+      "bytes": 1833366,
+      "crc32": "ea2aa2ce"
+    },
+    "test/Original/121_G.png": {
+      "bytes": 1657456,
+      "crc32": "a04809c0"
+    },
+    "test/Original/122_G.png": {
+      "bytes": 1296606,
+      "crc32": "2684f28d"
+    },
+    "test/Original/123_G.png": {
+      "bytes": 811903,
+      "crc32": "b77de8d4"
+    },
+    "test/Original/124_G.png": {
+      "bytes": 1366483,
+      "crc32": "fc254e8a"
+    },
+    "test/Original/125_G.png": {
+      "bytes": 1759391,
+      "crc32": "0b0e2821"
+    },
+    "test/Original/126_G.png": {
+      "bytes": 2722636,
+      "crc32": "6691921a"
+    },
+    "test/Original/127_G.png": {
+      "bytes": 2513432,
+      "crc32": "edeac0f8"
+    },
+    "test/Original/128_G.png": {
+      "bytes": 2042728,
+      "crc32": "407413f3"
+    },
+    "test/Original/129_G.png": {
+      "bytes": 2625940,
+      "crc32": "f53b7dc6"
+    },
+    "test/Original/12_A.png": {
+      "bytes": 2161839,
+      "crc32": "0c041248"
+    },
+    "test/Original/130_G.png": {
+      "bytes": 1907065,
+      "crc32": "0fd81401"
+    },
+    "test/Original/131_G.png": {
+      "bytes": 2175775,
+      "crc32": "71f764bb"
+    },
+    "test/Original/132_G.png": {
+      "bytes": 1703145,
+      "crc32": "8924ee0b"
+    },
+    "test/Original/133_G.png": {
+      "bytes": 888437,
+      "crc32": "fb3da1ad"
+    },
+    "test/Original/134_G.png": {
+      "bytes": 2107610,
+      "crc32": "e0fc6484"
+    },
+    "test/Original/135_G.png": {
+      "bytes": 1979064,
+      "crc32": "7df6894e"
+    },
+    "test/Original/136_G.png": {
+      "bytes": 986825,
+      "crc32": "b5ef33e6"
+    },
+    "test/Original/137_G.png": {
+      "bytes": 1439699,
+      "crc32": "b3334d3a"
+    },
+    "test/Original/138_G.png": {
+      "bytes": 1655220,
+      "crc32": "5bc0c570"
+    },
+    "test/Original/139_G.png": {
+      "bytes": 2145175,
+      "crc32": "38c3deae"
+    },
+    "test/Original/13_A.png": {
+      "bytes": 2027613,
+      "crc32": "52567805"
+    },
+    "test/Original/140_G.png": {
+      "bytes": 2432607,
+      "crc32": "5ecdd70a"
+    },
+    "test/Original/141_G.png": {
+      "bytes": 2006535,
+      "crc32": "4de0d212"
+    },
+    "test/Original/142_G.png": {
+      "bytes": 2219184,
+      "crc32": "c1940dff"
+    },
+    "test/Original/143_G.png": {
+      "bytes": 2205237,
+      "crc32": "ab3292ae"
+    },
+    "test/Original/144_G.png": {
+      "bytes": 1728831,
+      "crc32": "566058d4"
+    },
+    "test/Original/145_G.png": {
+      "bytes": 941064,
+      "crc32": "a30ad787"
+    },
+    "test/Original/146_G.png": {
+      "bytes": 2282532,
+      "crc32": "4a1d7684"
+    },
+    "test/Original/147_G.png": {
+      "bytes": 1949331,
+      "crc32": "ebee6920"
+    },
+    "test/Original/148_G.png": {
+      "bytes": 1173989,
+      "crc32": "30efc705"
+    },
+    "test/Original/149_G.png": {
+      "bytes": 1897506,
+      "crc32": "dc3fcca6"
+    },
+    "test/Original/14_A.png": {
+      "bytes": 2124614,
+      "crc32": "ecbc2187"
+    },
+    "test/Original/150_G.png": {
+      "bytes": 2122654,
+      "crc32": "2ce5f5ce"
+    },
+    "test/Original/151_N.png": {
+      "bytes": 2124283,
+      "crc32": "3fb4dc37"
+    },
+    "test/Original/152_N.png": {
+      "bytes": 2005170,
+      "crc32": "ecb596b7"
+    },
+    "test/Original/153_N.png": {
+      "bytes": 1956640,
+      "crc32": "a184804e"
+    },
+    "test/Original/154_N.png": {
+      "bytes": 2239055,
+      "crc32": "79553bab"
+    },
+    "test/Original/155_N.png": {
+      "bytes": 1470892,
+      "crc32": "e90d26d1"
+    },
+    "test/Original/156_N.png": {
+      "bytes": 1860758,
+      "crc32": "e7e1906a"
+    },
+    "test/Original/157_N.png": {
+      "bytes": 1781715,
+      "crc32": "702df96c"
+    },
+    "test/Original/158_N.png": {
+      "bytes": 1494640,
+      "crc32": "0dd23369"
+    },
+    "test/Original/159_N.png": {
+      "bytes": 1912119,
+      "crc32": "496626c4"
+    },
+    "test/Original/15_A.png": {
+      "bytes": 2260469,
+      "crc32": "73d39029"
+    },
+    "test/Original/160_N.png": {
+      "bytes": 2098037,
+      "crc32": "04554e48"
+    },
+    "test/Original/161_N.png": {
+      "bytes": 1829695,
+      "crc32": "e84cf30e"
+    },
+    "test/Original/162_N.png": {
+      "bytes": 1904782,
+      "crc32": "dcc4b488"
+    },
+    "test/Original/163_N.png": {
+      "bytes": 1377596,
+      "crc32": "4cc72751"
+    },
+    "test/Original/164_N.png": {
+      "bytes": 1463546,
+      "crc32": "0d83449e"
+    },
+    "test/Original/165_N.png": {
+      "bytes": 2253523,
+      "crc32": "f1735a79"
+    },
+    "test/Original/166_N.png": {
+      "bytes": 2388546,
+      "crc32": "05e40d3b"
+    },
+    "test/Original/167_N.png": {
+      "bytes": 2291512,
+      "crc32": "70a4c359"
+    },
+    "test/Original/168_N.png": {
+      "bytes": 2274918,
+      "crc32": "b12b19e5"
+    },
+    "test/Original/169_N.png": {
+      "bytes": 1461898,
+      "crc32": "a229f29f"
+    },
+    "test/Original/16_A.png": {
+      "bytes": 1918332,
+      "crc32": "66fc359b"
+    },
+    "test/Original/170_N.png": {
+      "bytes": 1329761,
+      "crc32": "9ded3ee5"
+    },
+    "test/Original/171_N.png": {
+      "bytes": 2435780,
+      "crc32": "bb450ef6"
+    },
+    "test/Original/172_N.png": {
+      "bytes": 2433591,
+      "crc32": "7a9b73fd"
+    },
+    "test/Original/173_N.png": {
+      "bytes": 2632409,
+      "crc32": "a1d041ec"
+    },
+    "test/Original/174_N.png": {
+      "bytes": 2537553,
+      "crc32": "0ffbc4f2"
+    },
+    "test/Original/175_N.png": {
+      "bytes": 2876887,
+      "crc32": "91341a45"
+    },
+    "test/Original/176_N.png": {
+      "bytes": 2626887,
+      "crc32": "6e67c4d6"
+    },
+    "test/Original/177_N.png": {
+      "bytes": 2768215,
+      "crc32": "8535a576"
+    },
+    "test/Original/178_N.png": {
+      "bytes": 2680049,
+      "crc32": "d6781dc3"
+    },
+    "test/Original/179_N.png": {
+      "bytes": 2622480,
+      "crc32": "260a7586"
+    },
+    "test/Original/17_A.png": {
+      "bytes": 2390865,
+      "crc32": "de48af0c"
+    },
+    "test/Original/180_N.png": {
+      "bytes": 2618975,
+      "crc32": "0973406e"
+    },
+    "test/Original/181_N.png": {
+      "bytes": 2013675,
+      "crc32": "c2091649"
+    },
+    "test/Original/182_N.png": {
+      "bytes": 2315250,
+      "crc32": "78c4bf19"
+    },
+    "test/Original/183_N.png": {
+      "bytes": 1658355,
+      "crc32": "079ac95f"
+    },
+    "test/Original/184_N.png": {
+      "bytes": 2237398,
+      "crc32": "85a2a569"
+    },
+    "test/Original/185_N.png": {
+      "bytes": 2508904,
+      "crc32": "b5047239"
+    },
+    "test/Original/186_N.png": {
+      "bytes": 2679821,
+      "crc32": "1be00cdf"
+    },
+    "test/Original/187_N.png": {
+      "bytes": 2340396,
+      "crc32": "901e682a"
+    },
+    "test/Original/188_N.png": {
+      "bytes": 2728387,
+      "crc32": "67470884"
+    },
+    "test/Original/189_N.png": {
+      "bytes": 2769675,
+      "crc32": "10386829"
+    },
+    "test/Original/18_A.png": {
+      "bytes": 1869233,
+      "crc32": "aeb4a0fc"
+    },
+    "test/Original/190_N.png": {
+      "bytes": 2576677,
+      "crc32": "78822262"
+    },
+    "test/Original/191_N.png": {
+      "bytes": 2623893,
+      "crc32": "6803f988"
+    },
+    "test/Original/192_N.png": {
+      "bytes": 2603630,
+      "crc32": "03536260"
+    },
+    "test/Original/193_N.png": {
+      "bytes": 2224264,
+      "crc32": "b19928b2"
+    },
+    "test/Original/194_N.png": {
+      "bytes": 2291130,
+      "crc32": "d8687d5f"
+    },
+    "test/Original/195_N.png": {
+      "bytes": 2211692,
+      "crc32": "0baa24d5"
+    },
+    "test/Original/196_N.png": {
+      "bytes": 1936350,
+      "crc32": "94f2780b"
+    },
+    "test/Original/197_N.png": {
+      "bytes": 1780316,
+      "crc32": "ee139728"
+    },
+    "test/Original/198_N.png": {
+      "bytes": 2146860,
+      "crc32": "817e0cf9"
+    },
+    "test/Original/199_N.png": {
+      "bytes": 2641010,
+      "crc32": "738720db"
+    },
+    "test/Original/19_A.png": {
+      "bytes": 2156355,
+      "crc32": "438a7b82"
+    },
+    "test/Original/1_A.png": {
+      "bytes": 2055810,
+      "crc32": "525e28ac"
+    },
+    "test/Original/200_N.png": {
+      "bytes": 2787289,
+      "crc32": "60d97b79"
+    },
+    "test/Original/20_A.png": {
+      "bytes": 2530840,
+      "crc32": "b15602ac"
+    },
+    "test/Original/21_A.png": {
+      "bytes": 2226450,
+      "crc32": "797571e2"
+    },
+    "test/Original/22_A.png": {
+      "bytes": 2311262,
+      "crc32": "8d43de45"
+    },
+    "test/Original/23_A.png": {
+      "bytes": 2283187,
+      "crc32": "11d88bd8"
+    },
+    "test/Original/24_A.png": {
+      "bytes": 2219622,
+      "crc32": "e6dda7fc"
+    },
+    "test/Original/25_A.png": {
+      "bytes": 2715294,
+      "crc32": "ab907307"
+    },
+    "test/Original/26_A.png": {
+      "bytes": 2317620,
+      "crc32": "25b47560"
+    },
+    "test/Original/27_A.png": {
+      "bytes": 1689231,
+      "crc32": "c4d5c8bc"
+    },
+    "test/Original/28_A.png": {
+      "bytes": 2208415,
+      "crc32": "8e22c14a"
+    },
+    "test/Original/29_A.png": {
+      "bytes": 2505506,
+      "crc32": "6c782693"
+    },
+    "test/Original/2_A.png": {
+      "bytes": 2244313,
+      "crc32": "e671f3cb"
+    },
+    "test/Original/30_A.png": {
+      "bytes": 2398608,
+      "crc32": "4f9012e8"
+    },
+    "test/Original/31_A.png": {
+      "bytes": 2307243,
+      "crc32": "c4169431"
+    },
+    "test/Original/32_A.png": {
+      "bytes": 2190931,
+      "crc32": "bf13ad84"
+    },
+    "test/Original/33_A.png": {
+      "bytes": 2570623,
+      "crc32": "e35933c3"
+    },
+    "test/Original/34_A.png": {
+      "bytes": 2041335,
+      "crc32": "2ff7407a"
+    },
+    "test/Original/35_A.png": {
+      "bytes": 2636023,
+      "crc32": "ded5c741"
+    },
+    "test/Original/36_A.png": {
+      "bytes": 2350014,
+      "crc32": "0500adfe"
+    },
+    "test/Original/37_A.png": {
+      "bytes": 1504965,
+      "crc32": "fe1975d0"
+    },
+    "test/Original/38_A.png": {
+      "bytes": 1974449,
+      "crc32": "50fdd225"
+    },
+    "test/Original/39_A.png": {
+      "bytes": 2508887,
+      "crc32": "5244ac99"
+    },
+    "test/Original/3_A.png": {
+      "bytes": 2470155,
+      "crc32": "13272e81"
+    },
+    "test/Original/40_A.png": {
+      "bytes": 2290733,
+      "crc32": "fbc87032"
+    },
+    "test/Original/41_A.png": {
+      "bytes": 2345481,
+      "crc32": "824d740f"
+    },
+    "test/Original/42_A.png": {
+      "bytes": 2183157,
+      "crc32": "f4a91511"
+    },
+    "test/Original/43_A.png": {
+      "bytes": 2691930,
+      "crc32": "60e443bb"
+    },
+    "test/Original/44_A.png": {
+      "bytes": 2332848,
+      "crc32": "a7f3acad"
+    },
+    "test/Original/45_A.png": {
+      "bytes": 2153568,
+      "crc32": "92e99f85"
+    },
+    "test/Original/46_A.png": {
+      "bytes": 2063162,
+      "crc32": "af94bb54"
+    },
+    "test/Original/47_A.png": {
+      "bytes": 2311936,
+      "crc32": "b8ce7023"
+    },
+    "test/Original/48_A.png": {
+      "bytes": 2190931,
+      "crc32": "bf13ad84"
+    },
+    "test/Original/49_A.png": {
+      "bytes": 2103329,
+      "crc32": "e9604f3e"
+    },
+    "test/Original/4_A.png": {
+      "bytes": 2273835,
+      "crc32": "226f0e41"
+    },
+    "test/Original/50_A.png": {
+      "bytes": 2606057,
+      "crc32": "20d0453e"
+    },
+    "test/Original/51_D.png": {
+      "bytes": 1547717,
+      "crc32": "5e288f2d"
+    },
+    "test/Original/52_D.png": {
+      "bytes": 1974031,
+      "crc32": "d5fc13b9"
+    },
+    "test/Original/53_D.png": {
+      "bytes": 1869966,
+      "crc32": "825d6bc4"
+    },
+    "test/Original/54_D.png": {
+      "bytes": 2378744,
+      "crc32": "732f8185"
+    },
+    "test/Original/55_D.png": {
+      "bytes": 2200506,
+      "crc32": "f545c793"
+    },
+    "test/Original/56_D.png": {
+      "bytes": 2029583,
+      "crc32": "75a6c96b"
+    },
+    "test/Original/57_D.png": {
+      "bytes": 2054401,
+      "crc32": "35a782da"
+    },
+    "test/Original/58_D.png": {
+      "bytes": 2325480,
+      "crc32": "76964063"
+    },
+    "test/Original/59_D.png": {
+      "bytes": 2324863,
+      "crc32": "01a76d3b"
+    },
+    "test/Original/5_A.png": {
+      "bytes": 2522037,
+      "crc32": "c406598b"
+    },
+    "test/Original/60_D.png": {
+      "bytes": 2324293,
+      "crc32": "058f7cb3"
+    },
+    "test/Original/61_D.png": {
+      "bytes": 1952947,
+      "crc32": "814a07e2"
+    },
+    "test/Original/62_D.png": {
+      "bytes": 1343066,
+      "crc32": "d4b1ebd5"
+    },
+    "test/Original/63_D.png": {
+      "bytes": 2188183,
+      "crc32": "ca6e9f7e"
+    },
+    "test/Original/64_D.png": {
+      "bytes": 2171071,
+      "crc32": "06eb716f"
+    },
+    "test/Original/65_D.png": {
+      "bytes": 1916627,
+      "crc32": "eb9f3d83"
+    },
+    "test/Original/66_D.png": {
+      "bytes": 1514193,
+      "crc32": "8abbdfba"
+    },
+    "test/Original/67_D.png": {
+      "bytes": 2380291,
+      "crc32": "66ba4368"
+    },
+    "test/Original/68_D.png": {
+      "bytes": 1930381,
+      "crc32": "8acfcc6c"
+    },
+    "test/Original/69_D.png": {
+      "bytes": 2271684,
+      "crc32": "1700a7d2"
+    },
+    "test/Original/6_A.png": {
+      "bytes": 2555761,
+      "crc32": "39c976b6"
+    },
+    "test/Original/70_D.png": {
+      "bytes": 2306986,
+      "crc32": "33ae3eff"
+    },
+    "test/Original/71_D.png": {
+      "bytes": 1901885,
+      "crc32": "9b0a00b8"
+    },
+    "test/Original/72_D.png": {
+      "bytes": 2606915,
+      "crc32": "ed11dc81"
+    },
+    "test/Original/73_D.png": {
+      "bytes": 1980525,
+      "crc32": "167a593c"
+    },
+    "test/Original/74_D.png": {
+      "bytes": 2001054,
+      "crc32": "53ec5700"
+    },
+    "test/Original/75_D.png": {
+      "bytes": 2398912,
+      "crc32": "b4a694d2"
+    },
+    "test/Original/76_D.png": {
+      "bytes": 2036998,
+      "crc32": "50223241"
+    },
+    "test/Original/77_D.png": {
+      "bytes": 2073766,
+      "crc32": "8fa9c60d"
+    },
+    "test/Original/78_D.png": {
+      "bytes": 2097031,
+      "crc32": "e30380b7"
+    },
+    "test/Original/79_D.png": {
+      "bytes": 2163123,
+      "crc32": "550902ea"
+    },
+    "test/Original/7_A.png": {
+      "bytes": 2469896,
+      "crc32": "28acfb52"
+    },
+    "test/Original/80_D.png": {
+      "bytes": 2148044,
+      "crc32": "c893df6e"
+    },
+    "test/Original/81_D.png": {
+      "bytes": 2484027,
+      "crc32": "4b9579dc"
+    },
+    "test/Original/82_D.png": {
+      "bytes": 2189104,
+      "crc32": "ff7409ee"
+    },
+    "test/Original/83_D.png": {
+      "bytes": 1983350,
+      "crc32": "92715f5f"
+    },
+    "test/Original/84_D.png": {
+      "bytes": 2196717,
+      "crc32": "36dd491e"
+    },
+    "test/Original/85_D.png": {
+      "bytes": 1990489,
+      "crc32": "bc63bbca"
+    },
+    "test/Original/86_D.png": {
+      "bytes": 2213954,
+      "crc32": "b853c609"
+    },
+    "test/Original/87_D.png": {
+      "bytes": 1923921,
+      "crc32": "f9268dfe"
+    },
+    "test/Original/88_D.png": {
+      "bytes": 2235170,
+      "crc32": "a705782d"
+    },
+    "test/Original/89_D.png": {
+      "bytes": 2029118,
+      "crc32": "ceeb1a89"
+    },
+    "test/Original/8_A.png": {
+      "bytes": 2321148,
+      "crc32": "256d9a9b"
+    },
+    "test/Original/90_D.png": {
+      "bytes": 2111305,
+      "crc32": "089ed8aa"
+    },
+    "test/Original/91_D.png": {
+      "bytes": 1927547,
+      "crc32": "73f83a86"
+    },
+    "test/Original/92_D.png": {
+      "bytes": 2397975,
+      "crc32": "59f522c5"
+    },
+    "test/Original/93_D.png": {
+      "bytes": 2121350,
+      "crc32": "3cc7eea8"
+    },
+    "test/Original/94_D.png": {
+      "bytes": 1769134,
+      "crc32": "919a2087"
+    },
+    "test/Original/95_D.png": {
+      "bytes": 1972920,
+      "crc32": "d9d26740"
+    },
+    "test/Original/96_D.png": {
+      "bytes": 2620027,
+      "crc32": "d258bdc9"
+    },
+    "test/Original/97_D.png": {
+      "bytes": 1899594,
+      "crc32": "fd797356"
+    },
+    "test/Original/98_D.png": {
+      "bytes": 2328843,
+      "crc32": "8dddedd5"
+    },
+    "test/Original/99_D.png": {
+      "bytes": 2166511,
+      "crc32": "eb8a6ada"
+    },
+    "test/Original/9_A.png": {
+      "bytes": 2564162,
+      "crc32": "e64cdfa3"
+    },
+    "train/Ground truth/100_A.png": {
+      "bytes": 67266,
+      "crc32": "5845e857"
+    },
+    "train/Ground truth/101_A.png": {
+      "bytes": 68275,
+      "crc32": "33779604"
+    },
+    "train/Ground truth/102_A.png": {
+      "bytes": 60927,
+      "crc32": "34b455dc"
+    },
+    "train/Ground truth/103_A.png": {
+      "bytes": 67751,
+      "crc32": "9c5ebde7"
+    },
+    "train/Ground truth/104_A.png": {
+      "bytes": 67709,
+      "crc32": "62b36b59"
+    },
+    "train/Ground truth/105_A.png": {
+      "bytes": 67745,
+      "crc32": "cf3c309c"
+    },
+    "train/Ground truth/106_A.png": {
+      "bytes": 48371,
+      "crc32": "0b859ad0"
+    },
+    "train/Ground truth/107_A.png": {
+      "bytes": 58287,
+      "crc32": "0502e09a"
+    },
+    "train/Ground truth/108_A.png": {
+      "bytes": 55430,
+      "crc32": "d12674ad"
+    },
+    "train/Ground truth/109_A.png": {
+      "bytes": 51369,
+      "crc32": "33027d52"
+    },
+    "train/Ground truth/10_A.png": {
+      "bytes": 57741,
+      "crc32": "13709d65"
+    },
+    "train/Ground truth/110_A.png": {
+      "bytes": 46333,
+      "crc32": "d44b6f4d"
+    },
+    "train/Ground truth/111_A.png": {
+      "bytes": 47987,
+      "crc32": "962ae45a"
+    },
+    "train/Ground truth/112_A.png": {
+      "bytes": 88758,
+      "crc32": "e501de9e"
+    },
+    "train/Ground truth/113_A.png": {
+      "bytes": 64932,
+      "crc32": "4702b403"
+    },
+    "train/Ground truth/114_A.png": {
+      "bytes": 70785,
+      "crc32": "151cf2ee"
+    },
+    "train/Ground truth/115_A.png": {
+      "bytes": 70274,
+      "crc32": "842ac426"
+    },
+    "train/Ground truth/116_A.png": {
+      "bytes": 70064,
+      "crc32": "b1a9e905"
+    },
+    "train/Ground truth/117_A.png": {
+      "bytes": 65674,
+      "crc32": "b4bff9a3"
+    },
+    "train/Ground truth/118_A.png": {
+      "bytes": 57461,
+      "crc32": "42db79b8"
+    },
+    "train/Ground truth/119_A.png": {
+      "bytes": 65450,
+      "crc32": "028df17f"
+    },
+    "train/Ground truth/11_A.png": {
+      "bytes": 71592,
+      "crc32": "3964dd3a"
+    },
+    "train/Ground truth/120_A.png": {
+      "bytes": 57013,
+      "crc32": "4aae163f"
+    },
+    "train/Ground truth/121_A.png": {
+      "bytes": 71298,
+      "crc32": "a392d3bf"
+    },
+    "train/Ground truth/122_A.png": {
+      "bytes": 57790,
+      "crc32": "32717777"
+    },
+    "train/Ground truth/123_A.png": {
+      "bytes": 57904,
+      "crc32": "55fab4e9"
+    },
+    "train/Ground truth/124_A.png": {
+      "bytes": 56333,
+      "crc32": "92f63836"
+    },
+    "train/Ground truth/125_A.png": {
+      "bytes": 60863,
+      "crc32": "b05c9e6d"
+    },
+    "train/Ground truth/126_A.png": {
+      "bytes": 49742,
+      "crc32": "413d7096"
+    },
+    "train/Ground truth/127_A.png": {
+      "bytes": 56043,
+      "crc32": "78168122"
+    },
+    "train/Ground truth/128_A.png": {
+      "bytes": 54634,
+      "crc32": "ff99adf8"
+    },
+    "train/Ground truth/129_A.png": {
+      "bytes": 62688,
+      "crc32": "bc188eba"
+    },
+    "train/Ground truth/12_A.png": {
+      "bytes": 58894,
+      "crc32": "3da70f2c"
+    },
+    "train/Ground truth/130_A.png": {
+      "bytes": 51342,
+      "crc32": "279c76c2"
+    },
+    "train/Ground truth/131_A.png": {
+      "bytes": 66204,
+      "crc32": "ef991fd6"
+    },
+    "train/Ground truth/132_A.png": {
+      "bytes": 62645,
+      "crc32": "ddf8959d"
+    },
+    "train/Ground truth/133_A.png": {
+      "bytes": 70377,
+      "crc32": "50fb6372"
+    },
+    "train/Ground truth/134_A.png": {
+      "bytes": 63927,
+      "crc32": "aa3cdacd"
+    },
+    "train/Ground truth/135_A.png": {
+      "bytes": 67943,
+      "crc32": "89bddace"
+    },
+    "train/Ground truth/136_A.png": {
+      "bytes": 76458,
+      "crc32": "d8044e5b"
+    },
+    "train/Ground truth/137_A.png": {
+      "bytes": 74386,
+      "crc32": "97dbae49"
+    },
+    "train/Ground truth/138_A.png": {
+      "bytes": 57065,
+      "crc32": "d8a3b21a"
+    },
+    "train/Ground truth/139_A.png": {
+      "bytes": 57466,
+      "crc32": "5dbb4f1d"
+    },
+    "train/Ground truth/13_A.png": {
+      "bytes": 59481,
+      "crc32": "31fda7e6"
+    },
+    "train/Ground truth/140_A.png": {
+      "bytes": 58282,
+      "crc32": "481f58a8"
+    },
+    "train/Ground truth/141_A.png": {
+      "bytes": 67773,
+      "crc32": "8ce71f1d"
+    },
+    "train/Ground truth/142_A.png": {
+      "bytes": 57222,
+      "crc32": "b43752c4"
+    },
+    "train/Ground truth/143_A.png": {
+      "bytes": 39537,
+      "crc32": "de70ee60"
+    },
+    "train/Ground truth/144_A.png": {
+      "bytes": 41965,
+      "crc32": "e14f8152"
+    },
+    "train/Ground truth/145_A.png": {
+      "bytes": 51978,
+      "crc32": "657a5f16"
+    },
+    "train/Ground truth/146_A.png": {
+      "bytes": 51527,
+      "crc32": "439809f2"
+    },
+    "train/Ground truth/147_A.png": {
+      "bytes": 68413,
+      "crc32": "6da8fef8"
+    },
+    "train/Ground truth/148_A.png": {
+      "bytes": 60219,
+      "crc32": "91fdc1a5"
+    },
+    "train/Ground truth/149_A.png": {
+      "bytes": 55027,
+      "crc32": "55c1d9e4"
+    },
+    "train/Ground truth/14_A.png": {
+      "bytes": 56552,
+      "crc32": "9be62ef9"
+    },
+    "train/Ground truth/150_A.png": {
+      "bytes": 74055,
+      "crc32": "22e3974e"
+    },
+    "train/Ground truth/151_D.png": {
+      "bytes": 50913,
+      "crc32": "495341f8"
+    },
+    "train/Ground truth/152_D.png": {
+      "bytes": 69778,
+      "crc32": "b3cd5231"
+    },
+    "train/Ground truth/153_D.png": {
+      "bytes": 69584,
+      "crc32": "967d1439"
+    },
+    "train/Ground truth/154_D.png": {
+      "bytes": 76314,
+      "crc32": "cd102de3"
+    },
+    "train/Ground truth/155_D.png": {
+      "bytes": 33349,
+      "crc32": "9316bcf7"
+    },
+    "train/Ground truth/156_D.png": {
+      "bytes": 67569,
+      "crc32": "75429ee8"
+    },
+    "train/Ground truth/157_D.png": {
+      "bytes": 72792,
+      "crc32": "35f4d9e9"
+    },
+    "train/Ground truth/158_D.png": {
+      "bytes": 46811,
+      "crc32": "5b3ce22c"
+    },
+    "train/Ground truth/159_D.png": {
+      "bytes": 62171,
+      "crc32": "e7ebb5aa"
+    },
+    "train/Ground truth/15_A.png": {
+      "bytes": 75605,
+      "crc32": "7d888d16"
+    },
+    "train/Ground truth/160_D.png": {
+      "bytes": 61503,
+      "crc32": "1389438d"
+    },
+    "train/Ground truth/161_D.png": {
+      "bytes": 82105,
+      "crc32": "ef0c2122"
+    },
+    "train/Ground truth/162_D.png": {
+      "bytes": 63555,
+      "crc32": "1e616ceb"
+    },
+    "train/Ground truth/163_D.png": {
+      "bytes": 41091,
+      "crc32": "87c9a33d"
+    },
+    "train/Ground truth/164_D.png": {
+      "bytes": 76410,
+      "crc32": "bf1db3e5"
+    },
+    "train/Ground truth/165_D.png": {
+      "bytes": 61454,
+      "crc32": "daf37c65"
+    },
+    "train/Ground truth/166_D.png": {
+      "bytes": 47620,
+      "crc32": "921b5224"
+    },
+    "train/Ground truth/167_D.png": {
+      "bytes": 57443,
+      "crc32": "2933eb4a"
+    },
+    "train/Ground truth/168_D.png": {
+      "bytes": 51141,
+      "crc32": "abb8f3cb"
+    },
+    "train/Ground truth/169_D.png": {
+      "bytes": 56347,
+      "crc32": "6c2cda9b"
+    },
+    "train/Ground truth/16_A.png": {
+      "bytes": 71180,
+      "crc32": "5e466b74"
+    },
+    "train/Ground truth/170_D.png": {
+      "bytes": 77118,
+      "crc32": "b82c5a08"
+    },
+    "train/Ground truth/171_D.png": {
+      "bytes": 70985,
+      "crc32": "bdccd9a3"
+    },
+    "train/Ground truth/172_D.png": {
+      "bytes": 79586,
+      "crc32": "d57222ef"
+    },
+    "train/Ground truth/173_D.png": {
+      "bytes": 49703,
+      "crc32": "03600aa7"
+    },
+    "train/Ground truth/174_D.png": {
+      "bytes": 74663,
+      "crc32": "ae8d58f2"
+    },
+    "train/Ground truth/175_D.png": {
+      "bytes": 63639,
+      "crc32": "989a38b8"
+    },
+    "train/Ground truth/176_D.png": {
+      "bytes": 66724,
+      "crc32": "16787fc3"
+    },
+    "train/Ground truth/177_D.png": {
+      "bytes": 70286,
+      "crc32": "be4f39dc"
+    },
+    "train/Ground truth/178_D.png": {
+      "bytes": 64972,
+      "crc32": "a9b7bffa"
+    },
+    "train/Ground truth/179_D.png": {
+      "bytes": 49432,
+      "crc32": "46b9503d"
+    },
+    "train/Ground truth/17_A.png": {
+      "bytes": 71095,
+      "crc32": "7d98ecf4"
+    },
+    "train/Ground truth/180_D.png": {
+      "bytes": 62468,
+      "crc32": "9c3a5e4a"
+    },
+    "train/Ground truth/181_D.png": {
+      "bytes": 60949,
+      "crc32": "e618c9a6"
+    },
+    "train/Ground truth/182_D.png": {
+      "bytes": 64829,
+      "crc32": "5acc0cb0"
+    },
+    "train/Ground truth/183_D.png": {
+      "bytes": 66025,
+      "crc32": "c88dfb05"
+    },
+    "train/Ground truth/184_D.png": {
+      "bytes": 63175,
+      "crc32": "1a379bd7"
+    },
+    "train/Ground truth/185_D.png": {
+      "bytes": 69801,
+      "crc32": "febe40c8"
+    },
+    "train/Ground truth/186_D.png": {
+      "bytes": 62843,
+      "crc32": "cefb209a"
+    },
+    "train/Ground truth/187_D.png": {
+      "bytes": 53445,
+      "crc32": "500d739a"
+    },
+    "train/Ground truth/188_D.png": {
+      "bytes": 77672,
+      "crc32": "57a61717"
+    },
+    "train/Ground truth/189_D.png": {
+      "bytes": 63595,
+      "crc32": "a5dd7bbe"
+    },
+    "train/Ground truth/18_A.png": {
+      "bytes": 63054,
+      "crc32": "53382a2d"
+    },
+    "train/Ground truth/190_D.png": {
+      "bytes": 56789,
+      "crc32": "59b2bdf4"
+    },
+    "train/Ground truth/191_D.png": {
+      "bytes": 83713,
+      "crc32": "1160358b"
+    },
+    "train/Ground truth/192_D.png": {
+      "bytes": 67429,
+      "crc32": "ee8cc616"
+    },
+    "train/Ground truth/193_D.png": {
+      "bytes": 69209,
+      "crc32": "2955d99d"
+    },
+    "train/Ground truth/194_D.png": {
+      "bytes": 59443,
+      "crc32": "4d244906"
+    },
+    "train/Ground truth/195_D.png": {
+      "bytes": 59410,
+      "crc32": "d7521854"
+    },
+    "train/Ground truth/196_D.png": {
+      "bytes": 54802,
+      "crc32": "5f294ef9"
+    },
+    "train/Ground truth/197_D.png": {
+      "bytes": 70519,
+      "crc32": "53e020b2"
+    },
+    "train/Ground truth/198_D.png": {
+      "bytes": 55071,
+      "crc32": "cf732f6c"
+    },
+    "train/Ground truth/199_D.png": {
+      "bytes": 54220,
+      "crc32": "335a7244"
+    },
+    "train/Ground truth/19_A.png": {
+      "bytes": 76284,
+      "crc32": "fff9ac0e"
+    },
+    "train/Ground truth/1_A.png": {
+      "bytes": 61453,
+      "crc32": "9fd1cf60"
+    },
+    "train/Ground truth/200_D.png": {
+      "bytes": 80606,
+      "crc32": "2a7bc83c"
+    },
+    "train/Ground truth/201_D.png": {
+      "bytes": 46079,
+      "crc32": "f055e694"
+    },
+    "train/Ground truth/202_D.png": {
+      "bytes": 62509,
+      "crc32": "1d06cded"
+    },
+    "train/Ground truth/203_D.png": {
+      "bytes": 74146,
+      "crc32": "bc3878e6"
+    },
+    "train/Ground truth/204_D.png": {
+      "bytes": 63473,
+      "crc32": "95806282"
+    },
+    "train/Ground truth/205_D.png": {
+      "bytes": 71836,
+      "crc32": "665e5dd0"
+    },
+    "train/Ground truth/206_D.png": {
+      "bytes": 63253,
+      "crc32": "cfa9dbd1"
+    },
+    "train/Ground truth/207_D.png": {
+      "bytes": 73128,
+      "crc32": "22c4ad79"
+    },
+    "train/Ground truth/208_D.png": {
+      "bytes": 51609,
+      "crc32": "09f0dd24"
+    },
+    "train/Ground truth/209_D.png": {
+      "bytes": 56751,
+      "crc32": "c32bee85"
+    },
+    "train/Ground truth/20_A.png": {
+      "bytes": 77175,
+      "crc32": "ee581e05"
+    },
+    "train/Ground truth/210_D.png": {
+      "bytes": 34960,
+      "crc32": "75914625"
+    },
+    "train/Ground truth/211_D.png": {
+      "bytes": 60471,
+      "crc32": "c3db1494"
+    },
+    "train/Ground truth/212_D.png": {
+      "bytes": 83436,
+      "crc32": "93e5b1ad"
+    },
+    "train/Ground truth/213_D.png": {
+      "bytes": 70395,
+      "crc32": "a767fc71"
+    },
+    "train/Ground truth/214_D.png": {
+      "bytes": 57136,
+      "crc32": "c59528a2"
+    },
+    "train/Ground truth/215_D.png": {
+      "bytes": 59999,
+      "crc32": "95b0debc"
+    },
+    "train/Ground truth/216_D.png": {
+      "bytes": 64178,
+      "crc32": "62862682"
+    },
+    "train/Ground truth/217_D.png": {
+      "bytes": 75717,
+      "crc32": "7a560514"
+    },
+    "train/Ground truth/218_D.png": {
+      "bytes": 74258,
+      "crc32": "c6c97902"
+    },
+    "train/Ground truth/219_D.png": {
+      "bytes": 46007,
+      "crc32": "a6123aad"
+    },
+    "train/Ground truth/21_A.png": {
+      "bytes": 69747,
+      "crc32": "bae1a069"
+    },
+    "train/Ground truth/220_D.png": {
+      "bytes": 71575,
+      "crc32": "833a3bb6"
+    },
+    "train/Ground truth/221_D.png": {
+      "bytes": 63343,
+      "crc32": "c111899b"
+    },
+    "train/Ground truth/222_D.png": {
+      "bytes": 28958,
+      "crc32": "e14914a4"
+    },
+    "train/Ground truth/223_D.png": {
+      "bytes": 50734,
+      "crc32": "ed800643"
+    },
+    "train/Ground truth/224_D.png": {
+      "bytes": 55968,
+      "crc32": "0fc64379"
+    },
+    "train/Ground truth/225_D.png": {
+      "bytes": 48207,
+      "crc32": "f233bcd1"
+    },
+    "train/Ground truth/226_D.png": {
+      "bytes": 59586,
+      "crc32": "89168adc"
+    },
+    "train/Ground truth/227_D.png": {
+      "bytes": 68961,
+      "crc32": "c74d3a2c"
+    },
+    "train/Ground truth/228_D.png": {
+      "bytes": 54695,
+      "crc32": "2891bf31"
+    },
+    "train/Ground truth/229_D.png": {
+      "bytes": 71741,
+      "crc32": "860e7e87"
+    },
+    "train/Ground truth/22_A.png": {
+      "bytes": 68337,
+      "crc32": "ac5b7c7f"
+    },
+    "train/Ground truth/230_D.png": {
+      "bytes": 64412,
+      "crc32": "f10659c1"
+    },
+    "train/Ground truth/231_D.png": {
+      "bytes": 38341,
+      "crc32": "79093380"
+    },
+    "train/Ground truth/232_D.png": {
+      "bytes": 71442,
+      "crc32": "2f51c351"
+    },
+    "train/Ground truth/233_D.png": {
+      "bytes": 49282,
+      "crc32": "73813862"
+    },
+    "train/Ground truth/234_D.png": {
+      "bytes": 49012,
+      "crc32": "ca98b8d5"
+    },
+    "train/Ground truth/235_D.png": {
+      "bytes": 52823,
+      "crc32": "695f44dc"
+    },
+    "train/Ground truth/236_D.png": {
+      "bytes": 70041,
+      "crc32": "ba326cc2"
+    },
+    "train/Ground truth/237_D.png": {
+      "bytes": 39824,
+      "crc32": "befc6a9a"
+    },
+    "train/Ground truth/238_D.png": {
+      "bytes": 54128,
+      "crc32": "8290bdaf"
+    },
+    "train/Ground truth/239_D.png": {
+      "bytes": 57921,
+      "crc32": "00d2cb17"
+    },
+    "train/Ground truth/23_A.png": {
+      "bytes": 70674,
+      "crc32": "e2400138"
+    },
+    "train/Ground truth/240_D.png": {
+      "bytes": 61609,
+      "crc32": "8ed05d0a"
+    },
+    "train/Ground truth/241_D.png": {
+      "bytes": 45057,
+      "crc32": "9b2603e8"
+    },
+    "train/Ground truth/242_D.png": {
+      "bytes": 50676,
+      "crc32": "92a83703"
+    },
+    "train/Ground truth/243_D.png": {
+      "bytes": 58598,
+      "crc32": "dff56655"
+    },
+    "train/Ground truth/244_D.png": {
+      "bytes": 75514,
+      "crc32": "12322b1e"
+    },
+    "train/Ground truth/245_D.png": {
+      "bytes": 54363,
+      "crc32": "9b58ceb5"
+    },
+    "train/Ground truth/246_D.png": {
+      "bytes": 60224,
+      "crc32": "555ccfc2"
+    },
+    "train/Ground truth/247_D.png": {
+      "bytes": 39517,
+      "crc32": "3f2e412e"
+    },
+    "train/Ground truth/248_D.png": {
+      "bytes": 57548,
+      "crc32": "14bb9d34"
+    },
+    "train/Ground truth/249_D.png": {
+      "bytes": 51838,
+      "crc32": "13c50754"
+    },
+    "train/Ground truth/24_A.png": {
+      "bytes": 78892,
+      "crc32": "c683f4ee"
+    },
+    "train/Ground truth/250_D.png": {
+      "bytes": 49989,
+      "crc32": "ab4d9e99"
+    },
+    "train/Ground truth/251_D.png": {
+      "bytes": 56556,
+      "crc32": "3e942178"
+    },
+    "train/Ground truth/252_D.png": {
+      "bytes": 49571,
+      "crc32": "bcb4b20a"
+    },
+    "train/Ground truth/253_D.png": {
+      "bytes": 50882,
+      "crc32": "cc063d3a"
+    },
+    "train/Ground truth/254_D.png": {
+      "bytes": 68271,
+      "crc32": "64a5dd7c"
+    },
+    "train/Ground truth/255_D.png": {
+      "bytes": 61590,
+      "crc32": "3eadfcb8"
+    },
+    "train/Ground truth/256_D.png": {
+      "bytes": 32340,
+      "crc32": "7644f497"
+    },
+    "train/Ground truth/257_D.png": {
+      "bytes": 64522,
+      "crc32": "0104d693"
+    },
+    "train/Ground truth/258_D.png": {
+      "bytes": 58303,
+      "crc32": "41767c9d"
+    },
+    "train/Ground truth/259_D.png": {
+      "bytes": 60052,
+      "crc32": "5629f12c"
+    },
+    "train/Ground truth/25_A.png": {
+      "bytes": 84082,
+      "crc32": "b3443617"
+    },
+    "train/Ground truth/260_D.png": {
+      "bytes": 59632,
+      "crc32": "9c33af46"
+    },
+    "train/Ground truth/261_D.png": {
+      "bytes": 62222,
+      "crc32": "cfaf5522"
+    },
+    "train/Ground truth/262_D.png": {
+      "bytes": 62634,
+      "crc32": "8d128159"
+    },
+    "train/Ground truth/263_D.png": {
+      "bytes": 70021,
+      "crc32": "ba54ceda"
+    },
+    "train/Ground truth/264_D.png": {
+      "bytes": 71609,
+      "crc32": "00e86b13"
+    },
+    "train/Ground truth/265_D.png": {
+      "bytes": 66369,
+      "crc32": "bdfc6da3"
+    },
+    "train/Ground truth/266_D.png": {
+      "bytes": 52996,
+      "crc32": "6a5a08fc"
+    },
+    "train/Ground truth/267_D.png": {
+      "bytes": 46994,
+      "crc32": "19b1d7ed"
+    },
+    "train/Ground truth/268_D.png": {
+      "bytes": 65625,
+      "crc32": "3eb80d9f"
+    },
+    "train/Ground truth/269_D.png": {
+      "bytes": 53663,
+      "crc32": "c7192eac"
+    },
+    "train/Ground truth/26_A.png": {
+      "bytes": 71522,
+      "crc32": "16f638b3"
+    },
+    "train/Ground truth/270_D.png": {
+      "bytes": 27778,
+      "crc32": "ee0339fd"
+    },
+    "train/Ground truth/271_D.png": {
+      "bytes": 64982,
+      "crc32": "64309da1"
+    },
+    "train/Ground truth/272_D.png": {
+      "bytes": 48254,
+      "crc32": "4dea1e7c"
+    },
+    "train/Ground truth/273_D.png": {
+      "bytes": 67255,
+      "crc32": "88d65a22"
+    },
+    "train/Ground truth/274_D.png": {
+      "bytes": 59757,
+      "crc32": "f7a42812"
+    },
+    "train/Ground truth/275_D.png": {
+      "bytes": 54003,
+      "crc32": "77a33c75"
+    },
+    "train/Ground truth/276_D.png": {
+      "bytes": 65644,
+      "crc32": "6040c20e"
+    },
+    "train/Ground truth/277_D.png": {
+      "bytes": 50926,
+      "crc32": "75d9fa25"
+    },
+    "train/Ground truth/278_D.png": {
+      "bytes": 43182,
+      "crc32": "20e95569"
+    },
+    "train/Ground truth/279_D.png": {
+      "bytes": 67767,
+      "crc32": "6a8aba63"
+    },
+    "train/Ground truth/27_A.png": {
+      "bytes": 56441,
+      "crc32": "aae97a9f"
+    },
+    "train/Ground truth/280_D.png": {
+      "bytes": 56418,
+      "crc32": "50d44d70"
+    },
+    "train/Ground truth/281_D.png": {
+      "bytes": 50934,
+      "crc32": "7a1fae1c"
+    },
+    "train/Ground truth/282_D.png": {
+      "bytes": 65689,
+      "crc32": "b23334ec"
+    },
+    "train/Ground truth/283_D.png": {
+      "bytes": 47731,
+      "crc32": "8a8fb88b"
+    },
+    "train/Ground truth/284_D.png": {
+      "bytes": 40175,
+      "crc32": "ddc3c3da"
+    },
+    "train/Ground truth/285_D.png": {
+      "bytes": 39319,
+      "crc32": "0f606643"
+    },
+    "train/Ground truth/286_D.png": {
+      "bytes": 67861,
+      "crc32": "d75a119e"
+    },
+    "train/Ground truth/287_D.png": {
+      "bytes": 41402,
+      "crc32": "84e24363"
+    },
+    "train/Ground truth/288_D.png": {
+      "bytes": 73050,
+      "crc32": "bf7c9a75"
+    },
+    "train/Ground truth/289_D.png": {
+      "bytes": 60692,
+      "crc32": "e248dae0"
+    },
+    "train/Ground truth/28_A.png": {
+      "bytes": 75887,
+      "crc32": "c2462b40"
+    },
+    "train/Ground truth/290_D.png": {
+      "bytes": 54916,
+      "crc32": "1e4aac09"
+    },
+    "train/Ground truth/291_D.png": {
+      "bytes": 70956,
+      "crc32": "0c926d52"
+    },
+    "train/Ground truth/292_D.png": {
+      "bytes": 70938,
+      "crc32": "a71162bb"
+    },
+    "train/Ground truth/293_D.png": {
+      "bytes": 67139,
+      "crc32": "37c80431"
+    },
+    "train/Ground truth/294_D.png": {
+      "bytes": 62748,
+      "crc32": "07fc457a"
+    },
+    "train/Ground truth/295_D.png": {
+      "bytes": 74838,
+      "crc32": "a848b035"
+    },
+    "train/Ground truth/296_D.png": {
+      "bytes": 56711,
+      "crc32": "94b01636"
+    },
+    "train/Ground truth/297_D.png": {
+      "bytes": 38893,
+      "crc32": "ef773159"
+    },
+    "train/Ground truth/298_D.png": {
+      "bytes": 51991,
+      "crc32": "aa0ee2f2"
+    },
+    "train/Ground truth/299_D.png": {
+      "bytes": 40371,
+      "crc32": "04e66a68"
+    },
+    "train/Ground truth/29_A.png": {
+      "bytes": 42173,
+      "crc32": "729a4304"
+    },
+    "train/Ground truth/2_A.png": {
+      "bytes": 74845,
+      "crc32": "d963b28d"
+    },
+    "train/Ground truth/300_D.png": {
+      "bytes": 54488,
+      "crc32": "6281efe3"
+    },
+    "train/Ground truth/301_G.png": {
+      "bytes": 48018,
+      "crc32": "75e26b32"
+    },
+    "train/Ground truth/302_G.png": {
+      "bytes": 45942,
+      "crc32": "103e0013"
+    },
+    "train/Ground truth/303_G.png": {
+      "bytes": 52420,
+      "crc32": "e7b3b736"
+    },
+    "train/Ground truth/304_G.png": {
+      "bytes": 64542,
+      "crc32": "0333ac43"
+    },
+    "train/Ground truth/305_G.png": {
+      "bytes": 75286,
+      "crc32": "5266cdc0"
+    },
+    "train/Ground truth/306_G.png": {
+      "bytes": 59018,
+      "crc32": "0c1e6492"
+    },
+    "train/Ground truth/307_G.png": {
+      "bytes": 60214,
+      "crc32": "7698be34"
+    },
+    "train/Ground truth/308_G.png": {
+      "bytes": 63905,
+      "crc32": "fca435b3"
+    },
+    "train/Ground truth/309_G.png": {
+      "bytes": 60948,
+      "crc32": "13a7cc8a"
+    },
+    "train/Ground truth/30_A.png": {
+      "bytes": 72473,
+      "crc32": "7c0f187a"
+    },
+    "train/Ground truth/310_G.png": {
+      "bytes": 57577,
+      "crc32": "69efad9a"
+    },
+    "train/Ground truth/311_G.png": {
+      "bytes": 73984,
+      "crc32": "e0cfeea5"
+    },
+    "train/Ground truth/312_G.png": {
+      "bytes": 66155,
+      "crc32": "909f67e7"
+    },
+    "train/Ground truth/313_G.png": {
+      "bytes": 74747,
+      "crc32": "cce898e0"
+    },
+    "train/Ground truth/314_G.png": {
+      "bytes": 71073,
+      "crc32": "5146c0d6"
+    },
+    "train/Ground truth/315_G.png": {
+      "bytes": 73743,
+      "crc32": "bbccbf96"
+    },
+    "train/Ground truth/316_G.png": {
+      "bytes": 27518,
+      "crc32": "40ca167a"
+    },
+    "train/Ground truth/317_G.png": {
+      "bytes": 71200,
+      "crc32": "cb4cf804"
+    },
+    "train/Ground truth/318_G.png": {
+      "bytes": 65661,
+      "crc32": "d062a239"
+    },
+    "train/Ground truth/319_G.png": {
+      "bytes": 38536,
+      "crc32": "25adf967"
+    },
+    "train/Ground truth/31_A.png": {
+      "bytes": 68693,
+      "crc32": "4fe333b2"
+    },
+    "train/Ground truth/320_G.png": {
+      "bytes": 72724,
+      "crc32": "f1e92c4f"
+    },
+    "train/Ground truth/321_G.png": {
+      "bytes": 54222,
+      "crc32": "a2fe6291"
+    },
+    "train/Ground truth/322_G.png": {
+      "bytes": 58527,
+      "crc32": "229e8b5a"
+    },
+    "train/Ground truth/323_G.png": {
+      "bytes": 44123,
+      "crc32": "e45c368e"
+    },
+    "train/Ground truth/324_G.png": {
+      "bytes": 49973,
+      "crc32": "8be2de98"
+    },
+    "train/Ground truth/325_G.png": {
+      "bytes": 32239,
+      "crc32": "b2854c07"
+    },
+    "train/Ground truth/326_G.png": {
+      "bytes": 35995,
+      "crc32": "041932bd"
+    },
+    "train/Ground truth/327_G.png": {
+      "bytes": 76309,
+      "crc32": "c532250b"
+    },
+    "train/Ground truth/328_G.png": {
+      "bytes": 63876,
+      "crc32": "8209e10c"
+    },
+    "train/Ground truth/329_G.png": {
+      "bytes": 66937,
+      "crc32": "79cb83da"
+    },
+    "train/Ground truth/32_A.png": {
+      "bytes": 78020,
+      "crc32": "d43e9323"
+    },
+    "train/Ground truth/330_G.png": {
+      "bytes": 51966,
+      "crc32": "bea624a5"
+    },
+    "train/Ground truth/331_G.png": {
+      "bytes": 28519,
+      "crc32": "4b543d74"
+    },
+    "train/Ground truth/332_G.png": {
+      "bytes": 57633,
+      "crc32": "828feedb"
+    },
+    "train/Ground truth/333_G.png": {
+      "bytes": 58238,
+      "crc32": "465e19ff"
+    },
+    "train/Ground truth/334_G.png": {
+      "bytes": 55891,
+      "crc32": "5a0afbca"
+    },
+    "train/Ground truth/335_G.png": {
+      "bytes": 56773,
+      "crc32": "f56a5129"
+    },
+    "train/Ground truth/336_G.png": {
+      "bytes": 63783,
+      "crc32": "37272b40"
+    },
+    "train/Ground truth/337_G.png": {
+      "bytes": 68803,
+      "crc32": "93bc297a"
+    },
+    "train/Ground truth/338_G.png": {
+      "bytes": 73981,
+      "crc32": "22002764"
+    },
+    "train/Ground truth/339_G.png": {
+      "bytes": 70768,
+      "crc32": "00f097db"
+    },
+    "train/Ground truth/33_A.png": {
+      "bytes": 69760,
+      "crc32": "af9738a9"
+    },
+    "train/Ground truth/340_G.png": {
+      "bytes": 71519,
+      "crc32": "dabe4475"
+    },
+    "train/Ground truth/341_G.png": {
+      "bytes": 34904,
+      "crc32": "31c18a0d"
+    },
+    "train/Ground truth/342_G.png": {
+      "bytes": 77228,
+      "crc32": "168dde12"
+    },
+    "train/Ground truth/343_G.png": {
+      "bytes": 77000,
+      "crc32": "6b8bf253"
+    },
+    "train/Ground truth/344_G.png": {
+      "bytes": 80132,
+      "crc32": "e525290d"
+    },
+    "train/Ground truth/345_G.png": {
+      "bytes": 84514,
+      "crc32": "8619368f"
+    },
+    "train/Ground truth/346_G.png": {
+      "bytes": 71750,
+      "crc32": "a80e5103"
+    },
+    "train/Ground truth/347_G.png": {
+      "bytes": 71777,
+      "crc32": "1fa3c800"
+    },
+    "train/Ground truth/348_G.png": {
+      "bytes": 66381,
+      "crc32": "3b34ded4"
+    },
+    "train/Ground truth/349_G.png": {
+      "bytes": 48988,
+      "crc32": "3aca6766"
+    },
+    "train/Ground truth/34_A.png": {
+      "bytes": 60657,
+      "crc32": "56af2097"
+    },
+    "train/Ground truth/350_G.png": {
+      "bytes": 49121,
+      "crc32": "7933fddc"
+    },
+    "train/Ground truth/351_G.png": {
+      "bytes": 63482,
+      "crc32": "fc14e825"
+    },
+    "train/Ground truth/352_G.png": {
+      "bytes": 55768,
+      "crc32": "a8b1bbe4"
+    },
+    "train/Ground truth/353_G.png": {
+      "bytes": 44921,
+      "crc32": "9ff1be6a"
+    },
+    "train/Ground truth/354_G.png": {
+      "bytes": 56709,
+      "crc32": "62537e71"
+    },
+    "train/Ground truth/355_G.png": {
+      "bytes": 57337,
+      "crc32": "8213e564"
+    },
+    "train/Ground truth/356_G.png": {
+      "bytes": 67630,
+      "crc32": "910e9b8b"
+    },
+    "train/Ground truth/357_G.png": {
+      "bytes": 70440,
+      "crc32": "1f17dbca"
+    },
+    "train/Ground truth/358_G.png": {
+      "bytes": 77046,
+      "crc32": "9a304ec6"
+    },
+    "train/Ground truth/359_G.png": {
+      "bytes": 72638,
+      "crc32": "441dffae"
+    },
+    "train/Ground truth/35_A.png": {
+      "bytes": 68727,
+      "crc32": "f8dc3854"
+    },
+    "train/Ground truth/360_G.png": {
+      "bytes": 32088,
+      "crc32": "cdd0a0d0"
+    },
+    "train/Ground truth/361_G.png": {
+      "bytes": 26930,
+      "crc32": "2c85536e"
+    },
+    "train/Ground truth/362_G.png": {
+      "bytes": 56934,
+      "crc32": "cfd207b6"
+    },
+    "train/Ground truth/363_G.png": {
+      "bytes": 50853,
+      "crc32": "ec108ef0"
+    },
+    "train/Ground truth/364_G.png": {
+      "bytes": 44105,
+      "crc32": "d71e539c"
+    },
+    "train/Ground truth/365_G.png": {
+      "bytes": 52255,
+      "crc32": "0233ce11"
+    },
+    "train/Ground truth/366_G.png": {
+      "bytes": 49431,
+      "crc32": "f71301b1"
+    },
+    "train/Ground truth/367_G.png": {
+      "bytes": 69624,
+      "crc32": "73381322"
+    },
+    "train/Ground truth/368_G.png": {
+      "bytes": 63286,
+      "crc32": "b7395973"
+    },
+    "train/Ground truth/369_G.png": {
+      "bytes": 71240,
+      "crc32": "b33f5431"
+    },
+    "train/Ground truth/36_A.png": {
+      "bytes": 75762,
+      "crc32": "b5a354fe"
+    },
+    "train/Ground truth/370_G.png": {
+      "bytes": 67680,
+      "crc32": "109915fd"
+    },
+    "train/Ground truth/371_G.png": {
+      "bytes": 46354,
+      "crc32": "133b6574"
+    },
+    "train/Ground truth/372_G.png": {
+      "bytes": 56535,
+      "crc32": "a70c1ac2"
+    },
+    "train/Ground truth/373_G.png": {
+      "bytes": 32233,
+      "crc32": "48d2eaa7"
+    },
+    "train/Ground truth/374_G.png": {
+      "bytes": 60856,
+      "crc32": "b0b44a78"
+    },
+    "train/Ground truth/375_G.png": {
+      "bytes": 52513,
+      "crc32": "1565dbf7"
+    },
+    "train/Ground truth/376_G.png": {
+      "bytes": 69527,
+      "crc32": "cef8212a"
+    },
+    "train/Ground truth/377_G.png": {
+      "bytes": 71312,
+      "crc32": "b40b2659"
+    },
+    "train/Ground truth/378_G.png": {
+      "bytes": 70291,
+      "crc32": "9ac11bc8"
+    },
+    "train/Ground truth/379_G.png": {
+      "bytes": 49443,
+      "crc32": "d32a0521"
+    },
+    "train/Ground truth/37_A.png": {
+      "bytes": 79136,
+      "crc32": "629aa00a"
+    },
+    "train/Ground truth/380_G.png": {
+      "bytes": 33180,
+      "crc32": "45b21b22"
+    },
+    "train/Ground truth/381_G.png": {
+      "bytes": 38431,
+      "crc32": "5346f766"
+    },
+    "train/Ground truth/382_G.png": {
+      "bytes": 44835,
+      "crc32": "26b467df"
+    },
+    "train/Ground truth/383_G.png": {
+      "bytes": 70607,
+      "crc32": "68632f1b"
+    },
+    "train/Ground truth/384_G.png": {
+      "bytes": 41929,
+      "crc32": "984796bc"
+    },
+    "train/Ground truth/385_G.png": {
+      "bytes": 48615,
+      "crc32": "61d28f3e"
+    },
+    "train/Ground truth/386_G.png": {
+      "bytes": 66447,
+      "crc32": "94f81556"
+    },
+    "train/Ground truth/387_G.png": {
+      "bytes": 53832,
+      "crc32": "054a86df"
+    },
+    "train/Ground truth/388_G.png": {
+      "bytes": 52239,
+      "crc32": "0e7df2ce"
+    },
+    "train/Ground truth/389_G.png": {
+      "bytes": 71750,
+      "crc32": "55fdf0f9"
+    },
+    "train/Ground truth/38_A.png": {
+      "bytes": 55673,
+      "crc32": "e5050036"
+    },
+    "train/Ground truth/390_G.png": {
+      "bytes": 69081,
+      "crc32": "98633f15"
+    },
+    "train/Ground truth/391_G.png": {
+      "bytes": 73042,
+      "crc32": "9999db1a"
+    },
+    "train/Ground truth/392_G.png": {
+      "bytes": 73685,
+      "crc32": "a01b9b82"
+    },
+    "train/Ground truth/393_G.png": {
+      "bytes": 46084,
+      "crc32": "68ebbbe6"
+    },
+    "train/Ground truth/394_G.png": {
+      "bytes": 52191,
+      "crc32": "5f16ee84"
+    },
+    "train/Ground truth/395_G.png": {
+      "bytes": 61390,
+      "crc32": "61d5fb97"
+    },
+    "train/Ground truth/396_G.png": {
+      "bytes": 72192,
+      "crc32": "f84436c5"
+    },
+    "train/Ground truth/397_G.png": {
+      "bytes": 67053,
+      "crc32": "c94321b3"
+    },
+    "train/Ground truth/398_G.png": {
+      "bytes": 71631,
+      "crc32": "bc76274e"
+    },
+    "train/Ground truth/399_G.png": {
+      "bytes": 53889,
+      "crc32": "ad3f78fe"
+    },
+    "train/Ground truth/39_A.png": {
+      "bytes": 65224,
+      "crc32": "9908b7f3"
+    },
+    "train/Ground truth/3_A.png": {
+      "bytes": 71648,
+      "crc32": "1c380934"
+    },
+    "train/Ground truth/400_G.png": {
+      "bytes": 45019,
+      "crc32": "5f572626"
+    },
+    "train/Ground truth/401_G.png": {
+      "bytes": 26396,
+      "crc32": "ba4e6f13"
+    },
+    "train/Ground truth/402_G.png": {
+      "bytes": 71239,
+      "crc32": "1b78614e"
+    },
+    "train/Ground truth/403_G.png": {
+      "bytes": 78876,
+      "crc32": "ea259a82"
+    },
+    "train/Ground truth/404_G.png": {
+      "bytes": 31727,
+      "crc32": "76ea2306"
+    },
+    "train/Ground truth/405_G.png": {
+      "bytes": 57916,
+      "crc32": "8af4f5db"
+    },
+    "train/Ground truth/406_G.png": {
+      "bytes": 64912,
+      "crc32": "5ce4ea94"
+    },
+    "train/Ground truth/407_G.png": {
+      "bytes": 61120,
+      "crc32": "dcf68558"
+    },
+    "train/Ground truth/408_G.png": {
+      "bytes": 68761,
+      "crc32": "b31f32c0"
+    },
+    "train/Ground truth/409_G.png": {
+      "bytes": 71577,
+      "crc32": "3c0724ce"
+    },
+    "train/Ground truth/40_A.png": {
+      "bytes": 55952,
+      "crc32": "a333c9bb"
+    },
+    "train/Ground truth/410_G.png": {
+      "bytes": 64076,
+      "crc32": "97be76ae"
+    },
+    "train/Ground truth/411_G.png": {
+      "bytes": 67000,
+      "crc32": "4db30ee1"
+    },
+    "train/Ground truth/412_G.png": {
+      "bytes": 74093,
+      "crc32": "bc9a9a75"
+    },
+    "train/Ground truth/413_G.png": {
+      "bytes": 67487,
+      "crc32": "68e2cd13"
+    },
+    "train/Ground truth/414_G.png": {
+      "bytes": 60931,
+      "crc32": "f3c3062c"
+    },
+    "train/Ground truth/415_G.png": {
+      "bytes": 58518,
+      "crc32": "b2cbffca"
+    },
+    "train/Ground truth/416_G.png": {
+      "bytes": 52731,
+      "crc32": "130fbca2"
+    },
+    "train/Ground truth/417_G.png": {
+      "bytes": 75222,
+      "crc32": "3a1f2111"
+    },
+    "train/Ground truth/418_G.png": {
+      "bytes": 79933,
+      "crc32": "a73e7a26"
+    },
+    "train/Ground truth/419_G.png": {
+      "bytes": 74649,
+      "crc32": "2e5f88e7"
+    },
+    "train/Ground truth/41_A.png": {
+      "bytes": 58461,
+      "crc32": "cf460c87"
+    },
+    "train/Ground truth/420_G.png": {
+      "bytes": 66658,
+      "crc32": "f6c45de4"
+    },
+    "train/Ground truth/421_G.png": {
+      "bytes": 77106,
+      "crc32": "7dab66f8"
+    },
+    "train/Ground truth/422_G.png": {
+      "bytes": 71229,
+      "crc32": "d241f7ff"
+    },
+    "train/Ground truth/423_G.png": {
+      "bytes": 70671,
+      "crc32": "568ca3fa"
+    },
+    "train/Ground truth/424_G.png": {
+      "bytes": 74777,
+      "crc32": "c5d83c6b"
+    },
+    "train/Ground truth/425_G.png": {
+      "bytes": 62757,
+      "crc32": "614a8b75"
+    },
+    "train/Ground truth/426_G.png": {
+      "bytes": 65584,
+      "crc32": "48baf6cb"
+    },
+    "train/Ground truth/427_G.png": {
+      "bytes": 58716,
+      "crc32": "066054cf"
+    },
+    "train/Ground truth/428_G.png": {
+      "bytes": 72898,
+      "crc32": "deeb62b8"
+    },
+    "train/Ground truth/429_G.png": {
+      "bytes": 57978,
+      "crc32": "3958d377"
+    },
+    "train/Ground truth/42_A.png": {
+      "bytes": 71822,
+      "crc32": "e31888fe"
+    },
+    "train/Ground truth/430_G.png": {
+      "bytes": 57445,
+      "crc32": "530cd184"
+    },
+    "train/Ground truth/431_G.png": {
+      "bytes": 63574,
+      "crc32": "08b976dd"
+    },
+    "train/Ground truth/432_G.png": {
+      "bytes": 60096,
+      "crc32": "de3ddac3"
+    },
+    "train/Ground truth/433_G.png": {
+      "bytes": 68453,
+      "crc32": "13eb26c7"
+    },
+    "train/Ground truth/434_G.png": {
+      "bytes": 57077,
+      "crc32": "71646568"
+    },
+    "train/Ground truth/435_G.png": {
+      "bytes": 77636,
+      "crc32": "6074a2d7"
+    },
+    "train/Ground truth/436_G.png": {
+      "bytes": 73191,
+      "crc32": "165415b7"
+    },
+    "train/Ground truth/437_G.png": {
+      "bytes": 69050,
+      "crc32": "069327f6"
+    },
+    "train/Ground truth/438_G.png": {
+      "bytes": 58933,
+      "crc32": "47c13881"
+    },
+    "train/Ground truth/439_G.png": {
+      "bytes": 57298,
+      "crc32": "4adf8ce9"
+    },
+    "train/Ground truth/43_A.png": {
+      "bytes": 67665,
+      "crc32": "7ac3f11f"
+    },
+    "train/Ground truth/440_G.png": {
+      "bytes": 63580,
+      "crc32": "ee4bc870"
+    },
+    "train/Ground truth/441_G.png": {
+      "bytes": 70140,
+      "crc32": "b97d93d2"
+    },
+    "train/Ground truth/442_G.png": {
+      "bytes": 46108,
+      "crc32": "701072e5"
+    },
+    "train/Ground truth/443_G.png": {
+      "bytes": 34650,
+      "crc32": "74406bff"
+    },
+    "train/Ground truth/444_G.png": {
+      "bytes": 66370,
+      "crc32": "8afea96d"
+    },
+    "train/Ground truth/445_G.png": {
+      "bytes": 63582,
+      "crc32": "53fab410"
+    },
+    "train/Ground truth/446_G.png": {
+      "bytes": 65077,
+      "crc32": "0a5229cd"
+    },
+    "train/Ground truth/447_G.png": {
+      "bytes": 12286,
+      "crc32": "5800f6b4"
+    },
+    "train/Ground truth/448_G.png": {
+      "bytes": 12286,
+      "crc32": "5800f6b4"
+    },
+    "train/Ground truth/449_G.png": {
+      "bytes": 55468,
+      "crc32": "5e550fe0"
+    },
+    "train/Ground truth/44_A.png": {
+      "bytes": 50046,
+      "crc32": "4605d19f"
+    },
+    "train/Ground truth/450_G.png": {
+      "bytes": 55340,
+      "crc32": "1b8e5e64"
+    },
+    "train/Ground truth/451_N.png": {
+      "bytes": 76515,
+      "crc32": "08c1a631"
+    },
+    "train/Ground truth/452_N.png": {
+      "bytes": 76157,
+      "crc32": "88e733ff"
+    },
+    "train/Ground truth/453_N.png": {
+      "bytes": 76601,
+      "crc32": "e10db2d0"
+    },
+    "train/Ground truth/454_N.png": {
+      "bytes": 74666,
+      "crc32": "d0a7adc5"
+    },
+    "train/Ground truth/455_N.png": {
+      "bytes": 71545,
+      "crc32": "097eb3b7"
+    },
+    "train/Ground truth/456_N.png": {
+      "bytes": 67056,
+      "crc32": "35b694cb"
+    },
+    "train/Ground truth/457_N.png": {
+      "bytes": 78806,
+      "crc32": "b818c04e"
+    },
+    "train/Ground truth/458_N.png": {
+      "bytes": 81186,
+      "crc32": "57e593cf"
+    },
+    "train/Ground truth/459_N.png": {
+      "bytes": 65194,
+      "crc32": "75c72a71"
+    },
+    "train/Ground truth/45_A.png": {
+      "bytes": 85226,
+      "crc32": "5c17bd88"
+    },
+    "train/Ground truth/460_N.png": {
+      "bytes": 66802,
+      "crc32": "6608465f"
+    },
+    "train/Ground truth/461_N.png": {
+      "bytes": 68912,
+      "crc32": "dae44b87"
+    },
+    "train/Ground truth/462_N.png": {
+      "bytes": 72937,
+      "crc32": "d04cdd8e"
+    },
+    "train/Ground truth/463_N.png": {
+      "bytes": 66029,
+      "crc32": "69527963"
+    },
+    "train/Ground truth/464_N.png": {
+      "bytes": 71839,
+      "crc32": "19ba910f"
+    },
+    "train/Ground truth/465_N.png": {
+      "bytes": 68137,
+      "crc32": "e2404fc9"
+    },
+    "train/Ground truth/466_N.png": {
+      "bytes": 68973,
+      "crc32": "32602cac"
+    },
+    "train/Ground truth/467_N.png": {
+      "bytes": 68645,
+      "crc32": "15d8529b"
+    },
+    "train/Ground truth/468_N.png": {
+      "bytes": 64944,
+      "crc32": "378adf3f"
+    },
+    "train/Ground truth/469_N.png": {
+      "bytes": 71340,
+      "crc32": "d1ec6540"
+    },
+    "train/Ground truth/46_A.png": {
+      "bytes": 87501,
+      "crc32": "41f62a8f"
+    },
+    "train/Ground truth/470_N.png": {
+      "bytes": 71613,
+      "crc32": "8ee42fa2"
+    },
+    "train/Ground truth/471_N.png": {
+      "bytes": 70796,
+      "crc32": "00b5eb19"
+    },
+    "train/Ground truth/472_N.png": {
+      "bytes": 76369,
+      "crc32": "cf281980"
+    },
+    "train/Ground truth/473_N.png": {
+      "bytes": 67412,
+      "crc32": "7ddf4667"
+    },
+    "train/Ground truth/474_N.png": {
+      "bytes": 67257,
+      "crc32": "29172b67"
+    },
+    "train/Ground truth/475_N.png": {
+      "bytes": 67759,
+      "crc32": "fabe2d2c"
+    },
+    "train/Ground truth/476_N.png": {
+      "bytes": 80503,
+      "crc32": "817c1875"
+    },
+    "train/Ground truth/477_N.png": {
+      "bytes": 71808,
+      "crc32": "9b023572"
+    },
+    "train/Ground truth/478_N.png": {
+      "bytes": 68578,
+      "crc32": "6a9ed075"
+    },
+    "train/Ground truth/479_N.png": {
+      "bytes": 69269,
+      "crc32": "600a3cc8"
+    },
+    "train/Ground truth/47_A.png": {
+      "bytes": 75468,
+      "crc32": "80704725"
+    },
+    "train/Ground truth/480_N.png": {
+      "bytes": 75712,
+      "crc32": "04bc9ad9"
+    },
+    "train/Ground truth/481_N.png": {
+      "bytes": 74529,
+      "crc32": "995a5e3e"
+    },
+    "train/Ground truth/482_N.png": {
+      "bytes": 71552,
+      "crc32": "1d133cb8"
+    },
+    "train/Ground truth/483_N.png": {
+      "bytes": 77396,
+      "crc32": "a1629ce3"
+    },
+    "train/Ground truth/484_N.png": {
+      "bytes": 71807,
+      "crc32": "60075a68"
+    },
+    "train/Ground truth/485_N.png": {
+      "bytes": 71988,
+      "crc32": "600337ef"
+    },
+    "train/Ground truth/486_N.png": {
+      "bytes": 80959,
+      "crc32": "048dcfa3"
+    },
+    "train/Ground truth/487_N.png": {
+      "bytes": 64350,
+      "crc32": "59693af4"
+    },
+    "train/Ground truth/488_N.png": {
+      "bytes": 76122,
+      "crc32": "21070663"
+    },
+    "train/Ground truth/489_N.png": {
+      "bytes": 76862,
+      "crc32": "9f5c4936"
+    },
+    "train/Ground truth/48_A.png": {
+      "bytes": 80827,
+      "crc32": "8fcf1b2e"
+    },
+    "train/Ground truth/490_N.png": {
+      "bytes": 80351,
+      "crc32": "47315adf"
+    },
+    "train/Ground truth/491_N.png": {
+      "bytes": 81233,
+      "crc32": "110e21f6"
+    },
+    "train/Ground truth/492_N.png": {
+      "bytes": 64718,
+      "crc32": "49ddc437"
+    },
+    "train/Ground truth/493_N.png": {
+      "bytes": 66538,
+      "crc32": "dd53d224"
+    },
+    "train/Ground truth/494_N.png": {
+      "bytes": 64036,
+      "crc32": "6162040a"
+    },
+    "train/Ground truth/495_N.png": {
+      "bytes": 78329,
+      "crc32": "2431bc09"
+    },
+    "train/Ground truth/496_N.png": {
+      "bytes": 79740,
+      "crc32": "2793452b"
+    },
+    "train/Ground truth/497_N.png": {
+      "bytes": 65375,
+      "crc32": "53b6c2d5"
+    },
+    "train/Ground truth/498_N.png": {
+      "bytes": 74359,
+      "crc32": "4118afad"
+    },
+    "train/Ground truth/499_N.png": {
+      "bytes": 81872,
+      "crc32": "b8bee3bc"
+    },
+    "train/Ground truth/49_A.png": {
+      "bytes": 78878,
+      "crc32": "b971d602"
+    },
+    "train/Ground truth/4_A.png": {
+      "bytes": 69973,
+      "crc32": "3da8cc06"
+    },
+    "train/Ground truth/500_N.png": {
+      "bytes": 71202,
+      "crc32": "96903183"
+    },
+    "train/Ground truth/501_N.png": {
+      "bytes": 74190,
+      "crc32": "92ade468"
+    },
+    "train/Ground truth/502_N.png": {
+      "bytes": 67049,
+      "crc32": "6755ff89"
+    },
+    "train/Ground truth/503_N.png": {
+      "bytes": 79337,
+      "crc32": "218e3b4a"
+    },
+    "train/Ground truth/504_N.png": {
+      "bytes": 75602,
+      "crc32": "bc497b9e"
+    },
+    "train/Ground truth/505_N.png": {
+      "bytes": 86054,
+      "crc32": "57ede38c"
+    },
+    "train/Ground truth/506_N.png": {
+      "bytes": 73081,
+      "crc32": "7df104ba"
+    },
+    "train/Ground truth/507_N.png": {
+      "bytes": 72939,
+      "crc32": "1696a4eb"
+    },
+    "train/Ground truth/508_N.png": {
+      "bytes": 74732,
+      "crc32": "e828d44f"
+    },
+    "train/Ground truth/509_N.png": {
+      "bytes": 72666,
+      "crc32": "81e26c85"
+    },
+    "train/Ground truth/50_A.png": {
+      "bytes": 68809,
+      "crc32": "4deb28a9"
+    },
+    "train/Ground truth/510_N.png": {
+      "bytes": 70716,
+      "crc32": "732356c7"
+    },
+    "train/Ground truth/511_N.png": {
+      "bytes": 72946,
+      "crc32": "c84f6cad"
+    },
+    "train/Ground truth/512_N.png": {
+      "bytes": 70611,
+      "crc32": "3599c2bc"
+    },
+    "train/Ground truth/513_N.png": {
+      "bytes": 72143,
+      "crc32": "2efe4b61"
+    },
+    "train/Ground truth/514_N.png": {
+      "bytes": 74647,
+      "crc32": "90ef7632"
+    },
+    "train/Ground truth/515_N.png": {
+      "bytes": 79226,
+      "crc32": "bc096559"
+    },
+    "train/Ground truth/516_N.png": {
+      "bytes": 80196,
+      "crc32": "61b4257a"
+    },
+    "train/Ground truth/517_N.png": {
+      "bytes": 74265,
+      "crc32": "0e03d3ab"
+    },
+    "train/Ground truth/518_N.png": {
+      "bytes": 71616,
+      "crc32": "03ff69b6"
+    },
+    "train/Ground truth/519_N.png": {
+      "bytes": 70543,
+      "crc32": "ad96b9b6"
+    },
+    "train/Ground truth/51_A.png": {
+      "bytes": 65258,
+      "crc32": "b015b874"
+    },
+    "train/Ground truth/520_N.png": {
+      "bytes": 77596,
+      "crc32": "9900e19e"
+    },
+    "train/Ground truth/521_N.png": {
+      "bytes": 74307,
+      "crc32": "29793e9f"
+    },
+    "train/Ground truth/522_N.png": {
+      "bytes": 71458,
+      "crc32": "f0612794"
+    },
+    "train/Ground truth/523_N.png": {
+      "bytes": 67866,
+      "crc32": "fa08b9c7"
+    },
+    "train/Ground truth/524_N.png": {
+      "bytes": 64780,
+      "crc32": "5d02d87d"
+    },
+    "train/Ground truth/525_N.png": {
+      "bytes": 58201,
+      "crc32": "a8309730"
+    },
+    "train/Ground truth/526_N.png": {
+      "bytes": 68839,
+      "crc32": "e17f5548"
+    },
+    "train/Ground truth/527_N.png": {
+      "bytes": 65031,
+      "crc32": "d89aebd8"
+    },
+    "train/Ground truth/528_N.png": {
+      "bytes": 73441,
+      "crc32": "22d1b769"
+    },
+    "train/Ground truth/529_N.png": {
+      "bytes": 65267,
+      "crc32": "a6b3f45b"
+    },
+    "train/Ground truth/52_A.png": {
+      "bytes": 82151,
+      "crc32": "ab6b09da"
+    },
+    "train/Ground truth/530_N.png": {
+      "bytes": 68201,
+      "crc32": "9abc9d62"
+    },
+    "train/Ground truth/531_N.png": {
+      "bytes": 71320,
+      "crc32": "40ce2053"
+    },
+    "train/Ground truth/532_N.png": {
+      "bytes": 79405,
+      "crc32": "31a86525"
+    },
+    "train/Ground truth/533_N.png": {
+      "bytes": 66671,
+      "crc32": "9be40c35"
+    },
+    "train/Ground truth/534_N.png": {
+      "bytes": 60648,
+      "crc32": "ed3f4d01"
+    },
+    "train/Ground truth/535_N.png": {
+      "bytes": 68441,
+      "crc32": "992a9590"
+    },
+    "train/Ground truth/536_N.png": {
+      "bytes": 66841,
+      "crc32": "dc7be6c8"
+    },
+    "train/Ground truth/537_N.png": {
+      "bytes": 67291,
+      "crc32": "e57bfe32"
+    },
+    "train/Ground truth/538_N.png": {
+      "bytes": 74052,
+      "crc32": "c66188ba"
+    },
+    "train/Ground truth/539_N.png": {
+      "bytes": 72299,
+      "crc32": "742a158a"
+    },
+    "train/Ground truth/53_A.png": {
+      "bytes": 71582,
+      "crc32": "6b0950b2"
+    },
+    "train/Ground truth/540_N.png": {
+      "bytes": 71745,
+      "crc32": "64919b09"
+    },
+    "train/Ground truth/541_N.png": {
+      "bytes": 66941,
+      "crc32": "12e03f72"
+    },
+    "train/Ground truth/542_N.png": {
+      "bytes": 75922,
+      "crc32": "0108ba47"
+    },
+    "train/Ground truth/543_N.png": {
+      "bytes": 80952,
+      "crc32": "d9b5b0df"
+    },
+    "train/Ground truth/544_N.png": {
+      "bytes": 75767,
+      "crc32": "55446711"
+    },
+    "train/Ground truth/545_N.png": {
+      "bytes": 69036,
+      "crc32": "6fdb74d1"
+    },
+    "train/Ground truth/546_N.png": {
+      "bytes": 65636,
+      "crc32": "020f3bc2"
+    },
+    "train/Ground truth/547_N.png": {
+      "bytes": 70464,
+      "crc32": "0d4a6d3f"
+    },
+    "train/Ground truth/548_N.png": {
+      "bytes": 74618,
+      "crc32": "595b3db0"
+    },
+    "train/Ground truth/549_N.png": {
+      "bytes": 75166,
+      "crc32": "6882147b"
+    },
+    "train/Ground truth/54_A.png": {
+      "bytes": 77392,
+      "crc32": "fb56faf6"
+    },
+    "train/Ground truth/550_N.png": {
+      "bytes": 70867,
+      "crc32": "a31765b8"
+    },
+    "train/Ground truth/551_N.png": {
+      "bytes": 76996,
+      "crc32": "f41cff6d"
+    },
+    "train/Ground truth/552_N.png": {
+      "bytes": 73426,
+      "crc32": "11c4f9ea"
+    },
+    "train/Ground truth/553_N.png": {
+      "bytes": 73928,
+      "crc32": "1404051f"
+    },
+    "train/Ground truth/554_N.png": {
+      "bytes": 75701,
+      "crc32": "b3303b6f"
+    },
+    "train/Ground truth/555_N.png": {
+      "bytes": 80539,
+      "crc32": "029c622a"
+    },
+    "train/Ground truth/556_N.png": {
+      "bytes": 78163,
+      "crc32": "d653c958"
+    },
+    "train/Ground truth/557_N.png": {
+      "bytes": 82567,
+      "crc32": "44977b40"
+    },
+    "train/Ground truth/558_N.png": {
+      "bytes": 77507,
+      "crc32": "a63ef2ea"
+    },
+    "train/Ground truth/559_N.png": {
+      "bytes": 75870,
+      "crc32": "d26ee1ac"
+    },
+    "train/Ground truth/55_A.png": {
+      "bytes": 67665,
+      "crc32": "489e1673"
+    },
+    "train/Ground truth/560_N.png": {
+      "bytes": 64058,
+      "crc32": "572405b1"
+    },
+    "train/Ground truth/561_N.png": {
+      "bytes": 70814,
+      "crc32": "ea30384c"
+    },
+    "train/Ground truth/562_N.png": {
+      "bytes": 71269,
+      "crc32": "ad8255f5"
+    },
+    "train/Ground truth/563_N.png": {
+      "bytes": 76838,
+      "crc32": "5f595b27"
+    },
+    "train/Ground truth/564_N.png": {
+      "bytes": 77850,
+      "crc32": "75ddfc90"
+    },
+    "train/Ground truth/565_N.png": {
+      "bytes": 66141,
+      "crc32": "903f929b"
+    },
+    "train/Ground truth/566_N.png": {
+      "bytes": 68112,
+      "crc32": "34abc6e1"
+    },
+    "train/Ground truth/567_N.png": {
+      "bytes": 77748,
+      "crc32": "65c026e9"
+    },
+    "train/Ground truth/568_N.png": {
+      "bytes": 71892,
+      "crc32": "b25edd32"
+    },
+    "train/Ground truth/569_N.png": {
+      "bytes": 77797,
+      "crc32": "40fb9732"
+    },
+    "train/Ground truth/56_A.png": {
+      "bytes": 65464,
+      "crc32": "2144120a"
+    },
+    "train/Ground truth/570_N.png": {
+      "bytes": 75671,
+      "crc32": "5ad68458"
+    },
+    "train/Ground truth/571_N.png": {
+      "bytes": 78187,
+      "crc32": "d0429fd9"
+    },
+    "train/Ground truth/572_N.png": {
+      "bytes": 70620,
+      "crc32": "b54e08c8"
+    },
+    "train/Ground truth/573_N.png": {
+      "bytes": 76080,
+      "crc32": "f7e1e006"
+    },
+    "train/Ground truth/574_N.png": {
+      "bytes": 78592,
+      "crc32": "a3023fa5"
+    },
+    "train/Ground truth/575_N.png": {
+      "bytes": 66312,
+      "crc32": "acaf0bf5"
+    },
+    "train/Ground truth/576_N.png": {
+      "bytes": 73324,
+      "crc32": "a679479c"
+    },
+    "train/Ground truth/577_N.png": {
+      "bytes": 79039,
+      "crc32": "3547c733"
+    },
+    "train/Ground truth/578_N.png": {
+      "bytes": 84136,
+      "crc32": "f01d74c6"
+    },
+    "train/Ground truth/579_N.png": {
+      "bytes": 70836,
+      "crc32": "e5eb3751"
+    },
+    "train/Ground truth/57_A.png": {
+      "bytes": 66902,
+      "crc32": "ade05bb0"
+    },
+    "train/Ground truth/580_N.png": {
+      "bytes": 72217,
+      "crc32": "f49815f7"
+    },
+    "train/Ground truth/581_N.png": {
+      "bytes": 76517,
+      "crc32": "99973134"
+    },
+    "train/Ground truth/582_N.png": {
+      "bytes": 84942,
+      "crc32": "49430ed6"
+    },
+    "train/Ground truth/583_N.png": {
+      "bytes": 73075,
+      "crc32": "6ee4193d"
+    },
+    "train/Ground truth/584_N.png": {
+      "bytes": 79430,
+      "crc32": "90a2a6ab"
+    },
+    "train/Ground truth/585_N.png": {
+      "bytes": 76745,
+      "crc32": "db3609a2"
+    },
+    "train/Ground truth/586_N.png": {
+      "bytes": 72664,
+      "crc32": "fae2623f"
+    },
+    "train/Ground truth/587_N.png": {
+      "bytes": 69367,
+      "crc32": "d1175886"
+    },
+    "train/Ground truth/588_N.png": {
+      "bytes": 66518,
+      "crc32": "50a1a93c"
+    },
+    "train/Ground truth/589_N.png": {
+      "bytes": 71203,
+      "crc32": "2faeaded"
+    },
+    "train/Ground truth/58_A.png": {
+      "bytes": 62751,
+      "crc32": "6a782312"
+    },
+    "train/Ground truth/590_N.png": {
+      "bytes": 75542,
+      "crc32": "8ab8ce31"
+    },
+    "train/Ground truth/591_N.png": {
+      "bytes": 81428,
+      "crc32": "a6addd91"
+    },
+    "train/Ground truth/592_N.png": {
+      "bytes": 79055,
+      "crc32": "786edbfe"
+    },
+    "train/Ground truth/593_N.png": {
+      "bytes": 74656,
+      "crc32": "c7fd6ba9"
+    },
+    "train/Ground truth/594_N.png": {
+      "bytes": 74112,
+      "crc32": "2dd88243"
+    },
+    "train/Ground truth/595_N.png": {
+      "bytes": 69428,
+      "crc32": "c872a503"
+    },
+    "train/Ground truth/596_N.png": {
+      "bytes": 73882,
+      "crc32": "c00eb690"
+    },
+    "train/Ground truth/597_N.png": {
+      "bytes": 78147,
+      "crc32": "53c14833"
+    },
+    "train/Ground truth/598_N.png": {
+      "bytes": 69002,
+      "crc32": "6e180328"
+    },
+    "train/Ground truth/599_N.png": {
+      "bytes": 81715,
+      "crc32": "502d5e28"
+    },
+    "train/Ground truth/59_A.png": {
+      "bytes": 41020,
+      "crc32": "741fe36f"
+    },
+    "train/Ground truth/5_A.png": {
+      "bytes": 71509,
+      "crc32": "637cec67"
+    },
+    "train/Ground truth/600_N.png": {
+      "bytes": 82885,
+      "crc32": "9df4ee77"
+    },
+    "train/Ground truth/60_A.png": {
+      "bytes": 65771,
+      "crc32": "6971957e"
+    },
+    "train/Ground truth/61_A.png": {
+      "bytes": 69889,
+      "crc32": "8a315c60"
+    },
+    "train/Ground truth/62_A.png": {
+      "bytes": 57555,
+      "crc32": "76392a9e"
+    },
+    "train/Ground truth/63_A.png": {
+      "bytes": 61128,
+      "crc32": "2f086689"
+    },
+    "train/Ground truth/64_A.png": {
+      "bytes": 64606,
+      "crc32": "25d20d23"
+    },
+    "train/Ground truth/65_A.png": {
+      "bytes": 57837,
+      "crc32": "ff489f47"
+    },
+    "train/Ground truth/66_A.png": {
+      "bytes": 55677,
+      "crc32": "b98c2da9"
+    },
+    "train/Ground truth/67_A.png": {
+      "bytes": 60621,
+      "crc32": "ba3ee5c3"
+    },
+    "train/Ground truth/68_A.png": {
+      "bytes": 63870,
+      "crc32": "233ad3cb"
+    },
+    "train/Ground truth/69_A.png": {
+      "bytes": 75034,
+      "crc32": "432598a6"
+    },
+    "train/Ground truth/6_A.png": {
+      "bytes": 74245,
+      "crc32": "491e1416"
+    },
+    "train/Ground truth/70_A.png": {
+      "bytes": 67250,
+      "crc32": "d0e4c99d"
+    },
+    "train/Ground truth/71_A.png": {
+      "bytes": 70462,
+      "crc32": "0855ff2a"
+    },
+    "train/Ground truth/72_A.png": {
+      "bytes": 72650,
+      "crc32": "63b89b88"
+    },
+    "train/Ground truth/73_A.png": {
+      "bytes": 77339,
+      "crc32": "960cb1a0"
+    },
+    "train/Ground truth/74_A.png": {
+      "bytes": 70472,
+      "crc32": "2012ca7c"
+    },
+    "train/Ground truth/75_A.png": {
+      "bytes": 70200,
+      "crc32": "fb1e8e35"
+    },
+    "train/Ground truth/76_A.png": {
+      "bytes": 63128,
+      "crc32": "1e0af8e9"
+    },
+    "train/Ground truth/77_A.png": {
+      "bytes": 72060,
+      "crc32": "e2c3d7d1"
+    },
+    "train/Ground truth/78_A.png": {
+      "bytes": 62295,
+      "crc32": "a90d67a2"
+    },
+    "train/Ground truth/79_A.png": {
+      "bytes": 64985,
+      "crc32": "41525d13"
+    },
+    "train/Ground truth/7_A.png": {
+      "bytes": 65172,
+      "crc32": "e6158da0"
+    },
+    "train/Ground truth/80_A.png": {
+      "bytes": 60420,
+      "crc32": "7f866d2b"
+    },
+    "train/Ground truth/81_A.png": {
+      "bytes": 62696,
+      "crc32": "b656150d"
+    },
+    "train/Ground truth/82_A.png": {
+      "bytes": 47782,
+      "crc32": "fe78dc14"
+    },
+    "train/Ground truth/83_A.png": {
+      "bytes": 49809,
+      "crc32": "a453c6d6"
+    },
+    "train/Ground truth/84_A.png": {
+      "bytes": 46287,
+      "crc32": "1c6023ba"
+    },
+    "train/Ground truth/85_A.png": {
+      "bytes": 49289,
+      "crc32": "10e3d5b8"
+    },
+    "train/Ground truth/86_A.png": {
+      "bytes": 69138,
+      "crc32": "cfdd65cd"
+    },
+    "train/Ground truth/87_A.png": {
+      "bytes": 71394,
+      "crc32": "ada8bc0e"
+    },
+    "train/Ground truth/88_A.png": {
+      "bytes": 59510,
+      "crc32": "c342c105"
+    },
+    "train/Ground truth/89_A.png": {
+      "bytes": 55668,
+      "crc32": "615e4b1c"
+    },
+    "train/Ground truth/8_A.png": {
+      "bytes": 62920,
+      "crc32": "fabe8046"
+    },
+    "train/Ground truth/90_A.png": {
+      "bytes": 66940,
+      "crc32": "2f8c0978"
+    },
+    "train/Ground truth/91_A.png": {
+      "bytes": 59371,
+      "crc32": "82966646"
+    },
+    "train/Ground truth/92_A.png": {
+      "bytes": 66262,
+      "crc32": "9da96b92"
+    },
+    "train/Ground truth/93_A.png": {
+      "bytes": 52689,
+      "crc32": "e245bad3"
+    },
+    "train/Ground truth/94_A.png": {
+      "bytes": 52515,
+      "crc32": "35475c35"
+    },
+    "train/Ground truth/95_A.png": {
+      "bytes": 61561,
+      "crc32": "79ca8fde"
+    },
+    "train/Ground truth/96_A.png": {
+      "bytes": 50495,
+      "crc32": "b78eb008"
+    },
+    "train/Ground truth/97_A.png": {
+      "bytes": 66785,
+      "crc32": "a4264b49"
+    },
+    "train/Ground truth/98_A.png": {
+      "bytes": 62433,
+      "crc32": "75f7f510"
+    },
+    "train/Ground truth/99_A.png": {
+      "bytes": 49437,
+      "crc32": "63c36406"
+    },
+    "train/Ground truth/9_A.png": {
+      "bytes": 61389,
+      "crc32": "bfd6a28b"
+    },
+    "train/Original/100_A.png": {
+      "bytes": 2357894,
+      "crc32": "3329c64a"
+    },
+    "train/Original/101_A.png": {
+      "bytes": 2306392,
+      "crc32": "201dc2fd"
+    },
+    "train/Original/102_A.png": {
+      "bytes": 1923207,
+      "crc32": "7a549f08"
+    },
+    "train/Original/103_A.png": {
+      "bytes": 2192223,
+      "crc32": "b33f404b"
+    },
+    "train/Original/104_A.png": {
+      "bytes": 2126783,
+      "crc32": "0e30c230"
+    },
+    "train/Original/105_A.png": {
+      "bytes": 2365543,
+      "crc32": "51ea5b4c"
+    },
+    "train/Original/106_A.png": {
+      "bytes": 1795462,
+      "crc32": "89c0ef5f"
+    },
+    "train/Original/107_A.png": {
+      "bytes": 2159205,
+      "crc32": "0c60e822"
+    },
+    "train/Original/108_A.png": {
+      "bytes": 1991194,
+      "crc32": "ba1f4fec"
+    },
+    "train/Original/109_A.png": {
+      "bytes": 2015430,
+      "crc32": "6c89e592"
+    },
+    "train/Original/10_A.png": {
+      "bytes": 2524356,
+      "crc32": "c489ee99"
+    },
+    "train/Original/110_A.png": {
+      "bytes": 2649589,
+      "crc32": "274bbba2"
+    },
+    "train/Original/111_A.png": {
+      "bytes": 2703053,
+      "crc32": "2edf0dfb"
+    },
+    "train/Original/112_A.png": {
+      "bytes": 2449050,
+      "crc32": "f69a580d"
+    },
+    "train/Original/113_A.png": {
+      "bytes": 2314024,
+      "crc32": "29346b63"
+    },
+    "train/Original/114_A.png": {
+      "bytes": 2373407,
+      "crc32": "3c32396f"
+    },
+    "train/Original/115_A.png": {
+      "bytes": 2319486,
+      "crc32": "05ed260c"
+    },
+    "train/Original/116_A.png": {
+      "bytes": 2549577,
+      "crc32": "58f167fa"
+    },
+    "train/Original/117_A.png": {
+      "bytes": 2033762,
+      "crc32": "d39c2bba"
+    },
+    "train/Original/118_A.png": {
+      "bytes": 2219065,
+      "crc32": "474ecb03"
+    },
+    "train/Original/119_A.png": {
+      "bytes": 2121856,
+      "crc32": "ff13ca89"
+    },
+    "train/Original/11_A.png": {
+      "bytes": 2490642,
+      "crc32": "4bf02b17"
+    },
+    "train/Original/120_A.png": {
+      "bytes": 2046067,
+      "crc32": "d9db04f1"
+    },
+    "train/Original/121_A.png": {
+      "bytes": 2437955,
+      "crc32": "7f35d2c0"
+    },
+    "train/Original/122_A.png": {
+      "bytes": 2256544,
+      "crc32": "49e439a0"
+    },
+    "train/Original/123_A.png": {
+      "bytes": 2146615,
+      "crc32": "b8853950"
+    },
+    "train/Original/124_A.png": {
+      "bytes": 2622793,
+      "crc32": "7995cf15"
+    },
+    "train/Original/125_A.png": {
+      "bytes": 2262022,
+      "crc32": "525e08eb"
+    },
+    "train/Original/126_A.png": {
+      "bytes": 2744230,
+      "crc32": "8b31bf94"
+    },
+    "train/Original/127_A.png": {
+      "bytes": 2421723,
+      "crc32": "859723ee"
+    },
+    "train/Original/128_A.png": {
+      "bytes": 2517823,
+      "crc32": "3c085153"
+    },
+    "train/Original/129_A.png": {
+      "bytes": 2184906,
+      "crc32": "7a145629"
+    },
+    "train/Original/12_A.png": {
+      "bytes": 2712712,
+      "crc32": "10cb2644"
+    },
+    "train/Original/130_A.png": {
+      "bytes": 2391227,
+      "crc32": "e32165b6"
+    },
+    "train/Original/131_A.png": {
+      "bytes": 1706514,
+      "crc32": "5d805364"
+    },
+    "train/Original/132_A.png": {
+      "bytes": 2430832,
+      "crc32": "1f385dc5"
+    },
+    "train/Original/133_A.png": {
+      "bytes": 2310981,
+      "crc32": "78d4f0b7"
+    },
+    "train/Original/134_A.png": {
+      "bytes": 2221849,
+      "crc32": "ca303f7a"
+    },
+    "train/Original/135_A.png": {
+      "bytes": 2622941,
+      "crc32": "d978f434"
+    },
+    "train/Original/136_A.png": {
+      "bytes": 2521518,
+      "crc32": "80ffe4aa"
+    },
+    "train/Original/137_A.png": {
+      "bytes": 2261871,
+      "crc32": "3fa3b22f"
+    },
+    "train/Original/138_A.png": {
+      "bytes": 1898785,
+      "crc32": "5d34949f"
+    },
+    "train/Original/139_A.png": {
+      "bytes": 1903369,
+      "crc32": "5c8b5057"
+    },
+    "train/Original/13_A.png": {
+      "bytes": 2701609,
+      "crc32": "6fc43ab5"
+    },
+    "train/Original/140_A.png": {
+      "bytes": 2110078,
+      "crc32": "7709ee98"
+    },
+    "train/Original/141_A.png": {
+      "bytes": 2309543,
+      "crc32": "e7b46aa6"
+    },
+    "train/Original/142_A.png": {
+      "bytes": 2663362,
+      "crc32": "733ab47e"
+    },
+    "train/Original/143_A.png": {
+      "bytes": 2594820,
+      "crc32": "e60525d9"
+    },
+    "train/Original/144_A.png": {
+      "bytes": 2098649,
+      "crc32": "d4853438"
+    },
+    "train/Original/145_A.png": {
+      "bytes": 2791875,
+      "crc32": "a065d57e"
+    },
+    "train/Original/146_A.png": {
+      "bytes": 2596347,
+      "crc32": "30ef95bd"
+    },
+    "train/Original/147_A.png": {
+      "bytes": 2291266,
+      "crc32": "3ecf6377"
+    },
+    "train/Original/148_A.png": {
+      "bytes": 2053521,
+      "crc32": "2c95fe36"
+    },
+    "train/Original/149_A.png": {
+      "bytes": 2378136,
+      "crc32": "8f65fccc"
+    },
+    "train/Original/14_A.png": {
+      "bytes": 2635062,
+      "crc32": "4383c4dd"
+    },
+    "train/Original/150_A.png": {
+      "bytes": 2299142,
+      "crc32": "8ccacebe"
+    },
+    "train/Original/151_D.png": {
+      "bytes": 2261085,
+      "crc32": "912d30fd"
+    },
+    "train/Original/152_D.png": {
+      "bytes": 2284699,
+      "crc32": "840fc9dc"
+    },
+    "train/Original/153_D.png": {
+      "bytes": 2520085,
+      "crc32": "47b9b4e4"
+    },
+    "train/Original/154_D.png": {
+      "bytes": 2161722,
+      "crc32": "32927e80"
+    },
+    "train/Original/155_D.png": {
+      "bytes": 2032874,
+      "crc32": "49ee81e9"
+    },
+    "train/Original/156_D.png": {
+      "bytes": 1974450,
+      "crc32": "2cd5f445"
+    },
+    "train/Original/157_D.png": {
+      "bytes": 2277573,
+      "crc32": "e688fc81"
+    },
+    "train/Original/158_D.png": {
+      "bytes": 2267364,
+      "crc32": "492a9925"
+    },
+    "train/Original/159_D.png": {
+      "bytes": 2111368,
+      "crc32": "28381de8"
+    },
+    "train/Original/15_A.png": {
+      "bytes": 2291122,
+      "crc32": "7d6cda9b"
+    },
+    "train/Original/160_D.png": {
+      "bytes": 2062214,
+      "crc32": "9d0ee39e"
+    },
+    "train/Original/161_D.png": {
+      "bytes": 2233882,
+      "crc32": "a723d738"
+    },
+    "train/Original/162_D.png": {
+      "bytes": 2135353,
+      "crc32": "4d2d5208"
+    },
+    "train/Original/163_D.png": {
+      "bytes": 1897361,
+      "crc32": "aee219a6"
+    },
+    "train/Original/164_D.png": {
+      "bytes": 2499933,
+      "crc32": "cb5b601f"
+    },
+    "train/Original/165_D.png": {
+      "bytes": 1580236,
+      "crc32": "d9237c55"
+    },
+    "train/Original/166_D.png": {
+      "bytes": 2270121,
+      "crc32": "29e33741"
+    },
+    "train/Original/167_D.png": {
+      "bytes": 2021646,
+      "crc32": "c7798742"
+    },
+    "train/Original/168_D.png": {
+      "bytes": 1662648,
+      "crc32": "e591ae8d"
+    },
+    "train/Original/169_D.png": {
+      "bytes": 2275203,
+      "crc32": "5ca4e880"
+    },
+    "train/Original/16_A.png": {
+      "bytes": 2236140,
+      "crc32": "57210b92"
+    },
+    "train/Original/170_D.png": {
+      "bytes": 1805271,
+      "crc32": "f5e4f85d"
+    },
+    "train/Original/171_D.png": {
+      "bytes": 2178226,
+      "crc32": "d0874fe5"
+    },
+    "train/Original/172_D.png": {
+      "bytes": 2353576,
+      "crc32": "0ac79dd5"
+    },
+    "train/Original/173_D.png": {
+      "bytes": 1829917,
+      "crc32": "989b51cb"
+    },
+    "train/Original/174_D.png": {
+      "bytes": 2090891,
+      "crc32": "4300be87"
+    },
+    "train/Original/175_D.png": {
+      "bytes": 1995979,
+      "crc32": "b7dea810"
+    },
+    "train/Original/176_D.png": {
+      "bytes": 2672105,
+      "crc32": "6fbe98af"
+    },
+    "train/Original/177_D.png": {
+      "bytes": 2179363,
+      "crc32": "a3265565"
+    },
+    "train/Original/178_D.png": {
+      "bytes": 2671038,
+      "crc32": "ef09ecba"
+    },
+    "train/Original/179_D.png": {
+      "bytes": 2539359,
+      "crc32": "aab3ec23"
+    },
+    "train/Original/17_A.png": {
+      "bytes": 2138849,
+      "crc32": "e60d320a"
+    },
+    "train/Original/180_D.png": {
+      "bytes": 2193384,
+      "crc32": "b8e82359"
+    },
+    "train/Original/181_D.png": {
+      "bytes": 1661789,
+      "crc32": "0d3fe5ba"
+    },
+    "train/Original/182_D.png": {
+      "bytes": 2439202,
+      "crc32": "1b70f91f"
+    },
+    "train/Original/183_D.png": {
+      "bytes": 1981651,
+      "crc32": "b422c5ec"
+    },
+    "train/Original/184_D.png": {
+      "bytes": 2122744,
+      "crc32": "43eb9d64"
+    },
+    "train/Original/185_D.png": {
+      "bytes": 2296801,
+      "crc32": "9a9790c3"
+    },
+    "train/Original/186_D.png": {
+      "bytes": 1995275,
+      "crc32": "5f8a6202"
+    },
+    "train/Original/187_D.png": {
+      "bytes": 1725370,
+      "crc32": "16007207"
+    },
+    "train/Original/188_D.png": {
+      "bytes": 2565806,
+      "crc32": "5a77f0cf"
+    },
+    "train/Original/189_D.png": {
+      "bytes": 2375212,
+      "crc32": "4ced2a3d"
+    },
+    "train/Original/18_A.png": {
+      "bytes": 2201778,
+      "crc32": "cb6515b0"
+    },
+    "train/Original/190_D.png": {
+      "bytes": 2012244,
+      "crc32": "2d325180"
+    },
+    "train/Original/191_D.png": {
+      "bytes": 2384042,
+      "crc32": "86730305"
+    },
+    "train/Original/192_D.png": {
+      "bytes": 2264768,
+      "crc32": "b8232c70"
+    },
+    "train/Original/193_D.png": {
+      "bytes": 2322732,
+      "crc32": "203dc3da"
+    },
+    "train/Original/194_D.png": {
+      "bytes": 1917218,
+      "crc32": "d78571de"
+    },
+    "train/Original/195_D.png": {
+      "bytes": 2114477,
+      "crc32": "dfe2931e"
+    },
+    "train/Original/196_D.png": {
+      "bytes": 2372863,
+      "crc32": "db108b5d"
+    },
+    "train/Original/197_D.png": {
+      "bytes": 2280516,
+      "crc32": "ff0c3a46"
+    },
+    "train/Original/198_D.png": {
+      "bytes": 2127220,
+      "crc32": "3f2ae898"
+    },
+    "train/Original/199_D.png": {
+      "bytes": 1985964,
+      "crc32": "1df545ce"
+    },
+    "train/Original/19_A.png": {
+      "bytes": 2338108,
+      "crc32": "e5cd0801"
+    },
+    "train/Original/1_A.png": {
+      "bytes": 2435507,
+      "crc32": "bc8c4900"
+    },
+    "train/Original/200_D.png": {
+      "bytes": 1974558,
+      "crc32": "aac4f06b"
+    },
+    "train/Original/201_D.png": {
+      "bytes": 1745728,
+      "crc32": "5f5db110"
+    },
+    "train/Original/202_D.png": {
+      "bytes": 2664873,
+      "crc32": "1a8972bc"
+    },
+    "train/Original/203_D.png": {
+      "bytes": 2156879,
+      "crc32": "7d55fee4"
+    },
+    "train/Original/204_D.png": {
+      "bytes": 1850255,
+      "crc32": "0dc66316"
+    },
+    "train/Original/205_D.png": {
+      "bytes": 2111769,
+      "crc32": "eff071b5"
+    },
+    "train/Original/206_D.png": {
+      "bytes": 2536742,
+      "crc32": "cc8ef626"
+    },
+    "train/Original/207_D.png": {
+      "bytes": 2779511,
+      "crc32": "b17d8cb2"
+    },
+    "train/Original/208_D.png": {
+      "bytes": 2268404,
+      "crc32": "5ee7b8e8"
+    },
+    "train/Original/209_D.png": {
+      "bytes": 1844392,
+      "crc32": "f474946c"
+    },
+    "train/Original/20_A.png": {
+      "bytes": 2442392,
+      "crc32": "0154b8c7"
+    },
+    "train/Original/210_D.png": {
+      "bytes": 2042706,
+      "crc32": "eb3deb9d"
+    },
+    "train/Original/211_D.png": {
+      "bytes": 2243892,
+      "crc32": "d31dfbf3"
+    },
+    "train/Original/212_D.png": {
+      "bytes": 2145343,
+      "crc32": "e6b2ecc3"
+    },
+    "train/Original/213_D.png": {
+      "bytes": 2627974,
+      "crc32": "93630d95"
+    },
+    "train/Original/214_D.png": {
+      "bytes": 2781597,
+      "crc32": "8c49a444"
+    },
+    "train/Original/215_D.png": {
+      "bytes": 1767405,
+      "crc32": "85f3ea36"
+    },
+    "train/Original/216_D.png": {
+      "bytes": 2568781,
+      "crc32": "fb8c09cc"
+    },
+    "train/Original/217_D.png": {
+      "bytes": 2561529,
+      "crc32": "88f25935"
+    },
+    "train/Original/218_D.png": {
+      "bytes": 2368258,
+      "crc32": "a5f70a2e"
+    },
+    "train/Original/219_D.png": {
+      "bytes": 2746678,
+      "crc32": "95f93693"
+    },
+    "train/Original/21_A.png": {
+      "bytes": 2161681,
+      "crc32": "93e60820"
+    },
+    "train/Original/220_D.png": {
+      "bytes": 1917757,
+      "crc32": "d29194bf"
+    },
+    "train/Original/221_D.png": {
+      "bytes": 2002266,
+      "crc32": "353ace50"
+    },
+    "train/Original/222_D.png": {
+      "bytes": 1500096,
+      "crc32": "f03fb27e"
+    },
+    "train/Original/223_D.png": {
+      "bytes": 2465269,
+      "crc32": "5d6a3698"
+    },
+    "train/Original/224_D.png": {
+      "bytes": 2084256,
+      "crc32": "744e3bd0"
+    },
+    "train/Original/225_D.png": {
+      "bytes": 2227063,
+      "crc32": "837993e5"
+    },
+    "train/Original/226_D.png": {
+      "bytes": 2114794,
+      "crc32": "286c3634"
+    },
+    "train/Original/227_D.png": {
+      "bytes": 2097425,
+      "crc32": "5fbd0c79"
+    },
+    "train/Original/228_D.png": {
+      "bytes": 2415705,
+      "crc32": "f777facd"
+    },
+    "train/Original/229_D.png": {
+      "bytes": 2204443,
+      "crc32": "341d3d2f"
+    },
+    "train/Original/22_A.png": {
+      "bytes": 2492812,
+      "crc32": "aada494e"
+    },
+    "train/Original/230_D.png": {
+      "bytes": 2411389,
+      "crc32": "b38eeea8"
+    },
+    "train/Original/231_D.png": {
+      "bytes": 2397808,
+      "crc32": "46780e84"
+    },
+    "train/Original/232_D.png": {
+      "bytes": 1793205,
+      "crc32": "e05069e6"
+    },
+    "train/Original/233_D.png": {
+      "bytes": 2507112,
+      "crc32": "e3f25457"
+    },
+    "train/Original/234_D.png": {
+      "bytes": 1950307,
+      "crc32": "e7127885"
+    },
+    "train/Original/235_D.png": {
+      "bytes": 2308055,
+      "crc32": "84a8b210"
+    },
+    "train/Original/236_D.png": {
+      "bytes": 2232092,
+      "crc32": "8d00e0fc"
+    },
+    "train/Original/237_D.png": {
+      "bytes": 1909371,
+      "crc32": "663e5866"
+    },
+    "train/Original/238_D.png": {
+      "bytes": 2213850,
+      "crc32": "d7af8764"
+    },
+    "train/Original/239_D.png": {
+      "bytes": 2504046,
+      "crc32": "952e768d"
+    },
+    "train/Original/23_A.png": {
+      "bytes": 2759008,
+      "crc32": "8bbcbd91"
+    },
+    "train/Original/240_D.png": {
+      "bytes": 2283756,
+      "crc32": "aa99ca0c"
+    },
+    "train/Original/241_D.png": {
+      "bytes": 1703780,
+      "crc32": "7b0181fd"
+    },
+    "train/Original/242_D.png": {
+      "bytes": 2402886,
+      "crc32": "bcd1bc1f"
+    },
+    "train/Original/243_D.png": {
+      "bytes": 2320281,
+      "crc32": "07a3a7cf"
+    },
+    "train/Original/244_D.png": {
+      "bytes": 2444969,
+      "crc32": "3ff50b3e"
+    },
+    "train/Original/245_D.png": {
+      "bytes": 1898310,
+      "crc32": "83193c71"
+    },
+    "train/Original/246_D.png": {
+      "bytes": 2106157,
+      "crc32": "a92ac499"
+    },
+    "train/Original/247_D.png": {
+      "bytes": 2213456,
+      "crc32": "9e780ae3"
+    },
+    "train/Original/248_D.png": {
+      "bytes": 2722028,
+      "crc32": "7ae3be68"
+    },
+    "train/Original/249_D.png": {
+      "bytes": 2196029,
+      "crc32": "afd463aa"
+    },
+    "train/Original/24_A.png": {
+      "bytes": 2321383,
+      "crc32": "540d557c"
+    },
+    "train/Original/250_D.png": {
+      "bytes": 1743858,
+      "crc32": "22aadcc0"
+    },
+    "train/Original/251_D.png": {
+      "bytes": 2098315,
+      "crc32": "779b0530"
+    },
+    "train/Original/252_D.png": {
+      "bytes": 1683703,
+      "crc32": "b795b8c0"
+    },
+    "train/Original/253_D.png": {
+      "bytes": 2019868,
+      "crc32": "2ffb8ce5"
+    },
+    "train/Original/254_D.png": {
+      "bytes": 2296156,
+      "crc32": "b94fed74"
+    },
+    "train/Original/255_D.png": {
+      "bytes": 2076362,
+      "crc32": "bfd05b03"
+    },
+    "train/Original/256_D.png": {
+      "bytes": 1644735,
+      "crc32": "874f2239"
+    },
+    "train/Original/257_D.png": {
+      "bytes": 1994824,
+      "crc32": "93b29a4d"
+    },
+    "train/Original/258_D.png": {
+      "bytes": 2071495,
+      "crc32": "499ad8cb"
+    },
+    "train/Original/259_D.png": {
+      "bytes": 1926830,
+      "crc32": "321a9fea"
+    },
+    "train/Original/25_A.png": {
+      "bytes": 2594238,
+      "crc32": "38e199f7"
+    },
+    "train/Original/260_D.png": {
+      "bytes": 2272350,
+      "crc32": "702b1cb8"
+    },
+    "train/Original/261_D.png": {
+      "bytes": 2466806,
+      "crc32": "7fb581cc"
+    },
+    "train/Original/262_D.png": {
+      "bytes": 2479743,
+      "crc32": "216445e6"
+    },
+    "train/Original/263_D.png": {
+      "bytes": 2312152,
+      "crc32": "811b29f3"
+    },
+    "train/Original/264_D.png": {
+      "bytes": 2183850,
+      "crc32": "d34983eb"
+    },
+    "train/Original/265_D.png": {
+      "bytes": 1912204,
+      "crc32": "95baf98a"
+    },
+    "train/Original/266_D.png": {
+      "bytes": 2203445,
+      "crc32": "69f9a9de"
+    },
+    "train/Original/267_D.png": {
+      "bytes": 2116038,
+      "crc32": "bf2cb9ad"
+    },
+    "train/Original/268_D.png": {
+      "bytes": 1679174,
+      "crc32": "a5b847dc"
+    },
+    "train/Original/269_D.png": {
+      "bytes": 1641449,
+      "crc32": "72f19d89"
+    },
+    "train/Original/26_A.png": {
+      "bytes": 2554098,
+      "crc32": "e9300284"
+    },
+    "train/Original/270_D.png": {
+      "bytes": 1669511,
+      "crc32": "01af2d97"
+    },
+    "train/Original/271_D.png": {
+      "bytes": 2201530,
+      "crc32": "9fdc2821"
+    },
+    "train/Original/272_D.png": {
+      "bytes": 2623207,
+      "crc32": "1863a8de"
+    },
+    "train/Original/273_D.png": {
+      "bytes": 2024749,
+      "crc32": "5186496a"
+    },
+    "train/Original/274_D.png": {
+      "bytes": 2127664,
+      "crc32": "efa0016d"
+    },
+    "train/Original/275_D.png": {
+      "bytes": 2600963,
+      "crc32": "6c833ff8"
+    },
+    "train/Original/276_D.png": {
+      "bytes": 2362845,
+      "crc32": "10ef72e7"
+    },
+    "train/Original/277_D.png": {
+      "bytes": 2394458,
+      "crc32": "8c1b9776"
+    },
+    "train/Original/278_D.png": {
+      "bytes": 2004934,
+      "crc32": "2da6dccb"
+    },
+    "train/Original/279_D.png": {
+      "bytes": 2216749,
+      "crc32": "449f68b5"
+    },
+    "train/Original/27_A.png": {
+      "bytes": 2649431,
+      "crc32": "6e09d3bf"
+    },
+    "train/Original/280_D.png": {
+      "bytes": 1589367,
+      "crc32": "e4f673d2"
+    },
+    "train/Original/281_D.png": {
+      "bytes": 2175959,
+      "crc32": "ce3e9839"
+    },
+    "train/Original/282_D.png": {
+      "bytes": 2085274,
+      "crc32": "7fb0875e"
+    },
+    "train/Original/283_D.png": {
+      "bytes": 1900493,
+      "crc32": "92eff4cf"
+    },
+    "train/Original/284_D.png": {
+      "bytes": 1825879,
+      "crc32": "a3d3d4e7"
+    },
+    "train/Original/285_D.png": {
+      "bytes": 2425055,
+      "crc32": "7fbd125f"
+    },
+    "train/Original/286_D.png": {
+      "bytes": 2482870,
+      "crc32": "4ddd2b15"
+    },
+    "train/Original/287_D.png": {
+      "bytes": 2022392,
+      "crc32": "043cbbe1"
+    },
+    "train/Original/288_D.png": {
+      "bytes": 2081684,
+      "crc32": "f5905a84"
+    },
+    "train/Original/289_D.png": {
+      "bytes": 2446066,
+      "crc32": "5fa821c7"
+    },
+    "train/Original/28_A.png": {
+      "bytes": 2398230,
+      "crc32": "5c43b9f4"
+    },
+    "train/Original/290_D.png": {
+      "bytes": 2264614,
+      "crc32": "77c12a5d"
+    },
+    "train/Original/291_D.png": {
+      "bytes": 2379292,
+      "crc32": "38778048"
+    },
+    "train/Original/292_D.png": {
+      "bytes": 2451686,
+      "crc32": "7a19b90c"
+    },
+    "train/Original/293_D.png": {
+      "bytes": 2129502,
+      "crc32": "5c63cf48"
+    },
+    "train/Original/294_D.png": {
+      "bytes": 2065063,
+      "crc32": "de4e2376"
+    },
+    "train/Original/295_D.png": {
+      "bytes": 2262968,
+      "crc32": "66caac07"
+    },
+    "train/Original/296_D.png": {
+      "bytes": 2097186,
+      "crc32": "dc611606"
+    },
+    "train/Original/297_D.png": {
+      "bytes": 1960804,
+      "crc32": "2e19a90a"
+    },
+    "train/Original/298_D.png": {
+      "bytes": 1617279,
+      "crc32": "dbfc50d9"
+    },
+    "train/Original/299_D.png": {
+      "bytes": 2154319,
+      "crc32": "09eb3709"
+    },
+    "train/Original/29_A.png": {
+      "bytes": 2367164,
+      "crc32": "3e7175f9"
+    },
+    "train/Original/2_A.png": {
+      "bytes": 2331209,
+      "crc32": "8cd3e7e4"
+    },
+    "train/Original/300_D.png": {
+      "bytes": 2567519,
+      "crc32": "d8e52de9"
+    },
+    "train/Original/301_G.png": {
+      "bytes": 1474497,
+      "crc32": "8856e6dd"
+    },
+    "train/Original/302_G.png": {
+      "bytes": 1677198,
+      "crc32": "38d07c9e"
+    },
+    "train/Original/303_G.png": {
+      "bytes": 2170392,
+      "crc32": "672ee09d"
+    },
+    "train/Original/304_G.png": {
+      "bytes": 2307527,
+      "crc32": "cfa9193c"
+    },
+    "train/Original/305_G.png": {
+      "bytes": 2544887,
+      "crc32": "2a5c345d"
+    },
+    "train/Original/306_G.png": {
+      "bytes": 1938759,
+      "crc32": "d5e0cd03"
+    },
+    "train/Original/307_G.png": {
+      "bytes": 1924269,
+      "crc32": "a042841c"
+    },
+    "train/Original/308_G.png": {
+      "bytes": 1808573,
+      "crc32": "53876c54"
+    },
+    "train/Original/309_G.png": {
+      "bytes": 1736983,
+      "crc32": "4543ea55"
+    },
+    "train/Original/30_A.png": {
+      "bytes": 2162073,
+      "crc32": "7c48fc3c"
+    },
+    "train/Original/310_G.png": {
+      "bytes": 1758831,
+      "crc32": "0c3ed45b"
+    },
+    "train/Original/311_G.png": {
+      "bytes": 2022559,
+      "crc32": "8ea2a54f"
+    },
+    "train/Original/312_G.png": {
+      "bytes": 2082238,
+      "crc32": "119e3e30"
+    },
+    "train/Original/313_G.png": {
+      "bytes": 2296823,
+      "crc32": "074b456a"
+    },
+    "train/Original/314_G.png": {
+      "bytes": 1765743,
+      "crc32": "f90d42e2"
+    },
+    "train/Original/315_G.png": {
+      "bytes": 1997212,
+      "crc32": "cca113c5"
+    },
+    "train/Original/316_G.png": {
+      "bytes": 1909376,
+      "crc32": "0bd2f010"
+    },
+    "train/Original/317_G.png": {
+      "bytes": 1946548,
+      "crc32": "9feadcff"
+    },
+    "train/Original/318_G.png": {
+      "bytes": 1707046,
+      "crc32": "35a2a6c3"
+    },
+    "train/Original/319_G.png": {
+      "bytes": 1303825,
+      "crc32": "cf360915"
+    },
+    "train/Original/31_A.png": {
+      "bytes": 2222862,
+      "crc32": "861fe190"
+    },
+    "train/Original/320_G.png": {
+      "bytes": 1456543,
+      "crc32": "89b3d6fe"
+    },
+    "train/Original/321_G.png": {
+      "bytes": 1482582,
+      "crc32": "ac734b3b"
+    },
+    "train/Original/322_G.png": {
+      "bytes": 1916715,
+      "crc32": "b1689cea"
+    },
+    "train/Original/323_G.png": {
+      "bytes": 1121109,
+      "crc32": "bd43a45a"
+    },
+    "train/Original/324_G.png": {
+      "bytes": 1146562,
+      "crc32": "3d27b712"
+    },
+    "train/Original/325_G.png": {
+      "bytes": 1169962,
+      "crc32": "bca454ca"
+    },
+    "train/Original/326_G.png": {
+      "bytes": 798696,
+      "crc32": "18bd2ff5"
+    },
+    "train/Original/327_G.png": {
+      "bytes": 2150353,
+      "crc32": "f783ec5e"
+    },
+    "train/Original/328_G.png": {
+      "bytes": 1363976,
+      "crc32": "4995540d"
+    },
+    "train/Original/329_G.png": {
+      "bytes": 2134451,
+      "crc32": "4416dac6"
+    },
+    "train/Original/32_A.png": {
+      "bytes": 2452615,
+      "crc32": "c5566056"
+    },
+    "train/Original/330_G.png": {
+      "bytes": 1256694,
+      "crc32": "17190d83"
+    },
+    "train/Original/331_G.png": {
+      "bytes": 1164918,
+      "crc32": "1f7bfd86"
+    },
+    "train/Original/332_G.png": {
+      "bytes": 1880013,
+      "crc32": "56cecd3b"
+    },
+    "train/Original/333_G.png": {
+      "bytes": 2104016,
+      "crc32": "445a340e"
+    },
+    "train/Original/334_G.png": {
+      "bytes": 1354194,
+      "crc32": "ffa81e05"
+    },
+    "train/Original/335_G.png": {
+      "bytes": 1539950,
+      "crc32": "bbc57493"
+    },
+    "train/Original/336_G.png": {
+      "bytes": 1858998,
+      "crc32": "d974f60d"
+    },
+    "train/Original/337_G.png": {
+      "bytes": 1768393,
+      "crc32": "ddc05fc1"
+    },
+    "train/Original/338_G.png": {
+      "bytes": 1255865,
+      "crc32": "b158c8be"
+    },
+    "train/Original/339_G.png": {
+      "bytes": 2103657,
+      "crc32": "82210de0"
+    },
+    "train/Original/33_A.png": {
+      "bytes": 2525549,
+      "crc32": "b2ee12e6"
+    },
+    "train/Original/340_G.png": {
+      "bytes": 2354677,
+      "crc32": "f4965130"
+    },
+    "train/Original/341_G.png": {
+      "bytes": 528641,
+      "crc32": "ed98ccac"
+    },
+    "train/Original/342_G.png": {
+      "bytes": 2036336,
+      "crc32": "2afafb38"
+    },
+    "train/Original/343_G.png": {
+      "bytes": 1982479,
+      "crc32": "f1114db0"
+    },
+    "train/Original/344_G.png": {
+      "bytes": 2048383,
+      "crc32": "e5a8867c"
+    },
+    "train/Original/345_G.png": {
+      "bytes": 2286511,
+      "crc32": "a0190dc2"
+    },
+    "train/Original/346_G.png": {
+      "bytes": 1972343,
+      "crc32": "2b2e718d"
+    },
+    "train/Original/347_G.png": {
+      "bytes": 2083945,
+      "crc32": "b4601980"
+    },
+    "train/Original/348_G.png": {
+      "bytes": 1849674,
+      "crc32": "fca1fd2b"
+    },
+    "train/Original/349_G.png": {
+      "bytes": 1518011,
+      "crc32": "54dd066f"
+    },
+    "train/Original/34_A.png": {
+      "bytes": 2219065,
+      "crc32": "474ecb03"
+    },
+    "train/Original/350_G.png": {
+      "bytes": 1734980,
+      "crc32": "93713e58"
+    },
+    "train/Original/351_G.png": {
+      "bytes": 2189639,
+      "crc32": "d520f098"
+    },
+    "train/Original/352_G.png": {
+      "bytes": 1208564,
+      "crc32": "1bbfe952"
+    },
+    "train/Original/353_G.png": {
+      "bytes": 836424,
+      "crc32": "680a3f96"
+    },
+    "train/Original/354_G.png": {
+      "bytes": 1569815,
+      "crc32": "31337322"
+    },
+    "train/Original/355_G.png": {
+      "bytes": 1612388,
+      "crc32": "7ac7a7cc"
+    },
+    "train/Original/356_G.png": {
+      "bytes": 2219339,
+      "crc32": "57b463f4"
+    },
+    "train/Original/357_G.png": {
+      "bytes": 2007283,
+      "crc32": "3f915186"
+    },
+    "train/Original/358_G.png": {
+      "bytes": 2416491,
+      "crc32": "1a75128e"
+    },
+    "train/Original/359_G.png": {
+      "bytes": 2335353,
+      "crc32": "65c36b35"
+    },
+    "train/Original/35_A.png": {
+      "bytes": 2406010,
+      "crc32": "0ad0c394"
+    },
+    "train/Original/360_G.png": {
+      "bytes": 515774,
+      "crc32": "555d645d"
+    },
+    "train/Original/361_G.png": {
+      "bytes": 911333,
+      "crc32": "7b50fe28"
+    },
+    "train/Original/362_G.png": {
+      "bytes": 1653418,
+      "crc32": "eb332f95"
+    },
+    "train/Original/363_G.png": {
+      "bytes": 712339,
+      "crc32": "01a124c8"
+    },
+    "train/Original/364_G.png": {
+      "bytes": 970095,
+      "crc32": "231a22d6"
+    },
+    "train/Original/365_G.png": {
+      "bytes": 1828034,
+      "crc32": "b4a7e476"
+    },
+    "train/Original/366_G.png": {
+      "bytes": 1472964,
+      "crc32": "2c7ddd8a"
+    },
+    "train/Original/367_G.png": {
+      "bytes": 2327074,
+      "crc32": "19c64c52"
+    },
+    "train/Original/368_G.png": {
+      "bytes": 2095934,
+      "crc32": "4f185d2c"
+    },
+    "train/Original/369_G.png": {
+      "bytes": 1657171,
+      "crc32": "2ed40f28"
+    },
+    "train/Original/36_A.png": {
+      "bytes": 2358085,
+      "crc32": "52a197e9"
+    },
+    "train/Original/370_G.png": {
+      "bytes": 1600107,
+      "crc32": "84c5f69f"
+    },
+    "train/Original/371_G.png": {
+      "bytes": 1732386,
+      "crc32": "5b43c333"
+    },
+    "train/Original/372_G.png": {
+      "bytes": 2036908,
+      "crc32": "beeab323"
+    },
+    "train/Original/373_G.png": {
+      "bytes": 494215,
+      "crc32": "2b6af930"
+    },
+    "train/Original/374_G.png": {
+      "bytes": 2162999,
+      "crc32": "d4f6b911"
+    },
+    "train/Original/375_G.png": {
+      "bytes": 2676096,
+      "crc32": "1a562bd4"
+    },
+    "train/Original/376_G.png": {
+      "bytes": 1961514,
+      "crc32": "b0d4cc45"
+    },
+    "train/Original/377_G.png": {
+      "bytes": 2061266,
+      "crc32": "add3cf7d"
+    },
+    "train/Original/378_G.png": {
+      "bytes": 1978789,
+      "crc32": "f014f778"
+    },
+    "train/Original/379_G.png": {
+      "bytes": 1952217,
+      "crc32": "f240b637"
+    },
+    "train/Original/37_A.png": {
+      "bytes": 2496322,
+      "crc32": "01a5e1f5"
+    },
+    "train/Original/380_G.png": {
+      "bytes": 1149331,
+      "crc32": "9920956e"
+    },
+    "train/Original/381_G.png": {
+      "bytes": 2152592,
+      "crc32": "a7310181"
+    },
+    "train/Original/382_G.png": {
+      "bytes": 2520264,
+      "crc32": "972fb639"
+    },
+    "train/Original/383_G.png": {
+      "bytes": 2345291,
+      "crc32": "e12e159f"
+    },
+    "train/Original/384_G.png": {
+      "bytes": 1026418,
+      "crc32": "9e1561a2"
+    },
+    "train/Original/385_G.png": {
+      "bytes": 1447334,
+      "crc32": "1e1b9c17"
+    },
+    "train/Original/386_G.png": {
+      "bytes": 1700435,
+      "crc32": "2ddbb484"
+    },
+    "train/Original/387_G.png": {
+      "bytes": 2604136,
+      "crc32": "9a09c103"
+    },
+    "train/Original/388_G.png": {
+      "bytes": 2883069,
+      "crc32": "53fee807"
+    },
+    "train/Original/389_G.png": {
+      "bytes": 2137202,
+      "crc32": "c5014a26"
+    },
+    "train/Original/38_A.png": {
+      "bytes": 2659437,
+      "crc32": "ee7e4642"
+    },
+    "train/Original/390_G.png": {
+      "bytes": 2118911,
+      "crc32": "3d09806d"
+    },
+    "train/Original/391_G.png": {
+      "bytes": 2020369,
+      "crc32": "f8a32d01"
+    },
+    "train/Original/392_G.png": {
+      "bytes": 2155379,
+      "crc32": "d83b8945"
+    },
+    "train/Original/393_G.png": {
+      "bytes": 2122242,
+      "crc32": "50785657"
+    },
+    "train/Original/394_G.png": {
+      "bytes": 1733861,
+      "crc32": "ad8ba75d"
+    },
+    "train/Original/395_G.png": {
+      "bytes": 1607892,
+      "crc32": "bf68b0bb"
+    },
+    "train/Original/396_G.png": {
+      "bytes": 2084504,
+      "crc32": "e6ac9d04"
+    },
+    "train/Original/397_G.png": {
+      "bytes": 1993358,
+      "crc32": "c87743a2"
+    },
+    "train/Original/398_G.png": {
+      "bytes": 2037208,
+      "crc32": "23748a85"
+    },
+    "train/Original/399_G.png": {
+      "bytes": 2169456,
+      "crc32": "85db288f"
+    },
+    "train/Original/39_A.png": {
+      "bytes": 2430832,
+      "crc32": "1f385dc5"
+    },
+    "train/Original/3_A.png": {
+      "bytes": 2151015,
+      "crc32": "00e6472b"
+    },
+    "train/Original/400_G.png": {
+      "bytes": 1598752,
+      "crc32": "31908f0f"
+    },
+    "train/Original/401_G.png": {
+      "bytes": 1978895,
+      "crc32": "ee5a5f7c"
+    },
+    "train/Original/402_G.png": {
+      "bytes": 1625003,
+      "crc32": "689969aa"
+    },
+    "train/Original/403_G.png": {
+      "bytes": 2124876,
+      "crc32": "3cbe52a5"
+    },
+    "train/Original/404_G.png": {
+      "bytes": 1504960,
+      "crc32": "67b40b82"
+    },
+    "train/Original/405_G.png": {
+      "bytes": 1909689,
+      "crc32": "10d72195"
+    },
+    "train/Original/406_G.png": {
+      "bytes": 1588475,
+      "crc32": "659bfcd4"
+    },
+    "train/Original/407_G.png": {
+      "bytes": 2573446,
+      "crc32": "43440cab"
+    },
+    "train/Original/408_G.png": {
+      "bytes": 2028878,
+      "crc32": "db417ac6"
+    },
+    "train/Original/409_G.png": {
+      "bytes": 2218606,
+      "crc32": "7d31c87d"
+    },
+    "train/Original/40_A.png": {
+      "bytes": 2278166,
+      "crc32": "38844edc"
+    },
+    "train/Original/410_G.png": {
+      "bytes": 2212396,
+      "crc32": "17cd8e93"
+    },
+    "train/Original/411_G.png": {
+      "bytes": 2465430,
+      "crc32": "24d283b2"
+    },
+    "train/Original/412_G.png": {
+      "bytes": 2130801,
+      "crc32": "1af693f7"
+    },
+    "train/Original/413_G.png": {
+      "bytes": 2004200,
+      "crc32": "910ff30d"
+    },
+    "train/Original/414_G.png": {
+      "bytes": 2241839,
+      "crc32": "973a7370"
+    },
+    "train/Original/415_G.png": {
+      "bytes": 2308500,
+      "crc32": "6432635a"
+    },
+    "train/Original/416_G.png": {
+      "bytes": 1282280,
+      "crc32": "ee9dba16"
+    },
+    "train/Original/417_G.png": {
+      "bytes": 2131343,
+      "crc32": "62a88107"
+    },
+    "train/Original/418_G.png": {
+      "bytes": 2280712,
+      "crc32": "de178a66"
+    },
+    "train/Original/419_G.png": {
+      "bytes": 2180642,
+      "crc32": "d492932c"
+    },
+    "train/Original/41_A.png": {
+      "bytes": 3252577,
+      "crc32": "76f7ccac"
+    },
+    "train/Original/420_G.png": {
+      "bytes": 1796636,
+      "crc32": "0c38b685"
+    },
+    "train/Original/421_G.png": {
+      "bytes": 2106692,
+      "crc32": "f600fb6f"
+    },
+    "train/Original/422_G.png": {
+      "bytes": 1950363,
+      "crc32": "a144df62"
+    },
+    "train/Original/423_G.png": {
+      "bytes": 1873383,
+      "crc32": "8bec6225"
+    },
+    "train/Original/424_G.png": {
+      "bytes": 2139370,
+      "crc32": "a1e88439"
+    },
+    "train/Original/425_G.png": {
+      "bytes": 1830383,
+      "crc32": "a63491be"
+    },
+    "train/Original/426_G.png": {
+      "bytes": 1934708,
+      "crc32": "ec797e24"
+    },
+    "train/Original/427_G.png": {
+      "bytes": 1428014,
+      "crc32": "434ceb8e"
+    },
+    "train/Original/428_G.png": {
+      "bytes": 1771152,
+      "crc32": "ce80fdd5"
+    },
+    "train/Original/429_G.png": {
+      "bytes": 2041518,
+      "crc32": "c40415a6"
+    },
+    "train/Original/42_A.png": {
+      "bytes": 2469447,
+      "crc32": "f11365b9"
+    },
+    "train/Original/430_G.png": {
+      "bytes": 1924044,
+      "crc32": "eaee0d45"
+    },
+    "train/Original/431_G.png": {
+      "bytes": 2350988,
+      "crc32": "0ed0cdd3"
+    },
+    "train/Original/432_G.png": {
+      "bytes": 2330596,
+      "crc32": "d60ee125"
+    },
+    "train/Original/433_G.png": {
+      "bytes": 2022525,
+      "crc32": "7ce420bc"
+    },
+    "train/Original/434_G.png": {
+      "bytes": 1307283,
+      "crc32": "d5549e01"
+    },
+    "train/Original/435_G.png": {
+      "bytes": 2256636,
+      "crc32": "5a781506"
+    },
+    "train/Original/436_G.png": {
+      "bytes": 2103008,
+      "crc32": "847aaed7"
+    },
+    "train/Original/437_G.png": {
+      "bytes": 1940033,
+      "crc32": "08367a6e"
+    },
+    "train/Original/438_G.png": {
+      "bytes": 1230800,
+      "crc32": "891aee77"
+    },
+    "train/Original/439_G.png": {
+      "bytes": 1952369,
+      "crc32": "2d939b76"
+    },
+    "train/Original/43_A.png": {
+      "bytes": 2319969,
+      "crc32": "20c3a015"
+    },
+    "train/Original/440_G.png": {
+      "bytes": 2358254,
+      "crc32": "acb253fd"
+    },
+    "train/Original/441_G.png": {
+      "bytes": 2429337,
+      "crc32": "18e6176e"
+    },
+    "train/Original/442_G.png": {
+      "bytes": 1900064,
+      "crc32": "2452188e"
+    },
+    "train/Original/443_G.png": {
+      "bytes": 1495334,
+      "crc32": "30103727"
+    },
+    "train/Original/444_G.png": {
+      "bytes": 1895008,
+      "crc32": "63817ab7"
+    },
+    "train/Original/445_G.png": {
+      "bytes": 2135462,
+      "crc32": "6610a613"
+    },
+    "train/Original/446_G.png": {
+      "bytes": 2098057,
+      "crc32": "d0cf0b01"
+    },
+    "train/Original/447_G.png": {
+      "bytes": 423813,
+      "crc32": "6fbd6e4d"
+    },
+    "train/Original/448_G.png": {
+      "bytes": 379182,
+      "crc32": "17ae2ff3"
+    },
+    "train/Original/449_G.png": {
+      "bytes": 1611528,
+      "crc32": "8a04a37e"
+    },
+    "train/Original/44_A.png": {
+      "bytes": 2098308,
+      "crc32": "e490b147"
+    },
+    "train/Original/450_G.png": {
+      "bytes": 1658960,
+      "crc32": "053eb578"
+    },
+    "train/Original/451_N.png": {
+      "bytes": 2290527,
+      "crc32": "af041dc8"
+    },
+    "train/Original/452_N.png": {
+      "bytes": 2158766,
+      "crc32": "4560334d"
+    },
+    "train/Original/453_N.png": {
+      "bytes": 2005240,
+      "crc32": "ae5b4328"
+    },
+    "train/Original/454_N.png": {
+      "bytes": 2121886,
+      "crc32": "bcb043d1"
+    },
+    "train/Original/455_N.png": {
+      "bytes": 2107366,
+      "crc32": "ff119c81"
+    },
+    "train/Original/456_N.png": {
+      "bytes": 1652135,
+      "crc32": "30a685a7"
+    },
+    "train/Original/457_N.png": {
+      "bytes": 2389576,
+      "crc32": "b98d6dcc"
+    },
+    "train/Original/458_N.png": {
+      "bytes": 2609661,
+      "crc32": "6f1e7550"
+    },
+    "train/Original/459_N.png": {
+      "bytes": 2343439,
+      "crc32": "64f2f7e1"
+    },
+    "train/Original/45_A.png": {
+      "bytes": 2320427,
+      "crc32": "28233fd0"
+    },
+    "train/Original/460_N.png": {
+      "bytes": 2254278,
+      "crc32": "73007e28"
+    },
+    "train/Original/461_N.png": {
+      "bytes": 2070791,
+      "crc32": "5b8a7ef2"
+    },
+    "train/Original/462_N.png": {
+      "bytes": 2318239,
+      "crc32": "60d63052"
+    },
+    "train/Original/463_N.png": {
+      "bytes": 1751665,
+      "crc32": "ef2d0108"
+    },
+    "train/Original/464_N.png": {
+      "bytes": 1884358,
+      "crc32": "2cf54681"
+    },
+    "train/Original/465_N.png": {
+      "bytes": 2145551,
+      "crc32": "602fb710"
+    },
+    "train/Original/466_N.png": {
+      "bytes": 2215905,
+      "crc32": "fb10fcf1"
+    },
+    "train/Original/467_N.png": {
+      "bytes": 1908058,
+      "crc32": "0b6c9c44"
+    },
+    "train/Original/468_N.png": {
+      "bytes": 1871319,
+      "crc32": "67b6798d"
+    },
+    "train/Original/469_N.png": {
+      "bytes": 2163831,
+      "crc32": "7e593567"
+    },
+    "train/Original/46_A.png": {
+      "bytes": 2364021,
+      "crc32": "38c7f53a"
+    },
+    "train/Original/470_N.png": {
+      "bytes": 1978269,
+      "crc32": "1c86753e"
+    },
+    "train/Original/471_N.png": {
+      "bytes": 2281177,
+      "crc32": "eabd6743"
+    },
+    "train/Original/472_N.png": {
+      "bytes": 2321765,
+      "crc32": "e7413758"
+    },
+    "train/Original/473_N.png": {
+      "bytes": 2390126,
+      "crc32": "dfb6ffdd"
+    },
+    "train/Original/474_N.png": {
+      "bytes": 2281714,
+      "crc32": "e886eb52"
+    },
+    "train/Original/475_N.png": {
+      "bytes": 2251239,
+      "crc32": "6a0ddb5f"
+    },
+    "train/Original/476_N.png": {
+      "bytes": 2490195,
+      "crc32": "db9a0b1a"
+    },
+    "train/Original/477_N.png": {
+      "bytes": 2066031,
+      "crc32": "7f65a29b"
+    },
+    "train/Original/478_N.png": {
+      "bytes": 2000171,
+      "crc32": "effa2e34"
+    },
+    "train/Original/479_N.png": {
+      "bytes": 2046863,
+      "crc32": "d2eb5b4b"
+    },
+    "train/Original/47_A.png": {
+      "bytes": 2248118,
+      "crc32": "afbbfd95"
+    },
+    "train/Original/480_N.png": {
+      "bytes": 2220702,
+      "crc32": "052e6753"
+    },
+    "train/Original/481_N.png": {
+      "bytes": 2030716,
+      "crc32": "37246e42"
+    },
+    "train/Original/482_N.png": {
+      "bytes": 2241256,
+      "crc32": "1dce1a7c"
+    },
+    "train/Original/483_N.png": {
+      "bytes": 2315454,
+      "crc32": "ba17e6ce"
+    },
+    "train/Original/484_N.png": {
+      "bytes": 2255361,
+      "crc32": "07107365"
+    },
+    "train/Original/485_N.png": {
+      "bytes": 2322711,
+      "crc32": "f20af9e2"
+    },
+    "train/Original/486_N.png": {
+      "bytes": 2317762,
+      "crc32": "0f344fd9"
+    },
+    "train/Original/487_N.png": {
+      "bytes": 2237324,
+      "crc32": "8395ef24"
+    },
+    "train/Original/488_N.png": {
+      "bytes": 2473223,
+      "crc32": "62f1f4c4"
+    },
+    "train/Original/489_N.png": {
+      "bytes": 2298839,
+      "crc32": "da4f3c86"
+    },
+    "train/Original/48_A.png": {
+      "bytes": 2395805,
+      "crc32": "2f4f1baf"
+    },
+    "train/Original/490_N.png": {
+      "bytes": 2335368,
+      "crc32": "e132f5a2"
+    },
+    "train/Original/491_N.png": {
+      "bytes": 2273647,
+      "crc32": "228922e8"
+    },
+    "train/Original/492_N.png": {
+      "bytes": 2149645,
+      "crc32": "707c4402"
+    },
+    "train/Original/493_N.png": {
+      "bytes": 1759404,
+      "crc32": "dbf70a18"
+    },
+    "train/Original/494_N.png": {
+      "bytes": 2061477,
+      "crc32": "a9d78cac"
+    },
+    "train/Original/495_N.png": {
+      "bytes": 2280531,
+      "crc32": "c69fc05f"
+    },
+    "train/Original/496_N.png": {
+      "bytes": 2682909,
+      "crc32": "3bdd672f"
+    },
+    "train/Original/497_N.png": {
+      "bytes": 2491690,
+      "crc32": "4d36ac37"
+    },
+    "train/Original/498_N.png": {
+      "bytes": 2633585,
+      "crc32": "7bb7e5da"
+    },
+    "train/Original/499_N.png": {
+      "bytes": 2589161,
+      "crc32": "31974afa"
+    },
+    "train/Original/49_A.png": {
+      "bytes": 2305863,
+      "crc32": "5b71bc00"
+    },
+    "train/Original/4_A.png": {
+      "bytes": 1972629,
+      "crc32": "a743f833"
+    },
+    "train/Original/500_N.png": {
+      "bytes": 2328234,
+      "crc32": "05fc9cd7"
+    },
+    "train/Original/501_N.png": {
+      "bytes": 2474199,
+      "crc32": "8032de82"
+    },
+    "train/Original/502_N.png": {
+      "bytes": 2439992,
+      "crc32": "916233bd"
+    },
+    "train/Original/503_N.png": {
+      "bytes": 2504809,
+      "crc32": "65db2950"
+    },
+    "train/Original/504_N.png": {
+      "bytes": 2646755,
+      "crc32": "4db4af4c"
+    },
+    "train/Original/505_N.png": {
+      "bytes": 2721132,
+      "crc32": "00064c60"
+    },
+    "train/Original/506_N.png": {
+      "bytes": 2439336,
+      "crc32": "7927113b"
+    },
+    "train/Original/507_N.png": {
+      "bytes": 2247619,
+      "crc32": "81690fa2"
+    },
+    "train/Original/508_N.png": {
+      "bytes": 2387966,
+      "crc32": "6995a159"
+    },
+    "train/Original/509_N.png": {
+      "bytes": 2496818,
+      "crc32": "b7e6bc4e"
+    },
+    "train/Original/50_A.png": {
+      "bytes": 2417412,
+      "crc32": "c1c3e90c"
+    },
+    "train/Original/510_N.png": {
+      "bytes": 2045828,
+      "crc32": "1b62b3b1"
+    },
+    "train/Original/511_N.png": {
+      "bytes": 2501621,
+      "crc32": "90512990"
+    },
+    "train/Original/512_N.png": {
+      "bytes": 2659187,
+      "crc32": "4684bb07"
+    },
+    "train/Original/513_N.png": {
+      "bytes": 2608843,
+      "crc32": "9edc4de8"
+    },
+    "train/Original/514_N.png": {
+      "bytes": 2396729,
+      "crc32": "ca981338"
+    },
+    "train/Original/515_N.png": {
+      "bytes": 2537743,
+      "crc32": "f354e31b"
+    },
+    "train/Original/516_N.png": {
+      "bytes": 2533314,
+      "crc32": "df7a8037"
+    },
+    "train/Original/517_N.png": {
+      "bytes": 2426557,
+      "crc32": "eb62d327"
+    },
+    "train/Original/518_N.png": {
+      "bytes": 2253878,
+      "crc32": "247376bf"
+    },
+    "train/Original/519_N.png": {
+      "bytes": 2145698,
+      "crc32": "f5f75443"
+    },
+    "train/Original/51_A.png": {
+      "bytes": 2087791,
+      "crc32": "8893b8d5"
+    },
+    "train/Original/520_N.png": {
+      "bytes": 2354717,
+      "crc32": "96ca7e63"
+    },
+    "train/Original/521_N.png": {
+      "bytes": 2418018,
+      "crc32": "512e843f"
+    },
+    "train/Original/522_N.png": {
+      "bytes": 2407557,
+      "crc32": "5268d4e7"
+    },
+    "train/Original/523_N.png": {
+      "bytes": 2066999,
+      "crc32": "ef3db7e3"
+    },
+    "train/Original/524_N.png": {
+      "bytes": 2048916,
+      "crc32": "5faebb25"
+    },
+    "train/Original/525_N.png": {
+      "bytes": 2108333,
+      "crc32": "f79429e6"
+    },
+    "train/Original/526_N.png": {
+      "bytes": 2144018,
+      "crc32": "8bd2f71b"
+    },
+    "train/Original/527_N.png": {
+      "bytes": 2167584,
+      "crc32": "d999bd58"
+    },
+    "train/Original/528_N.png": {
+      "bytes": 2493039,
+      "crc32": "fb87bbfd"
+    },
+    "train/Original/529_N.png": {
+      "bytes": 1933647,
+      "crc32": "dee89290"
+    },
+    "train/Original/52_A.png": {
+      "bytes": 2552651,
+      "crc32": "878a7eb6"
+    },
+    "train/Original/530_N.png": {
+      "bytes": 2040755,
+      "crc32": "b0e685b7"
+    },
+    "train/Original/531_N.png": {
+      "bytes": 2040131,
+      "crc32": "4867f050"
+    },
+    "train/Original/532_N.png": {
+      "bytes": 2323141,
+      "crc32": "77d04ef9"
+    },
+    "train/Original/533_N.png": {
+      "bytes": 2243631,
+      "crc32": "86bb171a"
+    },
+    "train/Original/534_N.png": {
+      "bytes": 2058600,
+      "crc32": "8c1d659a"
+    },
+    "train/Original/535_N.png": {
+      "bytes": 2268339,
+      "crc32": "057f3131"
+    },
+    "train/Original/536_N.png": {
+      "bytes": 1957251,
+      "crc32": "338eb3a9"
+    },
+    "train/Original/537_N.png": {
+      "bytes": 1711066,
+      "crc32": "8efd6004"
+    },
+    "train/Original/538_N.png": {
+      "bytes": 2675264,
+      "crc32": "c649a085"
+    },
+    "train/Original/539_N.png": {
+      "bytes": 2583636,
+      "crc32": "5d0d9a91"
+    },
+    "train/Original/53_A.png": {
+      "bytes": 2319103,
+      "crc32": "0405ce00"
+    },
+    "train/Original/540_N.png": {
+      "bytes": 2316187,
+      "crc32": "3bdbf8c8"
+    },
+    "train/Original/541_N.png": {
+      "bytes": 2417190,
+      "crc32": "3dae58a9"
+    },
+    "train/Original/542_N.png": {
+      "bytes": 2464383,
+      "crc32": "565825c8"
+    },
+    "train/Original/543_N.png": {
+      "bytes": 2478324,
+      "crc32": "9f7d0413"
+    },
+    "train/Original/544_N.png": {
+      "bytes": 2316108,
+      "crc32": "fa948ff3"
+    },
+    "train/Original/545_N.png": {
+      "bytes": 2132859,
+      "crc32": "9296497a"
+    },
+    "train/Original/546_N.png": {
+      "bytes": 1779110,
+      "crc32": "51f0af25"
+    },
+    "train/Original/547_N.png": {
+      "bytes": 2070804,
+      "crc32": "c8d5fdbf"
+    },
+    "train/Original/548_N.png": {
+      "bytes": 2262511,
+      "crc32": "188cd188"
+    },
+    "train/Original/549_N.png": {
+      "bytes": 2092810,
+      "crc32": "4f8c7f03"
+    },
+    "train/Original/54_A.png": {
+      "bytes": 2504785,
+      "crc32": "e9478dec"
+    },
+    "train/Original/550_N.png": {
+      "bytes": 2017324,
+      "crc32": "5c598057"
+    },
+    "train/Original/551_N.png": {
+      "bytes": 2229285,
+      "crc32": "ee66f854"
+    },
+    "train/Original/552_N.png": {
+      "bytes": 2227757,
+      "crc32": "4a02c02b"
+    },
+    "train/Original/553_N.png": {
+      "bytes": 2145988,
+      "crc32": "761250b5"
+    },
+    "train/Original/554_N.png": {
+      "bytes": 2234126,
+      "crc32": "03cb39df"
+    },
+    "train/Original/555_N.png": {
+      "bytes": 2207491,
+      "crc32": "a3c55ebc"
+    },
+    "train/Original/556_N.png": {
+      "bytes": 2221514,
+      "crc32": "2e696c81"
+    },
+    "train/Original/557_N.png": {
+      "bytes": 2405169,
+      "crc32": "615f3ed4"
+    },
+    "train/Original/558_N.png": {
+      "bytes": 2424196,
+      "crc32": "271f50ec"
+    },
+    "train/Original/559_N.png": {
+      "bytes": 2497402,
+      "crc32": "21928252"
+    },
+    "train/Original/55_A.png": {
+      "bytes": 2221849,
+      "crc32": "ca303f7a"
+    },
+    "train/Original/560_N.png": {
+      "bytes": 2087136,
+      "crc32": "b55bd119"
+    },
+    "train/Original/561_N.png": {
+      "bytes": 2214704,
+      "crc32": "fef52424"
+    },
+    "train/Original/562_N.png": {
+      "bytes": 2004546,
+      "crc32": "bf6a2545"
+    },
+    "train/Original/563_N.png": {
+      "bytes": 2365860,
+      "crc32": "55fa7717"
+    },
+    "train/Original/564_N.png": {
+      "bytes": 2378333,
+      "crc32": "f6b085cb"
+    },
+    "train/Original/565_N.png": {
+      "bytes": 2423804,
+      "crc32": "f2ded34f"
+    },
+    "train/Original/566_N.png": {
+      "bytes": 2335567,
+      "crc32": "82d57bef"
+    },
+    "train/Original/567_N.png": {
+      "bytes": 2215564,
+      "crc32": "4a6435d0"
+    },
+    "train/Original/568_N.png": {
+      "bytes": 2038247,
+      "crc32": "00093873"
+    },
+    "train/Original/569_N.png": {
+      "bytes": 2310673,
+      "crc32": "a7eb8e99"
+    },
+    "train/Original/56_A.png": {
+      "bytes": 2563070,
+      "crc32": "423715e5"
+    },
+    "train/Original/570_N.png": {
+      "bytes": 2273795,
+      "crc32": "aadae99e"
+    },
+    "train/Original/571_N.png": {
+      "bytes": 2437983,
+      "crc32": "33fcd052"
+    },
+    "train/Original/572_N.png": {
+      "bytes": 2363626,
+      "crc32": "853d0a2c"
+    },
+    "train/Original/573_N.png": {
+      "bytes": 2316999,
+      "crc32": "8650ca75"
+    },
+    "train/Original/574_N.png": {
+      "bytes": 2469486,
+      "crc32": "4e19bcef"
+    },
+    "train/Original/575_N.png": {
+      "bytes": 2141058,
+      "crc32": "e790e2ea"
+    },
+    "train/Original/576_N.png": {
+      "bytes": 2240929,
+      "crc32": "b549dada"
+    },
+    "train/Original/577_N.png": {
+      "bytes": 2391068,
+      "crc32": "796c33d9"
+    },
+    "train/Original/578_N.png": {
+      "bytes": 2530169,
+      "crc32": "c6310494"
+    },
+    "train/Original/579_N.png": {
+      "bytes": 2318049,
+      "crc32": "5e9cb2d9"
+    },
+    "train/Original/57_A.png": {
+      "bytes": 2321611,
+      "crc32": "9d8183fd"
+    },
+    "train/Original/580_N.png": {
+      "bytes": 2397878,
+      "crc32": "391b3940"
+    },
+    "train/Original/581_N.png": {
+      "bytes": 2690595,
+      "crc32": "acc4d10c"
+    },
+    "train/Original/582_N.png": {
+      "bytes": 2687538,
+      "crc32": "b4c75811"
+    },
+    "train/Original/583_N.png": {
+      "bytes": 2736946,
+      "crc32": "d5676c94"
+    },
+    "train/Original/584_N.png": {
+      "bytes": 2772762,
+      "crc32": "51456369"
+    },
+    "train/Original/585_N.png": {
+      "bytes": 2707048,
+      "crc32": "ffc5ce15"
+    },
+    "train/Original/586_N.png": {
+      "bytes": 2697714,
+      "crc32": "cc50fda9"
+    },
+    "train/Original/587_N.png": {
+      "bytes": 2674523,
+      "crc32": "664038c9"
+    },
+    "train/Original/588_N.png": {
+      "bytes": 2654876,
+      "crc32": "4dda4961"
+    },
+    "train/Original/589_N.png": {
+      "bytes": 2386054,
+      "crc32": "4dca6ffa"
+    },
+    "train/Original/58_A.png": {
+      "bytes": 2190972,
+      "crc32": "cfd6ec6c"
+    },
+    "train/Original/590_N.png": {
+      "bytes": 2638480,
+      "crc32": "4677d565"
+    },
+    "train/Original/591_N.png": {
+      "bytes": 2890383,
+      "crc32": "578ca413"
+    },
+    "train/Original/592_N.png": {
+      "bytes": 2871176,
+      "crc32": "9260f4b8"
+    },
+    "train/Original/593_N.png": {
+      "bytes": 2820451,
+      "crc32": "d9d68381"
+    },
+    "train/Original/594_N.png": {
+      "bytes": 2851367,
+      "crc32": "b20a7819"
+    },
+    "train/Original/595_N.png": {
+      "bytes": 2738127,
+      "crc32": "e3f9e299"
+    },
+    "train/Original/596_N.png": {
+      "bytes": 2572664,
+      "crc32": "7a4691a9"
+    },
+    "train/Original/597_N.png": {
+      "bytes": 2777685,
+      "crc32": "75fa463f"
+    },
+    "train/Original/598_N.png": {
+      "bytes": 2829289,
+      "crc32": "245e1f7c"
+    },
+    "train/Original/599_N.png": {
+      "bytes": 2930103,
+      "crc32": "312bc752"
+    },
+    "train/Original/59_A.png": {
+      "bytes": 1978682,
+      "crc32": "b800f9fa"
+    },
+    "train/Original/5_A.png": {
+      "bytes": 2251763,
+      "crc32": "dd4deb43"
+    },
+    "train/Original/600_N.png": {
+      "bytes": 2748974,
+      "crc32": "749bd1f7"
+    },
+    "train/Original/60_A.png": {
+      "bytes": 2522148,
+      "crc32": "734b779c"
+    },
+    "train/Original/61_A.png": {
+      "bytes": 2437955,
+      "crc32": "7f35d2c0"
+    },
+    "train/Original/62_A.png": {
+      "bytes": 2297692,
+      "crc32": "40a65a95"
+    },
+    "train/Original/63_A.png": {
+      "bytes": 2330417,
+      "crc32": "2904181e"
+    },
+    "train/Original/64_A.png": {
+      "bytes": 2330621,
+      "crc32": "a7f18352"
+    },
+    "train/Original/65_A.png": {
+      "bytes": 2532986,
+      "crc32": "4b0ce926"
+    },
+    "train/Original/66_A.png": {
+      "bytes": 1731714,
+      "crc32": "f3ce3c26"
+    },
+    "train/Original/67_A.png": {
+      "bytes": 2143016,
+      "crc32": "705f993b"
+    },
+    "train/Original/68_A.png": {
+      "bytes": 2553934,
+      "crc32": "a83dac95"
+    },
+    "train/Original/69_A.png": {
+      "bytes": 2270523,
+      "crc32": "74455c3a"
+    },
+    "train/Original/6_A.png": {
+      "bytes": 2262516,
+      "crc32": "b6ca7dd9"
+    },
+    "train/Original/70_A.png": {
+      "bytes": 2603121,
+      "crc32": "56023186"
+    },
+    "train/Original/71_A.png": {
+      "bytes": 2313558,
+      "crc32": "b697cf5f"
+    },
+    "train/Original/72_A.png": {
+      "bytes": 2442731,
+      "crc32": "596950a3"
+    },
+    "train/Original/73_A.png": {
+      "bytes": 2487180,
+      "crc32": "83f6e157"
+    },
+    "train/Original/74_A.png": {
+      "bytes": 2151170,
+      "crc32": "f494e1ec"
+    },
+    "train/Original/75_A.png": {
+      "bytes": 2664257,
+      "crc32": "1d12c3fd"
+    },
+    "train/Original/76_A.png": {
+      "bytes": 1978083,
+      "crc32": "ec50d322"
+    },
+    "train/Original/77_A.png": {
+      "bytes": 2510562,
+      "crc32": "12aadc2f"
+    },
+    "train/Original/78_A.png": {
+      "bytes": 2129612,
+      "crc32": "dcf365a5"
+    },
+    "train/Original/79_A.png": {
+      "bytes": 2091020,
+      "crc32": "d71753fe"
+    },
+    "train/Original/7_A.png": {
+      "bytes": 2239326,
+      "crc32": "bf022616"
+    },
+    "train/Original/80_A.png": {
+      "bytes": 2253423,
+      "crc32": "7ac2c356"
+    },
+    "train/Original/81_A.png": {
+      "bytes": 2363326,
+      "crc32": "e5d05a6e"
+    },
+    "train/Original/82_A.png": {
+      "bytes": 2167087,
+      "crc32": "a609594c"
+    },
+    "train/Original/83_A.png": {
+      "bytes": 2166015,
+      "crc32": "bbdf0549"
+    },
+    "train/Original/84_A.png": {
+      "bytes": 2414963,
+      "crc32": "7e14f0a9"
+    },
+    "train/Original/85_A.png": {
+      "bytes": 1888659,
+      "crc32": "312c0066"
+    },
+    "train/Original/86_A.png": {
+      "bytes": 2116233,
+      "crc32": "9eda3dc2"
+    },
+    "train/Original/87_A.png": {
+      "bytes": 2445286,
+      "crc32": "5a69549e"
+    },
+    "train/Original/88_A.png": {
+      "bytes": 2180490,
+      "crc32": "37b824fd"
+    },
+    "train/Original/89_A.png": {
+      "bytes": 2177485,
+      "crc32": "a6be86aa"
+    },
+    "train/Original/8_A.png": {
+      "bytes": 2190768,
+      "crc32": "2a6486fb"
+    },
+    "train/Original/90_A.png": {
+      "bytes": 2328874,
+      "crc32": "8cedd7f7"
+    },
+    "train/Original/91_A.png": {
+      "bytes": 2184681,
+      "crc32": "fe39817e"
+    },
+    "train/Original/92_A.png": {
+      "bytes": 1950982,
+      "crc32": "f24f191d"
+    },
+    "train/Original/93_A.png": {
+      "bytes": 2764194,
+      "crc32": "f60e6677"
+    },
+    "train/Original/94_A.png": {
+      "bytes": 1993159,
+      "crc32": "1476a6a1"
+    },
+    "train/Original/95_A.png": {
+      "bytes": 2515633,
+      "crc32": "bb093805"
+    },
+    "train/Original/96_A.png": {
+      "bytes": 2619484,
+      "crc32": "eb507c85"
+    },
+    "train/Original/97_A.png": {
+      "bytes": 2319103,
+      "crc32": "0405ce00"
+    },
+    "train/Original/98_A.png": {
+      "bytes": 1680197,
+      "crc32": "24f6502a"
+    },
+    "train/Original/99_A.png": {
+      "bytes": 2520982,
+      "crc32": "ff91860d"
+    },
+    "train/Original/9_A.png": {
+      "bytes": 1941289,
+      "crc32": "0ea02aae"
+    }
+  },
+  "limit": "Agreement of two mirror indexes is corroboration, not cryptographic proof of identity with the official Figshare archive.",
+  "local_png_entries": 1600,
+  "differences": [],
+  "all_png_sizes_and_crc32_match": true
+}

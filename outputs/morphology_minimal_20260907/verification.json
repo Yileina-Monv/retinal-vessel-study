@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "paired_images": 118,
+  "probability_hashes_verified": 236,
+  "raw_label_and_fov_hashes_verified": 236,
+  "checkpoints_verified": 2,
+  "max_dice_precision_recall_difference": 0.0,
+  "cldice_reproduced": true,
+  "area_FP_minus_FN_identity": true,
+  "official_test_access": false
+}

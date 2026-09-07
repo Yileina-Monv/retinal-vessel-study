@@ -1,0 +1,1 @@
+{"accounting":"single worker entire lifetime, includes startup, inference, CPU metrics and saving; CPU preparation excluded","elapsed_seconds":807.1288979999954,"hard_timeout":false,"limit_seconds":7200,"returncode":0,"status":"COMPLETED"}

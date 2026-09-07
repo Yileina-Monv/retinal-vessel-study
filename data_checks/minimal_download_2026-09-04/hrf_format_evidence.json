@@ -1,0 +1,134 @@
+{
+  "status": "PASS_DOWNLOAD_AND_FORMAT_SMOKE",
+  "scope": "HRF healthy subset only; all 15 paired by filename; three fixed samples fully decoded; no patient, semantic label, clinical or model evaluation",
+  "paired_count": 15,
+  "paired_ids": [
+    "01_h",
+    "02_h",
+    "03_h",
+    "04_h",
+    "05_h",
+    "06_h",
+    "07_h",
+    "08_h",
+    "09_h",
+    "10_h",
+    "11_h",
+    "12_h",
+    "13_h",
+    "14_h",
+    "15_h"
+  ],
+  "sample_selection": "First, middle and last by fixed ID: 01_h, 08_h, 15_h",
+  "initial_check_correction": "The first draft assumed a single-channel FOV and stopped before saving results; actual FOV is RGB with identical planes. Channel equality is now checked explicitly.",
+  "samples": [
+    {
+      "id": "01_h",
+      "image_size_wh": [
+        3504,
+        2336
+      ],
+      "image_mode": "RGB",
+      "label": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "L",
+        "normalization": "Already single channel",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "fov": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "RGB",
+        "normalization": "Verified three equal channels, then selected channel 0",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "label_foreground_pixels": 833888,
+      "fov_foreground_pixels": 6913783,
+      "label_foreground_outside_fov": 0,
+      "dimensions_match": true
+    },
+    {
+      "id": "08_h",
+      "image_size_wh": [
+        3504,
+        2336
+      ],
+      "image_mode": "RGB",
+      "label": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "L",
+        "normalization": "Already single channel",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "fov": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "RGB",
+        "normalization": "Verified three equal channels, then selected channel 0",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "label_foreground_pixels": 821627,
+      "fov_foreground_pixels": 6912686,
+      "label_foreground_outside_fov": 0,
+      "dimensions_match": true
+    },
+    {
+      "id": "15_h",
+      "image_size_wh": [
+        3504,
+        2336
+      ],
+      "image_mode": "RGB",
+      "label": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "L",
+        "normalization": "Already single channel",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "fov": {
+        "size_wh": [
+          3504,
+          2336
+        ],
+        "stored_mode": "RGB",
+        "normalization": "Verified three equal channels, then selected channel 0",
+        "unique_values": [
+          0,
+          255
+        ]
+      },
+      "label_foreground_pixels": 641245,
+      "fov_foreground_pixels": 6912814,
+      "label_foreground_outside_fov": 0,
+      "dimensions_match": true
+    }
+  ]
+}

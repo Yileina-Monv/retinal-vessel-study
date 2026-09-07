@@ -1,0 +1,35 @@
+{
+  "hardware": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "parameters": 7763041,
+    "nvidia_smi": "NVIDIA GeForce RTX 5080, 616.64, 16303 MiB, 2932 MiB"
+  },
+  "microbatch": 2,
+  "accumulation": 2,
+  "optimizer_steps": 256,
+  "additional_reference_updates": 4,
+  "primary_training_samples": 1024,
+  "training_loop_total_seconds": 70.726475700023,
+  "data_wait_total_seconds": 49.23587189999671,
+  "gpu_regions_total_seconds": 21.182845460414885,
+  "step_wall_median_after_16_warmup_seconds": 0.1766504499973962,
+  "gpu_region_median_after_16_warmup_seconds": 0.07948878395557404,
+  "step_wall_p95_after_16_warmup_seconds": 0.20912727999748287,
+  "measured_process_segments_total_seconds": 86.7383090000003,
+  "peak_allocated_gib": 1.6277318000793457,
+  "peak_reserved_gib": 2.4140625,
+  "sampled_process_tree_rss_max_gib": 3.3901901245117188,
+  "final_eight_images_including_loading_seconds": 4.312675600005605,
+  "final_tiled_inference_seconds": 3.26702220000152,
+  "final_tiles": 392,
+  "timing_notes": [
+    "Step timings include data fetch and GPU synchronization.",
+    "GPU regions are CUDA-event intervals, not an energy or utilization measurement.",
+    "Process timers exclude interpreter/model/data initialization before the timer and inter-process gaps.",
+    "RSS is sampled and sums parent/children, which can double-count shared pages.",
+    "Short-pilot timings do not establish convergence or full-study runtime."
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve archived byte hashes across platforms; new text should use UTF-8 LF.
+* -text

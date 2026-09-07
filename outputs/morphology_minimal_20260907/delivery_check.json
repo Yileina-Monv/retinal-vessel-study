@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "all_required_outputs_present": true,
+  "protocol_script_hash_matches": true,
+  "paired_images": 118,
+  "total_predictions": 236,
+  "worker_finished": true,
+  "total_elapsed_to_delivery_check_seconds": 655.4700531959534,
+  "user_limit_seconds": 3600,
+  "under_budget": true,
+  "no_new_training": true,
+  "official_test_access": false
+}

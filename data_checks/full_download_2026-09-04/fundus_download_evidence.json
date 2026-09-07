@@ -1,0 +1,22 @@
+{
+  "official_record": "https://figshare.com/articles/dataset/Fundus-AVSeg/27938034",
+  "official_download": "https://figshare.com/ndownloader/files/54093641",
+  "retrieval_origin_path": "https://www.kaggle.com/api/v1/datasets/download/darksoul007fedsdfds/fundusdataset",
+  "temporary_query_retained": false,
+  "proxy_configuration_changed": false,
+  "local_path": "archives\\fundus_avseg_kaggle_v1.zip",
+  "http_status": 200,
+  "server": "UploadServer",
+  "content_type": "application/zip",
+  "final_origin_path": "https://storage.googleapis.com:443/kaggle-data-sets/9851363/15399560/bundle/archive.zip",
+  "advertised_bytes": 212778115,
+  "etag": "\"0675db54ccb5dfa8d839b4d6076618f1\"",
+  "status": "PASS_DOWNLOAD_AND_MIRROR_FILE_AUDIT",
+  "bytes": 212778115,
+  "sha256": "12a5a9e579fbf6086a10434d260c79641f1a98c64b882a4c8bfb152ad0542c22",
+  "md5": "0675db54ccb5dfa8d839b4d6076618f1",
+  "elapsed_seconds": 12.17,
+  "retrieval_type": "THIRD_PARTY_KAGGLE_MIRROR_VERSION_1",
+  "file_audit_report": "fundus_format_evidence.json",
+  "official_archive_identity": "NOT_VERIFIED"
+}

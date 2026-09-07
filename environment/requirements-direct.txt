@@ -1,0 +1,15 @@
+# Direct runtime dependencies. Exact resolved versions are captured separately.
+numpy
+Pillow
+scipy
+scikit-image
+scikit-learn
+opencv-python-headless
+pandas
+openpyxl
+matplotlib
+PyYAML
+tqdm
+tensorboard
+psutil
+requests

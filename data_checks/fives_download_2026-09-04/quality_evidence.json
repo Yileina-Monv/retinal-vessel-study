@@ -1,0 +1,7468 @@
+{
+  "status": "PASS_800_QUALITY_ROWS",
+  "row_count": 800,
+  "fields": [
+    "Disease",
+    "Number",
+    "IC",
+    "Blur",
+    "LC"
+  ],
+  "coding": "Per original paper: 1 = good quality in that aspect; 0 = poor quality. IC = illumination/color distortion; LC = low contrast.",
+  "paper_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352679/",
+  "primary_mirror": {
+    "ref": "nikitamanaenkov/fundus-image-dataset-for-vessel-segmentation",
+    "version": 6
+  },
+  "comparison_mirror": {
+    "ref": "sushanthreddypotu/fives-dataset",
+    "version": 2
+  },
+  "workbook_files_byte_identical": false,
+  "all_decoded_quality_records_identical": true,
+  "quality_record_differences": [],
+  "identity_fields_present": false,
+  "identity_limit": "The workbook provides image numbers and disease/quality fields, not patient IDs or eye laterality.",
+  "group_summaries": [
+    {
+      "split": "train",
+      "disease": "A",
+      "count": 150,
+      "IC_good": 142,
+      "Blur_good": 134,
+      "LC_good": 150,
+      "all_three_good": 129,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 129,
+        "001": 3,
+        "101": 13,
+        "011": 5
+      }
+    },
+    {
+      "split": "train",
+      "disease": "D",
+      "count": 150,
+      "IC_good": 127,
+      "Blur_good": 117,
+      "LC_good": 149,
+      "all_three_good": 108,
+      "quality_patterns_IC_Blur_LC": {
+        "011": 9,
+        "111": 108,
+        "001": 13,
+        "101": 19,
+        "000": 1
+      }
+    },
+    {
+      "split": "train",
+      "disease": "G",
+      "count": 150,
+      "IC_good": 82,
+      "Blur_good": 109,
+      "LC_good": 131,
+      "all_three_good": 77,
+      "quality_patterns_IC_Blur_LC": {
+        "001": 19,
+        "011": 31,
+        "101": 4,
+        "111": 77,
+        "000": 17,
+        "010": 1,
+        "100": 1
+      }
+    },
+    {
+      "split": "train",
+      "disease": "N",
+      "count": 150,
+      "IC_good": 145,
+      "Blur_good": 150,
+      "LC_good": 150,
+      "all_three_good": 145,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 145,
+        "011": 5
+      }
+    },
+    {
+      "split": "train",
+      "disease": "all",
+      "count": 600,
+      "IC_good": 496,
+      "Blur_good": 510,
+      "LC_good": 580,
+      "all_three_good": 459,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 459,
+        "001": 35,
+        "101": 36,
+        "011": 50,
+        "000": 18,
+        "010": 1,
+        "100": 1
+      }
+    },
+    {
+      "split": "test",
+      "disease": "A",
+      "count": 50,
+      "IC_good": 45,
+      "Blur_good": 44,
+      "LC_good": 50,
+      "all_three_good": 42,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 42,
+        "011": 2,
+        "001": 3,
+        "101": 3
+      }
+    },
+    {
+      "split": "test",
+      "disease": "D",
+      "count": 50,
+      "IC_good": 45,
+      "Blur_good": 37,
+      "LC_good": 49,
+      "all_three_good": 36,
+      "quality_patterns_IC_Blur_LC": {
+        "001": 3,
+        "111": 36,
+        "101": 9,
+        "000": 1,
+        "011": 1
+      }
+    },
+    {
+      "split": "test",
+      "disease": "G",
+      "count": 50,
+      "IC_good": 25,
+      "Blur_good": 31,
+      "LC_good": 36,
+      "all_three_good": 22,
+      "quality_patterns_IC_Blur_LC": {
+        "001": 2,
+        "000": 14,
+        "101": 3,
+        "011": 9,
+        "111": 22
+      }
+    },
+    {
+      "split": "test",
+      "disease": "N",
+      "count": 50,
+      "IC_good": 33,
+      "Blur_good": 47,
+      "LC_good": 50,
+      "all_three_good": 33,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 33,
+        "011": 14,
+        "001": 3
+      }
+    },
+    {
+      "split": "test",
+      "disease": "all",
+      "count": 200,
+      "IC_good": 148,
+      "Blur_good": 159,
+      "LC_good": 185,
+      "all_three_good": 133,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 133,
+        "011": 26,
+        "001": 11,
+        "101": 15,
+        "000": 15
+      }
+    },
+    {
+      "split": "all",
+      "disease": "A",
+      "count": 200,
+      "IC_good": 187,
+      "Blur_good": 178,
+      "LC_good": 200,
+      "all_three_good": 171,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 171,
+        "001": 6,
+        "101": 16,
+        "011": 7
+      }
+    },
+    {
+      "split": "all",
+      "disease": "D",
+      "count": 200,
+      "IC_good": 172,
+      "Blur_good": 154,
+      "LC_good": 198,
+      "all_three_good": 144,
+      "quality_patterns_IC_Blur_LC": {
+        "011": 10,
+        "111": 144,
+        "001": 16,
+        "101": 28,
+        "000": 2
+      }
+    },
+    {
+      "split": "all",
+      "disease": "G",
+      "count": 200,
+      "IC_good": 107,
+      "Blur_good": 140,
+      "LC_good": 167,
+      "all_three_good": 99,
+      "quality_patterns_IC_Blur_LC": {
+        "001": 21,
+        "011": 40,
+        "101": 7,
+        "111": 99,
+        "000": 31,
+        "010": 1,
+        "100": 1
+      }
+    },
+    {
+      "split": "all",
+      "disease": "N",
+      "count": 200,
+      "IC_good": 178,
+      "Blur_good": 197,
+      "LC_good": 200,
+      "all_three_good": 178,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 178,
+        "011": 19,
+        "001": 3
+      }
+    },
+    {
+      "split": "all",
+      "disease": "all",
+      "count": 800,
+      "IC_good": 644,
+      "Blur_good": 669,
+      "LC_good": 765,
+      "all_three_good": 592,
+      "quality_patterns_IC_Blur_LC": {
+        "111": 592,
+        "001": 46,
+        "101": 51,
+        "011": 76,
+        "000": 33,
+        "010": 1,
+        "100": 1
+      }
+    }
+  ],
+  "records": [
+    {
+      "key": "train/1_A.png",
+      "split": "train",
+      "filename": "1_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/2_A.png",
+      "split": "train",
+      "filename": "2_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/3_A.png",
+      "split": "train",
+      "filename": "3_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/4_A.png",
+      "split": "train",
+      "filename": "4_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/5_A.png",
+      "split": "train",
+      "filename": "5_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/6_A.png",
+      "split": "train",
+      "filename": "6_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/7_A.png",
+      "split": "train",
+      "filename": "7_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/8_A.png",
+      "split": "train",
+      "filename": "8_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/9_A.png",
+      "split": "train",
+      "filename": "9_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/10_A.png",
+      "split": "train",
+      "filename": "10_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/11_A.png",
+      "split": "train",
+      "filename": "11_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/12_A.png",
+      "split": "train",
+      "filename": "12_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/13_A.png",
+      "split": "train",
+      "filename": "13_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/14_A.png",
+      "split": "train",
+      "filename": "14_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/15_A.png",
+      "split": "train",
+      "filename": "15_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/16_A.png",
+      "split": "train",
+      "filename": "16_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/17_A.png",
+      "split": "train",
+      "filename": "17_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/18_A.png",
+      "split": "train",
+      "filename": "18_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/19_A.png",
+      "split": "train",
+      "filename": "19_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/20_A.png",
+      "split": "train",
+      "filename": "20_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/21_A.png",
+      "split": "train",
+      "filename": "21_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/22_A.png",
+      "split": "train",
+      "filename": "22_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/23_A.png",
+      "split": "train",
+      "filename": "23_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/24_A.png",
+      "split": "train",
+      "filename": "24_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/25_A.png",
+      "split": "train",
+      "filename": "25_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/26_A.png",
+      "split": "train",
+      "filename": "26_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/27_A.png",
+      "split": "train",
+      "filename": "27_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/28_A.png",
+      "split": "train",
+      "filename": "28_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/29_A.png",
+      "split": "train",
+      "filename": "29_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/30_A.png",
+      "split": "train",
+      "filename": "30_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/31_A.png",
+      "split": "train",
+      "filename": "31_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/32_A.png",
+      "split": "train",
+      "filename": "32_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/33_A.png",
+      "split": "train",
+      "filename": "33_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/34_A.png",
+      "split": "train",
+      "filename": "34_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/35_A.png",
+      "split": "train",
+      "filename": "35_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/36_A.png",
+      "split": "train",
+      "filename": "36_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/37_A.png",
+      "split": "train",
+      "filename": "37_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/38_A.png",
+      "split": "train",
+      "filename": "38_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/39_A.png",
+      "split": "train",
+      "filename": "39_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/40_A.png",
+      "split": "train",
+      "filename": "40_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/41_A.png",
+      "split": "train",
+      "filename": "41_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/42_A.png",
+      "split": "train",
+      "filename": "42_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/43_A.png",
+      "split": "train",
+      "filename": "43_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/44_A.png",
+      "split": "train",
+      "filename": "44_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/45_A.png",
+      "split": "train",
+      "filename": "45_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/46_A.png",
+      "split": "train",
+      "filename": "46_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/47_A.png",
+      "split": "train",
+      "filename": "47_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/48_A.png",
+      "split": "train",
+      "filename": "48_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/49_A.png",
+      "split": "train",
+      "filename": "49_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/50_A.png",
+      "split": "train",
+      "filename": "50_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/51_A.png",
+      "split": "train",
+      "filename": "51_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/52_A.png",
+      "split": "train",
+      "filename": "52_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/53_A.png",
+      "split": "train",
+      "filename": "53_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/54_A.png",
+      "split": "train",
+      "filename": "54_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/55_A.png",
+      "split": "train",
+      "filename": "55_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/56_A.png",
+      "split": "train",
+      "filename": "56_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/57_A.png",
+      "split": "train",
+      "filename": "57_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/58_A.png",
+      "split": "train",
+      "filename": "58_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/59_A.png",
+      "split": "train",
+      "filename": "59_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/60_A.png",
+      "split": "train",
+      "filename": "60_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/61_A.png",
+      "split": "train",
+      "filename": "61_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/62_A.png",
+      "split": "train",
+      "filename": "62_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/63_A.png",
+      "split": "train",
+      "filename": "63_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/64_A.png",
+      "split": "train",
+      "filename": "64_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/65_A.png",
+      "split": "train",
+      "filename": "65_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/66_A.png",
+      "split": "train",
+      "filename": "66_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/67_A.png",
+      "split": "train",
+      "filename": "67_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/68_A.png",
+      "split": "train",
+      "filename": "68_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/69_A.png",
+      "split": "train",
+      "filename": "69_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/70_A.png",
+      "split": "train",
+      "filename": "70_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/71_A.png",
+      "split": "train",
+      "filename": "71_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/72_A.png",
+      "split": "train",
+      "filename": "72_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/73_A.png",
+      "split": "train",
+      "filename": "73_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/74_A.png",
+      "split": "train",
+      "filename": "74_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/75_A.png",
+      "split": "train",
+      "filename": "75_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/76_A.png",
+      "split": "train",
+      "filename": "76_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/77_A.png",
+      "split": "train",
+      "filename": "77_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/78_A.png",
+      "split": "train",
+      "filename": "78_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/79_A.png",
+      "split": "train",
+      "filename": "79_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/80_A.png",
+      "split": "train",
+      "filename": "80_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/81_A.png",
+      "split": "train",
+      "filename": "81_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/82_A.png",
+      "split": "train",
+      "filename": "82_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/83_A.png",
+      "split": "train",
+      "filename": "83_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/84_A.png",
+      "split": "train",
+      "filename": "84_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/85_A.png",
+      "split": "train",
+      "filename": "85_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/86_A.png",
+      "split": "train",
+      "filename": "86_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/87_A.png",
+      "split": "train",
+      "filename": "87_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/88_A.png",
+      "split": "train",
+      "filename": "88_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/89_A.png",
+      "split": "train",
+      "filename": "89_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/90_A.png",
+      "split": "train",
+      "filename": "90_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/91_A.png",
+      "split": "train",
+      "filename": "91_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/92_A.png",
+      "split": "train",
+      "filename": "92_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/93_A.png",
+      "split": "train",
+      "filename": "93_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/94_A.png",
+      "split": "train",
+      "filename": "94_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/95_A.png",
+      "split": "train",
+      "filename": "95_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/96_A.png",
+      "split": "train",
+      "filename": "96_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/97_A.png",
+      "split": "train",
+      "filename": "97_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/98_A.png",
+      "split": "train",
+      "filename": "98_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/99_A.png",
+      "split": "train",
+      "filename": "99_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/100_A.png",
+      "split": "train",
+      "filename": "100_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/101_A.png",
+      "split": "train",
+      "filename": "101_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/102_A.png",
+      "split": "train",
+      "filename": "102_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/103_A.png",
+      "split": "train",
+      "filename": "103_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/104_A.png",
+      "split": "train",
+      "filename": "104_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/105_A.png",
+      "split": "train",
+      "filename": "105_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/106_A.png",
+      "split": "train",
+      "filename": "106_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/107_A.png",
+      "split": "train",
+      "filename": "107_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/108_A.png",
+      "split": "train",
+      "filename": "108_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/109_A.png",
+      "split": "train",
+      "filename": "109_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/110_A.png",
+      "split": "train",
+      "filename": "110_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/111_A.png",
+      "split": "train",
+      "filename": "111_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/112_A.png",
+      "split": "train",
+      "filename": "112_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/113_A.png",
+      "split": "train",
+      "filename": "113_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/114_A.png",
+      "split": "train",
+      "filename": "114_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/115_A.png",
+      "split": "train",
+      "filename": "115_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/116_A.png",
+      "split": "train",
+      "filename": "116_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/117_A.png",
+      "split": "train",
+      "filename": "117_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/118_A.png",
+      "split": "train",
+      "filename": "118_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/119_A.png",
+      "split": "train",
+      "filename": "119_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/120_A.png",
+      "split": "train",
+      "filename": "120_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/121_A.png",
+      "split": "train",
+      "filename": "121_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/122_A.png",
+      "split": "train",
+      "filename": "122_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/123_A.png",
+      "split": "train",
+      "filename": "123_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/124_A.png",
+      "split": "train",
+      "filename": "124_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/125_A.png",
+      "split": "train",
+      "filename": "125_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/126_A.png",
+      "split": "train",
+      "filename": "126_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/127_A.png",
+      "split": "train",
+      "filename": "127_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/128_A.png",
+      "split": "train",
+      "filename": "128_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/129_A.png",
+      "split": "train",
+      "filename": "129_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/130_A.png",
+      "split": "train",
+      "filename": "130_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/131_A.png",
+      "split": "train",
+      "filename": "131_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/132_A.png",
+      "split": "train",
+      "filename": "132_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/133_A.png",
+      "split": "train",
+      "filename": "133_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/134_A.png",
+      "split": "train",
+      "filename": "134_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/135_A.png",
+      "split": "train",
+      "filename": "135_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/136_A.png",
+      "split": "train",
+      "filename": "136_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/137_A.png",
+      "split": "train",
+      "filename": "137_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/138_A.png",
+      "split": "train",
+      "filename": "138_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/139_A.png",
+      "split": "train",
+      "filename": "139_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/140_A.png",
+      "split": "train",
+      "filename": "140_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/141_A.png",
+      "split": "train",
+      "filename": "141_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/142_A.png",
+      "split": "train",
+      "filename": "142_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/143_A.png",
+      "split": "train",
+      "filename": "143_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/144_A.png",
+      "split": "train",
+      "filename": "144_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/145_A.png",
+      "split": "train",
+      "filename": "145_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/146_A.png",
+      "split": "train",
+      "filename": "146_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/147_A.png",
+      "split": "train",
+      "filename": "147_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/148_A.png",
+      "split": "train",
+      "filename": "148_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/149_A.png",
+      "split": "train",
+      "filename": "149_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/150_A.png",
+      "split": "train",
+      "filename": "150_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/151_D.png",
+      "split": "train",
+      "filename": "151_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/152_D.png",
+      "split": "train",
+      "filename": "152_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/153_D.png",
+      "split": "train",
+      "filename": "153_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/154_D.png",
+      "split": "train",
+      "filename": "154_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/155_D.png",
+      "split": "train",
+      "filename": "155_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/156_D.png",
+      "split": "train",
+      "filename": "156_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/157_D.png",
+      "split": "train",
+      "filename": "157_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/158_D.png",
+      "split": "train",
+      "filename": "158_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/159_D.png",
+      "split": "train",
+      "filename": "159_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/160_D.png",
+      "split": "train",
+      "filename": "160_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/161_D.png",
+      "split": "train",
+      "filename": "161_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/162_D.png",
+      "split": "train",
+      "filename": "162_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/163_D.png",
+      "split": "train",
+      "filename": "163_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/164_D.png",
+      "split": "train",
+      "filename": "164_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/165_D.png",
+      "split": "train",
+      "filename": "165_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/166_D.png",
+      "split": "train",
+      "filename": "166_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/167_D.png",
+      "split": "train",
+      "filename": "167_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/168_D.png",
+      "split": "train",
+      "filename": "168_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/169_D.png",
+      "split": "train",
+      "filename": "169_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/170_D.png",
+      "split": "train",
+      "filename": "170_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/171_D.png",
+      "split": "train",
+      "filename": "171_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/172_D.png",
+      "split": "train",
+      "filename": "172_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/173_D.png",
+      "split": "train",
+      "filename": "173_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/174_D.png",
+      "split": "train",
+      "filename": "174_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/175_D.png",
+      "split": "train",
+      "filename": "175_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/176_D.png",
+      "split": "train",
+      "filename": "176_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/177_D.png",
+      "split": "train",
+      "filename": "177_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/178_D.png",
+      "split": "train",
+      "filename": "178_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/179_D.png",
+      "split": "train",
+      "filename": "179_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/180_D.png",
+      "split": "train",
+      "filename": "180_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/181_D.png",
+      "split": "train",
+      "filename": "181_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/182_D.png",
+      "split": "train",
+      "filename": "182_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/183_D.png",
+      "split": "train",
+      "filename": "183_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/184_D.png",
+      "split": "train",
+      "filename": "184_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/185_D.png",
+      "split": "train",
+      "filename": "185_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/186_D.png",
+      "split": "train",
+      "filename": "186_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/187_D.png",
+      "split": "train",
+      "filename": "187_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/188_D.png",
+      "split": "train",
+      "filename": "188_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/189_D.png",
+      "split": "train",
+      "filename": "189_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/190_D.png",
+      "split": "train",
+      "filename": "190_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/191_D.png",
+      "split": "train",
+      "filename": "191_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/192_D.png",
+      "split": "train",
+      "filename": "192_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/193_D.png",
+      "split": "train",
+      "filename": "193_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/194_D.png",
+      "split": "train",
+      "filename": "194_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/195_D.png",
+      "split": "train",
+      "filename": "195_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/196_D.png",
+      "split": "train",
+      "filename": "196_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/197_D.png",
+      "split": "train",
+      "filename": "197_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/198_D.png",
+      "split": "train",
+      "filename": "198_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/199_D.png",
+      "split": "train",
+      "filename": "199_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/200_D.png",
+      "split": "train",
+      "filename": "200_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/201_D.png",
+      "split": "train",
+      "filename": "201_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/202_D.png",
+      "split": "train",
+      "filename": "202_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/203_D.png",
+      "split": "train",
+      "filename": "203_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/204_D.png",
+      "split": "train",
+      "filename": "204_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/205_D.png",
+      "split": "train",
+      "filename": "205_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/206_D.png",
+      "split": "train",
+      "filename": "206_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/207_D.png",
+      "split": "train",
+      "filename": "207_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/208_D.png",
+      "split": "train",
+      "filename": "208_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/209_D.png",
+      "split": "train",
+      "filename": "209_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/210_D.png",
+      "split": "train",
+      "filename": "210_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/211_D.png",
+      "split": "train",
+      "filename": "211_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/212_D.png",
+      "split": "train",
+      "filename": "212_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/213_D.png",
+      "split": "train",
+      "filename": "213_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/214_D.png",
+      "split": "train",
+      "filename": "214_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/215_D.png",
+      "split": "train",
+      "filename": "215_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/216_D.png",
+      "split": "train",
+      "filename": "216_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/217_D.png",
+      "split": "train",
+      "filename": "217_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/218_D.png",
+      "split": "train",
+      "filename": "218_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/219_D.png",
+      "split": "train",
+      "filename": "219_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/220_D.png",
+      "split": "train",
+      "filename": "220_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/221_D.png",
+      "split": "train",
+      "filename": "221_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/222_D.png",
+      "split": "train",
+      "filename": "222_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/223_D.png",
+      "split": "train",
+      "filename": "223_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/224_D.png",
+      "split": "train",
+      "filename": "224_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/225_D.png",
+      "split": "train",
+      "filename": "225_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/226_D.png",
+      "split": "train",
+      "filename": "226_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/227_D.png",
+      "split": "train",
+      "filename": "227_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/228_D.png",
+      "split": "train",
+      "filename": "228_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/229_D.png",
+      "split": "train",
+      "filename": "229_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/230_D.png",
+      "split": "train",
+      "filename": "230_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/231_D.png",
+      "split": "train",
+      "filename": "231_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/232_D.png",
+      "split": "train",
+      "filename": "232_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/233_D.png",
+      "split": "train",
+      "filename": "233_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/234_D.png",
+      "split": "train",
+      "filename": "234_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/235_D.png",
+      "split": "train",
+      "filename": "235_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/236_D.png",
+      "split": "train",
+      "filename": "236_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/237_D.png",
+      "split": "train",
+      "filename": "237_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/238_D.png",
+      "split": "train",
+      "filename": "238_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/239_D.png",
+      "split": "train",
+      "filename": "239_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/240_D.png",
+      "split": "train",
+      "filename": "240_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/241_D.png",
+      "split": "train",
+      "filename": "241_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/242_D.png",
+      "split": "train",
+      "filename": "242_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/243_D.png",
+      "split": "train",
+      "filename": "243_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/244_D.png",
+      "split": "train",
+      "filename": "244_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/245_D.png",
+      "split": "train",
+      "filename": "245_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/246_D.png",
+      "split": "train",
+      "filename": "246_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/247_D.png",
+      "split": "train",
+      "filename": "247_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/248_D.png",
+      "split": "train",
+      "filename": "248_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/249_D.png",
+      "split": "train",
+      "filename": "249_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/250_D.png",
+      "split": "train",
+      "filename": "250_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/251_D.png",
+      "split": "train",
+      "filename": "251_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/252_D.png",
+      "split": "train",
+      "filename": "252_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/253_D.png",
+      "split": "train",
+      "filename": "253_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/254_D.png",
+      "split": "train",
+      "filename": "254_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/255_D.png",
+      "split": "train",
+      "filename": "255_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/256_D.png",
+      "split": "train",
+      "filename": "256_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/257_D.png",
+      "split": "train",
+      "filename": "257_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/258_D.png",
+      "split": "train",
+      "filename": "258_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/259_D.png",
+      "split": "train",
+      "filename": "259_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/260_D.png",
+      "split": "train",
+      "filename": "260_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/261_D.png",
+      "split": "train",
+      "filename": "261_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/262_D.png",
+      "split": "train",
+      "filename": "262_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/263_D.png",
+      "split": "train",
+      "filename": "263_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/264_D.png",
+      "split": "train",
+      "filename": "264_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/265_D.png",
+      "split": "train",
+      "filename": "265_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/266_D.png",
+      "split": "train",
+      "filename": "266_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/267_D.png",
+      "split": "train",
+      "filename": "267_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/268_D.png",
+      "split": "train",
+      "filename": "268_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/269_D.png",
+      "split": "train",
+      "filename": "269_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/270_D.png",
+      "split": "train",
+      "filename": "270_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/271_D.png",
+      "split": "train",
+      "filename": "271_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/272_D.png",
+      "split": "train",
+      "filename": "272_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/273_D.png",
+      "split": "train",
+      "filename": "273_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/274_D.png",
+      "split": "train",
+      "filename": "274_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/275_D.png",
+      "split": "train",
+      "filename": "275_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/276_D.png",
+      "split": "train",
+      "filename": "276_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/277_D.png",
+      "split": "train",
+      "filename": "277_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/278_D.png",
+      "split": "train",
+      "filename": "278_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/279_D.png",
+      "split": "train",
+      "filename": "279_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/280_D.png",
+      "split": "train",
+      "filename": "280_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/281_D.png",
+      "split": "train",
+      "filename": "281_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/282_D.png",
+      "split": "train",
+      "filename": "282_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/283_D.png",
+      "split": "train",
+      "filename": "283_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/284_D.png",
+      "split": "train",
+      "filename": "284_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/285_D.png",
+      "split": "train",
+      "filename": "285_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/286_D.png",
+      "split": "train",
+      "filename": "286_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/287_D.png",
+      "split": "train",
+      "filename": "287_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/288_D.png",
+      "split": "train",
+      "filename": "288_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/289_D.png",
+      "split": "train",
+      "filename": "289_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/290_D.png",
+      "split": "train",
+      "filename": "290_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/291_D.png",
+      "split": "train",
+      "filename": "291_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/292_D.png",
+      "split": "train",
+      "filename": "292_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/293_D.png",
+      "split": "train",
+      "filename": "293_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/294_D.png",
+      "split": "train",
+      "filename": "294_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/295_D.png",
+      "split": "train",
+      "filename": "295_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/296_D.png",
+      "split": "train",
+      "filename": "296_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/297_D.png",
+      "split": "train",
+      "filename": "297_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/298_D.png",
+      "split": "train",
+      "filename": "298_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/299_D.png",
+      "split": "train",
+      "filename": "299_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/300_D.png",
+      "split": "train",
+      "filename": "300_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/301_G.png",
+      "split": "train",
+      "filename": "301_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/302_G.png",
+      "split": "train",
+      "filename": "302_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/303_G.png",
+      "split": "train",
+      "filename": "303_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/304_G.png",
+      "split": "train",
+      "filename": "304_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/305_G.png",
+      "split": "train",
+      "filename": "305_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/306_G.png",
+      "split": "train",
+      "filename": "306_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/307_G.png",
+      "split": "train",
+      "filename": "307_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/308_G.png",
+      "split": "train",
+      "filename": "308_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/309_G.png",
+      "split": "train",
+      "filename": "309_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/310_G.png",
+      "split": "train",
+      "filename": "310_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/311_G.png",
+      "split": "train",
+      "filename": "311_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/312_G.png",
+      "split": "train",
+      "filename": "312_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/313_G.png",
+      "split": "train",
+      "filename": "313_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/314_G.png",
+      "split": "train",
+      "filename": "314_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/315_G.png",
+      "split": "train",
+      "filename": "315_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/316_G.png",
+      "split": "train",
+      "filename": "316_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/317_G.png",
+      "split": "train",
+      "filename": "317_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/318_G.png",
+      "split": "train",
+      "filename": "318_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/319_G.png",
+      "split": "train",
+      "filename": "319_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/320_G.png",
+      "split": "train",
+      "filename": "320_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/321_G.png",
+      "split": "train",
+      "filename": "321_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/322_G.png",
+      "split": "train",
+      "filename": "322_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/323_G.png",
+      "split": "train",
+      "filename": "323_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/324_G.png",
+      "split": "train",
+      "filename": "324_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/325_G.png",
+      "split": "train",
+      "filename": "325_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/326_G.png",
+      "split": "train",
+      "filename": "326_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/327_G.png",
+      "split": "train",
+      "filename": "327_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/328_G.png",
+      "split": "train",
+      "filename": "328_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/329_G.png",
+      "split": "train",
+      "filename": "329_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/330_G.png",
+      "split": "train",
+      "filename": "330_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/331_G.png",
+      "split": "train",
+      "filename": "331_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/332_G.png",
+      "split": "train",
+      "filename": "332_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/333_G.png",
+      "split": "train",
+      "filename": "333_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/334_G.png",
+      "split": "train",
+      "filename": "334_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/335_G.png",
+      "split": "train",
+      "filename": "335_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/336_G.png",
+      "split": "train",
+      "filename": "336_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/337_G.png",
+      "split": "train",
+      "filename": "337_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/338_G.png",
+      "split": "train",
+      "filename": "338_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/339_G.png",
+      "split": "train",
+      "filename": "339_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/340_G.png",
+      "split": "train",
+      "filename": "340_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/341_G.png",
+      "split": "train",
+      "filename": "341_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/342_G.png",
+      "split": "train",
+      "filename": "342_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/343_G.png",
+      "split": "train",
+      "filename": "343_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/344_G.png",
+      "split": "train",
+      "filename": "344_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/345_G.png",
+      "split": "train",
+      "filename": "345_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/346_G.png",
+      "split": "train",
+      "filename": "346_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/347_G.png",
+      "split": "train",
+      "filename": "347_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/348_G.png",
+      "split": "train",
+      "filename": "348_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/349_G.png",
+      "split": "train",
+      "filename": "349_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/350_G.png",
+      "split": "train",
+      "filename": "350_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/351_G.png",
+      "split": "train",
+      "filename": "351_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/352_G.png",
+      "split": "train",
+      "filename": "352_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/353_G.png",
+      "split": "train",
+      "filename": "353_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 0
+    },
+    {
+      "key": "train/354_G.png",
+      "split": "train",
+      "filename": "354_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/355_G.png",
+      "split": "train",
+      "filename": "355_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/356_G.png",
+      "split": "train",
+      "filename": "356_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/357_G.png",
+      "split": "train",
+      "filename": "357_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/358_G.png",
+      "split": "train",
+      "filename": "358_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/359_G.png",
+      "split": "train",
+      "filename": "359_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/360_G.png",
+      "split": "train",
+      "filename": "360_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/361_G.png",
+      "split": "train",
+      "filename": "361_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/362_G.png",
+      "split": "train",
+      "filename": "362_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/363_G.png",
+      "split": "train",
+      "filename": "363_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/364_G.png",
+      "split": "train",
+      "filename": "364_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/365_G.png",
+      "split": "train",
+      "filename": "365_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/366_G.png",
+      "split": "train",
+      "filename": "366_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/367_G.png",
+      "split": "train",
+      "filename": "367_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/368_G.png",
+      "split": "train",
+      "filename": "368_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/369_G.png",
+      "split": "train",
+      "filename": "369_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/370_G.png",
+      "split": "train",
+      "filename": "370_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/371_G.png",
+      "split": "train",
+      "filename": "371_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/372_G.png",
+      "split": "train",
+      "filename": "372_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/373_G.png",
+      "split": "train",
+      "filename": "373_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/374_G.png",
+      "split": "train",
+      "filename": "374_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/375_G.png",
+      "split": "train",
+      "filename": "375_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/376_G.png",
+      "split": "train",
+      "filename": "376_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/377_G.png",
+      "split": "train",
+      "filename": "377_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/378_G.png",
+      "split": "train",
+      "filename": "378_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/379_G.png",
+      "split": "train",
+      "filename": "379_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/380_G.png",
+      "split": "train",
+      "filename": "380_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/381_G.png",
+      "split": "train",
+      "filename": "381_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/382_G.png",
+      "split": "train",
+      "filename": "382_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/383_G.png",
+      "split": "train",
+      "filename": "383_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/384_G.png",
+      "split": "train",
+      "filename": "384_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/385_G.png",
+      "split": "train",
+      "filename": "385_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/386_G.png",
+      "split": "train",
+      "filename": "386_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/387_G.png",
+      "split": "train",
+      "filename": "387_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/388_G.png",
+      "split": "train",
+      "filename": "388_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/389_G.png",
+      "split": "train",
+      "filename": "389_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/390_G.png",
+      "split": "train",
+      "filename": "390_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/391_G.png",
+      "split": "train",
+      "filename": "391_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/392_G.png",
+      "split": "train",
+      "filename": "392_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/393_G.png",
+      "split": "train",
+      "filename": "393_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/394_G.png",
+      "split": "train",
+      "filename": "394_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/395_G.png",
+      "split": "train",
+      "filename": "395_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/396_G.png",
+      "split": "train",
+      "filename": "396_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/397_G.png",
+      "split": "train",
+      "filename": "397_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/398_G.png",
+      "split": "train",
+      "filename": "398_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/399_G.png",
+      "split": "train",
+      "filename": "399_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/400_G.png",
+      "split": "train",
+      "filename": "400_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/401_G.png",
+      "split": "train",
+      "filename": "401_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/402_G.png",
+      "split": "train",
+      "filename": "402_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/403_G.png",
+      "split": "train",
+      "filename": "403_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/404_G.png",
+      "split": "train",
+      "filename": "404_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/405_G.png",
+      "split": "train",
+      "filename": "405_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/406_G.png",
+      "split": "train",
+      "filename": "406_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/407_G.png",
+      "split": "train",
+      "filename": "407_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/408_G.png",
+      "split": "train",
+      "filename": "408_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/409_G.png",
+      "split": "train",
+      "filename": "409_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/410_G.png",
+      "split": "train",
+      "filename": "410_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/411_G.png",
+      "split": "train",
+      "filename": "411_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/412_G.png",
+      "split": "train",
+      "filename": "412_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/413_G.png",
+      "split": "train",
+      "filename": "413_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/414_G.png",
+      "split": "train",
+      "filename": "414_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/415_G.png",
+      "split": "train",
+      "filename": "415_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/416_G.png",
+      "split": "train",
+      "filename": "416_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/417_G.png",
+      "split": "train",
+      "filename": "417_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/418_G.png",
+      "split": "train",
+      "filename": "418_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/419_G.png",
+      "split": "train",
+      "filename": "419_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/420_G.png",
+      "split": "train",
+      "filename": "420_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/421_G.png",
+      "split": "train",
+      "filename": "421_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/422_G.png",
+      "split": "train",
+      "filename": "422_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/423_G.png",
+      "split": "train",
+      "filename": "423_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/424_G.png",
+      "split": "train",
+      "filename": "424_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/425_G.png",
+      "split": "train",
+      "filename": "425_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/426_G.png",
+      "split": "train",
+      "filename": "426_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/427_G.png",
+      "split": "train",
+      "filename": "427_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/428_G.png",
+      "split": "train",
+      "filename": "428_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/429_G.png",
+      "split": "train",
+      "filename": "429_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/430_G.png",
+      "split": "train",
+      "filename": "430_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/431_G.png",
+      "split": "train",
+      "filename": "431_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/432_G.png",
+      "split": "train",
+      "filename": "432_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/433_G.png",
+      "split": "train",
+      "filename": "433_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/434_G.png",
+      "split": "train",
+      "filename": "434_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/435_G.png",
+      "split": "train",
+      "filename": "435_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/436_G.png",
+      "split": "train",
+      "filename": "436_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/437_G.png",
+      "split": "train",
+      "filename": "437_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/438_G.png",
+      "split": "train",
+      "filename": "438_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/439_G.png",
+      "split": "train",
+      "filename": "439_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/440_G.png",
+      "split": "train",
+      "filename": "440_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/441_G.png",
+      "split": "train",
+      "filename": "441_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/442_G.png",
+      "split": "train",
+      "filename": "442_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/443_G.png",
+      "split": "train",
+      "filename": "443_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "train/444_G.png",
+      "split": "train",
+      "filename": "444_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/445_G.png",
+      "split": "train",
+      "filename": "445_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/446_G.png",
+      "split": "train",
+      "filename": "446_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/447_G.png",
+      "split": "train",
+      "filename": "447_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/448_G.png",
+      "split": "train",
+      "filename": "448_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "train/449_G.png",
+      "split": "train",
+      "filename": "449_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/450_G.png",
+      "split": "train",
+      "filename": "450_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/451_N.png",
+      "split": "train",
+      "filename": "451_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/452_N.png",
+      "split": "train",
+      "filename": "452_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/453_N.png",
+      "split": "train",
+      "filename": "453_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/454_N.png",
+      "split": "train",
+      "filename": "454_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/455_N.png",
+      "split": "train",
+      "filename": "455_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/456_N.png",
+      "split": "train",
+      "filename": "456_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/457_N.png",
+      "split": "train",
+      "filename": "457_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/458_N.png",
+      "split": "train",
+      "filename": "458_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/459_N.png",
+      "split": "train",
+      "filename": "459_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/460_N.png",
+      "split": "train",
+      "filename": "460_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/461_N.png",
+      "split": "train",
+      "filename": "461_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/462_N.png",
+      "split": "train",
+      "filename": "462_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/463_N.png",
+      "split": "train",
+      "filename": "463_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/464_N.png",
+      "split": "train",
+      "filename": "464_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/465_N.png",
+      "split": "train",
+      "filename": "465_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/466_N.png",
+      "split": "train",
+      "filename": "466_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/467_N.png",
+      "split": "train",
+      "filename": "467_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/468_N.png",
+      "split": "train",
+      "filename": "468_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/469_N.png",
+      "split": "train",
+      "filename": "469_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/470_N.png",
+      "split": "train",
+      "filename": "470_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/471_N.png",
+      "split": "train",
+      "filename": "471_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/472_N.png",
+      "split": "train",
+      "filename": "472_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/473_N.png",
+      "split": "train",
+      "filename": "473_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/474_N.png",
+      "split": "train",
+      "filename": "474_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/475_N.png",
+      "split": "train",
+      "filename": "475_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/476_N.png",
+      "split": "train",
+      "filename": "476_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/477_N.png",
+      "split": "train",
+      "filename": "477_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/478_N.png",
+      "split": "train",
+      "filename": "478_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/479_N.png",
+      "split": "train",
+      "filename": "479_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/480_N.png",
+      "split": "train",
+      "filename": "480_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/481_N.png",
+      "split": "train",
+      "filename": "481_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/482_N.png",
+      "split": "train",
+      "filename": "482_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/483_N.png",
+      "split": "train",
+      "filename": "483_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/484_N.png",
+      "split": "train",
+      "filename": "484_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/485_N.png",
+      "split": "train",
+      "filename": "485_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/486_N.png",
+      "split": "train",
+      "filename": "486_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/487_N.png",
+      "split": "train",
+      "filename": "487_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/488_N.png",
+      "split": "train",
+      "filename": "488_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/489_N.png",
+      "split": "train",
+      "filename": "489_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/490_N.png",
+      "split": "train",
+      "filename": "490_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/491_N.png",
+      "split": "train",
+      "filename": "491_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/492_N.png",
+      "split": "train",
+      "filename": "492_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/493_N.png",
+      "split": "train",
+      "filename": "493_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/494_N.png",
+      "split": "train",
+      "filename": "494_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/495_N.png",
+      "split": "train",
+      "filename": "495_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/496_N.png",
+      "split": "train",
+      "filename": "496_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/497_N.png",
+      "split": "train",
+      "filename": "497_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/498_N.png",
+      "split": "train",
+      "filename": "498_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/499_N.png",
+      "split": "train",
+      "filename": "499_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/500_N.png",
+      "split": "train",
+      "filename": "500_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/501_N.png",
+      "split": "train",
+      "filename": "501_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/502_N.png",
+      "split": "train",
+      "filename": "502_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/503_N.png",
+      "split": "train",
+      "filename": "503_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/504_N.png",
+      "split": "train",
+      "filename": "504_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/505_N.png",
+      "split": "train",
+      "filename": "505_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/506_N.png",
+      "split": "train",
+      "filename": "506_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/507_N.png",
+      "split": "train",
+      "filename": "507_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/508_N.png",
+      "split": "train",
+      "filename": "508_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/509_N.png",
+      "split": "train",
+      "filename": "509_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/510_N.png",
+      "split": "train",
+      "filename": "510_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/511_N.png",
+      "split": "train",
+      "filename": "511_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/512_N.png",
+      "split": "train",
+      "filename": "512_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/513_N.png",
+      "split": "train",
+      "filename": "513_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/514_N.png",
+      "split": "train",
+      "filename": "514_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/515_N.png",
+      "split": "train",
+      "filename": "515_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/516_N.png",
+      "split": "train",
+      "filename": "516_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/517_N.png",
+      "split": "train",
+      "filename": "517_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/518_N.png",
+      "split": "train",
+      "filename": "518_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/519_N.png",
+      "split": "train",
+      "filename": "519_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/520_N.png",
+      "split": "train",
+      "filename": "520_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/521_N.png",
+      "split": "train",
+      "filename": "521_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/522_N.png",
+      "split": "train",
+      "filename": "522_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/523_N.png",
+      "split": "train",
+      "filename": "523_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/524_N.png",
+      "split": "train",
+      "filename": "524_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/525_N.png",
+      "split": "train",
+      "filename": "525_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/526_N.png",
+      "split": "train",
+      "filename": "526_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/527_N.png",
+      "split": "train",
+      "filename": "527_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/528_N.png",
+      "split": "train",
+      "filename": "528_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/529_N.png",
+      "split": "train",
+      "filename": "529_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/530_N.png",
+      "split": "train",
+      "filename": "530_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/531_N.png",
+      "split": "train",
+      "filename": "531_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/532_N.png",
+      "split": "train",
+      "filename": "532_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/533_N.png",
+      "split": "train",
+      "filename": "533_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/534_N.png",
+      "split": "train",
+      "filename": "534_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/535_N.png",
+      "split": "train",
+      "filename": "535_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/536_N.png",
+      "split": "train",
+      "filename": "536_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/537_N.png",
+      "split": "train",
+      "filename": "537_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/538_N.png",
+      "split": "train",
+      "filename": "538_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/539_N.png",
+      "split": "train",
+      "filename": "539_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/540_N.png",
+      "split": "train",
+      "filename": "540_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/541_N.png",
+      "split": "train",
+      "filename": "541_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/542_N.png",
+      "split": "train",
+      "filename": "542_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/543_N.png",
+      "split": "train",
+      "filename": "543_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/544_N.png",
+      "split": "train",
+      "filename": "544_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/545_N.png",
+      "split": "train",
+      "filename": "545_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/546_N.png",
+      "split": "train",
+      "filename": "546_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/547_N.png",
+      "split": "train",
+      "filename": "547_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/548_N.png",
+      "split": "train",
+      "filename": "548_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/549_N.png",
+      "split": "train",
+      "filename": "549_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/550_N.png",
+      "split": "train",
+      "filename": "550_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/551_N.png",
+      "split": "train",
+      "filename": "551_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/552_N.png",
+      "split": "train",
+      "filename": "552_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/553_N.png",
+      "split": "train",
+      "filename": "553_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/554_N.png",
+      "split": "train",
+      "filename": "554_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/555_N.png",
+      "split": "train",
+      "filename": "555_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/556_N.png",
+      "split": "train",
+      "filename": "556_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/557_N.png",
+      "split": "train",
+      "filename": "557_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/558_N.png",
+      "split": "train",
+      "filename": "558_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/559_N.png",
+      "split": "train",
+      "filename": "559_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/560_N.png",
+      "split": "train",
+      "filename": "560_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/561_N.png",
+      "split": "train",
+      "filename": "561_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/562_N.png",
+      "split": "train",
+      "filename": "562_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/563_N.png",
+      "split": "train",
+      "filename": "563_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/564_N.png",
+      "split": "train",
+      "filename": "564_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/565_N.png",
+      "split": "train",
+      "filename": "565_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/566_N.png",
+      "split": "train",
+      "filename": "566_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/567_N.png",
+      "split": "train",
+      "filename": "567_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/568_N.png",
+      "split": "train",
+      "filename": "568_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/569_N.png",
+      "split": "train",
+      "filename": "569_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/570_N.png",
+      "split": "train",
+      "filename": "570_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/571_N.png",
+      "split": "train",
+      "filename": "571_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/572_N.png",
+      "split": "train",
+      "filename": "572_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/573_N.png",
+      "split": "train",
+      "filename": "573_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/574_N.png",
+      "split": "train",
+      "filename": "574_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/575_N.png",
+      "split": "train",
+      "filename": "575_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/576_N.png",
+      "split": "train",
+      "filename": "576_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/577_N.png",
+      "split": "train",
+      "filename": "577_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/578_N.png",
+      "split": "train",
+      "filename": "578_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/579_N.png",
+      "split": "train",
+      "filename": "579_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/580_N.png",
+      "split": "train",
+      "filename": "580_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/581_N.png",
+      "split": "train",
+      "filename": "581_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/582_N.png",
+      "split": "train",
+      "filename": "582_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/583_N.png",
+      "split": "train",
+      "filename": "583_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/584_N.png",
+      "split": "train",
+      "filename": "584_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/585_N.png",
+      "split": "train",
+      "filename": "585_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/586_N.png",
+      "split": "train",
+      "filename": "586_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/587_N.png",
+      "split": "train",
+      "filename": "587_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/588_N.png",
+      "split": "train",
+      "filename": "588_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/589_N.png",
+      "split": "train",
+      "filename": "589_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/590_N.png",
+      "split": "train",
+      "filename": "590_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/591_N.png",
+      "split": "train",
+      "filename": "591_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/592_N.png",
+      "split": "train",
+      "filename": "592_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/593_N.png",
+      "split": "train",
+      "filename": "593_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/594_N.png",
+      "split": "train",
+      "filename": "594_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/595_N.png",
+      "split": "train",
+      "filename": "595_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/596_N.png",
+      "split": "train",
+      "filename": "596_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/597_N.png",
+      "split": "train",
+      "filename": "597_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/598_N.png",
+      "split": "train",
+      "filename": "598_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/599_N.png",
+      "split": "train",
+      "filename": "599_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "train/600_N.png",
+      "split": "train",
+      "filename": "600_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/1_A.png",
+      "split": "test",
+      "filename": "1_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/2_A.png",
+      "split": "test",
+      "filename": "2_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/3_A.png",
+      "split": "test",
+      "filename": "3_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/4_A.png",
+      "split": "test",
+      "filename": "4_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/5_A.png",
+      "split": "test",
+      "filename": "5_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/6_A.png",
+      "split": "test",
+      "filename": "6_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/7_A.png",
+      "split": "test",
+      "filename": "7_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/8_A.png",
+      "split": "test",
+      "filename": "8_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/9_A.png",
+      "split": "test",
+      "filename": "9_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/10_A.png",
+      "split": "test",
+      "filename": "10_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/11_A.png",
+      "split": "test",
+      "filename": "11_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/12_A.png",
+      "split": "test",
+      "filename": "12_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/13_A.png",
+      "split": "test",
+      "filename": "13_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/14_A.png",
+      "split": "test",
+      "filename": "14_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/15_A.png",
+      "split": "test",
+      "filename": "15_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/16_A.png",
+      "split": "test",
+      "filename": "16_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/17_A.png",
+      "split": "test",
+      "filename": "17_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/18_A.png",
+      "split": "test",
+      "filename": "18_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/19_A.png",
+      "split": "test",
+      "filename": "19_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/20_A.png",
+      "split": "test",
+      "filename": "20_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/21_A.png",
+      "split": "test",
+      "filename": "21_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/22_A.png",
+      "split": "test",
+      "filename": "22_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/23_A.png",
+      "split": "test",
+      "filename": "23_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/24_A.png",
+      "split": "test",
+      "filename": "24_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/25_A.png",
+      "split": "test",
+      "filename": "25_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/26_A.png",
+      "split": "test",
+      "filename": "26_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/27_A.png",
+      "split": "test",
+      "filename": "27_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/28_A.png",
+      "split": "test",
+      "filename": "28_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/29_A.png",
+      "split": "test",
+      "filename": "29_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/30_A.png",
+      "split": "test",
+      "filename": "30_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/31_A.png",
+      "split": "test",
+      "filename": "31_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/32_A.png",
+      "split": "test",
+      "filename": "32_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/33_A.png",
+      "split": "test",
+      "filename": "33_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/34_A.png",
+      "split": "test",
+      "filename": "34_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/35_A.png",
+      "split": "test",
+      "filename": "35_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/36_A.png",
+      "split": "test",
+      "filename": "36_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/37_A.png",
+      "split": "test",
+      "filename": "37_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/38_A.png",
+      "split": "test",
+      "filename": "38_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/39_A.png",
+      "split": "test",
+      "filename": "39_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/40_A.png",
+      "split": "test",
+      "filename": "40_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/41_A.png",
+      "split": "test",
+      "filename": "41_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/42_A.png",
+      "split": "test",
+      "filename": "42_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/43_A.png",
+      "split": "test",
+      "filename": "43_A.png",
+      "disease": "A",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/44_A.png",
+      "split": "test",
+      "filename": "44_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/45_A.png",
+      "split": "test",
+      "filename": "45_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/46_A.png",
+      "split": "test",
+      "filename": "46_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/47_A.png",
+      "split": "test",
+      "filename": "47_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/48_A.png",
+      "split": "test",
+      "filename": "48_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/49_A.png",
+      "split": "test",
+      "filename": "49_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/50_A.png",
+      "split": "test",
+      "filename": "50_A.png",
+      "disease": "A",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/51_D.png",
+      "split": "test",
+      "filename": "51_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/52_D.png",
+      "split": "test",
+      "filename": "52_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/53_D.png",
+      "split": "test",
+      "filename": "53_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/54_D.png",
+      "split": "test",
+      "filename": "54_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/55_D.png",
+      "split": "test",
+      "filename": "55_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/56_D.png",
+      "split": "test",
+      "filename": "56_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/57_D.png",
+      "split": "test",
+      "filename": "57_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/58_D.png",
+      "split": "test",
+      "filename": "58_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/59_D.png",
+      "split": "test",
+      "filename": "59_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/60_D.png",
+      "split": "test",
+      "filename": "60_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/61_D.png",
+      "split": "test",
+      "filename": "61_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/62_D.png",
+      "split": "test",
+      "filename": "62_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/63_D.png",
+      "split": "test",
+      "filename": "63_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/64_D.png",
+      "split": "test",
+      "filename": "64_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/65_D.png",
+      "split": "test",
+      "filename": "65_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/66_D.png",
+      "split": "test",
+      "filename": "66_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/67_D.png",
+      "split": "test",
+      "filename": "67_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/68_D.png",
+      "split": "test",
+      "filename": "68_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/69_D.png",
+      "split": "test",
+      "filename": "69_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/70_D.png",
+      "split": "test",
+      "filename": "70_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/71_D.png",
+      "split": "test",
+      "filename": "71_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/72_D.png",
+      "split": "test",
+      "filename": "72_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/73_D.png",
+      "split": "test",
+      "filename": "73_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/74_D.png",
+      "split": "test",
+      "filename": "74_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/75_D.png",
+      "split": "test",
+      "filename": "75_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/76_D.png",
+      "split": "test",
+      "filename": "76_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/77_D.png",
+      "split": "test",
+      "filename": "77_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/78_D.png",
+      "split": "test",
+      "filename": "78_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/79_D.png",
+      "split": "test",
+      "filename": "79_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/80_D.png",
+      "split": "test",
+      "filename": "80_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/81_D.png",
+      "split": "test",
+      "filename": "81_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/82_D.png",
+      "split": "test",
+      "filename": "82_D.png",
+      "disease": "D",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/83_D.png",
+      "split": "test",
+      "filename": "83_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/84_D.png",
+      "split": "test",
+      "filename": "84_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/85_D.png",
+      "split": "test",
+      "filename": "85_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/86_D.png",
+      "split": "test",
+      "filename": "86_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/87_D.png",
+      "split": "test",
+      "filename": "87_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/88_D.png",
+      "split": "test",
+      "filename": "88_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/89_D.png",
+      "split": "test",
+      "filename": "89_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/90_D.png",
+      "split": "test",
+      "filename": "90_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/91_D.png",
+      "split": "test",
+      "filename": "91_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/92_D.png",
+      "split": "test",
+      "filename": "92_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/93_D.png",
+      "split": "test",
+      "filename": "93_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/94_D.png",
+      "split": "test",
+      "filename": "94_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/95_D.png",
+      "split": "test",
+      "filename": "95_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/96_D.png",
+      "split": "test",
+      "filename": "96_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/97_D.png",
+      "split": "test",
+      "filename": "97_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/98_D.png",
+      "split": "test",
+      "filename": "98_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/99_D.png",
+      "split": "test",
+      "filename": "99_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/100_D.png",
+      "split": "test",
+      "filename": "100_D.png",
+      "disease": "D",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/101_G.png",
+      "split": "test",
+      "filename": "101_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/102_G.png",
+      "split": "test",
+      "filename": "102_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/103_G.png",
+      "split": "test",
+      "filename": "103_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/104_G.png",
+      "split": "test",
+      "filename": "104_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/105_G.png",
+      "split": "test",
+      "filename": "105_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/106_G.png",
+      "split": "test",
+      "filename": "106_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/107_G.png",
+      "split": "test",
+      "filename": "107_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/108_G.png",
+      "split": "test",
+      "filename": "108_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/109_G.png",
+      "split": "test",
+      "filename": "109_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/110_G.png",
+      "split": "test",
+      "filename": "110_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/111_G.png",
+      "split": "test",
+      "filename": "111_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/112_G.png",
+      "split": "test",
+      "filename": "112_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/113_G.png",
+      "split": "test",
+      "filename": "113_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/114_G.png",
+      "split": "test",
+      "filename": "114_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/115_G.png",
+      "split": "test",
+      "filename": "115_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/116_G.png",
+      "split": "test",
+      "filename": "116_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/117_G.png",
+      "split": "test",
+      "filename": "117_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/118_G.png",
+      "split": "test",
+      "filename": "118_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/119_G.png",
+      "split": "test",
+      "filename": "119_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/120_G.png",
+      "split": "test",
+      "filename": "120_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/121_G.png",
+      "split": "test",
+      "filename": "121_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/122_G.png",
+      "split": "test",
+      "filename": "122_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/123_G.png",
+      "split": "test",
+      "filename": "123_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/124_G.png",
+      "split": "test",
+      "filename": "124_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/125_G.png",
+      "split": "test",
+      "filename": "125_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/126_G.png",
+      "split": "test",
+      "filename": "126_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/127_G.png",
+      "split": "test",
+      "filename": "127_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/128_G.png",
+      "split": "test",
+      "filename": "128_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/129_G.png",
+      "split": "test",
+      "filename": "129_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/130_G.png",
+      "split": "test",
+      "filename": "130_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/131_G.png",
+      "split": "test",
+      "filename": "131_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/132_G.png",
+      "split": "test",
+      "filename": "132_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/133_G.png",
+      "split": "test",
+      "filename": "133_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/134_G.png",
+      "split": "test",
+      "filename": "134_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/135_G.png",
+      "split": "test",
+      "filename": "135_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/136_G.png",
+      "split": "test",
+      "filename": "136_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/137_G.png",
+      "split": "test",
+      "filename": "137_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/138_G.png",
+      "split": "test",
+      "filename": "138_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/139_G.png",
+      "split": "test",
+      "filename": "139_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/140_G.png",
+      "split": "test",
+      "filename": "140_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/141_G.png",
+      "split": "test",
+      "filename": "141_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/142_G.png",
+      "split": "test",
+      "filename": "142_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/143_G.png",
+      "split": "test",
+      "filename": "143_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/144_G.png",
+      "split": "test",
+      "filename": "144_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/145_G.png",
+      "split": "test",
+      "filename": "145_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/146_G.png",
+      "split": "test",
+      "filename": "146_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/147_G.png",
+      "split": "test",
+      "filename": "147_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/148_G.png",
+      "split": "test",
+      "filename": "148_G.png",
+      "disease": "G",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 0
+    },
+    {
+      "key": "test/149_G.png",
+      "split": "test",
+      "filename": "149_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/150_G.png",
+      "split": "test",
+      "filename": "150_G.png",
+      "disease": "G",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/151_N.png",
+      "split": "test",
+      "filename": "151_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/152_N.png",
+      "split": "test",
+      "filename": "152_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/153_N.png",
+      "split": "test",
+      "filename": "153_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/154_N.png",
+      "split": "test",
+      "filename": "154_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/155_N.png",
+      "split": "test",
+      "filename": "155_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 0,
+      "LC": 1
+    },
+    {
+      "key": "test/156_N.png",
+      "split": "test",
+      "filename": "156_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/157_N.png",
+      "split": "test",
+      "filename": "157_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/158_N.png",
+      "split": "test",
+      "filename": "158_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/159_N.png",
+      "split": "test",
+      "filename": "159_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/160_N.png",
+      "split": "test",
+      "filename": "160_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/161_N.png",
+      "split": "test",
+      "filename": "161_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/162_N.png",
+      "split": "test",
+      "filename": "162_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/163_N.png",
+      "split": "test",
+      "filename": "163_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/164_N.png",
+      "split": "test",
+      "filename": "164_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/165_N.png",
+      "split": "test",
+      "filename": "165_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/166_N.png",
+      "split": "test",
+      "filename": "166_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/167_N.png",
+      "split": "test",
+      "filename": "167_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/168_N.png",
+      "split": "test",
+      "filename": "168_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/169_N.png",
+      "split": "test",
+      "filename": "169_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/170_N.png",
+      "split": "test",
+      "filename": "170_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/171_N.png",
+      "split": "test",
+      "filename": "171_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/172_N.png",
+      "split": "test",
+      "filename": "172_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/173_N.png",
+      "split": "test",
+      "filename": "173_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/174_N.png",
+      "split": "test",
+      "filename": "174_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/175_N.png",
+      "split": "test",
+      "filename": "175_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/176_N.png",
+      "split": "test",
+      "filename": "176_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/177_N.png",
+      "split": "test",
+      "filename": "177_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/178_N.png",
+      "split": "test",
+      "filename": "178_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/179_N.png",
+      "split": "test",
+      "filename": "179_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/180_N.png",
+      "split": "test",
+      "filename": "180_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/181_N.png",
+      "split": "test",
+      "filename": "181_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/182_N.png",
+      "split": "test",
+      "filename": "182_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/183_N.png",
+      "split": "test",
+      "filename": "183_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/184_N.png",
+      "split": "test",
+      "filename": "184_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/185_N.png",
+      "split": "test",
+      "filename": "185_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/186_N.png",
+      "split": "test",
+      "filename": "186_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/187_N.png",
+      "split": "test",
+      "filename": "187_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/188_N.png",
+      "split": "test",
+      "filename": "188_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/189_N.png",
+      "split": "test",
+      "filename": "189_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/190_N.png",
+      "split": "test",
+      "filename": "190_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/191_N.png",
+      "split": "test",
+      "filename": "191_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/192_N.png",
+      "split": "test",
+      "filename": "192_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/193_N.png",
+      "split": "test",
+      "filename": "193_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/194_N.png",
+      "split": "test",
+      "filename": "194_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/195_N.png",
+      "split": "test",
+      "filename": "195_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/196_N.png",
+      "split": "test",
+      "filename": "196_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/197_N.png",
+      "split": "test",
+      "filename": "197_N.png",
+      "disease": "N",
+      "IC": 0,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/198_N.png",
+      "split": "test",
+      "filename": "198_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/199_N.png",
+      "split": "test",
+      "filename": "199_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    },
+    {
+      "key": "test/200_N.png",
+      "split": "test",
+      "filename": "200_N.png",
+      "disease": "N",
+      "IC": 1,
+      "Blur": 1,
+      "LC": 1
+    }
+  ]
+}

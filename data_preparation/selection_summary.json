@@ -1,0 +1,92 @@
+{
+  "protocol_id": "fives_data_trial_v1",
+  "seed": 20260904,
+  "source_sha256": {
+    "configs/data_trial_v1.json": "4d9c5371bd6ce5712e250ecd5113c53bd86f7bfb024d9edf476f9da803c6dc3e",
+    "data_checks/fives_download_2026-09-04/fives_manifest.csv": "75dbbeb9f1450e4c81cf172fbbce70596321843735b047ce1bda05a0175d6cc9",
+    "data_checks/fives_download_2026-09-04/quality_evidence.json": "404d7d67cf891bf762f9fd880c3f5657e9b8e7cc51811f7410fa6b66e3d645ed",
+    "data_checks/fives_download_2026-09-04/archives/quality_primary.xlsx": "b78bae7fc4d779d7e1e9f955081f6195a87f8608aa02c453121afaf6b6445c4c"
+  },
+  "selection_method": "SHA256 rank within disease and quality; validation selected first",
+  "source_train_rows": 600,
+  "source_train_groups": 595,
+  "source_test_image_files_opened": 0,
+  "external_image_files_opened": 0,
+  "source_test_rows_reserved": 200,
+  "partition_counts": {
+    "deferred": 548,
+    "smoke_train": 32,
+    "edge_only": 12,
+    "smoke_val": 8
+  },
+  "subset_counts": {
+    "all_train": 600,
+    "smoke_train": 32,
+    "smoke_val": 8,
+    "edge_cases": 20,
+    "overfit": 4
+  },
+  "qa_flags": {
+    "opaque_rgba_label": 8,
+    "duplicate_image_distinct_labels": 10,
+    "empty_label": 2
+  },
+  "strata": {
+    "all_train": {
+      "A/good": 129,
+      "A/poor": 21,
+      "D/good": 108,
+      "D/poor": 42,
+      "G/good": 77,
+      "G/poor": 73,
+      "N/good": 145,
+      "N/poor": 5
+    },
+    "smoke_train": {
+      "A/good": 6,
+      "A/poor": 2,
+      "D/good": 6,
+      "D/poor": 2,
+      "G/good": 6,
+      "G/poor": 2,
+      "N/good": 6,
+      "N/poor": 2
+    },
+    "smoke_val": {
+      "A/good": 1,
+      "A/poor": 1,
+      "D/good": 1,
+      "D/poor": 1,
+      "G/good": 1,
+      "G/poor": 1,
+      "N/good": 1,
+      "N/poor": 1
+    },
+    "edge_cases": {
+      "A/good": 12,
+      "A/poor": 3,
+      "D/good": 1,
+      "G/poor": 4
+    },
+    "overfit": {
+      "A/good": 1,
+      "D/good": 1,
+      "G/good": 1,
+      "N/good": 1
+    }
+  },
+  "group_overlap_train_val": 0,
+  "notes": [
+    "Provisional engineering subsets, not representative performance estimates.",
+    "overfit is nested in smoke_train; edge_cases can overlap RGBA examples in main subsets.",
+    "Empty full labels and duplicate-image annotations remain intact in edge checks.",
+    "Image duplicate groups are not patient identifiers."
+  ],
+  "manifest_sha256": {
+    "all_train.csv": "736d1b0164e4a81a977d87b3d93a555bd438a0ad36a24b03568fc10bb2967f9f",
+    "smoke_train.csv": "34f4e68f8751ad42fe99ec87fd652061d47b36f6a15b612454799c262d69e27a",
+    "smoke_val.csv": "609c5214dfb2b84dd20bf5ba353649712a60d125a32275b87431de329423bd19",
+    "edge_cases.csv": "94c2683bbc38f4f50d7901d1a46682738bf2c5801b53d47971be66ffa4cedc4b",
+    "overfit.csv": "b3a0311476dc0f5b97fa76fa61cd779531bf2d3c0dac5bce3be7cc23fbe8f510"
+  }
+}

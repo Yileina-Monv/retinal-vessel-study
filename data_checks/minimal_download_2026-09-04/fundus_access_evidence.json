@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-09-04",
+  "status": "FAIL_LOCAL_DOWNLOAD_ACCESS",
+  "official_record": "https://figshare.com/articles/dataset/Fundus-AVSeg/27938034",
+  "official_file_url": "https://figshare.com/ndownloader/files/54093641",
+  "observations": [
+    {
+      "method": "Python urllib, default execution",
+      "url": "https://api.figshare.com/v2/articles/27938034",
+      "http_status": 403
+    },
+    {
+      "method": "Python urllib, approved elevated execution",
+      "url": "https://api.figshare.com/v2/articles/27938034",
+      "http_status": 403
+    },
+    {
+      "method": "Python requests, normal GET",
+      "url": "https://api.figshare.com/v2/articles/27938034",
+      "http_status": 403
+    },
+    {
+      "method": "Python requests, normal GET",
+      "url": "https://figshare.com/articles/dataset/Fundus-AVSeg/27938034",
+      "http_status": 403
+    },
+    {
+      "method": "Python requests, bounded Range GET",
+      "url": "https://figshare.com/ndownloader/files/54093641",
+      "http_status": 403,
+      "response_body_bytes": 118,
+      "body_was_html_not_zip": true
+    },
+    {
+      "method": "Python requests, bounded Range GET",
+      "url": "https://ndownloader.figshare.com/files/54093641",
+      "http_status": 403,
+      "response_body_bytes": 118,
+      "body_was_html_not_zip": true
+    }
+  ],
+  "web_tool_observation": "Public Figshare page readable through the web tool. Its download link exposed file ID 54093641, but binary retrieval was not completed. Signed redirect query not retained.",
+  "proxy_settings_changed": false,
+  "downloaded_dataset_bytes": 0,
+  "file_audit_performed": false,
+  "interpretation": "Current local HTTP access failed; the cause is not established. This does not prove the dataset is unavailable to every client or that it requires application."
+}

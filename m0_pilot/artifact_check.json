@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checkpoint_step": 256,
+  "next_global_draw": 1024,
+  "checkpoint_binding_matches_current_files": true,
+  "prediction_pairs_verified": 8,
+  "records": [
+    {
+      "key": "train/138_A.png",
+      "probability_sha256": "0b97847520a326a8bfeb7e542eabdfb898b6ae8b5c7a8f565c9cc65bad9df550",
+      "binary_sha256": "5e6c9cfc7d7bf639417a944f4f9e3d84d7a7397bf6ad7e6dcc191a317f26c74b"
+    },
+    {
+      "key": "train/177_D.png",
+      "probability_sha256": "2981386369367b62a69663c136cd5a5c7321ad70be137d4da74fcfe2c9602411",
+      "binary_sha256": "aea2e2f63461f2f0db24f0c13b68c45de11db47913a6df885591acd29ee86db9"
+    },
+    {
+      "key": "train/222_D.png",
+      "probability_sha256": "65bf99aa8e481cf2ce0b228352dab01095c40a873c205d26db8906218fea11bb",
+      "binary_sha256": "91c008bb8697e557fafd8fed9fe7d6aa3bd012a808570ea73e644acabbfaee0a"
+    },
+    {
+      "key": "train/421_G.png",
+      "probability_sha256": "dd341d292afe529aeb118101ee6076d87ff669797a4531e737558a1cd70bb875",
+      "binary_sha256": "df93afb9705731fad17594da18cf5f36c920d909aef117a6a8f1c08758caf866"
+    },
+    {
+      "key": "train/442_G.png",
+      "probability_sha256": "d0a37039867aa75ce8d3744ce4f2f6949d1d073bfe6d33ae66cf5078c07bb7a5",
+      "binary_sha256": "e0cd1fc369213a360709e3b0c8e025ccffc769a3ff59720492ed887ecc632445"
+    },
+    {
+      "key": "train/453_N.png",
+      "probability_sha256": "6f13d58816719e2198c9c44c4737b7c6713f8bcae15d07cc804d40e39af677d8",
+      "binary_sha256": "1ed64b143caf2bb9f533d39c3cdcb75bc956d0f6c5875ab269a7a09df0abe50c"
+    },
+    {
+      "key": "train/489_N.png",
+      "probability_sha256": "d014814b24bb0933bfa9489ef3d55a9e1a6aa0a0c6d8120236368b1f08452adf",
+      "binary_sha256": "20498ba5ee500e22279c11a434787d9ab38ea5683f26903ff400893a564654e1"
+    },
+    {
+      "key": "train/8_A.png",
+      "probability_sha256": "f9846be8c07acf0a860a424ffb90111ff1ef7fb4bf295e90263f9601ecc2c9ac",
+      "binary_sha256": "44847faf9f10d11deee092b0393ac6da75b50a7162d4a13ae5587fbf5054b374"
+    }
+  ],
+  "figures_sha256": {
+    "development_examples.png": "0fe18992d764a499cdc96a7c95a44ebde8e12b24674925f4c325828a81b96211",
+    "fixed_training_examples.png": "a7855852cf85b7d26e4d5fc615ba861f7137fad8e0844ecd847e7b95701233e4",
+    "learning_curves.png": "3b448eea5a46c0408a492b486949fb4174d105c1a806f799601e62ab1ce2d553"
+  }
+}

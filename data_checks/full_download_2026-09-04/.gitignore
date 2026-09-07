@@ -1,0 +1,4 @@
+archives/
+datasets/
+__pycache__/
+*.part

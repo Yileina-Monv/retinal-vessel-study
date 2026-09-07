@@ -1,0 +1,305 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "scope": "Fixed 16 actual training crops already on GPU; 2 warmup and 10 timed updates per layout",
+  "not_accuracy_evidence": true,
+  "not_end_to_end_loader_throughput": true,
+  "input_signatures": [
+    {
+      "key": "train/441_G.png",
+      "epoch": 0,
+      "draw": 82,
+      "geometry": [
+        517,
+        75,
+        512,
+        512,
+        1,
+        0,
+        2
+      ],
+      "tensor_sha256": "abfcdd5dc21fe1179c6b2124a31fc31286d4e4313938a40445da996a77a2dd63"
+    },
+    {
+      "key": "train/92_A.png",
+      "epoch": 0,
+      "draw": 124,
+      "geometry": [
+        1468,
+        520,
+        512,
+        512,
+        0,
+        0,
+        1
+      ],
+      "tensor_sha256": "671c5c417da148c55d033d4b32bf77592ac51c3f0b2198f829640402206c6ac6"
+    },
+    {
+      "key": "train/419_G.png",
+      "epoch": 0,
+      "draw": 75,
+      "geometry": [
+        208,
+        687,
+        512,
+        512,
+        0,
+        0,
+        2
+      ],
+      "tensor_sha256": "aaefbc0ba7c19dd63044c24c0bd4d928d06f1025a7e18095b0bbe12adc89e1d3"
+    },
+    {
+      "key": "train/441_G.png",
+      "epoch": 0,
+      "draw": 81,
+      "geometry": [
+        464,
+        1377,
+        512,
+        512,
+        1,
+        1,
+        0
+      ],
+      "tensor_sha256": "d5fe98ac926808961d0f68ffca7c46c170d47200267139fa01e2b126e78d99f4"
+    },
+    {
+      "key": "train/484_N.png",
+      "epoch": 0,
+      "draw": 96,
+      "geometry": [
+        995,
+        641,
+        512,
+        512,
+        0,
+        0,
+        0
+      ],
+      "tensor_sha256": "f291c315d92283813737d359a01ff82f4c44a71f265ae40fec1613de2f802059"
+    },
+    {
+      "key": "train/388_G.png",
+      "epoch": 0,
+      "draw": 66,
+      "geometry": [
+        775,
+        1471,
+        512,
+        512,
+        1,
+        1,
+        3
+      ],
+      "tensor_sha256": "836a5ad67fe305b04affb3d37b2dda2f57ca4bea3cb1a824296d6881b4a44704"
+    },
+    {
+      "key": "train/225_D.png",
+      "epoch": 0,
+      "draw": 35,
+      "geometry": [
+        1182,
+        759,
+        512,
+        512,
+        0,
+        0,
+        2
+      ],
+      "tensor_sha256": "b1dfef5fba17d38c71b3e35587ce57467d6a04d997b9c8bd11aa53c7aee20ae6"
+    },
+    {
+      "key": "train/440_G.png",
+      "epoch": 0,
+      "draw": 78,
+      "geometry": [
+        1180,
+        231,
+        512,
+        512,
+        0,
+        1,
+        2
+      ],
+      "tensor_sha256": "add7295e05ae620a45838dff5c3fa2b1c3022f0eb204926f228d2912a45de3a5"
+    },
+    {
+      "key": "train/517_N.png",
+      "epoch": 0,
+      "draw": 103,
+      "geometry": [
+        712,
+        185,
+        512,
+        512,
+        1,
+        1,
+        3
+      ],
+      "tensor_sha256": "7bfeff882ea4c49e885732428d54711942ca1b320ee3091deac43e876308a2bf"
+    },
+    {
+      "key": "train/408_G.png",
+      "epoch": 0,
+      "draw": 71,
+      "geometry": [
+        61,
+        276,
+        512,
+        512,
+        0,
+        1,
+        1
+      ],
+      "tensor_sha256": "d06341f21a6a2e808c00cbbc49c2523b04e98d5388a4eaee2713ee549be18a07"
+    },
+    {
+      "key": "train/454_N.png",
+      "epoch": 0,
+      "draw": 87,
+      "geometry": [
+        1529,
+        769,
+        512,
+        512,
+        1,
+        0,
+        3
+      ],
+      "tensor_sha256": "64880c4d70dcd543943d104b2fe4ac25ec452ada49dc86d6d0f40a6b5d49d4df"
+    },
+    {
+      "key": "train/517_N.png",
+      "epoch": 0,
+      "draw": 101,
+      "geometry": [
+        1200,
+        9,
+        512,
+        512,
+        1,
+        1,
+        0
+      ],
+      "tensor_sha256": "035d90b31bdc4b84f436b052974d276aaef71eac18b8a2310fd799397489c290"
+    },
+    {
+      "key": "train/142_A.png",
+      "epoch": 0,
+      "draw": 13,
+      "geometry": [
+        1424,
+        904,
+        512,
+        512,
+        0,
+        0,
+        3
+      ],
+      "tensor_sha256": "e5d207ee37adfd0ee33edf630986d3a3d8116a1d3cc5172e75d28706fb6a0d79"
+    },
+    {
+      "key": "train/259_D.png",
+      "epoch": 0,
+      "draw": 37,
+      "geometry": [
+        54,
+        854,
+        512,
+        512,
+        1,
+        0,
+        3
+      ],
+      "tensor_sha256": "3bc7ba0d364c08da980629171fe52da17a8a7855e0f653f9070b38c8b0bc5392"
+    },
+    {
+      "key": "train/260_D.png",
+      "epoch": 0,
+      "draw": 43,
+      "geometry": [
+        1078,
+        900,
+        512,
+        512,
+        1,
+        1,
+        3
+      ],
+      "tensor_sha256": "9e26426f672f246b4c6bcb27e152d579ad749f88b2d8af9023f267f7920cd4f6"
+    },
+    {
+      "key": "train/456_N.png",
+      "epoch": 0,
+      "draw": 90,
+      "geometry": [
+        994,
+        337,
+        512,
+        512,
+        0,
+        0,
+        2
+      ],
+      "tensor_sha256": "0dd5f3da631ae3cb3e529ebc9ab196a24022fae6cd0905168aaf74eaade4af3a"
+    }
+  ],
+  "rows": [
+    {
+      "microbatch": 1,
+      "accumulation": 16,
+      "effective_batch": 16,
+      "status": "completed",
+      "timed_updates": 10,
+      "seconds_per_effective_batch": 0.29436037999985276,
+      "crops_per_second": 54.35514113688807,
+      "peak_allocated_gib": 0.9443821907043457,
+      "peak_reserved_gib": 1.001953125
+    },
+    {
+      "microbatch": 2,
+      "accumulation": 8,
+      "effective_batch": 16,
+      "status": "completed",
+      "timed_updates": 10,
+      "seconds_per_effective_batch": 0.25762517000039226,
+      "crops_per_second": 62.105732914123415,
+      "peak_allocated_gib": 1.6851048469543457,
+      "peak_reserved_gib": 1.779296875
+    },
+    {
+      "microbatch": 4,
+      "accumulation": 4,
+      "effective_batch": 16,
+      "status": "completed",
+      "timed_updates": 10,
+      "seconds_per_effective_batch": 0.24808064000062585,
+      "crops_per_second": 64.49515770339691,
+      "peak_allocated_gib": 3.1688694953918457,
+      "peak_reserved_gib": 3.3828125
+    },
+    {
+      "microbatch": 8,
+      "accumulation": 2,
+      "effective_batch": 16,
+      "status": "completed",
+      "timed_updates": 10,
+      "seconds_per_effective_batch": 0.24183700999965368,
+      "crops_per_second": 66.16026223621816,
+      "peak_allocated_gib": 6.134079456329346,
+      "peak_reserved_gib": 6.302734375
+    },
+    {
+      "microbatch": 16,
+      "accumulation": 1,
+      "effective_batch": 16,
+      "status": "completed",
+      "timed_updates": 10,
+      "seconds_per_effective_batch": 0.23900109000023803,
+      "crops_per_second": 66.94530137910277,
+      "peak_allocated_gib": 12.035573482513428,
+      "peak_reserved_gib": 12.3828125
+    }
+  ]
+}

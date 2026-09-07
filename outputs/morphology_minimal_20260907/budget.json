@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETED",
+  "returncode": 0,
+  "hard_timeout": false,
+  "user_limit_seconds": 3600,
+  "elapsed_since_user_start_seconds": 430.05784010887146,
+  "official_test_access": false,
+  "new_training": 0,
+  "new_inference": 0
+}

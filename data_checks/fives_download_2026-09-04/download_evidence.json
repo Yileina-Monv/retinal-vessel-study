@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.kaggle.com/api/v1/datasets/download/nikitamanaenkov/fundus-image-dataset-for-vessel-segmentation?datasetVersionNumber=6",
+  "mirror_ref": "nikitamanaenkov/fundus-image-dataset-for-vessel-segmentation",
+  "mirror_version": 6,
+  "source_type": "PUBLIC_THIRD_PARTY_KAGGLE_MIRROR",
+  "official_doi": "https://doi.org/10.6084/m9.figshare.19688169",
+  "official_api_observation": {
+    "url": "https://api.figshare.com/v2/articles/19688169",
+    "status": 403,
+    "server": "awselb/2.0"
+  },
+  "local_path": "archives\\fives_kaggle_v6.zip",
+  "proxy_configuration_changed": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "resume_offset": 1598029824,
+      "http_status": 206,
+      "status": "PASS"
+    }
+  ],
+  "final_origin_path": "https://storage.googleapis.com:443/kaggle-data-sets/7319687/11664602/bundle/archive.zip",
+  "content_type": "application/zip",
+  "etag": "20f7d0cee4217f98e18e3f3f7df93f89",
+  "advertised_bytes": 1763102639,
+  "etag_matches_local_md5": true,
+  "status": "PASS_DOWNLOAD_AND_FULL_MIRROR_FILE_AUDIT",
+  "bytes": 1763102639,
+  "sha256": "ac15665bf20c6c6c7943dba707ca942f77ba3ca4a25cf785ba444cf7bbd191e0",
+  "md5": "20f7d0cee4217f98e18e3f3f7df93f89",
+  "elapsed_seconds": 44.834,
+  "initial_transfer_note": "An earlier execution ended without a completed process result, leaving 1598029824 bytes. The subsequent execution resumed with HTTP 206 and verified the final full-file MD5 against the response ETag; no data was assumed complete from the partial file.",
+  "file_audit_report": "format_evidence.json",
+  "official_archive_identity": "NOT_VERIFIED"
+}

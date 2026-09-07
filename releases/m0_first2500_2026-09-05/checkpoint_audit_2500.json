@@ -1,0 +1,1 @@
+{"checkpoint_sha256":"91a4c54c8f7e334293185f6cb51182b8d4e839922c7481e32d796d3805feef52","consumed":10000,"first50_loss":1.093022907972336,"last50_loss":0.3733165118098259,"model_finite":true,"optimizer_steps_match":true,"sample_cursor_matches":true,"status":"passed","step":2500}

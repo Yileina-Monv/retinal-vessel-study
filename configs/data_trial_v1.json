@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "protocol_id": "fives_data_trial_v1",
+  "seed": 20260904,
+  "source_audit_dir": "data_checks/fives_download_2026-09-04",
+  "output_dir": "data_preparation",
+  "allowed_source_split": "train",
+  "diseases": ["A", "D", "G", "N"],
+  "per_disease": {
+    "smoke_train": {"good": 6, "poor": 2},
+    "smoke_val": {"good": 1, "poor": 1}
+  },
+  "main_sample_policy": "nonempty_singleton_only",
+  "duplicate_policy": "keep_all_annotations_in_edge_cases_without_merging",
+  "empty_label_policy": "keep_in_edge_cases_and_allow_empty_crops",
+  "quality_policy": "coverage_only_no_training_weights",
+  "patch_size": 512,
+  "crops_per_image": 4,
+  "augmentation": {
+    "horizontal_flip_probability": 0.5,
+    "vertical_flip_probability": 0.5,
+    "quarter_turns": [0, 1, 2, 3],
+    "photometric": false
+  },
+  "pixel_policy": "RGB_float32_div_255_no_resize",
+  "label_policy": "strict_uint8_0_255_equal_RGB_and_opaque_alpha",
+  "fov_policy": "not_generated_in_this_stage",
+  "decoded_cache_images_per_worker": 2
+}

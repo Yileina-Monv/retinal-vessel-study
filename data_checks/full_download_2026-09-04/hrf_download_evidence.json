@@ -1,0 +1,670 @@
+[
+  {
+    "cohort": "healthy",
+    "role": "images",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+    "local_path": "minimal_download_2026-09-04\\archives\\healthy.zip",
+    "reused_previous_download": true,
+    "bytes": 19295899,
+    "sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+    "members": [
+      {
+        "name": "01_h.jpg",
+        "bytes": 2188303
+      },
+      {
+        "name": "02_h.jpg",
+        "bytes": 2198929
+      },
+      {
+        "name": "03_h.jpg",
+        "bytes": 2078216
+      },
+      {
+        "name": "04_h.jpg",
+        "bytes": 2069735
+      },
+      {
+        "name": "05_h.jpg",
+        "bytes": 1942042
+      },
+      {
+        "name": "06_h.jpg",
+        "bytes": 930522
+      },
+      {
+        "name": "07_h.jpg",
+        "bytes": 845373
+      },
+      {
+        "name": "08_h.jpg",
+        "bytes": 876648
+      },
+      {
+        "name": "09_h.jpg",
+        "bytes": 873320
+      },
+      {
+        "name": "10_h.jpg",
+        "bytes": 893670
+      },
+      {
+        "name": "11_h.jpg",
+        "bytes": 921223
+      },
+      {
+        "name": "12_h.jpg",
+        "bytes": 944887
+      },
+      {
+        "name": "13_h.jpg",
+        "bytes": 903560
+      },
+      {
+        "name": "14_h.jpg",
+        "bytes": 891343
+      },
+      {
+        "name": "15_h.jpg",
+        "bytes": 869118
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.051
+  },
+  {
+    "cohort": "healthy",
+    "role": "labels",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_manualsegm.zip",
+    "local_path": "minimal_download_2026-09-04\\archives\\healthy_manualsegm.zip",
+    "reused_previous_download": true,
+    "bytes": 1648939,
+    "sha256": "2f8c67ee83e9ba16707119aa9ad98ad978c70566d467fe84b328854528ef16b8",
+    "members": [
+      {
+        "name": "01_h.tif",
+        "bytes": 279412
+      },
+      {
+        "name": "02_h.tif",
+        "bytes": 262668
+      },
+      {
+        "name": "03_h.tif",
+        "bytes": 264922
+      },
+      {
+        "name": "04_h.tif",
+        "bytes": 256340
+      },
+      {
+        "name": "05_h.tif",
+        "bytes": 253374
+      },
+      {
+        "name": "06_h.tif",
+        "bytes": 281806
+      },
+      {
+        "name": "07_h.tif",
+        "bytes": 257554
+      },
+      {
+        "name": "08_h.tif",
+        "bytes": 270108
+      },
+      {
+        "name": "09_h.tif",
+        "bytes": 259884
+      },
+      {
+        "name": "10_h.tif",
+        "bytes": 276738
+      },
+      {
+        "name": "11_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "12_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "13_h.tif",
+        "bytes": 8185492
+      },
+      {
+        "name": "14_h.tif",
+        "bytes": 254310
+      },
+      {
+        "name": "15_h.tif",
+        "bytes": 241550
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.034
+  },
+  {
+    "cohort": "healthy",
+    "role": "fov",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy_fovmask.zip",
+    "local_path": "minimal_download_2026-09-04\\archives\\healthy_fovmask.zip",
+    "reused_previous_download": true,
+    "bytes": 419883,
+    "sha256": "902395ade3d05c7e01a240bd0a41cb6b5eac903aab61b5c2d92655f0f9258b45",
+    "members": [
+      {
+        "name": "01_h_mask.tif",
+        "bytes": 107316
+      },
+      {
+        "name": "02_h_mask.tif",
+        "bytes": 107320
+      },
+      {
+        "name": "03_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "04_h_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "05_h_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "06_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "07_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "08_h_mask.tif",
+        "bytes": 107288
+      },
+      {
+        "name": "09_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "10_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "11_h_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "12_h_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "13_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "14_h_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "15_h_mask.tif",
+        "bytes": 107296
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.004
+  },
+  {
+    "cohort": "glaucoma",
+    "role": "images",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/glaucoma.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\glaucoma.zip",
+    "reused_previous_download": false,
+    "bytes": 21732825,
+    "sha256": "c3428a5eb971ce3165f21463c3e6bf0758531e30035303236b785e6b2d005071",
+    "members": [
+      {
+        "name": "01_g.jpg",
+        "bytes": 1956063
+      },
+      {
+        "name": "02_g.jpg",
+        "bytes": 1964475
+      },
+      {
+        "name": "03_g.jpg",
+        "bytes": 1880536
+      },
+      {
+        "name": "04_g.jpg",
+        "bytes": 1900698
+      },
+      {
+        "name": "05_g.jpg",
+        "bytes": 1899339
+      },
+      {
+        "name": "06_g.jpg",
+        "bytes": 1910331
+      },
+      {
+        "name": "07_g.jpg",
+        "bytes": 2044742
+      },
+      {
+        "name": "08_g.jpg",
+        "bytes": 2078780
+      },
+      {
+        "name": "09_g.jpg",
+        "bytes": 874402
+      },
+      {
+        "name": "10_g.jpg",
+        "bytes": 941923
+      },
+      {
+        "name": "11_g.jpg",
+        "bytes": 899630
+      },
+      {
+        "name": "12_g.jpg",
+        "bytes": 924362
+      },
+      {
+        "name": "13_g.jpg",
+        "bytes": 885018
+      },
+      {
+        "name": "14_g.jpg",
+        "bytes": 867659
+      },
+      {
+        "name": "15_g.jpg",
+        "bytes": 844991
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.064
+  },
+  {
+    "cohort": "glaucoma",
+    "role": "labels",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/glaucoma_manualsegm.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\glaucoma_manualsegm.zip",
+    "reused_previous_download": false,
+    "bytes": 1608242,
+    "sha256": "ad3a0a39d2226a66da2c4072e031e23be9d27c8804e9a314db3ae757fc6f910a",
+    "members": [
+      {
+        "name": "01_g.tif",
+        "bytes": 274086
+      },
+      {
+        "name": "02_g.tif",
+        "bytes": 279926
+      },
+      {
+        "name": "03_g.tif",
+        "bytes": 243170
+      },
+      {
+        "name": "04_g.tif",
+        "bytes": 255160
+      },
+      {
+        "name": "05_g.tif",
+        "bytes": 258216
+      },
+      {
+        "name": "06_g.tif",
+        "bytes": 261570
+      },
+      {
+        "name": "07_g.tif",
+        "bytes": 275780
+      },
+      {
+        "name": "08_g.tif",
+        "bytes": 284360
+      },
+      {
+        "name": "09_g.tif",
+        "bytes": 281970
+      },
+      {
+        "name": "10_g.tif",
+        "bytes": 278804
+      },
+      {
+        "name": "11_g.tif",
+        "bytes": 285742
+      },
+      {
+        "name": "12_g.tif",
+        "bytes": 297894
+      },
+      {
+        "name": "13_g.tif",
+        "bytes": 277026
+      },
+      {
+        "name": "14_g.tif",
+        "bytes": 276778
+      },
+      {
+        "name": "15_g.tif",
+        "bytes": 272090
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.011
+  },
+  {
+    "cohort": "glaucoma",
+    "role": "fov",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/glaucoma_fovmask.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\glaucoma_fovmask.zip",
+    "reused_previous_download": false,
+    "bytes": 418784,
+    "sha256": "7f2413d3b321fa29452564ca7460be59fbc5e9f0291adb5499bc1dd12ac24632",
+    "members": [
+      {
+        "name": "01_g_mask.tif",
+        "bytes": 107288
+      },
+      {
+        "name": "02_g_mask.tif",
+        "bytes": 107288
+      },
+      {
+        "name": "03_g_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "04_g_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "05_g_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "06_g_mask.tif",
+        "bytes": 107284
+      },
+      {
+        "name": "07_g_mask.tif",
+        "bytes": 107308
+      },
+      {
+        "name": "08_g_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "09_g_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "10_g_mask.tif",
+        "bytes": 107308
+      },
+      {
+        "name": "11_g_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "12_g_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "13_g_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "14_g_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "15_g_mask.tif",
+        "bytes": 107288
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.005
+  },
+  {
+    "cohort": "diabetic_retinopathy",
+    "role": "images",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\diabetic_retinopathy.zip",
+    "reused_previous_download": false,
+    "http_status": 200,
+    "advertised_bytes": 29249219,
+    "bytes": 29249219,
+    "sha256": "278630bea52c2096dbfa4b6486647ea60e56db1d67f1308dab2ff4383481a244",
+    "members": [
+      {
+        "name": "01_dr.JPG",
+        "bytes": 2259744
+      },
+      {
+        "name": "02_dr.JPG",
+        "bytes": 2286791
+      },
+      {
+        "name": "03_dr.JPG",
+        "bytes": 2342907
+      },
+      {
+        "name": "04_dr.JPG",
+        "bytes": 2045144
+      },
+      {
+        "name": "05_dr.JPG",
+        "bytes": 879833
+      },
+      {
+        "name": "06_dr.JPG",
+        "bytes": 928146
+      },
+      {
+        "name": "07_dr.JPG",
+        "bytes": 920897
+      },
+      {
+        "name": "08_dr.JPG",
+        "bytes": 2366729
+      },
+      {
+        "name": "09_dr.JPG",
+        "bytes": 2263069
+      },
+      {
+        "name": "11_dr.JPG",
+        "bytes": 2007754
+      },
+      {
+        "name": "10_dr.JPG",
+        "bytes": 1926383
+      },
+      {
+        "name": "12_dr.JPG",
+        "bytes": 2004486
+      },
+      {
+        "name": "13_dr.JPG",
+        "bytes": 2284160
+      },
+      {
+        "name": "14_dr.JPG",
+        "bytes": 2397201
+      },
+      {
+        "name": "15_dr.JPG",
+        "bytes": 2449820
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 3.349
+  },
+  {
+    "cohort": "diabetic_retinopathy",
+    "role": "labels",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy_manualsegm.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\diabetic_retinopathy_manualsegm.zip",
+    "reused_previous_download": false,
+    "bytes": 1524938,
+    "sha256": "5d949ed31d4b825f33b7b14123d21f2562588c8bcbaf33984ddd51ed706d6dbd",
+    "members": [
+      {
+        "name": "01_dr.tif",
+        "bytes": 238954
+      },
+      {
+        "name": "02_dr.tif",
+        "bytes": 257894
+      },
+      {
+        "name": "03_dr.tif",
+        "bytes": 242328
+      },
+      {
+        "name": "04_dr.tif",
+        "bytes": 243516
+      },
+      {
+        "name": "05_dr.tif",
+        "bytes": 263564
+      },
+      {
+        "name": "06_dr.tif",
+        "bytes": 300904
+      },
+      {
+        "name": "07_dr.tif",
+        "bytes": 270062
+      },
+      {
+        "name": "08_dr.tif",
+        "bytes": 266404
+      },
+      {
+        "name": "09_dr.tif",
+        "bytes": 253980
+      },
+      {
+        "name": "10_dr.tif",
+        "bytes": 282446
+      },
+      {
+        "name": "11_dr.tif",
+        "bytes": 287826
+      },
+      {
+        "name": "12_dr.tif",
+        "bytes": 283284
+      },
+      {
+        "name": "13_dr.tif",
+        "bytes": 264960
+      },
+      {
+        "name": "14_dr.tif",
+        "bytes": 283962
+      },
+      {
+        "name": "15_dr.tif",
+        "bytes": 252820
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.011
+  },
+  {
+    "cohort": "diabetic_retinopathy",
+    "role": "fov",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy_fovmask.zip",
+    "local_path": "full_download_2026-09-04\\archives\\hrf\\diabetic_retinopathy_fovmask.zip",
+    "reused_previous_download": false,
+    "bytes": 416992,
+    "sha256": "2910ccfbffd196c2048dfe7b63d19a9aedba0f7d9a20c2d85d97865ef0a9a211",
+    "members": [
+      {
+        "name": "01_dr_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "02_dr_mask.tif",
+        "bytes": 107284
+      },
+      {
+        "name": "03_dr_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "04_dr_mask.tif",
+        "bytes": 107300
+      },
+      {
+        "name": "05_dr_mask.tif",
+        "bytes": 107284
+      },
+      {
+        "name": "06_dr_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "07_dr_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "08_dr_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "09_dr_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "10_dr_mask.tif",
+        "bytes": 107280
+      },
+      {
+        "name": "11_dr_mask.tif",
+        "bytes": 107272
+      },
+      {
+        "name": "12_dr_mask.tif",
+        "bytes": 107296
+      },
+      {
+        "name": "13_dr_mask.tif",
+        "bytes": 107292
+      },
+      {
+        "name": "14_dr_mask.tif",
+        "bytes": 107304
+      },
+      {
+        "name": "15_dr_mask.tif",
+        "bytes": 107288
+      }
+    ],
+    "zip_crc_ok": true,
+    "status": "PASS",
+    "elapsed_seconds": 0.003
+  }
+]

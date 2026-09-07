@@ -1,0 +1,627 @@
+{
+  "status": "PASS_READ_ONLY_METADATA_AUDIT",
+  "row_count": 100,
+  "sheet_nonempty_row_counts": {
+    "xl/worksheets/sheet1.xml": 101,
+    "xl/worksheets/sheet2.xml": 0,
+    "xl/worksheets/sheet3.xml": 0
+  },
+  "formula_count": 0,
+  "disease_counts": {
+    "Glaucoma": 20,
+    "Normal": 40,
+    "DR": 20,
+    "AMD": 20
+  },
+  "quality_counts": {
+    "Low-quality": 17,
+    "High-quality": 83
+  },
+  "eye_id_values": {
+    "right": 45,
+    "left": 55
+  },
+  "identity_limit": "eye id contains laterality, not a unique patient identifier; patient independence cannot be verified from this workbook.",
+  "records": [
+    {
+      "image name": "001_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "002_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "003_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "004_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "005_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "006_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "007_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "008_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "009_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "010_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "011_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "012_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "013_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "014_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "015_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "016_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "017_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "018_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "019_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "020_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "021_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "022_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "023_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "024_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "025_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "026_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "027_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "028_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "029_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "030_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "031_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "032_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "033_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "034_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "035_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "036_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "037_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "038_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "039_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "040_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "041_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "042_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "043_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "044_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "045_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "046_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "047_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "048_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "049_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "050_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "051_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "052_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "053_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "054_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "055_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "056_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "057_A.png",
+      "eye id": "left",
+      "disease type": "AMD",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "058_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "059_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "060_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "061_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "062_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "063_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "064_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "065_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "066_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "067_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "068_A.png",
+      "eye id": "right",
+      "disease type": "AMD",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "069_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "070_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "071_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "072_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "073_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "074_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "075_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "076_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "077_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "078_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "079_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "080_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "081_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "082_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "083_G.png",
+      "eye id": "right",
+      "disease type": "Glaucoma",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "084_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "085_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "086_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "087_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "088_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "089_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "090_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "091_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "092_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "093_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "094_N.png",
+      "eye id": "left",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "095_G.png",
+      "eye id": "left",
+      "disease type": "Glaucoma",
+      "image quality": "Low-quality"
+    },
+    {
+      "image name": "096_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "097_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "098_D.png",
+      "eye id": "right",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "099_D.png",
+      "eye id": "left",
+      "disease type": "DR",
+      "image quality": "High-quality"
+    },
+    {
+      "image name": "100_N.png",
+      "eye id": "right",
+      "disease type": "Normal",
+      "image quality": "High-quality"
+    }
+  ]
+}
