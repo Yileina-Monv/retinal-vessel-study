@@ -7,6 +7,7 @@
 | 从哪里开始 | 内容 |
 |---|---|
 | [小组进度 STATUS.md](STATUS.md) | 当前结论、已完成工作、下一步和暂停项 |
+| [课堂汇报与讲稿（2026-09-12）](outputs/课堂汇报_20260912/README.md) | 糖网病病灶引导方向，12 页课堂汇报与配套讲稿 |
 | [任务列表](https://github.com/Yileina-Monv/retinal-vessel-study/issues) | 领取任务、讨论阻塞、验收与关闭 |
 | [协作约定](CONTRIBUTING.md) | 分支、PR、结果回传和数据边界 |
 | [最新最小测试](outputs/morphology_minimal_20260907/最小测试报告.md) | 118 图测量误差与疾病/质量偏差 |
