@@ -1,0 +1,38 @@
+{
+  "0": {
+    "M0": {
+      "anchor": "M0",
+      "other": "M1",
+      "threshold": 0.555,
+      "calibration_target_fp": 0.006222812098107951,
+      "calibration_actual_fp": 0.0062107964756724955,
+      "at_grid_edge": false
+    },
+    "M1": {
+      "anchor": "M1",
+      "other": "M0",
+      "threshold": 0.445,
+      "calibration_target_fp": 0.006706104515866869,
+      "calibration_actual_fp": 0.006728225846421924,
+      "at_grid_edge": false
+    }
+  },
+  "1": {
+    "M0": {
+      "anchor": "M0",
+      "other": "M1",
+      "threshold": 0.54,
+      "calibration_target_fp": 0.00591301987552357,
+      "calibration_actual_fp": 0.005902587159864436,
+      "at_grid_edge": false
+    },
+    "M1": {
+      "anchor": "M1",
+      "other": "M0",
+      "threshold": 0.46,
+      "calibration_target_fp": 0.0062295872865704375,
+      "calibration_actual_fp": 0.006247629297095904,
+      "at_grid_edge": false
+    }
+  }
+}
