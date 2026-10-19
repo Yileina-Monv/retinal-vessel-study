@@ -1,0 +1,78 @@
+{
+  "stage": "engineering_Z0_development_baseline",
+  "formal_protocol_frozen": false,
+  "planned_n": 28,
+  "completed_n": 28,
+  "missing_sample_ids": [],
+  "status": "complete",
+  "failures": [],
+  "completed_this_window": 27,
+  "window_elapsed_seconds": 53.99467270000605,
+  "total_recorded_inference_seconds": 38.318932799913455,
+  "peak_allocated_bytes": 249265664,
+  "peak_reserved_bytes": 314572800,
+  "checkpoint_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+  "threshold": 0.5,
+  "official_test_used": false,
+  "training_updates": 0,
+  "metrics_fov": {
+    "dice": {
+      "n": 28,
+      "mean": 0.758916146890393,
+      "median": 0.7563359398179095,
+      "min": 0.678592026365176,
+      "max": 0.8399453245834226
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.8930121170825186,
+      "median": 0.9074472341755914,
+      "min": 0.7159347264074825,
+      "max": 0.9634002204485996
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.6632781304900696,
+      "median": 0.6598862550487187,
+      "min": 0.5588393896105125,
+      "max": 0.8256320323368543
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.011634106399528646,
+      "median": 0.011392211731773013,
+      "min": 0.0036645403202483803,
+      "max": 0.026344805258271025
+    }
+  },
+  "metrics_fov_excluding_uncertain": {
+    "dice": {
+      "n": 28,
+      "mean": 0.7589415677635597,
+      "median": 0.7563359398179095,
+      "min": 0.678592026365176,
+      "max": 0.8399453245834226
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.893027883248003,
+      "median": 0.9074472341755914,
+      "min": 0.7163725797666012,
+      "max": 0.9634002204485996
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.6633049560140399,
+      "median": 0.6598870458707754,
+      "min": 0.5588393896105125,
+      "max": 0.8256320323368543
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.011634941297445847,
+      "median": 0.011392801663472287,
+      "min": 0.0036665586832318135,
+      "max": 0.026272776339670012
+    }
+  }
+}
