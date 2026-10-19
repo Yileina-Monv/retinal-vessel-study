@@ -1,0 +1,60 @@
+{
+    "human_visual_review_count":  0,
+    "source_checks":  [
+                          {
+                              "study":  "formal_core",
+                              "status":  "passed",
+                              "all_passed":  true,
+                              "official_test_accessed":  false
+                          },
+                          {
+                              "study":  "weight_ablation",
+                              "status":  "passed",
+                              "all_passed":  true,
+                              "official_test_accessed":  false
+                          },
+                          {
+                              "study":  "class_split",
+                              "status":  "passed",
+                              "all_passed":  true,
+                              "official_test_accessed":  false
+                          },
+                          {
+                              "study":  "budget_extension",
+                              "status":  "passed",
+                              "all_passed":  true,
+                              "official_test_accessed":  false
+                          },
+                          {
+                              "study":  "plan_b",
+                              "status":  "passed",
+                              "all_passed":  true,
+                              "official_test_accessed":  false
+                          }
+                      ],
+    "official_test_accessed":  false,
+    "source_records":  [
+                           "t0_tw_core_20261016",
+                           "t0_tw_weight_ablation_20261017",
+                           "t0_tw_class_split_20261018",
+                           "t0_tw_budget_extension_20261018",
+                           "plan_b_error_analysis_20261019"
+                       ],
+    "new_inference_for_publication":  false,
+    "ai_visual_review_exported":  false,
+    "protocol_sha256":  {
+                            "class_split":  "b486512cd3c3d9605fdb8f498b4e62c46c0666adcdf7544d0c7e901c8344775a",
+                            "plan_b":  "5822922a71e2f05ccc15fb68bde4a370c14738ebca5757ab6a93811b744b0b26",
+                            "weight_ablation":  "a2de7e7bb0c3bee647bc9ab8a7e41ffc0d5dc1a0433d29d0a34b0e8986d1f4b7",
+                            "formal_core":  "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+                            "budget_extension":  "ca415da2f467698748a429c04b5d064369274a9efca5b4c8be293f24b22cdf63"
+                        },
+    "source_manifest_sha256_plan_b":  "4a5f4b0f6b2217ae23f7ab47aad7ea293620897c8d80ed906cd84b2a6ce72fd7",
+    "counts":  {
+                   "training_config_rows":  17,
+                   "loss_windows":  190,
+                   "fixed_endpoint_metric_rows":  3836,
+                   "paired_summary_rows":  87,
+                   "paired_image_delta_rows":  2131
+               }
+}
