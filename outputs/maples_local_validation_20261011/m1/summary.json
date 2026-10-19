@@ -1,0 +1,78 @@
+{
+  "stage": "engineering_M1_zero_shot_development_evaluation",
+  "formal_protocol_frozen": false,
+  "planned_n": 28,
+  "completed_n": 28,
+  "missing_sample_ids": [],
+  "status": "complete",
+  "failures": [],
+  "completed_this_window": 28,
+  "window_elapsed_seconds": 35.8291669000173,
+  "total_recorded_inference_seconds": 15.627798700006679,
+  "peak_allocated_bytes": 249265664,
+  "peak_reserved_bytes": 314572800,
+  "checkpoint_sha256": "74b2aab9afc7d14702508914f49deaf63b33b411671a6140a8c78c4dd8eafd56",
+  "threshold": 0.5,
+  "official_test_used": false,
+  "training_updates": 0,
+  "metrics_fov": {
+    "dice": {
+      "n": 28,
+      "mean": 0.7600482015733153,
+      "median": 0.7588586503500272,
+      "min": 0.6795314123460315,
+      "max": 0.8369184302625879
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.8972241799840838,
+      "median": 0.9145245545262874,
+      "min": 0.7158995955747184,
+      "max": 0.9631094329623742
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.6629276629538099,
+      "median": 0.6670806004466483,
+      "min": 0.5470138028248962,
+      "max": 0.8186897592408815
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.011123439256773405,
+      "median": 0.009769648970049657,
+      "min": 0.0037024356029505133,
+      "max": 0.025961491472413625
+    }
+  },
+  "metrics_fov_excluding_uncertain": {
+    "dice": {
+      "n": 28,
+      "mean": 0.7600735802357618,
+      "median": 0.7588586503500272,
+      "min": 0.6796327941819338,
+      "max": 0.8369184302625879
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.8972374666939705,
+      "median": 0.9145245545262874,
+      "min": 0.716255381883366,
+      "max": 0.9631094329623742
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.6629554050936785,
+      "median": 0.6670806004466483,
+      "min": 0.5470138028248962,
+      "max": 0.8186897592408815
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.011124312550389382,
+      "median": 0.00977007322294977,
+      "min": 0.0037044748379749582,
+      "max": 0.025896642778617876
+    }
+  }
+}

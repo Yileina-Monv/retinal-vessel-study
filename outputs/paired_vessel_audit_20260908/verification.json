@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pairs": 118,
+  "hash_verified_files": 472,
+  "old_skeleton_and_extra_metrics_reproduced": true,
+  "exact_count_identity": true,
+  "elapsed_seconds": 198.51701521873474,
+  "within_60min": true,
+  "no_training": true
+}

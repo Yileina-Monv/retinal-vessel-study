@@ -1,0 +1,16 @@
+{
+  "scope": "Exploratory paired error audit, existing 118 development images; no training/inference/test data",
+  "threshold": 0.5,
+  "tolerances": [
+    0,
+    1,
+    2
+  ],
+  "thin_radius_tau": 4.0,
+  "thin_source": "existing train-only calibration",
+  "primary": "paired GT skeleton recovery and regression at tolerance 1",
+  "decomposition": "delta total predicted skeleton = delta GT-mask-supported predicted skeleton + delta unsupported predicted skeleton; supported is not proof of correct topology",
+  "probability_probe": "pointwise probabilities on GT skeleton missed by both at zero tolerance; descriptive bins <0.1, 0.1-0.3, 0.3-0.5",
+  "limit_seconds": 3300,
+  "script_sha256": "92b09be4932df3e48a6b469024e0a4109cf3d31075930cdef5f68ad70fb8ab73"
+}

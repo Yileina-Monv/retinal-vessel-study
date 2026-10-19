@@ -1,0 +1,94 @@
+{
+  "import_date": "2026-10-19",
+  "source_result_date": "2026-10-11",
+  "scope": "Existing local development statistics; byte-preserving selected copies, no new training or inference",
+  "source_root_label": "local MAPLES development validation",
+  "contains_raw_images_labels_weights_or_probabilities": false,
+  "files": [
+    {
+      "path": "z0/summary.json",
+      "source_relative_to_local_evidence_root": "z0/summary.json",
+      "bytes": 2142,
+      "sha256": "0882ec04b4116d829e2fb1641315b1bb9d343042ba332a8d56f492c10a3cc27c"
+    },
+    {
+      "path": "z0/per_image_metrics.csv",
+      "source_relative_to_local_evidence_root": "z0/per_image_metrics.csv",
+      "bytes": 4262,
+      "sha256": "2d4e74ac6d82d8e09f63d404ceec0ce4b49a73a2d490ea50ee9fc7249ca98c65",
+      "rows": 28
+    },
+    {
+      "path": "z0/exploratory_regions.csv",
+      "source_relative_to_local_evidence_root": "z0/exploratory_regions.csv",
+      "bytes": 17050,
+      "sha256": "68e237d78fad6f6f561959bfc9c06318f5beeb25b36916d710008443e7879431",
+      "rows": 84
+    },
+    {
+      "path": "m1/summary.json",
+      "source_relative_to_local_evidence_root": "m1_validation_20261011/summary.json",
+      "bytes": 2155,
+      "sha256": "2498d7b4d365b9add0cf4ccbf2e133e5167d0657ebf3e3d803d05110d14ec211"
+    },
+    {
+      "path": "m1/per_image_metrics.csv",
+      "source_relative_to_local_evidence_root": "m1_validation_20261011/per_image_metrics.csv",
+      "bytes": 4267,
+      "sha256": "86986e7ebf748c4c34b7f99aa9adf43dc79280a1f105b762b2dc7b3aca562a77",
+      "rows": 28
+    },
+    {
+      "path": "m1/exploratory_regions.csv",
+      "source_relative_to_local_evidence_root": "m1_validation_20261011/exploratory_regions.csv",
+      "bytes": 17056,
+      "sha256": "6a66a87fb935eecd2e5cd53a52d0982b854e390668a7190038035408860285f5",
+      "rows": 84
+    },
+    {
+      "path": "m1/comparison.json",
+      "source_relative_to_local_evidence_root": "m1_validation_20261011/comparison.json",
+      "bytes": 13132,
+      "sha256": "02b68109b0390861f2db16f0a8e581bccdf25fc396b60f30bd001c8ac68be8a9"
+    },
+    {
+      "path": "step200/summary.json",
+      "source_relative_to_local_evidence_root": "step200_validation_20261011/summary.json",
+      "bytes": 2222,
+      "sha256": "7511721adbe423ab5db744a01b0b823f2ad329edfca975a754553e693a02d5d1"
+    },
+    {
+      "path": "step200/per_image_metrics.csv",
+      "source_relative_to_local_evidence_root": "step200_validation_20261011/per_image_metrics.csv",
+      "bytes": 4262,
+      "sha256": "6f00f48207bf5469ddfbd75bd32a9df605caa1b2cdf44d548b678fc2093dc8f3",
+      "rows": 28
+    },
+    {
+      "path": "step200/exploratory_regions.csv",
+      "source_relative_to_local_evidence_root": "step200_validation_20261011/exploratory_regions.csv",
+      "bytes": 17144,
+      "sha256": "a06435f8126f608136868f1ffb6b786b58a0b3e49fab45004eaeb0b7745c20c7",
+      "rows": 84
+    },
+    {
+      "path": "step200/comparison.json",
+      "source_relative_to_local_evidence_root": "step200_validation_20261011/comparison.json",
+      "bytes": 13274,
+      "sha256": "efce89ae9969f2666092b9909c6025f70b214a1643f96094fcb624f539b97f90"
+    },
+    {
+      "path": "matched_fp/comparison.json",
+      "source_relative_to_local_evidence_root": "matched_fp_validation_20261011/comparison.json",
+      "bytes": 7758,
+      "sha256": "53b4f4a2d18d71b850484338e3da6a4f6cc926dcbd6e64c68a4ab067f64c412b"
+    },
+    {
+      "path": "matched_fp/per_image.csv",
+      "source_relative_to_local_evidence_root": "matched_fp_validation_20261011/per_image.csv",
+      "bytes": 17271,
+      "sha256": "b2b47fd6d37cd0cd626cd61b2d5509f9c8ed40170b710607909c4f2919210f7d",
+      "rows": 84
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "stage": "step200_smoke_checkpoint_development_evaluation",
+  "formal_protocol_frozen": false,
+  "planned_n": 28,
+  "completed_n": 28,
+  "missing_sample_ids": [],
+  "status": "complete",
+  "failures": [],
+  "completed_this_window": 28,
+  "window_elapsed_seconds": 36.63051039999118,
+  "total_recorded_inference_seconds": 15.465606500103604,
+  "peak_allocated_bytes": 249265664,
+  "peak_reserved_bytes": 314572800,
+  "checkpoint_sha256": "1708aeb8b7fea1f893dd2495e09902c3ee811b4b16a488adfe6d6f6920d97cf6",
+  "threshold": 0.5,
+  "official_test_used": false,
+  "training_updates": 0,
+  "checkpoint_training_updates": 200,
+  "checkpoint_train_samples": 3,
+  "metrics_fov": {
+    "dice": {
+      "n": 28,
+      "mean": 0.8027896911071716,
+      "median": 0.8075223844457637,
+      "min": 0.641639720334538,
+      "max": 0.8595915640340961
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.7957096109923806,
+      "median": 0.7957456367529838,
+      "min": 0.518974358974359,
+      "max": 0.9196548161811433
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.8159999759575953,
+      "median": 0.8138143854203591,
+      "min": 0.7368868593024172,
+      "max": 0.8880234344986554
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.031463285681562515,
+      "median": 0.02912793908772016,
+      "min": 0.014889092746111799,
+      "max": 0.07878549088598935
+    }
+  },
+  "metrics_fov_excluding_uncertain": {
+    "dice": {
+      "n": 28,
+      "mean": 0.8027966211352446,
+      "median": 0.8075415572053553,
+      "min": 0.6415451575289486,
+      "max": 0.8595915640340961
+    },
+    "precision": {
+      "n": 28,
+      "mean": 0.795711792692532,
+      "median": 0.7957456367529838,
+      "min": 0.5187930615979237,
+      "max": 0.9196548161811433
+    },
+    "recall": {
+      "n": 28,
+      "mean": 0.8160176177210777,
+      "median": 0.8138143854203591,
+      "min": 0.7368868593024172,
+      "max": 0.8880234344986554
+    },
+    "fp_per_valid_pixel": {
+      "n": 28,
+      "mean": 0.031470708986255674,
+      "median": 0.02912967289997817,
+      "min": 0.014890747430479344,
+      "max": 0.07881068402793175
+    }
+  }
+}
