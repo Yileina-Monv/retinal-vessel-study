@@ -1,0 +1,122 @@
+{
+  "source_sha": "28a281fa2be1167533bcd0a54eca544a6e1f565d",
+  "scope": "public-table arithmetic only; no image, probability, execution binding or clinical validation",
+  "numpy_version": "2.5.1",
+  "row_counts": {
+    "config": 17,
+    "loss": 190,
+    "endpoint": 3836,
+    "paired": 2131,
+    "summary": 87
+  },
+  "fresh_trajectories": 15,
+  "continuation_segments": 2,
+  "successful_updates_recorded": 34000,
+  "unique_loss_windows": 170,
+  "repeated_prefix_windows": 20,
+  "endpoint_valid": 3103,
+  "endpoint_na": 733,
+  "condition_image_groups": 476,
+  "endpoint_paired_rows_checked": 1619,
+  "endpoint_seed_cells_checked": 3173,
+  "complete_endpoint_paired_summary_comparisons": 63,
+  "paired_summary_only_comparisons": 24,
+  "summary_means_checked": 87,
+  "numeric_seed_sd_checked": 40,
+  "ci_numerical_reconstructions_checked": 87,
+  "ci_max_abs_error": 4.0657581468206416e-20,
+  "ci_rule_status": "numerical reconstruction only; historical bootstrap source unavailable",
+  "formal_core_ratio_units": {
+    "near_thin_recall_d1": {
+      "estimate": -0.006001371742112483,
+      "ci95_low": -0.015260631001371741,
+      "ci95_high": 0.0
+    },
+    "dice": {
+      "estimate": 7.67981374212354e-05,
+      "ci95_low": -0.00016667155011692883,
+      "ci95_high": 0.0003770038279710215
+    },
+    "precision": {
+      "estimate": 0.0006048458001502536,
+      "ci95_low": 0.00015555662850406205,
+      "ci95_high": 0.0011509166346632103
+    },
+    "recall": {
+      "estimate": -0.00046806437754035295,
+      "ci95_low": -0.0007993408571309392,
+      "ci95_high": -0.00022002926643580078
+    },
+    "fp_density": {
+      "estimate": -0.00012149390255466256,
+      "ci95_low": -0.00023515982634780643,
+      "ci95_high": -3.57663665181126e-05
+    },
+    "near_pixel_recall": {
+      "estimate": -0.002658181967254432,
+      "ci95_low": -0.005162242889121592,
+      "ci95_high": -0.0010981448139449283
+    },
+    "far_recall": {
+      "estimate": -0.0004053731211476024,
+      "ci95_low": -0.0007101893585383796,
+      "ci95_high": -0.00017735759479588768
+    }
+  },
+  "formal_main_seed_deltas_pp": {
+    "2026": -1.388888888888884,
+    "2027": 0.0,
+    "2028": -0.4115226337448541
+  },
+  "main_hits_across_three_seeds": {
+    "T0": 106,
+    "TW": 104,
+    "w_v2_b1": 106
+  },
+  "main_reference_counts": {
+    "20051117_37130_0400_PP": 13,
+    "20051205_35276_0400_PP": 8,
+    "20060411_61214_0200_PP": 3,
+    "20060411_61478_0200_PP": 27,
+    "20060412_58889_0200_PP": 6,
+    "20060412_60913_0200_PP": 1,
+    "20060522_45248_0100_PP": 1,
+    "20060522_45583_0100_PP": 14,
+    "20060530_54390_0100_PP": 4
+  },
+  "human_visual_review_count_in_source": 0,
+  "plan_b_joint_matrix_independently_verified": false,
+  "test_access_statement": "source declares false; underlying access history not independently audited",
+  "sources": [
+    {
+      "path": "outputs/maples_training_results_20261019/training_config_summary.csv",
+      "sha256": "6f3a528c89455a363fe85aab038609aec5ec22e279d721d4164e0c8b55b6ae25",
+      "git_blob_sha1": "c393da4e05f8bee351cb0a809b019fc73b4fee77"
+    },
+    {
+      "path": "outputs/maples_training_results_20261019/loss_curve_200_update_windows.csv",
+      "sha256": "c6d36e10819789fbc06a26c29ce0c1c22a45e9055311669dde0627ec89963915",
+      "git_blob_sha1": "8079bcd08edf0090cb4c0fd4bffedcc49740d38e"
+    },
+    {
+      "path": "outputs/maples_training_results_20261019/fixed_endpoint_per_image_metrics.csv",
+      "sha256": "e5de2b3b55f1712b5dbaee92342946f924d18acbc39438596487e9b6096e63c5",
+      "git_blob_sha1": "ff9bc3db4f1680d7c2703ab66ff2378e706e2c2c"
+    },
+    {
+      "path": "outputs/maples_training_results_20261019/paired_image_deltas.csv",
+      "sha256": "64a12d7095e53115afd63f7029935627bd0fdf9c68bb758ac854650ba5428c37",
+      "git_blob_sha1": "0a9702474e58b959fd534ef2eb7711412e3c3e6e"
+    },
+    {
+      "path": "outputs/maples_training_results_20261019/paired_comparison_summary.csv",
+      "sha256": "6732593d860e196f66bdbc47ad0ec65c32d9bde3b19aeb0cf6b5db56be81140d",
+      "git_blob_sha1": "a7fd8f0357b361933e3398bce88e81972de3da77"
+    },
+    {
+      "path": "outputs/maples_training_results_20261019/source_audit.json",
+      "sha256": "da4f10ebbc9fe0b31bfc0d91be20b347ed6d8426721632d371689dde45320915",
+      "git_blob_sha1": "36be8a84aa781c6bcf810423cc59989396d53508"
+    }
+  ]
+}
