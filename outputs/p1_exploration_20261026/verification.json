@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "methods": 8,
+  "metrics": 31,
+  "per_image_rows": 6944,
+  "paired_rows": 6076,
+  "comparisons": 217,
+  "NA_rows": 384,
+  "bootstrap_replicates": 1000,
+  "max_statistic_error": 0.0,
+  "source_files": 35,
+  "new_inference": false,
+  "Test_accessed": false
+}
