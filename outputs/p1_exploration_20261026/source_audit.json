@@ -1,0 +1,233 @@
+{
+  "exported_at": "2026-10-26T21:54:17.608006+08:00",
+  "scope": "Completed original U-Net explorations only; fixed seed2026/Dev28/endpoint2000/.5. Earlier formal three-seed experiments remain in the 20261019 export.",
+  "sources": [
+    {
+      "id": "B1B2_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/endpoint_analysis.json",
+      "sha256": "fb83540bd82dd828584dffcc2356aaf8f1bbc1d238f95eeff7829a12eea4b9cb",
+      "bytes": 21306254
+    },
+    {
+      "id": "C_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/soft_cldice_scientific_2000_v1_20261023/runs/seed_2026/C/analysis/endpoint_2000.json",
+      "sha256": "bcd4d00092c3ef35a73dcaad0396680b8b2dbd2fbfc675d2f6d5a2eea5c6c676",
+      "bytes": 173511710
+    },
+    {
+      "id": "C_protocol",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/soft_cldice_scientific_2000_v1_20261023/protocol.json",
+      "sha256": "c59f5d74cc724ed14929cf9cec568bb270cf840bb376bd3c35ba9bb674f5d890",
+      "bytes": 5454
+    },
+    {
+      "id": "C_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/soft_cldice_scientific_2000_v1_20261023/completion.json",
+      "sha256": "baf51e8e095b34bca9a7f8865701bde273aca37390007997b96df7df36a56cfc",
+      "bytes": 2018
+    },
+    {
+      "id": "C_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/soft_cldice_scientific_2000_v1_20261023/science_budget.json",
+      "sha256": "68fbc5a3fea9bf3c22df7f148c1977f54bf2a72bd24e8423d6fac53060bca510",
+      "bytes": 913
+    },
+    {
+      "id": "D_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/endpoint_2000.json",
+      "sha256": "dd1aad93ecfab9b20b487a1e22eb58dcd5f05f52d62ddf3aa31195ad662d1561",
+      "bytes": 173500235
+    },
+    {
+      "id": "D_protocol",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/protocol.json",
+      "sha256": "e1371aac154442eb5d5e2765fed3dac7c4ad04b18967c2a0c279cf0ad695577c",
+      "bytes": 8045
+    },
+    {
+      "id": "D_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/completion.json",
+      "sha256": "c81dcb17739c0638ec060c5d49eae996723aa75183b1f14238184fd8eb306009",
+      "bytes": 2014
+    },
+    {
+      "id": "D_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/science_budget.json",
+      "sha256": "9647eb5a6d6991e67046cd1f1c6df704d4e258f9c7cc2d0a693db6bc71c4de04",
+      "bytes": 912
+    },
+    {
+      "id": "UFL_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/ufl_asymmetric_scientific_2000_v1_20261025/runs/seed_2026/UFL/analysis/endpoint_2000.json",
+      "sha256": "c109ac5a1c329698ff0f13fb8812a9e822774b2940cc416761e1a5f2884f6493",
+      "bytes": 132928071
+    },
+    {
+      "id": "UFL_protocol",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/ufl_asymmetric_scientific_2000_v1_20261025/protocol.json",
+      "sha256": "f14b3f612552be4134f02e03db31664a39c03cfaf8cb8477fa41221ceee9d998",
+      "bytes": 8268
+    },
+    {
+      "id": "UFL_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/ufl_asymmetric_scientific_2000_v1_20261025/completion.json",
+      "sha256": "77c7a1bc9bffd079c781a5abed3ce6a30242ecf61a8f3159f1fe47ec44aa8eca",
+      "bytes": 2039
+    },
+    {
+      "id": "UFL_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/ufl_asymmetric_scientific_2000_v1_20261025/science_budget.json",
+      "sha256": "6fe314376ddfe0f5527050aa066028919ab446842e78f60a65952fd96c9e8abd",
+      "bytes": 917
+    },
+    {
+      "id": "SPATIAL_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/spatial_stratified_scientific_2000_v1_20261025/runs/seed_2026/SPATIAL/analysis/endpoint_2000.json",
+      "sha256": "15de24a9668dd40f843fdae502bf337c02008952f62e654d358559296e53434e",
+      "bytes": 133184252
+    },
+    {
+      "id": "SPATIAL_protocol",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/spatial_stratified_scientific_2000_v1_20261025/protocol.json",
+      "sha256": "7c3680884ef79426e62f53272b88727805cd1a8ae36a8a79ae28a0fa1c3f75e7",
+      "bytes": 9338
+    },
+    {
+      "id": "SPATIAL_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/spatial_stratified_scientific_2000_v1_20261025/completion.json",
+      "sha256": "f58aff29e072099bc36cb1a50b7c551b6ac56a0dd672e5b0fcf6536e7cdfab94",
+      "bytes": 2073
+    },
+    {
+      "id": "SPATIAL_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/spatial_stratified_scientific_2000_v1_20261025/science_budget.json",
+      "sha256": "13ea5a2bddac48d2203b691547d944e355a2c54020c8870976ff255544dabdab",
+      "bytes": 925
+    },
+    {
+      "id": "SCSE_endpoint",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scse_single_module_2000_v1_20261026/runs/seed_2026/SCSE/analysis/endpoint_2000.json",
+      "sha256": "da2d0b1949ca3ac8b401fb12d787a990e4e9c6e0f3e0544514f296a476f1550a",
+      "bytes": 8761580
+    },
+    {
+      "id": "SCSE_protocol",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scse_single_module_2000_v1_20261026/protocol.json",
+      "sha256": "8d0501f699d685b78a38065320c51711460a0dedaff62adec568081eb49cc613",
+      "bytes": 10802
+    },
+    {
+      "id": "SCSE_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scse_single_module_2000_v1_20261026/completion.json",
+      "sha256": "4464c46764807dc7ea3cc3097b72849ac22ae2ddbb4596f73149620ecbe8f363",
+      "bytes": 1633
+    },
+    {
+      "id": "SCSE_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scse_single_module_2000_v1_20261026/science_budget.json",
+      "sha256": "b74d824ff6483f9de0715d12169d788cde1d0e7f2bc6796b48523ca7983731bf",
+      "bytes": 919
+    },
+    {
+      "id": "B1B2_config_B1",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/configs/B1.json",
+      "sha256": "e5106dc5bfd816fa71de6f750ff3ef8f6efe9b5c5dd02ea30650aa1dfafd30ca",
+      "bytes": 5082
+    },
+    {
+      "id": "B1B2_config_B2",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/configs/B2.json",
+      "sha256": "bf9a34273ce108d8333f732b7146092dc1be513c6e18bd2533a11b2ba147debd",
+      "bytes": 5082
+    },
+    {
+      "id": "B1B2_completion",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/completion.json",
+      "sha256": "a3057fc17dad1a8c89ea4180dabd7449e59bfb6357cb6605318a661decbb31da",
+      "bytes": 10615
+    },
+    {
+      "id": "B1B2_science_budget",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/science_budget.json",
+      "sha256": "0de94f418a9db6e7247d987876f4dbb3c20990d72be7a2d49230ef78ba91241b",
+      "bytes": 1829
+    },
+    {
+      "id": "diagnostic_fp_sets",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/fp_error_analysis_v1/summary.json",
+      "sha256": "5fd73053319789671994cb0ba9d9ecd5fc58477c6b843f579ec1baf5ce3693da",
+      "bytes": 96691
+    },
+    {
+      "id": "diagnostic_fp_geometry",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/literature_mechanism_review_20261023/focused_geometry_summary_v1.json",
+      "sha256": "fc9d4480cc93b11330030c842f6838483125cd7acad764f36f873fd5cdbadf50",
+      "bytes": 39710
+    },
+    {
+      "id": "diagnostic_fp_support",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/literature_mechanism_review_20261023/envelope_support_summary_v1.json",
+      "sha256": "ac3caf4076822bb67d26196ca2f21c755c3b75d44a38c49ea6b6780b1f7bbe0e",
+      "bytes": 30454
+    },
+    {
+      "id": "diagnostic_cldice",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/literature_mechanism_review_20261023/cldice_summary.json",
+      "sha256": "612747ab12278df340addc2fb17049b06216f4b4c5e8d62c8a063a2efecc2d2b",
+      "bytes": 6272
+    },
+    {
+      "id": "diagnostic_probability",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/probability_fpfn_diagnosis_v1/diagnostic_summary.json",
+      "sha256": "52358b0cd78d6c00ea9941195e33c7d5e3623daf6306e519b16f22f5d5fce37e",
+      "bytes": 21697
+    },
+    {
+      "id": "diagnostic_operating_advantage",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/probability_fpfn_diagnosis_v1/operating_advantage_summary.json",
+      "sha256": "737d9c94dd5d9842c4b269544ba32412d243f1a1fec0ec6c97c6fdb8f63ca2c8",
+      "bytes": 590
+    },
+    {
+      "id": "diagnostic_coverage",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/train_crop_exposure_v1/summary.json",
+      "sha256": "6b4a469268aeab0b709288f418c76f0511539af1ffb949e77d1c21611a6093ab",
+      "bytes": 23932
+    },
+    {
+      "id": "diagnostic_threshold_curves_full_source",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/probability_fpfn_diagnosis_v1/threshold_curves_macro.csv",
+      "sha256": "bcece1194e0667040f5f51129fa979d3e5605e486ed4dbf4c0e6d06c4e000ec9",
+      "bytes": 2875612
+    },
+    {
+      "id": "branch_definition",
+      "project_relative_source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/report.md",
+      "sha256": "71cf655a5f5ea8f66a455e7209ad6eb8e5facb5cb6ef769126341833afd4f716",
+      "bytes": 6848
+    },
+    {
+      "id": "probability_report",
+      "project_relative_source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/probability_fpfn_diagnosis_v1/report.md",
+      "sha256": "0e82ee0ad83cf12caafee480daef69429dbaebd0385deebb9561b11608c9ade3",
+      "bytes": 12474
+    }
+  ],
+  "model_metric_sources": {
+    "A0": "D_endpoint (existing enrichment; original B1B2 means also checked)",
+    "B1": "D_endpoint (existing enrichment; original B1B2 means also checked)",
+    "B2": "D_endpoint (existing enrichment; original B1B2 means also checked)",
+    "C": "C_endpoint",
+    "D": "D_endpoint",
+    "UFL": "UFL_endpoint",
+    "SPATIAL": "SPATIAL_endpoint",
+    "SCSE": "SCSE_endpoint"
+  },
+  "B1_B2_hard_clDice_source": "diagnostic_cldice; supplementary diagnostic, not retroactive primary metric",
+  "source_paths_are_identifiers_not_public_asset_links": true,
+  "no_raw_image_GT_model_probability_payload": true,
+  "new_training_or_inference": false,
+  "official_Test_access_in_this_export": false,
+  "source_Test_sealed_claim": "Original run records report Test excluded; this export does not audit all historical dataset access.",
+  "note": "SHA values identify private source artifacts; public reshaping has its own export-file hashes. Training implementation and complete release bindings are not published."
+}

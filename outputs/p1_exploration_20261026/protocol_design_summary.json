@@ -1,0 +1,344 @@
+{
+  "note": "Curated descriptions; not replacements for original frozen protocols or runnable release files. B1/B2 primary was path recall; C joint Dice/path recall; D/UFL/SPATIAL/SCSE Dice primary.",
+  "protocols": {
+    "C": {
+      "protocol_id": "C_SOFT_CLDICE_SCIENTIFIC_2000_V1",
+      "version": 1,
+      "date": "2026-10-23",
+      "experiment": {
+        "method": "C",
+        "seed": 2026,
+        "successful_update_target": 2000,
+        "charged_update_cap": 2000,
+        "Train_images": 110,
+        "Dev_images": 28,
+        "A0": "reuse original T0 seed2026 endpoint2000 probabilities only",
+        "B1_B2": "read-only secondary references",
+        "initialization": "original M0 model only; fresh original optimizer/scaler/RNG; never engineering/T0/B1/B2 weights",
+        "eta": 0.15115714003619224,
+        "k": 26,
+        "batch_size": 4,
+        "patch": 512,
+        "threshold": 0.5,
+        "checkpoint_every": 200,
+        "evaluation_steps": [
+          200,
+          400,
+          600,
+          800,
+          1000,
+          1200,
+          1400,
+          1600,
+          1800,
+          2000
+        ]
+      },
+      "primary": {
+        "comparison": "C-A0",
+        "joint_required_metrics": [
+          "dice",
+          "candidate_path_d1_macro"
+        ],
+        "estimate": "paired image-macro difference at sole endpoint2000 threshold0.5",
+        "positive_mean_signal": "both means strictly positive plus all prespecified mean guards nonadverse",
+        "conditional_interval_signal": "both primary95% lower bounds strictly positive; report guard intervals separately",
+        "CI_crossing_zero": "evidence insufficient, not success",
+        "not_independent_validation": true
+      },
+      "guards": {
+        "mean_zero_degradation": {
+          "precision": "delta>=0",
+          "fp_density": "delta<=0",
+          "far_recall": "delta>=0",
+          "recall": "delta>=0",
+          "coarse_vessel_d0": "delta>=0",
+          "hard_cldice": "delta>=0"
+        },
+        "original_strict_intervals": {
+          "precision": "lower>=0",
+          "far_recall": "lower>=0",
+          "fp_density": "upper<=0"
+        },
+        "per_image_nonadverse_required": false
+      },
+      "statistics": {
+        "seed": 20261016,
+        "generator": "PCG64",
+        "replicates": 1000,
+        "unit": "whole image paired",
+        "reset_for_each_distinct_n": true,
+        "share_indices_for_same_n": true,
+        "CI": "95% numpy.quantile method=linear",
+        "seed_SD": null,
+        "p_value_search": false
+      }
+    },
+    "D": {
+      "protocol_id": "D_FOCAL_DICE_SCIENTIFIC_2000_V1",
+      "version": 1,
+      "date": "2026-10-24",
+      "experiment": {
+        "method": "D",
+        "seed": 2026,
+        "successful_update_target": 2000,
+        "charged_update_cap": 2000,
+        "Train_images": 110,
+        "Dev_images": 28,
+        "A0": "reuse original T0 seed2026 endpoint2000 probabilities only",
+        "B1_B2": "read-only secondary references",
+        "initialization": "original M0 only; fresh original optimizer/scaler/RNG, never engineering/T0/B1/B2/C weights",
+        "gamma": 1,
+        "class_weights": null,
+        "loss": "original Dice plus symmetric Focal BCE gamma1 replacing BCE, crop FOV normalization, fixed batch mean",
+        "batch_size": 4,
+        "patch": 512,
+        "threshold": 0.5,
+        "checkpoint_every": 200,
+        "evaluation_steps": [
+          200,
+          400,
+          600,
+          800,
+          1000,
+          1200,
+          1400,
+          1600,
+          1800,
+          2000
+        ]
+      },
+      "primary": {
+        "comparison": "D-A0",
+        "required_metrics": [
+          "dice"
+        ],
+        "estimate": "fixed Dev28 paired image macro, endpoint2000 threshold0.5",
+        "positive_signal": "mean difference>0 and paired bootstrap95% lower>0",
+        "CI_crossing_zero": "evidence insufficient, not success",
+        "not_independent_validation": true
+      },
+      "guards": {
+        "mean_zero_degradation": {
+          "precision": "delta>=0",
+          "fp_density": "delta<=0",
+          "far_recall": "delta>=0",
+          "recall": "delta>=0",
+          "coarse_vessel_d0": "delta>=0",
+          "hard_cldice": "delta>=0"
+        },
+        "original_strict_intervals": {
+          "precision": "lower>=0",
+          "far_recall": "lower>=0",
+          "fp_density": "upper<=0"
+        },
+        "per_image_nonadverse_required": false
+      },
+      "statistics": {
+        "seed": 20261016,
+        "generator": "PCG64",
+        "replicates": 1000,
+        "unit": "whole image paired",
+        "reset_for_each_distinct_n": true,
+        "share_indices_for_same_n": true,
+        "CI": "95% numpy.quantile method=linear",
+        "seed_SD": null,
+        "p_value_search": false
+      }
+    },
+    "UFL": {
+      "protocol_id": "UFL_ASYMMETRIC_SCIENTIFIC_2000_V1",
+      "version": 1,
+      "date": "2026-10-25",
+      "experiment": {
+        "method": "UFL",
+        "seed": 2026,
+        "successful_update_target": 2000,
+        "charged_update_cap": 2000,
+        "Train_images": 110,
+        "Dev_images": 28,
+        "A0": "reuse original T0 seed2026 endpoint2000 probabilities only",
+        "B1_B2": "read-only secondary references",
+        "initialization": "original M0 only; fresh original optimizer/scaler/RNG, never engineering/T0/B1/B2/C weights",
+        "gamma": 0.5,
+        "class_weights": {
+          "background": 0.4,
+          "foreground": 0.6
+        },
+        "loss": "full author asymmetric UFL replacing BCE+Dice, existing crop FOV/fixed batch reduction",
+        "batch_size": 4,
+        "patch": 512,
+        "threshold": 0.5,
+        "checkpoint_every": 200,
+        "evaluation_steps": [
+          200,
+          400,
+          600,
+          800,
+          1000,
+          1200,
+          1400,
+          1600,
+          1800,
+          2000
+        ],
+        "delta": 0.6,
+        "lambda_code": 0.5,
+        "epsilon": 1e-07,
+        "D": "existing D endpoint2000 read-only supplemental reference"
+      },
+      "primary": {
+        "comparison": "UFL-A0",
+        "required_metrics": [
+          "dice"
+        ],
+        "estimate": "fixed Dev28 paired image macro, endpoint2000 threshold0.5",
+        "positive_signal": "mean difference>0 and paired bootstrap95% lower>0",
+        "CI_crossing_zero": "evidence insufficient, not success",
+        "not_independent_validation": true
+      },
+      "guards": {
+        "mean_zero_degradation": {
+          "precision": "delta>=0",
+          "fp_density": "delta<=0",
+          "far_recall": "delta>=0",
+          "recall": "delta>=0",
+          "coarse_vessel_d0": "delta>=0",
+          "hard_cldice": "delta>=0"
+        },
+        "original_strict_intervals": {
+          "precision": "lower>=0",
+          "far_recall": "lower>=0",
+          "fp_density": "upper<=0"
+        },
+        "per_image_nonadverse_required": false
+      },
+      "statistics": {
+        "seed": 20261016,
+        "generator": "PCG64",
+        "replicates": 1000,
+        "unit": "whole image paired",
+        "reset_for_each_distinct_n": true,
+        "share_indices_for_same_n": true,
+        "CI": "95% numpy.quantile method=linear",
+        "seed_SD": null,
+        "p_value_search": false
+      }
+    },
+    "SPATIAL": {
+      "protocol_id": "SPATIAL_STRATIFIED_SCIENTIFIC_2000_V1",
+      "version": 1,
+      "date": "2026-10-25",
+      "experiment": {
+        "method": "SPATIAL",
+        "seed": 2026,
+        "successful_update_target": 2000,
+        "charged_update_cap": 2000,
+        "Train_images": 110,
+        "Dev_images": 28,
+        "A0": "reuse original T0 seed2026 endpoint2000 probabilities only",
+        "B1_B2": "read-only secondary references",
+        "initialization": "original M0 only; fresh original optimizer/scaler/RNG, never engineering/T0/B1/B2/C weights",
+        "loss": "original BCE+Dice",
+        "batch_size": 4,
+        "patch": 512,
+        "threshold": 0.5,
+        "checkpoint_every": 200,
+        "evaluation_steps": [
+          200,
+          400,
+          600,
+          800,
+          1000,
+          1200,
+          1400,
+          1600,
+          1800,
+          2000
+        ],
+        "sampling": "fixed_6x12_origins_v1",
+        "crop_origin_only_change": true,
+        "augmentation": "same original per-draw flips and CCW90; image visits and2000-step budget paired; new pixel input hashes expected"
+      },
+      "primary": {
+        "comparison": "SPATIAL-A0",
+        "required_metrics": [
+          "dice"
+        ],
+        "estimate": "fixed Dev28 paired image macro, endpoint2000 threshold0.5",
+        "positive_signal": "mean difference>0 and paired bootstrap95% lower>0",
+        "CI_crossing_zero": "evidence insufficient, not success",
+        "not_independent_validation": true
+      },
+      "guards": {
+        "mean_zero_degradation": {
+          "precision": "delta>=0",
+          "fp_density": "delta<=0",
+          "far_recall": "delta>=0",
+          "recall": "delta>=0",
+          "coarse_vessel_d0": "delta>=0",
+          "hard_cldice": "delta>=0"
+        },
+        "original_strict_intervals": {
+          "precision": "lower>=0",
+          "far_recall": "lower>=0",
+          "fp_density": "upper<=0"
+        },
+        "per_image_nonadverse_required": false
+      },
+      "statistics": {
+        "seed": 20261016,
+        "generator": "PCG64",
+        "replicates": 1000,
+        "unit": "whole image paired",
+        "reset_for_each_distinct_n": true,
+        "share_indices_for_same_n": true,
+        "CI": "95% numpy.quantile method=linear",
+        "seed_SD": null,
+        "p_value_search": false
+      }
+    },
+    "SCSE": {
+      "phase": "SCSE_SINGLE_MODULE_2000_V1",
+      "seed": 2026,
+      "updates": 2000,
+      "module": {
+        "position": "last decoder32 before original head",
+        "fusion": "centered equivalent paper sum",
+        "reduction": 2,
+        "new_parameters": 1105,
+        "initialization": "zero gate output heads; isolated CPU default_generator20261026"
+      },
+      "science": {
+        "updates": 2000,
+        "train_forward_cap": 2000,
+        "gradient_cap": 2000,
+        "evaluation_steps": [
+          200,
+          400,
+          600,
+          800,
+          1000,
+          1200,
+          1400,
+          1600,
+          1800,
+          2000
+        ],
+        "threshold": 0.5,
+        "no_normal_progress_wall_cap": true
+      }
+    }
+  },
+  "human_review": {
+    "Plan_B": {
+      "completed": 0,
+      "total": 105
+    },
+    "branch_atlas": {
+      "completed": 0,
+      "total": 26
+    },
+    "medical_anatomy": "NOT_ASSESSED"
+  }
+}

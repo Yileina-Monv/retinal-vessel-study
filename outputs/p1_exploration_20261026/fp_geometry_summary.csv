@@ -1,0 +1,3 @@
+method,new_FP_pixels,removed_FP_pixels,net_FP_pixels,within_1_native_pixel_GT,within_1_native_pixel_A0,only_adjacent_A0_TP,only_adjacent_A0_FP,adjacent_both,adjacent_neither,top3_image_area_share,components,median_component_area,component_q90,max_component_area
+B1,57856,7257,50599,11769,43935,5171,33863,4901,13921,0.16525511615044247,27437,1.0,4.0,80.0
+B2,52495,7450,45045,10292,40294,4476,31483,4335,12201,0.17540718163634633,25322,1.0,4.0,75.0

@@ -1,0 +1,97 @@
+{
+  "id": "P1_PUBLIC_EXPLORATION_EXPORT_20261026",
+  "files": [
+    {
+      "path": "docs/research/p1_exploration_summary_20261026.md",
+      "bytes": 15925,
+      "sha256": "37f3e3701bb874c17b5f9a3a7cc7f212053db167e72f33f0ce8967ef78e82aa6"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/absolute_metric_summary.csv",
+      "bytes": 14066,
+      "sha256": "fd025dcea45ea79883062691287f34a6290696ec7212962d00ddff87199e3e52"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/bootstrap_indices_by_n.json",
+      "bytes": 156971,
+      "sha256": "409241259fc6d9fc5fa0490710ac5f0bbf1fa29b4f0811b60bb28042096b67d1"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/diagnostic_summary.json",
+      "bytes": 50689,
+      "sha256": "e4ac42f388cfa8da00724e31248b1a28ed8a3530b1e95df5393275122f8090c5"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/dice_paired_intervals.svg",
+      "bytes": 2298,
+      "sha256": "695f1efc02acf9009d345d60b454a5668440d20a56ee0c4647633cfbe920e5be"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/dice_threshold_diagnostic.svg",
+      "bytes": 6542,
+      "sha256": "358fd3ba64263bb8d03697c82bef589158cc2e4ff12bb1fcd227ef8c8f4cd0e5"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/fixed_endpoint_per_image_metrics.csv",
+      "bytes": 1153600,
+      "sha256": "b85a7e85ccf1156fdbe791dc54d4a2512bcb275700ac805260b5f2f04395870a"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/fp_geometry_summary.csv",
+      "bytes": 448,
+      "sha256": "531acecd40be733a0b332f7c263628d40722cf1f49ead9246a05d967b0914cb1"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/fp_per_image_diagnostics.json",
+      "bytes": 14863,
+      "sha256": "5a0dd154dc0ee887eb80d80b75d4498cb9b1be3039f2ea7834f980ccd72fb635"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/matched_operating_points.csv",
+      "bytes": 2510,
+      "sha256": "527419a1cc69568b7aa924f85985c3f8ef17cf039c078d9e6c94920b81860e1b"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/paired_comparison_summary.csv",
+      "bytes": 30335,
+      "sha256": "caf1c990cecabdfeff95eed6808a9a65094104eb78f2d1fc32f1d62ef87931bb"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/paired_image_deltas.csv",
+      "bytes": 488398,
+      "sha256": "f4e664f9598c853b1dfa735cddff23115f0ab7ec06cb645c7e812587d057642a"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/protocol_design_summary.json",
+      "bytes": 10706,
+      "sha256": "165f3dbfb858fac7a058ebfbc3fdb71b8ff66e9b7b4c00a5d114d7753d5f3497"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/README.md",
+      "bytes": 2577,
+      "sha256": "d090c920dc4242ae44eb1e6bb9c544b99b18424b4f0c6c8e0bef626513ed9b60"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/source_audit.json",
+      "bytes": 13016,
+      "sha256": "27f040c957186d13e63cb1ae06f9c6bf37f8a093aa824e135a687668e9dc68d5"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/threshold_curve_sample.csv",
+      "bytes": 31784,
+      "sha256": "da99eebec21bf8779e04e55200d3ecbbc2c2bc2b5822f8a080d0371aaa808a91"
+    },
+    {
+      "path": "outputs/p1_exploration_20261026/training_config_summary.csv",
+      "bytes": 2151,
+      "sha256": "9a9a0ad56e37097fa4cce0121a973c449f73a49bbbdb2ce25912a4eb7293d6ee"
+    },
+    {
+      "path": "scripts/verify_p1_exploration_export.py",
+      "bytes": 6879,
+      "sha256": "5f7a1fcab15d1be28a8a4a9779c565e91e701ada92ef2bc4af22e9fe6ccba79a"
+    }
+  ],
+  "source_hashes_are_not_export_hashes": true,
+  "historical_export_files_modified": false
+}
