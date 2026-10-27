@@ -1,0 +1,79 @@
+{
+  "task_issue": 9,
+  "schema": 1,
+  "excluded_self_and_generated_verification": true,
+  "files": {
+    "docs/research/nnunet_replication_review_20261027.md": {
+      "sha256": "fe104d10a16a1d5826b30d293e580730aa3b6e27d53c001a02141205c05c61f4",
+      "bytes": 8734
+    },
+    "outputs/nnunet_replication_20261027/absolute_metric_summary.csv": {
+      "sha256": "bf768b35c1d6bc6b791a2e66ed870ee3f648e103745281c09d006f9ed0a307ed",
+      "bytes": 13812
+    },
+    "outputs/nnunet_replication_20261027/bootstrap_indices_by_n.json": {
+      "sha256": "0b6178cdc3b210244187895972299a4e8d8d899f5f04a44fb4e74216c08eb2ca",
+      "bytes": 556971
+    },
+    "outputs/nnunet_replication_20261027/dice_paired_intervals.svg": {
+      "sha256": "bfc224353d979c80ec95c61cffc4bfb0f0146cac1b16001b258670317f383c79",
+      "bytes": 12634
+    },
+    "outputs/nnunet_replication_20261027/fixed_endpoint_per_image_metrics.csv": {
+      "sha256": "d5e55dbe87b276a0313929c48d6cfe5e6310e91af637afe8ab32f450515daf37",
+      "bytes": 655772
+    },
+    "outputs/nnunet_replication_20261027/paired_comparison_summary.csv": {
+      "sha256": "281e26d0e92c2e7c2090a353a07e956624bce11c3c32bf5b51412e2768df5fbf",
+      "bytes": 16366
+    },
+    "outputs/nnunet_replication_20261027/paired_image_deltas.csv": {
+      "sha256": "01e5473ae0fa36d7ad72ab8db5b4436c3997857929274830f4c58e57fc1258f9",
+      "bytes": 311961
+    },
+    "outputs/nnunet_replication_20261027/protocol_design_summary.json": {
+      "sha256": "24605146fe0f600cb48a365ea1ffabbfece351331c9b9b4b062c9c908c853a9b",
+      "bytes": 2349
+    },
+    "outputs/nnunet_replication_20261027/README.md": {
+      "sha256": "fe9eb4247011aa6094e00d7a88541dfd55d29609d081bd2070d41396a5e4fc44",
+      "bytes": 3118
+    },
+    "outputs/nnunet_replication_20261027/seed_replication_summary.csv": {
+      "sha256": "7d7597649501ef6b59655b64ef33e3286a5b342aa652e98133757474a4edc2ef",
+      "bytes": 3678
+    },
+    "outputs/nnunet_replication_20261027/source_audit.json": {
+      "sha256": "05a4ea6248a26b19d8c87015b91ba423f66795f3d9aa18615a8b095afd1ecabc",
+      "bytes": 73158
+    },
+    "outputs/nnunet_replication_20261027/training_config_summary.csv": {
+      "sha256": "81a6f5baed5f76d41ee933804cbf9475c033ffde6794c7f95281456252698605",
+      "bytes": 5688
+    },
+    "outputs/nnunet_replication_20261027/training_loss_curve.svg": {
+      "sha256": "1109f50d306e3cd336219ab3a2f1ba4dc64560bab5d290a0acab0216006de07a",
+      "bytes": 34951
+    },
+    "outputs/nnunet_replication_20261027/training_loss_epochs.csv": {
+      "sha256": "9532d19b265927fb5c893520ceb9a71a2a6e002cfe0b60d4e37dfca32588e2b0",
+      "bytes": 31444
+    },
+    "outputs/nnunet_replication_20261027/training_loss_steps.csv": {
+      "sha256": "7c1bf44230b41d495b788e26de91a7f0f5bf07fb6990b6dde45404e21b0f8f15",
+      "bytes": 7140349
+    },
+    "README.md": {
+      "sha256": "1f8e7b26080bdaa9b814bfdaffa31403ef348c625ec956ac812c7ea6a153c6b2",
+      "bytes": 4806
+    },
+    "scripts/verify_nnunet_results_export.py": {
+      "sha256": "067481369231bdb40971c914b18c9bfd5ceecb512c16f3056183b6cf01f8a5da",
+      "bytes": 9447
+    },
+    "STATUS.md": {
+      "sha256": "acd00419da2d1c28e78cf530344963fffa82b8705708ad8c0906b46dbd62e55e",
+      "bytes": 3919
+    }
+  }
+}

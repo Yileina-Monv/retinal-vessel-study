@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "statistics_max_absolute_error": 1.4210854715202004e-14,
+  "per_image_rows": 5208,
+  "NA_rows": 288,
+  "paired_rows": 2460,
+  "comparisons": 93,
+  "loss_rows": 75000,
+  "epoch_rows": 300,
+  "manifest_files_verified": 18,
+  "guards_recomputed": {
+    "2026": {
+      "mean_guards_nonadverse": true,
+      "strict_intervals_pass": false
+    },
+    "2027": {
+      "mean_guards_nonadverse": false,
+      "strict_intervals_pass": false
+    },
+    "2028": {
+      "mean_guards_nonadverse": true,
+      "strict_intervals_pass": false
+    }
+  },
+  "verification_scope": "Public numerical and file-integrity checks; no image-metric, model or clinical validation."
+}

@@ -1,5 +1,15 @@
 # 眼底血管分割 · 小组研究
 
+## nnU-Net 最新成果（2026-10-27）
+
+预定 seed2027/2028 的100 epochs流程比较已完成，Dice分别提高1.9779/2.0626个百分点，严格保护未通过；旧2026中断接续单列。当前仅反复使用的Dev28证据，Test未访问，未授权追加实验。此前正文保留历史时点；原U-Net阶段结果另见[PR #7](https://github.com/Yileina-Monv/retinal-vessel-study/pull/7)，本条不改写其正式负面结论。
+
+查看[中文复盘](docs/research/nnunet_replication_review_20261027.md)、[Loss曲线](outputs/nnunet_replication_20261027/training_loss_curve.svg)、[统计表](outputs/nnunet_replication_20261027/paired_comparison_summary.csv)。[Issue #9](https://github.com/Yileina-Monv/retinal-vessel-study/issues/9)等待组员审阅；公开数表可复算，不代表完整训练可独立重启。
+
+---
+
+以下正文保留此前历史时点，最新 nnU-Net 结果以上方入口为准。
+
 基于 FIVES 的视网膜血管分割与测量可靠性研究。本仓库是小组代码、进度、研究决策和实验结果的共享入口。
 
 **我们想回答：AI 是否把可见血管网络量多或量少，并把这种误差带进疾病组比较？** 当前研究限于公开标签相对的数字测量，尚无患者级独立、外部效果或临床效用验证。

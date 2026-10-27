@@ -1,0 +1,2123 @@
+{
+  "task_issue": 9,
+  "exported_at": "2026-10-27T10:44:34.838883+00:00",
+  "reviewer": "Codex primary session; AI-assisted CPU scientific review, not human review",
+  "source_files": [
+    {
+      "id": "group_aggregate",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/aggregate.json",
+      "sha256": "0ad0fc9ff9bf78af65247f332478cb83e72e9fb4a5c30a0e4f5a9cfe4cbf7ff4",
+      "bytes": 8768
+    },
+    {
+      "id": "group_binding",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/source_binding.json",
+      "sha256": "7e26606711632dc2cb4e50d04e781dbde0fe80f370d3e8c89f1e7b96a7f95f7c",
+      "bytes": 161443
+    },
+    {
+      "id": "seed2027_protocol",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/protocol.json",
+      "sha256": "5cb0b2b84e27b0cdbfe94b58365c862a77759eee0b8982281eb5de923a1ce957",
+      "bytes": 22341
+    },
+    {
+      "id": "seed2027_endpoint",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/analysis/endpoint_100epochs.json",
+      "sha256": "f642e2279b3e0b7a66ee2eec5a66f73477ef31d54a78f19b9d63edf7bbcae850",
+      "bytes": 8742897
+    },
+    {
+      "id": "seed2027_budget",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/budget.json",
+      "sha256": "33569c3bc7b4503f748d37a3263a257bb5cd059586fcb89e8c741293d5785719",
+      "bytes": 590
+    },
+    {
+      "id": "seed2027_A0_actual_config",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2027/T0/config.json",
+      "sha256": "d3541b1278682408958188e05cbe686abdee94f372b77933751bd273a2dd5bd0",
+      "bytes": 5067
+    },
+    {
+      "id": "seed2027_A0_actual_run_binding",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2027/T0/run_binding.json",
+      "sha256": "c4fb852d629d989531a17c5fda55d034dc68358156704802495f6278e54bce51",
+      "bytes": 278
+    },
+    {
+      "id": "seed2027_predictions_verification",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/prediction_verification.json",
+      "sha256": "57d9f8643a37b3e63c6df3d8cfdda3446f58c34438f3bd1692c46e292d4cdbbe",
+      "bytes": 10928
+    },
+    {
+      "id": "seed2027_training_result",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/train_process_result.json",
+      "sha256": "e137bbff3367c66775b36a40834d6d059cba1e6ddbefeb9667a7247563c873ce",
+      "bytes": 104
+    },
+    {
+      "id": "seed2027_inference_result",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/infer_process_result.json",
+      "sha256": "8a034881f81af15557b7c3fc6d1d9ebc457776d9da32ff8cbada407e1d78f980",
+      "bytes": 105
+    },
+    {
+      "id": "seed2027_actual_pools",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/actual_seed_pools.json",
+      "sha256": "32e196eadd3fa48ac90b996889a36b3b1fb0da94942dfb2fddeb9fee2da03b84",
+      "bytes": 356
+    },
+    {
+      "id": "seed2027_initialization",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/initialization.json",
+      "sha256": "ea84772733093e93c16d7a6f80370829048c6fc80cc4b0c270810a820b13fd66",
+      "bytes": 689
+    },
+    {
+      "id": "seed2027_A0_baseline",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/cpu_reference/A0_baseline.json",
+      "sha256": "8196b6e23d64020c5852623a92b1b0346e64401e5ee31c021551f94b680facdf",
+      "bytes": 68362
+    },
+    {
+      "id": "seed2027_A0_binding",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/cpu_reference/A0_reuse_binding.json",
+      "sha256": "d776978396961556c6458c143a26994ea6412046ed01b5ff081e26b4d9620150",
+      "bytes": 8685
+    },
+    {
+      "id": "seed2027_A0_full_fixture",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/cpu_reference/full_endpoint_fixture/endpoint_100epochs.json",
+      "sha256": "10541d5caea3ddbcae2a15e4e40bf7b94d9ed57592f90606a300614aac9560a0",
+      "bytes": 8765893
+    },
+    {
+      "id": "seed2027_attempts",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/attempts.jsonl",
+      "sha256": "0a6d96ffe45dec4dbbe6b404ef81c3c8d8c1061b795642c90316ce1b1f7552b7",
+      "bytes": 18138247
+    },
+    {
+      "id": "seed2027_monitor",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/monitor.jsonl",
+      "sha256": "ddd736f8286ab81c5994b0be2cd317215524f326ba2bdc7937e395a1af6b3248",
+      "bytes": 643265
+    },
+    {
+      "id": "seed2027_training_completion",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/training_completion.json",
+      "sha256": "51c8c21892a51f0b5c72e3eff16e34fa160c8b73ba450ccaf62a63b82701cb95",
+      "bytes": 1442
+    },
+    {
+      "id": "seed2028_protocol",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/protocol.json",
+      "sha256": "d7745705d058a01fdde86891484f6b0d337a5c928321474b57d2e1ed8a2e1813",
+      "bytes": 22341
+    },
+    {
+      "id": "seed2028_endpoint",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/analysis/endpoint_100epochs.json",
+      "sha256": "eb436cc32379a5e1b86921da59ec9f1371b61b9134a4588c395082f45c4dd641",
+      "bytes": 8740688
+    },
+    {
+      "id": "seed2028_budget",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/budget.json",
+      "sha256": "2af2911d2dcd598a5def7f0b034f0c009ceedbc0304abf15fa123097ec87c960",
+      "bytes": 590
+    },
+    {
+      "id": "seed2028_A0_actual_config",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2028/T0/config.json",
+      "sha256": "c0e802fbe099e708d65b51a6f92de66362c2a010431f005057af78d804f874d4",
+      "bytes": 5067
+    },
+    {
+      "id": "seed2028_A0_actual_run_binding",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2028/T0/run_binding.json",
+      "sha256": "afcdbac3f4929acdf043cc5ce77024eb1400c4aee07b05f696821a096a15fdc6",
+      "bytes": 278
+    },
+    {
+      "id": "seed2028_predictions_verification",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/prediction_verification.json",
+      "sha256": "a9ffdee1bd6e74c3e9eae2329510dbdb06131d53aa0f6ca6f9093480b9f2af7b",
+      "bytes": 10928
+    },
+    {
+      "id": "seed2028_training_result",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/train_process_result.json",
+      "sha256": "ac7843bbdd9234ff32b8919cd2587711b68fd1950e9f97d78f1cec3bd5e5c8a5",
+      "bytes": 104
+    },
+    {
+      "id": "seed2028_inference_result",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/infer_process_result.json",
+      "sha256": "964748288b8dc2065fc6a0a7a9740cadabba07a81584ce4e068e7c7584a2ad9e",
+      "bytes": 104
+    },
+    {
+      "id": "seed2028_actual_pools",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/actual_seed_pools.json",
+      "sha256": "8429f0a8091064aa68bbd1985d98286dcc890d2025eb564c024ff04884f98702",
+      "bytes": 356
+    },
+    {
+      "id": "seed2028_initialization",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/initialization.json",
+      "sha256": "2cb3abafcf2da711a8ed1a036c6d1c1493e65086b8462485062845c0624f4170",
+      "bytes": 689
+    },
+    {
+      "id": "seed2028_A0_baseline",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/cpu_reference/A0_baseline.json",
+      "sha256": "fd07f24bf1d8582d37135cb97153c65e2087bf44e976e991804e2e62810c5064",
+      "bytes": 68284
+    },
+    {
+      "id": "seed2028_A0_binding",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/cpu_reference/A0_reuse_binding.json",
+      "sha256": "beea40df33884d6a07f9fac81475953ba0e111597e1219e204eafbe45cdce838",
+      "bytes": 8685
+    },
+    {
+      "id": "seed2028_A0_full_fixture",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/cpu_reference/full_endpoint_fixture/endpoint_100epochs.json",
+      "sha256": "e97772167507cf784ad3b84b1ad96a67e5ad5664687cd9412c5519af77d98935",
+      "bytes": 8758371
+    },
+    {
+      "id": "seed2028_attempts",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/attempts.jsonl",
+      "sha256": "ceec0c88b098b0dd8546f3a033d54b600ff45784c173836859aa403d9bd23f2b",
+      "bytes": 18124723
+    },
+    {
+      "id": "seed2028_monitor",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/monitor.jsonl",
+      "sha256": "dbdcac98a5f07f413b35508a042be7ec643019ce3b0f76f50d3b8cc346fdb786",
+      "bytes": 643241
+    },
+    {
+      "id": "seed2028_training_completion",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/training_completion.json",
+      "sha256": "e1001c213e3e918fce775ea736b8d70d733351c1425935b8cdba98145d9e42f6",
+      "bytes": 1441
+    },
+    {
+      "id": "seed2026_protocol",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/protocol.json",
+      "sha256": "ad0e1ee89e0e8dafe75e8bbf22a67922f3389b437e5f35b9b55f50efbaffe123",
+      "bytes": 26451
+    },
+    {
+      "id": "seed2026_endpoint",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/analysis/endpoint_100epochs.json",
+      "sha256": "6fce105f15df011eb90e4b40b66338a7e2c28f9ed0243b0ad11889f30796976a",
+      "bytes": 8740094
+    },
+    {
+      "id": "seed2026_budget",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/budget.json",
+      "sha256": "3479711b99fd8e50a40972f74c88df8d0e9455f2bb3ac02961e766907ca41d45",
+      "bytes": 684
+    },
+    {
+      "id": "seed2026_A0_actual_config",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2026/T0/config.json",
+      "sha256": "f295d2348045c29991f7190d62f1807cc92931a29de0ffb43e9490c54c92f828",
+      "bytes": 5067
+    },
+    {
+      "id": "seed2026_A0_actual_run_binding",
+      "project_relative_source": "experiments/t0_tw_core_20261016/runs/seed_2026/T0/run_binding.json",
+      "sha256": "78283098abdc63209b892673007c668c00a551f481c6fc8df2b66fae9bb44cea",
+      "bytes": 278
+    },
+    {
+      "id": "seed2026_predictions_verification",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/prediction_verification.json",
+      "sha256": "f574ddca6c629188af91723776bd5f6ed8a59c97cd6e5da2b3e3a3779bbce9f3",
+      "bytes": 10928
+    },
+    {
+      "id": "seed2026_training_result",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/train_process_result.json",
+      "sha256": "923cf992790a4261c8f2df6b7e15f1431a276e8220398221bb7368e1d1a2f952",
+      "bytes": 111
+    },
+    {
+      "id": "seed2026_completion",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/completion.json",
+      "sha256": "1f3506952863ea1982b8dde2d91e15f2c2d4742e2ff35691b74cc68561be476c",
+      "bytes": 2350
+    },
+    {
+      "id": "seed2026_terminal_recovery_review",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/terminal_recovery_20261026/CPU_TERMINAL_REVIEW.json",
+      "sha256": "fd5a00f95b23d6ac57b2d916b95b77e35627951551c0333442dc64d9697bdeb7",
+      "bytes": 2108
+    },
+    {
+      "id": "seed2026_existing_scientific_review",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/analysis/SOL_POSTRUN_RESEARCH_REVIEW.json",
+      "sha256": "c2d6d21dcbed2e588f8f2144285bc48f292905c739a5e11e4d95b9dcdff7bac9",
+      "bytes": 4264
+    },
+    {
+      "id": "seed2026_inference_budget",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/inference_budget.json",
+      "sha256": "6fe255e3008718dee5cbf207672eaef5ac0c60d41b2802abd272c8d029b7227f",
+      "bytes": 3168
+    },
+    {
+      "id": "seed2026_actual_pools",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/actual_seed_pools.json",
+      "sha256": "032ffdcece4fd7f2815e1989bc1abe7acd8e22c9fecf5d96c8999b828b35c6f8",
+      "bytes": 404
+    },
+    {
+      "id": "seed2026_attempts",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/attempts.jsonl",
+      "sha256": "69948ec46079cdfe212a45ad7524e20cc358e32cb3c4c282a09d6f0cbc22755a",
+      "bytes": 18141196
+    },
+    {
+      "id": "seed2026_monitor",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/monitor.jsonl",
+      "sha256": "7f49fa7dc31ce734cc4263d7aecbbaf5b7d8da8a8d98d60dc5830f0ad827d5ad",
+      "bytes": 643253
+    },
+    {
+      "id": "seed2026_training_completion",
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/training_completion.json",
+      "sha256": "b8e50274d21d9b8c3a0a78632c6675d1ab8a9bae7218770815138e97713fa2f1",
+      "bytes": 1861
+    }
+  ],
+  "runtime_sources_verified": [
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp_observer_v2.py",
+      "sha256": "c4cfa4a177f4f3fe9eb6634cf644505929857e1692a0267e84362af91f6c11ca"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_policy.py",
+      "sha256": "50ea67beaef7a6edbed4d1daac9cba596a0be123d3fa7ed896ddfc7e1a1cdb74"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_runtime.py",
+      "sha256": "9a209943e0f8ae0eb1a52c0a08fbf7782331ab308f635c78f78e9b0d58f1629d"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_constructor.py",
+      "sha256": "0501e267e38adcc22cf44ba1d278d31ae0c99cec5ca3233f729109862c058ed2"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_runtime.py",
+      "sha256": "7925dd65cefa7ed7e5e7167ad8c510465963a1493dff4e9c7424f195f1becd5d"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/analysis_runner.py",
+      "sha256": "35b993f836838f177a7b00525d00ac67bd09a7d43ee0a89e231b26ed47565099"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/cpu_prepare.py",
+      "sha256": "8631d5b98e202a5e6961260e672da38805de0beb652324807df65c0e9955bfaa"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/freeze_replication.py",
+      "sha256": "e80511cbf54b7948d598011d915bc8bdf090caf312692c652e2316c45b6d3ce3"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/progress_watchdog.py",
+      "sha256": "5f48682144815e0a2c7203d650558e839d3fe6e95620e653b370872da492fbbb"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_analysis.py",
+      "sha256": "90fd988921e3c55af172675047aff6320fa10ea08d444d941ac8edf64c136a35"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_controller.py",
+      "sha256": "44cc93bf00d51c443ef4b1f18ac339ac645a6832a379c42990dbf1c46fba6389"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_gate.py",
+      "sha256": "59877548466b0376b56cf44806a167155c2ae9480ba66fa176df4ffd50e3554e"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_infer.py",
+      "sha256": "9f019536fd8f29354a3373fe00a47254ed23a66d703b6fbd432bb7e25f191bd8"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_train.py",
+      "sha256": "5a3097e52b15918bdca99a9e5cb8feb7829c369ffc04df48862709f643292497"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/seeded_runtime.py",
+      "sha256": "016e48821bb825b8eb0ce6ffb4863b2ad632b93291ddd130bdbe4c1e8642a1c8"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_controller_cpu.py",
+      "sha256": "dc0303b9d3f06b4c58c4f30260527aced44c5f0faf49df7b3572ba1b1c591242"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_replication.py",
+      "sha256": "b87fb70672969ef8bd511708c1fb8c37fc809b09804e788981c3c68652daa546"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/fast_observer.py",
+      "sha256": "930a021719086a788b97a84d27d411a74ff78e7d676b6d25289644215058ee68"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/test_fast_observer.py",
+      "sha256": "184859784501b2e22fb79f000bcc46d91a55d010ae4715bd63c4a8b325a27f9f"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/retinal_m0/maples_branch_science_analysis.py",
+      "sha256": "222f378e13c46922b7bc08eab6a5ecd3adc0ee0b58a33c9f5fae34f726eaa2b2"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/retinal_m0/maples_branch_science_reference.py",
+      "sha256": "e42b9f3bdbef62b238fb0de4fae1021cfd9b19cc55d57fe188b1340091bb0bf3"
+    },
+    {
+      "project_relative_source": "code/retinal-vessel-study/retinal_m0/maples_stratified_science_analysis.py",
+      "sha256": "58fe73658abe0507781074357dbc79319c69b518158b51353e87d659a4c51ae3"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/SCIENTIFIC_PROTOCOL.md",
+      "sha256": "b4157b3010917201a1dce5ab04125e73db4c8111c912e93f601eaf44283d0dc0"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/protocol.json",
+      "sha256": "07d3038812dd7afd2216d71f46ec884ab0c7a37370e387e58013be011d73d43e"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/cpu_reference/A0_baseline.json",
+      "sha256": "8196b6e23d64020c5852623a92b1b0346e64401e5ee31c021551f94b680facdf"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/cpu_reference/A0_reuse_binding.json",
+      "sha256": "d776978396961556c6458c143a26994ea6412046ed01b5ff081e26b4d9620150"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/protocol.json",
+      "sha256": "5cb0b2b84e27b0cdbfe94b58365c862a77759eee0b8982281eb5de923a1ce957"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/cpu_reference/A0_baseline.json",
+      "sha256": "fd07f24bf1d8582d37135cb97153c65e2087bf44e976e991804e2e62810c5064"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/cpu_reference/A0_reuse_binding.json",
+      "sha256": "beea40df33884d6a07f9fac81475953ba0e111597e1219e204eafbe45cdce838"
+    },
+    {
+      "project_relative_source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/protocol.json",
+      "sha256": "d7745705d058a01fdde86891484f6b0d337a5c928321474b57d2e1ed8a2e1813"
+    }
+  ],
+  "checks": [
+    {
+      "seed": 2027,
+      "max_statistics_error": 0.0,
+      "metrics_verified": 31,
+      "valid_counts": {
+        "B1_supported_d0": 28,
+        "B1_supported_d1": 28,
+        "B2_added_d0": 28,
+        "B2_added_d1": 28,
+        "arc_recall_d1_macro": 28,
+        "arc_recall_d1_pooled": 28,
+        "candidate_path_d0": 28,
+        "candidate_path_d0_macro": 28,
+        "candidate_path_d1": 28,
+        "candidate_path_d1_macro": 28,
+        "candidate_unique_d0": 28,
+        "candidate_unique_d1": 28,
+        "coarse_vessel_d0": 28,
+        "coarse_vessel_d1": 28,
+        "dice": 28,
+        "edge_coverage_d1_macro": 28,
+        "edge_coverage_d1_pooled": 28,
+        "far_recall": 28,
+        "fp_density": 28,
+        "full_S3_d0": 28,
+        "full_S3_d1": 28,
+        "hard_cldice": 28,
+        "longest_hit_mean": 28,
+        "longest_miss_mean": 28,
+        "near_pixel_recall": 18,
+        "near_thin_recall_d0": 9,
+        "near_thin_recall_d1": 9,
+        "precision": 28,
+        "recall": 28,
+        "whole_missed_d0": 28,
+        "whole_missed_d1": 28
+      },
+      "prediction_arrays_verified": [
+        {
+          "image": "20051116_44615_0400_PP",
+          "sha256": "ef55d739ae2dd5c70ef8aed450f24acfb8540b6f0ac6ab25231216a4a8a33f38",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 4.137466411147095e-12,
+          "max": 0.999990701675415
+        },
+        {
+          "image": "20051116_44785_0400_PP",
+          "sha256": "b6bbf179c304173ee1755bd0fd9965f9fc4c4c8e532e279d7c58eef1c4ee1198",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 4.544117686300364e-12,
+          "max": 0.9999945163726807
+        },
+        {
+          "image": "20051117_37078_0400_PP",
+          "sha256": "0d314fb9c9f122622b7d3d06c6b52b96631e7d2883c3189e8a7e247425715fe3",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.944506753222234e-14,
+          "max": 0.9999982118606567
+        },
+        {
+          "image": "20051117_37130_0400_PP",
+          "sha256": "0f5e1be95f229ee0f58144ecd2247e16de646bfbcc6c50fd7497c69e01b444cd",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 6.792906081382055e-14,
+          "max": 0.999998927116394
+        },
+        {
+          "image": "20051202_51655_0400_PP",
+          "sha256": "ec4f00cc749f9e70adc219bc896df53c40cb27275fa36693459aeb78b1fbfe75",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 2.518570137058189e-14,
+          "max": 0.9999969005584717
+        },
+        {
+          "image": "20051202_54530_0400_PP",
+          "sha256": "3e8b0cd1d4f3085d4afa7bae87ea87616793ce2b723b48f85f766afdfa79efaa",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.549019155473342e-12,
+          "max": 0.9999994039535522
+        },
+        {
+          "image": "20051205_31934_0400_PP",
+          "sha256": "4b3b5c13e459cc1408d08229a91f9c53b67aceaf4e46457f87237210720669ff",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 7.344882216537077e-14,
+          "max": 0.9999966621398926
+        },
+        {
+          "image": "20051205_35224_0400_PP",
+          "sha256": "cfddc6a72cac146aeab8e7f22b615d318204f411349d60c207c97347944b0403",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.958425585208317e-13,
+          "max": 0.9999995231628418
+        },
+        {
+          "image": "20051205_35276_0400_PP",
+          "sha256": "c51de60c46b8da28e727694ef2273f3ad57ff43a6648a86ad7fe491e6b85f712",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.6491216983075645e-16,
+          "max": 0.9999996423721313
+        },
+        {
+          "image": "20051205_35305_0400_PP",
+          "sha256": "ad085faaeab1da6719b1b57b1fc7e6ecc3d42a4ea0cd7bbeb5b3709f65364d3b",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.579609685381256e-14,
+          "max": 0.9999994039535522
+        },
+        {
+          "image": "20051208_41707_0400_PP",
+          "sha256": "5c3b9e5c05e20cf79fc06c8bf524075c4dabea5c3c97c18d8a13a156789f6608",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 3.3435851743562894e-13,
+          "max": 0.9999969005584717
+        },
+        {
+          "image": "20060407_41937_0200_PP",
+          "sha256": "619efdf3be7ac9409c4f88b9dde068e53e265a2780e3ef07d5109f2a1f9c1c73",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.9011163222013364e-14,
+          "max": 0.9999991655349731
+        },
+        {
+          "image": "20060411_57853_0200_PP",
+          "sha256": "a5a7bf87c9204ea894eb621152e45c80e4eec3461dc2644b183a29d6f246615f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 9.21254649714591e-14,
+          "max": 0.9999992847442627
+        },
+        {
+          "image": "20060411_61214_0200_PP",
+          "sha256": "5e2640d1589eafcded28f4d6fbaabc53c2b1adc339355e9f8357e74abf869706",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.32945656072145e-15,
+          "max": 0.9999988079071045
+        },
+        {
+          "image": "20060411_61478_0200_PP",
+          "sha256": "43ca6921e46fd22c376f303ed2688cab7f9427a86abdbfe1709e40dc8d9fe1e0",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 5.066303639666167e-16,
+          "max": 0.9999995231628418
+        },
+        {
+          "image": "20060412_51656_0200_PP",
+          "sha256": "1515404b5c31f247e67974eaba74a3716e4a8858fcdd32ca925d3ef01a7a081d",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.1849878597288726e-14,
+          "max": 0.9999996423721313
+        },
+        {
+          "image": "20060412_58287_0200_PP",
+          "sha256": "f50c7079e4985c5c8c09f587e72177234416bb7f78cd6ad9900986bd80a2c3ba",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.8037671468382486e-15,
+          "max": 0.9999991655349731
+        },
+        {
+          "image": "20060412_58889_0200_PP",
+          "sha256": "0886bb2bd9e51e828c67b47469b7c7a2f336399a4bd5d00f47cdfd8e1be0d48f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.257144828618758e-16,
+          "max": 0.9999994039535522
+        },
+        {
+          "image": "20060412_60913_0200_PP",
+          "sha256": "9b027d3a25d57114047fbe5e32c1ad5ef5b1fbe2858f17274b227c2c7c222bbb",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.624410291949403e-13,
+          "max": 0.999998927116394
+        },
+        {
+          "image": "20060412_61299_0200_PP",
+          "sha256": "69bae9a620be6a1647d62c26b0b57e8342da9460b45b48160a71495b9b65a425",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.63542283895487e-15,
+          "max": 0.9999996423721313
+        },
+        {
+          "image": "20060522_45248_0100_PP",
+          "sha256": "ac0b07188f484aac62c93826e24d9933d8ff72beb1c42daa71cc827230e91a6a",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 5.1599970823934527e-11,
+          "max": 0.9999948740005493
+        },
+        {
+          "image": "20060522_45583_0100_PP",
+          "sha256": "ae030c0d277d696efab925d2d7871fa2807bbd441a4b03164e40bbfcc94fcd9f",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 7.460547614803262e-14,
+          "max": 0.9999970197677612
+        },
+        {
+          "image": "20060523_43038_0100_PP",
+          "sha256": "948932f888a2bd4f215eaed80e180c39fe097b7da9506e58dea0859eb1c04683",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 4.211466939074704e-11,
+          "max": 0.9999957084655762
+        },
+        {
+          "image": "20060523_49859_0100_PP",
+          "sha256": "b261889344e73ced09263cca960c0da903c53f62cae0a8780f39bc018a6b4b45",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.1579440748268888e-12,
+          "max": 0.9999890327453613
+        },
+        {
+          "image": "20060530_36895_0100_PP",
+          "sha256": "3f29479f05396197737bae17f020e2cde633d085711c6480d1065a9bda201bde",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 6.371746186228933e-11,
+          "max": 0.9999963045120239
+        },
+        {
+          "image": "20060530_53062_0100_PP",
+          "sha256": "c6aeba881822fd145f2195a580502d9ed5811aaabb417789e0f3200563c93e1e",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 2.2897348947448215e-11,
+          "max": 0.999985933303833
+        },
+        {
+          "image": "20060530_54390_0100_PP",
+          "sha256": "36048c3c4d452159b80b9bbca5230c753db06f432e0d744f9176b1b5302d2ef0",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.8359894767699947e-12,
+          "max": 0.9999972581863403
+        },
+        {
+          "image": "20060530_55390_0100_PP",
+          "sha256": "50ed251f56b5238cfbd48942324ecc2a646569667b3ebecc9feca92d4809770e",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 9.107935759755659e-12,
+          "max": 0.9999959468841553
+        }
+      ],
+      "A0_arrays_verified": [
+        {
+          "image": "20051116_44615_0400_PP",
+          "sha256": "70a42ad72123372f39b5b6de316918a267ef0b0114a92c484468547dba3a1813",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 2.436057968679961e-07,
+          "max": 0.9997107982635498
+        },
+        {
+          "image": "20051116_44785_0400_PP",
+          "sha256": "4fd2221739b328481b0143bbccc54c1dcc72dad9ec50d1c05246eb4600a38df0",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.7773299987311475e-07,
+          "max": 0.9996511936187744
+        },
+        {
+          "image": "20051117_37078_0400_PP",
+          "sha256": "004f220a71690fb89c757b912a6ebcc176ac5204f57ecb7df0d08d4c5e7e0f15",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.623874252094538e-06,
+          "max": 0.9995571374893188
+        },
+        {
+          "image": "20051117_37130_0400_PP",
+          "sha256": "a75311f117d63a56483544ac531d1fcfdff3a2a92e7b11709a188804af35fbcb",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.6754316334299801e-07,
+          "max": 0.9997237324714661
+        },
+        {
+          "image": "20051202_51655_0400_PP",
+          "sha256": "ebc64bee36f8faa5390c32cc07432bba56dc212fe9a7b8903a2ec917a914ff69",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 5.986608897501355e-08,
+          "max": 0.999885618686676
+        },
+        {
+          "image": "20051202_54530_0400_PP",
+          "sha256": "19582bc16dfd65d5a5805d43ab7f2c56d33172e48a8b4bb3b22424bf10cbc949",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.5299322576065606e-07,
+          "max": 0.9997547268867493
+        },
+        {
+          "image": "20051205_31934_0400_PP",
+          "sha256": "82f4b264f683f6ddacc3ca467f80c76ec46eec51e86c679d18edd071544156ef",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 3.752662962597242e-07,
+          "max": 0.9998088479042053
+        },
+        {
+          "image": "20051205_35224_0400_PP",
+          "sha256": "78b1490f4e75d61255b6734749829c200113593caed5d742cbfe3205ab33830a",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.2780155884684063e-06,
+          "max": 0.9996881484985352
+        },
+        {
+          "image": "20051205_35276_0400_PP",
+          "sha256": "d8458cd3bd65de24b2f489dd0ad34f052685937e7baf60c3f4837820d3a6127f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.5778726947246469e-07,
+          "max": 0.9996720552444458
+        },
+        {
+          "image": "20051205_35305_0400_PP",
+          "sha256": "90e78e0f7b4782ca67b671b51dd671a3800fdc71b9aac8f8a78c2db68ec2015f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0017508600412839e-07,
+          "max": 0.9997963905334473
+        },
+        {
+          "image": "20051208_41707_0400_PP",
+          "sha256": "875f04ab6e7a04ad97f82e5ec4b9f5831bbd4fca77b50abccb1739f7de10227d",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 7.666777435133554e-08,
+          "max": 0.9997934699058533
+        },
+        {
+          "image": "20060407_41937_0200_PP",
+          "sha256": "d01f64b491d544f4e1f957aaa3b52679b9c8926e4769abff352a8eae0c3f445b",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.7130223284311796e-07,
+          "max": 0.9998224973678589
+        },
+        {
+          "image": "20060411_57853_0200_PP",
+          "sha256": "2c9649b409eb43e26acff9249ad8e5d194667f3ecb0a6d950478effb38282139",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.6115811263262003e-07,
+          "max": 0.9997393488883972
+        },
+        {
+          "image": "20060411_61214_0200_PP",
+          "sha256": "bafff7c9f4284fbfc746f1856a0aef022f9e68cc67baa6103fda10df52fa9f5e",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.297490707154793e-07,
+          "max": 0.9997703433036804
+        },
+        {
+          "image": "20060411_61478_0200_PP",
+          "sha256": "b2fd3e0106f2df1f53d8c98c723b9853e8afa2753a1cb19fb807c50969465a6d",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.099426007542206e-07,
+          "max": 0.9998335838317871
+        },
+        {
+          "image": "20060412_51656_0200_PP",
+          "sha256": "9415e87a17d7d436869d57f382899b33f9c4fd01025826f78cdd837cdca23022",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.896291975839631e-08,
+          "max": 0.9998311400413513
+        },
+        {
+          "image": "20060412_58287_0200_PP",
+          "sha256": "03c1e40c72e9fbd70c015f9b495d4b15b0a2be001aad5ae23324cd140ef7412d",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.945889659462409e-08,
+          "max": 0.9997060298919678
+        },
+        {
+          "image": "20060412_58889_0200_PP",
+          "sha256": "9f1fae7646dd620326d51a253c4951a3e0b8665e74483d1c23617d540dd101bf",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.72924693137611e-07,
+          "max": 0.999812662601471
+        },
+        {
+          "image": "20060412_60913_0200_PP",
+          "sha256": "6b67396de54bfa99cf6e406ad3474e77e84e7eab41588bf3387950448b623b2f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.0069029460501042e-07,
+          "max": 0.9997076392173767
+        },
+        {
+          "image": "20060412_61299_0200_PP",
+          "sha256": "d706c58d81e2729cafa6f0c22e299efa9de18463095f3f4429165a43debe11b0",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.1409460967115592e-06,
+          "max": 0.9997415542602539
+        },
+        {
+          "image": "20060522_45248_0100_PP",
+          "sha256": "efc12ca08e0cef469cf6f41dc69466d7c890ced4a386a07f2b91634a9808e13d",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.5477780834771693e-07,
+          "max": 0.9997947216033936
+        },
+        {
+          "image": "20060522_45583_0100_PP",
+          "sha256": "07e972e50fb934779f7ae069c909c9d3693b0b2d8e83d082a38d24479d2acfa1",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.8853896790460567e-06,
+          "max": 0.999826192855835
+        },
+        {
+          "image": "20060523_43038_0100_PP",
+          "sha256": "8e6fe0c1e29def665ad48b7e16d03106b2c6eee5b4db44e19ed597323db21f83",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.631208187471202e-07,
+          "max": 0.9998546838760376
+        },
+        {
+          "image": "20060523_49859_0100_PP",
+          "sha256": "a921399c7a2e03f0010470a093a742d6b012c296ac20f685df3c5bb91aa53da1",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 4.240804969413148e-07,
+          "max": 0.9998314380645752
+        },
+        {
+          "image": "20060530_36895_0100_PP",
+          "sha256": "b2e4f25bd85f7709284115e1f9458d18de4568fd79106a4e9e68e2e88b607359",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 5.570593089032627e-07,
+          "max": 0.9998522996902466
+        },
+        {
+          "image": "20060530_53062_0100_PP",
+          "sha256": "35a9ae4b09f2d61dce4ca15ce087920d796b60ba10954fe27c4e4f080a1c7074",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.7356846626626066e-07,
+          "max": 0.9997942447662354
+        },
+        {
+          "image": "20060530_54390_0100_PP",
+          "sha256": "f2278fe059c3bf8643b9fcd59efd453ef324c0717545c2785f64246b211b1597",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 2.6602305069900467e-07,
+          "max": 0.9998142123222351
+        },
+        {
+          "image": "20060530_55390_0100_PP",
+          "sha256": "0c92fba726f6afeca19925c8b32f003cdcbc129bb3d669e260e0fea2c987d517",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.1973529012720974e-07,
+          "max": 0.9997844696044922
+        }
+      ],
+      "successful_updates": 24993,
+      "AMP_skips": 7,
+      "attempts": 25000,
+      "monitors": 5000,
+      "fatal": 0,
+      "unknown": 0,
+      "runtime_sources_verified": 30,
+      "source_inputs_unchanged": true,
+      "Test_accessed": false
+    },
+    {
+      "seed": 2028,
+      "max_statistics_error": 0.0,
+      "metrics_verified": 31,
+      "valid_counts": {
+        "B1_supported_d0": 28,
+        "B1_supported_d1": 28,
+        "B2_added_d0": 28,
+        "B2_added_d1": 28,
+        "arc_recall_d1_macro": 28,
+        "arc_recall_d1_pooled": 28,
+        "candidate_path_d0": 28,
+        "candidate_path_d0_macro": 28,
+        "candidate_path_d1": 28,
+        "candidate_path_d1_macro": 28,
+        "candidate_unique_d0": 28,
+        "candidate_unique_d1": 28,
+        "coarse_vessel_d0": 28,
+        "coarse_vessel_d1": 28,
+        "dice": 28,
+        "edge_coverage_d1_macro": 28,
+        "edge_coverage_d1_pooled": 28,
+        "far_recall": 28,
+        "fp_density": 28,
+        "full_S3_d0": 28,
+        "full_S3_d1": 28,
+        "hard_cldice": 28,
+        "longest_hit_mean": 28,
+        "longest_miss_mean": 28,
+        "near_pixel_recall": 18,
+        "near_thin_recall_d0": 9,
+        "near_thin_recall_d1": 9,
+        "precision": 28,
+        "recall": 28,
+        "whole_missed_d0": 28,
+        "whole_missed_d1": 28
+      },
+      "prediction_arrays_verified": [
+        {
+          "image": "20051116_44615_0400_PP",
+          "sha256": "de2b91c2b06776448bda42334f788bebd3f3bfce7bec005c1bac047855138ba7",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 8.947898845479418e-13,
+          "max": 0.9999963045120239
+        },
+        {
+          "image": "20051116_44785_0400_PP",
+          "sha256": "08b1cde7129f8bebf65ba108d42352a9c4f27d6fa6c24ccabe0640a1f8f1b1ba",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.7149321893117353e-11,
+          "max": 0.9999972581863403
+        },
+        {
+          "image": "20051117_37078_0400_PP",
+          "sha256": "84fdc9814486a4e9b5184c5bea69253a8e98f6b75d60a2f23223dc6f78e3867c",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.5797575801143076e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20051117_37130_0400_PP",
+          "sha256": "95c2a5b64462dcd8404794ec16af20c61cb12c49e0423bb5a02a812dd2b9a250",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.0501282883020906e-11,
+          "max": 1.0
+        },
+        {
+          "image": "20051202_51655_0400_PP",
+          "sha256": "0bec6ddd0a7fe66bd4ca891bc85dc02869029c6b32bf79bb6273cc0969fddecf",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 2.504229733735902e-13,
+          "max": 0.9999980926513672
+        },
+        {
+          "image": "20051202_54530_0400_PP",
+          "sha256": "abbbfce649f610c73907c77a7ab14c6b1dea6a73284e9c5bc7638c67be304382",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0379743939359365e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_31934_0400_PP",
+          "sha256": "e2f084b0d06b98e215d1b70859300320b03a04e0a3896cf8277458d974cdfc61",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.5941832399727815e-16,
+          "max": 0.9999985694885254
+        },
+        {
+          "image": "20051205_35224_0400_PP",
+          "sha256": "1578423364e407d1515e7da8463c9f73cbdd7f76107c915095b27400306101d7",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.1441119658118538e-14,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_35276_0400_PP",
+          "sha256": "231092d8ba74046418e634b02e2206c843b3ba1ae603746aa8655714674a337c",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 8.740620532042553e-13,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_35305_0400_PP",
+          "sha256": "4e0c65edd4d12d56325b0a559ffed777878e4262088dba00b4b6ae02c0181ac7",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.7808213455619785e-14,
+          "max": 1.0
+        },
+        {
+          "image": "20051208_41707_0400_PP",
+          "sha256": "9266401a2036af8bef45abc099ed21589e6dfbf721c74381d52e00432f4568cf",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 4.1524197817201236e-14,
+          "max": 0.9999951124191284
+        },
+        {
+          "image": "20060407_41937_0200_PP",
+          "sha256": "eb75df8234b2110dda4ccb2c6beffd566115750d8265d7e7bec72c6424bc3650",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 5.567569842657161e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060411_57853_0200_PP",
+          "sha256": "360972ffbcc304c9088e87bdba6731f5254d043a7b7c3a66f446729f0f23392a",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.3643916725591954e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060411_61214_0200_PP",
+          "sha256": "5bee86445a00c0284e72f0469cef007f2db18443ae84aa2b75617f5421420c15",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.396239181812505e-13,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060411_61478_0200_PP",
+          "sha256": "e1b06c34dee70588e9479b25332b98ff38cebf526503b7af06c0bab3c225a314",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.774068932001055e-13,
+          "max": 1.0
+        },
+        {
+          "image": "20060412_51656_0200_PP",
+          "sha256": "bf8c6b1849e7edb098ba239ba1f7fecfc7c0d7bc44e5d4c90f8867099601586e",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0139297170960737e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060412_58287_0200_PP",
+          "sha256": "ffe03040c7ea2ac783a415d16ce19eb5b1381b372b1195368118d3c46ec40349",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.4217287069850926e-11,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060412_58889_0200_PP",
+          "sha256": "f48de484c5785d055937172cdba309e805878b92d25f6ad630ec9f8bd4850518",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.2040713478350673e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060412_60913_0200_PP",
+          "sha256": "7b3c39963271d9ad6d6a78df04c88d221f1b66ddfef3bab6e85db9e1b2875386",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.4984910014226305e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060412_61299_0200_PP",
+          "sha256": "cc8931829eef88bc489932cd447ed799fb54012631e2569793fd000ca27d7610",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.226687901585924e-13,
+          "max": 1.0
+        },
+        {
+          "image": "20060522_45248_0100_PP",
+          "sha256": "1084072bb6b2fcf02583b4a542c90f29b4323e9fc9e2de7d6f3c07a8f1091814",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.826530672185191e-12,
+          "max": 0.9999977350234985
+        },
+        {
+          "image": "20060522_45583_0100_PP",
+          "sha256": "eb66fe2b2755944d0b02881d6ab7371a779a3fc49bed7b88b394d0d8895b2b36",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 5.4157765376266695e-14,
+          "max": 0.9999992847442627
+        },
+        {
+          "image": "20060523_43038_0100_PP",
+          "sha256": "ea8912b3ede168ff2a2d3231e01f3642cdd2b1406d0cc64a8c1ebf8a7ef18b0d",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 4.725135213656806e-12,
+          "max": 0.9999991655349731
+        },
+        {
+          "image": "20060523_49859_0100_PP",
+          "sha256": "01457d69a675001730443338091c3289e44845fa04a6665795620241b7ead5a7",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.24071390382652e-13,
+          "max": 0.9999985694885254
+        },
+        {
+          "image": "20060530_36895_0100_PP",
+          "sha256": "700217290f18264e406f1b8974cc8c37102d16731c4a263263571a14521775e6",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.3196364031901886e-13,
+          "max": 0.9999991655349731
+        },
+        {
+          "image": "20060530_53062_0100_PP",
+          "sha256": "84ecced9c513031bd303d970f6158995f7f0034235cf669a50128081e3c7fb74",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.698012824097317e-12,
+          "max": 0.9999979734420776
+        },
+        {
+          "image": "20060530_54390_0100_PP",
+          "sha256": "eccc2c7ae174f1e603b27b8c59cf55769209eaf400f2d8aa759aadb19e021d50",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.63542283895487e-15,
+          "max": 0.9999990463256836
+        },
+        {
+          "image": "20060530_55390_0100_PP",
+          "sha256": "e801f51a5bf661f94a3fe98f4f9cccd34d2f73adc6935cfc45d2b34495e7fd28",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 9.599694086523392e-13,
+          "max": 0.9999992847442627
+        }
+      ],
+      "A0_arrays_verified": [
+        {
+          "image": "20051116_44615_0400_PP",
+          "sha256": "83b7294a1757e9d9c04ab796def828fb129537e4d6dcac18abefc03c3e0766b1",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 3.493863118819718e-07,
+          "max": 0.9996071457862854
+        },
+        {
+          "image": "20051116_44785_0400_PP",
+          "sha256": "f8306327cc7a1f4a548c6158bae7afdc179f177bbb83bd6ebeb22ee32b37dc17",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.1027933055629546e-07,
+          "max": 0.9996606111526489
+        },
+        {
+          "image": "20051117_37078_0400_PP",
+          "sha256": "7a10281d9d545d911c985f5d03d1c5e4739c9be735ccbfe28d041d5d23c16767",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.6605598577589262e-06,
+          "max": 0.9995624423027039
+        },
+        {
+          "image": "20051117_37130_0400_PP",
+          "sha256": "3aa6e18889194ac2dc86c32c6e9afa2175c9fa2fe064b9bc825c5c3b123d4dff",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.8588094974347769e-07,
+          "max": 0.9996789693832397
+        },
+        {
+          "image": "20051202_51655_0400_PP",
+          "sha256": "f6d1ea5c8668d7bfeb9a4ce77f620d9e55d9a045fb56008091ded0d51bb6fd1a",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 3.4045022800910374e-08,
+          "max": 0.9998694658279419
+        },
+        {
+          "image": "20051202_54530_0400_PP",
+          "sha256": "4e240c4826b70eea568247dc8d5bcc3a18b8c70d6cfdf7945ac91d048062f9c4",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.3489486977723573e-07,
+          "max": 0.9997863173484802
+        },
+        {
+          "image": "20051205_31934_0400_PP",
+          "sha256": "081b4a785b26597653d97a456bb055e5908abf7a1149207a75659862fa7d50d3",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 2.419834572719992e-07,
+          "max": 0.9998005032539368
+        },
+        {
+          "image": "20051205_35224_0400_PP",
+          "sha256": "6576813eb2a445f671fc876780c072131e64c3ef4d2389b37f1c099abccb9e35",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.1479640938414377e-07,
+          "max": 0.9996575713157654
+        },
+        {
+          "image": "20051205_35276_0400_PP",
+          "sha256": "196b7435da569c94732308ea0ed14d34d2f95753077c2d48d337529d2ad08d41",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.592725133534259e-08,
+          "max": 0.9996999502182007
+        },
+        {
+          "image": "20051205_35305_0400_PP",
+          "sha256": "a34ce934b71e82d260b90eb32898a42ee19040416697d8fedff8bb90bb4bed39",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.7021767934343188e-08,
+          "max": 0.9996581077575684
+        },
+        {
+          "image": "20051208_41707_0400_PP",
+          "sha256": "18cc4b503ac4886b10f1837e62c5783b3a4c28749ae58754c6f9c4b498ed477a",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 9.206240747516858e-08,
+          "max": 0.9998037219047546
+        },
+        {
+          "image": "20060407_41937_0200_PP",
+          "sha256": "5c594b99def481366ae97e0e2fe36035ea77f7255ec8d76aeb7dfcee3af47d94",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.523870344996794e-08,
+          "max": 0.9998831152915955
+        },
+        {
+          "image": "20060411_57853_0200_PP",
+          "sha256": "5fc4c2d54a3061e12458da4e94ffecf5eb97d49b007105d538c110c9944669b1",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.65915117995064e-08,
+          "max": 0.999783992767334
+        },
+        {
+          "image": "20060411_61214_0200_PP",
+          "sha256": "ec69493c1d09059fb3f76db386e0268c9159f90b8ed4619eb26718d4036f64f8",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 5.893090460062922e-08,
+          "max": 0.9997940063476562
+        },
+        {
+          "image": "20060411_61478_0200_PP",
+          "sha256": "623ec5cda4dcf4c5db0ca1a731ae597ad9756922f8e2fab06f27e17a294aa4cc",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0196932720418772e-07,
+          "max": 0.9998607635498047
+        },
+        {
+          "image": "20060412_51656_0200_PP",
+          "sha256": "0cce35b3b77a8f835aa042581f2d4df801259260950a9f756d4c5e19ec49600d",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.584553110944853e-08,
+          "max": 0.9998446106910706
+        },
+        {
+          "image": "20060412_58287_0200_PP",
+          "sha256": "be2e9fc6b66ae70688c828f2863755246a02f77b6d6ee88989075e7db65bd37b",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0354492374631263e-08,
+          "max": 0.999789834022522
+        },
+        {
+          "image": "20060412_58889_0200_PP",
+          "sha256": "00cdf672ed232aa78fcd8673c24c8de91843cf2798b6dbbc3664e5bebdbceb7a",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.1814399764916743e-07,
+          "max": 0.9998352527618408
+        },
+        {
+          "image": "20060412_60913_0200_PP",
+          "sha256": "996c8953d07501d921e26c614a627cada31431925a9e7ce23ac70e154b9ae3e0",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 5.855125095877156e-08,
+          "max": 0.9995647668838501
+        },
+        {
+          "image": "20060412_61299_0200_PP",
+          "sha256": "49db6b57990258310ce8ebf14244fb3ab7e72228390f124492a098872ec3687e",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.4762129530463426e-07,
+          "max": 0.9997710585594177
+        },
+        {
+          "image": "20060522_45248_0100_PP",
+          "sha256": "99fe5d484e3acd021d072ed5e0e17773c8cec975311ed862153fd93da89ae374",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.1100360097771045e-07,
+          "max": 0.9998410940170288
+        },
+        {
+          "image": "20060522_45583_0100_PP",
+          "sha256": "19deb70e6ab0691573fc87b210c51f1956f6816bb51ea24c9ad9d7d3fc352e6f",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 7.609258432239585e-07,
+          "max": 0.9998012185096741
+        },
+        {
+          "image": "20060523_43038_0100_PP",
+          "sha256": "98c3f8c6ee2836828c70318cf0951c942ee1bacc3db6d52840057d01e77cee82",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.6939664249093767e-07,
+          "max": 0.9998472929000854
+        },
+        {
+          "image": "20060523_49859_0100_PP",
+          "sha256": "c1419489ce67c93491f535932544898da41987a9d5dce4afb3493eef89c8f418",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 2.3388126635381923e-07,
+          "max": 0.999808132648468
+        },
+        {
+          "image": "20060530_36895_0100_PP",
+          "sha256": "7126c31a1f3e96d3eca318187bee3c44cbbd82da996d516dc3dfc8a0deb9fdf3",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.7556335996669077e-07,
+          "max": 0.9998266696929932
+        },
+        {
+          "image": "20060530_53062_0100_PP",
+          "sha256": "d515793fe0eef4bd0b62ab82567cf7ddf6dd491ce73de6eb7a3835e3818a8c64",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 9.604501371995866e-08,
+          "max": 0.9998148679733276
+        },
+        {
+          "image": "20060530_54390_0100_PP",
+          "sha256": "1342b60aab51a6d4e85007b0f731630fd35138592c383ad2559eb447729b3dc3",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.169238927900551e-07,
+          "max": 0.99985271692276
+        },
+        {
+          "image": "20060530_55390_0100_PP",
+          "sha256": "16399e0a7caed6ad12ba4094513c0851890ea62f201ab9816e1826ec6ddb1079",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 6.618719794460048e-08,
+          "max": 0.9997984766960144
+        }
+      ],
+      "successful_updates": 24994,
+      "AMP_skips": 6,
+      "attempts": 25000,
+      "monitors": 5000,
+      "fatal": 0,
+      "unknown": 0,
+      "runtime_sources_verified": 30,
+      "source_inputs_unchanged": true,
+      "Test_accessed": false
+    },
+    {
+      "seed": 2026,
+      "max_statistics_error": 0.0,
+      "metrics_verified": 31,
+      "valid_counts": {
+        "B1_supported_d0": 28,
+        "B1_supported_d1": 28,
+        "B2_added_d0": 28,
+        "B2_added_d1": 28,
+        "arc_recall_d1_macro": 28,
+        "arc_recall_d1_pooled": 28,
+        "candidate_path_d0": 28,
+        "candidate_path_d0_macro": 28,
+        "candidate_path_d1": 28,
+        "candidate_path_d1_macro": 28,
+        "candidate_unique_d0": 28,
+        "candidate_unique_d1": 28,
+        "coarse_vessel_d0": 28,
+        "coarse_vessel_d1": 28,
+        "dice": 28,
+        "edge_coverage_d1_macro": 28,
+        "edge_coverage_d1_pooled": 28,
+        "far_recall": 28,
+        "fp_density": 28,
+        "full_S3_d0": 28,
+        "full_S3_d1": 28,
+        "hard_cldice": 28,
+        "longest_hit_mean": 28,
+        "longest_miss_mean": 28,
+        "near_pixel_recall": 18,
+        "near_thin_recall_d0": 9,
+        "near_thin_recall_d1": 9,
+        "precision": 28,
+        "recall": 28,
+        "whole_missed_d0": 28,
+        "whole_missed_d1": 28
+      },
+      "prediction_arrays_verified": [
+        {
+          "image": "20051116_44615_0400_PP",
+          "sha256": "b0ddc818b26ab08d24c9c76514c7ff797180b87da48d2fc3fe088e7b84fddb96",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.3643916725591954e-12,
+          "max": 0.999994158744812
+        },
+        {
+          "image": "20051116_44785_0400_PP",
+          "sha256": "0565d549f62c636b986606e8d002507b1294c8b62f9e385463c982a8c50b5a05",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.4328794227524977e-11,
+          "max": 0.9999974966049194
+        },
+        {
+          "image": "20051117_37078_0400_PP",
+          "sha256": "330ec9e06da2d17df8380e023a343650b34fdf1429aab7ee2bfea56be5ab181e",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.511422055901825e-12,
+          "max": 0.9999996423721313
+        },
+        {
+          "image": "20051117_37130_0400_PP",
+          "sha256": "13c112de67d795132b61bb9b127b1d4481ec24e7569775a78adc9e70ae73c68f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.2817273284393416e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20051202_51655_0400_PP",
+          "sha256": "50278fc0304e042f8f6595cfb2ad62e5779f256a1b8c49a3a23a61e144842291",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 1.2396836758087754e-13,
+          "max": 0.999998927116394
+        },
+        {
+          "image": "20051202_54530_0400_PP",
+          "sha256": "6ff74e6c10045212b295f0d6d9834e34986156ae8ef2dda0af969a88145af7e4",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.18029153759014e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_31934_0400_PP",
+          "sha256": "ffa0479a101699d6f75145b9df5f599c743c23764623d0406b41aa4ca5ceb8dc",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 8.02084418848048e-13,
+          "max": 0.9999984502792358
+        },
+        {
+          "image": "20051205_35224_0400_PP",
+          "sha256": "621a9d292f9f433f3bb40cc3defee32229db686d765e4dae6924da73d956f92c",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 6.89987821110398e-14,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_35276_0400_PP",
+          "sha256": "31a709e6e763a1b07678770c208f18f25f7e4ae69f55731286d894d7de57caca",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.350622296977024e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20051205_35305_0400_PP",
+          "sha256": "1a08c933d7e9f2ef62d29db6857d98b95aab03d0efbee67db9fb4a49546bc8e4",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.4350379676339627e-14,
+          "max": 1.0
+        },
+        {
+          "image": "20051208_41707_0400_PP",
+          "sha256": "281ffb187ac9e9d1b713692aa60b868236ae2d805f455492aba08021f5c62468",
+          "shape": [
+            1536,
+            2304
+          ],
+          "dtype": "float32",
+          "min": 2.059923141350256e-13,
+          "max": 0.9999983310699463
+        },
+        {
+          "image": "20060407_41937_0200_PP",
+          "sha256": "94257908e28ba5051a2951b8fa8a44d798acd522ea11416de95e343b05dc5fbe",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.2256067688509731e-11,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060411_57853_0200_PP",
+          "sha256": "d89eeffd4e7e4e851a62b76529e479829aa18e2d7d72a174c190cb75fa89223c",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.0900771604815951e-11,
+          "max": 1.0
+        },
+        {
+          "image": "20060411_61214_0200_PP",
+          "sha256": "fcf3020d560727cf93f1e080f26e3f4b208b30ec3554a16a677aa015981507c4",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 1.26185596260181e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060411_61478_0200_PP",
+          "sha256": "34a5f2474b55f8b782c161b39a2d965e2d8a05038fd4467de4acdae049cd17c8",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.975175207730612e-12,
+          "max": 1.0
+        },
+        {
+          "image": "20060412_51656_0200_PP",
+          "sha256": "0b199b42652830ddd0551772430685ed923685cfdc8bfe234c5d088d85e72e1f",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 4.508755348242577e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060412_58287_0200_PP",
+          "sha256": "844d63a412f0ea38c131079b84fb09e034ac18af713f4dfbbe380818ef738f7d",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 7.975175207730612e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060412_58889_0200_PP",
+          "sha256": "fb2a2da16ba1861a2679760bbfdf0e69c6debdef3dac8ce09eb4423f02085129",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 8.947898845479418e-13,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060412_60913_0200_PP",
+          "sha256": "092fce8c6dd11fb68b53db8ea53e8208282c3379abe9ef0f17982f0e27bd0a92",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 2.8317044957243583e-14,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060412_61299_0200_PP",
+          "sha256": "1fb588fa4ba2d30d8e3e39c7ea9362d97e921058e3e66b4828ac5d4b767348d7",
+          "shape": [
+            960,
+            1440
+          ],
+          "dtype": "float32",
+          "min": 3.826530672185191e-12,
+          "max": 0.9999998807907104
+        },
+        {
+          "image": "20060522_45248_0100_PP",
+          "sha256": "9138ac1079f2e809a593262d599882c3b9eadbe41993370b6758bdd0f08ab080",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.826530672185191e-12,
+          "max": 0.9999985694885254
+        },
+        {
+          "image": "20060522_45583_0100_PP",
+          "sha256": "a519ed489f763ce5e22ff143f584b77ccfc5cdb7b10e4d68c6439c2226711594",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.4017953125860204e-14,
+          "max": 0.9999985694885254
+        },
+        {
+          "image": "20060523_43038_0100_PP",
+          "sha256": "74e636b2d0215aaf3d399cc530de12383cb88a9fb8f1ae5b3370598fbc323239",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.531529994653393e-13,
+          "max": 0.9999990463256836
+        },
+        {
+          "image": "20060523_49859_0100_PP",
+          "sha256": "8b62a03b082e65a66bed471ebe4c97d1ef329e64d704f146fcdd4e07a0a91d23",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.1904714330524553e-13,
+          "max": 0.9999984502792358
+        },
+        {
+          "image": "20060530_36895_0100_PP",
+          "sha256": "8fa06e2d1cc7c1027ca1c80257fece7560556584f720d2734ca109da3a7e08be",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.5102438613925906e-12,
+          "max": 0.9999991655349731
+        },
+        {
+          "image": "20060530_53062_0100_PP",
+          "sha256": "d2c431af699b59d08e498e880ecd8b011f125b52fb5065175e224355c71dacd4",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.8649021129441e-12,
+          "max": 0.9999971389770508
+        },
+        {
+          "image": "20060530_54390_0100_PP",
+          "sha256": "68c60aec2b0389343da82121377034835bfba96c50904a791eea6a636245919e",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 3.2710514539763637e-16,
+          "max": 0.9999990463256836
+        },
+        {
+          "image": "20060530_55390_0100_PP",
+          "sha256": "7e15753957d9416ecb5cdcfaf9412ba82b29affb43c72f4571b16750bea19231",
+          "shape": [
+            1488,
+            2240
+          ],
+          "dtype": "float32",
+          "min": 1.2520361266851743e-12,
+          "max": 0.9999985694885254
+        }
+      ],
+      "A0_arrays_verified": [],
+      "successful_updates": 24994,
+      "AMP_skips": 6,
+      "attempts": 25000,
+      "monitors": 5000,
+      "fatal": 0,
+      "unknown": 0,
+      "runtime_sources_verified": 30,
+      "source_inputs_unchanged": true,
+      "Test_accessed": false
+    }
+  ],
+  "source_paths_explanation": "Project-relative private provenance locators and hashes, not links to downloadable assets.",
+  "historical_A0_scope": "2026 endpoint/actual A0 config and existing scientific review were checked. Fresh A0 array checks here cover new seeds2027/2028 only.",
+  "frozen_originals_modified": false,
+  "new_training_or_inference": false,
+  "official_Test_accessed": false,
+  "pixel_payloads_in_public_export": false
+}
