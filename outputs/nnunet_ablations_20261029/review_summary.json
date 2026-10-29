@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "max_numerical_error": 0.0,
+  "near_counts": {
+    "standard2027": {
+      "NNUNET": 59,
+      "A0": 34
+    },
+    "standard2028": {
+      "NNUNET": 59,
+      "A0": 36
+    },
+    "ablation2027": {
+      "N0": 59,
+      "N-FinalOnly": 57
+    }
+  },
+  "near_point_diagnostic": {
+    "common_misses_standard2027_2028": 17,
+    "common_miss_image_count": 6,
+    "common_misses_by_image": {
+      "20051117_37130_0400_PP": 4,
+      "20060411_61214_0200_PP": 1,
+      "20060411_61478_0200_PP": 5,
+      "20060412_60913_0200_PP": 1,
+      "20060522_45583_0100_PP": 4,
+      "20060530_54390_0100_PP": 2
+    },
+    "final_only_recovers_standard_common_miss": 3,
+    "final_only_gained_vs2027": 4,
+    "final_only_lost_vs2027": 6,
+    "diagnostic_counts_not_replacement_primary": true
+  },
+  "near_image_changes": [
+    {
+      "filename": "20051117_37130_0400_PP",
+      "denominator": 13,
+      "N0_hits": 9,
+      "final_only_hits": 9,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20051205_35276_0400_PP",
+      "denominator": 8,
+      "N0_hits": 8,
+      "final_only_hits": 8,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20060411_61214_0200_PP",
+      "denominator": 3,
+      "N0_hits": 2,
+      "final_only_hits": 2,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20060411_61478_0200_PP",
+      "denominator": 27,
+      "N0_hits": 22,
+      "final_only_hits": 22,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20060412_58889_0200_PP",
+      "denominator": 6,
+      "N0_hits": 6,
+      "final_only_hits": 2,
+      "recall_difference": -0.6666666666666667,
+      "macro_contribution": -0.07407407407407408
+    },
+    {
+      "filename": "20060412_60913_0200_PP",
+      "denominator": 1,
+      "N0_hits": 0,
+      "final_only_hits": 0,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20060522_45248_0100_PP",
+      "denominator": 1,
+      "N0_hits": 0,
+      "final_only_hits": 1,
+      "recall_difference": 1.0,
+      "macro_contribution": 0.1111111111111111
+    },
+    {
+      "filename": "20060522_45583_0100_PP",
+      "denominator": 14,
+      "N0_hits": 10,
+      "final_only_hits": 10,
+      "recall_difference": 0.0,
+      "macro_contribution": 0.0
+    },
+    {
+      "filename": "20060530_54390_0100_PP",
+      "denominator": 4,
+      "N0_hits": 2,
+      "final_only_hits": 3,
+      "recall_difference": 0.25,
+      "macro_contribution": 0.027777777777777776
+    }
+  ],
+  "near_image_summary": {
+    "improved": 2,
+    "worsened": 1,
+    "unchanged": 6,
+    "max_absolute_contribution": {
+      "filename": "20060522_45248_0100_PP",
+      "denominator": 1,
+      "N0_hits": 0,
+      "final_only_hits": 1,
+      "recall_difference": 1.0,
+      "macro_contribution": 0.1111111111111111
+    }
+  },
+  "primary_interpretation": "original_DS_Dice_advantage",
+  "guard_checks": {
+    "precision": false,
+    "far_recall": false,
+    "fp_density": false,
+    "recall": true,
+    "coarse_vessel_d0": true,
+    "hard_cldice": false
+  },
+  "protected_Dice_gain": false,
+  "Test_accessed": false,
+  "new_training_or_inference": 0,
+  "repeated_Dev_not_independent": true
+}

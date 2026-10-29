@@ -1,0 +1,18 @@
+{
+  "outputs/nnunet_ablations_20261029/bootstrap_indices_by_n.json": "fecf0e7cd5123b8ae963267eb3c771aa8c631443cce6bcf9ada4a18b94c8bd2f",
+  "outputs/nnunet_ablations_20261029/budget_summary.json": "bccb2ccee77812555999cfbc449ebd11a85d7b170c7e0f5b8971edaf766cd4d7",
+  "outputs/nnunet_ablations_20261029/design_summary.json": "cde157ca2c397e2d28d7d8359a619e8c8d001bcb8f19cc428948d393432e8c39",
+  "outputs/nnunet_ablations_20261029/fixed_endpoint_evidence.json": "973bd163523dddfd82c538eed6a2851527625c99d7d1f29a966afc3e08220bd7",
+  "outputs/nnunet_ablations_20261029/README.md": "ba001ea45e762c5b9f1090d73022195eff8468eac08780a52dfc61c43edfdebd",
+  "outputs/nnunet_ablations_20261029/review_summary.json": "cce77c91788c9c359a1a3a13b92f49fb11f4b6291c5c5e1b329aeda89e4589d3",
+  "outputs/nnunet_ablations_20261029/SOL_NEAR_POINT_DIAGNOSTIC_20261029.csv": "2a1e091a074f71cf1916b704407f713e8d30a2856d2a7b27f6294292e47bd473",
+  "outputs/nnunet_ablations_20261029/SOL_PIXEL_COUNTS_20261029.csv": "ab6000c021adc522ac9b46c3e1826c9cb99464d2dc1ccfbeb5fe0da7a2ae7053",
+  "outputs/nnunet_ablations_20261029/SOL_RESULT_COMPARISON_20261029.csv": "52462ffff97a4efd4f3b5b3927eb7258efa849c39548b01cd7d36aad03739f1f",
+  "outputs/nnunet_ablations_20261029/source_manifest.json": "fff2a46295e1dbd747bbf3a5041dbb44edbbd3431f997825e25b77b5fed002ca",
+  "outputs/nnunet_ablations_20261029/verify.py": "61f7b1c4b9da30ab5afc55064bff0503d8aa981923afc3e8eb41c288c8121ab5",
+  "docs/research/nnunet_ablations_20261029/README.md": "ea8cb89dfddfe9c0b3ae1625698f8f6e7790faf2b22266ec5c75d545246731df",
+  "docs/research/nnunet_ablations_20261029/一页中文科研结论_20261029.pdf": "a5018b8a80ddc478801f63fc16cbc39320849bc6bfe9351b94fe2558ef189146",
+  "docs/research/nnunet_ablations_20261029/深监督消融_科研审查与下一阶段建议_20261029.pdf": "5f3c12572bc85889f0f0a03b698cc5c964d6c740eec99d86251f7a1d93c39118",
+  "README.md": "a4a6c853eaa53fd28ec7f59cd7fe5baf29c51043cd65a440968a8cc5d90d43ed",
+  "STATUS.md": "3b1310007aae2ee6b2e3e10cbba14d9696965b180628d68b6d8dcfe7a5707e88"
+}
