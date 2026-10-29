@@ -1,0 +1,336 @@
+{
+  "old": {
+    "rows": 6944,
+    "unique_images": 28,
+    "metrics": 31,
+    "NA": 384,
+    "mean_groups": 248,
+    "pair_rows": 6076,
+    "interval_groups": 217,
+    "ratio_error": 0.0,
+    "mean_error": 1.1102230246251565e-16,
+    "pair_error": 0.0,
+    "interval_error": 4.440892098500626e-16
+  },
+  "new": {
+    "rows": 5208,
+    "unique_images": 28,
+    "metrics": 31,
+    "NA": 288,
+    "mean_groups": 186,
+    "pair_rows": 2460,
+    "interval_groups": 93,
+    "ratio_error": 0.0,
+    "mean_error": 1.4210854715202004e-14,
+    "pair_error": 0.0,
+    "interval_error": 0.0
+  },
+  "shared_A0_2026": "All 868 values/numerators/denominators identical, including 48 NA.",
+  "eligibility": "Same image IDs and per-metric NA sets across all arms; checked GT/FOV denominator fields match."
+}
+
+ABSOLUTE PERCENT
+metric          dice  precision  recall  fp_density  candidate_path_d1_macro  hard_cldice  far_recall  coarse_vessel_d0
+seed method
+2026 A0      83.5063    85.2719 82.1774      2.1138                  74.2240      87.5747     82.3570           98.5203
+     B1      83.3649    84.2777 82.8797      2.3087                  76.5116      87.4032     83.0535           98.5981
+     B2      83.3577    84.3672 82.7770      2.2893                  76.3255      87.4021     82.9479           98.5962
+     C       83.4919    84.9196 82.4965      2.1850                  74.5795      87.7120     82.6735           98.5553
+     D       83.4442    84.6568 82.6505      2.2335                  74.8262      87.5033     82.8291           98.5612
+     NNUNET  85.7221    86.1671 85.4332      2.0349                  79.7789      90.3110     85.5954           98.9470
+     SCSE    83.5152    85.3537 82.1217      2.0981                  73.8822      87.5840     82.3031           98.4972
+     SPATIAL 83.4516    87.4329 80.0996      1.7077                  70.6661      87.6061     80.3093           98.1617
+     UFL     83.2163    82.3578 84.5457      2.7080                  76.3402      87.2496     84.7104           98.7921
+2027 A0      83.6446    86.6743 81.1052      1.8469                  72.2157      87.8206     81.3154           98.3679
+     NNUNET  85.6225    86.5601 84.8596      1.9527                  79.8436      90.2599     85.0000           98.7987
+2028 A0      83.6273    85.2548 82.3935      2.1147                  73.6189      87.7223     82.5623           98.5735
+     NNUNET  85.6899    86.5766 84.9747      1.9506                  79.3764      90.2266     85.1251           98.9054
+
+TAILS (delta units pp except lengths)
+ seed method                  metric unit  n  positive  negative  zero    mean     min     p10  median     p90     max  worst3_mean  best3_mean
+ 2027 NNUNET candidate_path_d1_macro   pp 28        26         2     0  7.6278 -0.7825  1.4872  8.5840 14.3146 16.4578      -0.1492     15.6417
+ 2027 NNUNET        coarse_vessel_d0   pp 28        24         4     0  0.4308 -2.0105 -0.3261  0.3179  0.9402  4.1787      -1.0603      2.3234
+ 2027 NNUNET                    dice   pp 28        27         1     0  1.9779 -0.7508  0.5813  2.0454  3.4383  5.7498       0.0444      4.2795
+ 2027 NNUNET              far_recall   pp 28        26         2     0  3.6845 -4.3480  0.7609  3.5956  6.9461  8.5634      -1.4547      8.0164
+ 2027 NNUNET              fp_density   pp 28        17        11     0  0.1058 -1.5691 -0.4349  0.1062  0.7635  1.0053      -0.9903      0.9048
+ 2027 NNUNET             hard_cldice   pp 28        28         0     0  2.4392  0.0270  0.9706  2.1127  3.6345  8.5950       0.6220      5.7884
+ 2027 NNUNET               precision   pp 28        11        17     0 -0.1142 -4.7970 -3.8193 -0.1911  2.9250  9.4933      -4.4946      5.8251
+ 2027 NNUNET                  recall   pp 28        26         2     0  3.7544 -4.3714  1.0531  3.9779  6.9523  8.5610      -1.3909      8.0289
+ 2028 NNUNET candidate_path_d1_macro   pp 28        24         4     0  5.7575 -4.5126 -0.4964  4.8716 12.6149 16.6396      -2.3269     14.8079
+ 2028 NNUNET        coarse_vessel_d0   pp 28        21         7     0  0.3319 -1.2666 -0.1864  0.2882  0.7950  2.1632      -0.5929      1.5379
+ 2028 NNUNET                    dice   pp 28        28         0     0  2.0626  0.4412  0.7137  1.7874  3.3959  6.5967       0.5627      4.9155
+ 2028 NNUNET              far_recall   pp 28        24         4     0  2.5628 -4.2971 -0.1180  2.9447  5.7137  7.1062      -2.1358      6.5267
+ 2028 NNUNET              fp_density   pp 28        11        17     0 -0.1642 -2.0299 -0.7617 -0.1578  0.5006  0.6177      -1.3810      0.5724
+ 2028 NNUNET             hard_cldice   pp 28        28         0     0  2.5043  0.4595  1.2317  2.1365  4.0720  8.2074       0.8749      6.2451
+ 2028 NNUNET               precision   pp 28        18        10     0  1.3218 -2.8846 -2.4152  1.1221  5.4542 11.0009      -2.6453      7.5980
+ 2028 NNUNET                  recall   pp 28        25         3     0  2.5811 -4.3008  0.0442  2.6859  5.7211  7.0719      -2.1056      6.5305
+
+HISTORICAL NNUNET VS OLD
+metric          candidate_path_d1_macro  coarse_vessel_d0   dice  far_recall  fp_density  hard_cldice  precision  recall
+contrast
+NNUNET-A0                        5.5549            0.4267 2.2158      3.2385     -0.0789       2.7363     0.8952  3.2558
+NNUNET-B1                        3.2673            0.3489 2.3572      2.5419     -0.2737       2.9078     1.8894  2.5535
+NNUNET-B2                        3.4534            0.3507 2.3644      2.6475     -0.2544       2.9089     1.8000  2.6562
+NNUNET-C                         5.1993            0.3917 2.2302      2.9219     -0.1501       2.5990     1.2475  2.9367
+NNUNET-D                         4.9527            0.3858 2.2779      2.7663     -0.1986       2.8076     1.5103  2.7827
+NNUNET-SCSE                      5.8966            0.4497 2.2069      3.2923     -0.0632       2.7269     0.8135  3.3115
+NNUNET-SPATIAL                   9.1128            0.7852 2.2706      5.2862      0.3272       2.7049    -1.2658  5.3336
+NNUNET-UFL                       3.4387            0.1549 2.5058      0.8850     -0.6731       3.0614     3.8093  0.8875
+
+JOINT
+{
+  "2026": {
+    "Dice_down_gt_1pp": 0,
+    "Precision_down_gt_1pp": 9,
+    "FP_up_gt_0_5pp": 5,
+    "all_six_per_image_guards_nonadverse": 13,
+    "Dice_drop_images": [],
+    "worst_FP_images": [
+      {
+        "image": "20060523_43038_0100_PP",
+        "dice": 2.2812283157325974,
+        "precision": -3.238075986184852,
+        "recall": 7.5550361092697855,
+        "fp_density": 0.6897090573731354,
+        "candidate_path_d1_macro": 3.4037876645258147,
+        "hard_cldice": 2.754491320543706,
+        "far_recall": 7.502520480266062,
+        "coarse_vessel_d0": 0.1094930471915001
+      },
+      {
+        "image": "20060530_36895_0100_PP",
+        "dice": 2.995221464224307,
+        "precision": -3.345858116138556,
+        "recall": 8.312478342894547,
+        "fp_density": 0.6561867373158836,
+        "candidate_path_d1_macro": 7.565245559931666,
+        "hard_cldice": 2.8303320661580478,
+        "far_recall": 8.32769622522006,
+        "coarse_vessel_d0": 0.3735567127009287
+      },
+      {
+        "image": "20060530_55390_0100_PP",
+        "dice": 1.8404577272409628,
+        "precision": -2.666223582224858,
+        "recall": 6.6075539261659095,
+        "fp_density": 0.6384481598219461,
+        "candidate_path_d1_macro": 1.9352859942502465,
+        "hard_cldice": 3.0099774179661143,
+        "far_recall": 6.597560482875342,
+        "coarse_vessel_d0": 0.078359670889383
+      }
+    ],
+    "worst_precision_images": [
+      {
+        "image": "20060530_36895_0100_PP",
+        "dice": 2.995221464224307,
+        "precision": -3.345858116138556,
+        "recall": 8.312478342894547,
+        "fp_density": 0.6561867373158836,
+        "candidate_path_d1_macro": 7.565245559931666,
+        "hard_cldice": 2.8303320661580478,
+        "far_recall": 8.32769622522006,
+        "coarse_vessel_d0": 0.3735567127009287
+      },
+      {
+        "image": "20060523_43038_0100_PP",
+        "dice": 2.2812283157325974,
+        "precision": -3.238075986184852,
+        "recall": 7.5550361092697855,
+        "fp_density": 0.6897090573731354,
+        "candidate_path_d1_macro": 3.4037876645258147,
+        "hard_cldice": 2.754491320543706,
+        "far_recall": 7.502520480266062,
+        "coarse_vessel_d0": 0.1094930471915001
+      },
+      {
+        "image": "20051202_51655_0400_PP",
+        "dice": 0.39039472525574936,
+        "precision": -2.7753791151943097,
+        "recall": 4.0904725316942,
+        "fp_density": 0.5650557620817842,
+        "candidate_path_d1_macro": 0.9476540674460798,
+        "hard_cldice": 1.7739156054641936,
+        "far_recall": 4.122590403657222,
+        "coarse_vessel_d0": 0.2930145335208634
+      }
+    ]
+  },
+  "2027": {
+    "Dice_down_gt_1pp": 0,
+    "Precision_down_gt_1pp": 9,
+    "FP_up_gt_0_5pp": 7,
+    "all_six_per_image_guards_nonadverse": 7,
+    "Dice_drop_images": [
+      {
+        "image": "20051205_35305_0400_PP",
+        "dice": -0.7508099805469293,
+        "precision": 3.604739764586129,
+        "recall": -4.3713584789941695,
+        "fp_density": -0.48326181833762816,
+        "candidate_path_d1_macro": 9.202603480957027,
+        "hard_cldice": 0.027044144423471472,
+        "far_recall": -4.3480275555281,
+        "coarse_vessel_d0": -2.010454362685965
+      }
+    ],
+    "worst_FP_images": [
+      {
+        "image": "20060530_55390_0100_PP",
+        "dice": 0.9348103090726312,
+        "precision": -4.797014789015563,
+        "recall": 6.880381959246318,
+        "fp_density": 1.005284306343167,
+        "candidate_path_d1_macro": 2.749476421769992,
+        "hard_cldice": 1.8680856354347353,
+        "far_recall": 6.86467728250183,
+        "coarse_vessel_d0": 0.1175395063340745
+      },
+      {
+        "image": "20060523_43038_0100_PP",
+        "dice": 2.121259056804714,
+        "precision": -4.636403034474867,
+        "recall": 8.405435578969412,
+        "fp_density": 0.91789804353154,
+        "candidate_path_d1_macro": 5.495043977926118,
+        "hard_cldice": 2.0608767987078003,
+        "far_recall": 8.349663717741118,
+        "coarse_vessel_d0": 0.2189860943830113
+      },
+      {
+        "image": "20060530_53062_0100_PP",
+        "dice": 1.8212588715632583,
+        "precision": -3.720224594543309,
+        "recall": 5.967842128833734,
+        "fp_density": 0.7913021617559352,
+        "candidate_path_d1_macro": 5.570946103079965,
+        "hard_cldice": 2.0904214709987268,
+        "far_recall": 5.967842128833734,
+        "coarse_vessel_d0": 0.3127932436659431
+      }
+    ],
+    "worst_precision_images": [
+      {
+        "image": "20060530_55390_0100_PP",
+        "dice": 0.9348103090726312,
+        "precision": -4.797014789015563,
+        "recall": 6.880381959246318,
+        "fp_density": 1.005284306343167,
+        "candidate_path_d1_macro": 2.749476421769992,
+        "hard_cldice": 1.8680856354347353,
+        "far_recall": 6.86467728250183,
+        "coarse_vessel_d0": 0.1175395063340745
+      },
+      {
+        "image": "20060523_43038_0100_PP",
+        "dice": 2.121259056804714,
+        "precision": -4.636403034474867,
+        "recall": 8.405435578969412,
+        "fp_density": 0.91789804353154,
+        "candidate_path_d1_macro": 5.495043977926118,
+        "hard_cldice": 2.0608767987078003,
+        "far_recall": 8.349663717741118,
+        "coarse_vessel_d0": 0.2189860943830113
+      },
+      {
+        "image": "20060530_36895_0100_PP",
+        "dice": 2.899751373281534,
+        "precision": -4.050382819604847,
+        "recall": 8.561027049457337,
+        "fp_density": 0.7515232906401976,
+        "candidate_path_d1_macro": 8.590699230471,
+        "hard_cldice": 2.8867633776014423,
+        "far_recall": 8.563377611560874,
+        "coarse_vessel_d0": 0.7923930269413626
+      }
+    ]
+  },
+  "2028": {
+    "Dice_down_gt_1pp": 0,
+    "Precision_down_gt_1pp": 6,
+    "FP_up_gt_0_5pp": 3,
+    "all_six_per_image_guards_nonadverse": 9,
+    "Dice_drop_images": [],
+    "worst_FP_images": [
+      {
+        "image": "20060530_53062_0100_PP",
+        "dice": 1.376971915496139,
+        "precision": -2.884619784638909,
+        "recall": 4.600843674607413,
+        "fp_density": 0.6177305173183852,
+        "candidate_path_d1_macro": 4.698829172388008,
+        "hard_cldice": 1.5815939458344253,
+        "far_recall": 4.600843674607413,
+        "coarse_vessel_d0": 0.23980815347721673
+      },
+      {
+        "image": "20060530_55390_0100_PP",
+        "dice": 1.4657875749790494,
+        "precision": -2.5442433420538757,
+        "recall": 5.666117719911501,
+        "fp_density": 0.5867379237274019,
+        "candidate_path_d1_macro": 2.5052464566705845,
+        "hard_cldice": 2.524073692716522,
+        "far_recall": 5.6521016929368955,
+        "coarse_vessel_d0": 0.0652997257411525
+      },
+      {
+        "image": "20060523_43038_0100_PP",
+        "dice": 2.2964756878967596,
+        "precision": -2.375882170885124,
+        "recall": 6.670184558490034,
+        "fp_density": 0.5128742796887763,
+        "candidate_path_d1_macro": 3.556013070419406,
+        "hard_cldice": 2.5276865192468523,
+        "far_recall": 6.616533477651743,
+        "coarse_vessel_d0": 0.131391656629809
+      }
+    ],
+    "worst_precision_images": [
+      {
+        "image": "20060530_53062_0100_PP",
+        "dice": 1.376971915496139,
+        "precision": -2.884619784638909,
+        "recall": 4.600843674607413,
+        "fp_density": 0.6177305173183852,
+        "candidate_path_d1_macro": 4.698829172388008,
+        "hard_cldice": 1.5815939458344253,
+        "far_recall": 4.600843674607413,
+        "coarse_vessel_d0": 0.23980815347721673
+      },
+      {
+        "image": "20060530_55390_0100_PP",
+        "dice": 1.4657875749790494,
+        "precision": -2.5442433420538757,
+        "recall": 5.666117719911501,
+        "fp_density": 0.5867379237274019,
+        "candidate_path_d1_macro": 2.5052464566705845,
+        "hard_cldice": 2.524073692716522,
+        "far_recall": 5.6521016929368955,
+        "coarse_vessel_d0": 0.0652997257411525
+      },
+      {
+        "image": "20060530_36895_0100_PP",
+        "dice": 2.725008069639756,
+        "precision": -2.5070363805635765,
+        "recall": 7.0718737834588925,
+        "fp_density": 0.4952979932120906,
+        "candidate_path_d1_macro": 6.932407294496789,
+        "hard_cldice": 3.0365695255682335,
+        "far_recall": 7.106203116854026,
+        "coarse_vessel_d0": 0.8942721304052492
+      }
+    ]
+  },
+  "two_seed_same_images": {
+    "dice_delta_Pearson": 0.937059578129598,
+    "dice_improves_both": 27,
+    "FP_worse_both": 11,
+    "precision_worse_both": 10,
+    "path_recall_worse_both": 2,
+    "average_Dice_mean_pp": 2.0202264464749273,
+    "average_Dice_min_pp": -0.1548130094774225,
+    "average_Dice_drop_top3_gains_mean_pp": 1.7109509362673307,
+    "per_image_average_FP_mean_pp": -0.02919603903341446
+  }
+}

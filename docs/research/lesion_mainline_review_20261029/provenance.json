@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "status": "planning_archive_not_frozen_or_executed",
+  "repository": "Yileina-Monv/retinal-vessel-study",
+  "base_commit": "0ede2fc9a29e3cc808478a523c834259ff647357",
+  "source_report": {
+    "name": "retinal_research_decision_20261029.md",
+    "original_sha256": "e6ee77e67607d524c7532cbdf4710ad21e00f66f5d87b4f5e9266480a4d291bc",
+    "public_sha256": "a5ce1d14c7221fbe5996ec66384e6bd25a6c7edee5703957438212f198c8680a",
+    "changes": [
+      "Only the private S0 attachment link was replaced by source_context.md. All other report text is preserved."
+    ],
+    "authorship_scope": "User-supplied GPT-6 Pro research decision report; report author statements are preserved and are not all independently repeated by this publication pass."
+  },
+  "available_project_ppt": {
+    "sha256": "659782456f7d89e703d530bbd83740c3dde2981f3f5cb7590cc17afa7717273d",
+    "cover_date": "2026-10-12",
+    "slides_checked": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      11
+    ],
+    "published": false,
+    "use": "Research-objective paraphrase only; no claim of byte identity with the private S0 pointer in the supplied report."
+  },
+  "initial_audit_readme_sha256": "f2281916edbc4990f31e857f40ee2e7eaf343c1e58345801830970de3104c1fe",
+  "initial_patch_ablation_status": "deprioritized_after_user_mainline_clarification",
+  "current_recommendation": "bounded D0, then freeze L1 only if justified; no execution in this publication",
+  "no_training": true,
+  "no_model_inference": true,
+  "no_test_access": true,
+  "source_pr_heads": {
+    "4": "33ad1cc693eafbbf8a5c7f60438aee7541fb8118",
+    "7": "1f2b10c31dad94e4814597d09cfe139882c38116",
+    "8": "2357c8fc6cc1df5c45502f9dbf9c536f03c1d168",
+    "10": "3cca62335dad337b0a8791b3c8712aca3359fa22"
+  }
+}

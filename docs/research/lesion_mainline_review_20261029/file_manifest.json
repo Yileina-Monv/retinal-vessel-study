@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-29",
+  "scope": "All files added or modified by this publication except this manifest.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4339,
+      "sha256": "a6f6dda94f6f3e7b9cc4071b959ae044a5820168bd7ef522a66a0270293b47cd",
+      "git_blob_sha": "588e093ebd2037b10ba8ac97f35a56a1a31e77a1"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 3861,
+      "sha256": "12deb3853a2858db529e50aee82e2f5709ba5fb2daf9875ab4eeaecc6ecbcf45",
+      "git_blob_sha": "ab4e4f12969ba7147305effd1b821d706e462889"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/README.md",
+      "bytes": 4118,
+      "sha256": "ef204f91f37ae757f7f622cbe67dd69b415e96900af0baf79e754456eb0084ac",
+      "git_blob_sha": "c10bb3f4351dd1b74ff0852b7fa9ab0728b3e710"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/d0_handoff.md",
+      "bytes": 2979,
+      "sha256": "32e8309815a634dfd779809c22a13278a6f4b0cb9450079c23326f9bcf4c1116",
+      "git_blob_sha": "f433af8fcfdcd05be748009fdbc48d8eaad84046"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/local_supervision_principles.md",
+      "bytes": 4407,
+      "sha256": "b051324345a3997a834c24e05ae71a68a318fdaac99a2929320d443955a845e7",
+      "git_blob_sha": "2e18a41490acca0299688ce1ad04b076d5b513e7"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/provenance.json",
+      "bytes": 1783,
+      "sha256": "4b4bd0aa668526b55066b9f7d5635a3f1edbf3044bd995d15d82ea4db629191c",
+      "git_blob_sha": "5dc7a2f21a72518be4745ec2035f3ce7aa6cfead"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/publication_checks.json",
+      "bytes": 916,
+      "sha256": "7798e3079b12f4804e21ac044b7620ee1fd5ace89425f57af74354cea85fc817",
+      "git_blob_sha": "0eab4c42465ccdbef75b7dcdc1be37c2d20ed93c"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/retinal_research_decision_20261029.md",
+      "bytes": 52056,
+      "sha256": "a5ce1d14c7221fbe5996ec66384e6bd25a6c7edee5703957438212f198c8680a",
+      "git_blob_sha": "bd2fc4c9f25bae6957e8f7fea30103b32a4ab3de"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/review_and_recommendations.md",
+      "bytes": 5455,
+      "sha256": "72709ad1190367905f25fb8acde69545313cf4580370a472b1535717488e6659",
+      "git_blob_sha": "cb3c283ebd6df5f3e8462fd1661434e3ece13fa0"
+    },
+    {
+      "path": "docs/research/lesion_mainline_review_20261029/source_context.md",
+      "bytes": 2398,
+      "sha256": "7e951bb4a8e62e2ec425b45165f3c34b4ec9cedca6731b6db8f9821060a17e89",
+      "git_blob_sha": "eae41f15f5d64e9626fc764bb663fd87ba3020eb"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/README.md",
+      "bytes": 2982,
+      "sha256": "51c55ab3b09fad3a596ce43c11bf93349b5fbe4524edcc6b5e77621820d59639",
+      "git_blob_sha": "0b95ce6ec970297000a1db1886734c7a7f174fde"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/analyze.py",
+      "bytes": 9168,
+      "sha256": "eddf71a88618570f1be81885d5af66356887faafbd2328389a9a8b46a83cb0d8",
+      "git_blob_sha": "5d3c3f63179d05c8a85e572c66f1da8b93e1ba97"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/absolute_percent.csv",
+      "bytes": 2100,
+      "sha256": "17582b6b578f91b213e727ed00d1eb78954b4f7eee016038a3c77fc1edf44927",
+      "git_blob_sha": "4352473c91d50869a365eeb6e71d34fb0a479195"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/all_source_comparisons.csv",
+      "bytes": 56157,
+      "sha256": "e248a12264b4935ffe32b232a073d8001738c5c2f6a3fcb670f82ceae12ee9b1",
+      "git_blob_sha": "2be0467a105082aa73c1f100b9b663b3fb45b0be"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/historical_same_seed_comparisons.csv",
+      "bytes": 6412,
+      "sha256": "24fc026a66f2366ad30e98ce77386cc1f1647bd299a2920c7c4c73fe9bfb9e29",
+      "git_blob_sha": "2513e429738e981b9a265e872e5f750fa5f38d6c"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/recomputed_image_deltas.csv",
+      "bytes": 560467,
+      "sha256": "f174321ead8df9d9486d1325045b61bb31827bf04c1a03674908d33d2ef97e1c",
+      "git_blob_sha": "e3dca35c1b68e63eb685c675763a970235a5bedc"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/run_output.txt",
+      "bytes": 14886,
+      "sha256": "3868bee6f906fc2180fb17f499f8b2ecbf446b381a53be890c24f97978ceaa02",
+      "git_blob_sha": "968adcb3772aea7347e6c65013e6b6738920da79"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/tail_details.json",
+      "bytes": 8765,
+      "sha256": "22f9f7d166da4eb490042028290250af9f156ffce0ae0c9c929378c8762f04f2",
+      "git_blob_sha": "50ff9007aa834d3b83005cc04b73977a8d494f0a"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/tails_all_metrics.csv",
+      "bytes": 57616,
+      "sha256": "e623058951056af06c3a7a50b6f704728a226c437ce82fcf886273664c3ff55a",
+      "git_blob_sha": "40af216ccaf91a3646fb11f18eef723243e07fbf"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/two_seed_mean_image_deltas.csv",
+      "bytes": 16247,
+      "sha256": "aaa4775e50f548dd8522158c754a5289de875025e4c31fc58a2397e45a7fe739",
+      "git_blob_sha": "a748186e60de5c882ebe1dfaaaf598ae888aa747"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/derived/verification.json",
+      "bytes": 791,
+      "sha256": "27874414dd296ed8fa5e5001ff3e185361a981e76e528ec1cfc751a5d042a21d",
+      "git_blob_sha": "0652a0b6dc892a5d042d14301a8a911d6a8b6849"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/initial_baseline_review.txt",
+      "bytes": 14425,
+      "sha256": "f2281916edbc4990f31e857f40ee2e7eaf343c1e58345801830970de3104c1fe",
+      "git_blob_sha": "5e0778d750846daa1d911463a6ab431b433373ca"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/local_endpoint_summary.json",
+      "bytes": 2654,
+      "sha256": "b9efb46cf03eadf5597bf5bddacfe1d22c3a031a0099596787adf9b1c119fbe6",
+      "git_blob_sha": "6d28d1ef16de81dd65b27b5c59387262c294a3b4"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/README.md",
+      "bytes": 3118,
+      "sha256": "fe9eb4247011aa6094e00d7a88541dfd55d29609d081bd2070d41396a5e4fc44",
+      "git_blob_sha": "1692128fa9037a36adbbdea766392b296574efa8"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/absolute_metric_summary.csv",
+      "bytes": 13812,
+      "sha256": "bf768b35c1d6bc6b791a2e66ed870ee3f648e103745281c09d006f9ed0a307ed",
+      "git_blob_sha": "777eea79b682981ad30d6fe822227bb9afacc892"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/bootstrap_indices_by_n.json",
+      "bytes": 556971,
+      "sha256": "0b6178cdc3b210244187895972299a4e8d8d899f5f04a44fb4e74216c08eb2ca",
+      "git_blob_sha": "7dcc2091861d156f74f67d15697c3f253ba69d39"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/fixed_endpoint_per_image_metrics.csv",
+      "bytes": 655772,
+      "sha256": "d5e55dbe87b276a0313929c48d6cfe5e6310e91af637afe8ab32f450515daf37",
+      "git_blob_sha": "5ffd7c71ac7286ba42667e4512848f5d5db4960a"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/nnunet_replication_review_20261027.md",
+      "bytes": 8734,
+      "sha256": "fe104d10a16a1d5826b30d293e580730aa3b6e27d53c001a02141205c05c61f4",
+      "git_blob_sha": "5de711666ea11bc44ee96ecada716bb60ee26aa9"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/paired_comparison_summary.csv",
+      "bytes": 16366,
+      "sha256": "281e26d0e92c2e7c2090a353a07e956624bce11c3c32bf5b51412e2768df5fbf",
+      "git_blob_sha": "880142b7186af6a4c2f9d8bb566d7e6f622397e8"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/paired_image_deltas.csv",
+      "bytes": 311961,
+      "sha256": "01e5473ae0fa36d7ad72ab8db5b4436c3997857929274830f4c58e57fc1258f9",
+      "git_blob_sha": "a7f2d54c65635b10e8346a8eea2a18dbad78f874"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/protocol_design_summary.json",
+      "bytes": 2349,
+      "sha256": "24605146fe0f600cb48a365ea1ffabbfece351331c9b9b4b062c9c908c853a9b",
+      "git_blob_sha": "63fe7019a4fabc73ff74b4466af013aa483bb66c"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/new/training_config_summary.csv",
+      "bytes": 5688,
+      "sha256": "81a6f5baed5f76d41ee933804cbf9475c033ffde6794c7f95281456252698605",
+      "git_blob_sha": "d48bee787d13c699bec22bb6ad80f84c3242ecb7"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/README.md",
+      "bytes": 2577,
+      "sha256": "d090c920dc4242ae44eb1e6bb9c544b99b18424b4f0c6c8e0bef626513ed9b60",
+      "git_blob_sha": "1745583e725f83144ccd0640841b40e0433a9c03"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/absolute_metric_summary.csv",
+      "bytes": 14066,
+      "sha256": "fd025dcea45ea79883062691287f34a6290696ec7212962d00ddff87199e3e52",
+      "git_blob_sha": "8b60ada4bdb3c0d1c169ce315e816cefe513cf62"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/bootstrap_indices_by_n.json",
+      "bytes": 156971,
+      "sha256": "409241259fc6d9fc5fa0490710ac5f0bbf1fa29b4f0811b60bb28042096b67d1",
+      "git_blob_sha": "e45c22845e521398153676a60beea527fb1750d1"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/fixed_endpoint_per_image_metrics.csv",
+      "bytes": 1153600,
+      "sha256": "b85a7e85ccf1156fdbe791dc54d4a2512bcb275700ac805260b5f2f04395870a",
+      "git_blob_sha": "5004fb0a901093d2f0b9694f643a905bfe069e91"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/p1_exploration_summary_20261026.md",
+      "bytes": 15925,
+      "sha256": "37f3e3701bb874c17b5f9a3a7cc7f212053db167e72f33f0ce8967ef78e82aa6",
+      "git_blob_sha": "4bffe511ad6027cafc262549307f71ecae43c665"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/paired_comparison_summary.csv",
+      "bytes": 30335,
+      "sha256": "caf1c990cecabdfeff95eed6808a9a65094104eb78f2d1fc32f1d62ef87931bb",
+      "git_blob_sha": "1a970f6b0f5c25c7bd0bd15740b7924620db3fb1"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/paired_image_deltas.csv",
+      "bytes": 488398,
+      "sha256": "f4e664f9598c853b1dfa735cddff23115f0ab7ec06cb645c7e812587d057642a",
+      "git_blob_sha": "28901293c28d3112b08ea8fcb07e0b22f6e292c2"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/protocol_design_summary.json",
+      "bytes": 10706,
+      "sha256": "165f3dbfb858fac7a058ebfbc3fdb71b8ff66e9b7b4c00a5d114d7753d5f3497",
+      "git_blob_sha": "54d31adf36b51c7acc5daa831ee7e65c17c114d5"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/old/training_config_summary.csv",
+      "bytes": 2151,
+      "sha256": "9a9a0ad56e37097fa4cce0121a973c449f73a49bbbdb2ce25912a4eb7293d6ee",
+      "git_blob_sha": "d3e70ad47697e8987621f08f428769b5fea969f7"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/provenance.json",
+      "bytes": 5699,
+      "sha256": "15fb55a0559d395eae4b65c7dd0f13a6bea533f0d26b14e09bbfdb92279d278b",
+      "git_blob_sha": "aa0ab4500cfaf33f52aaf5b7662fe186b2f58338"
+    },
+    {
+      "path": "outputs/lesion_mainline_review_20261029/baseline_audit/verify_local_endpoint.py",
+      "bytes": 4221,
+      "sha256": "ab3a8872b8da68d646804c1de25cbfd163f39d339a550811532779f2ce36af0d",
+      "git_blob_sha": "df6ee3105dec69c2810153213af229df17ebdbb5"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "scope": "Descriptive image bootstrap conditional on fixed seeds 2027/2028.",
+  "metric": "near_thin_recall_d1",
+  "n_images": 9,
+  "reference_positions": 77,
+  "per_seed_NNUNET_hits": {
+    "2027": 59,
+    "2028": 59
+  },
+  "mean_delta_pp": 14.064973092750868,
+  "lower_pp": -6.9618055555555545,
+  "upper_pp": 32.1897752453308,
+  "positive_zero_negative_images": [
+    5,
+    3,
+    1
+  ],
+  "leave_one_out_mean_pp": [
+    8.130787037037035,
+    15.041844729344728,
+    15.823094729344728,
+    10.036057692307693,
+    9.573094729344728,
+    15.823094729344728,
+    22.073094729344728,
+    15.823094729344728,
+    14.260594729344728
+  ],
+  "counts": [
+    {
+      "image": "20051117_37130_0400_PP",
+      "A0_2027_hits": 1,
+      "denominator": 13,
+      "NNUNET_2027_hits": 9,
+      "A0_2028_hits": 0,
+      "NNUNET_2028_hits": 8
+    },
+    {
+      "image": "20051205_35276_0400_PP",
+      "A0_2027_hits": 7,
+      "denominator": 8,
+      "NNUNET_2027_hits": 8,
+      "A0_2028_hits": 8,
+      "NNUNET_2028_hits": 8
+    },
+    {
+      "image": "20060411_61214_0200_PP",
+      "A0_2027_hits": 2,
+      "denominator": 3,
+      "NNUNET_2027_hits": 2,
+      "A0_2028_hits": 2,
+      "NNUNET_2028_hits": 2
+    },
+    {
+      "image": "20060411_61478_0200_PP",
+      "A0_2027_hits": 9,
+      "denominator": 27,
+      "NNUNET_2027_hits": 22,
+      "A0_2028_hits": 10,
+      "NNUNET_2028_hits": 22
+    },
+    {
+      "image": "20060412_58889_0200_PP",
+      "A0_2027_hits": 3,
+      "denominator": 6,
+      "NNUNET_2027_hits": 6,
+      "A0_2028_hits": 3,
+      "NNUNET_2028_hits": 6
+    },
+    {
+      "image": "20060412_60913_0200_PP",
+      "A0_2027_hits": 0,
+      "denominator": 1,
+      "NNUNET_2027_hits": 0,
+      "A0_2028_hits": 0,
+      "NNUNET_2028_hits": 0
+    },
+    {
+      "image": "20060522_45248_0100_PP",
+      "A0_2027_hits": 1,
+      "denominator": 1,
+      "NNUNET_2027_hits": 0,
+      "A0_2028_hits": 1,
+      "NNUNET_2028_hits": 1
+    },
+    {
+      "image": "20060522_45583_0100_PP",
+      "A0_2027_hits": 10,
+      "denominator": 14,
+      "NNUNET_2027_hits": 10,
+      "A0_2028_hits": 10,
+      "NNUNET_2028_hits": 10
+    },
+    {
+      "image": "20060530_54390_0100_PP",
+      "A0_2027_hits": 1,
+      "denominator": 4,
+      "NNUNET_2027_hits": 2,
+      "A0_2028_hits": 2,
+      "NNUNET_2028_hits": 2
+    }
+  ],
+  "limitations": [
+    "Repeated Dev; not independent validation.",
+    "Does not cover seed population, patient clustering, or selection uncertainty.",
+    "Counts do not reveal overlap of missed positions or establish connectivity.",
+    "The 18 published input blobs are checked; no pixel evaluator is rerun."
+  ]
+}
