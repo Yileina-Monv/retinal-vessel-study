@@ -1,0 +1,59 @@
+{
+  "task_issue": 9,
+  "primary_cohort": [
+    2027,
+    2028
+  ],
+  "historical_only": [
+    2026
+  ],
+  "threshold": 0.5,
+  "endpoint": "nnU-Net final100epochs vs same-seed A0 step2000; no best selection",
+  "data": {
+    "name": "MAPLES-DR",
+    "train": 110,
+    "Dev": 28,
+    "official_Test_accessed": false,
+    "train_native_shapes": {
+      "960x1440": 58,
+      "1488x2240": 33,
+      "1536x2304": 19
+    },
+    "evaluation": "frozen original FOV/GT/Omega and image macro; original per-metric eligible IDs and NA",
+    "neighborhood": "9 effective images /77 eligible positions /19 NA; unchanged"
+  },
+  "versions": {
+    "batchgenerators": "0.25.3",
+    "batchgeneratorsv2": "0.3.5",
+    "nnunetv2": "2.8.1",
+    "torch": "2.4.0"
+  },
+  "A0_normalization": {
+    "mean": [
+      0.429275223900028,
+      0.19375142502503398,
+      0.07753014774123759
+    ],
+    "std": [
+      0.18544595955624413,
+      0.10540798459784542,
+      0.052217286214809804
+    ],
+    "normalization_sha256": "c7ccde8948b08f9f38730034ef4c126c77b73af173ea8a841acdb6fd82b08f77"
+  },
+  "native_inference": {
+    "checkpoint": "final",
+    "tile_step_size": 0.5,
+    "gaussian_weighting": true,
+    "TTA": false,
+    "ensemble": false,
+    "postprocessing": false,
+    "class1_probability_threshold": 0.5,
+    "native_inverse_geometry": true
+  },
+  "cost_and_comparability": "Workflow comparison: model, pretraining/initialization, CE+Dice vs BCE+Dice, normalization, support, sampling, augmentation, patch and budget differ. Not a single-variable architecture ablation. Shared M0 pretraining costs are not zero.",
+  "interpretation": "Both new seeds have positive Dice means and per-seed image intervals. Strict protection fails. Not 56 independent images or independent Test validation.",
+  "inherited_text_caveat": "Frozen per-seed protocols retain some seed2026 boilerplate; actual initializer, worker pools, seed-specific A0 receipts and full fixtures verified for 2027/2028. Frozen originals unchanged.",
+  "human_review": "Not completed; no manual or clinical adjudication claimed. CPU computations and AI-assisted research interpretation only.",
+  "public_reproduction_boundary": "Statistics can be recalculated. Private training assets, full runtime branch, original masks and predictions are not distributed; no claim of independent training restart."
+}

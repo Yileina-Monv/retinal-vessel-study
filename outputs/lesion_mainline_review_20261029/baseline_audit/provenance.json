@@ -1,0 +1,110 @@
+[
+  {
+    "path": "old/README.md",
+    "characters": 1479,
+    "git_blob_sha": "1745583e725f83144ccd0640841b40e0433a9c03",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/README.md"
+  },
+  {
+    "path": "old/fixed_endpoint_per_image_metrics.csv",
+    "characters": 1153600,
+    "git_blob_sha": "5004fb0a901093d2f0b9694f643a905bfe069e91",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/fixed_endpoint_per_image_metrics.csv"
+  },
+  {
+    "path": "old/paired_comparison_summary.csv",
+    "characters": 30335,
+    "git_blob_sha": "1a970f6b0f5c25c7bd0bd15740b7924620db3fb1",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/paired_comparison_summary.csv"
+  },
+  {
+    "path": "old/training_config_summary.csv",
+    "characters": 2151,
+    "git_blob_sha": "d3e70ad47697e8987621f08f428769b5fea969f7",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/training_config_summary.csv"
+  },
+  {
+    "path": "old/protocol_design_summary.json",
+    "characters": 10706,
+    "git_blob_sha": "54d31adf36b51c7acc5daa831ee7e65c17c114d5",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/protocol_design_summary.json"
+  },
+  {
+    "path": "old/paired_image_deltas.csv",
+    "characters": 488398,
+    "git_blob_sha": "28901293c28d3112b08ea8fcb07e0b22f6e292c2",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/paired_image_deltas.csv"
+  },
+  {
+    "path": "old/bootstrap_indices_by_n.json",
+    "characters": 156971,
+    "git_blob_sha": "e45c22845e521398153676a60beea527fb1750d1",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/bootstrap_indices_by_n.json"
+  },
+  {
+    "path": "old/absolute_metric_summary.csv",
+    "characters": 14066,
+    "git_blob_sha": "8b60ada4bdb3c0d1c169ce315e816cefe513cf62",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/outputs/p1_exploration_20261026/absolute_metric_summary.csv"
+  },
+  {
+    "path": "old/p1_exploration_summary_20261026.md",
+    "characters": 8230,
+    "git_blob_sha": "4bffe511ad6027cafc262549307f71ecae43c665",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/1f2b10c31dad94e4814597d09cfe139882c38116/docs/research/p1_exploration_summary_20261026.md"
+  },
+  {
+    "path": "new/README.md",
+    "characters": 1831,
+    "git_blob_sha": "1692128fa9037a36adbbdea766392b296574efa8",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/README.md"
+  },
+  {
+    "path": "new/fixed_endpoint_per_image_metrics.csv",
+    "characters": 655772,
+    "git_blob_sha": "5ffd7c71ac7286ba42667e4512848f5d5db4960a",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/fixed_endpoint_per_image_metrics.csv"
+  },
+  {
+    "path": "new/paired_comparison_summary.csv",
+    "characters": 16366,
+    "git_blob_sha": "880142b7186af6a4c2f9d8bb566d7e6f622397e8",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/paired_comparison_summary.csv"
+  },
+  {
+    "path": "new/training_config_summary.csv",
+    "characters": 5688,
+    "git_blob_sha": "d48bee787d13c699bec22bb6ad80f84c3242ecb7",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/training_config_summary.csv"
+  },
+  {
+    "path": "new/protocol_design_summary.json",
+    "characters": 2349,
+    "git_blob_sha": "63fe7019a4fabc73ff74b4466af013aa483bb66c",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/protocol_design_summary.json"
+  },
+  {
+    "path": "new/paired_image_deltas.csv",
+    "characters": 311961,
+    "git_blob_sha": "a7f2d54c65635b10e8346a8eea2a18dbad78f874",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/paired_image_deltas.csv"
+  },
+  {
+    "path": "new/bootstrap_indices_by_n.json",
+    "characters": 556971,
+    "git_blob_sha": "7dcc2091861d156f74f67d15697c3f253ba69d39",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/bootstrap_indices_by_n.json"
+  },
+  {
+    "path": "new/absolute_metric_summary.csv",
+    "characters": 13812,
+    "git_blob_sha": "777eea79b682981ad30d6fe822227bb9afacc892",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/outputs/nnunet_replication_20261027/absolute_metric_summary.csv"
+  },
+  {
+    "path": "new/nnunet_replication_review_20261027.md",
+    "characters": 4866,
+    "git_blob_sha": "5de711666ea11bc44ee96ecada716bb60ee26aa9",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/blob/3cca62335dad337b0a8791b3c8712aca3359fa22/docs/research/nnunet_replication_review_20261027.md"
+  }
+]

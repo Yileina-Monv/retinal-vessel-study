@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "scope": "Publication checks only; no training, model inference or Test access.",
+  "full_decision_report": "All text preserved except documented replacement of private S0 pointer.",
+  "public_input_blobs_verified": 18,
+  "audit_reexecuted": true,
+  "derived_numeric_files_byte_identical": 8,
+  "console_output": "Same lines and values; trailing spaces removed on 2 lines.",
+  "mean_groups": 434,
+  "interval_groups": 310,
+  "max_abs_error": 1.4210854715202004e-14,
+  "tolerance": 1e-12,
+  "local_endpoint_summary_verified": true,
+  "authored_relative_links": "pass",
+  "cjk_in_math": "none",
+  "private_paths_or_credentials_scan": "none",
+  "trailing_whitespace_count": 0,
+  "not_repeated": [
+    "Pixel evaluator",
+    "Private probability review",
+    "Manual medical review",
+    "All formal T0/TW checks attributed to the supplied Pro report"
+  ],
+  "source_heads_rechecked": true
+}

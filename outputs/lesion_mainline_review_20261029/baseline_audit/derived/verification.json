@@ -1,0 +1,30 @@
+{
+  "old": {
+    "rows": 6944,
+    "unique_images": 28,
+    "metrics": 31,
+    "NA": 384,
+    "mean_groups": 248,
+    "pair_rows": 6076,
+    "interval_groups": 217,
+    "ratio_error": 0.0,
+    "mean_error": 1.1102230246251565e-16,
+    "pair_error": 0.0,
+    "interval_error": 4.440892098500626e-16
+  },
+  "new": {
+    "rows": 5208,
+    "unique_images": 28,
+    "metrics": 31,
+    "NA": 288,
+    "mean_groups": 186,
+    "pair_rows": 2460,
+    "interval_groups": 93,
+    "ratio_error": 0.0,
+    "mean_error": 1.4210854715202004e-14,
+    "pair_error": 0.0,
+    "interval_error": 0.0
+  },
+  "shared_A0_2026": "All 868 values/numerators/denominators identical, including 48 NA.",
+  "eligibility": "Same image IDs and per-metric NA sets across all arms; checked GT/FOV denominator fields match."
+}
