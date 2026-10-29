@@ -1,0 +1,58 @@
+{
+  "scientific_runs": {
+    "final_only": {
+      "attempts": 25000,
+      "success": 24993,
+      "skip": 7,
+      "fatal": 0,
+      "unknown": 0,
+      "monitor_complete": 5000,
+      "optimizer_calls": 24993,
+      "phase": "complete"
+    },
+    "local": {
+      "attempts": 25000,
+      "success": 24993,
+      "skip": 7,
+      "fatal": 0,
+      "unknown": 0,
+      "monitor_complete": 5000,
+      "optimizer_calls": 24993,
+      "phase": "complete"
+    },
+    "multi": {
+      "attempts": 25000,
+      "success": 24995,
+      "skip": 5,
+      "fatal": 0,
+      "unknown": 0,
+      "monitor_complete": 5000,
+      "optimizer_calls": 24995,
+      "phase": "complete"
+    }
+  },
+  "deep_supervision_engineering": {
+    "updates": 32,
+    "diagnostic_forwards": 5,
+    "includes_failed_diagnostic": 1
+  },
+  "module_engineering": {
+    "updates_per_arm": 32,
+    "diagnostic_forwards_per_arm": 4
+  },
+  "module_terminal_inference": {
+    "valid_forwards_per_arm": 67,
+    "additional_failed_forward_multi": 1,
+    "no_retraining": true
+  },
+  "final_only_terminal_inference": {
+    "forwards": 67,
+    "images": 28
+  },
+  "final_only_training_hours": 15.405510993028035,
+  "final_only_peak_reserved_MiB": 8996.0,
+  "paired_training_input_GT_ID_LR_attempts": 25000,
+  "paired_Train_monitor_IDs": 5000,
+  "historical_monitor_pixel_hashes_available": false,
+  "AMP_update_masks_identical": false
+}

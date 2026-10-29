@@ -1,0 +1,33 @@
+{
+  "seed": 2027,
+  "threshold": 0.5,
+  "final_endpoint": "100 epochs, 25000 attempts; safe AMP skips not replaced",
+  "Train110_Dev28_Test60_sealed": true,
+  "DS_weights": [
+    0.5039370078740157,
+    0.25196850393700787,
+    0.12598425196850394,
+    0.06299212598425197,
+    0.031496062992125984,
+    0.015748031496062992,
+    0.007874015748031496,
+    0
+  ],
+  "final_only_weights": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_coefficient_multiplier": 1.984375,
+  "DS_design_limit": "sum of scale coefficients1 in both groups; not matched gradient norm, not fixed final coefficient; not attribution of all nnU-Net versus T0 gains",
+  "success": "Dice95% lower>0 plus all original guards; upper<0 supports DS Dice advantage in this configuration, cross-zero inconclusive not equivalence",
+  "guards": "precision/far_recall95% lower>=0; fp_density95% upper<=0; report Recall/coarse/hard-clDice nonadverse means",
+  "module_design": "Local and Multi each add2304 parameters; third branch dilation1 vs2; N0 reused. All groups retain original deep supervision.",
+  "module_source_protocol_sha256": "8381c416042fffff85e62b469c2384e36e655f72021d3f1afcf97788cc0b6c1b",
+  "scope": "single-seed ablations, not attribution of full nnU-Net versus T0 gain; standard2027/2028 continuous process comparisons are context; old2026 interrupted run not pooled as strict third seed"
+}

@@ -1,0 +1,66 @@
+{
+  "sources": [
+    {
+      "label": "standard2027 fixed endpoint",
+      "sha256": "f642e2279b3e0b7a66ee2eec5a66f73477ef31d54a78f19b9d63edf7bbcae850"
+    },
+    {
+      "label": "standard2028 fixed endpoint",
+      "sha256": "eb436cc32379a5e1b86921da59ec9f1371b61b9134a4588c395082f45c4dd641"
+    },
+    {
+      "label": "modules2027 fixed endpoint",
+      "sha256": "a4865c3b7d4e342e127ad22252b608a4f571c95330d48c70a28780e08aac699e"
+    },
+    {
+      "label": "deep_supervision2027 fixed endpoint",
+      "sha256": "0ac17ac69d98d76600fa0576deff627f18243ac847fe4492b308ae61785df62a"
+    },
+    {
+      "label": "independent DS review",
+      "sha256": "69cdd319f12cf5b2bb716b374a9e45d70e37c7a74542952a47e402d11e29e3f5"
+    },
+    {
+      "label": "final_only final budget",
+      "sha256": "e03c89ecc077b7bae37b92194046737b36bf3e1d58b9c809ea89115be9c809ac"
+    },
+    {
+      "label": "local final budget",
+      "sha256": "168141e3954946220eaee99c4e71eea0c9baf1e1cdf16ee626e04d1b8be96f30"
+    },
+    {
+      "label": "multi final budget",
+      "sha256": "09cea909bd8f0eab92f1062d15471c112965bb0cc99d6c273fdfb2c5a94405fe"
+    },
+    {
+      "label": "SOL_RESULT_COMPARISON_20261029.csv",
+      "sha256": "21ff3962228433e1557a8b44709d57f6f8b1b2a58c22859aec5f4cbd955eab18"
+    },
+    {
+      "label": "SOL_NEAR_POINT_DIAGNOSTIC_20261029.csv",
+      "sha256": "959a35c81de0d0e76a90f5317c6ba44210c68b4d3376627f4b00b2db4779d4bb"
+    },
+    {
+      "label": "SOL_PIXEL_COUNTS_20261029.csv",
+      "sha256": "679829c028d3570030b1f53683a0d29636ee59cc2fe0a894cee32ae78116698e"
+    },
+    {
+      "label": "一页中文科研结论_20261029.pdf",
+      "sha256": "a5018b8a80ddc478801f63fc16cbc39320849bc6bfe9351b94fe2558ef189146"
+    },
+    {
+      "label": "深监督消融_科研审查与下一阶段建议_20261029.pdf",
+      "sha256": "5f3c12572bc85889f0f0a03b698cc5c964d6c740eec99d86251f7a1d93c39118"
+    },
+    {
+      "label": "DS frozen protocol",
+      "sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3"
+    },
+    {
+      "label": "module frozen protocol",
+      "sha256": "8381c416042fffff85e62b469c2384e36e655f72021d3f1afcf97788cc0b6c1b"
+    }
+  ],
+  "publication_projection": "allowlisted numerical evidence and project-authored PDFs only; original RGB/GT/probabilities/checkpoints/private paths/device identifiers excluded",
+  "scope": "public values can be recalculated; raw image segmentation/training cannot be reproduced from this package alone"
+}
