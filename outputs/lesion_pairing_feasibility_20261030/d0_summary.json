@@ -1,0 +1,133 @@
+{
+  "status": "COMPLETE",
+  "decision": "SUPPORT_NEXT_TRAIN_PAIRING_CPU_CHECK",
+  "mechanism_gate_pass": true,
+  "seed_statistics": {
+    "2027": {
+      "misses": 18,
+      "misses_with_background": 18,
+      "misses_without_background": 0,
+      "qualifying_misses": 7,
+      "qualifying_images": [
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "qualifying_image_count": 5,
+      "qualifying_fraction_of_misses": 0.3888888888888889,
+      "gate_pass": true,
+      "gap_mean_misses_with_background": 1.5793719422069468,
+      "gap_median_misses_with_background": 1.5022587610174982,
+      "target_clipped": 0,
+      "background_unique_clipped": 0,
+      "background_unique_pixels": 3652,
+      "regions": {
+        "internal": {
+          "FP": 4025,
+          "area": 155329,
+          "image_macro_FP_per_area": 0.04228847904181978,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.04631393182432626,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.006818139469489461
+        },
+        "near": {
+          "FP": 11829,
+          "area": 647116,
+          "image_macro_FP_per_area": 0.01999355293571862,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.024662034627361325,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.020037707275674742
+        },
+        "far": {
+          "FP": 574429,
+          "area": 29173682,
+          "image_macro_FP_per_area": 0.019477477933122097,
+          "valid_area_images": 28,
+          "image_macro_FP_per_background": 0.023025550929416626,
+          "valid_background_images": 28,
+          "pooled_FP_share_not_macro": 0.9730526800793445
+        },
+        "uncertain": {
+          "FP": 54,
+          "area": 14024,
+          "image_macro_FP_per_area": 0.0020593868782700095,
+          "valid_area_images": 13,
+          "image_macro_FP_per_background": 0.0021997255874322105,
+          "valid_background_images": 13,
+          "pooled_FP_share_not_macro": 9.147317549128718e-05
+        }
+      }
+    },
+    "2028": {
+      "misses": 18,
+      "misses_with_background": 18,
+      "misses_without_background": 0,
+      "qualifying_misses": 11,
+      "qualifying_images": [
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "qualifying_image_count": 5,
+      "qualifying_fraction_of_misses": 0.6111111111111112,
+      "gate_pass": true,
+      "gap_mean_misses_with_background": 0.6638647368635016,
+      "gap_median_misses_with_background": 0.16259959277445457,
+      "target_clipped": 0,
+      "background_unique_clipped": 0,
+      "background_unique_pixels": 3652,
+      "regions": {
+        "internal": {
+          "FP": 3277,
+          "area": 155329,
+          "image_macro_FP_per_area": 0.043648436042898614,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.04767222826596432,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.005645678136047577
+        },
+        "near": {
+          "FP": 10344,
+          "area": 647116,
+          "image_macro_FP_per_area": 0.018421705398700246,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.023132988425949495,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.017820840597887133
+        },
+        "far": {
+          "FP": 566781,
+          "area": 29173682,
+          "image_macro_FP_per_area": 0.01952960145872549,
+          "valid_area_images": 28,
+          "image_macro_FP_per_background": 0.02307849925559453,
+          "valid_background_images": 28,
+          "pooled_FP_share_not_macro": 0.9764611228645658
+        },
+        "uncertain": {
+          "FP": 42,
+          "area": 14024,
+          "image_macro_FP_per_area": 0.0016043799342304653,
+          "valid_area_images": 13,
+          "image_macro_FP_per_background": 0.0017267291979901102,
+          "valid_background_images": 13,
+          "pooled_FP_share_not_macro": 7.235840149954173e-05
+        }
+      }
+    }
+  },
+  "shared_misses": 17,
+  "human_medical_reviews_performed": 0,
+  "interpretation": "GT-relative numerical diagnostic only; no causal or medical claim; cutoff3images andmargin1 are predeclared engineering choices",
+  "elapsed_seconds": 34.39924296899699,
+  "peak_RSS_MiB": 593.36328125,
+  "new_training": 0,
+  "new_model_inference": 0,
+  "Test_accessed": false
+}

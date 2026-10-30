@@ -1,0 +1,38 @@
+{
+  "scope": "A7 authoritative artifact bytes, named by stage-relative identity; no image/GT/probability assets or coordinates published",
+  "sha256": {
+    "d0_probability_fp_v1/protocol.json": "713cd0b3351e528ce3e9d583c92ee5a4f371bafb38b445d6ea8fa56a4419bbf0",
+    "d0_probability_fp_v1/summary.json": "789ba7dd6c2a2d86a2d803bcb5bb62df190958692104e1c1364da5fbb4f91ea8",
+    "d0_probability_fp_v1/independent_review.json": "ecb59a18c99e034d022328cbf04fc21618be341c6eafe0b357e267f6eac506f4",
+    "d0_probability_fp_v1/points_154.csv": "b6e04f771101c3761e6d5cdf1c2d9b7ad0cef76a5498b12cf25dbf91859864ff",
+    "d0_probability_fp_v1/image_regions_56.csv": "b75245ab04240c8be2c10bb4c341ea647d0109e25883d567c25e87e3683b70ae",
+    "d0_probability_fp_v1/point_index_77.csv": "2286fd6ac5c23d84975a7dddb84f8468207fc1101271f4a5013c049dc8ff5248",
+    "d0_probability_fp_v1/D0_一页中文结论.pdf": "07d3ba6586c4b31d269b9823daf50b1b7161d14d9c8f89a92fa38a86dcfef2d3",
+    "d0_probability_fp_v1/D0_一页中文结论.txt": "be87c8f64437709825f7a9b6ab13271c8ccfd0378480b7bda417c5c170575e09",
+    "d0_probability_fp_v1/delivery_verification.json": "e4f4c48bdf6100dca04db5c25b2a1be17fc7be0f86f82f995387698b856d2438",
+    "train_pairing_cpu_v1/protocol.json": "7ea42bdf9263a1a884dc2772805da5440d77f9e06402703bb9f08c44bc987536",
+    "train_pairing_cpu_v1/matching_summary.json": "fe636d9c41ea4f32ee89b28aaefa5f6539da582f94a71eeed3272f2d3f18809d",
+    "train_pairing_cpu_v1/matching_images_110.csv": "96ad9e8dd7ce1fb18f2d18201803dfaeee7e8f11809c3f9a15a813ed8d3bbc8a",
+    "train_pairing_cpu_v1/matching_failure_modes.csv": "f215c7baf939c200ddcd75518349a7cd5b2db8ff0e7e4ebc0eed56e293e0bd12",
+    "train_pairing_cpu_v1/matching_independent_review.json": "49cd9bcf21c8fcb4d02cbd07143253af40e38ac02ff8f1f54316780a4295fb70",
+    "train_pairing_cpu_v1/scope_and_accounting_review.json": "5b142684973ab32bd1daae0d775f52fa9a110254c62ae30efb5707c9d0bdc3c1",
+    "train_pairing_cpu_v1/background_support_diagnosis.json": "61c9cf1f1f9418335e67cedf86867809a292b29e4d90abda7d99e30a2ce1acd8",
+    "train_pairing_cpu_v1/Train配对_一页结论_20261030.pdf": "2be07529cd4c96d8277a46ef6a19a4114b1e969f8efa6fb63a070b47f8c13bd8",
+    "train_pairing_cpu_v1/Train配对_一页结论_20261030.txt": "c31f81189d0baa3696a2bfd39b2dfbc08c008e49669104053ef6edb502575f91",
+    "train_pairing_cpu_v1/delivery_verification.json": "7dd5fbc4a6c48e8b00b98c0ada24e6b7b136a72cec1ef043bf1484d13211789f",
+    "train_pairing_cpu_v2/protocol.json": "4eec8c9062b76b348af93768d6f60b2780ec91caef58bff0854e3710e40b5ad6",
+    "train_pairing_cpu_v2/matching_summary.json": "90f92f73e4201e8adea27827cf962d1c37557f4e08754cd6234a603cf13c019e",
+    "train_pairing_cpu_v2/matching_images_110.csv": "47f60017cc41dbfd08b24871510f58a295a57bf851db5c5c063b3ea02a0164b3",
+    "train_pairing_cpu_v2/matching_failure_modes_351.csv": "d5c5a5a0a6dafed04df743fdc898fc7333dbee8732c055f9d9380720f45650a2",
+    "train_pairing_cpu_v2/independent_review.json": "6730b7bc2860f9bfc9d6420050f5a247b509f732bd6c7045ef79235cd6e39dff",
+    "train_pairing_cpu_v2/Train配对V2_一页结论_20261030.pdf": "7dd7f6e501a31543fe713cc8fc09f4c7faa70e4c498fbbdcb2bc57be26377f20",
+    "train_pairing_cpu_v2/Train配对V2_一页结论_20261030.txt": "d57023742afb830abd8c6bf1d7003b66968ec04f17ea373c2aabb9e65f3ebd39",
+    "train_pairing_cpu_v2/delivery_verification.json": "bf4cc13e3751c6d3863a916443771fadb2eee5dcea6e3d61b70b3cc161c0b0f3"
+  },
+  "transformations": [
+    "Remove source_hashes private absolute paths and verbose check lists from public summaries",
+    "Remove y/x columns from D0 and Train point tables",
+    "Do not publish mapping or negative-coordinate caches",
+    "Keep original Chinese reports unchanged; historical next-step suggestions superseded by current README"
+  ]
+}

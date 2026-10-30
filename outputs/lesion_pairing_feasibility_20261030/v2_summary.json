@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "target_images": 30,
+  "matched_images": 23,
+  "image_coverage": 0.7666666666666667,
+  "image_coverage_gate": false,
+  "original_NL_targets": 351,
+  "matched_pairs": 307,
+  "matching_elapsed_seconds": 10.418933809967712,
+  "static_negative_pair_checks": 307,
+  "next": "STOP_COVERAGE_INSUFFICIENT",
+  "new_model_forward": 0,
+  "new_training": 0,
+  "Dev_used": false,
+  "Test_accessed": false
+}

@@ -1,0 +1,29 @@
+{
+  "sha256": {
+    "README.md": "7640a58d72929e84bfac05a31e985cc0a43e00b4fd43c504b25f728246c61b15",
+    "STATUS.md": "07219ee1381c383981b10614236517f50c38800695a9706293bade1041c629af",
+    "outputs/lesion_pairing_feasibility_20261030/budget_and_decision.json": "1830e907a319d3186611ce6b6b2c4e76e5ad05f37a2b3b339f1b224b81bbd90f",
+    "outputs/lesion_pairing_feasibility_20261030/cpu_protocol_evidence.json": "eb96ce99ea120405cd1d51ac6e1d1afc7ed9f4727c77ec700283fa78d15dc4a9",
+    "outputs/lesion_pairing_feasibility_20261030/d0_image_regions_56.csv": "e8b14ec3670975e12228852a4bd5732c0b8da8b9a13aca0463198c6cdd14e368",
+    "outputs/lesion_pairing_feasibility_20261030/d0_points_154.csv": "043579699d7374d9298a041e594940f782565ba4956a90be6b196bd0d297281e",
+    "outputs/lesion_pairing_feasibility_20261030/d0_point_index_77.csv": "205c720c6ca20357f72d50589a2e6700b775554339a1645368168aba54b22d43",
+    "outputs/lesion_pairing_feasibility_20261030/d0_summary.json": "e7d5b01edab250afc5a31e4b5992698ddef65df866a4045d1f5e31cbb32d3238",
+    "outputs/lesion_pairing_feasibility_20261030/README.md": "48631eddb7a7512a22ad0f22bd0c21695000bf8058636094182d19a7e602d923",
+    "outputs/lesion_pairing_feasibility_20261030/review_summary.json": "904c587061805e46aaaabc6c0e252e6db0d050e1ed00385dfea5a991bbc9f49e",
+    "outputs/lesion_pairing_feasibility_20261030/source_manifest.json": "6d12a48d0c24dd53c8799fba072c5bc1ed09e209bde35d1265b62a3f3c1f3fcb",
+    "outputs/lesion_pairing_feasibility_20261030/v1_images_110.csv": "c8c1015937ab262895735abd2fa183a073facc2c09fa86fd7576574919ae7a61",
+    "outputs/lesion_pairing_feasibility_20261030/v1_summary.json": "c6888da9d399d6bf0afe62d7cecff8c6320829baddd7985b5fb5c31c0dfb6539",
+    "outputs/lesion_pairing_feasibility_20261030/v1_target_outcomes_351.csv": "d1e236bf2130309cc6237e5cc16f39bcf11392ace62c98911d402e335e35414a",
+    "outputs/lesion_pairing_feasibility_20261030/v2_images_110.csv": "95b30f8899633d7aa4c3961192f22df7bb8cb17b98c7c559cbed91912633e17b",
+    "outputs/lesion_pairing_feasibility_20261030/v2_summary.json": "ff05cadb3cf8e1105c710721b37ca10c23c8c8ba150252302e220f0e54065f34",
+    "outputs/lesion_pairing_feasibility_20261030/v2_target_outcomes_351.csv": "10f02062120b5d469c92698c090ac16fc188a133324c541335ac7ea4f78a4845",
+    "outputs/lesion_pairing_feasibility_20261030/verify.py": "6474b305ae85a8f617518f3769f4a4a663df0b5e8ced7e0634b28cd159ac0dba",
+    "docs/research/lesion_pairing_feasibility_20261030/D0_一页中文结论.pdf": "07d3ba6586c4b31d269b9823daf50b1b7161d14d9c8f89a92fa38a86dcfef2d3",
+    "docs/research/lesion_pairing_feasibility_20261030/D0_一页中文结论.txt": "be87c8f64437709825f7a9b6ab13271c8ccfd0378480b7bda417c5c170575e09",
+    "docs/research/lesion_pairing_feasibility_20261030/README.md": "e4f477b095050a544c981426474e130f4e76883f490aaf4ba4981ceba860b8b6",
+    "docs/research/lesion_pairing_feasibility_20261030/Train配对V2_一页结论_20261030.pdf": "7dd7f6e501a31543fe713cc8fc09f4c7faa70e4c498fbbdcb2bc57be26377f20",
+    "docs/research/lesion_pairing_feasibility_20261030/Train配对V2_一页结论_20261030.txt": "d57023742afb830abd8c6bf1d7003b66968ec04f17ea373c2aabb9e65f3ebd39",
+    "docs/research/lesion_pairing_feasibility_20261030/Train配对_一页结论_20261030.pdf": "2be07529cd4c96d8277a46ef6a19a4114b1e969f8efa6fb63a070b47f8c13bd8",
+    "docs/research/lesion_pairing_feasibility_20261030/Train配对_一页结论_20261030.txt": "c31f81189d0baa3696a2bfd39b2dfbc08c008e49669104053ef6edb502575f91"
+  }
+}
