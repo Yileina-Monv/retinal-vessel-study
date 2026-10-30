@@ -58,3 +58,5 @@ python -m unittest discover -s tests -p test_m1_pretrial.py
 `outputs/morphology_minimal_20260907/run_minimal.py` 是当次限时执行的证据快照，包含已结束的绝对截止时间和禁止覆盖规则，不是通用重跑入口。未来实验使用新任务、新目录和新协议。
 
 公开仓库允许所有人查看；直接写入需要仓库管理员邀请。组员也可通过 fork 和 Pull Request 提交工作。原私有 BME 保留历史备份，后续小组进展以本仓库为准。
+
+- [D0诊断与Train配对可行性（2026-10-30）](docs/research/lesion_pairing_feasibility_20261030/README.md)：V1/V2均未达预设图片覆盖门槛，停止进入训练；仅CPU证据归档。

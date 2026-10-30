@@ -1,0 +1,149 @@
+{
+  "status": "PUBLIC_COPY_OF_CPU_CHECK_RULES_NOT_NEW_TRAINING_PROTOCOL",
+  "protocols": {
+    "D0": {
+      "phase": "D0_PROBABILITY_FP_V1",
+      "user_authorization": "Implement the plan: first probability and false-positive diagnosis only",
+      "date": "2026-10-29",
+      "code_sha256": "dd8b751de17f41a1fe34d513adc820b4143ece464edb9983e30b0a7ec8ff21f9",
+      "seeds": [
+        2027,
+        2028
+      ],
+      "model": "existing standard nnU-Net final100epochs",
+      "threshold": 0.5,
+      "points": 77,
+      "point_rows": 154,
+      "images": 28,
+      "image_rows": 56,
+      "thin_valid_images": 9,
+      "NA_images": 19,
+      "expected_hits_each_seed": 59,
+      "expected_shared_misses": 17,
+      "background": {
+        "GT_distance_inclusive_native_px": [
+          2,
+          8
+        ],
+        "target_distance_inclusive_native_px": 12,
+        "domain": "same frozen near & Omega & ~GT",
+        "selection": "all legal background; no hard mining or sampling",
+        "empty": "NA, never replace"
+      },
+      "probability_clip": [
+        1e-06,
+        0.999999
+      ],
+      "gap": "logit(target center) minus mean(logit(all legal backgrounds))",
+      "qualifying": "original d1 miss AND nonempty legal background AND gap<1",
+      "gate": "each seed at least3 valid images with qualifying misses; allows only proposal for next Train pairing CPU check",
+      "CPU_threads": 2,
+      "CPU_wall_cap_seconds": 3600,
+      "CPU_RSS_cap_GiB": 8,
+      "new_model_forward": false,
+      "Train_matching_or_replay": false,
+      "GPU": false,
+      "Test_allowed": false,
+      "medical_review": "UNKNOWN; no new signed reviews",
+      "outputs": [
+        "points_154.csv",
+        "image_regions_56.csv",
+        "point_index_77.csv",
+        "summary.json",
+        "atlas.html",
+        "9 overviews +77 point images",
+        "one-page Chinese conclusion"
+      ],
+      "frozen_science_protocol_sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3"
+    },
+    "V1": {
+      "phase": "TRAIN_PAIRING_CPU_V1",
+      "authorization": "用户通过：Train标签匹配、原crop/增强共同曝光、公平剂量CPU可行性检查",
+      "matching_code_sha256": "cbcdae640ae0bfb0e66273a7130d473e47f9a046b298280aa1f11389f6ef80e9",
+      "data": "Train110 only; no Dev-derived targets",
+      "target": "native Zhang skeleton(V&FOV), padded2EDT<=3, NL frozenRnear; NR frozenRfar; neither U nor outsideFOV",
+      "calipers": {
+        "native_width_abs": 0.25,
+        "normalized_FOV_radial_abs": 0.05,
+        "radius12_Omega_vessel_density_abs": 0.05,
+        "background_support_relative_to_NL_abs": 0.1
+      },
+      "background": "same region/Omega; completeGT distance2..8 inclusive; target distance<=12 native; all legal support",
+      "matching_algorithm": "same image, one-to-one maximum cardinality on legal graph; PCG64(20261029) permutation breaks ties; no model scores; shared mapping across seeds",
+      "bg_histogram": "2..8 native in six1pixel bins, TV reported descriptively without additional caliper",
+      "coverage_gate": "at least80% of images with originalNLtargets have >=1 legal match; if fail stop before fullaugmentation replay",
+      "replay_if_coverage_passes": {
+        "seeds": [
+          2027,
+          2028
+        ],
+        "attempts_each": 1000,
+        "batch": 2,
+        "max_patch_instances": 4000,
+        "pipeline": "native exactloader/transforms; singleproducer seeding and original one-train-prefetch discard; compare IDs and input/targetSHA against originalattempt tapes; no model construction/forward",
+        "geometry": "reuse actual sampled spatial/mirror parameters; no recrop or reaugmentation; preserve native target identities; require transformedGT/domain validity",
+        "equal_dose": "both targets visible and >=1 legal background both sides else jointskip; <=16 unique pairs/crop; min(2,validBG_NL,validBG_NR) per pair equal",
+        "exposure_gate": "eachseed retained jointlyvalid selectedpair instances / originalNL geometricallyvisible target instances >=50%; report pre/post16cap and standalonebackgroundvalidity separately",
+        "RNG": "selection/matching independentof base RNG; sampler identity mismatch STOP"
+      },
+      "CPU_threads": 2,
+      "CPU_RSS_GiB": 8,
+      "CPU_wall_seconds": 7200,
+      "no_model_updates": true,
+      "no_GPU": true,
+      "no_Test": true,
+      "no_protocol_change": true,
+      "result": "feasible/insufficientcoverage/cannotguaranteefairness; not scientificeffect or trainingauthorization"
+    },
+    "V2": {
+      "phase": "TRAIN_PAIRING_CPU_V2",
+      "authorization": "用户可以：批准V2背景实际数量/距离控制CPU验证，非GPU授权",
+      "matching_code_sha256": "bdefccf6d0ff354a87ac1904836ae8f905c69cb31746d6abeba648a840257fe5",
+      "data": "Train110 only; no Dev-derived targets",
+      "target": "native Zhang skeleton(V&FOV), padded2EDT<=3, NL frozenRnear; NR frozenRfar; neither U nor outsideFOV",
+      "calipers": {
+        "native_width_abs": 0.25,
+        "normalized_FOV_radial_abs": 0.05,
+        "radius12_Omega_vessel_density_abs": 0.05
+      },
+      "background": "same region/Omega; completeGT distance2..8 inclusive; target distance<=12 native; all legal support",
+      "matching_algorithm": "same image, one-to-one maximum cardinality on legal graph; PCG64(20261029) permutation breaks ties; no model scores; shared mapping across seeds",
+      "bg_histogram": "2..8 native in six1pixel bins, TV reported descriptively without additional caliper",
+      "coverage_gate": "at least80% of images with originalNLtargets have >=1 legal match; if fail stop before fullaugmentation replay",
+      "replay_if_coverage_passes": {
+        "seeds": [
+          2027,
+          2028
+        ],
+        "attempts_each": 1000,
+        "batch": 2,
+        "max_patch_instances": 4000,
+        "pipeline": "native exactloader/transforms; singleproducer seeding and original one-train-prefetch discard; compare IDs and input/targetSHA against originalattempt tapes; no model construction/forward",
+        "geometry": "reuse actual sampled spatial/mirror parameters; no recrop or reaugmentation; preserve native target identities; require transformedGT/domain validity",
+        "equal_dose": "both targets visible and >=1 legal background both sides else jointskip; <=16 unique pairs/crop; min(2,validBG_NL,validBG_NR) per pair equal",
+        "exposure_gate": "eachseed retained jointlyvalid selectedpair instances / originalNL geometricallyvisible target instances >=50%; report pre/post16cap and standalonebackgroundvalidity separately",
+        "RNG": "selection/matching independentof base RNG; sampler identity mismatch STOP"
+      },
+      "CPU_threads": 2,
+      "CPU_RSS_GiB": 8,
+      "CPU_wall_seconds": 7200,
+      "no_model_updates": true,
+      "no_GPU": true,
+      "no_Test": true,
+      "no_protocol_change": true,
+      "result": "feasible/insufficientcoverage/cannotguaranteefairness; not scientificeffect or trainingauthorization",
+      "V1_mapping_sha256": "3bfa6a26c49b1f2acbbd7aa812ae79579e5f2d0541c3653319136b3fefc30794",
+      "V1_review_sha256": "49cd9bcf21c8fcb4d02cbd07143253af40e38ac02ff8f1f54316780a4295fb70",
+      "revision": "remove candidate-pool size10pct hardcaliper; preserve width/radial/density; require2 distinct legal negatives each side with same joint distance bins",
+      "distance_bins": {
+        "GT": "[2,3),[3,4),[4,5),[5,6),[6,7),[7,8]",
+        "target": "[0,2),[2,4),[4,6),[6,8),[8,10),[10,12]"
+      },
+      "negative_sampling": "joint-bin capacity min(NL,NR); fixed independentRNG sample2 tickets without replacement and distinct coords eachside; no scores; revalidate after native augmentation",
+      "actual_negatives_each": 2,
+      "max_pairs_per_crop": 16
+    }
+  },
+  "V2_unused_replay_ambiguity": "Inherited replay equal_dose text allows1..2 while V2 top-level requires exactly2. Replay was never executed. Static V2 used exactly2 per side; no silent protocol correction.",
+  "frozen_science_protocol_unchanged": true
+}

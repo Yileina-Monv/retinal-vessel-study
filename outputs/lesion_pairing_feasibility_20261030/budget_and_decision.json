@@ -1,0 +1,22 @@
+{
+  "Train_images": 110,
+  "Train_images_with_H": 73,
+  "Train_images_with_NL_targets": 30,
+  "Train_NL_target_points": 351,
+  "coverage_gate": 0.8,
+  "V1_matched_images": 13,
+  "V2_matched_images": 23,
+  "V1_matched_points": 111,
+  "V2_matched_points": 307,
+  "augmentation_replay_patch_instances": 0,
+  "exposure50pct_gate": "NOT_EVALUATED",
+  "new_model_loads": 0,
+  "new_model_forward": 0,
+  "new_training": 0,
+  "GPU_used": false,
+  "official_Test_accessed": false,
+  "human_medical_review_PlanB": "0/105",
+  "human_branch_review": "0/26",
+  "decision": "STOP_CURRENT_MATCHING_SCHEME_AWAIT_SCOPE_DECISION",
+  "new_research_scope_approved": false
+}

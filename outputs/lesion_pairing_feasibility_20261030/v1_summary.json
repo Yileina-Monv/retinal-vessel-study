@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "phase": "native_Train_matching",
+  "images": 110,
+  "images_with_H": 73,
+  "images_with_NL_targets": 30,
+  "images_with_match": 13,
+  "image_coverage": 0.43333333333333335,
+  "NL_target_count": 351,
+  "matched_pairs": 111,
+  "image_coverage_gate": false,
+  "next": "STOP_INSUFFICIENT_MATCHING_COVERAGE",
+  "elapsed_seconds": 393.9563403890934,
+  "peak_RSS_MiB": 898.43359375,
+  "new_training": 0,
+  "new_model_forward": 0,
+  "Dev_used": false,
+  "Test_accessed": false
+}
