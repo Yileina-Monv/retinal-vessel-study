@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "original_image_model_rows": 280,
+  "all_width_rows": 1120,
+  "independent_effect_summaries": 28,
+  "direct_d1_neighborhood_rows": 90,
+  "source_hashes_rechecked": 399,
+  "near_candidate_images": 18,
+  "no_training": true,
+  "no_inference": true,
+  "Test_access": false,
+  "implementation_note": "Initial CPU preflight failed on absent train_files key; no prediction analysis ran then. Corrected to existing Train110 manifest; source attempt01 and original log retained."
+}

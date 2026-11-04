@@ -1,0 +1,15 @@
+{
+  "A7_export_date": "2026-11-04",
+  "input_sha256": {
+    "historical_near_path_20261103_common_seeds_table.csv": "3527d2311dad20bd56f3b4e2f610fdaed5d4eacf87bab781e2e7c74a5cd6bbb8",
+    "historical_near_path_20261103_effects.csv": "d4d3c9344c1589d934a21c1bfab83a6f507ec2cc6a88a7f1589a521fbe29626e",
+    "historical_near_path_20261103_per_image.csv": "d5d32ca7f71c6dc412f8f8d5ca13ec58481fb71bdaf53338fbfa92b59c57d270",
+    "historical_near_path_20261103_per_path.csv": "8d2b86babfd312392c7ded6029cfe4dba84486d172ee299d0402f315429cfa77",
+    "metric_review_20261103_denominators.csv": "48bfec53d84ec9289e185e802c8503235d96e796bd35fbca4575d1c15a6749e5",
+    "metric_review_20261103_width_summary.csv": "111e360fefe9665690e0facd767cd34a7eeab8907fbd3ba4b960ecfbd7c13653",
+    "metric_review_20261103_metrics.csv": "708197d9d1be9d61a14da3ac1b8514dd6a1e4d0becc92971262d5400cba8d462"
+  },
+  "NL_original_sha256": "442042580d98d0938d59025c7ae8cb057246ce7c50f8296d758e2cd32d04f367",
+  "original_reports_kept": true,
+  "scope": "CPU result export; no training, inference or Test access"
+}
