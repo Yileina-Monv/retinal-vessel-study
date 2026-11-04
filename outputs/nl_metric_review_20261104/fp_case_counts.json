@@ -1,0 +1,45 @@
+{
+  "filename": "20051117_37130_0400_PP",
+  "shape": [
+    960,
+    1440
+  ],
+  "near_area": 1284,
+  "GT_pixels": 94,
+  "counts": [
+    {
+      "seed": 2027,
+      "method": "T0",
+      "TP": 2,
+      "FP": 9,
+      "FN": 92,
+      "sha256": "a75311f117d63a56483544ac531d1fcfdff3a2a92e7b11709a188804af35fbcb"
+    },
+    {
+      "seed": 2027,
+      "method": "N0",
+      "TP": 53,
+      "FP": 98,
+      "FN": 41,
+      "sha256": "0f5e1be95f229ee0f58144ecd2247e16de646bfbcc6c50fd7497c69e01b444cd"
+    },
+    {
+      "seed": 2028,
+      "method": "T0",
+      "TP": 0,
+      "FP": 0,
+      "FN": 94,
+      "sha256": "3aa6e18889194ac2dc86c32c6e9afa2175c9fa2fe064b9bc825c5c3b123d4dff"
+    },
+    {
+      "seed": 2028,
+      "method": "N0",
+      "TP": 33,
+      "FP": 81,
+      "FN": 61,
+      "sha256": "95c2a5b64462dcd8404794ec16af20c61cb12c49e0423bb5a02a812dd2b9a250"
+    }
+  ],
+  "selection_rule": "Largest positive effect on equal-image mean near-region FP density difference N0-T0; no image removed.",
+  "medical_review": "Unknown; GT-relative errors do not establish anatomy or annotation omissions."
+}

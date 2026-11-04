@@ -1,0 +1,5 @@
+﻿width,valid_images,NA_images,targets,sparse_images,max_image_points,median_valid_points,candidate_paths_intersecting_near,candidate_paths_reached,candidate_paths_zero,candidate_paths_fully_covered_near,median_path_near_coverage,median_reached_path_near_coverage,median_reached_path_full_width_coverage,candidate_near_point_occurrences,selected_candidate_occurrences,selected_candidate_unique,selected_non_candidate_mapped,selected_unmapped
+2,8,20,28,5,12,2.0,174,10,164,0,0.0,0.04146730462519936,0.02112369337979094,5168,13,13,15,0
+3,9,19,77,2,27,6.0,174,18,156,0,0.0,0.06274131274131274,0.02712049508554787,5168,56,56,21,0
+4,18,10,699,3,128,22.5,174,79,95,5,0.0,0.24,0.26785714285714285,5168,652,652,47,0
+5,18,10,1262,1,258,38.0,174,89,85,15,0.025177887246852763,0.5454545454545454,0.5416666666666666,5168,1187,1187,75,0

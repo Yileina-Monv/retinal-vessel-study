@@ -1,0 +1,17 @@
+{
+  "fp_case_counts.json": "9da20b4d17c916324367b9eb5c175403b83ecfe83994aa7018f54be7f0c796e7",
+  "historical_near_path_20261103_common_seeds_table.csv": "3527d2311dad20bd56f3b4e2f610fdaed5d4eacf87bab781e2e7c74a5cd6bbb8",
+  "historical_near_path_20261103_effects.csv": "d4d3c9344c1589d934a21c1bfab83a6f507ec2cc6a88a7f1589a521fbe29626e",
+  "historical_near_path_20261103_per_image.csv": "d5d32ca7f71c6dc412f8f8d5ca13ec58481fb71bdaf53338fbfa92b59c57d270",
+  "historical_near_path_20261103_per_path.csv": "8d2b86babfd312392c7ded6029cfe4dba84486d172ee299d0402f315429cfa77",
+  "historical_near_path_20261103_verification.json": "a4060e9ec8653b3c2f9e7798256f76d9b0f33b2ac764d9353fc3e6d2a5a2e99a",
+  "metric_review_20261103_denominators.csv": "48bfec53d84ec9289e185e802c8503235d96e796bd35fbca4575d1c15a6749e5",
+  "metric_review_20261103_independent_verification.json": "11353e1fbe6e5ff102f7d46d7516f2598a8fa2dba665916f0c84a280842c324f",
+  "metric_review_20261103_metrics.csv": "708197d9d1be9d61a14da3ac1b8514dd6a1e4d0becc92971262d5400cba8d462",
+  "metric_review_20261103_width_summary.csv": "111e360fefe9665690e0facd767cd34a7eeab8907fbd3ba4b960ecfbd7c13653",
+  "near_path_reanalysis_20261103_verification.json": "746f4c062c9910c2026d0f2033a8cf9967642ea37e8c6ff0a0df072bd2f0a291",
+  "nl_fixed_endpoint.json": "236a37e00753e6e4e8ed4a2c696084d52152427ad412dd4599fdd9ba1130c6d4",
+  "README.md": "b4bf17d0b482bb8db6f71c73491e9a8cab973a8a5c858b75f07c83bf431d8970",
+  "source_manifest.json": "9c1a2bf62b4f71fc2d25964cae8df6a456a5b0cff335d4d0ec16589092f5c138",
+  "verify.py": "2003de2339f2faab23fffdd52a5cd07e3aaf4af7cfa0d94bd095293175e17a88"
+}

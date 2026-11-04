@@ -58,3 +58,8 @@ python -m unittest discover -s tests -p test_m1_pretrial.py
 `outputs/morphology_minimal_20260907/run_minimal.py` 是当次限时执行的证据快照，包含已结束的绝对截止时间和禁止覆盖规则，不是通用重跑入口。未来实验使用新任务、新目录和新协议。
 
 公开仓库允许所有人查看；直接写入需要仓库管理员邀请。组员也可通过 fork 和 Pull Request 提交工作。原私有 BME 保留历史备份，后续小组进展以本仓库为准。
+
+
+## 2026-11-04：NL终点与评价覆盖复核
+
+[中文结果、误报代价与局限](docs/research/nl_metric_review_20261104/README.md) · [公开数表与复算](outputs/nl_metric_review_20261104/README.md)。NL未达到预设成功标准；nnU-Net流程有整体及补充路径覆盖收益，局部代价完整报告。新路径为事后诊断，不重判历史正式结果。本条是A7已核验结果的公开归档；上方更早状态保留历史，当前科研权威仍在A7，无新训练/Test授权。
