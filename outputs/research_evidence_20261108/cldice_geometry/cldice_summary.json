@@ -1,0 +1,256 @@
+{
+  "absolute_image_macro": {
+    "A0": {
+      "clDice": 0.8757469363952686,
+      "topology_precision": 0.8996468667438828,
+      "topology_sensitivity": 0.856156574135171,
+      "Dice": 0.8350632574642208,
+      "false_pred_skeleton": 1706.5714285714287,
+      "n": 28,
+      "pred_skeleton_pooled": 493742,
+      "false_skeleton_pooled": 47784
+    },
+    "B1": {
+      "clDice": 0.8740321810640845,
+      "topology_precision": 0.8847033128691754,
+      "topology_sensitivity": 0.8668825219537474,
+      "Dice": 0.8336489160766167,
+      "false_pred_skeleton": 2021.1785714285713,
+      "n": 28,
+      "pred_skeleton_pooled": 508494,
+      "false_skeleton_pooled": 56593
+    },
+    "B2": {
+      "clDice": 0.8740212070359643,
+      "topology_precision": 0.885657763965341,
+      "topology_sensitivity": 0.8659646721725788,
+      "Dice": 0.833576769060426,
+      "false_pred_skeleton": 1998.142857142857,
+      "n": 28,
+      "pred_skeleton_pooled": 507478,
+      "false_skeleton_pooled": 55948
+    }
+  },
+  "paired_image_bootstrap": {
+    "B1-A0": {
+      "clDice": {
+        "mean": -0.0017147553311838623,
+        "CI95": [
+          -0.00293715895919452,
+          -0.000584706534101615
+        ],
+        "increased": 8,
+        "decreased": 20,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_precision": {
+        "mean": -0.014943553874707385,
+        "CI95": [
+          -0.016364015950724085,
+          -0.013588586602144372
+        ],
+        "increased": 0,
+        "decreased": 28,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_sensitivity": {
+        "mean": 0.010725947818576458,
+        "CI95": [
+          0.0094535623317721,
+          0.012027504033496578
+        ],
+        "increased": 28,
+        "decreased": 0,
+        "unchanged": 0,
+        "n": 28
+      },
+      "Dice": {
+        "mean": -0.001414341387604093,
+        "CI95": [
+          -0.0023216650249146733,
+          -0.0007597243610890699
+        ],
+        "increased": 7,
+        "decreased": 21,
+        "unchanged": 0,
+        "n": 28
+      },
+      "false_pred_skeleton": {
+        "mean": 314.60714285714283,
+        "CI95": [
+          274.3883928571429,
+          360.29999999999995
+        ],
+        "increased": 28,
+        "decreased": 0,
+        "unchanged": 0,
+        "n": 28
+      }
+    },
+    "B2-A0": {
+      "clDice": {
+        "mean": -0.0017257293593043138,
+        "CI95": [
+          -0.00297939020070476,
+          -0.0006468761918183314
+        ],
+        "increased": 9,
+        "decreased": 19,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_precision": {
+        "mean": -0.01398910277854177,
+        "CI95": [
+          -0.015459951486911193,
+          -0.012611366023945964
+        ],
+        "increased": 0,
+        "decreased": 28,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_sensitivity": {
+        "mean": 0.009808098037407934,
+        "CI95": [
+          0.008620204217333477,
+          0.010995335002915795
+        ],
+        "increased": 28,
+        "decreased": 0,
+        "unchanged": 0,
+        "n": 28
+      },
+      "Dice": {
+        "mean": -0.0014864884037948905,
+        "CI95": [
+          -0.002408586484015758,
+          -0.0008347743628520148
+        ],
+        "increased": 7,
+        "decreased": 21,
+        "unchanged": 0,
+        "n": 28
+      },
+      "false_pred_skeleton": {
+        "mean": 291.57142857142856,
+        "CI95": [
+          256.3919642857143,
+          332.1223214285714
+        ],
+        "increased": 28,
+        "decreased": 0,
+        "unchanged": 0,
+        "n": 28
+      }
+    },
+    "B2-B1": {
+      "clDice": {
+        "mean": -1.0974028120451309e-05,
+        "CI95": [
+          -0.0002877617279190592,
+          0.00024111576000695873
+        ],
+        "increased": 17,
+        "decreased": 11,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_precision": {
+        "mean": 0.0009544510961656141,
+        "CI95": [
+          0.0004364305197905651,
+          0.0014177574265144446
+        ],
+        "increased": 22,
+        "decreased": 6,
+        "unchanged": 0,
+        "n": 28
+      },
+      "topology_sensitivity": {
+        "mean": -0.000917849781168525,
+        "CI95": [
+          -0.0011129979946652314,
+          -0.0007185612294410979
+        ],
+        "increased": 1,
+        "decreased": 27,
+        "unchanged": 0,
+        "n": 28
+      },
+      "Dice": {
+        "mean": -7.21470161907973e-05,
+        "CI95": [
+          -0.0002101133640091897,
+          5.91688107701776e-05
+        ],
+        "increased": 9,
+        "decreased": 19,
+        "unchanged": 0,
+        "n": 28
+      },
+      "false_pred_skeleton": {
+        "mean": -23.035714285714285,
+        "CI95": [
+          -31.64375,
+          -13.783035714285717
+        ],
+        "increased": 5,
+        "decreased": 23,
+        "unchanged": 0,
+        "n": 28
+      }
+    }
+  },
+  "FP_geometry_counts": {
+    "B1": {
+      "GT_le1": 11769,
+      "GT_gt1_A0_attached": 42248,
+      "GT_gt1_A0_isolated": 3839
+    },
+    "B2": {
+      "GT_le1": 10292,
+      "GT_gt1_A0_attached": 38909,
+      "GT_gt1_A0_isolated": 3294
+    }
+  },
+  "pixel_count_changes": {
+    "B1": {
+      "new_TP": 35478,
+      "lost_TP": 9735,
+      "net_TP": 25743,
+      "net_FP": 50599,
+      "false_pred_skeleton_delta": 8809,
+      "false_pred_skeleton_current_on_new_FP": 7714
+    },
+    "B2": {
+      "new_TP": 31597,
+      "lost_TP": 10231,
+      "net_TP": 21366,
+      "net_FP": 45045,
+      "false_pred_skeleton_delta": 8164,
+      "false_pred_skeleton_current_on_new_FP": 7179
+    }
+  },
+  "common_hit_margin_image_macro": {
+    "A0": {
+      "mean_difference_from_A0": 0.0,
+      "fraction_increased": 0.0,
+      "fraction_decreased": 0.0
+    },
+    "B1": {
+      "mean_difference_from_A0": 0.037840698117893146,
+      "fraction_increased": 0.08468963040526975,
+      "fraction_decreased": 0.04447660381569817
+    },
+    "B2": {
+      "mean_difference_from_A0": 0.023450853338660243,
+      "fraction_increased": 0.07247641014027116,
+      "fraction_decreased": 0.05054312974649385
+    }
+  },
+  "note": "New metrics cannot replace original primary/protection. Full-FOV hard clDice uses no d1 tolerance. No seed SD.",
+  "bootstrap_indices_reused": true
+}

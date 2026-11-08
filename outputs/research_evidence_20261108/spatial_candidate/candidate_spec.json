@@ -1,0 +1,20 @@
+{
+  "id": "SPATIAL_STRATIFIED_CROP_CPU_CANDIDATE_V1",
+  "created_at": "2026-10-25T14:09:57.604732+08:00",
+  "authorization": "User accepts CPU crop comparison and moving away from Loss search. No GPU or training implementation authorized.",
+  "design_predeclared_before_candidate_metrics": true,
+  "candidates": 1,
+  "parameter_scan": false,
+  "source": "Original A0 seed2026/2000-step Train110 trajectory, exactly8000 draws",
+  "candidate": "6x12 cells over legal integer top-left origin domain, one uniform draw in each cell, permute72; if original image has73 visits append one original uniform-origin draw",
+  "integer_edges": "floor(k*R/n), R=height-or-width minus511; upper endpoints exclusive",
+  "seed": "default_rng(SeedSequence([2026,0x53504154,Train_manifest_index]))",
+  "generation_order": "row-major cells: top then left per cell; permutation of72 after origins; optional extra top then left after permutation",
+  "augmentation": "Reuse original per-draw hflip/vflip/CCW90; original draw_geometry still consumed as source, only top/left replaced",
+  "image_visits": "Original order and original per-image72/73 exactly retained",
+  "labels_not_used_for_sampling": true,
+  "empty_FOV": "No reject/resample. Any actual empty FOV disqualifies candidate; retain all records.",
+  "eligibility": "All origins/transforms/Train identities valid; all crops have nonempty FOV; pooled unseen GT pixels, pooled unseen B2 points, and wholly unseen candidate paths must each strictly decrease vs original. Do not search another seed/grid if fail.",
+  "same_distribution": "Not strictly identical: per-cell equal visits gives small unequal-integer-cell marginal deviations; exact bounds reported.",
+  "changes_allowed_now": "Analysis output and existing research records only. No production sampler/model/Loss/protocol changes, Dev/Test content or GPU calls."
+}

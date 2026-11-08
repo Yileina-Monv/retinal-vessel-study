@@ -1,0 +1,427 @@
+{
+  "all": {
+    "images": 110,
+    "strata": {
+      "B1": {
+        "n": 880773,
+        "zero": 577,
+        "original_zero": 3042,
+        "pooled_zero_fraction": 0.0006551063667937141,
+        "macro_zero_fraction": 0.0005749205515397001,
+        "macro_mean_exposure": 17.734418063276188
+      },
+      "B2": {
+        "n": 989358,
+        "zero": 625,
+        "original_zero": 3507,
+        "pooled_zero_fraction": 0.0006317227939734656,
+        "macro_zero_fraction": 0.000553463963078468,
+        "macro_mean_exposure": 17.718058506766305
+      },
+      "FOV": {
+        "n": 118466647,
+        "zero": 264586,
+        "original_zero": 969612,
+        "pooled_zero_fraction": 0.0022334218676755492,
+        "macro_zero_fraction": 0.0016376558003318397,
+        "macro_mean_exposure": 16.198024844276937
+      },
+      "GT": {
+        "n": 18056654,
+        "zero": 16587,
+        "original_zero": 97491,
+        "pooled_zero_fraction": 0.0009186087300559672,
+        "macro_zero_fraction": 0.000671767822510497,
+        "macro_mean_exposure": 16.443033522572275
+      },
+      "background": {
+        "n": 100409993,
+        "zero": 247999,
+        "original_zero": 872121,
+        "pooled_zero_fraction": 0.0024698637315909385,
+        "macro_zero_fraction": 0.0018165434748868463,
+        "macro_mean_exposure": 16.15294967293757
+      },
+      "edge_B2": {
+        "n": 139637,
+        "zero": 591,
+        "original_zero": 2799,
+        "pooled_zero_fraction": 0.004232402586706961,
+        "macro_zero_fraction": 0.0031552299378656157,
+        "macro_mean_exposure": 10.88875754995667
+      },
+      "edge_FOV": {
+        "n": 23700534,
+        "zero": 257755,
+        "original_zero": 768919,
+        "pooled_zero_fraction": 0.010875493353862828,
+        "macro_zero_fraction": 0.00799929663906435,
+        "macro_mean_exposure": 9.765557308426756
+      },
+      "edge_GT": {
+        "n": 2621654,
+        "zero": 16140,
+        "original_zero": 62755,
+        "pooled_zero_fraction": 0.006156418810415104,
+        "macro_zero_fraction": 0.0044220847932301,
+        "macro_mean_exposure": 10.026669641792072
+      },
+      "interior_B2": {
+        "n": 849721,
+        "zero": 34,
+        "original_zero": 708,
+        "pooled_zero_fraction": 4.0013133722716044e-05,
+        "macro_zero_fraction": 4.279851967473125e-05,
+        "macro_mean_exposure": 18.84949394255094
+      },
+      "interior_FOV": {
+        "n": 94766113,
+        "zero": 6831,
+        "original_zero": 200693,
+        "pooled_zero_fraction": 7.208272855931107e-05,
+        "macro_zero_fraction": 4.677011971649641e-05,
+        "macro_mean_exposure": 17.80705152991776
+      },
+      "interior_GT": {
+        "n": 15435000,
+        "zero": 447,
+        "original_zero": 34736,
+        "pooled_zero_fraction": 2.8960155490767737e-05,
+        "macro_zero_fraction": 2.5117510051218367e-05,
+        "macro_mean_exposure": 17.53613011223152
+      }
+    },
+    "paths": 13325,
+    "wholly_unseen_paths": 2,
+    "original_wholly_unseen_paths": 10,
+    "paths_union_incomplete": 23,
+    "paths_never_wholly_in_one_crop": 29,
+    "original_paths_never_wholly_in_one_crop": 116,
+    "images_GT_unseen_worse": 13,
+    "images_B2_unseen_worse": 5,
+    "paths_union_fraction_worse": 19
+  },
+  "by_native_size": {
+    "960x1440": {
+      "images": 58,
+      "strata": {
+        "B1": {
+          "n": 338345,
+          "zero": 0,
+          "original_zero": 54,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 25.30982556492604
+        },
+        "B2": {
+          "n": 390217,
+          "zero": 0,
+          "original_zero": 55,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 25.28940813684149
+        },
+        "FOV": {
+          "n": 37432570,
+          "zero": 13289,
+          "original_zero": 25952,
+          "pooled_zero_fraction": 0.000355011691689884,
+          "macro_zero_fraction": 0.00035603417450823515,
+          "macro_mean_exposure": 23.028226328058313
+        },
+        "GT": {
+          "n": 5888706,
+          "zero": 608,
+          "original_zero": 1597,
+          "pooled_zero_fraction": 0.0001032484895662986,
+          "macro_zero_fraction": 9.761262608573645e-05,
+          "macro_mean_exposure": 23.374919139308314
+        },
+        "background": {
+          "n": 31543864,
+          "zero": 12681,
+          "original_zero": 24355,
+          "pooled_zero_fraction": 0.00040201162419416974,
+          "macro_zero_fraction": 0.0004079620096874771,
+          "macro_mean_exposure": 22.963884543822523
+        },
+        "edge_B2": {
+          "n": 55450,
+          "zero": 0,
+          "original_zero": 55,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 14.312335893643537
+        },
+        "edge_FOV": {
+          "n": 7490275,
+          "zero": 13289,
+          "original_zero": 25943,
+          "pooled_zero_fraction": 0.0017741671700972261,
+          "macro_zero_fraction": 0.0017792831516895084,
+          "macro_mean_exposure": 12.917649662672602
+        },
+        "edge_GT": {
+          "n": 862809,
+          "zero": 608,
+          "original_zero": 1597,
+          "pooled_zero_fraction": 0.000704675078725419,
+          "macro_zero_fraction": 0.0006440132796592347,
+          "macro_mean_exposure": 13.20142690217258
+        },
+        "interior_B2": {
+          "n": 334767,
+          "zero": 0,
+          "original_zero": 0,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 27.109758136111335
+        },
+        "interior_FOV": {
+          "n": 29942295,
+          "zero": 0,
+          "original_zero": 9,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 25.557458840625955
+        },
+        "interior_GT": {
+          "n": 5025897,
+          "zero": 0,
+          "original_zero": 0,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 25.112466648569878
+        }
+      },
+      "paths": 6883,
+      "wholly_unseen_paths": 0,
+      "original_wholly_unseen_paths": 0,
+      "paths_union_incomplete": 0,
+      "paths_never_wholly_in_one_crop": 1,
+      "original_paths_never_wholly_in_one_crop": 6,
+      "images_GT_unseen_worse": 6,
+      "images_B2_unseen_worse": 0,
+      "paths_union_fraction_worse": 0
+    },
+    "1488x2240": {
+      "images": 33,
+      "strata": {
+        "B1": {
+          "n": 352234,
+          "zero": 194,
+          "original_zero": 1670,
+          "pooled_zero_fraction": 0.000550770226610719,
+          "macro_zero_fraction": 0.000576917467310358,
+          "macro_mean_exposure": 9.561716802035628
+        },
+        "B2": {
+          "n": 386418,
+          "zero": 224,
+          "original_zero": 1796,
+          "pooled_zero_fraction": 0.0005796831410545057,
+          "macro_zero_fraction": 0.0005794143662615902,
+          "macro_mean_exposure": 9.555427415755197
+        },
+        "FOV": {
+          "n": 49478673,
+          "zero": 126940,
+          "original_zero": 541893,
+          "pooled_zero_fraction": 0.002565549807691892,
+          "macro_zero_fraction": 0.0025637044163727136,
+          "macro_mean_exposure": 8.811857583039108
+        },
+        "GT": {
+          "n": 7670239,
+          "zero": 7989,
+          "original_zero": 45602,
+          "pooled_zero_fraction": 0.0010415581574446376,
+          "macro_zero_fraction": 0.0010053303188332996,
+          "macro_mean_exposure": 8.985872157432762
+        },
+        "background": {
+          "n": 41808434,
+          "zero": 118951,
+          "original_zero": 496291,
+          "pooled_zero_fraction": 0.0028451436377645717,
+          "macro_zero_fraction": 0.002858464660529276,
+          "macro_mean_exposure": 8.781485567587549
+        },
+        "edge_B2": {
+          "n": 53982,
+          "zero": 224,
+          "original_zero": 1482,
+          "pooled_zero_fraction": 0.004149531325256567,
+          "macro_zero_fraction": 0.0038405715859398167,
+          "macro_mean_exposure": 7.415798590892515
+        },
+        "edge_FOV": {
+          "n": 9897559,
+          "zero": 126940,
+          "original_zero": 429937,
+          "pooled_zero_fraction": 0.012825384521577492,
+          "macro_zero_fraction": 0.012816172600755111,
+          "macro_mean_exposure": 6.448474003039927
+        },
+        "edge_GT": {
+          "n": 1105888,
+          "zero": 7989,
+          "original_zero": 31095,
+          "pooled_zero_fraction": 0.007224058855869672,
+          "macro_zero_fraction": 0.007112857805517445,
+          "macro_mean_exposure": 6.702649383279028
+        },
+        "interior_B2": {
+          "n": 332436,
+          "zero": 0,
+          "original_zero": 314,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 9.90002864509765
+        },
+        "interior_FOV": {
+          "n": 39581114,
+          "zero": 0,
+          "original_zero": 111956,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 9.402840688541842
+        },
+        "interior_GT": {
+          "n": 6564351,
+          "zero": 0,
+          "original_zero": 14507,
+          "pooled_zero_fraction": 0.0,
+          "macro_zero_fraction": 0.0,
+          "macro_mean_exposure": 9.368043687908012
+        }
+      },
+      "paths": 4311,
+      "wholly_unseen_paths": 0,
+      "original_wholly_unseen_paths": 5,
+      "paths_union_incomplete": 11,
+      "paths_never_wholly_in_one_crop": 15,
+      "original_paths_never_wholly_in_one_crop": 60,
+      "images_GT_unseen_worse": 4,
+      "images_B2_unseen_worse": 3,
+      "paths_union_fraction_worse": 10
+    },
+    "1536x2304": {
+      "images": 19,
+      "strata": {
+        "B1": {
+          "n": 190194,
+          "zero": 383,
+          "original_zero": 1318,
+          "pooled_zero_fraction": 0.002013733345952028,
+          "macro_zero_fraction": 0.0023264728551644844,
+          "macro_mean_exposure": 8.804181564604987
+        },
+        "B2": {
+          "n": 212723,
+          "zero": 401,
+          "original_zero": 1656,
+          "pooled_zero_fraction": 0.0018850805977726902,
+          "macro_zero_fraction": 0.0021979137816841585,
+          "macro_mean_exposure": 8.782718899345548
+        },
+        "FOV": {
+          "n": 31555404,
+          "zero": 124357,
+          "original_zero": 401767,
+          "pooled_zero_fraction": 0.003940909772538485,
+          "macro_zero_fraction": 0.00394157421972238,
+          "macro_mean_exposure": 8.17654240014685
+        },
+        "GT": {
+          "n": 4497709,
+          "zero": 7990,
+          "original_zero": 50292,
+          "pooled_zero_fraction": 0.001776459971065269,
+          "macro_zero_fraction": 0.0018451067179833204,
+          "macro_mean_exposure": 8.234452431988773
+        },
+        "background": {
+          "n": 27057695,
+          "zero": 116367,
+          "original_zero": 351475,
+          "pooled_zero_fraction": 0.004300698932410909,
+          "macro_zero_fraction": 0.004306771151484911,
+          "macro_mean_exposure": 8.164744039528308
+        },
+        "edge_B2": {
+          "n": 30205,
+          "zero": 367,
+          "original_zero": 1262,
+          "pooled_zero_fraction": 0.012150306240688628,
+          "macro_zero_fraction": 0.011596654254168623,
+          "macro_mean_exposure": 6.469815534971332
+        },
+        "edge_FOV": {
+          "n": 6312700,
+          "zero": 117526,
+          "original_zero": 313039,
+          "pooled_zero_fraction": 0.018617390340108037,
+          "macro_zero_fraction": 0.01862055324600886,
+          "macro_mean_exposure": 5.904630599558679
+        },
+        "edge_GT": {
+          "n": 652957,
+          "zero": 7543,
+          "original_zero": 30063,
+          "pooled_zero_fraction": 0.011552062386956568,
+          "macro_zero_fraction": 0.011281697339631566,
+          "macro_mean_exposure": 6.108603716995279
+        },
+        "interior_B2": {
+          "n": 182518,
+          "zero": 34,
+          "original_zero": 394,
+          "pooled_zero_fraction": 0.00018628299674552646,
+          "macro_zero_fraction": 0.00024778090338002304,
+          "macro_mean_exposure": 9.177758763048587
+        },
+        "interior_FOV": {
+          "n": 25242704,
+          "zero": 6831,
+          "original_zero": 88728,
+          "pooled_zero_fraction": 0.00027061284718150636,
+          "macro_zero_fraction": 0.00027077437730603184,
+          "macro_mean_exposure": 8.74470067435616
+        },
+        "interior_GT": {
+          "n": 3844752,
+          "zero": 447,
+          "original_zero": 20229,
+          "pooled_zero_fraction": 0.00011626237531055319,
+          "macro_zero_fraction": 0.00014541716345442212,
+          "macro_mean_exposure": 8.59504236986577
+        }
+      },
+      "paths": 2131,
+      "wholly_unseen_paths": 2,
+      "original_wholly_unseen_paths": 5,
+      "paths_union_incomplete": 12,
+      "paths_never_wholly_in_one_crop": 13,
+      "original_paths_never_wholly_in_one_crop": 50,
+      "images_GT_unseen_worse": 3,
+      "images_B2_unseen_worse": 2,
+      "paths_union_fraction_worse": 9
+    }
+  },
+  "predeclared_CPU_admission": {
+    "origins_and_augmentation_valid": true,
+    "exact_110_and_8000": true,
+    "nonempty_FOV_all": true,
+    "GT_unseen_strictly_reduced": true,
+    "B2_unseen_strictly_reduced": true,
+    "wholly_unseen_paths_strictly_reduced": true
+  },
+  "CPU_admission_pass": true,
+  "empty_FOV_draws": [],
+  "minimum_crop_FOV": 1386,
+  "max_origin_marginal_deviation": 0.016733454233454292,
+  "new_GPU_calls": 0,
+  "new_model_forwards": 0,
+  "scientific_training_authorized": false
+}

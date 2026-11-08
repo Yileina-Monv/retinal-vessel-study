@@ -1,0 +1,13 @@
+{
+  "status": "EXPLORATORY_GEOMETRIC_PROXIES_NOT_MEDICAL_CLASSIFICATION",
+  "threshold": 0.5,
+  "scope": "same Dev28 and frozen FOV, native pixels",
+  "r": 1,
+  "boundary_envelope": "new FP within Euclidean distance <=1 of A0 foreground; includes both lateral edge and tip extension; not proof of vessel thickening",
+  "novel_unsupported_axis": "S(P_B) outside GT at distance >1 from S(P_A0); counts centerline positions, not anatomical branches",
+  "loss_of_unsupported_axis": "S(P_A0) outside GT at distance >1 from S(P_B)",
+  "forbidden_inference": "no branch anatomy or true background/GT-omission claims; no reconstruction of frozen endpoint primary/protection",
+  "new_model_inference": 0,
+  "GPU_calls": 0,
+  "Test_accessed": false
+}

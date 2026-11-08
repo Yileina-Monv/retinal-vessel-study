@@ -1,0 +1,3511 @@
+{
+  "scope": {
+    "id": "P1_FP_ERROR_ANALYSIS_V1",
+    "approved": "User approved proposed plan via Implement the plan.",
+    "endpoints": "seed2026 lambda0.03 step2000; A0 original T0 reused",
+    "threshold": 0.5,
+    "global_FP": "(prob>=0.5)&FOV&~GT; U remains included",
+    "distance": "Euclidean distance to GT&FOV at native scale; <=1 versus >1 descriptive only; reference distance=alpha*native; all exact squared-native-distance frequencies retained",
+    "regions": [
+      "internal",
+      "near",
+      "far",
+      "U_in_FOV"
+    ],
+    "connectivity": 8,
+    "component_filter": "none",
+    "crop_rules": [
+      "grid512 tile containing bbox midpoint of largest union-new-FP component, tie smallest (y,x)",
+      "grid512 tile with largest union-new FP at distance>1",
+      "grid512 tile with largest B1/B2 FP disagreement"
+    ],
+    "crop_ties": "row then column",
+    "medical_truth": "not inferred automatically; original human 0/26 unchanged",
+    "status": "approved post-hoc descriptive analysis, NOT a revised scientific evaluation protocol",
+    "prohibited": "no model construction/inference/training/GPU/Test/new thresholds/lambda/seeds"
+  },
+  "images": 28,
+  "input_probability_maps": 84,
+  "membership_counts": {
+    "1": 5933,
+    "2": 8722,
+    "3": 1517,
+    "4": 3361,
+    "5": 1324,
+    "6": 49134,
+    "7": 578166
+  },
+  "sets": {
+    "FP_A0": {
+      "area": 586940,
+      "near1_pixels": 281120,
+      "near1_share": 0.4789586669847003,
+      "distance_native_pooled": {
+        "n": 586940,
+        "mean": 6.971466721420564,
+        "median": 1.4142135623730951,
+        "q90": 22.47220505424423,
+        "max": 136.12494260788506,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 586940,
+        "mean": 5.4730738851868646,
+        "median": 1.0068622606085635,
+        "q90": 17.612896219031178,
+        "max": 101.14088008604199,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 49600,
+        "mean": 11.833467741935484,
+        "median": 2.0,
+        "q90": 27.0,
+        "max": 2338.0,
+        "NA_reason": null,
+        "single_pixel_components": 19596,
+        "single_pixel_area_share": 0.03338671755204961,
+        "largest_component_area_share": 0.003983371383787099
+      },
+      "regions": {
+        "internal": {
+          "area": 9402,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.01601867311820629,
+          "density_per_region": 0.06052958558929755,
+          "density_per_background": 0.06615582715893019
+        },
+        "near": {
+          "area": 13142,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.022390704330936723,
+          "density_per_region": 0.020308569097348853,
+          "density_per_background": 0.022698303585924357
+        },
+        "far": {
+          "area": 564274,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9613827648481957,
+          "density_per_region": 0.019341884922170607,
+          "density_per_background": 0.022952108217566887
+        },
+        "U_in_FOV": {
+          "area": 122,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00020785770266126008,
+          "density_per_region": 0.00869937250427838,
+          "density_per_background": 0.00909836676858826
+        }
+      },
+      "per_image_macro_density": 0.021137946712482928,
+      "top1_share": 0.06643098102020649,
+      "top3_share": 0.18970252495996184,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 38991,
+          "density": 0.023508961695061798
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 36942,
+          "density": 0.056415848116112007
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 35411,
+          "density": 0.023644976135340796
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 34851,
+          "density": 0.02098099122556176
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 33883,
+          "density": 0.0204884007098953
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 28063,
+          "density": 0.018700313859809286
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 25348,
+          "density": 0.016818554286415707
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 24405,
+          "density": 0.014738716170554817
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 24289,
+          "density": 0.016217132914523712
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 23520,
+          "density": 0.03617793638097582
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 23432,
+          "density": 0.01415794886172073
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 21921,
+          "density": 0.014621388675077139
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 21222,
+          "density": 0.014189281349205288
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 19892,
+          "density": 0.013283978087980644
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 19595,
+          "density": 0.030037556526404538
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 17494,
+          "density": 0.026838574275531855
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 15754,
+          "density": 0.024102726511928203
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 15004,
+          "density": 0.009975102134435178
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 14013,
+          "density": 0.021751041917283023
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 13952,
+          "density": 0.021691441115790817
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 13387,
+          "density": 0.020485832685515612
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 13384,
+          "density": 0.02080428521021126
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 13166,
+          "density": 0.020461160936992493
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 13160,
+          "density": 0.020469778301101728
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 12311,
+          "density": 0.019142617240950368
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 12083,
+          "density": 0.01879519721501936
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 11585,
+          "density": 0.018006885671430682
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 9882,
+          "density": 0.015355879738692093
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "FP_B1": {
+      "area": 637539,
+      "near1_pixels": 289500,
+      "near1_share": 0.45408986744340346,
+      "distance_native_pooled": {
+        "n": 637539,
+        "mean": 7.592639169824068,
+        "median": 1.4142135623730951,
+        "q90": 24.698178070456937,
+        "max": 158.39823231336896,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 637539,
+        "mean": 5.9619284534356725,
+        "median": 1.0070525337193834,
+        "q90": 19.167682743277712,
+        "max": 104.51214125319845,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 50772,
+        "mean": 12.55690144173954,
+        "median": 2.0,
+        "q90": 29.0,
+        "max": 2457.0,
+        "NA_reason": null,
+        "single_pixel_components": 19844,
+        "single_pixel_area_share": 0.03112593896216545,
+        "largest_component_area_share": 0.003853881880167331
+      },
+      "regions": {
+        "internal": {
+          "area": 9626,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.015098684158929884,
+          "density_per_region": 0.061971685905400795,
+          "density_per_background": 0.06773197109464604
+        },
+        "near": {
+          "area": 14323,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.022466076585118715,
+          "density_per_region": 0.022133589650078195,
+          "density_per_background": 0.024738076568345348
+        },
+        "far": {
+          "area": 613456,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9622250560357876,
+          "density_per_region": 0.021027719435620092,
+          "density_per_background": 0.02495260901391117
+        },
+        "U_in_FOV": {
+          "area": 134,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00021018322016378606,
+          "density_per_region": 0.009555048488305762,
+          "density_per_background": 0.009993288090088747
+        }
+      },
+      "per_image_macro_density": 0.023086596634401983,
+      "top1_share": 0.06437096397240012,
+      "top3_share": 0.1857847127783555,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 41039,
+          "density": 0.02474376853642228
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 39946,
+          "density": 0.06100339637394321
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 37460,
+          "density": 0.025013154274939036
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 37456,
+          "density": 0.022549252742952604
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 35753,
+          "density": 0.02161915387010851
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 30641,
+          "density": 0.020418213198104846
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 27114,
+          "density": 0.01799030617492013
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 26921,
+          "density": 0.017974450788088965
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 25919,
+          "density": 0.015653054063700482
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 25478,
+          "density": 0.03918968805758937
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 25345,
+          "density": 0.015313810767340043
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 23590,
+          "density": 0.015734617893575553
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 23019,
+          "density": 0.015390776900261829
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 21441,
+          "density": 0.014318408113030012
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 20940,
+          "density": 0.03209933318004139
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 19106,
+          "density": 0.029311638282171693
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 17639,
+          "density": 0.026986669604157774
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 17155,
+          "density": 0.011405150434299885
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 15753,
+          "density": 0.024491490244914902
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 15506,
+          "density": 0.02406848326335478
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 15149,
+          "density": 0.02354782700608864
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 14727,
+          "density": 0.022536405315573944
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 14653,
+          "density": 0.022772094121961947
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 14495,
+          "density": 0.022546309762497687
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 13695,
+          "density": 0.02129462619728822
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 13517,
+          "density": 0.021025794980999477
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 12959,
+          "density": 0.020142531844287458
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 11123,
+          "density": 0.017284299770640776
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "FP_B2": {
+      "area": 631985,
+      "near1_pixels": 287666,
+      "near1_share": 0.45517852480675963,
+      "distance_native_pooled": {
+        "n": 631985,
+        "mean": 7.605879759437522,
+        "median": 1.4142135623730951,
+        "q90": 24.698178070456937,
+        "max": 159.3643623900902,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 631985,
+        "mean": 5.975890631854872,
+        "median": 1.0070525337193834,
+        "q90": 19.19363764039849,
+        "max": 105.14959990139532,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 50605,
+        "mean": 12.488588084181405,
+        "median": 2.0,
+        "q90": 28.0,
+        "max": 2466.0,
+        "NA_reason": null,
+        "single_pixel_components": 19856,
+        "single_pixel_area_share": 0.03141846721045594,
+        "largest_component_area_share": 0.003901991344731283
+      },
+      "regions": {
+        "internal": {
+          "area": 9787,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.01548612704415453,
+          "density_per_region": 0.06300819550759999,
+          "density_per_background": 0.0688648245484418
+        },
+        "near": {
+          "area": 14339,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.022688829639943987,
+          "density_per_region": 0.022158314738006786,
+          "density_per_background": 0.02476571108800558
+        },
+        "far": {
+          "area": 607717,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9616003544387921,
+          "density_per_region": 0.020831001037167677,
+          "density_per_background": 0.024719172511324456
+        },
+        "U_in_FOV": {
+          "area": 142,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00022468887710942506,
+          "density_per_region": 0.010125499144324016,
+          "density_per_background": 0.010589902304422402
+        }
+      },
+      "per_image_macro_density": 0.02289340316217759,
+      "top1_share": 0.06429582980608717,
+      "top3_share": 0.1868509537409907,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 40634,
+          "density": 0.02449958066007902
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 39901,
+          "density": 0.06093467477886918
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 37552,
+          "density": 0.02507458540663403
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 36967,
+          "density": 0.022254865072317626
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 35265,
+          "density": 0.021324069622951265
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 30365,
+          "density": 0.020234295348077858
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 27098,
+          "density": 0.017979690076270035
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 26792,
+          "density": 0.017888320846717414
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 25662,
+          "density": 0.015497846112221991
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 25044,
+          "density": 0.0385221189934166
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 24886,
+          "density": 0.015036476415704254
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 23310,
+          "density": 0.015547856850328366
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 22753,
+          "density": 0.015212926139782675
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 21307,
+          "density": 0.014228922236105147
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 20734,
+          "density": 0.031783551774354254
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 18867,
+          "density": 0.028944974325852264
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 17479,
+          "density": 0.026741878678557388
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 16804,
+          "density": 0.011171795272397275
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 15496,
+          "density": 0.02409192743193051
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 15330,
+          "density": 0.023795295268104526
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 15009,
+          "density": 0.023330208959956727
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 14729,
+          "density": 0.02253946587173821
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 14537,
+          "density": 0.022591819576261572
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 14387,
+          "density": 0.022378320700452172
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 13596,
+          "density": 0.021140689140440354
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 13459,
+          "density": 0.02093557554555537
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 12863,
+          "density": 0.019993316391162093
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 11159,
+          "density": 0.017340241044734372
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "new_B1": {
+      "area": 57856,
+      "near1_pixels": 11769,
+      "near1_share": 0.20341883296460178,
+      "distance_native_pooled": {
+        "n": 57856,
+        "mean": 13.836651039750153,
+        "median": 7.211102550927978,
+        "q90": 35.4682957019364,
+        "max": 158.39823231336896,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 57856,
+        "mean": 10.87228010149718,
+        "median": 5.638504860732152,
+        "q90": 27.696147731719567,
+        "max": 104.51214125319845,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 27437,
+        "mean": 2.108685351897073,
+        "median": 1.0,
+        "q90": 4.0,
+        "max": 80.0,
+        "NA_reason": null,
+        "single_pixel_components": 19909,
+        "single_pixel_area_share": 0.3441129701327434,
+        "largest_component_area_share": 0.0013827433628318584
+      },
+      "regions": {
+        "internal": {
+          "area": 551,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.009523644911504425,
+          "density_per_region": 0.0035473092597003777,
+          "density_per_background": 0.0038770326275867407
+        },
+        "near": {
+          "area": 1412,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.024405420353982302,
+          "density_per_region": 0.0021819890096984157,
+          "density_per_background": 0.0024387463600156136
+        },
+        "far": {
+          "area": 55872,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9657079646017699,
+          "density_per_region": 0.0019151507855607666,
+          "density_per_background": 0.0022726196676293737
+        },
+        "U_in_FOV": {
+          "area": 21,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00036297013274336285,
+          "density_per_region": 0.0014974329720479178,
+          "density_per_background": 0.0015661123126258483
+        }
+      },
+      "per_image_macro_density": 0.002186854627354342,
+      "top1_share": 0.0635370575221239,
+      "top3_share": 0.16525511615044247,
+      "image_area_ranking": [
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 3676,
+          "density": 0.005613790744270146
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 2951,
+          "density": 0.0019704703220860945
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 2934,
+          "density": 0.0017663260238098822
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 2914,
+          "density": 0.0019456019314472435
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 2893,
+          "density": 0.001927805580174189
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 2395,
+          "density": 0.0014440246020792748
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 2320,
+          "density": 0.0015393343042640225
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 2306,
+          "density": 0.0013943940039848467
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 2265,
+          "density": 0.0015058388652689735
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 2144,
+          "density": 0.0014335038739372414
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 2127,
+          "density": 0.0012851637601946054
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 2075,
+          "density": 0.0031917184519780965
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 2002,
+          "density": 0.001336945713459544
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 1999,
+          "density": 0.0013333404480397428
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 1930,
+          "density": 0.00295279054005468
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 1929,
+          "density": 0.0011649655190739702
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 1881,
+          "density": 0.0029244266584577496
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 1838,
+          "density": 0.002857014062789024
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 1664,
+          "density": 0.002552840264918544
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 1631,
+          "density": 0.0025347222761837123
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 1618,
+          "density": 0.002516811147389003
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 1577,
+          "density": 0.002447826525623016
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 1542,
+          "density": 0.0023596888026492175
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 1518,
+          "density": 0.002360368205000622
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 1477,
+          "density": 0.002297405968900247
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 1452,
+          "density": 0.002256883728521135
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 1426,
+          "density": 0.0021859431286885872
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 1372,
+          "density": 0.0021319841126781576
+        }
+      ],
+      "probability_increase_pooled": {
+        "n": 57856,
+        "mean": 0.14322957396507263,
+        "median": 0.13338735699653625,
+        "q90": 0.2513810396194458,
+        "max": 0.4877501428127289,
+        "NA_reason": null
+      }
+    },
+    "removed_B1": {
+      "area": 7257,
+      "near1_pixels": 3389,
+      "near1_share": 0.46699738183822515,
+      "distance_native_pooled": {
+        "n": 7257,
+        "mean": 7.132751320918713,
+        "median": 1.4142135623730951,
+        "q90": 21.009518416651467,
+        "max": 135.85654198455074,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 7257,
+        "mean": 5.571271799486555,
+        "median": 1.0068622606085635,
+        "q90": 18.36655384949501,
+        "max": 100.9038539695657,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 5968,
+        "mean": 1.215985254691689,
+        "median": 1.0,
+        "q90": 1.0,
+        "max": 76.0,
+        "NA_reason": null,
+        "single_pixel_components": 5466,
+        "single_pixel_area_share": 0.7532038032244729,
+        "largest_component_area_share": 0.010472647099352349
+      },
+      "regions": {
+        "internal": {
+          "area": 327,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.04505994212484498,
+          "density_per_region": 0.002105208943597139,
+          "density_per_background": 0.002300888691870897
+        },
+        "near": {
+          "area": 231,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.031831335262505166,
+          "density_per_region": 0.0003569684569690751,
+          "density_per_background": 0.00039897337759462235
+        },
+        "far": {
+          "area": 6690,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9218685407193055,
+          "density_per_region": 0.00022931627211128167,
+          "density_per_background": 0.0002721188712850893
+        },
+        "U_in_FOV": {
+          "area": 9,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0012401818933443572,
+          "density_per_region": 0.0006417569880205362,
+          "density_per_background": 0.0006711909911253635
+        }
+      },
+      "per_image_macro_density": 0.00023820470543529001,
+      "top1_share": 0.12429378531073447,
+      "top3_share": 0.2932341187818658,
+      "image_area_ranking": [
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 902,
+          "density": 0.000602292182487854
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 672,
+          "density": 0.0010262424864389385
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 554,
+          "density": 0.00036758241575959844
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 453,
+          "density": 0.0003025156884101766
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 436,
+          "density": 0.0002636408437716362
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 415,
+          "density": 0.0002506276259283036
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 347,
+          "density": 0.00020921776071879263
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 347,
+          "density": 0.00023200832288070093
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 330,
+          "density": 0.0002201112295413282
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 329,
+          "density": 0.00019806450641903588
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 315,
+          "density": 0.00020990624187862755
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 282,
+          "density": 0.0001882840578819913
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 214,
+          "density": 0.00012930185457529176
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 202,
+          "density": 0.0003091161725908832
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 184,
+          "density": 0.0002862133814088854
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 144,
+          "density": 0.00022378909121425786
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 142,
+          "density": 0.00022087450750428916
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 134,
+          "density": 0.000208359248662769
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 131,
+          "density": 0.0002035640807294742
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 117,
+          "density": 0.00017996677536454808
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 114,
+          "density": 7.579056540426622e-05
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 84,
+          "density": 0.00013038517955125768
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 81,
+          "density": 0.00012416647505173603
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 80,
+          "density": 0.00012437752933366293
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 78,
+          "density": 0.00012123755566435848
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 73,
+          "density": 0.0001134722669116424
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 52,
+          "density": 7.97762582787045e-05
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 45,
+          "density": 6.884744782510912e-05
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "retained_B1": {
+      "area": 579683,
+      "near1_pixels": 277731,
+      "near1_share": 0.4791084092512632,
+      "distance_native_pooled": {
+        "n": 579683,
+        "mean": 6.969447613841839,
+        "median": 1.4142135623730951,
+        "q90": 22.47220505424423,
+        "max": 136.12494260788506,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 579683,
+        "mean": 5.471844554217915,
+        "median": 1.0068622606085635,
+        "q90": 17.60820128809411,
+        "max": 101.14088008604199,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "q90": null,
+        "max": null,
+        "NA_reason": "empty_set"
+      },
+      "regions": {
+        "internal": {
+          "area": 9075,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.015655108050434463,
+          "density_per_region": 0.05842437664570042,
+          "density_per_background": 0.0638549384670593
+        },
+        "near": {
+          "area": 12911,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.022272517910651168,
+          "density_per_region": 0.019951600640379777,
+          "density_per_background": 0.022299330208329735
+        },
+        "far": {
+          "area": 557584,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9618774399111238,
+          "density_per_region": 0.019112568650059326,
+          "density_per_background": 0.0226799893462818
+        },
+        "U_in_FOV": {
+          "area": 113,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00019493412779053378,
+          "density_per_region": 0.008057615516257844,
+          "density_per_background": 0.008427175777462898
+        }
+      },
+      "per_image_macro_density": 0.02089974200704764,
+      "top1_share": 0.06666402154280875,
+      "top3_share": 0.1887859399016359,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 38644,
+          "density": 0.023299743934343004
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 36270,
+          "density": 0.055389605629673065
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 34522,
+          "density": 0.020782926719142725
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 34509,
+          "density": 0.02304268395285294
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 33447,
+          "density": 0.020224759866123664
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 27748,
+          "density": 0.01849040761793066
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 24794,
+          "density": 0.016450971870656108
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 24007,
+          "density": 0.01602884885664172
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 23990,
+          "density": 0.014488088544626514
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 23403,
+          "density": 0.035997969605611274
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 23218,
+          "density": 0.014028647007145439
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 21591,
+          "density": 0.01440127744553581
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 20875,
+          "density": 0.013957273026324588
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 19514,
+          "density": 0.029913390051352802
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 19439,
+          "density": 0.012981462399570468
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 17442,
+          "density": 0.02675879801725315
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 15709,
+          "density": 0.024033879064103095
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 14890,
+          "density": 0.009899311569030912
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 13929,
+          "density": 0.021620656737731763
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 13872,
+          "density": 0.02156706358645715
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 13311,
+          "density": 0.02069081294329962
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 13185,
+          "density": 0.020176716512924728
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 13022,
+          "density": 0.020237371845778233
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 13018,
+          "density": 0.02024890379359744
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 12177,
+          "density": 0.0189342579922876
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 11899,
+          "density": 0.018508983833610472
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 11507,
+          "density": 0.01788564811576632
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 9751,
+          "density": 0.015152315657962618
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "new_B2": {
+      "area": 52495,
+      "near1_pixels": 10292,
+      "near1_share": 0.1960567673111725,
+      "distance_native_pooled": {
+        "n": 52495,
+        "mean": 14.370477258257823,
+        "median": 8.06225774829855,
+        "q90": 36.069377593742864,
+        "max": 159.3643623900902,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 52495,
+        "mean": 11.330223312588595,
+        "median": 6.3253014223802495,
+        "q90": 28.340489743661493,
+        "max": 105.14959990139532,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 25322,
+        "mean": 2.0730984914303767,
+        "median": 1.0,
+        "q90": 4.0,
+        "max": 75.0,
+        "NA_reason": null,
+        "single_pixel_components": 18255,
+        "single_pixel_area_share": 0.3477474045147157,
+        "largest_component_area_share": 0.0014287074959519954
+      },
+      "regions": {
+        "internal": {
+          "area": 645,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.012286884465187161,
+          "density_per_region": 0.004152476356636558,
+          "density_per_background": 0.004538450172038925
+        },
+        "near": {
+          "area": 1401,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.026688256024383274,
+          "density_per_region": 0.0021649905117475075,
+          "density_per_background": 0.0024197476277492028
+        },
+        "far": {
+          "area": 50422,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9605105248118868,
+          "density_per_region": 0.0017283385758438032,
+          "density_per_background": 0.002050938374878441
+        },
+        "U_in_FOV": {
+          "area": 27,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0005143346985427183,
+          "density_per_region": 0.0019252709640616087,
+          "density_per_background": 0.0020135729733760906
+        }
+      },
+      "per_image_macro_density": 0.0019993086868607497,
+      "top1_share": 0.0671873511763025,
+      "top3_share": 0.17540718163634633,
+      "image_area_ranking": [
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 3527,
+          "density": 0.005386245907247227
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 2934,
+          "density": 0.0019591189173163675
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 2747,
+          "density": 0.0018341003794391138
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 2626,
+          "density": 0.0017498850513437332
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 2506,
+          "density": 0.0015086615595322306
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 2269,
+          "density": 0.0015054954898168391
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 2051,
+          "density": 0.0012366156404445064
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 1938,
+          "density": 0.0012884396118725257
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 1924,
+          "density": 0.0011634059252674956
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 1879,
+          "density": 0.001256321725339588
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 1858,
+          "density": 0.0012407817860178986
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 1789,
+          "density": 0.002737068536869338
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 1734,
+          "density": 0.0011565844606807973
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 1718,
+          "density": 0.0010380401222446318
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 1704,
+          "density": 0.002621054574540085
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 1700,
+          "density": 0.002642504845887563
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 1677,
+          "density": 0.0010127771775464219
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 1661,
+          "density": 0.0025823884527901766
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 1562,
+          "density": 0.002429702726960212
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 1533,
+          "density": 0.0023459162999100195
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 1506,
+          "density": 0.0023404609122824466
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 1449,
+          "density": 0.002222996120112362
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 1416,
+          "density": 0.002201766388854335
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 1388,
+          "density": 0.0021568469011642
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 1386,
+          "density": 0.0021558596295841183
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 1384,
+          "density": 0.002148251053558817
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 1369,
+          "density": 0.002127874534673164
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 1260,
+          "density": 0.0019314785008047828
+        }
+      ],
+      "probability_increase_pooled": {
+        "n": 52495,
+        "mean": 0.13482429087162018,
+        "median": 0.1262219250202179,
+        "q90": 0.23517628014087677,
+        "max": 0.4828692674636841,
+        "NA_reason": null
+      }
+    },
+    "removed_B2": {
+      "area": 7450,
+      "near1_pixels": 3746,
+      "near1_share": 0.5028187919463087,
+      "distance_native_pooled": {
+        "n": 7450,
+        "mean": 5.289793473115412,
+        "median": 1.0,
+        "q90": 12.045739718272538,
+        "max": 135.85654198455074,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 7450,
+        "mean": 4.090311140015373,
+        "median": 1.0065938692708807,
+        "q90": 9.263530978529861,
+        "max": 100.9038539695657,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 6403,
+        "mean": 1.163517101358738,
+        "median": 1.0,
+        "q90": 1.0,
+        "max": 51.0,
+        "NA_reason": null,
+        "single_pixel_components": 5913,
+        "single_pixel_area_share": 0.7936912751677853,
+        "largest_component_area_share": 0.006845637583892617
+      },
+      "regions": {
+        "internal": {
+          "area": 260,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.0348993288590604,
+          "density_per_region": 0.0016738664383341166,
+          "density_per_background": 0.0018294527825273186
+        },
+        "near": {
+          "area": 204,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.02738255033557047,
+          "density_per_region": 0.0003152448710895728,
+          "density_per_background": 0.00035234012566797817
+        },
+        "far": {
+          "area": 6979,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9367785234899328,
+          "density_per_region": 0.00023922246084673166,
+          "density_per_background": 0.0002838740811208727
+        },
+        "U_in_FOV": {
+          "area": 7,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0009395973154362416,
+          "density_per_region": 0.0004991443240159727,
+          "density_per_background": 0.0005220374375419494
+        }
+      },
+      "per_image_macro_density": 0.00024385223716608755,
+      "top1_share": 0.10644295302013423,
+      "top3_share": 0.25543624161073825,
+      "image_area_ranking": [
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 793,
+          "density": 0.0005295096460231355
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 568,
+          "density": 0.0008674192444900552
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 542,
+          "density": 0.00032773701221152946
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 519,
+          "density": 0.0003443596999625119
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 443,
+          "density": 0.0002958376378933956
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 420,
+          "density": 0.000253647235879247
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 408,
+          "density": 0.00024599667542728356
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 390,
+          "density": 0.0002347877127763647
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 348,
+          "density": 0.0002326769347622015
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 345,
+          "density": 0.0002301162854295704
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 324,
+          "density": 0.00021590356307515975
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 264,
+          "density": 0.00015951256826110758
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 244,
+          "density": 0.0001629124472454109
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 191,
+          "density": 0.0002922831136874193
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 186,
+          "density": 0.00028932439642419933
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 180,
+          "density": 0.0002768719620993047
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 159,
+          "density": 0.0002473172302336759
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 138,
+          "density": 9.174647391042751e-05
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 135,
+          "density": 0.00020980227301336672
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 131,
+          "density": 0.0002036944893643488
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 121,
+          "density": 0.00018548325285506248
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 117,
+          "density": 0.00018190213665048203
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 111,
+          "density": 0.0001724855951219209
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 91,
+          "density": 0.00014144381494175158
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 76,
+          "density": 0.00011659606979195273
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 75,
+          "density": 0.00011658109614209837
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 67,
+          "density": 0.00010399770273731266
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 64,
+          "density": 9.79163702401552e-05
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "retained_B2": {
+      "area": 579490,
+      "near1_pixels": 277374,
+      "near1_share": 0.47865191806588553,
+      "distance_native_pooled": {
+        "n": 579490,
+        "mean": 6.993086534877007,
+        "median": 1.4142135623730951,
+        "q90": 22.561028345356956,
+        "max": 136.12494260788506,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 579490,
+        "mean": 5.4908508657241075,
+        "median": 1.0068622606085635,
+        "q90": 17.681368030900313,
+        "max": 101.14088008604199,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "q90": null,
+        "max": null,
+        "NA_reason": "empty_set"
+      },
+      "regions": {
+        "internal": {
+          "area": 9142,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.015775940913561926,
+          "density_per_region": 0.05885571915096344,
+          "density_per_background": 0.06432637437640287
+        },
+        "near": {
+          "area": 12938,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.02232652849919757,
+          "density_per_region": 0.01999332422625928,
+          "density_per_background": 0.022345963460256378
+        },
+        "far": {
+          "area": 557295,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9616990802257157,
+          "density_per_region": 0.019102662461323874,
+          "density_per_background": 0.022668234136446017
+        },
+        "U_in_FOV": {
+          "area": 115,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00019845036152478903,
+          "density_per_region": 0.008200228180262408,
+          "density_per_background": 0.008576329331046312
+        }
+      },
+      "per_image_macro_density": 0.020894094475316843,
+      "top1_share": 0.06658095911922553,
+      "top3_share": 0.18908868142677182,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 38583,
+          "density": 0.023262965019634513
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 36374,
+          "density": 0.05554842887162195
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 34618,
+          "density": 0.02311546648931766
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 34461,
+          "density": 0.020746203512785395
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 33341,
+          "density": 0.02016066369768377
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 27739,
+          "density": 0.018484410296734127
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 24829,
+          "density": 0.016474194586453196
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 24045,
+          "density": 0.0160542204672783
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 23985,
+          "density": 0.01448506893467557
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 23340,
+          "density": 0.03590106441887651
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 23168,
+          "density": 0.013998436293459622
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 21576,
+          "density": 0.014391272389647568
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 20874,
+          "density": 0.013956604414443087
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 19474,
+          "density": 0.029852073273549475
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 19449,
+          "density": 0.01298814045008725
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 17418,
+          "density": 0.0267219782057399
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 15690,
+          "density": 0.024004810141688048
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 14866,
+          "density": 0.00988335566052475
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 13946,
+          "density": 0.02164704421454571
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 13835,
+          "density": 0.021509538979140333
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 13309,
+          "density": 0.02068770411406916
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 13196,
+          "density": 0.020193549571828194
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 13031,
+          "density": 0.020251358663979126
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 13001,
+          "density": 0.02022246107086805
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 12180,
+          "density": 0.01893892275158602
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 11897,
+          "density": 0.01850587281859516
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 11494,
+          "density": 0.017865441856488928
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 9771,
+          "density": 0.015183394143570172
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "common_all": {
+      "area": 578166,
+      "near1_pixels": 276928,
+      "near1_share": 0.47897662609008484,
+      "distance_native_pooled": {
+        "n": 578166,
+        "mean": 6.977277217525985,
+        "median": 1.4142135623730951,
+        "q90": 22.47220505424423,
+        "max": 136.12494260788506,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 578166,
+        "mean": 5.477687198124664,
+        "median": 1.0068622606085635,
+        "q90": 17.653409608467147,
+        "max": 101.14088008604199,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 49265,
+        "mean": 11.735836800974322,
+        "median": 2.0,
+        "q90": 26.0,
+        "max": 2336.0,
+        "NA_reason": null,
+        "single_pixel_components": 19535,
+        "single_pixel_area_share": 0.0337878740707686,
+        "largest_component_area_share": 0.004040362110535729
+      },
+      "regions": {
+        "internal": {
+          "area": 9057,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.01566505121366528,
+          "density_per_region": 0.05830849358458498,
+          "density_per_background": 0.06372828404365356
+        },
+        "near": {
+          "area": 12872,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.0222635021775753,
+          "density_per_region": 0.01989133323855383,
+          "density_per_background": 0.022231971066657915
+        },
+        "far": {
+          "area": 556124,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9618760010100905,
+          "density_per_region": 0.019062523544336983,
+          "density_per_background": 0.022620603165104485
+        },
+        "U_in_FOV": {
+          "area": 113,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0001954455986688944,
+          "density_per_region": 0.008057615516257844,
+          "density_per_background": 0.008427175777462898
+        }
+      },
+      "per_image_macro_density": 0.02084858683607007,
+      "top1_share": 0.06663484189661793,
+      "top3_share": 0.188748560102116,
+      "image_area_ranking": [
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 38526,
+          "density": 0.023228597837038057
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 36172,
+          "density": 0.05523994526706739
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 34430,
+          "density": 0.020727540899718556
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 34422,
+          "density": 0.022984591469619634
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 33285,
+          "density": 0.020126801570960806
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 27697,
+          "density": 0.018456422797816976
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 24683,
+          "density": 0.01637732268627106
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 23985,
+          "density": 0.016014160029431068
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 23897,
+          "density": 0.014431923799538966
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 23326,
+          "density": 0.03587952993293546
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 23134,
+          "density": 0.013977893008153268
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 21543,
+          "density": 0.014369261266693436
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 20828,
+          "density": 0.01392584826789406
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 19466,
+          "density": 0.02983980991798881
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 19393,
+          "density": 0.012950743367193275
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 17415,
+          "density": 0.026717375729300746
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 15684,
+          "density": 0.023995630481978034
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 14855,
+          "density": 0.009876042535792759
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 13912,
+          "density": 0.021594269260917818
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 13830,
+          "density": 0.02150176538355698
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 13292,
+          "density": 0.020661279065610286
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 13157,
+          "density": 0.020133868726625002
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 12998,
+          "density": 0.02020007366390919
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 12987,
+          "density": 0.020200684710973263
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 12159,
+          "density": 0.018906269436497078
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 11870,
+          "density": 0.018463874115888422
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 11486,
+          "density": 0.01785300723539515
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 9734,
+          "density": 0.015125898945196198
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "common_new": {
+      "area": 49134,
+      "near1_pixels": 9736,
+      "near1_share": 0.198151992510278,
+      "distance_native_pooled": {
+        "n": 49134,
+        "mean": 14.16893095497858,
+        "median": 8.0,
+        "q90": 35.97079384261017,
+        "max": 158.39823231336896,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 49134,
+        "mean": 11.173196566154385,
+        "median": 6.123509109247329,
+        "q90": 28.04170867617867,
+        "max": 104.51214125319845,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 24113,
+        "mean": 2.0376560361630656,
+        "median": 1.0,
+        "q90": 4.0,
+        "max": 75.0,
+        "NA_reason": null,
+        "single_pixel_components": 17475,
+        "single_pixel_area_share": 0.3556600317499084,
+        "largest_component_area_share": 0.0015264379045060448
+      },
+      "regions": {
+        "internal": {
+          "area": 499,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.01015590019131355,
+          "density_per_region": 0.0032125359720335546,
+          "density_per_background": 0.003511142071081277
+        },
+        "near": {
+          "area": 1218,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.024789351569178168,
+          "density_per_region": 0.0018821973185642142,
+          "density_per_background": 0.0021036778091352813
+        },
+        "far": {
+          "area": 47398,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9646680506370334,
+          "density_per_region": 0.0016246835075531432,
+          "density_per_background": 0.0019279357640015937
+        },
+        "U_in_FOV": {
+          "area": 19,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0003866976024748647,
+          "density_per_region": 0.0013548203080433543,
+          "density_per_background": 0.0014169587590424342
+        }
+      },
+      "per_image_macro_density": 0.001874187315576617,
+      "top1_share": 0.06641022509870965,
+      "top3_share": 0.17089998778849677,
+      "image_area_ranking": [
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 3263,
+          "density": 0.004983079216146215
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 2586,
+          "density": 0.001726748984383138
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 2548,
+          "density": 0.001701233260579127
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 2474,
+          "density": 0.0016485969600245223
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 2405,
+          "density": 0.0014478575621209157
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 1960,
+          "density": 0.0013004720846368466
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 1955,
+          "density": 0.0011787340697557338
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 1874,
+          "density": 0.0012458905225227622
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 1814,
+          "density": 0.001096891033490248
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 1801,
+          "density": 0.0012041699985825428
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 1692,
+          "density": 0.001129926147439335
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 1683,
+          "density": 0.002574894548659081
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 1672,
+          "density": 0.0025718328923890975
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 1647,
+          "density": 0.0010985551365289927
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 1640,
+          "density": 0.0009909114088947591
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 1617,
+          "density": 0.002513488432823641
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 1612,
+          "density": 0.002506207216073308
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 1579,
+          "density": 0.000953592822507931
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 1445,
+          "density": 0.0022477083485643442
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 1443,
+          "density": 0.002242553184876209
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 1405,
+          "density": 0.0021554931323380733
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 1399,
+          "density": 0.002140859036904186
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 1332,
+          "density": 0.0020711531284985695
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 1292,
+          "density": 0.0020096469274333917
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 1287,
+          "density": 0.002000419668461915
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 1280,
+          "density": 0.001986821783638212
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 1240,
+          "density": 0.0019268661076683056
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 1189,
+          "density": 0.0018226412202038782
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "exclusive_new_B1": {
+      "area": 8722,
+      "near1_pixels": 2033,
+      "near1_share": 0.2330887411144233,
+      "distance_native_pooled": {
+        "n": 8722,
+        "mean": 11.964804977512896,
+        "median": 4.123105625617661,
+        "q90": 33.6139848884312,
+        "max": 136.8941196691808,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 8722,
+        "mean": 9.177115050537866,
+        "median": 3.1382068450421094,
+        "q90": 25.283800412152047,
+        "max": 100.48771297150208,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "q90": null,
+        "max": null,
+        "NA_reason": "empty_set"
+      },
+      "regions": {
+        "internal": {
+          "area": 52,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.005961935335932126,
+          "density_per_region": 0.0003347732876668233,
+          "density_per_background": 0.00036589055650546374
+        },
+        "near": {
+          "area": 194,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.022242604907131393,
+          "density_per_region": 0.0002997916911342016,
+          "density_per_background": 0.0003350685508803322
+        },
+        "far": {
+          "area": 8474,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.9715661545517084,
+          "density_per_region": 0.00029046727800762347,
+          "density_per_background": 0.0003446839036277798
+        },
+        "U_in_FOV": {
+          "area": 2,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.00022930520522815867,
+          "density_per_region": 0.0001426126640045636,
+          "density_per_background": 0.00014915355358341412
+        }
+      },
+      "per_image_macro_density": 0.00031266731177772455,
+      "top1_share": 0.06065122678284797,
+      "top3_share": 0.17289612474203164,
+      "image_area_ranking": [
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 529,
+          "density": 0.0003184684616889665
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 492,
+          "density": 0.0002975029704945987
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 487,
+          "density": 0.00029425235129984615
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 440,
+          "density": 0.0002652905323235411
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 419,
+          "density": 0.00027920862014966646
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 413,
+          "density": 0.000630711528123931
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 403,
+          "density": 0.000619885559588999
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 391,
+          "density": 0.0002599483427462113
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 366,
+          "density": 0.0002443686708681164
+        },
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 365,
+          "density": 0.00024372133770295644
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 360,
+          "density": 0.00023886221962717588
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 352,
+          "density": 0.0002347853115107501
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 350,
+          "density": 0.00021137269656603918
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 343,
+          "density": 0.0002293338753546986
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 310,
+          "density": 0.00020701956602020913
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 297,
+          "density": 0.00046100474198480394
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 269,
+          "density": 0.00041821944238444164
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 259,
+          "density": 0.00039734713258047046
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 247,
+          "density": 0.00037789599139559897
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 237,
+          "density": 0.00036330190848470913
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 221,
+          "density": 0.0003435256299653832
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 188,
+          "density": 0.0002921690913075033
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 186,
+          "density": 0.00028921507650205247
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 185,
+          "density": 0.0002877590414668556
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 173,
+          "density": 0.0002691027988246585
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 165,
+          "density": 0.0002564640600592199
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 143,
+          "density": 0.0002188297657450312
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 132,
+          "density": 0.0002051180050098519
+        }
+      ],
+      "probability_increase_pooled": null
+    },
+    "exclusive_new_B2": {
+      "area": 3361,
+      "near1_pixels": 556,
+      "near1_share": 0.16542695626301696,
+      "distance_native_pooled": {
+        "n": 3361,
+        "mean": 17.316855141424245,
+        "median": 11.661903789690601,
+        "q90": 41.0,
+        "max": 159.3643623900902,
+        "NA_reason": null
+      },
+      "distance_reference_pooled": {
+        "n": 3361,
+        "mean": 13.625775874117458,
+        "median": 9.137285746639398,
+        "q90": 33.926210034656634,
+        "max": 105.14959990139532,
+        "NA_reason": null
+      },
+      "components": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "q90": null,
+        "max": null,
+        "NA_reason": "empty_set"
+      },
+      "regions": {
+        "internal": {
+          "area": 146,
+          "region_area": 155329,
+          "background_area": 142119,
+          "area_share": 0.043439452543885745,
+          "density_per_region": 0.000939940384603004,
+          "density_per_background": 0.0010273081009576483
+        },
+        "near": {
+          "area": 183,
+          "region_area": 647116,
+          "background_area": 578986,
+          "area_share": 0.05444808092829515,
+          "density_per_region": 0.00028279319318329324,
+          "density_per_background": 0.0003160698186139216
+        },
+        "far": {
+          "area": 3024,
+          "region_area": 29173682,
+          "background_area": 24584844,
+          "area_share": 0.8997322225528117,
+          "density_per_region": 0.00010365506829066006,
+          "density_per_background": 0.00012300261087684755
+        },
+        "U_in_FOV": {
+          "area": 8,
+          "region_area": 14024,
+          "background_area": 13409,
+          "area_share": 0.0023802439750074383,
+          "density_per_region": 0.0005704506560182544,
+          "density_per_background": 0.0005966142143336565
+        }
+      },
+      "per_image_macro_density": 0.00012512137128413265,
+      "top1_share": 0.10354061291282357,
+      "top3_share": 0.2740255876227313,
+      "image_area_ranking": [
+        {
+          "filename": "20060522_45583_0100_PP",
+          "area": 348,
+          "density": 0.0002323699329332297
+        },
+        {
+          "filename": "20060530_54390_0100_PP",
+          "area": 309,
+          "density": 0.00020502340517999264
+        },
+        {
+          "filename": "20051205_35224_0400_PP",
+          "area": 264,
+          "density": 0.0004031666911010116
+        },
+        {
+          "filename": "20060523_49859_0100_PP",
+          "area": 199,
+          "density": 0.00013286711885998677
+        },
+        {
+          "filename": "20060523_43038_0100_PP",
+          "area": 166,
+          "density": 0.00011085563857856358
+        },
+        {
+          "filename": "20060530_55390_0100_PP",
+          "area": 152,
+          "density": 0.00010128809131921075
+        },
+        {
+          "filename": "20060412_58889_0200_PP",
+          "area": 148,
+          "density": 0.00022998079349589452
+        },
+        {
+          "filename": "20051205_35305_0400_PP",
+          "area": 134,
+          "density": 0.00020505726300583342
+        },
+        {
+          "filename": "20060412_51656_0200_PP",
+          "area": 117,
+          "density": 0.00018199437839586734
+        },
+        {
+          "filename": "20051208_41707_0400_PP",
+          "area": 110,
+          "density": 6.651489177724768e-05
+        },
+        {
+          "filename": "20051205_35276_0400_PP",
+          "area": 106,
+          "density": 0.00016217398821025705
+        },
+        {
+          "filename": "20060412_60913_0200_PP",
+          "area": 104,
+          "density": 0.00016142926992060474
+        },
+        {
+          "filename": "20051202_51655_0400_PP",
+          "area": 101,
+          "density": 6.080399741131496e-05
+        },
+        {
+          "filename": "20051116_44615_0400_PP",
+          "area": 98,
+          "density": 5.9184355038490965e-05
+        },
+        {
+          "filename": "20051116_44785_0400_PP",
+          "area": 96,
+          "density": 5.78815706887726e-05
+        },
+        {
+          "filename": "20060412_58287_0200_PP",
+          "area": 94,
+          "density": 0.00014621270215072664
+        },
+        {
+          "filename": "20060522_45248_0100_PP",
+          "area": 87,
+          "density": 5.802932415180471e-05
+        },
+        {
+          "filename": "20060411_57853_0200_PP",
+          "area": 84,
+          "density": 0.00013061326035576564
+        },
+        {
+          "filename": "20060412_61299_0200_PP",
+          "area": 83,
+          "density": 0.0001290164130639222
+        },
+        {
+          "filename": "20060411_61478_0200_PP",
+          "area": 82,
+          "density": 0.00012745486621124866
+        },
+        {
+          "filename": "20051205_31934_0400_PP",
+          "area": 78,
+          "density": 4.712871334987269e-05
+        },
+        {
+          "filename": "20060530_53062_0100_PP",
+          "area": 78,
+          "density": 5.2151726757045165e-05
+        },
+        {
+          "filename": "20051117_37130_0400_PP",
+          "area": 71,
+          "density": 0.00010883728060090443
+        },
+        {
+          "filename": "20060530_36895_0100_PP",
+          "area": 64,
+          "density": 4.2549089349763484e-05
+        },
+        {
+          "filename": "20060411_61214_0200_PP",
+          "area": 63,
+          "density": 9.79077274062378e-05
+        },
+        {
+          "filename": "20060407_41937_0200_PP",
+          "area": 49,
+          "density": 7.618123671686854e-05
+        },
+        {
+          "filename": "20051202_54530_0400_PP",
+          "area": 44,
+          "density": 6.750298777428842e-05
+        },
+        {
+          "filename": "20051117_37078_0400_PP",
+          "area": 32,
+          "density": 4.922168215098751e-05
+        }
+      ],
+      "probability_increase_pooled": null
+    }
+  },
+  "per_image": [
+    {
+      "filename": "20051116_44615_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "alpha": 0.6274895425519199,
+      "FOV_pixels": 1655843,
+      "B1": {
+        "new": 1929,
+        "removed": 415,
+        "net": 1514,
+        "new_per_FOV": 0.0011649655190739702,
+        "net_per_FOV": 0.0009143378931456666,
+        "near1": 426
+      },
+      "B2": {
+        "new": 1677,
+        "removed": 420,
+        "net": 1257,
+        "new_per_FOV": 0.0010127771775464219,
+        "net_per_FOV": 0.000759129941667175,
+        "near1": 367
+      }
+    },
+    {
+      "filename": "20051116_44785_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "alpha": 0.6269755542404744,
+      "FOV_pixels": 1658559,
+      "B1": {
+        "new": 2395,
+        "removed": 347,
+        "net": 2048,
+        "new_per_FOV": 0.0014440246020792748,
+        "net_per_FOV": 0.0012348068413604821,
+        "near1": 367
+      },
+      "B2": {
+        "new": 2051,
+        "removed": 408,
+        "net": 1643,
+        "new_per_FOV": 0.0012366156404445064,
+        "net_per_FOV": 0.0009906189650172228,
+        "near1": 295
+      }
+    },
+    {
+      "filename": "20051117_37078_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0014270250879518,
+      "FOV_pixels": 650120,
+      "B1": {
+        "new": 2075,
+        "removed": 117,
+        "net": 1958,
+        "new_per_FOV": 0.0031917184519780965,
+        "net_per_FOV": 0.003011751676613548,
+        "near1": 460
+      },
+      "B2": {
+        "new": 1704,
+        "removed": 180,
+        "net": 1524,
+        "new_per_FOV": 0.002621054574540085,
+        "net_per_FOV": 0.00234418261244078,
+        "near1": 382
+      }
+    },
+    {
+      "filename": "20051117_37130_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 0.9997139155468531,
+      "FOV_pixels": 652350,
+      "B1": {
+        "new": 1426,
+        "removed": 81,
+        "net": 1345,
+        "new_per_FOV": 0.0021859431286885872,
+        "net_per_FOV": 0.002061776653636851,
+        "near1": 368
+      },
+      "B2": {
+        "new": 1260,
+        "removed": 121,
+        "net": 1139,
+        "new_per_FOV": 0.0019314785008047828,
+        "net_per_FOV": 0.0017459952479497202,
+        "near1": 300
+      }
+    },
+    {
+      "filename": "20051202_51655_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "alpha": 0.6265005400813503,
+      "FOV_pixels": 1661075,
+      "B1": {
+        "new": 2934,
+        "removed": 329,
+        "net": 2605,
+        "new_per_FOV": 0.0017663260238098822,
+        "net_per_FOV": 0.0015682615173908464,
+        "near1": 453
+      },
+      "B2": {
+        "new": 2506,
+        "removed": 390,
+        "net": 2116,
+        "new_per_FOV": 0.0015086615595322306,
+        "net_per_FOV": 0.001273873846755866,
+        "near1": 368
+      }
+    },
+    {
+      "filename": "20051202_54530_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0001179690912168,
+      "FOV_pixels": 651823,
+      "B1": {
+        "new": 1664,
+        "removed": 52,
+        "net": 1612,
+        "new_per_FOV": 0.002552840264918544,
+        "net_per_FOV": 0.0024730640066398394,
+        "near1": 712
+      },
+      "B2": {
+        "new": 1449,
+        "removed": 76,
+        "net": 1373,
+        "new_per_FOV": 0.002222996120112362,
+        "net_per_FOV": 0.002106400050320409,
+        "near1": 598
+      }
+    },
+    {
+      "filename": "20051205_31934_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "alpha": 0.6276413690084219,
+      "FOV_pixels": 1655042,
+      "B1": {
+        "new": 2127,
+        "removed": 214,
+        "net": 1913,
+        "new_per_FOV": 0.0012851637601946054,
+        "net_per_FOV": 0.0011558619056193137,
+        "near1": 551
+      },
+      "B2": {
+        "new": 1718,
+        "removed": 264,
+        "net": 1454,
+        "new_per_FOV": 0.0010380401222446318,
+        "net_per_FOV": 0.0008785275539835242,
+        "near1": 432
+      }
+    },
+    {
+      "filename": "20051205_35224_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 0.9978297069016657,
+      "FOV_pixels": 654816,
+      "B1": {
+        "new": 3676,
+        "removed": 672,
+        "net": 3004,
+        "new_per_FOV": 0.005613790744270146,
+        "net_per_FOV": 0.004587548257831207,
+        "near1": 254
+      },
+      "B2": {
+        "new": 3527,
+        "removed": 568,
+        "net": 2959,
+        "new_per_FOV": 0.005386245907247227,
+        "net_per_FOV": 0.004518826662757171,
+        "near1": 203
+      }
+    },
+    {
+      "filename": "20051205_35276_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 0.9987429727488726,
+      "FOV_pixels": 653619,
+      "B1": {
+        "new": 1930,
+        "removed": 45,
+        "net": 1885,
+        "new_per_FOV": 0.00295279054005468,
+        "net_per_FOV": 0.002883943092229571,
+        "near1": 567
+      },
+      "B2": {
+        "new": 1789,
+        "removed": 64,
+        "net": 1725,
+        "new_per_FOV": 0.002737068536869338,
+        "net_per_FOV": 0.002639152166629183,
+        "near1": 488
+      }
+    },
+    {
+      "filename": "20051205_35305_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 0.9988522441166257,
+      "FOV_pixels": 653476,
+      "B1": {
+        "new": 1542,
+        "removed": 202,
+        "net": 1340,
+        "new_per_FOV": 0.0023596888026492175,
+        "net_per_FOV": 0.002050572630058334,
+        "near1": 207
+      },
+      "B2": {
+        "new": 1533,
+        "removed": 191,
+        "net": 1342,
+        "new_per_FOV": 0.0023459162999100195,
+        "net_per_FOV": 0.0020536331862226003,
+        "near1": 197
+      }
+    },
+    {
+      "filename": "20051208_41707_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "alpha": 0.6278836474951661,
+      "FOV_pixels": 1653765,
+      "B1": {
+        "new": 2306,
+        "removed": 436,
+        "net": 1870,
+        "new_per_FOV": 0.0013943940039848467,
+        "net_per_FOV": 0.0011307531602132105,
+        "near1": 384
+      },
+      "B2": {
+        "new": 1924,
+        "removed": 542,
+        "net": 1382,
+        "new_per_FOV": 0.0011634059252674956,
+        "net_per_FOV": 0.0008356689130559663,
+        "near1": 300
+      }
+    },
+    {
+      "filename": "20060407_41937_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0067972949104917,
+      "FOV_pixels": 643203,
+      "B1": {
+        "new": 1881,
+        "removed": 80,
+        "net": 1801,
+        "new_per_FOV": 0.0029244266584577496,
+        "net_per_FOV": 0.0028000491291240866,
+        "near1": 522
+      },
+      "B2": {
+        "new": 1661,
+        "removed": 117,
+        "net": 1544,
+        "new_per_FOV": 0.0025823884527901766,
+        "net_per_FOV": 0.0024004863161396946,
+        "near1": 442
+      }
+    },
+    {
+      "filename": "20060411_57853_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0068622606085635,
+      "FOV_pixels": 643120,
+      "B1": {
+        "new": 1518,
+        "removed": 134,
+        "net": 1384,
+        "new_per_FOV": 0.002360368205000622,
+        "net_per_FOV": 0.002152008956337853,
+        "near1": 456
+      },
+      "B2": {
+        "new": 1416,
+        "removed": 131,
+        "net": 1285,
+        "new_per_FOV": 0.002201766388854335,
+        "net_per_FOV": 0.001998071899489986,
+        "near1": 423
+      }
+    },
+    {
+      "filename": "20060411_61214_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0065938692708807,
+      "FOV_pixels": 643463,
+      "B1": {
+        "new": 1631,
+        "removed": 144,
+        "net": 1487,
+        "new_per_FOV": 0.0025347222761837123,
+        "net_per_FOV": 0.0023109331849694545,
+        "near1": 425
+      },
+      "B2": {
+        "new": 1506,
+        "removed": 135,
+        "net": 1371,
+        "new_per_FOV": 0.0023404609122824466,
+        "net_per_FOV": 0.00213065863926908,
+        "near1": 395
+      }
+    },
+    {
+      "filename": "20060411_61478_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0066705306084776,
+      "FOV_pixels": 643365,
+      "B1": {
+        "new": 1452,
+        "removed": 78,
+        "net": 1374,
+        "new_per_FOV": 0.002256883728521135,
+        "net_per_FOV": 0.0021356461728567764,
+        "near1": 509
+      },
+      "B2": {
+        "new": 1369,
+        "removed": 91,
+        "net": 1278,
+        "new_per_FOV": 0.002127874534673164,
+        "net_per_FOV": 0.001986430719731412,
+        "near1": 465
+      }
+    },
+    {
+      "filename": "20060412_51656_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0070525337193834,
+      "FOV_pixels": 642877,
+      "B1": {
+        "new": 1618,
+        "removed": 184,
+        "net": 1434,
+        "new_per_FOV": 0.002516811147389003,
+        "net_per_FOV": 0.0022305977659801174,
+        "near1": 541
+      },
+      "B2": {
+        "new": 1562,
+        "removed": 186,
+        "net": 1376,
+        "new_per_FOV": 0.002429702726960212,
+        "net_per_FOV": 0.0021403783305360123,
+        "near1": 518
+      }
+    },
+    {
+      "filename": "20060412_58287_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0070353029060812,
+      "FOV_pixels": 642899,
+      "B1": {
+        "new": 1477,
+        "removed": 142,
+        "net": 1335,
+        "new_per_FOV": 0.002297405968900247,
+        "net_per_FOV": 0.002076531461395958,
+        "near1": 560
+      },
+      "B2": {
+        "new": 1386,
+        "removed": 159,
+        "net": 1227,
+        "new_per_FOV": 0.0021558596295841183,
+        "net_per_FOV": 0.0019085423993504423,
+        "near1": 516
+      }
+    },
+    {
+      "filename": "20060412_58889_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0065399039367298,
+      "FOV_pixels": 643532,
+      "B1": {
+        "new": 1372,
+        "removed": 131,
+        "net": 1241,
+        "new_per_FOV": 0.0021319841126781576,
+        "net_per_FOV": 0.0019284200319486832,
+        "near1": 399
+      },
+      "B2": {
+        "new": 1388,
+        "removed": 111,
+        "net": 1277,
+        "new_per_FOV": 0.0021568469011642,
+        "net_per_FOV": 0.001984361306042279,
+        "near1": 361
+      }
+    },
+    {
+      "filename": "20060412_60913_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.005982769907927,
+      "FOV_pixels": 644245,
+      "B1": {
+        "new": 1577,
+        "removed": 84,
+        "net": 1493,
+        "new_per_FOV": 0.002447826525623016,
+        "net_per_FOV": 0.0023174413460717584,
+        "near1": 408
+      },
+      "B2": {
+        "new": 1384,
+        "removed": 67,
+        "net": 1317,
+        "new_per_FOV": 0.002148251053558817,
+        "net_per_FOV": 0.0020442533508215044,
+        "near1": 373
+      }
+    },
+    {
+      "filename": "20060412_61299_0200_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "alpha": 1.0066986963153914,
+      "FOV_pixels": 643329,
+      "B1": {
+        "new": 1838,
+        "removed": 73,
+        "net": 1765,
+        "new_per_FOV": 0.002857014062789024,
+        "net_per_FOV": 0.0027435417958773817,
+        "near1": 538
+      },
+      "B2": {
+        "new": 1700,
+        "removed": 75,
+        "net": 1625,
+        "new_per_FOV": 0.002642504845887563,
+        "net_per_FOV": 0.0025259237497454647,
+        "near1": 487
+      }
+    },
+    {
+      "filename": "20060522_45248_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6594474612321767,
+      "FOV_pixels": 1499242,
+      "B1": {
+        "new": 1999,
+        "removed": 330,
+        "net": 1669,
+        "new_per_FOV": 0.0013333404480397428,
+        "net_per_FOV": 0.0011132292184984145,
+        "near1": 252
+      },
+      "B2": {
+        "new": 1734,
+        "removed": 345,
+        "net": 1389,
+        "new_per_FOV": 0.0011565844606807973,
+        "net_per_FOV": 0.000926468175251227,
+        "near1": 223
+      }
+    },
+    {
+      "filename": "20060522_45583_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6598062347465826,
+      "FOV_pixels": 1497612,
+      "B1": {
+        "new": 2951,
+        "removed": 902,
+        "net": 2049,
+        "new_per_FOV": 0.0019704703220860945,
+        "net_per_FOV": 0.0013681781395982404,
+        "near1": 220
+      },
+      "B2": {
+        "new": 2934,
+        "removed": 793,
+        "net": 2141,
+        "new_per_FOV": 0.0019591189173163675,
+        "net_per_FOV": 0.001429609271293232,
+        "near1": 218
+      }
+    },
+    {
+      "filename": "20060523_43038_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6598434662497847,
+      "FOV_pixels": 1497443,
+      "B1": {
+        "new": 2002,
+        "removed": 453,
+        "net": 1549,
+        "new_per_FOV": 0.001336945713459544,
+        "net_per_FOV": 0.0010344300250493676,
+        "near1": 351
+      },
+      "B2": {
+        "new": 1858,
+        "removed": 443,
+        "net": 1415,
+        "new_per_FOV": 0.0012407817860178986,
+        "net_per_FOV": 0.0009449441481245029,
+        "near1": 321
+      }
+    },
+    {
+      "filename": "20060523_49859_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.659778700706809,
+      "FOV_pixels": 1497737,
+      "B1": {
+        "new": 2914,
+        "removed": 282,
+        "net": 2632,
+        "new_per_FOV": 0.0019456019314472435,
+        "net_per_FOV": 0.001757317873565252,
+        "near1": 267
+      },
+      "B2": {
+        "new": 2747,
+        "removed": 244,
+        "net": 2503,
+        "new_per_FOV": 0.0018341003794391138,
+        "net_per_FOV": 0.0016711879321937028,
+        "near1": 259
+      }
+    },
+    {
+      "filename": "20060530_36895_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6583717969691587,
+      "FOV_pixels": 1504145,
+      "B1": {
+        "new": 2265,
+        "removed": 114,
+        "net": 2151,
+        "new_per_FOV": 0.0015058388652689735,
+        "net_per_FOV": 0.0014300482998647072,
+        "near1": 515
+      },
+      "B2": {
+        "new": 1938,
+        "removed": 138,
+        "net": 1800,
+        "new_per_FOV": 0.0012884396118725257,
+        "net_per_FOV": 0.001196693137962098,
+        "near1": 421
+      }
+    },
+    {
+      "filename": "20060530_53062_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6602419513159827,
+      "FOV_pixels": 1495636,
+      "B1": {
+        "new": 2144,
+        "removed": 347,
+        "net": 1797,
+        "new_per_FOV": 0.0014335038739372414,
+        "net_per_FOV": 0.0012014955510565406,
+        "near1": 313
+      },
+      "B2": {
+        "new": 1879,
+        "removed": 348,
+        "net": 1531,
+        "new_per_FOV": 0.001256321725339588,
+        "net_per_FOV": 0.0010236447905773865,
+        "near1": 281
+      }
+    },
+    {
+      "filename": "20060530_54390_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6577162199522584,
+      "FOV_pixels": 1507145,
+      "B1": {
+        "new": 2320,
+        "removed": 554,
+        "net": 1766,
+        "new_per_FOV": 0.0015393343042640225,
+        "net_per_FOV": 0.0011717518885044239,
+        "near1": 314
+      },
+      "B2": {
+        "new": 2269,
+        "removed": 519,
+        "net": 1750,
+        "new_per_FOV": 0.0015054954898168391,
+        "net_per_FOV": 0.0011611357898543271,
+        "near1": 279
+      }
+    },
+    {
+      "filename": "20060530_55390_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "alpha": 0.6591336297090308,
+      "FOV_pixels": 1500670,
+      "B1": {
+        "new": 2893,
+        "removed": 315,
+        "net": 2578,
+        "new_per_FOV": 0.001927805580174189,
+        "net_per_FOV": 0.0017178993382955612,
+        "near1": 430
+      },
+      "B2": {
+        "new": 2626,
+        "removed": 324,
+        "net": 2302,
+        "new_per_FOV": 0.0017498850513437332,
+        "net_per_FOV": 0.0015339814882685734,
+        "near1": 380
+      }
+    }
+  ],
+  "components_counts": {
+    "FP_A0": 49600,
+    "FP_B1": 50772,
+    "FP_B2": 50605,
+    "new_B1": 27437,
+    "removed_B1": 5968,
+    "new_B2": 25322,
+    "removed_B2": 6403,
+    "common_all": 49265,
+    "common_new": 24113
+  }
+}

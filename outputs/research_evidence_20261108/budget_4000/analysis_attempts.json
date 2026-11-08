@@ -1,0 +1,35 @@
+{
+  "status": "recorded",
+  "analysis_source_binding_sha256": "8b1ad73b3e63b8321966350ff14a708f0dcf2f1c66065df50cb0037d054e560f",
+  "attempts": [
+    {
+      "attempt": 1,
+      "result": "failed_before_outputs",
+      "cause": "Analyzer incorrectly required per-image probability maps at intermediate 2200-3800 evaluations; frozen protocol requires predictions only at reused step 2000 and new step 4000.",
+      "training_updates": 0,
+      "official_test_accessed": false
+    },
+    {
+      "attempt": 2,
+      "result": "failed_before_outputs",
+      "cause": "Analyzer rejected symmetric near_pixel_recall zero-denominator NA despite numerator=denominator=0 and NA_reason=zero_denominator.",
+      "cross_method_and_time_na_counts": {
+        "T0": 10,
+        "TW": 10
+      },
+      "training_updates": 0,
+      "official_test_accessed": false
+    },
+    {
+      "attempt": 3,
+      "result": "analysis_outputs_written_channel_closed_before_completion_json",
+      "cause": "All analysis tables, summary, report, and reuse manifest were written; SSH session disconnected before completion_verification.json was emitted. A separate closure audit then checked the existing outputs, all checkpoints, all 20 evaluations, 56 endpoint maps, paired logs, binding histories, and 237 protected files, and wrote completion_verification.json.",
+      "training_updates": 0,
+      "official_test_accessed": false
+    }
+  ],
+  "final_closure_audit": "passed",
+  "final_closure_audit_evidence": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/completion_verification.json",
+  "no_intermediate_probability_maps_created": true,
+  "no_additional_inference_or_training_for_repair": true
+}

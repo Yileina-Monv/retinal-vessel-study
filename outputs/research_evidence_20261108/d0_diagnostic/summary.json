@@ -1,0 +1,4640 @@
+{
+  "status": "COMPLETE",
+  "decision": "SUPPORT_NEXT_TRAIN_PAIRING_CPU_CHECK",
+  "mechanism_gate_pass": true,
+  "seed_statistics": {
+    "2027": {
+      "misses": 18,
+      "misses_with_background": 18,
+      "misses_without_background": 0,
+      "qualifying_misses": 7,
+      "qualifying_images": [
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "qualifying_image_count": 5,
+      "qualifying_fraction_of_misses": 0.3888888888888889,
+      "gate_pass": true,
+      "gap_mean_misses_with_background": 1.5793719422069468,
+      "gap_median_misses_with_background": 1.5022587610174982,
+      "target_clipped": 0,
+      "background_unique_clipped": 0,
+      "background_unique_pixels": 3652,
+      "regions": {
+        "internal": {
+          "FP": 4025,
+          "area": 155329,
+          "image_macro_FP_per_area": 0.04228847904181978,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.04631393182432626,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.006818139469489461
+        },
+        "near": {
+          "FP": 11829,
+          "area": 647116,
+          "image_macro_FP_per_area": 0.01999355293571862,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.024662034627361325,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.020037707275674742
+        },
+        "far": {
+          "FP": 574429,
+          "area": 29173682,
+          "image_macro_FP_per_area": 0.019477477933122097,
+          "valid_area_images": 28,
+          "image_macro_FP_per_background": 0.023025550929416626,
+          "valid_background_images": 28,
+          "pooled_FP_share_not_macro": 0.9730526800793445
+        },
+        "uncertain": {
+          "FP": 54,
+          "area": 14024,
+          "image_macro_FP_per_area": 0.0020593868782700095,
+          "valid_area_images": 13,
+          "image_macro_FP_per_background": 0.0021997255874322105,
+          "valid_background_images": 13,
+          "pooled_FP_share_not_macro": 9.147317549128718e-05
+        }
+      }
+    },
+    "2028": {
+      "misses": 18,
+      "misses_with_background": 18,
+      "misses_without_background": 0,
+      "qualifying_misses": 11,
+      "qualifying_images": [
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "qualifying_image_count": 5,
+      "qualifying_fraction_of_misses": 0.6111111111111112,
+      "gate_pass": true,
+      "gap_mean_misses_with_background": 0.6638647368635016,
+      "gap_median_misses_with_background": 0.16259959277445457,
+      "target_clipped": 0,
+      "background_unique_clipped": 0,
+      "background_unique_pixels": 3652,
+      "regions": {
+        "internal": {
+          "FP": 3277,
+          "area": 155329,
+          "image_macro_FP_per_area": 0.043648436042898614,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.04767222826596432,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.005645678136047577
+        },
+        "near": {
+          "FP": 10344,
+          "area": 647116,
+          "image_macro_FP_per_area": 0.018421705398700246,
+          "valid_area_images": 18,
+          "image_macro_FP_per_background": 0.023132988425949495,
+          "valid_background_images": 18,
+          "pooled_FP_share_not_macro": 0.017820840597887133
+        },
+        "far": {
+          "FP": 566781,
+          "area": 29173682,
+          "image_macro_FP_per_area": 0.01952960145872549,
+          "valid_area_images": 28,
+          "image_macro_FP_per_background": 0.02307849925559453,
+          "valid_background_images": 28,
+          "pooled_FP_share_not_macro": 0.9764611228645658
+        },
+        "uncertain": {
+          "FP": 42,
+          "area": 14024,
+          "image_macro_FP_per_area": 0.0016043799342304653,
+          "valid_area_images": 13,
+          "image_macro_FP_per_background": 0.0017267291979901102,
+          "valid_background_images": 13,
+          "pooled_FP_share_not_macro": 7.235840149954173e-05
+        }
+      }
+    }
+  },
+  "shared_misses": 17,
+  "human_medical_reviews_performed": 0,
+  "interpretation": "GT-relative numerical diagnostic only; no causal or medical claim; cutoff3images andmargin1 are predeclared engineering choices",
+  "elapsed_seconds": 34.39924296899699,
+  "peak_RSS_MiB": 593.36328125,
+  "new_training": 0,
+  "new_model_inference": 0,
+  "Test_accessed": false,
+  "source_hashes": {
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/protocol.json": "713cd0b3351e528ce3e9d583c92ee5a4f371bafb38b445d6ea8fa56a4419bbf0",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/protocol.json": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json": "c2b2f3fd14e9f9705570faf6ed229cfff314474d48ac14d96838d9ca7f1f7804",
+    "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json": "739d78606fabf1667dacc8234e50f49257a83c579c69aee7d0b4a7a35c267d93",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/analysis/endpoint_100epochs.json": "f642e2279b3e0b7a66ee2eec5a66f73477ef31d54a78f19b9d63edf7bbcae850",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/analysis/endpoint_100epochs.json": "eb436cc32379a5e1b86921da59ec9f1371b61b9134a4588c395082f45c4dd641",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051116_44615_0400_PP.sol_e42b9f3bdbef.npz": "f0f4ac743ff146c182328c03cdd4ed2aa117975171845d38967577bc55670caa",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051116_44615_0400_PP.npy": "ef55d739ae2dd5c70ef8aed450f24acfb8540b6f0ac6ab25231216a4a8a33f38",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051116_44615_0400_PP.npy": "de2b91c2b06776448bda42334f788bebd3f3bfce7bec005c1bac047855138ba7",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051116_44785_0400_PP.sol_e42b9f3bdbef.npz": "10aae24e51ffb86754ecfe0960a1310e7e26d4afb571909e5081fb1caf0c59a6",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051116_44785_0400_PP.npy": "b6bbf179c304173ee1755bd0fd9965f9fc4c4c8e532e279d7c58eef1c4ee1198",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051116_44785_0400_PP.npy": "08b1cde7129f8bebf65ba108d42352a9c4f27d6fa6c24ccabe0640a1f8f1b1ba",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051117_37078_0400_PP.sol_e42b9f3bdbef.npz": "7a0c9c734f6e83d2e2fef672f2ccff180c28de1434e1fbaa41bc636c27c62032",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051117_37078_0400_PP.npy": "0d314fb9c9f122622b7d3d06c6b52b96631e7d2883c3189e8a7e247425715fe3",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051117_37078_0400_PP.npy": "84fdc9814486a4e9b5184c5bea69253a8e98f6b75d60a2f23223dc6f78e3867c",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051117_37130_0400_PP.sol_e42b9f3bdbef.npz": "cc7f76a086b063cc64e723a6f1a51d062ff8283c4a4bc22a46923271e71b465c",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051117_37130_0400_PP.npy": "0f5e1be95f229ee0f58144ecd2247e16de646bfbcc6c50fd7497c69e01b444cd",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051117_37130_0400_PP.npy": "95c2a5b64462dcd8404794ec16af20c61cb12c49e0423bb5a02a812dd2b9a250",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051117_37130_0400_PP.tif": "7b70bf0f1cf580b447e1307e2e6809678d5540a7b2af5dcee022eb1f6c14d7c8",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051202_51655_0400_PP.sol_e42b9f3bdbef.npz": "5ff9aa2bd8f13f76effefc0443294716810c29936c2ec887de7f98a530bfd3c2",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051202_51655_0400_PP.npy": "ec4f00cc749f9e70adc219bc896df53c40cb27275fa36693459aeb78b1fbfe75",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051202_51655_0400_PP.npy": "0bec6ddd0a7fe66bd4ca891bc85dc02869029c6b32bf79bb6273cc0969fddecf",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051202_54530_0400_PP.sol_e42b9f3bdbef.npz": "e60aaa81f960d8ba2510f63f839a68d82715c0bdc0f1145496d1c86d8814f95e",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051202_54530_0400_PP.npy": "3e8b0cd1d4f3085d4afa7bae87ea87616793ce2b723b48f85f766afdfa79efaa",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051202_54530_0400_PP.npy": "abbbfce649f610c73907c77a7ab14c6b1dea6a73284e9c5bc7638c67be304382",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_31934_0400_PP.sol_e42b9f3bdbef.npz": "f449ce26672483c2768f61b2d5fdd7e7b7f1f075a667b8c766d37da2252fb7f4",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_31934_0400_PP.npy": "4b3b5c13e459cc1408d08229a91f9c53b67aceaf4e46457f87237210720669ff",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_31934_0400_PP.npy": "e2f084b0d06b98e215d1b70859300320b03a04e0a3896cf8277458d974cdfc61",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35224_0400_PP.sol_e42b9f3bdbef.npz": "292f772126109cb4a1973aac86a81aac6287aaa0cdecd607d0920e140499b841",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35224_0400_PP.npy": "cfddc6a72cac146aeab8e7f22b615d318204f411349d60c207c97347944b0403",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35224_0400_PP.npy": "1578423364e407d1515e7da8463c9f73cbdd7f76107c915095b27400306101d7",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35276_0400_PP.sol_e42b9f3bdbef.npz": "9cca8a262a65a3289c848b4dcdcfd54f300fdbf80ded75cbd7423d471d2431c2",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35276_0400_PP.npy": "c51de60c46b8da28e727694ef2273f3ad57ff43a6648a86ad7fe491e6b85f712",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35276_0400_PP.npy": "231092d8ba74046418e634b02e2206c843b3ba1ae603746aa8655714674a337c",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_35276_0400_PP.tif": "fcd71083c6c7b4c57019a4e5a25c316f86e899d56b527b717b522c08e9992035",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35305_0400_PP.sol_e42b9f3bdbef.npz": "80c7696ceecfa8f989deb350a79e12d95ad9cd8b765849816387e134aba5281d",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35305_0400_PP.npy": "ad085faaeab1da6719b1b57b1fc7e6ecc3d42a4ea0cd7bbeb5b3709f65364d3b",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35305_0400_PP.npy": "4e0c65edd4d12d56325b0a559ffed777878e4262088dba00b4b6ae02c0181ac7",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051208_41707_0400_PP.sol_e42b9f3bdbef.npz": "02e54043bc7426002e9fb824751774e8403be96dab8ebb3af4c133811736a1c6",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051208_41707_0400_PP.npy": "5c3b9e5c05e20cf79fc06c8bf524075c4dabea5c3c97c18d8a13a156789f6608",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051208_41707_0400_PP.npy": "9266401a2036af8bef45abc099ed21589e6dfbf721c74381d52e00432f4568cf",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060407_41937_0200_PP.sol_e42b9f3bdbef.npz": "52868be6fd482818cabd69bc0bf40f0ee74bf73bbdfc6fad9c27992472578483",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060407_41937_0200_PP.npy": "619efdf3be7ac9409c4f88b9dde068e53e265a2780e3ef07d5109f2a1f9c1c73",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060407_41937_0200_PP.npy": "eb75df8234b2110dda4ccb2c6beffd566115750d8265d7e7bec72c6424bc3650",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_57853_0200_PP.sol_e42b9f3bdbef.npz": "f04318108debf59a6a72ec2b6b93260fa3bc955978a131a010760692b47d6c73",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_57853_0200_PP.npy": "a5a7bf87c9204ea894eb621152e45c80e4eec3461dc2644b183a29d6f246615f",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_57853_0200_PP.npy": "360972ffbcc304c9088e87bdba6731f5254d043a7b7c3a66f446729f0f23392a",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61214_0200_PP.sol_e42b9f3bdbef.npz": "b48c1ec058c0c529c511e04256110f5a12510c5f373ccba484a0467849ef1bfc",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_61214_0200_PP.npy": "5e2640d1589eafcded28f4d6fbaabc53c2b1adc339355e9f8357e74abf869706",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_61214_0200_PP.npy": "5bee86445a00c0284e72f0469cef007f2db18443ae84aa2b75617f5421420c15",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_61214_0200_PP.tif": "c9d8bc619cc9bcf8dcb437309e62d83b18f770cf32798cd8b9f6f776410d8a04",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61478_0200_PP.sol_e42b9f3bdbef.npz": "ba5479ced1e502c6846dae3cf74fc7a45b90e875d71435f5e7e25b3a0580bc14",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_61478_0200_PP.npy": "43ca6921e46fd22c376f303ed2688cab7f9427a86abdbfe1709e40dc8d9fe1e0",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_61478_0200_PP.npy": "e1b06c34dee70588e9479b25332b98ff38cebf526503b7af06c0bab3c225a314",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_61478_0200_PP.tif": "b3bd6a220f993bcef5b733f1f9fc16a979464978f6f1857a9f1ef73071290cb3",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_51656_0200_PP.sol_e42b9f3bdbef.npz": "d1963536667b4805bdd77c05c9583e41ee0d6040b3f19e2812a3167a8a6e71cb",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_51656_0200_PP.npy": "1515404b5c31f247e67974eaba74a3716e4a8858fcdd32ca925d3ef01a7a081d",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_51656_0200_PP.npy": "bf8c6b1849e7edb098ba239ba1f7fecfc7c0d7bc44e5d4c90f8867099601586e",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_58287_0200_PP.sol_e42b9f3bdbef.npz": "5dc174b04cd6898b12ddf2f6abf1fad43186500817b330af64309764e57fca8a",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_58287_0200_PP.npy": "f50c7079e4985c5c8c09f587e72177234416bb7f78cd6ad9900986bd80a2c3ba",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_58287_0200_PP.npy": "ffe03040c7ea2ac783a415d16ce19eb5b1381b372b1195368118d3c46ec40349",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_58889_0200_PP.sol_e42b9f3bdbef.npz": "14224075f7e01175b1a86daba11ff6470c64c9484666ec30f9b896f851a6cfa2",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_58889_0200_PP.npy": "0886bb2bd9e51e828c67b47469b7c7a2f336399a4bd5d00f47cdfd8e1be0d48f",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_58889_0200_PP.npy": "f48de484c5785d055937172cdba309e805878b92d25f6ad630ec9f8bd4850518",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_58889_0200_PP.tif": "bb121f6025fa091bbb8c4e21d0732e4de7990da7a6a6a4ad66f10e5ede80d5cf",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_60913_0200_PP.sol_e42b9f3bdbef.npz": "e2ea01b2457eb889d8b3b55f6f13803b832dfed07dc5f92e0539e77348381d4f",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_60913_0200_PP.npy": "9b027d3a25d57114047fbe5e32c1ad5ef5b1fbe2858f17274b227c2c7c222bbb",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_60913_0200_PP.npy": "7b3c39963271d9ad6d6a78df04c88d221f1b66ddfef3bab6e85db9e1b2875386",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_60913_0200_PP.tif": "974aed2de6306d456dbd0283ad6f3c1bcff9bcb967a8558a514bcb368485be8d",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_61299_0200_PP.sol_e42b9f3bdbef.npz": "ba7ba32f187fa1615db9121192725433db00d4178b7b176f88a040071c8bea5b",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_61299_0200_PP.npy": "69bae9a620be6a1647d62c26b0b57e8342da9460b45b48160a71495b9b65a425",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_61299_0200_PP.npy": "cc8931829eef88bc489932cd447ed799fb54012631e2569793fd000ca27d7610",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060522_45248_0100_PP.sol_e42b9f3bdbef.npz": "a21acda4f3e88d244cec0af668d888fe17782a00f1c7ba819b06d0a900e9d3d4",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45248_0100_PP.npy": "ac0b07188f484aac62c93826e24d9933d8ff72beb1c42daa71cc827230e91a6a",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45248_0100_PP.npy": "1084072bb6b2fcf02583b4a542c90f29b4323e9fc9e2de7d6f3c07a8f1091814",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45248_0100_PP.tif": "a1d66834e33a98d993876fc9079459e446b727c51011ad1d01e592bef46b7fd0",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060522_45583_0100_PP.sol_e42b9f3bdbef.npz": "00b05bcced735e3f97f657c2dfc041b50cd1f2216f267bea932f256a2387de79",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45583_0100_PP.npy": "ae030c0d277d696efab925d2d7871fa2807bbd441a4b03164e40bbfcc94fcd9f",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45583_0100_PP.npy": "eb66fe2b2755944d0b02881d6ab7371a779a3fc49bed7b88b394d0d8895b2b36",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45583_0100_PP.tif": "7bcb31453323e20e4295081f4ceaa1c10c4218c759b0d43cea608d5d748d23e1",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060523_43038_0100_PP.sol_e42b9f3bdbef.npz": "4353a7090e935a046745f5627c167aac48b7d0ad793433b0e2ee63cfb4a65f0a",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060523_43038_0100_PP.npy": "948932f888a2bd4f215eaed80e180c39fe097b7da9506e58dea0859eb1c04683",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060523_43038_0100_PP.npy": "ea8912b3ede168ff2a2d3231e01f3642cdd2b1406d0cc64a8c1ebf8a7ef18b0d",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060523_49859_0100_PP.sol_e42b9f3bdbef.npz": "b0ba56888d9d214a86f03f300b25695428ac981d992bf4fbcbbd40da909dcb7a",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060523_49859_0100_PP.npy": "b261889344e73ced09263cca960c0da903c53f62cae0a8780f39bc018a6b4b45",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060523_49859_0100_PP.npy": "01457d69a675001730443338091c3289e44845fa04a6665795620241b7ead5a7",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_36895_0100_PP.sol_e42b9f3bdbef.npz": "4ffce9f3c2e7f521ceaa41288fa3de5a6cf94f5344972213a2370613852fe06f",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_36895_0100_PP.npy": "3f29479f05396197737bae17f020e2cde633d085711c6480d1065a9bda201bde",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_36895_0100_PP.npy": "700217290f18264e406f1b8974cc8c37102d16731c4a263263571a14521775e6",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_53062_0100_PP.sol_e42b9f3bdbef.npz": "b1c04ef306a89466b73d9e3c42ccdf15fd4fa1221fca9bb590a2c0dc3fe83481",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_53062_0100_PP.npy": "c6aeba881822fd145f2195a580502d9ed5811aaabb417789e0f3200563c93e1e",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_53062_0100_PP.npy": "84ecced9c513031bd303d970f6158995f7f0034235cf669a50128081e3c7fb74",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_54390_0100_PP.sol_e42b9f3bdbef.npz": "479a97fd7a11e9599726e975a8a87b67b3ec8aa61c1fc5688e31db7e5864155c",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_54390_0100_PP.npy": "36048c3c4d452159b80b9bbca5230c753db06f432e0d744f9176b1b5302d2ef0",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_54390_0100_PP.npy": "eccc2c7ae174f1e603b27b8c59cf55769209eaf400f2d8aa759aadb19e021d50",
+    "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_54390_0100_PP.tif": "cf2855e761f9ba5fa3aa6f794e42872cae01f9c9aafaa6cd225a6002d623f86e",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_55390_0100_PP.sol_e42b9f3bdbef.npz": "2702dbf1e4f83d9c14709b3875b1904cdea7cef15e5d307e84610e56c8fb98f0",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_55390_0100_PP.npy": "50ed251f56b5238cfbd48942324ecc2a646569667b3ebecc9feca92d4809770e",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_55390_0100_PP.npy": "e801f51a5bf661f94a3fe98f4f9cccd34d2f73adc6935cfc45d2b34495e7fd28"
+  },
+  "checks": [
+    {
+      "check": "code binding",
+      "pass": true
+    },
+    {
+      "check": "d1 cross exactly5",
+      "pass": true
+    },
+    {
+      "check": "d1 agrees Euclidean1",
+      "pass": true
+    },
+    {
+      "check": "bg distance inclusive2/8",
+      "pass": true
+    },
+    {
+      "check": "Omega exclusion",
+      "pass": true
+    },
+    {
+      "check": "target circle excludes corners",
+      "pass": true
+    },
+    {
+      "check": "logit-gap known example",
+      "pass": true
+    },
+    {
+      "check": "clipped extremes finite",
+      "pass": true
+    },
+    {
+      "check": "zero GT background undefined empty",
+      "pass": true
+    },
+    {
+      "check": "empty region NA",
+      "pass": true
+    },
+    {
+      "check": "low center not necessarily miss",
+      "pass": true
+    },
+    {
+      "check": "Dev28 identity 2027",
+      "pass": true
+    },
+    {
+      "check": "Dev28 identity 2028",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44615_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44615_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44615_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44615_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44615_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44615_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44615_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44615_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44615_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44615_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44615_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44615_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44615_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44615_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44615_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44615_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051116_44615_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44785_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44785_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44785_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44785_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44785_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44785_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051116_44785_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051116_44785_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44785_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44785_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44785_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44785_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44785_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44785_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051116_44785_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051116_44785_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051116_44785_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37078_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37078_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37078_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37078_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37078_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37078_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37078_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37078_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37078_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37078_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37078_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37078_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37078_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37078_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37078_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37078_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051117_37078_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37130_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37130_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37130_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37130_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37130_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37130_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051117_37130_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051117_37130_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P001",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P001",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P002",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P002",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P003",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P003",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P004",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P004",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P005",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P005",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P006",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P006",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P007",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P007",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P008",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P008",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P009",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P009",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P010",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P010",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P011",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P011",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P012",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P012",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P013",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P013",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37130_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37130_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37130_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37130_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37130_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37130_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051117_37130_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051117_37130_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P001",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P001",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P002",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P002",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P003",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P003",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P004",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P004",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P005",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P005",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P006",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P006",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P007",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P007",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P008",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P008",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P009",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P009",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P010",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P010",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P011",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P011",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P012",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P012",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P013",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P013",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_51655_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_51655_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_51655_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_51655_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_51655_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_51655_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_51655_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_51655_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_51655_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_51655_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_51655_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_51655_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_51655_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_51655_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_51655_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_51655_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051202_51655_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_54530_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_54530_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_54530_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_54530_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_54530_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_54530_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051202_54530_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051202_54530_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_54530_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_54530_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_54530_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_54530_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_54530_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_54530_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051202_54530_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051202_54530_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051202_54530_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_31934_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_31934_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_31934_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_31934_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_31934_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_31934_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_31934_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_31934_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_31934_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_31934_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_31934_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_31934_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_31934_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_31934_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_31934_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_31934_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051205_31934_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35224_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35224_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35224_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35224_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35224_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35224_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35224_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35224_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35224_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35224_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35224_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35224_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35224_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35224_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35224_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35224_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051205_35224_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35276_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35276_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35276_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35276_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35276_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35276_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35276_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35276_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P014",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P014",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P015",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P015",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P016",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P016",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P017",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P017",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P018",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P018",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P019",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P019",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P020",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P020",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P021",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P021",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35276_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35276_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35276_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35276_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35276_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35276_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35276_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35276_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P014",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P014",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P015",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P015",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P016",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P016",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P017",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P017",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P018",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P018",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P019",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P019",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P020",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P020",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P021",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P021",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20051205_35276_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35305_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35305_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35305_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35305_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35305_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35305_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051205_35305_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051205_35305_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35305_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35305_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35305_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35305_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35305_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35305_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051205_35305_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051205_35305_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051205_35305_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051208_41707_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051208_41707_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051208_41707_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051208_41707_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051208_41707_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051208_41707_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720051208_41707_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720051208_41707_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051208_41707_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051208_41707_0400_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051208_41707_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051208_41707_0400_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051208_41707_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051208_41707_0400_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820051208_41707_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820051208_41707_0400_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820051208_41707_0400_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060407_41937_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060407_41937_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060407_41937_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060407_41937_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060407_41937_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060407_41937_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060407_41937_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060407_41937_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060407_41937_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060407_41937_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060407_41937_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060407_41937_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060407_41937_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060407_41937_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060407_41937_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060407_41937_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060407_41937_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_57853_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_57853_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_57853_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_57853_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_57853_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_57853_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_57853_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_57853_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_57853_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_57853_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_57853_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_57853_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_57853_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_57853_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_57853_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_57853_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060411_57853_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61214_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61214_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61214_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61214_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61214_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61214_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61214_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61214_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P022",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P022",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P023",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P023",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P024",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P024",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61214_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61214_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61214_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61214_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61214_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61214_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61214_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61214_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P022",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P022",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P023",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P023",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P024",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P024",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61478_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61478_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61478_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61478_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61478_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61478_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060411_61478_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060411_61478_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P025",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P025",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P026",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P026",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P027",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P027",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P028",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P028",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P029",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P029",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P030",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P030",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P031",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P031",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P032",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P032",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P033",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P033",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P034",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P034",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P035",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P035",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P036",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P036",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P037",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P037",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P038",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P038",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P039",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P039",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P040",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P040",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P041",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P041",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P042",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P042",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P043",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P043",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P044",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P044",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P045",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P045",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P046",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P046",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P047",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P047",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P048",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P048",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P049",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P049",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P050",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P050",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P051",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P051",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61478_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61478_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61478_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61478_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61478_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61478_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060411_61478_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060411_61478_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P025",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P025",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P026",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P026",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P027",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P027",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P028",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P028",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P029",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P029",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P030",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P030",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P031",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P031",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P032",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P032",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P033",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P033",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P034",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P034",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P035",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P035",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P036",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P036",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P037",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P037",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P038",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P038",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P039",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P039",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P040",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P040",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P041",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P041",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P042",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P042",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P043",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P043",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P044",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P044",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P045",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P045",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P046",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P046",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P047",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P047",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P048",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P048",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P049",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P049",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P050",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P050",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P051",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P051",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_51656_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_51656_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_51656_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_51656_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_51656_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_51656_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_51656_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_51656_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_51656_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_51656_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_51656_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_51656_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_51656_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_51656_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_51656_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_51656_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060412_51656_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58287_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58287_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58287_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58287_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58287_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58287_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58287_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58287_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58287_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58287_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58287_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58287_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58287_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58287_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58287_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58287_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060412_58287_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58889_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58889_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58889_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58889_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58889_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58889_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_58889_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_58889_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P052",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P052",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P053",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P053",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P054",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P054",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P055",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P055",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P056",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P056",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P057",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P057",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58889_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58889_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58889_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58889_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58889_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58889_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_58889_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_58889_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P052",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P052",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P053",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P053",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P054",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P054",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P055",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P055",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P056",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P056",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P057",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P057",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060412_58889_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_60913_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_60913_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_60913_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_60913_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_60913_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_60913_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_60913_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_60913_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P058",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P058",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_60913_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_60913_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_60913_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_60913_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_60913_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_60913_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_60913_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_60913_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P058",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P058",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_61299_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_61299_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_61299_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_61299_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_61299_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_61299_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060412_61299_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060412_61299_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_61299_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_61299_0200_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_61299_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_61299_0200_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_61299_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_61299_0200_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060412_61299_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060412_61299_0200_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060412_61299_0200_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45248_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45248_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45248_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45248_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45248_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45248_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45248_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45248_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P059",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P059",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45248_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45248_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45248_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45248_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45248_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45248_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45248_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45248_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P059",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P059",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060522_45248_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45583_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45583_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45583_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45583_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45583_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45583_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060522_45583_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060522_45583_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P060",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P060",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P061",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P061",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P062",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P062",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P063",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P063",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P064",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P064",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P065",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P065",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P066",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P066",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P067",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P067",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P068",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P068",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P069",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P069",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P070",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P070",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P071",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P071",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P072",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P072",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P073",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P073",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45583_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45583_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45583_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45583_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45583_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45583_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060522_45583_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060522_45583_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P060",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P060",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P061",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P061",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P062",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P062",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P063",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P063",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P064",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P064",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P065",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P065",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P066",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P066",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P067",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P067",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P068",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P068",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P069",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P069",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P070",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P070",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P071",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P071",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P072",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P072",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P073",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P073",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_43038_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_43038_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_43038_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_43038_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_43038_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_43038_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_43038_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_43038_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_43038_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_43038_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_43038_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_43038_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_43038_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_43038_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_43038_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_43038_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060523_43038_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_49859_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_49859_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_49859_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_49859_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_49859_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_49859_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060523_49859_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060523_49859_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_49859_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_49859_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_49859_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_49859_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_49859_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_49859_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060523_49859_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060523_49859_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060523_49859_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_36895_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_36895_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_36895_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_36895_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_36895_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_36895_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_36895_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_36895_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_36895_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_36895_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_36895_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_36895_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_36895_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_36895_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_36895_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_36895_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060530_36895_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_53062_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_53062_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_53062_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_53062_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_53062_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_53062_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_53062_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_53062_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_53062_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_53062_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_53062_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_53062_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_53062_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_53062_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_53062_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_53062_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060530_53062_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_54390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_54390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_54390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_54390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_54390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_54390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_54390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_54390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P074",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P074",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P075",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P075",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P076",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P076",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2027P077",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2027P077",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_54390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_54390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_54390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_54390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_54390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_54390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_54390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_54390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P074",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P074",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P075",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P075",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P076",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P076",
+      "pass": true
+    },
+    {
+      "check": "d1 probability support 2028P077",
+      "pass": true
+    },
+    {
+      "check": "d1 Euclidean support 2028P077",
+      "pass": true
+    },
+    {
+      "check": "atlas RGB SHA 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "atlas native RGB size 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "bound GT/FOV/regions 20060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "Omega identity 20060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "four regions partition FOV 20060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202720060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202720060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_55390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_55390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_55390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_55390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_55390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_55390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202720060530_55390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202720060530_55390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202720060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202720060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "probability SHA 202820060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "native finite float32 202820060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_55390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_55390_0100_PPdice",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_55390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_55390_0100_PPprecision",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_55390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_55390_0100_PPrecall",
+      "pass": true
+    },
+    {
+      "check": "frozen counts 202820060530_55390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen metric 202820060530_55390_0100_PPfp_density",
+      "pass": true
+    },
+    {
+      "check": "frozen near target denominator 202820060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "all regional FP reconcile 202820060530_55390_0100_PP",
+      "pass": true
+    },
+    {
+      "check": "56 image rows",
+      "pass": true
+    },
+    {
+      "check": "154 point rows",
+      "pass": true
+    },
+    {
+      "check": "77 unique positions",
+      "pass": true
+    },
+    {
+      "check": "17 common misses",
+      "pass": true
+    },
+    {
+      "check": "seed2027 59hits/18miss/19NA",
+      "pass": true
+    },
+    {
+      "check": "seed2028 59hits/18miss/19NA",
+      "pass": true
+    }
+  ]
+}

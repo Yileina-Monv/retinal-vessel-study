@@ -1,0 +1,79 @@
+"""Write CPU review deliverables from verified facts; no historical score edits."""
+import json,csv,html,hashlib
+from pathlib import Path
+O=Path(__file__).resolve().parent;P='metric_review_20261103'
+f=json.loads((O/(P+'_facts.json')).read_text());v=json.loads((O/(P+'_independent_verification.json')).read_text())
+assert v['status']=='PASS'
+atlas=json.loads((O/(P+'_atlas_manifest.json')).read_text())
+def esc(x):return html.escape(str(x))
+def pct(x):return f'{x*100:.2f}'
+def table(head,rows):
+ return '<table><thead><tr>'+''.join('<th>'+esc(x)+'</th>' for x in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+esc(x)+'</td>' for x in row)+'</tr>' for row in rows)+'</tbody></table>'
+onepage="""评价指标审查结论｜2026-11-03｜Sol
+
+结论：原指标没有发现算错，但测量对象很窄、单图影响大。不建议继续把“原生宽度代理≤3的邻域骨架位置召回”单独当作完整细血管分支恢复的证据。历史成绩和成功标准不变。
+
+已经查实：
+1. 复用10条已有终点轨迹，280个逐图Dice和原主指标结果全部复现；没有新训练或模型推理。
+2. ≤2/≤3/≤4/≤5四档分别有8/9/18/18张有效图，28/77/699/1262个位置；只有1～2个目标的图分别有5/2/3/1张。不能因为扩宽后分母更大，就直接采用成绩最好的一档。
+3. 已有GT候选细路径中，18张图有174条路径与邻域相交。原≤3只触及其中18条；这18条在邻域内的选点覆盖率中位数为6.27%。候选路径定义比原S3更宽，未经医学确认；此比较说明目标不一致，不能把其余路径称为程序漏算。
+4. 1536×2304尺寸的5张图在原主指标中全部NA，其中4张实际有邻域GT骨架。固定原生像素阈值不具有尺度一致性，但仅凭这些分组数据不能把差异全归因于尺寸。
+5. NL原两seed平均增量+3.74pp，移除单目标获益图的诊断结果变为−2.04pp；≤4/≤5下平均仅+0.21/+0.33pp，区间均跨零。T0/TW在四档中也没有正向平均增量。没有用新指标挽救旧结论。
+
+明确建议：
+保留N0工作基线，不立即增加NL种子或启动五折。下一阶段优先提交一个评价协议修订提案：沿用已存在、按相对FOV尺度定义的候选细路径，评价其出血邻域内部分的骨架覆盖；先图内路径平均，再按图平均。原S3保留作极细位置补充，Dice与误报保护继续保留。短支、复杂节点、GT相对定义及医学未知必须明示。该提案尚未冻结，不能直接用于训练或宣布方法成功。
+
+汇报处理：
+无需推倒重做PPT。指标页明确“位置覆盖，不等于整条分支或连接”；局部结果页补充分母和单图影响；局限/下一步页说明先审查评价目标再决定五折。T0/TW负面结论、B1/B2质量取舍、nnU-Net全图Dice收益及其原有局限保持。
+
+本轮已结束：CPU诊断、6例定义图册、逐图/路径表和独立复核齐全。未访问Test，未改变历史协议，未安排下一轮实验。
+"""
+(O/'评价指标审查_一页结论_20261103.txt').write_text(onepage,encoding='utf-8')
+head="""<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>评价指标审查｜2026-11-03</title>
+<style>body{max-width:1100px;margin:32px auto;padding:0 24px;font:17px/1.65 "Microsoft YaHei",sans-serif;color:#162638;background:#fafcfe}h1,h2,h3{line-height:1.35}table{border-collapse:collapse;width:100%;font-size:14px;margin:18px 0}td,th{border:1px solid #cbd6df;padding:8px;text-align:left}th{background:#eaf1f6}img{max-width:100%;height:auto;border:1px solid #dce3e9}section{margin:26px 0;padding:18px;background:white;border:1px solid #dde5eb}.note{border-left:4px solid #d7a436;padding:12px;background:#fff9ed}.lead{font-size:20px;font-weight:600}code{overflow-wrap:anywhere;font-size:13px}a{color:#145da0}@media print{body{font-size:11px;margin:0}section{break-inside:avoid}img{max-height:650px;object-fit:contain}}</style><body>
+<h1>原局部评价指标是否足够代表细血管恢复？</h1><p>Sol｜2026-11-03｜既有终点、Dev28、CPU探索性诊断</p>
+<p class="lead">计算复现通过；但覆盖范围窄，且最新局部增量对单张图敏感。先解决评价目标匹配，再决定五折，不把扩宽后的结果追认为成功。</p>
+<p class="note">原≤3、阈值0.5、d1=1、Omega、出血邻域和历史成功条件全部保留。所有新增分档、删一图和候选路径比较仅作诊断。此次未训练、未推理、未访问官方Test。</p>"""
+parts=[head,'<section><h2>1．“算对”与“测对研究目标”是两件事</h2>',
+'<p>实际重新读取T0/TW三seed与N0/NL两seed，共10条终点轨迹、280份已有概率图；从固定GT/FOV重新生成全原图骨架和宽度代理，在0.5计算原主指标和Dice。280条逐图记录全部与原记录一致，容差1e−12；另用五个像素邻接位置直接检查90条有效图-模型记录，独立复核399份输入摘要。</p>',
+'<p>这不是医学正确性的证明。原指标只问：特定GT位置1像素范围内是否出现预测。它不检查整条分支是否完整，也不检查两段是否正确相连；新增假血管必须由误报保护另行约束。</p>',
+'<p>宽度为Zhang骨架点上的2×EDT（到背景像素中心的距离），不是字面上的栅格线厚度或物理直径。原实现CPU合成条带检查：1/2像素厚对应代理2，3/4像素厚对应4，5/6像素厚对应6。因此原≤3可排除肉眼看来仍很细的3像素水平条带。这是该离散定义的性质，非本轮发现的计算Bug。</p></section>',
+'<section><h2>2．四档覆盖情况：完整保留28张图和NA</h2>']
+parts.append(table(['累计宽度代理','有效图/28','NA图','位置总数','仅1–2目标的图','触及候选路径/174'],
+ [[f"≤{x['width']}",x['valid_images'],x['NA_images'],x['targets'],x['sparse_images'],x['candidate_paths_reached']] for x in f['width_summary']]))
+parts+=['<p>原≤3的77个位置中，56个在既有候选路径上，21个不在候选路径集合中。后者不等于错误标签；既有候选规则排除了部分短路径和环，节点共享也会使路径出现次数大于唯一位置数。不能因其“不入选B2候选”就删除。</p>',
+'<p>与出血邻域相交的候选路径共174条，分布于18张图；候选路径邻域内共有5168个位置出现次数（共享点可能重复，不是独立患者或唯一位置数）。原≤3只触及18条，另156条没有≤3目标；被触及的18条，其邻域部分选点覆盖率中位数6.27%。即使取消邻域裁切，只看这些被触及路径的全路径宽度筛选，覆盖率中位数也仅2.71%。因此覆盖稀少不只是邻域截取造成。</p>',
+'<p class="note">这里的候选路径沿用既有“相对FOV宽度≤6、参考长度≥20、图路径”定义，比原生≤3对象更宽；未经医学审核。18/174是两个研究对象重合有限的证据，不是“漏算156条真血管”的证据，也不足以单凭它把候选路径定为新金标准。</p>',
+f'<img src="{P}_figures/denominators.png" alt="全部28图四档目标数量"></section>',
+'<section><h2>3．不同尺寸：有覆盖差异，也有混杂</h2>']
+parts.append(table(['原生尺寸H×W','图数','有邻域GT骨架的图','原≤3有效图','原≤3目标数','≤3对应相对FOV参考宽度'],
+ [[x['shape'],x['images'],x['near_present_images'],x['valid_images'],x['targets'],f"{x['reference_equivalent_min']:.2f}–{x['reference_equivalent_max']:.2f}"] for x in f['size_summary'] if x['width']==3]))
+parts+=['<p>1536×2304组的5张图全部未进入原主指标，尽管4张有邻域GT骨架。相同原生3像素，在既有相对FOV尺度约对应1.88，而960×1440组约3.00，定义本身不具尺度一致性。但图像内容、病灶和标注也不同，不能由组间表直接证明尺寸是全部原因；相对FOV尺度本身也不是物理标定。</p></section>',
+'<section><h2>4．对方法结论的影响</h2><p>下表先在同一图内平均seed差值，再按图平均。区间为固定随机种子20261016、1000次按图配对重抽样的探索性区间，未作多重比较校正，不用于新成功判定。不同档位包含的图片不同；同时提供原有效集合交集分析。</p>']
+effects=[x for x in f['effects'] if x['seed']=='within_image_seed_average']
+parts.append(table(['比较','宽度','有效图','平均增量pp','诊断95%区间pp','删一图后的增量范围pp','原有效集合交集增量pp'],
+ [[x['comparison'],x['width'],x['n_images'],f"{x['delta']*100:+.3f}",f"[{x['diagnostic_CI_low']*100:+.3f}, {x['diagnostic_CI_high']*100:+.3f}]",f"[{x['loo_min']*100:+.3f}, {x['loo_max']*100:+.3f}]",f"{x['same_original9_delta']*100:+.3f}"] for x in effects]))
+parts+=['<p>≤2档原有效集合交集只有8张，其余为9张；不是把无目标图当作零分。所有逐seed结果和逐图差值均在CSV中，不隐藏seed方向不一致。</p>',
+'<p><strong>T0/TW：</strong>四档平均增量为0、−0.600、−0.222、−0.381pp，没有发现扩宽后被原主指标漏掉的正向平均收益。原负面结论保持；≤5诊断区间为负，也不将其追认为新正式显著性结论。</p>',
+'<p><strong>N0/NL：</strong>原≤3两seed平均+3.739pp，但去掉20060522_45248_0100_PP这张单目标获益图后为−2.043pp；两seed命中数各59→58。≤4与≤5平均仅+0.208/+0.327pp，区间跨零，2027为正而2028为负。≤2虽然点估计较大，也只有8图28位置、区间跨零。不能挑≤2包装成功，也不能认为放宽宽度即可解决问题。</p>',
+'<p>逐图平均和汇总位置回答不同问题，两者都不是自动正确答案。既有图像宏平均保留，汇总命中仅用于解释；位置和seed不当作新增独立患者。</p>',
+f'<img src="{P}_figures/effects.png" alt="四档配对变化及原有效集合交集"></section>',
+'<section><h2>5．唯一优先建议与五折决定</h2>',
+'<p><strong>不立即补NL seed或跑五折；先提交一个面向后续研究的评价协议修订提案。</strong>候选是“既有相对FOV尺度定义的细路径，在出血邻域内部分的骨架覆盖”，先图内路径平均再按图平均；原S3作为极细位置补充，Dice、Precision、局部FP、FP/FOV及远处Recall保护继续保留。174路径/18图仅说明该对象在现有Dev上有可评价覆盖，不等于医学正确、统计充分或新方法有效。</p>',
+'<p>新协议必须明确短支、复杂节点、尺度、NA和单图影响；不能用此次方法涨分选择定义，不能把开发集结果叫独立验证。其训练目标是否相应调整须另提案，不能直接沿用按旧S3训练的NL就声称对新目标做了公平验证。</p>',
+'<p>五折能够处理划分依赖，不能使不匹配的测量对象自动合理。只有新研究对象和主指标获得批准、固定后，再根据有效图覆盖与可检出增量估计其价值及成本。本轮审查已到终点，不再自动追加诊断或实验。</p></section>',
+'<section><h2>6．PPT改动建议：修正三处，不重做全稿</h2>',
+'<ol><li>指标说明页：写清“原生≤3代理的邻域骨架位置召回；9图77位置，19图NA”，增加“非完整分支/连通性指标”。</li><li>局部结果页：保留原成绩，补充分母与单图敏感性；NL不得写成稳定找回完整细血管。</li><li>局限与下一步页：加入本次覆盖和尺度发现，说明先冻结更匹配的评价，再决定五折。保留T0/TW负面、B1/B2误报取舍和nnU-Net全图Dice收益及各自原有限制。</li></ol>',
+'<p>可用汇报表述：“我们完成了受控比较，未获得可靠受保护的局部增益；进一步审查发现，原主指标刻画的是少量极细位置，不能充分代表完整细分支恢复。后续先验证评价对象，再扩大实验验证。” 本轮没有修改任何PPT文件。</p></section>',
+'<section><h2>7．六例定义图册</h2><p>按GT和定义风险选例，未使用模型收益选图：两张单目标图；有S3覆盖的各尺寸中最低非零候选覆盖案例；最大零S3邻域候选；无S3覆盖尺寸的最大邻域候选。故这些是解释风险的案例，不代表总体发生率；总体分母见上表。黄色是≤3、橙色是(3,4]、紫色是(4,5]，青色为既有GT路径，蓝线为邻域边界。最后一列取消邻域裁切并标注原生宽度代理值。人工医学审核仍为0。</p>']
+reason={'single_target_image':'单目标图片','lowest_nonzero_candidate_coverage_in_size':'该尺寸最低非零邻域覆盖候选','largest_near_candidate_with_zero_S3':'最大零S3邻域候选','size_without_nonzero_S3_largest_near_candidate':'该尺寸无S3有效图：最大邻域候选'}
+for case in atlas:
+ s=case['selection']
+ parts.append(f'<h3>案例{case["case_id"]:02d}｜{esc(reason[s["selection_reason"]])}</h3><p>{esc(s["filename"])}，路径{esc(s["branch_id"])}；邻域内选中{esc(s["selected_near_points"])}/{esc(s["near_points"])}；全路径宽度筛选选中{esc(s["selected_full_points"])}/{esc(s["valid_full_points"])}。这是GT相对定义诊断，不判定医学真伪。</p><img src="{P}_figures/{case["filename"]}" alt="GT与宽度目标叠加图">')
+parts+=['</section><section><h2>8．可复核证据与执行说明</h2><ul>']
+for suffix,desc in [('_original_reproduction.csv','280条原指标与Dice复算'),('_denominators.csv','28图×4档分母'),('_paths.csv','逐候选及排除路径覆盖'),('_points77.csv','原77位置原生坐标/宽度'),('_metrics.csv','1120条模型×图片×宽度结果'),('_effects.csv','28组逐seed及汇总敏感性'),('_leave_one_out.csv','完整逐图影响分析'),('_paired_images.csv','图像配对变化'),('_size_summary.csv','尺度分组'),('_facts.json','结构化事实'),('_sources.json','399份输入绑定'),('_independent_verification.json','独立复核'),('_atlas_manifest.json','图册选例/裁切/宽度/原图SHA'),('.py','CPU分析源码'),('_plots.py','绘图源码'),('_verify.py','独立核对源码')]:
+ parts.append(f'<li><a href="{P+suffix}">{desc}</a></li>')
+parts+=['</ul><p>初次CPU预检因split_record没有train_files字段停止，尚未分析预测；修正为读取已有Train110清单并验证与Dev28不相交。原失败日志及attempt01源码保留。分析未访问官方Test；只读取其封存数量的划分元信息。无训练代码、模型、Loss或冻结定义修改。</p>',
+f'<p>服务器权威证据目录：<code>{esc(O)}</code>。本地下载仅供阅读，不替代A7 STATUS。</p></section></body></html>']
+(O/'评价指标审查_20261103.html').write_text(''.join(parts),encoding='utf-8')
+print('REPORT_HTML_TXT_COMPLETE',len(atlas),'cases; PDF rendered on Windows using existing PyMuPDF',flush=True)

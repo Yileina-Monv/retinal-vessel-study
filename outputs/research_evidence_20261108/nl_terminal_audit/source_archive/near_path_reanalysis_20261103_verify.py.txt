@@ -1,0 +1,56 @@
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='1')
+from pathlib import Path
+import json,csv,hashlib,math,statistics
+import numpy as np
+O=Path(__file__).resolve().parent;P='near_path_reanalysis_20261103';R=Path('${RETINA_PROJECT_ROOT}')
+def rows(s):
+ with (O/(P+s)).open(encoding='utf-8-sig') as f:return list(csv.DictReader(f))
+paths=rows('_per_path.csv');ims=rows('_per_image.csv');den=rows('_denominators.csv');su=json.loads((O/(P+'_summary.json')).read_text())
+assert len(paths)==696 and len(ims)==112 and len(den)==28
+refs=json.loads((R/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json').read_text())['images']
+BASE=R/'experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026'
+verified=0
+for rec in refs:
+ n=rec['filename']
+ with np.load(rec['reference_npz'],allow_pickle=False) as z:
+  near=z['near'].astype(bool)&z['Omega'].astype(bool);om=z['Omega'].astype(bool);coords=z['coords'];off=z['offsets'];chosen=z['candidate_B2'].astype(bool)
+ expected_ids=[]
+ for bid,(a,b) in enumerate(zip(off[:-1],off[1:])):
+  c=coords[a:b]
+  if chosen[bid] and near[c[:,0],c[:,1]].any():expected_ids.append(bid)
+ for seed in [2027,2028]:
+  for method in ['N0','NL']:
+   pr=[r for r in paths if r['filename']==n and int(r['seed'])==seed and r['method']==method]
+   assert {int(r['branch_id']) for r in pr}==set(expected_ids)
+   ir=next(r for r in ims if r['filename']==n and int(r['seed'])==seed and r['method']==method)
+   if not expected_ids:
+    assert not ir['near_path_d1'];continue
+   probpath=(BASE/'runs'/f'seed_{seed}'/'dev_predictions' if method=='N0' else O.parent/'runs'/f'seed_{seed}'/'dev_predictions')/(n+'.npy')
+   p=np.load(probpath,mmap_mode='r');H,W=p.shape
+   d1s=[]
+   for r in pr:
+    a,b=off[int(r['branch_id']):int(r['branch_id'])+2];c=coords[a:b];c=np.unique(c[near[c[:,0],c[:,1]]],axis=0)
+    hit=np.zeros(len(c),bool);d0=(p[c[:,0],c[:,1]]>=.5)&om[c[:,0],c[:,1]]
+    for dy,dx in [(0,0),(-1,0),(1,0),(0,-1),(0,1)]:
+     y=c[:,0]+dy;x=c[:,1]+dx;valid=(y>=0)&(y<H)&(x>=0)&(x<W);ii=np.flatnonzero(valid)
+     hit[ii]|=(p[y[ii],x[ii]]>=.5)&om[y[ii],x[ii]]
+    assert len(c)==int(r['near_points']) and int(hit.sum())==int(r['near_hits_d1']) and int(d0.sum())==int(r['near_hits_d0'])
+    d1s.append(int(hit.sum())/len(c));verified+=1
+   assert abs(statistics.mean(d1s)-float(ir['near_path_d1']))<1e-12
+for e in su['effects']:
+ k=e['metric'];seeds=[2027,2028] if e['seed']=='within_image_seed_average' else [int(e['seed'])]
+ ids=sorted({r['filename'] for r in ims if r[k]!=''})
+ bv=[];mv=[]
+ for n in ids:
+  b=[float(r[k]) for r in ims if r['filename']==n and r['method']=='N0' and int(r['seed']) in seeds]
+  m=[float(r[k]) for r in ims if r['filename']==n and r['method']=='NL' and int(r['seed']) in seeds]
+  assert len(b)==len(m)==len(seeds);bv.append(statistics.mean(b));mv.append(statistics.mean(m))
+ dv=[m-b for b,m in zip(bv,mv)]
+ assert len(ids)==e['n_images'] and abs(statistics.mean(dv)-e['delta'])<1e-12
+ assert abs(statistics.mean(bv)-e['N0'])<1e-12 and abs(statistics.mean(mv)-e['NL'])<1e-12
+src=json.loads((O/(P+'_sources.json')).read_text())
+for p,h in src.items():assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h,('changed',p)
+v=dict(status='PASS',direct_neighborhood_path_rows=verified,image_rows=112,summary_rows=len(su['effects']),source_hashes_rechecked=len(src),no_new_model_execution=True)
+with (O/(P+'_verification.json')).open('x') as f:json.dump(v,f,indent=2)
+print(v)

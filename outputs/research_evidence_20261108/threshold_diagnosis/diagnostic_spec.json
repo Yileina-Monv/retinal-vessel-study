@@ -1,0 +1,29 @@
+{
+  "kind": "EXPLORATORY_CPU_DIAGNOSIS_NOT_PROTOCOL_OR_THRESHOLD_CHANGE",
+  "methods": [
+    "A0",
+    "D",
+    "B1",
+    "B2"
+  ],
+  "seed": 2026,
+  "endpoint": 2000,
+  "fixed_scientific_threshold": 0.5,
+  "main_sweep": "0.10..0.90 step0.0001 inclusive, identical grid for all methods",
+  "helper_grid": "0..1 step0.0001, used for matching, not new scientific result",
+  "score_comparison": "float32 probability >= float32 threshold, native resolution",
+  "FOV_GT": "same sealed Dev28 reference, FOV includes original U; no GT relabeling",
+  "aggregation": "fixed28 per-image macro; pooled counts separately labelled",
+  "Precision_empty": "NA, never discard an image to improve macro",
+  "AP": "exact unique-score grouped average precision per image, macro across28; not trapezoidal PR-AUC",
+  "calibration": "20 uniform positive-probability reliability bins, Brier, clipped NLL; ECE descriptive, background dominated",
+  "matched_recall": "nearest observed macro Recall at one global threshold; residual<=0.0001",
+  "matched_FP": "smallest global threshold meeting macro FP/FOV<=target; residual reported",
+  "GT_distance": "reuse native Euclidean <=1/>1 partition, exploratory geometric proxy not medical class",
+  "bootstrap": "1000 whole-image pairs PCG64 seed20261016; conditional on Dev selections, no independent validation",
+  "new_model_forwards": 0,
+  "GPU_calls": 0,
+  "parameter_updates": 0,
+  "official_Test_access": false,
+  "best_thresholds": "optimistic same-Dev diagnostic maxima only; no threshold deployment or protocol revision"
+}

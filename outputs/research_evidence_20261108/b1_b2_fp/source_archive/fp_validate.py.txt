@@ -1,0 +1,99 @@
+"""Independent count verification and descriptive A0-attachment supplement."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OMP_NUM_THREADS']='2'
+import csv,json,hashlib,math,sys,time
+from pathlib import Path
+from collections import Counter,defaultdict
+import numpy as np
+from scipy import ndimage
+from PIL import Image
+
+S=Path('${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022')
+O=S/'analysis/fp_error_analysis_v1'
+def J(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for b in iter(lambda:f.read(8*1024*1024),b''):h.update(b)
+    return h.hexdigest()
+def W(p,x):
+    with Path(p).open('x',encoding='utf-8') as f:json.dump(x,f,ensure_ascii=False,indent=2,allow_nan=False)
+def C(p,rows):
+    with Path(p).open('x',newline='',encoding='utf-8-sig') as f:
+        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+def quant(v):return {k:float(x) for k,x in zip(['q10','median','q90'],np.quantile(v,[.1,.5,.9]))} if len(v) else None
+
+def main():
+    start=time.monotonic();summary=J(O/'summary.json');manifest=J(S/'references/dev/manifest.json')
+    binding=J(S/'a0_reuse_binding.json');a0={r['filename']:r for r in binding['probability_maps']}
+    masksizes={}; components=Counter(); component_counts=Counter()
+    with (O/'per_image_sets.csv').open(encoding='utf-8-sig') as f:
+        for r in csv.DictReader(f):masksizes[r['filename'],r['set']]=int(r['area'])
+    with (O/'components.csv').open(encoding='utf-8-sig') as f:
+        for r in csv.DictReader(f):components[r['filename'],r['set']]+=int(r['area']);component_counts[r['set']]+=1
+    for (n,k),v in components.items():assert v==masksizes[n,k]
+    assert dict(component_counts)==summary['components_counts']
+    region_sums=Counter()
+    with (O/'regions.csv').open(encoding='utf-8-sig') as f:
+        for r in csv.DictReader(f):region_sums[r['filename'],r['set']]+=int(r['area'])
+    assert dict(region_sums)==masksizes
+    hist_sums=Counter()
+    with (O/'distance_histogram.csv').open(encoding='utf-8-sig') as f:
+        for r in csv.DictReader(f):hist_sums[r['filename'],r['set']]+=int(r['count'])
+    assert all(hist_sums[k]==v for k,v in masksizes.items())
+    rows=[];totals={a:Counter() for a in ['B1','B2']};scores={a:defaultdict(list) for a in ['B1','B2']}
+    for im in manifest['images']:
+        n=im['filename']
+        with np.load(im['reference_npz'],allow_pickle=False) as z:gt=z['GT'].astype(bool);fov=z['FOV'].astype(bool)
+        probs={a:np.load(a0[n]['path'] if a=='A0' else S/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy',mmap_mode='r',allow_pickle=False) for a in ['A0','B1','B2']}
+        pred={a:(p>=.5)&fov for a,p in probs.items()};fp={a:p&~gt for a,p in pred.items()}
+        code=fp['A0'].astype(np.uint8)+2*fp['B1'].astype(np.uint8)+4*fp['B2'].astype(np.uint8)
+        with np.load(O/'masks'/f'{n}.npz',allow_pickle=False) as z:
+            assert np.array_equal(code,z['membership'])
+            for a in ['B1','B2']:
+                assert np.array_equal(fp[a]&~fp['A0'],z['new_'+a])
+                assert np.array_equal(fp['A0']&~fp[a],z['removed_'+a])
+        a0_d=ndimage.distance_transform_edt(~fp['A0']) if fp['A0'].any() else np.full(gt.shape,np.inf)
+        gt_d=ndimage.distance_transform_edt(~(gt&fov))
+        a0_adj=ndimage.binary_dilation(fp['A0'],structure=np.ones((3,3),np.uint8))
+        pred_adj=ndimage.binary_dilation(pred['A0'],structure=np.ones((3,3),np.uint8))
+        for a in ['B1','B2']:
+            new=fp[a]&~fp['A0'];nn=int(new.sum());assert nn==masksizes[n,'new_'+a]
+            lab,nc=ndimage.label(new,np.ones((3,3),np.uint8));counts=np.bincount(lab.ravel(),minlength=nc+1);counts[0]=0
+            adjacent_fp=np.unique(lab[new&a0_adj]);adjacent_pred=np.unique(lab[new&pred_adj])
+            hit_fp=int(counts[adjacent_fp].sum());hit_pred=int(counts[adjacent_pred].sum())
+            a0v=probs['A0'][new];bv=probs[a][new]
+            row=dict(filename=n,method=a,new_pixels=nn,GT_distance_le1=int((new&(gt_d<=1)).sum()),
+                A0_FP_distance_le1=int((new&(a0_d<=1)).sum()),A0_FP_distance_gt1=int((new&(a0_d>1)).sum()),
+                A0_FP_dist_median=float(np.median(a0_d[new])) if np.isfinite(a0_d[new]).all() else None,
+                A0_score_ge045_lt05=int((a0v>=.45).sum()),A0_score_lt045=int((a0v<.45).sum()),
+                A0_score_mean=float(a0v.mean()),A0_score_median=float(np.median(a0v)),B_score_mean=float(bv.mean()),B_score_median=float(np.median(bv)),
+                new_components=nc,new_component_pixels_touching_A0_FP_8=hit_fp,new_component_pixels_touching_A0_prediction_8=hit_pred,
+                new_component_pixels_not_touching_A0_prediction_8=nn-hit_pred)
+            rows.append(row)
+            for k in ['new_pixels','GT_distance_le1','A0_FP_distance_le1','A0_FP_distance_gt1','A0_score_ge045_lt05','A0_score_lt045','new_components','new_component_pixels_touching_A0_FP_8','new_component_pixels_touching_A0_prediction_8','new_component_pixels_not_touching_A0_prediction_8']:totals[a][k]+=row[k]
+            for k,v in [('A0',a0v),('B',bv),('delta',bv-a0v),('distance_A0_FP',a0_d[new])]:scores[a][k].append(v)
+    C(O/'A0_attachment_supplement.csv',rows)
+    extra={}
+    for a,t in totals.items():
+        t=dict(t);n=t['new_pixels'];extra[a]=dict(counts=t,shares={k:v/n for k,v in t.items() if k not in ['new_pixels','new_components']},
+            scores_pooled={k:quant(np.concatenate(v)) for k,v in scores[a].items()},
+            image_macro_shares={k:float(np.mean([r[k]/r['new_pixels'] for r in rows if r['method']==a])) for k in ['A0_FP_distance_le1','A0_score_ge045_lt05','new_component_pixels_touching_A0_FP_8','new_component_pixels_touching_A0_prediction_8']})
+    W(O/'A0_attachment_supplement.json',dict(status='EXPLORATORY_DESCRIPTIVE_NOT_NEW_EVALUATION',
+        rationale='Distinguish widening/continuation of A0 label-relative FP from entirely new isolated responses; no medical or loss-causal claim.',
+        distance='Native Euclidean distance to A0 FP; <=1 uses existing tolerance value only descriptively.',
+        adjacency='8-neighbor component touch, not vessel connectivity restoration.',
+        score_band='0.45<=A0_probability<0.5 inherited Plan B descriptive band, NOT a new prediction threshold.',results=extra))
+    for p,h in J(O/'input_manifest.json')['files'].items():assert sha(p)==h
+    figs=J(O/'figures_manifest.json');assert sum(r['kind']=='overview' for r in figs)==28
+    for r in figs:
+        with Image.open(O/r['path']) as im:im.verify()
+    assert 'torch' not in sys.modules
+    W(O/'independent_validation.json',dict(status='PASSED',component_CSV_areas_and_counts=True,region_CSV_sums=True,
+        exact_distance_histogram_sums=True,all28_saved_masks_rebuilt_from_original_probabilities=True,
+        original_bound_source_hashes_unchanged=True,PNG_decode=True,overviews=28,figure_count=len(figs),
+        new_model_inference=0,training_updates=0,GPU_calls=0,elapsed_seconds=time.monotonic()-start,
+        implementation_sha256=sha(__file__),note='execution.log is append-only; its early hash in validation.json is non-normative; final artifact inventory supersedes that transient entry.'))
+    print(json.dumps(extra,ensure_ascii=False,indent=2))
+if __name__=='__main__':main()

@@ -1,0 +1,120 @@
+"""Posthoc existing-endpoint near GT-path analysis; CPU-only, not a new official metric."""
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1')
+import sys,csv,json,hashlib,time
+from pathlib import Path
+import numpy as np
+from scipy.ndimage import binary_dilation
+R=Path('${RETINA_PROJECT_ROOT}');C=R/'code/retinal-vessel-study';sys.path.insert(0,str(C))
+from retinal_m0.maples_branch_science_reference import valid_runs
+O=Path(__file__).resolve().parent;P='near_path_reanalysis_20261103';started=time.monotonic()
+PLAN=O/(P+'_plan.json')
+assert hashlib.sha256(PLAN.read_bytes()).hexdigest()=='58a32122e32303f4881f46c6ac73f7cc226c3e2f86e5c945105f04e8302e6b42'
+previous=json.loads((O/'metric_review_20261103_sources.json').read_text())
+binds={}
+def bind(p,expected=None):
+ p=Path(p);h=hashlib.sha256(p.read_bytes()).hexdigest()
+ wanted=expected or previous.get(str(p),{}).get('sha256')
+ assert wanted is None or wanted==h,('source drift',str(p))
+ binds[str(p)]=h;return p
+def read(p):return json.loads(bind(p).read_text())
+def dump(s,x):
+ with (O/(P+s)).open('x') as f:json.dump(x,f,ensure_ascii=False,indent=2,allow_nan=False)
+def csvout(s,rows):
+ with (O/(P+s)).open('x',encoding='utf-8-sig',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+def ratio(x,n):return float(x/n) if n else None
+def mean(x):return float(np.mean(x)) if x else None
+manifest=read(R/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json')
+old=read(O/'NL_N0_COMPARISON.json')
+BASE=R/'experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026'
+CROSS=np.array([[0,1,0],[1,1,1],[0,1,0]],bool)
+records=[];paths=[];denoms=[];original_checks=[];maxerror=0
+for i,rec in enumerate(manifest['images']):
+ name=rec['filename'];print('IMAGE',i+1,28,name,flush=True)
+ with np.load(bind(rec['reference_npz'],rec['reference_npz_sha256']),allow_pickle=False) as z:a={k:z[k] for k in z.files}
+ gt=a['GT'].astype(bool);fov=a['FOV'].astype(bool);om=a['Omega'].astype(bool);near=a['near'].astype(bool)&om
+ chosen=a['candidate_B2'].astype(bool);coords=a['coords'];offs=a['offsets']
+ targetpaths=[];union=np.zeros(gt.shape,bool)
+ for bid,(start,end) in enumerate(zip(offs[:-1],offs[1:])):
+  if not chosen[bid]:continue
+  c=coords[start:end];cn=np.unique(c[near[c[:,0],c[:,1]]],axis=0);co=np.unique(c[om[c[:,0],c[:,1]]],axis=0)
+  if not len(cn):continue
+  union[cn[:,0],cn[:,1]]=True
+  runs=valid_runs(c,near)
+  targetpaths.append((bid,c,cn,co,runs))
+ du=int(union.sum());occ=sum(len(x[2]) for x in targetpaths)
+ denoms.append(dict(filename=name,shape='x'.join(map(str,gt.shape)),valid_paths=len(targetpaths),path_position_occurrences=occ,unique_positions=du,
+  shared_anchor_extra_occurrences=occ-du,paths_with_1_2_positions=sum(len(x[2])<=2 for x in targetpaths),
+  image_has_only_1_2_positions=0<du<=2,original_S3_positions=int((a['thin'].astype(bool)&near).sum()),NA=not targetpaths))
+ for seed in [2027,2028]:
+  for method in ['N0','NL']:
+   probfile=(BASE/'runs'/f'seed_{seed}'/'dev_predictions' if method=='N0' else O.parent/'runs'/f'seed_{seed}'/'dev_predictions')/(name+'.npy')
+   prob=np.load(bind(probfile),mmap_mode='r');assert prob.shape==gt.shape and prob.dtype==np.float32 and np.isfinite(prob).all()
+   assert prob.min()>=0 and prob.max()<=1
+   pred=(prob>=.5)&fov;regional=pred&om;hit=binary_dilation(regional,structure=CROSS)
+   tp=int((pred&gt).sum());fp=int((pred&~gt).sum());fn=int((~pred&gt&fov).sum())
+   s3=a['thin'].astype(bool)&near;s3den=int(s3.sum());s3hit=int((s3&hit).sum())
+   basevals=dict(dice=ratio(2*tp,2*tp+fp+fn),precision=ratio(tp,tp+fp),recall=ratio(tp,tp+fn),fp_density=ratio(fp,int(fov.sum())),near_thin_recall_d1=ratio(s3hit,s3den))
+   for k,val in basevals.items():
+    ov=old['per_image'][str(seed)][name][method][k]
+    if val is None:assert ov is None
+    else:
+     err=abs(val-ov);maxerror=max(maxerror,err);assert err<1e-12,(name,seed,method,k)
+   original_checks.append(dict(filename=name,seed=seed,method=method,passed=True))
+   pr=[]
+   for bid,c,cn,co,runs in targetpaths:
+    h=hit[cn[:,0],cn[:,1]];d0=regional[cn[:,0],cn[:,1]];edges=edges_hit=0.
+    for run in runs:
+     if len(run)<2:continue
+     dist=np.linalg.norm(np.diff(run.astype(float),axis=0),axis=1);hr=hit[run[:,0],run[:,1]]
+     edges+=float(dist.sum());edges_hit+=float((dist*(hr[:-1]&hr[1:])).sum())
+    row=dict(filename=name,seed=seed,method=method,branch_id=int(bid),near_points=len(cn),near_hits_d1=int(h.sum()),near_hits_d0=int(d0.sum()),
+      near_d1=float(h.mean()),near_d0=float(d0.mean()),whole_near_missed=not bool(h.any()),
+      full_Omega_points=len(co),full_Omega_hits_d1=int(hit[co[:,0],co[:,1]].sum()),
+      full_path_d1=float(hit[co[:,0],co[:,1]].mean()),edge_length=edges,edge_hit_length=edges_hit,edge_coverage=ratio(edges_hit,edges),
+      valid_near_runs=len(runs),native_path_points=len(c))
+    paths.append(row);pr.append(row)
+   nearfp=int((pred&~gt&near).sum());area=int(near.sum());bg=int((near&~gt).sum())
+   r=dict(filename=name,seed=seed,method=method,
+      near_path_d1=mean([p['near_d1'] for p in pr]),near_path_d0=mean([p['near_d0'] for p in pr]),
+      near_whole_missed_fraction=mean([float(p['whole_near_missed']) for p in pr]),
+      same_paths_full_Omega_d1=mean([p['full_path_d1'] for p in pr]),
+      near_edge_coverage=mean([p['edge_coverage'] for p in pr if p['edge_coverage'] is not None]),
+      near_unique_d1=ratio(int((union&hit).sum()),du),near_unique_hits=int((union&hit).sum()),near_unique_denominator=du,
+      n_paths=len(pr),local_fp_area=ratio(nearfp,area),local_fp_background=ratio(nearfp,bg),local_fp_pixels=nearfp,near_area=area,near_background=bg,**basevals)
+   records.append(r)
+   assert (area==old['per_image'][str(seed)][name]['local_FP']['area'])
+   assert nearfp==old['per_image'][str(seed)][name]['local_FP'][method]
+   del prob
+assert len(records)==112 and len(paths)==174*4
+assert sum(x['valid_paths'] for x in denoms)==174
+csvout('_denominators.csv',denoms);csvout('_per_path.csv',paths);csvout('_per_image.csv',records);csvout('_original_checks.csv',original_checks)
+lookup={(r['seed'],r['method'],r['filename']):r for r in records}
+metricnames=['near_path_d1','near_path_d0','near_whole_missed_fraction','same_paths_full_Omega_d1','near_edge_coverage','near_unique_d1','dice','precision','recall','fp_density','near_thin_recall_d1','local_fp_area','local_fp_background']
+names=[r['filename'] for r in manifest['images']]
+effects=[];loo=[];changes=[]
+for k in metricnames:
+ ids=[n for n in names if lookup[2027,'N0',n][k] is not None]
+ assert all((lookup[s,m,n][k] is not None)==(n in ids) for s in [2027,2028] for m in ['N0','NL'] for n in names)
+ for seeds in [[2027],[2028],[2027,2028]]:
+  sl=str(seeds[0]) if len(seeds)==1 else 'within_image_seed_average'
+  bv=[mean([lookup[s,'N0',n][k] for s in seeds]) for n in ids];mv=[mean([lookup[s,'NL',n][k] for s in seeds]) for n in ids]
+  dv=np.array(mv)-bv;ix=np.random.default_rng(20261016).integers(0,len(ids),size=(1000,len(ids)));ci=np.quantile(dv[ix].mean(axis=1),[.025,.975])
+  ls=[float(np.delete(dv,i).mean()) for i in range(len(ids))]
+  effects.append(dict(metric=k,seed=sl,n_images=len(ids),N0=mean(bv),NL=mean(mv),delta=float(dv.mean()),CI_low=float(ci[0]),CI_high=float(ci[1]),
+   improved_numeric=sum(dv>0).item(),declined_numeric=sum(dv<0).item(),unchanged=sum(dv==0).item(),loo_min=min(ls),loo_max=max(ls)))
+  if k=='near_path_d1':
+   for n,v,w,b,m in zip(ids,dv,ls,bv,mv):
+    changes.append(dict(filename=n,seed=sl,N0=b,NL=m,delta=float(v),n_paths=lookup[seeds[0],'N0',n]['n_paths'],unique_points=lookup[seeds[0],'N0',n]['near_unique_denominator']))
+    loo.append(dict(seed=sl,omitted_image=n,remaining_n=len(ids)-1,delta=w,diagnostic_only=True))
+csvout('_effects.csv',effects);csvout('_primary_changes.csv',changes);csvout('_leave_one_out.csv',loo)
+summary=dict(status='COMPLETE_POSTHOC_CPU',plan_sha256=hashlib.sha256(PLAN.read_bytes()).hexdigest(),
+ target_images=sum(not x['NA'] for x in denoms),NA_images=sum(x['NA'] for x in denoms),
+ candidate_paths=sum(x['valid_paths'] for x in denoms),unique_positions=sum(x['unique_positions'] for x in denoms),position_occurrences=sum(x['path_position_occurrences'] for x in denoms),
+ images_with_1_2_positions=sum(x['image_has_only_1_2_positions'] for x in denoms),paths_with_1_2_positions=sum(x['paths_with_1_2_positions'] for x in denoms),
+ effects=effects,original_reproduction_image_model_rows=len(original_checks),original_reproduction_max_error=maxerror,elapsed_seconds=time.monotonic()-started,
+ limitations=['Posthoc on repeatedly used Dev28, not independent validation','Candidate GT paths not medical truth; short/closed paths excluded by inherited definition','Within-near paths may still contain1-2pixels; all retained','Native d1 tolerance unchanged and not physically scale invariant','Edge coverage and skeleton recall do not prove true connectivity','NL trained on old S3 objectives; new diagnostic is not a redesigned training experiment','No newly declared method success and no replacement of historical metrics'])
+dump('_summary.json',summary);bind(PLAN);bind(__file__);dump('_sources.json',binds)
+print(json.dumps({k:v for k,v in summary.items() if k!='effects'},ensure_ascii=False),flush=True)
+print('PRIMARY',[x for x in effects if x['metric']=='near_path_d1'],flush=True)

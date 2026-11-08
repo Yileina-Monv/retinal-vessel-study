@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "purpose": "Mean normalization invariant on synthetic logits, not a cap search",
+  "cases": [
+    {
+      "groups": 1,
+      "loss": 0.3465735912322998,
+      "expected": 0.3465735912322998,
+      "positive_fg_gradient_L1": 0.125,
+      "negative_fg_gradient_L1": 0.125,
+      "CPU_forward_backward_seconds": 0.009942805860191584
+    },
+    {
+      "groups": 16,
+      "loss": 0.3465735912322998,
+      "expected": 0.3465735912322998,
+      "positive_fg_gradient_L1": 0.125,
+      "negative_fg_gradient_L1": 0.125,
+      "CPU_forward_backward_seconds": 0.006383719155564904
+    },
+    {
+      "groups": 102,
+      "loss": 0.3465735614299774,
+      "expected": 0.3465735912322998,
+      "positive_fg_gradient_L1": 0.125,
+      "negative_fg_gradient_L1": 0.1249999925494194,
+      "CPU_forward_backward_seconds": 0.04011584911495447
+    }
+  ],
+  "real_network_gradients": false,
+  "GPU_used": false,
+  "preliminary_assertion_failure": "First ad-hoc assertion incorrectly expected .25 instead of .125 after full batch2 divisor; no implementation/protocol change. Correct analytic .5(class)*.5(sigmoid)/2(batch)=.125."
+}

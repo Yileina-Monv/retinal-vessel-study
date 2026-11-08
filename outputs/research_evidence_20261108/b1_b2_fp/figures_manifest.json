@@ -1,0 +1,1137 @@
+[
+  {
+    "path": "atlas/20051116_44615_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051116_44615_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051116_44615_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44615_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1536,
+      1024,
+      2048,
+      1536
+    ]
+  },
+  {
+    "path": "atlas/20051116_44615_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44615_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20051116_44615_0400_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44615_0400_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      1536,
+      512,
+      2048,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20051116_44785_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051116_44785_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051116_44785_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44785_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1536,
+      1024,
+      2048,
+      1536
+    ]
+  },
+  {
+    "path": "atlas/20051116_44785_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44785_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      1024,
+      1536,
+      1536
+    ]
+  },
+  {
+    "path": "atlas/20051117_37078_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051117_37078_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051117_37078_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051117_37078_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051117_37078_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051117_37078_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051117_37130_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051117_37130_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051117_37130_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051117_37130_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      0,
+      0,
+      512,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051117_37130_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051117_37130_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051202_51655_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051202_51655_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051202_51655_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051202_51655_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1536,
+      512,
+      2048,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20051202_51655_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051202_51655_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      0,
+      1536,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051202_54530_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051202_54530_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051202_54530_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051202_54530_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051202_54530_0400_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051202_54530_0400_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051205_31934_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051205_31934_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051205_31934_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051205_31934_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      0,
+      1536,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051205_31934_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051205_31934_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20051205_31934_0400_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051205_31934_0400_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      1536,
+      512,
+      2048,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20051205_35224_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051205_35224_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051205_35224_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051205_35224_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051205_35276_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051205_35276_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051205_35276_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051205_35276_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      0,
+      512,
+      512,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051205_35276_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051205_35276_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051205_35305_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051205_35305_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051205_35305_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051205_35305_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20051205_35305_0400_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20051205_35305_0400_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20051208_41707_0400_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20051208_41707_0400_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20051208_41707_0400_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051208_41707_0400_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      1024,
+      1536,
+      1536
+    ]
+  },
+  {
+    "path": "atlas/20051208_41707_0400_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051208_41707_0400_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060407_41937_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060407_41937_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060407_41937_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060407_41937_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060407_41937_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060407_41937_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060411_57853_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060411_57853_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060411_57853_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060411_57853_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060411_61214_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060411_61214_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060411_61214_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060411_61214_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060411_61214_0200_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060411_61214_0200_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060411_61478_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060411_61478_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060411_61478_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060411_61478_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      0,
+      0,
+      512,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060411_61478_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060411_61478_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060412_51656_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060412_51656_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060412_51656_0200_PP_largest_new_component.png",
+    "size": [
+      1664,
+      1032
+    ],
+    "filename": "20060412_51656_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      512,
+      1440,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060412_51656_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060412_51656_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060412_58287_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060412_58287_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060412_58287_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060412_58287_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060412_58287_0200_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060412_58287_0200_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060412_58889_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060412_58889_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060412_58889_0200_PP_largest_new_component.png",
+    "size": [
+      1664,
+      1160
+    ],
+    "filename": "20060412_58889_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      0,
+      1440,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060412_58889_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060412_58889_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060412_60913_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060412_60913_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060412_60913_0200_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060412_60913_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060412_60913_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1032
+    ],
+    "filename": "20060412_60913_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060412_61299_0200_PP_overview.png",
+    "size": [
+      1640,
+      682
+    ],
+    "filename": "20060412_61299_0200_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060412_61299_0200_PP_largest_new_component.png",
+    "size": [
+      1664,
+      1032
+    ],
+    "filename": "20060412_61299_0200_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      512,
+      1440,
+      960
+    ]
+  },
+  {
+    "path": "atlas/20060412_61299_0200_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060412_61299_0200_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060522_45248_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060522_45248_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060522_45248_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060522_45248_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060522_45583_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060522_45583_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060522_45583_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060522_45583_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      0,
+      1024,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060522_45583_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060522_45583_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060523_43038_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060523_43038_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060523_43038_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060523_43038_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1536,
+      512,
+      2048,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060523_43038_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060523_43038_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060523_43038_0100_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060523_43038_0100_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060523_49859_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060523_49859_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060523_49859_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1064
+    ],
+    "filename": "20060523_49859_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      1024,
+      1536,
+      1488
+    ]
+  },
+  {
+    "path": "atlas/20060523_49859_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060523_49859_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      0,
+      1536,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060523_49859_0100_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060523_49859_0100_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060530_36895_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060530_36895_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060530_36895_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1064
+    ],
+    "filename": "20060530_36895_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      1024,
+      1536,
+      1488
+    ]
+  },
+  {
+    "path": "atlas/20060530_36895_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_36895_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      512,
+      512,
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060530_53062_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060530_53062_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060530_53062_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_53062_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1024,
+      0,
+      1536,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060530_54390_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060530_54390_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060530_54390_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_54390_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      1536,
+      512,
+      2048,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060530_54390_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_54390_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060530_55390_0100_PP_overview.png",
+    "size": [
+      1640,
+      680
+    ],
+    "filename": "20060530_55390_0100_PP",
+    "kind": "overview",
+    "bbox": null
+  },
+  {
+    "path": "atlas/20060530_55390_0100_PP_largest_new_component.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_55390_0100_PP",
+    "kind": "largest_new_component",
+    "bbox": [
+      512,
+      512,
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "atlas/20060530_55390_0100_PP_far_gt_new_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_55390_0100_PP",
+    "kind": "far_gt_new_tile",
+    "bbox": [
+      1024,
+      0,
+      1536,
+      512
+    ]
+  },
+  {
+    "path": "atlas/20060530_55390_0100_PP_B1_B2_disagreement_tile.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20060530_55390_0100_PP",
+    "kind": "B1_B2_disagreement_tile",
+    "bbox": [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  }
+]

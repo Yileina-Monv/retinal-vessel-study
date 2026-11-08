@@ -1,0 +1,758 @@
+{
+  "review_date": "2026-10-19",
+  "reviewer": "Sol",
+  "review_status": "scientific_review_complete",
+  "project_root": "${RETINA_PROJECT_ROOT}",
+  "experiment": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018",
+  "protocol_sha256": "ca415da2f467698748a429c04b5d064369274a9efca5b4c8be293f24b22cdf63",
+  "verification": {
+    "protected_sources_rehashed_unchanged": 237,
+    "current_bound_code_files_rehashed": 15,
+    "paired_training_rows_independently_matched": 2000,
+    "paired_new_draws": 8000,
+    "global_steps": [
+      2001,
+      4000
+    ],
+    "terminal_optimizer_step": 4000,
+    "terminal_next_draw": 16000,
+    "learning_rate": 0.0001,
+    "scheduler": null,
+    "AMP_retries": 0,
+    "CPU_endpoint_model_optimizer_scaler_RNG_same_as_last": true,
+    "T0_step2200_and_pre_revalidation_backup_states_equal": true,
+    "endpoint_config_differences_only": [
+      "execution_binding_id",
+      "kind",
+      "max_steps",
+      "phase",
+      "protocol_sha256"
+    ],
+    "native_prediction_conditions_recomputed": 4,
+    "native_predictions_recomputed": 112,
+    "fixed_and_selected_same_FP_metric_count_groups_independently_recomputed": 1568,
+    "independent_method": "NumPy TP/FP/FN and masked ratios; d1 via cross-footprint maximum filter equivalent to Euclidean tolerance <=1 within Omega; matched against frozen per-image counts. No model inference.",
+    "main_statistical_contrasts_recomputed": 28,
+    "bootstrap": "1000 paired-image resamples PCG64(20261016), fixed dev_manifest effective-ID order, linear quantiles"
+  },
+  "absolute_metrics": {
+    "T0_2000": {
+      "near_thin_recall_d1": 0.5131257631257632,
+      "dice": 0.8350632574642208,
+      "precision": 0.8527189747699838,
+      "fp_density": 0.021137946712482928,
+      "far_recall": 0.8235699677482383,
+      "recall": 0.8217739809619111,
+      "near_pixel_recall": 0.6270361805079231
+    },
+    "T0_4000": {
+      "near_thin_recall_d1": 0.5944014832903721,
+      "dice": 0.8413840095417415,
+      "precision": 0.8365332242768233,
+      "fp_density": 0.024640685480259848,
+      "far_recall": 0.8519721503868503,
+      "recall": 0.8500851889469959,
+      "near_pixel_recall": 0.6455126891868745
+    },
+    "TW_2000": {
+      "near_thin_recall_d1": 0.4992368742368743,
+      "dice": 0.835140355763371,
+      "precision": 0.8526769428684186,
+      "fp_density": 0.021128514827548094,
+      "far_recall": 0.8237563271613721,
+      "recall": 0.8218536076883325,
+      "near_pixel_recall": 0.625420983359299
+    },
+    "TW_4000": {
+      "near_thin_recall_d1": 0.5583932528376973,
+      "dice": 0.8415251266407717,
+      "precision": 0.8386843403567479,
+      "fp_density": 0.02420020448067911,
+      "far_recall": 0.8500382551668737,
+      "recall": 0.8480855803763417,
+      "near_pixel_recall": 0.6404280452746768
+    }
+  },
+  "recomputed_contrasts": [
+    {
+      "metric": "near_thin_recall_d1",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": -0.0360082304526749,
+      "ci95": [
+        -0.09156378600823045,
+        0.0
+      ],
+      "n": 9
+    },
+    {
+      "metric": "near_thin_recall_d1",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.08127572016460904,
+      "ci95": [
+        0.0,
+        0.1882716049382716
+      ],
+      "n": 9
+    },
+    {
+      "metric": "near_thin_recall_d1",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.05915637860082305,
+      "ci95": [
+        0.0,
+        0.14969135802469136
+      ],
+      "n": 9
+    },
+    {
+      "metric": "near_thin_recall_d1",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": -0.022119341563786008,
+      "ci95": [
+        -0.08590534979423868,
+        0.03343621399176955
+      ],
+      "n": 9
+    },
+    {
+      "metric": "dice",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": 0.00014111709903013342,
+      "ci95": [
+        -0.0001841397968813547,
+        0.0005540201742560597
+      ],
+      "n": 28
+    },
+    {
+      "metric": "dice",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.006320752077520578,
+      "ci95": [
+        0.0038690965818237747,
+        0.008799501220674725
+      ],
+      "n": 28
+    },
+    {
+      "metric": "dice",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.006384770877400747,
+      "ci95": [
+        0.004167016614284794,
+        0.008786975982756198
+      ],
+      "n": 28
+    },
+    {
+      "metric": "dice",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": 6.401879988016905e-05,
+      "ci95": [
+        -0.00020340723948621654,
+        0.00036395317931824323
+      ],
+      "n": 28
+    },
+    {
+      "metric": "precision",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": 0.0021511160799245477,
+      "ci95": [
+        0.0014633677168443345,
+        0.002927830608234347
+      ],
+      "n": 28
+    },
+    {
+      "metric": "precision",
+      "contrast": "T04000_minus_T02000",
+      "estimate": -0.016185750493160383,
+      "ci95": [
+        -0.020060476528874632,
+        -0.012692841101245298
+      ],
+      "n": 28
+    },
+    {
+      "metric": "precision",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": -0.013992602511670655,
+      "ci95": [
+        -0.017364975172037077,
+        -0.010791671622359444
+      ],
+      "n": 28
+    },
+    {
+      "metric": "precision",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": 0.0021931479814897292,
+      "ci95": [
+        0.0015435676972197839,
+        0.002910735220389284
+      ],
+      "n": 28
+    },
+    {
+      "metric": "fp_density",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": -0.0004404809995807283,
+      "ci95": [
+        -0.0006173772299880828,
+        -0.0003052649708304362
+      ],
+      "n": 28
+    },
+    {
+      "metric": "fp_density",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.003502738767776913,
+      "ci95": [
+        0.00292658215980747,
+        0.0040813387382808925
+      ],
+      "n": 28
+    },
+    {
+      "metric": "fp_density",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.003071689653131017,
+      "ci95": [
+        0.002535538240544922,
+        0.0036023019940892237
+      ],
+      "n": 28
+    },
+    {
+      "metric": "fp_density",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": -0.00043104911464589567,
+      "ci95": [
+        -0.0005461095354336239,
+        -0.000319797958957081
+      ],
+      "n": 28
+    },
+    {
+      "metric": "far_recall",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": -0.00193389521997652,
+      "ci95": [
+        -0.0024815632707719196,
+        -0.001412908640232589
+      ],
+      "n": 28
+    },
+    {
+      "metric": "far_recall",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.028402182638611873,
+      "ci95": [
+        0.02429257379290071,
+        0.032518023886248006
+      ],
+      "n": 28
+    },
+    {
+      "metric": "far_recall",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.026281928005501564,
+      "ci95": [
+        0.02227753021878774,
+        0.030188307493844036
+      ],
+      "n": 28
+    },
+    {
+      "metric": "far_recall",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": -0.002120254633110306,
+      "ci95": [
+        -0.0026682825128377112,
+        -0.0016083974735314195
+      ],
+      "n": 28
+    },
+    {
+      "metric": "recall",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": -0.001999608570654141,
+      "ci95": [
+        -0.0025674888014219875,
+        -0.001465180718062142
+      ],
+      "n": 28
+    },
+    {
+      "metric": "recall",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.02831120798508504,
+      "ci95": [
+        0.02420069344396253,
+        0.032366494343805056
+      ],
+      "n": 28
+    },
+    {
+      "metric": "recall",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.02623197268800951,
+      "ci95": [
+        0.02220753739796425,
+        0.030184328241729952
+      ],
+      "n": 28
+    },
+    {
+      "metric": "recall",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": -0.0020792352970755274,
+      "ci95": [
+        -0.002636104085158795,
+        -0.0015611674302142727
+      ],
+      "n": 28
+    },
+    {
+      "metric": "near_pixel_recall",
+      "contrast": "TW4000_minus_T04000",
+      "estimate": -0.005084643912197996,
+      "ci95": [
+        -0.007398945182902303,
+        -0.00302908563431235
+      ],
+      "n": 18
+    },
+    {
+      "metric": "near_pixel_recall",
+      "contrast": "T04000_minus_T02000",
+      "estimate": 0.018476508678951578,
+      "ci95": [
+        -0.00941201003995573,
+        0.0398534509515243
+      ],
+      "n": 18
+    },
+    {
+      "metric": "near_pixel_recall",
+      "contrast": "TW4000_minus_TW2000",
+      "estimate": 0.015007061915377715,
+      "ci95": [
+        -0.012515656890853486,
+        0.03640827567187113
+      ],
+      "n": 18
+    },
+    {
+      "metric": "near_pixel_recall",
+      "contrast": "interaction_4000_minus_2000",
+      "estimate": -0.0034694467635738658,
+      "ci95": [
+        -0.00589213216552344,
+        -0.0012823569794476232
+      ],
+      "n": 18
+    }
+  ],
+  "primary_per_image": [
+    {
+      "filename": "20051117_37130_0400_PP",
+      "denominator": 13,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20051205_35276_0400_PP",
+      "denominator": 8,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        8,
+        8,
+        7,
+        8
+      ],
+      "gap_2000_contribution": -0.013888888888888888,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.013888888888888888
+    },
+    {
+      "filename": "20060411_61214_0200_PP",
+      "denominator": 3,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20060411_61478_0200_PP",
+      "denominator": 27,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        9,
+        22,
+        9,
+        20
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": -0.008230452674897118,
+      "interaction_contribution": -0.008230452674897118
+    },
+    {
+      "filename": "20060412_58889_0200_PP",
+      "denominator": 6,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20060412_60913_0200_PP",
+      "denominator": 1,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20060522_45248_0100_PP",
+      "denominator": 1,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20060522_45583_0100_PP",
+      "denominator": 14,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": 0.0,
+      "interaction_contribution": 0.0
+    },
+    {
+      "filename": "20060530_54390_0100_PP",
+      "denominator": 4,
+      "hits_T02000_T04000_TW2000_TW4000": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "gap_2000_contribution": 0.0,
+      "gap_4000_contribution": -0.027777777777777776,
+      "interaction_contribution": -0.027777777777777776
+    }
+  ],
+  "primary_diagnosis": {
+    "T0_2000_to_4000_hits": [
+      36,
+      50
+    ],
+    "TW_2000_to_4000_hits": [
+      35,
+      47
+    ],
+    "T0_improvement_images": 2,
+    "TW_improvement_images": 2,
+    "each_method_unchanged_primary_images": 7,
+    "TW4000_vs_T04000_images": {
+      "better": 0,
+      "worse": 2,
+      "same": 7
+    },
+    "share_of_gap_from_four_position_image": 0.7714285714285714,
+    "threshold_adjacent_missed_positions": {
+      "20060411_61478_0200_PP": {
+        "T0_local_max_p": [
+          0.5077,
+          0.50289
+        ],
+        "TW_local_max_p": [
+          0.48896,
+          0.48757
+        ]
+      },
+      "20060530_54390_0100_PP": {
+        "T0_local_max_p": [
+          0.53739
+        ],
+        "TW_local_max_p": [
+          0.49839
+        ]
+      }
+    },
+    "causal_limit": "Explains arithmetic and threshold crossing of three matched target positions, not a causal proof of anatomical disconnection or general TW inferiority. No threshold changes or sample exclusion."
+  },
+  "same_FP_primary": {
+    "T0_2000": 0.45468163523719085,
+    "T0_4000": 0.4029247501469724,
+    "TW_2000": 0.4461346266901822,
+    "TW_4000": 0.4029247501469724
+  },
+  "late_optimization": {
+    "windows": [
+      [
+        3121,
+        3560
+      ],
+      [
+        3561,
+        4000
+      ]
+    ],
+    "T0_loss_relative_change": -0.007000355795859892,
+    "TW_loss_relative_change": -0.006779884104448186,
+    "T0_4000_minus_3600_primary": 0.03189300411522634,
+    "TW_4000_minus_3600_primary": -0.004115226337448559,
+    "both_last200_Dice_change_negative": true,
+    "both_last400_FP_density_increased_and_precision_decreased": true,
+    "convergence_limit": "Training is not proven fully converged, and T0 may continue changing. These observations do not justify more regional-weight/budget search to seek a favorable TW result."
+  },
+  "PPT_Plan_B": {
+    "source": "${RETINA_PROJECT_ROOT}/docs/a13_t0_protocol_closeout_20261015/sources/stage2_ppt_transcript.md",
+    "source_sha256": "782fc24e2b686ecb91570b1d99aa6d11218ca24bf9ef1c1faa7d6c2b07a97d31",
+    "section": "10. risk and contingency plan",
+    "quoted_method_failure_response": "保底交付 T0 + 负结果 + 错误分析；保护指标通过才做 TR；不为正结果回头挑半径",
+    "status": "Existing contingency direction, not a new training authorization."
+  },
+  "scientific_judgment": [
+    "2000 was not a complete optimization endpoint in seed 2026: both methods improve Dice and observed primary recall by 4000, while precision drops and false positives increase.",
+    "Primary temporal gains are confined to two effective images per method; lower CI endpoint is zero. Single-seed development exploration is not independent confirmation.",
+    "The observed TW-T0 primary gap changes from -0.013888889 to -0.036008230; difference of differences -0.022119342 has CI spanning zero. Do not claim statistically established widening or a causal harmful budget interaction.",
+    "At step 4000 the two differing images explain all primary gap; three target positions straddle the fixed 0.5 threshold. Overall conservative-output tradeoff is observed, not a proven loss/gradient mechanism.",
+    "Matched-FP primary is identical at 4000 and lower than each method at 2000; supplementary threshold fitting cannot rescue the main result.",
+    "Recommend ending current regional BCE-weight and training-budget exploration and moving to PPT Plan B error analysis. This is a resource/prioritization recommendation, not proof that every weighting scheme fails or step4000 is optimal."
+  ],
+  "next_stage_recommendation": {
+    "status": "PENDING_USER_CONFIRMATION_NOT_DISPATCHED",
+    "task": "Zero-training Plan B error analysis using only existing predictions and frozen references",
+    "coverage": [
+      "All 9 primary-valid images and all 77 target positions, retaining the 19 NA images",
+      "All 28 development images for false-positive/precision/recall distributions",
+      "Original three-seed T0/TW fixed endpoints; weight/class-split exploration labeled separately; current 4000 endpoints supplementary"
+    ],
+    "analyses": [
+      "Separate threshold-adjacent misses, low-confidence vessel segments, possible spatial offsets/breaks and reference/visibility limitations by image inspection; no label editing.",
+      "Review the three images driving temporal/method differences, plus all other effective images and adverse FP cases. Do not limit explanation to favorable examples.",
+      "Assess thickness, lesion/uncertain/FOV boundaries, local visibility and false branches as descriptive strata, without redefining the frozen primary metric or tuning thresholds.",
+      "Summarize stable failures across seeds and methods to decide whether structure supervision has a concrete target."
+    ],
+    "expected_compute": "Existing probability maps and references; CPU analysis/visualization, zero new GPU training or forward inference needed for the first pass.",
+    "forbidden": [
+      "New training/inference, additional seeds/budget or TR",
+      "Official Test access",
+      "Retrospective changes to masks, labels, split, thresholds or formal conclusions"
+    ]
+  },
+  "structure_supervision_review": {
+    "status": "research_motivation_and_risks_only_no_loss_selected",
+    "clDice": {
+      "basis": "Centerline precision and sensitivity emphasize structural overlap/connectivity.",
+      "risks": [
+        "Our near-thin d1 recall is local tolerance-based coverage, not the clDice topology objective.",
+        "Soft skeletonization iterations and masks/crop boundaries require explicit design; runtime/memory overhead needs measurement.",
+        "Annotation continuity/2D crossings and potential false bridges must be inspected before assuming connectivity is the dominant failure."
+      ]
+    },
+    "Skeleton_Recall_Loss": {
+      "basis": "Ground-truth tubed skeleton plus soft recall avoids prediction-side iterative skeletonization.",
+      "risks": [
+        "Extra recall term does not itself constrain background false positives; BCE/Dice and original protection remain important.",
+        "Tubing/dilation, uncertain/FOV handling and sparse small-denominator targets may change what is supervised.",
+        "A 2025 preprint reports no consistent advantage over baselines; not evidence of universal failure or a demonstrated benefit here."
+      ]
+    },
+    "references": [
+      {
+        "title": "clDice (CVPR 2021)",
+        "url": "https://arxiv.org/abs/2003.07311"
+      },
+      {
+        "title": "Skeleton Recall Loss (ECCV 2024)",
+        "url": "https://arxiv.org/abs/2404.03010"
+      },
+      {
+        "title": "Does the Skeleton-Recall Loss Really Work? (2025 preprint)",
+        "url": "https://arxiv.org/abs/2508.11374"
+      }
+    ]
+  },
+  "input_files_sha256": {
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/metrics.json": "69db8fb864a8211c5c3e13dac451ab66d2c37823f29be3b9c9127660ea4a24ba",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": "a899cccdfdbea0d7b87e042cfcb28b5f7c386d96ecc9a0d8fa15450eb54a3fca",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": "9e1fb40d968cfa3792bd460f105f731c42930b296379e385fc4f7433fb7127c8",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": "2ce64737f7e05f41ff9bfc85f734db1194a3ea7a2e77d52e22083904918cb6ab",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": "8fcec1d6028d5b43362950e717b98c9420e2bea998f17bce446c368c7169a872",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": "c2c2efd8957ab1265718ea80babe739578266d2b06bb4510aa36208e4b491390",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": "ffa6305d091cf7c96ea8624fe48c015d543d9c3f65ba650879eb22368d5082f5",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "b3579f578c7fafddd68280d8a4b06bb50a7a6e82ea08b46b90b5046d7158a1a7",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": "9530565cf037a79a32d2f8e6afdb5cd40601b0076e431d6fe4fc7ec057af625e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": "e582034a9c9391109f4d4cc1af96c2f5f51abfb1da520f26a9ae55dcc4cd534a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": "a2cdafd47da5839b1ecb2fc708c71a5f99748c6551232dba81024cb5bf41f195",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": "a101d65858d1723d09f9b9a189e04d5bcc2c30ea9484f08c70c3b7f41079b0f4",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": "e6623f33a2227ee19876e1cc3a7bd003d94e21b99ecfe187e2955a2f694ca59d",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": "9aa4213777fbf2337ef8e882876166faf2f4723432761a01bc4f9f1d76aed6e0",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "ec760ef6a0a39a7a3a209384739dd05a4035be3e98d8c0d2b375918ba3b211df",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": "64bae626db94e0c87f9c717f5c5770e5ecb0e00b0567634296aaf6f8406664e3",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": "3c806b96088de74500510cd391370666f5cc8204634ec16f5ddb2e98b37a8e79",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": "bba1c2d426fc4305e26179ae849e8f8b9399f746b26fe39fa816eae8d66595fd",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": "29c6ab8a374419ecce10c046f771559c072b8a0b7bc60cc03d612b656fd7f366",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "238a4d0a7274a2aadc841b7deabb04f74bab367006f29a6477d6ddd32849baa1",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": "acb6be8d3a083c4f2e4cbe429e0450f21e511a209a8daf92a38f5c776ef5bfdf",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "6ee919869f71abcd4eefa0509d984f446bc38b60cbf3889c63fe16afd70cef98",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "0bfea6ad976fca7235ea16aff285c37286ae28663ac9324ccdca11d74a612fb1",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": "be170b59408644fb90811c2ea6737929b00d8185ddc0e71ad18740755cb7ab3e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": "374504dae681edef279fa2f46fce52968c4a7e0d2ab6d7a83d3e3a43d1b3e208",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": "e37f2847038dbfd0fb219c068ee7938fbabbcb7cf92ba3517a23f03b4bec4f64",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": "c1542b6437926a3853afd1bf4d8cf6d67713386e97b0186012f1803d231198be",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": "454a6e80aa22ef68df90654b6c0ac031d1608b5a6d0cfcfeb3e07ef10bcebfb8",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": "24d50ff3aa971f0977e8e76c3adfbdeac93d74ad6661e2af0406ad95f7b637cb",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/metrics.json": "becacc8e55ec0f2cf71242125c6e2c3f8fa6c900745219d531f9f3e66aeff70b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051116_44615_0400_PP.npy": "0e874f28466fad0d4234fb7803e7f905cfe8cc6f01d6289e8ec9ba03f36f5ae2",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051116_44785_0400_PP.npy": "81f62f5e9aa0ba287012c805ead750b8fecf04a124cd00d6923a267c1c3a5814",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051117_37078_0400_PP.npy": "65d7e810d727d0e4a50de8a11f61aae20ec2241ac64a84740db1ad9f9d7af0b5",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051117_37130_0400_PP.npy": "193fadc68a5a51f227a55e1678ab6c8343db1a56d40197867acb515931db104f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051202_51655_0400_PP.npy": "1f9f1377b891a3d1703e90dad8f051def3e7bb4eb0b79a97209430a47aeb29de",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051202_54530_0400_PP.npy": "b661847197d8d5906eb99f124e9b2b7012fa88c11c86c0c6f6fb931d13200386",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051205_31934_0400_PP.npy": "00690b98cb59a6ed67d987eace4738a3f06aee6034c98833e90c2627f73ad18c",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051205_35224_0400_PP.npy": "9364f33e1a02e14f90ebabf8164c2739921cf6301a20e8677be7b5fde9c9167d",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051205_35276_0400_PP.npy": "fc47121f7d5a355e91fd902c6e95cf17689fa06456945bd5479efd3a2d1a8275",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051205_35305_0400_PP.npy": "f83a64818623b1ae17e4937259254319d368996eb209995b95e9fcf5ba989118",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20051208_41707_0400_PP.npy": "f04e79b059ce1d08de0b1ebef54fc118417c7aa5bee34b00847895387e633e4f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060407_41937_0200_PP.npy": "6bad44e387f0721e881226d8834724732923e4d973bccdd9911fadd526e1e046",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060411_57853_0200_PP.npy": "ae49b3355f5cc20a5073f84413fd32809a1ae039a7ed34c78b21e31984135249",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060411_61214_0200_PP.npy": "b080e785a291c68b721d12363c3edba15a3eb1c7331f8fa9694fb163afacdc96",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060411_61478_0200_PP.npy": "98474f5241fabe26e91e450432c807c823d699bfbd7e28582780851c7179d8ec",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060412_51656_0200_PP.npy": "43c6da63345e3fa2a7b1f64b335976059b6a9c31e725ae087da11b73135ce525",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060412_58287_0200_PP.npy": "8e7de2d95f51210f9af2fb52ca086296cf8481b295ac44ed0ffa417927e7a161",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060412_58889_0200_PP.npy": "b0f00f334b1c745701ffbc9d1cb7d7b71589da689ce6760cf7d3da1f03baf4aa",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060412_60913_0200_PP.npy": "f2209cca5bdf2e1f61f90bcf968564a4a1d994697c8ca94f24acb749ea80f509",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060412_61299_0200_PP.npy": "c45d68c4968245ea20bfa92a736d53cb5f37b0fb08019d81df4690c242aea03e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060522_45248_0100_PP.npy": "aef8b2df90dd7afd19b05ac801dfd675971d2721cfb5b3c16bfd251e3e0f53a4",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060522_45583_0100_PP.npy": "1269a217d0a0222d2d68c4865568d2f9d026acd0b1bd746a3639cb23b37b2dd5",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060523_43038_0100_PP.npy": "0aa9ea9eee8fe17faa6f252b832922a905011164fdb35ecf5136653caa38a619",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060523_49859_0100_PP.npy": "63701a69fde1c1025fc9db50a9ea32bd7b2d68c96ee21f159765e166a57c834a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060530_36895_0100_PP.npy": "32e590ba808ac4ffb7f99b1197b02c97247faf768c715b9a67817115a39ac4a5",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060530_53062_0100_PP.npy": "1de46a3b5ff791fb4c5df7ef1d323975e6656a4a5f792dbec9f4490b73512816",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060530_54390_0100_PP.npy": "5fb3ea22f47610a9584c2330a12583bf22d32064317f7f0a1386c4b743d032ab",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/probabilities/20060530_55390_0100_PP.npy": "680cce51eac7580d8c6027069b3c2df74e6661635e6533feeff6136a9523e786",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/train.jsonl": "d0fae3c06aab9ad2f8b3e4b90033dcaf62cddba2bb044e021f991e1faac94e59",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/pairing.jsonl": "c38226546063b4fa5bb48cebabf7b18e4af18987a2758d0c2218b7028bb8ca44",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/step_004000.pt": "223a07af5cfa61322b268f913456551932da09a22773cca5fe81595f75e21f19",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/last.pt": "e768612e58707995c1c58fcfab4e71a832a9800575dd4a77972dd0adea965f89",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/metrics.json": "21d3b661e38257f8b3087740f86ee85e987bcc8fec1c97e9b1c17b275d67497b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": "c91c9d48f6a40f2053f0d3d244402e55ead0c3d5a363db6747aa3d2a7b292553",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": "3d8f8d6ced97df22ee492a496659bae7d4b1e9d89580ef3ce2b6efbb9d88629a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": "6849dc37a33c74a07aa942f1ec47c5d303d76af6f6e52755d3af669d649afde5",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": "3268bf3b6b99f7681de8e00a56040bade54a2ae7e3da0dacc0948e0cdd9e51a8",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": "d878c0b2071d7bb35a3647fa5434548c1d52ae9ce90e8b80cbe485a9b954480b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": "38bfeda3973085180bbe324ff0c6df769f892a0e128d118ba912a906ad148ee0",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "2d07c96122f0d8fb844966c416dbaa31538e9fff78ea166c284c3c090789538a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": "bb5d4a8ad5401563370ea2a4bac0113354d895e99015ed70d78db492e6bae8c7",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": "f96f728310f04a32c350615cade808e24bf90f8b2ca817c9548d60fe43adb502",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": "7cc89c0d03a7fd8a1a1ba5354fb554e3b64e1a732408958b135628675fc81120",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": "6abfd56674ac588b0814e6c38ac8189318586f228fe6fcbcf801099584b64c20",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": "7236b9319c7b74811a126101ddbfcd95cc2056aa6fbec34eb7910c4de7368d9e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": "70d8882867deb68c8944a73f6920114b699d72476e579ec55d3006625057edea",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "1cca9b1a907c4b3ca5f4957b371e96fe090422d31501880494dcb2de666559d4",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": "b0a69f2fbd5d9b1d39d3e44072ce1bae548e905a2b32c4eb80e72db6ce235f0f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": "1ead8c6028e4af7f7691920391f2559aae26e7fd11d3df09221a38b92c12da7c",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": "b70039833d27697903466eb91a11f3a60ffee04933649f69ca0642e762c5d773",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": "637ee2a73101cc756d2de55ca4d4391f5b82ac25e745fbb01a108b3298bc7651",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "88e19059e969ec7418fd1a7345ec564888f3e69f1fcbc663d901d81b3e645159",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": "e073d9af06a548fe6dae150571a15ea7e68c67d00a672ae7cc44574b95178cc3",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "9050329825754a42101b71434a5f217cc327c79fd548219dec80bc751c467ae0",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "ec2132700b77f3b27457aed7e530b9d31e7d7fca08799a82c94ba7b94b5d36cf",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": "4031ba335e8e5f88ca0dc7df3f0330e090a2b8d90c4da2fc87a7b0c3f10d79a9",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": "634623ec482649166b410c83cc6c7a715423cedf40119735936e4b80fe0f9f7e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": "57a8a798d59e04fc13d9862520450ad0909d6eee17c5aa71e037303ba804b825",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": "ec48f8144d07c1b9a1d17a6b9d1ecca4945fadc6fb7777e18db0dd1333a74ae7",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": "078e4633c376dd02092e04a22ce5dc98750d273f580b2dbb822403ccd95f6d2d",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": "6b405a3c3db5c934a9f4116a4f9e31ac72071a061d48a67e118482191c56b25e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/metrics.json": "f1ca6e719fec47d0381ca0c49d820bd2d2a64038f7999531d491c0dd1ff70823",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051116_44615_0400_PP.npy": "ecdc366b237e29589d43e4b352a146bb4b773c57e9d3efd882a7d89e9dbb395f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051116_44785_0400_PP.npy": "646e1d57bdc562d4ca8fc1f196481bf359058d803032ee83e3f581fd38e964ba",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051117_37078_0400_PP.npy": "1ade6f786f17a3f968f4fdfaa55bbc4d75af0c3372d78ff759da5353314f8883",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051117_37130_0400_PP.npy": "9ebf9453f765249b85f1c0217d3514052e1a145aea572aee40b477d8cd5f9032",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051202_51655_0400_PP.npy": "f1c1e44d075092cd5cfc70d50fc4b8b6cdd5b7902d86c949f0bccf95f5b8ebce",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051202_54530_0400_PP.npy": "aad91c98e3bd3e732bfa67c17ae1029ac20ccb9e7a9fc97c3544d9da5b2b907f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051205_31934_0400_PP.npy": "9303a5d3f6cbf64edb49530c4ce2eec96f41b8ce61a76f2b6f95ab54344f1844",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051205_35224_0400_PP.npy": "8f587dd7d1acaddf05ccd507fec7ac4015553293dd7ea99ba7c62903b2fef060",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051205_35276_0400_PP.npy": "1877b331cd8c29e9172ed3d2c7dd99b3168fd5a7b7f1b369c4ac9581ae4b141b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051205_35305_0400_PP.npy": "cc2555f9c8794af20af9550a2b71a03ef1a163a19a2db97605050395d11e0930",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20051208_41707_0400_PP.npy": "6e76b0fbbf7e127b7596344f644c7a1d47ad76872f31ea3262e4d8bffc8ac70b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060407_41937_0200_PP.npy": "3dd3ccd1d9a1bdc2ccac6b2acea2759a3ea86fb13ec66b3fa2bb3ea33e373598",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060411_57853_0200_PP.npy": "960d7e0cf1e82357907a8dccf405db958a9775114104545a1e0593cabef3ac8c",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060411_61214_0200_PP.npy": "5198425bcdafdf08e768139a945874d789858e3d871df8268a6351f588e46e10",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060411_61478_0200_PP.npy": "40e2d93ff571deeb9b9c675210bb611e119de0019a65dccbcad953dcb08ebec8",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060412_51656_0200_PP.npy": "4a6b6d0f0cf3fc5fc2c9401fab175555f930e83f7fbf3bcb4bf7deb78033f67c",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060412_58287_0200_PP.npy": "46132f2257a240e560a5271e597345fe3ba46c9d15bc7ee73162feeaaf0a9c70",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060412_58889_0200_PP.npy": "752bb5abcda3d95c0a7c86c0bb43bad0a8e6b9d32a934d7c41a037c4d8bfcff1",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060412_60913_0200_PP.npy": "c2c7db975e386f7e04a9259e9f235e732151d4f9b88ae544dc67f3b01e00ae04",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060412_61299_0200_PP.npy": "17fbd3e417622a2329ceb082d5b36f9177f3762b4cfe9a6aced6107ea2d0573b",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060522_45248_0100_PP.npy": "5ab595078c01da7de67df7f2b5d737246d684d216ee9d5aba6501b0b26028360",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060522_45583_0100_PP.npy": "43919d47af706d56539ed7c56dd8bd06d0148e4b230df7db22440998f6831057",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060523_43038_0100_PP.npy": "895ffc7781a052dea655be60ae989981e0861a26920ec53588df614fee3b866a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060523_49859_0100_PP.npy": "30a5ce0c19b16a8456e984d9bb66154edeb73f69a031a7a656c60651bb8e7e2e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060530_36895_0100_PP.npy": "bca7553a1278812f0459e362338059879770fe6d97c867847ea804136f8b1293",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060530_53062_0100_PP.npy": "8c7aacd5464bda89da9f2cff18675ecb3a7782c30715f729bb23d377ae53f42e",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060530_54390_0100_PP.npy": "598fa49724cc6c6cb38083ded1fe831c2d0391ffff0d1ec91b4c898531cc69a9",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/probabilities/20060530_55390_0100_PP.npy": "8fd5f69ba5931871574748cfd2e4eceb3dd746f2d43e422fb41fdb70053230dd",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/train.jsonl": "f68db2c8fb75cec3c5d92a4aa0eeffc8b00e428010f7e960f6304465f31e65d1",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/pairing.jsonl": "c38226546063b4fa5bb48cebabf7b18e4af18987a2758d0c2218b7028bb8ca44",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/step_004000.pt": "946b27a837e905dafc2f15b0677b763bbef0bdc52bd52f7178fe75dddf9d6dc1",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/last.pt": "f2fdecb59aab9063fec9c6368c95517a9ca322b35b0bea9504760b7136de8c5c",
+    "${RETINA_PROJECT_ROOT}/docs/t0_tw_budget_extension_20261018/protocol.json": "ca415da2f467698748a429c04b5d064369274a9efca5b4c8be293f24b22cdf63",
+    "${RETINA_PROJECT_ROOT}/docs/t0_tw_budget_extension_20261018/source_manifest.json": "5485458e8f8adbb80ecebeee61f8bf746e10cbddc16541ffad22d84805cb6b23",
+    "${RETINA_PROJECT_ROOT}/docs/a13_t0_protocol_closeout_20261015/sources/stage2_ppt_transcript.md": "782fc24e2b686ecb91570b1d99aa6d11218ca24bf9ef1c1faa7d6c2b07a97d31",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/execution_binding.json": "8b1ad73b3e63b8321966350ff14a708f0dcf2f1c66065df50cb0037d054e560f",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/completion_verification.json": "a4fde11e54a9b77831a31e50915bc7fda5e017761a918b701ea26dd1f2a2a167",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/analysis/analysis_summary.json": "d4d2591bda28e16cecf2a03e9377cb78524341567716bfd38acbc4a69ce32ddf",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/analysis/analysis_summary.json": "aafca9859ab91b4b88cb9301f5684488a2fe593e9783e4a7fe050de9f7be6d80",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/analysis/analysis_summary.json": "8791ca87a924b81b7698d479413b79a0db8e95606df85a4900682329c748f9f4",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/analysis/analysis_summary.json": "7180e9c7b7dd5c1625e1502a326abc3e53490f8ef22cfa7cbab96c3fc23db133"
+  },
+  "recording_scope": {
+    "review_artifact": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/analysis/sol_review_20261019.json",
+    "existing_STATUS_only": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/STATUS.md",
+    "research_decisions_not_changed": true,
+    "previous_formal_results_not_changed": true,
+    "backup_directory": "${RETINA_PROJECT_ROOT}/docs/.continuity_backups/20261019T014350793642Z_budget_Sol_review",
+    "new_training_authorized": false,
+    "training_updates": 0,
+    "model_inference_runs": 0,
+    "official_test_accessed": false,
+    "new_task_dispatched": false
+  }
+}

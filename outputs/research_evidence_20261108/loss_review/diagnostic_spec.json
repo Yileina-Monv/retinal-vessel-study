@@ -1,0 +1,31 @@
+{
+  "kind": "EXPLORATORY_FIXED_GRID_NOT_THRESHOLD_SELECTION",
+  "thresholds": [
+    0.3,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.7
+  ],
+  "scientific_threshold_unchanged": 0.5,
+  "endpoint": 2000,
+  "Dev_images": 28,
+  "methods": [
+    "A0_2026",
+    "A0_2027",
+    "A0_2028",
+    "B1",
+    "B2"
+  ],
+  "FOV": "same sealed reference FOV, all valid pixels including original U",
+  "prediction": "probability >= threshold, same native scale",
+  "empty_prediction_precision": "NA; no imputation",
+  "GT_or_FOV_empty": "error; must match all28 nonempty baseline reference images",
+  "aggregation": "per-image metrics then macro mean; no pooling replacement",
+  "gradient_proxy": "A0 seed2026 BCE and gamma1 Focal unnormalized pixel-logit L1 ONLY; not true parameter gradients or batch-normalized gradient dose",
+  "new_model_forward_calls": 0,
+  "GPU_calls": 0,
+  "Test_access": false
+}

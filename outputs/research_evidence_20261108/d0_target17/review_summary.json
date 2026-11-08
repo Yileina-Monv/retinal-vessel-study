@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE_FOR_USER_REVIEW",
+  "reviewed_engineering_positions": 17,
+  "seed_records": 34,
+  "images": 6,
+  "qualitative_visual_groups": 10,
+  "groups_not_independent_vessels": true,
+  "engineering_category_counts": {
+    "PATH_PARTIAL": 6,
+    "TIP_OR_PROJECTION": 6,
+    "GT_GAP_ADJACENT": 1,
+    "LOCAL_PATH_ABSENT": 2,
+    "JUNCTION_NOTCH": 2
+  },
+  "all_targets_meet_original_width_le3": true,
+  "all_local_GT_components_larger_than_one_pixel": true,
+  "local_GT_component_pixel_range": [
+    164,
+    1070
+  ],
+  "decision": "NO_NEW_GPU_CANDIDATE_SUPPORTED_BY_THIS_REVIEW",
+  "reason": "Heterogeneous GT-relative error morphologies and unresolved visibility/annotation mechanisms; no single corrective intervention is established. Do not infer failure of all methods.",
+  "primary_remains_original_9images_77positions": true,
+  "medical_review_count": 0,
+  "PlanB_human_count": "0/105",
+  "branch_human_count": "0/26",
+  "new_training": 0,
+  "new_model_inference": 0,
+  "official_Test_accessed": false
+}

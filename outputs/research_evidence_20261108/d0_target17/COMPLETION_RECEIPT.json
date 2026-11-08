@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE_FOR_USER_REVIEW",
+  "AI_engineering_positions_reviewed": 17,
+  "medical_reviews": 0,
+  "seed_records": 34,
+  "independent_checks": 81,
+  "source_hashes_verified": 35,
+  "delivery_hashes_verified": 12,
+  "authority_readback": "PASS",
+  "backup": "${RETINA_PROJECT_ROOT}/docs/.continuity_backups/review17_completed_20261030_234549_459221",
+  "decision": "NO_NEW_GPU_CANDIDATE_SUPPORTED_BY_THIS_REVIEW",
+  "new_training": 0,
+  "new_model_inference": 0,
+  "Test_accessed": false
+}

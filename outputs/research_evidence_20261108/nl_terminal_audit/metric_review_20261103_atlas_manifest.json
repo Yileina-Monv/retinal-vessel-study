@@ -1,0 +1,446 @@
+[
+  {
+    "case_id": 1,
+    "filename": "case_01.png",
+    "selection": {
+      "filename": "20060412_60913_0200_PP",
+      "shape": "960x1440",
+      "branch_id": 39,
+      "width_native_proxy": 3,
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": 96.48550580768462,
+      "body_width_reference_median": 4.498891781468964,
+      "valid_full_points": 82,
+      "near_points": 6,
+      "selected_full_points": 1,
+      "selected_near_points": 1,
+      "full_width_coverage": 0.012195121951219513,
+      "near_width_coverage": 0.16666666666666666,
+      "region_fraction": 0.07317073170731707,
+      "primary_over_full": 0.012195121951219513,
+      "near_width_min": 2.8284270763397217,
+      "near_width_median": 4.236067771911621,
+      "near_width_max": 4.4721360206604,
+      "short_lt20": false,
+      "complex_junction": false,
+      "selection_reason": "single_target_image"
+    },
+    "crop_native_yx": [
+      381,
+      815,
+      501,
+      890
+    ],
+    "width_labels": [
+      {
+        "y": 401,
+        "x": 835,
+        "diameter_proxy": 6.324555397033691,
+        "inside_near": false
+      },
+      {
+        "y": 415,
+        "x": 845,
+        "diameter_proxy": 4.4721360206604,
+        "inside_near": false
+      },
+      {
+        "y": 431,
+        "x": 854,
+        "diameter_proxy": 4.0,
+        "inside_near": false
+      },
+      {
+        "y": 447,
+        "x": 853,
+        "diameter_proxy": 4.4721360206604,
+        "inside_near": false
+      },
+      {
+        "y": 463,
+        "x": 858,
+        "diameter_proxy": 4.0,
+        "inside_near": false
+      },
+      {
+        "y": 480,
+        "x": 869,
+        "diameter_proxy": 2.8284270763397217,
+        "inside_near": true
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_60913_0200_PP.tif",
+    "RGB_sha256": "974aed2de6306d456dbd0283ad6f3c1bcff9bcb967a8558a514bcb368485be8d"
+  },
+  {
+    "case_id": 2,
+    "filename": "case_02.png",
+    "selection": {
+      "filename": "20060522_45248_0100_PP",
+      "shape": "1488x2240",
+      "branch_id": 267,
+      "width_native_proxy": 3,
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": 132.366187974081,
+      "body_width_reference_median": 4.755343226851375,
+      "valid_full_points": 169,
+      "near_points": 52,
+      "selected_full_points": 1,
+      "selected_near_points": 1,
+      "full_width_coverage": 0.005917159763313609,
+      "near_width_coverage": 0.019230769230769232,
+      "region_fraction": 0.3076923076923077,
+      "primary_over_full": 0.005917159763313609,
+      "near_width_min": 2.0,
+      "near_width_median": 6.324555397033691,
+      "near_width_max": 10.0,
+      "short_lt20": false,
+      "complex_junction": false,
+      "selection_reason": "single_target_image"
+    },
+    "crop_native_yx": [
+      846,
+      1622,
+      1049,
+      1748
+    ],
+    "width_labels": [
+      {
+        "y": 866,
+        "x": 1727,
+        "diameter_proxy": 2.0,
+        "inside_near": true
+      },
+      {
+        "y": 899,
+        "x": 1718,
+        "diameter_proxy": 8.0,
+        "inside_near": false
+      },
+      {
+        "y": 933,
+        "x": 1715,
+        "diameter_proxy": 8.0,
+        "inside_near": false
+      },
+      {
+        "y": 966,
+        "x": 1704,
+        "diameter_proxy": 7.211102485656738,
+        "inside_near": false
+      },
+      {
+        "y": 998,
+        "x": 1674,
+        "diameter_proxy": 8.485280990600586,
+        "inside_near": false
+      },
+      {
+        "y": 1028,
+        "x": 1642,
+        "diameter_proxy": 4.0,
+        "inside_near": false
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45248_0100_PP.tif",
+    "RGB_sha256": "a1d66834e33a98d993876fc9079459e446b727c51011ad1d01e592bef46b7fd0"
+  },
+  {
+    "case_id": 3,
+    "filename": "case_03.png",
+    "selection": {
+      "filename": "20060522_45583_0100_PP",
+      "shape": "1488x2240",
+      "branch_id": 241,
+      "width_native_proxy": 3,
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": 97.80004091975157,
+      "body_width_reference_median": 3.9588374084794955,
+      "valid_full_points": 131,
+      "near_points": 83,
+      "selected_full_points": 1,
+      "selected_near_points": 1,
+      "full_width_coverage": 0.007633587786259542,
+      "near_width_coverage": 0.012048192771084338,
+      "region_fraction": 0.6335877862595419,
+      "primary_over_full": 0.007633587786259542,
+      "near_width_min": 2.0,
+      "near_width_median": 6.0,
+      "near_width_max": 7.211102485656738,
+      "short_lt20": false,
+      "complex_junction": false,
+      "selection_reason": "lowest_nonzero_candidate_coverage_in_size"
+    },
+    "crop_native_yx": [
+      783,
+      1581,
+      933,
+      1686
+    ],
+    "width_labels": [
+      {
+        "y": 803,
+        "x": 1601,
+        "diameter_proxy": 2.0,
+        "inside_near": true
+      },
+      {
+        "y": 810,
+        "x": 1627,
+        "diameter_proxy": 6.0,
+        "inside_near": true
+      },
+      {
+        "y": 834,
+        "x": 1643,
+        "diameter_proxy": 6.0,
+        "inside_near": true
+      },
+      {
+        "y": 860,
+        "x": 1649,
+        "diameter_proxy": 5.656854152679443,
+        "inside_near": true
+      },
+      {
+        "y": 886,
+        "x": 1662,
+        "diameter_proxy": 5.656854152679443,
+        "inside_near": false
+      },
+      {
+        "y": 912,
+        "x": 1664,
+        "diameter_proxy": 8.0,
+        "inside_near": false
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45583_0100_PP.tif",
+    "RGB_sha256": "7bcb31453323e20e4295081f4ceaa1c10c4218c759b0d43cea608d5d748d23e1"
+  },
+  {
+    "case_id": 4,
+    "filename": "case_04.png",
+    "selection": {
+      "filename": "20060411_61214_0200_PP",
+      "shape": "960x1440",
+      "branch_id": 273,
+      "width_native_proxy": 3,
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": 31.591723422939825,
+      "body_width_reference_median": 4.026375477083523,
+      "valid_full_points": 27,
+      "near_points": 26,
+      "selected_full_points": 1,
+      "selected_near_points": 1,
+      "full_width_coverage": 0.037037037037037035,
+      "near_width_coverage": 0.038461538461538464,
+      "region_fraction": 0.9629629629629629,
+      "primary_over_full": 0.037037037037037035,
+      "near_width_min": 2.8284270763397217,
+      "near_width_median": 4.0,
+      "near_width_max": 4.4721360206604,
+      "short_lt20": false,
+      "complex_junction": false,
+      "selection_reason": "lowest_nonzero_candidate_coverage_in_size"
+    },
+    "crop_native_yx": [
+      819,
+      489,
+      883,
+      546
+    ],
+    "width_labels": [
+      {
+        "y": 839,
+        "x": 525,
+        "diameter_proxy": 5.656854152679443,
+        "inside_near": false
+      },
+      {
+        "y": 844,
+        "x": 525,
+        "diameter_proxy": 4.0,
+        "inside_near": true
+      },
+      {
+        "y": 849,
+        "x": 523,
+        "diameter_proxy": 4.4721360206604,
+        "inside_near": true
+      },
+      {
+        "y": 853,
+        "x": 519,
+        "diameter_proxy": 4.4721360206604,
+        "inside_near": true
+      },
+      {
+        "y": 856,
+        "x": 514,
+        "diameter_proxy": 4.0,
+        "inside_near": true
+      },
+      {
+        "y": 862,
+        "x": 509,
+        "diameter_proxy": 4.4721360206604,
+        "inside_near": true
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_61214_0200_PP.tif",
+    "RGB_sha256": "c9d8bc619cc9bcf8dcb437309e62d83b18f770cf32798cd8b9f6f776410d8a04"
+  },
+  {
+    "case_id": 5,
+    "filename": "case_05.png",
+    "selection": {
+      "filename": "20060522_45583_0100_PP",
+      "shape": "1488x2240",
+      "branch_id": 115,
+      "width_native_proxy": 3,
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": 85.28314534165509,
+      "body_width_reference_median": 4.172981082962978,
+      "valid_full_points": 117,
+      "near_points": 92,
+      "selected_full_points": 0,
+      "selected_near_points": 0,
+      "full_width_coverage": 0.0,
+      "near_width_coverage": 0.0,
+      "region_fraction": 0.7863247863247863,
+      "primary_over_full": 0.0,
+      "near_width_min": 5.656854152679443,
+      "near_width_median": 6.324555397033691,
+      "near_width_max": 10.0,
+      "short_lt20": false,
+      "complex_junction": false,
+      "selection_reason": "largest_near_candidate_with_zero_S3"
+    },
+    "crop_native_yx": [
+      559,
+      1562,
+      716,
+      1631
+    ],
+    "width_labels": [
+      {
+        "y": 579,
+        "x": 1582,
+        "diameter_proxy": 10.0,
+        "inside_near": true
+      },
+      {
+        "y": 602,
+        "x": 1587,
+        "diameter_proxy": 7.211102485656738,
+        "inside_near": true
+      },
+      {
+        "y": 625,
+        "x": 1586,
+        "diameter_proxy": 6.0,
+        "inside_near": true
+      },
+      {
+        "y": 648,
+        "x": 1592,
+        "diameter_proxy": 6.0,
+        "inside_near": false
+      },
+      {
+        "y": 671,
+        "x": 1601,
+        "diameter_proxy": 7.211102485656738,
+        "inside_near": true
+      },
+      {
+        "y": 695,
+        "x": 1610,
+        "diameter_proxy": 7.211102485656738,
+        "inside_near": true
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45583_0100_PP.tif",
+    "RGB_sha256": "7bcb31453323e20e4295081f4ceaa1c10c4218c759b0d43cea608d5d748d23e1"
+  },
+  {
+    "case_id": 6,
+    "filename": "case_06.png",
+    "selection": {
+      "filename": "20051205_31934_0400_PP",
+      "shape": "1536x2304",
+      "branch_id": 342,
+      "width_native_proxy": "3",
+      "candidate": true,
+      "kind": "endpoint_to_junction",
+      "length_reference": "157.96555857158515",
+      "body_width_reference_median": "5.0211309520673755",
+      "valid_full_points": 227,
+      "near_points": 79,
+      "selected_full_points": 0,
+      "selected_near_points": 0,
+      "full_width_coverage": "0.0",
+      "near_width_coverage": "0.0",
+      "region_fraction": "0.34801762114537443",
+      "primary_over_full": "0.0",
+      "near_width_min": "6.0",
+      "near_width_median": "8.0",
+      "near_width_max": "10.0",
+      "short_lt20": "False",
+      "complex_junction": "False",
+      "selection_reason": "size_without_nonzero_S3_largest_near_candidate"
+    },
+    "crop_native_yx": [
+      1102,
+      1569,
+      1368,
+      1642
+    ],
+    "width_labels": [
+      {
+        "y": 1122,
+        "x": 1621,
+        "diameter_proxy": 17.20465087890625,
+        "inside_near": false
+      },
+      {
+        "y": 1166,
+        "x": 1599,
+        "diameter_proxy": 8.9442720413208,
+        "inside_near": false
+      },
+      {
+        "y": 1211,
+        "x": 1593,
+        "diameter_proxy": 8.0,
+        "inside_near": false
+      },
+      {
+        "y": 1256,
+        "x": 1605,
+        "diameter_proxy": 8.0,
+        "inside_near": true
+      },
+      {
+        "y": 1301,
+        "x": 1605,
+        "diameter_proxy": 6.0,
+        "inside_near": true
+      },
+      {
+        "y": 1347,
+        "x": 1602,
+        "diameter_proxy": 4.0,
+        "inside_near": false
+      }
+    ],
+    "RGB_path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_31934_0400_PP.tif",
+    "RGB_sha256": "87e9d96b3cc5b9b7a0b121ba80b99f53c8e0fee340b7570582fcfe94f032c772"
+  }
+]

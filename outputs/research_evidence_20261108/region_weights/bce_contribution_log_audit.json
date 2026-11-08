@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "rows_total": 48000,
+  "expected_rows_total": 48000,
+  "per_run": [
+    {
+      "seed": 2026,
+      "alpha": 1.5,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2026/w_1p5/bce_contributions.raw.jsonl",
+      "raw_sha256": "15bba4b3911d491b7d8264929ae84ddf28816a367b705b6f2b9e41c0fc50c961",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2026/w_1p5/bce_contributions.jsonl",
+      "enriched_sha256": "7b898925f32329180d11f1c83df9481bf85a5097b1ca5394e3a22f1bf14891a3",
+      "rows": 8000,
+      "run_binding_sha256": "1ee6bcfbf910646c0a94f41b5da35d84c5a013e7a44994049213f29210dcf50d"
+    },
+    {
+      "seed": 2026,
+      "alpha": 3.0,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2026/w_3p0/bce_contributions.raw.jsonl",
+      "raw_sha256": "26a8d9930731882c4667d797b03f2b6ccb0dc8e3f78836073b94c67926a893f7",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2026/w_3p0/bce_contributions.jsonl",
+      "enriched_sha256": "53aeeab9e376fcc3dcaaf26c060412003a694b789861eb0e393806919e6df77d",
+      "rows": 8000,
+      "run_binding_sha256": "341ed648236f03d366cb9a47008cd8f34aa50e523590139ca42390f3624fe030"
+    },
+    {
+      "seed": 2027,
+      "alpha": 1.5,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2027/w_1p5/bce_contributions.raw.jsonl",
+      "raw_sha256": "fe0471b73ab020acdea00b0acc463d32672e666124c5111afa60a884b7f2079e",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2027/w_1p5/bce_contributions.jsonl",
+      "enriched_sha256": "b5259a053d9bf111bc60dbe1cb091b40b06b5269020a171acbc81f02ec8e6845",
+      "rows": 8000,
+      "run_binding_sha256": "b02a77948ee4258dc4b691457e54c06b85e9495c42a4bceb36bbdd89fcc44fee"
+    },
+    {
+      "seed": 2027,
+      "alpha": 3.0,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2027/w_3p0/bce_contributions.raw.jsonl",
+      "raw_sha256": "1f0b4edb9ba4bb0de2e5601184b49ce295f4d7594f004a078e21abefd65b832c",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2027/w_3p0/bce_contributions.jsonl",
+      "enriched_sha256": "16d616a7d2c41d27f1858aa3ba86e438422ef64c317efc1db08bfaf3c223bca8",
+      "rows": 8000,
+      "run_binding_sha256": "7deffb6975a87e931777160a9946796be2722e5badd055eec360af7de287fc44"
+    },
+    {
+      "seed": 2028,
+      "alpha": 1.5,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2028/w_1p5/bce_contributions.raw.jsonl",
+      "raw_sha256": "fb72dbc08f3067b9ed1271d9a0c6d0a2ecb26d27bade4167c66f32a326a76269",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2028/w_1p5/bce_contributions.jsonl",
+      "enriched_sha256": "e61e6c2fdaec9e12e31340ab2755c497d066c3704493571025b4d17137fc0933",
+      "rows": 8000,
+      "run_binding_sha256": "649bd7e1ff13893b7be5e524ce091dc2db4ba7e7673168b659d8b5189d53ac3c"
+    },
+    {
+      "seed": 2028,
+      "alpha": 3.0,
+      "raw_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2028/w_3p0/bce_contributions.raw.jsonl",
+      "raw_sha256": "27a7fa450e1df0cc84fa6ffce19f416462ed60cc251643d288ba4ffcb47d7444",
+      "enriched_path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/runs/seed_2028/w_3p0/bce_contributions.jsonl",
+      "enriched_sha256": "2ee85bb47cc06f8af43c6ee73db0369cc4b201e45ec997a720b0483dc8eabd46",
+      "rows": 8000,
+      "run_binding_sha256": "90127f711d073a39e330a6dafd83ae85576a9b018922926a8489f1aa71c720ba"
+    }
+  ],
+  "definitions": "Per-image normalized C averaged over 8000 sampled image-draws; contribution shares use ratio-of-means; pixel counts are sampled pixel instances with repeated crops, not unique pixels. Old alpha 1/2 contribution logs unavailable and remain NA."
+}

@@ -1,0 +1,706 @@
+{
+  "A0": {
+    "mean_heldout_dice": 0.8344711833818275,
+    "mean_gain_over_fixed05": -0.0005920740823936375,
+    "per_image": [
+      {
+        "filename": "20051116_44615_0400_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8633654715275686,
+        "fixed05_dice": 0.8634319961561113
+      },
+      {
+        "filename": "20051116_44785_0400_PP",
+        "threshold_fitted_on_other27": 0.481,
+        "heldout_dice": 0.8311885657945652,
+        "fixed05_dice": 0.8309167959974771
+      },
+      {
+        "filename": "20051117_37078_0400_PP",
+        "threshold_fitted_on_other27": 0.4571,
+        "heldout_dice": 0.8348690856770503,
+        "fixed05_dice": 0.8362488259391384
+      },
+      {
+        "filename": "20051117_37130_0400_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8083490162532079,
+        "fixed05_dice": 0.8090159377847568
+      },
+      {
+        "filename": "20051202_51655_0400_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8545815238291765,
+        "fixed05_dice": 0.8550266942676209
+      },
+      {
+        "filename": "20051202_54530_0400_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8390095135000104,
+        "fixed05_dice": 0.8399364096556917
+      },
+      {
+        "filename": "20051205_31934_0400_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8377002217897903,
+        "fixed05_dice": 0.8377135529291589
+      },
+      {
+        "filename": "20051205_35224_0400_PP",
+        "threshold_fitted_on_other27": 0.4284,
+        "heldout_dice": 0.6875042184384108,
+        "fixed05_dice": 0.6982438876693664
+      },
+      {
+        "filename": "20051205_35276_0400_PP",
+        "threshold_fitted_on_other27": 0.4609,
+        "heldout_dice": 0.8310522281835103,
+        "fixed05_dice": 0.8325425374616556
+      },
+      {
+        "filename": "20051205_35305_0400_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.7920854031698067,
+        "fixed05_dice": 0.7929641913887353
+      },
+      {
+        "filename": "20051208_41707_0400_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8561798406198069,
+        "fixed05_dice": 0.8565370897754939
+      },
+      {
+        "filename": "20060407_41937_0200_PP",
+        "threshold_fitted_on_other27": 0.4737,
+        "heldout_dice": 0.8742481768288098,
+        "fixed05_dice": 0.8746117316062274
+      },
+      {
+        "filename": "20060411_57853_0200_PP",
+        "threshold_fitted_on_other27": 0.4881,
+        "heldout_dice": 0.8475807676901614,
+        "fixed05_dice": 0.8473331395643889
+      },
+      {
+        "filename": "20060411_61214_0200_PP",
+        "threshold_fitted_on_other27": 0.4738,
+        "heldout_dice": 0.8644740160229676,
+        "fixed05_dice": 0.8648943634520933
+      },
+      {
+        "filename": "20060411_61478_0200_PP",
+        "threshold_fitted_on_other27": 0.481,
+        "heldout_dice": 0.8484635150832482,
+        "fixed05_dice": 0.8483683283628786
+      },
+      {
+        "filename": "20060412_51656_0200_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8464097007475224,
+        "fixed05_dice": 0.8467672846365857
+      },
+      {
+        "filename": "20060412_58287_0200_PP",
+        "threshold_fitted_on_other27": 0.4738,
+        "heldout_dice": 0.8579280545825688,
+        "fixed05_dice": 0.8575133565018932
+      },
+      {
+        "filename": "20060412_58889_0200_PP",
+        "threshold_fitted_on_other27": 0.4814,
+        "heldout_dice": 0.8458710055597989,
+        "fixed05_dice": 0.8455856573231678
+      },
+      {
+        "filename": "20060412_60913_0200_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.780697638041608,
+        "fixed05_dice": 0.7806650517507157
+      },
+      {
+        "filename": "20060412_61299_0200_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8402503847009319,
+        "fixed05_dice": 0.8401644393139541
+      },
+      {
+        "filename": "20060522_45248_0100_PP",
+        "threshold_fitted_on_other27": 0.4925,
+        "heldout_dice": 0.8455098560136443,
+        "fixed05_dice": 0.8452948201775446
+      },
+      {
+        "filename": "20060522_45583_0100_PP",
+        "threshold_fitted_on_other27": 0.481,
+        "heldout_dice": 0.811586624933127,
+        "fixed05_dice": 0.8112746706329244
+      },
+      {
+        "filename": "20060523_43038_0100_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8671787795224574,
+        "fixed05_dice": 0.8672213976766756
+      },
+      {
+        "filename": "20060523_49859_0100_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8362924232341478,
+        "fixed05_dice": 0.8363238886407056
+      },
+      {
+        "filename": "20060530_36895_0100_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8529244249726178,
+        "fixed05_dice": 0.8529646382906125
+      },
+      {
+        "filename": "20060530_53062_0100_PP",
+        "threshold_fitted_on_other27": 0.5012,
+        "heldout_dice": 0.8232072991144573,
+        "fixed05_dice": 0.8232642411371593
+      },
+      {
+        "filename": "20060530_54390_0100_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.8266984071152204,
+        "fixed05_dice": 0.8270162079568629
+      },
+      {
+        "filename": "20060530_55390_0100_PP",
+        "threshold_fitted_on_other27": 0.4735,
+        "heldout_dice": 0.859986971744972,
+        "fixed05_dice": 0.8599300729485907
+      }
+    ],
+    "independent_validation": false,
+    "note": "all28 previously inspected; internal stability check only, not fresh calibration data"
+  },
+  "D": {
+    "mean_heldout_dice": 0.8336406415943483,
+    "mean_gain_over_fixed05": -0.0008010631103869284,
+    "per_image": [
+      {
+        "filename": "20051116_44615_0400_PP",
+        "threshold_fitted_on_other27": 0.5272,
+        "heldout_dice": 0.861503237274799,
+        "fixed05_dice": 0.8639452210168139
+      },
+      {
+        "filename": "20051116_44785_0400_PP",
+        "threshold_fitted_on_other27": 0.5141,
+        "heldout_dice": 0.8310649935080786,
+        "fixed05_dice": 0.8312247226881567
+      },
+      {
+        "filename": "20051117_37078_0400_PP",
+        "threshold_fitted_on_other27": 0.4882,
+        "heldout_dice": 0.8335370005062585,
+        "fixed05_dice": 0.8341607782360101
+      },
+      {
+        "filename": "20051117_37130_0400_PP",
+        "threshold_fitted_on_other27": 0.4886,
+        "heldout_dice": 0.808191211678334,
+        "fixed05_dice": 0.8084557963948243
+      },
+      {
+        "filename": "20051202_51655_0400_PP",
+        "threshold_fitted_on_other27": 0.4886,
+        "heldout_dice": 0.8532831881146488,
+        "fixed05_dice": 0.8536137524005808
+      },
+      {
+        "filename": "20051202_54530_0400_PP",
+        "threshold_fitted_on_other27": 0.4886,
+        "heldout_dice": 0.8378035585788463,
+        "fixed05_dice": 0.8384229599094563
+      },
+      {
+        "filename": "20051205_31934_0400_PP",
+        "threshold_fitted_on_other27": 0.5265,
+        "heldout_dice": 0.8374038010647394,
+        "fixed05_dice": 0.8391759513527547
+      },
+      {
+        "filename": "20051205_35224_0400_PP",
+        "threshold_fitted_on_other27": 0.4824,
+        "heldout_dice": 0.6879135502790886,
+        "fixed05_dice": 0.6916421493926144
+      },
+      {
+        "filename": "20051205_35276_0400_PP",
+        "threshold_fitted_on_other27": 0.4877,
+        "heldout_dice": 0.8305787830491452,
+        "fixed05_dice": 0.831231691625373
+      },
+      {
+        "filename": "20051205_35305_0400_PP",
+        "threshold_fitted_on_other27": 0.4877,
+        "heldout_dice": 0.7921111405534315,
+        "fixed05_dice": 0.7926312109559058
+      },
+      {
+        "filename": "20051208_41707_0400_PP",
+        "threshold_fitted_on_other27": 0.4886,
+        "heldout_dice": 0.8555094620426605,
+        "fixed05_dice": 0.8557822460676617
+      },
+      {
+        "filename": "20060407_41937_0200_PP",
+        "threshold_fitted_on_other27": 0.4915,
+        "heldout_dice": 0.8728595028945558,
+        "fixed05_dice": 0.8730306099482332
+      },
+      {
+        "filename": "20060411_57853_0200_PP",
+        "threshold_fitted_on_other27": 0.5106,
+        "heldout_dice": 0.8468636723278193,
+        "fixed05_dice": 0.847109883606234
+      },
+      {
+        "filename": "20060411_61214_0200_PP",
+        "threshold_fitted_on_other27": 0.4879,
+        "heldout_dice": 0.8632759845201687,
+        "fixed05_dice": 0.8638575472063899
+      },
+      {
+        "filename": "20060411_61478_0200_PP",
+        "threshold_fitted_on_other27": 0.5141,
+        "heldout_dice": 0.8477010194801606,
+        "fixed05_dice": 0.847911733639035
+      },
+      {
+        "filename": "20060412_51656_0200_PP",
+        "threshold_fitted_on_other27": 0.4915,
+        "heldout_dice": 0.845418071868822,
+        "fixed05_dice": 0.8455303504912316
+      },
+      {
+        "filename": "20060412_58287_0200_PP",
+        "threshold_fitted_on_other27": 0.5106,
+        "heldout_dice": 0.8573393164465395,
+        "fixed05_dice": 0.8577736555048199
+      },
+      {
+        "filename": "20060412_58889_0200_PP",
+        "threshold_fitted_on_other27": 0.5265,
+        "heldout_dice": 0.8443764744934855,
+        "fixed05_dice": 0.8451320923498844
+      },
+      {
+        "filename": "20060412_60913_0200_PP",
+        "threshold_fitted_on_other27": 0.5106,
+        "heldout_dice": 0.7792195617358697,
+        "fixed05_dice": 0.7792761928491342
+      },
+      {
+        "filename": "20060412_61299_0200_PP",
+        "threshold_fitted_on_other27": 0.5141,
+        "heldout_dice": 0.8403031102458904,
+        "fixed05_dice": 0.840480181200453
+      },
+      {
+        "filename": "20060522_45248_0100_PP",
+        "threshold_fitted_on_other27": 0.5272,
+        "heldout_dice": 0.8442959780452457,
+        "fixed05_dice": 0.8456166239839434
+      },
+      {
+        "filename": "20060522_45583_0100_PP",
+        "threshold_fitted_on_other27": 0.5265,
+        "heldout_dice": 0.8090512997962824,
+        "fixed05_dice": 0.8097908416828341
+      },
+      {
+        "filename": "20060523_43038_0100_PP",
+        "threshold_fitted_on_other27": 0.5265,
+        "heldout_dice": 0.8667432993797303,
+        "fixed05_dice": 0.8676869763486003
+      },
+      {
+        "filename": "20060523_49859_0100_PP",
+        "threshold_fitted_on_other27": 0.5272,
+        "heldout_dice": 0.8352976787662223,
+        "fixed05_dice": 0.8370340954217961
+      },
+      {
+        "filename": "20060530_36895_0100_PP",
+        "threshold_fitted_on_other27": 0.5272,
+        "heldout_dice": 0.8519997508529825,
+        "fixed05_dice": 0.8538782624650245
+      },
+      {
+        "filename": "20060530_53062_0100_PP",
+        "threshold_fitted_on_other27": 0.5272,
+        "heldout_dice": 0.8224749677146309,
+        "fixed05_dice": 0.8242956250884893
+      },
+      {
+        "filename": "20060530_54390_0100_PP",
+        "threshold_fitted_on_other27": 0.4886,
+        "heldout_dice": 0.8264927471044642,
+        "fixed05_dice": 0.8263811198124766
+      },
+      {
+        "filename": "20060530_55390_0100_PP",
+        "threshold_fitted_on_other27": 0.5106,
+        "heldout_dice": 0.8593256023188511,
+        "fixed05_dice": 0.8592954600938543
+      }
+    ],
+    "independent_validation": false,
+    "note": "all28 previously inspected; internal stability check only, not fresh calibration data"
+  },
+  "B1": {
+    "mean_heldout_dice": 0.8332866972839003,
+    "mean_gain_over_fixed05": -0.0003622187927165764,
+    "per_image": [
+      {
+        "filename": "20051116_44615_0400_PP",
+        "threshold_fitted_on_other27": 0.5704,
+        "heldout_dice": 0.8564123480388874,
+        "fixed05_dice": 0.8610977903185315
+      },
+      {
+        "filename": "20051116_44785_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8294486924240194,
+        "fixed05_dice": 0.8301575639690686
+      },
+      {
+        "filename": "20051117_37078_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8362235067437379,
+        "fixed05_dice": 0.8342328852984191
+      },
+      {
+        "filename": "20051117_37130_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8102097375714237,
+        "fixed05_dice": 0.8091733466083622
+      },
+      {
+        "filename": "20051202_51655_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8531416555727518,
+        "fixed05_dice": 0.8523222518579416
+      },
+      {
+        "filename": "20051202_54530_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8413368870046811,
+        "fixed05_dice": 0.840031130971709
+      },
+      {
+        "filename": "20051205_31934_0400_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.8362427418108492,
+        "fixed05_dice": 0.8388081976096082
+      },
+      {
+        "filename": "20051205_35224_0400_PP",
+        "threshold_fitted_on_other27": 0.4926,
+        "heldout_dice": 0.6875038484747725,
+        "fixed05_dice": 0.6885794559881441
+      },
+      {
+        "filename": "20051205_35276_0400_PP",
+        "threshold_fitted_on_other27": 0.5406,
+        "heldout_dice": 0.8329448074334307,
+        "fixed05_dice": 0.8311851823712331
+      },
+      {
+        "filename": "20051205_35305_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.7904748787169246,
+        "fixed05_dice": 0.7890579441234162
+      },
+      {
+        "filename": "20051208_41707_0400_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8555191011235955,
+        "fixed05_dice": 0.8550775433481492
+      },
+      {
+        "filename": "20060407_41937_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8731762065095399,
+        "fixed05_dice": 0.872300767015536
+      },
+      {
+        "filename": "20060411_57853_0200_PP",
+        "threshold_fitted_on_other27": 0.5505,
+        "heldout_dice": 0.8467865992391375,
+        "fixed05_dice": 0.8470943685562894
+      },
+      {
+        "filename": "20060411_61214_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8640329569965605,
+        "fixed05_dice": 0.8626672129962158
+      },
+      {
+        "filename": "20060411_61478_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.848304215838041,
+        "fixed05_dice": 0.84840174907635
+      },
+      {
+        "filename": "20060412_51656_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.846509811578639,
+        "fixed05_dice": 0.8465222481302669
+      },
+      {
+        "filename": "20060412_58287_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.858057044616101,
+        "fixed05_dice": 0.8587720094928586
+      },
+      {
+        "filename": "20060412_58889_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8442417061611375,
+        "fixed05_dice": 0.8448536016862079
+      },
+      {
+        "filename": "20060412_60913_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.7811259852956082,
+        "fixed05_dice": 0.7805909452191159
+      },
+      {
+        "filename": "20060412_61299_0200_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8407316154617517,
+        "fixed05_dice": 0.8406312133943914
+      },
+      {
+        "filename": "20060522_45248_0100_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.8419496080765476,
+        "fixed05_dice": 0.8437999799824745
+      },
+      {
+        "filename": "20060522_45583_0100_PP",
+        "threshold_fitted_on_other27": 0.5505,
+        "heldout_dice": 0.8071974782415186,
+        "fixed05_dice": 0.8077449297783365
+      },
+      {
+        "filename": "20060523_43038_0100_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.8647006598242143,
+        "fixed05_dice": 0.8661870568658661
+      },
+      {
+        "filename": "20060523_49859_0100_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.8319548621369957,
+        "fixed05_dice": 0.8342946690707927
+      },
+      {
+        "filename": "20060530_36895_0100_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.8499003671654458,
+        "fixed05_dice": 0.852771802122888
+      },
+      {
+        "filename": "20060530_53062_0100_PP",
+        "threshold_fitted_on_other27": 0.5545,
+        "heldout_dice": 0.821271630574508,
+        "fixed05_dice": 0.823713756214271
+      },
+      {
+        "filename": "20060530_54390_0100_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8258257783788737,
+        "fixed05_dice": 0.8251272493774569
+      },
+      {
+        "filename": "20060530_55390_0100_PP",
+        "threshold_fitted_on_other27": 0.5414,
+        "heldout_dice": 0.8568027929395143,
+        "fixed05_dice": 0.8569727987013719
+      }
+    ],
+    "independent_validation": false,
+    "note": "all28 previously inspected; internal stability check only, not fresh calibration data"
+  },
+  "B2": {
+    "mean_heldout_dice": 0.8333859379320607,
+    "mean_gain_over_fixed05": -0.0001908311283653525,
+    "per_image": [
+      {
+        "filename": "20051116_44615_0400_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.858620621721927,
+        "fixed05_dice": 0.8614579949711866
+      },
+      {
+        "filename": "20051116_44785_0400_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8294061971150687,
+        "fixed05_dice": 0.8300902877989746
+      },
+      {
+        "filename": "20051117_37078_0400_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8369262742611575,
+        "fixed05_dice": 0.8350751641830122
+      },
+      {
+        "filename": "20051117_37130_0400_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8102330791829083,
+        "fixed05_dice": 0.8091056984304233
+      },
+      {
+        "filename": "20051202_51655_0400_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8534889858706205,
+        "fixed05_dice": 0.852872998608236
+      },
+      {
+        "filename": "20051202_54530_0400_PP",
+        "threshold_fitted_on_other27": 0.5438,
+        "heldout_dice": 0.8414280281521382,
+        "fixed05_dice": 0.8400136360818992
+      },
+      {
+        "filename": "20051205_31934_0400_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8363509890267623,
+        "fixed05_dice": 0.8385738564719212
+      },
+      {
+        "filename": "20051205_35224_0400_PP",
+        "threshold_fitted_on_other27": 0.4914,
+        "heldout_dice": 0.6868433046327433,
+        "fixed05_dice": 0.688138819196401
+      },
+      {
+        "filename": "20051205_35276_0400_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8331486864476498,
+        "fixed05_dice": 0.8310884997119221
+      },
+      {
+        "filename": "20051205_35305_0400_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.7907895341182234,
+        "fixed05_dice": 0.7892018779342723
+      },
+      {
+        "filename": "20051208_41707_0400_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8557608947755968,
+        "fixed05_dice": 0.8552425892587582
+      },
+      {
+        "filename": "20060407_41937_0200_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8734453014338756,
+        "fixed05_dice": 0.8726524095626235
+      },
+      {
+        "filename": "20060411_57853_0200_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.846953527131426,
+        "fixed05_dice": 0.8470087383119939
+      },
+      {
+        "filename": "20060411_61214_0200_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8638288973938755,
+        "fixed05_dice": 0.8627220134040366
+      },
+      {
+        "filename": "20060411_61478_0200_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8482395872656349,
+        "fixed05_dice": 0.8484863605291126
+      },
+      {
+        "filename": "20060412_51656_0200_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8462230391677584,
+        "fixed05_dice": 0.846324390787015
+      },
+      {
+        "filename": "20060412_58287_0200_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8577850038255547,
+        "fixed05_dice": 0.8585522025256418
+      },
+      {
+        "filename": "20060412_58889_0200_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.843307478830143,
+        "fixed05_dice": 0.8439421794879325
+      },
+      {
+        "filename": "20060412_60913_0200_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.7809711501614934,
+        "fixed05_dice": 0.7799178203034922
+      },
+      {
+        "filename": "20060412_61299_0200_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8405463760540012,
+        "fixed05_dice": 0.8405190079220317
+      },
+      {
+        "filename": "20060522_45248_0100_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8421249801881763,
+        "fixed05_dice": 0.8436754908656657
+      },
+      {
+        "filename": "20060522_45583_0100_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8073164241123636,
+        "fixed05_dice": 0.8075855085562932
+      },
+      {
+        "filename": "20060523_43038_0100_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.864978085520033,
+        "fixed05_dice": 0.8661520990648202
+      },
+      {
+        "filename": "20060523_49859_0100_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.832086156142776,
+        "fixed05_dice": 0.8340641465732385
+      },
+      {
+        "filename": "20060530_36895_0100_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8500260643720793,
+        "fixed05_dice": 0.8523143938786681
+      },
+      {
+        "filename": "20060530_53062_0100_PP",
+        "threshold_fitted_on_other27": 0.5448,
+        "heldout_dice": 0.8215937856311493,
+        "fixed05_dice": 0.823608163842196
+      },
+      {
+        "filename": "20060530_54390_0100_PP",
+        "threshold_fitted_on_other27": 0.5439,
+        "heldout_dice": 0.8255945962184914,
+        "fixed05_dice": 0.8247415573305591
+      },
+      {
+        "filename": "20060530_55390_0100_PP",
+        "threshold_fitted_on_other27": 0.5453,
+        "heldout_dice": 0.8567892133440727,
+        "fixed05_dice": 0.8570216280996026
+      }
+    ],
+    "independent_validation": false,
+    "note": "all28 previously inspected; internal stability check only, not fresh calibration data"
+  }
+}

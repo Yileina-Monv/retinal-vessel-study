@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "reviewer": "Sol",
+  "review_status": "scientific_review_complete",
+  "review_files_sha256": {
+    "a15_2_class_split_review_20261018.html": "271b60405220e8ba44d623a306b293d9343a0e09517fe4f287ece333a68e67bb",
+    "a15_2_class_split_review_20261018_evidence.json": "c4f509887888e8e3f36d2b07c7ee34788ac3e64a15d60e3b3582f078b29dcef6",
+    "a15_2_class_split_review_20261018_primary.svg": "470547ec6daf8a8e6137b862c68e2c264fb423c463f0c4f1bf6ddb8f43cab0f6",
+    "a15_2_class_split_review_20261018_fp.svg": "95cd1d9f35ff4a234c34aab1899d1773c87531dba4e9cc96c76a3f1cc433ca8c"
+  },
+  "STATUS_before_sha256": "f340a6e27c9d6725afcd24da0a513d88363eb036090ba71fd52086f7514e3a43",
+  "STATUS_after_sha256": "11e7d9bed86bc410bb6bc43fec00479036f891e4197cd44c9609f9e15e41cd54",
+  "backup": "${RETINA_PROJECT_ROOT}/docs/.continuity_backups/20261018T132945395927Z_class_split_Sol_research_review",
+  "immutable_source_hashes_unchanged": {
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/analysis/analysis_summary.json": "8791ca87a924b81b7698d479413b79a0db8e95606df85a4900682329c748f9f4",
+    "${RETINA_PROJECT_ROOT}/docs/t0_tw_class_split_20261018/protocol.json": "b486512cd3c3d9605fdb8f498b4e62c46c0666adcdf7544d0c7e901c8344775a",
+    "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/execution_binding.json": "6ba7b7dd57fdd9449667d29bd4398283a20936e4841803b07949752493ba9562",
+    "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+    "${RETINA_PROJECT_ROOT}/docs/t0_tw_weight_ablation_20261017/protocol.json": "a2de7e7bb0c3bee647bc9ab8a7e41ffc0d5dc1a0433d29d0a34b0e8986d1f4b7"
+  },
+  "new_loss_approved": false,
+  "new_training_authorized": false,
+  "training_updates_by_reviewer": 0,
+  "new_inference_by_reviewer": false,
+  "official_test_accessed": false,
+  "new_task_dispatched": false,
+  "recording_scope": "Only added scientific review artifacts under existing experiment analysis and updated existing STATUS with a recoverable backup."
+}

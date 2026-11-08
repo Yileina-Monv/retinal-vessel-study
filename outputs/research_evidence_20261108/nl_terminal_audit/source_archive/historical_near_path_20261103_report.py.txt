@@ -1,0 +1,80 @@
+"""Unified mainline comparison, all original results retained."""
+from pathlib import Path
+import json,csv,statistics,html
+import numpy as np
+O=Path(__file__).resolve().parent;P='historical_near_path_20261103'
+s=json.loads((O/(P+'_summary.json')).read_text());v=json.loads((O/(P+'_verification.json')).read_text());assert v['status']=='PASS'
+def loadcsv(p):
+ with p.open(encoding='utf-8-sig') as f:return list(csv.DictReader(f))
+rs=loadcsv(O/(P+'_per_image.csv'))
+formal=loadcsv(Path('${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/analysis/fixed_0p5_per_image.csv'))
+old=json.loads((O/'NL_N0_COMPARISON.json').read_text())
+legacy={(int(r['seed']),r['method'],r['filename']):r for r in formal if r['source']=='formal'}
+for r in rs:
+ r['seed']=int(r['seed'])
+ if r['method'] in ['T0','TW']:r['far_recall']=float(legacy[r['seed'],r['method'],r['filename']]['far_recall'])
+ else:r['far_recall']=old['per_image'][str(r['seed'])][r['filename']][r['method']]['far_recall']
+fields=['near_path_d1','near_path_d0','near_edge_coverage','near_whole_missed_fraction','near_thin_recall_d1','dice','precision','recall','fp_density','local_fp_area','local_fp_background','far_recall']
+def avg(method,seeds,k):
+ group=[r for r in rs if r['method']==method and r['seed'] in seeds and r[k] not in ['',None]]
+ ids=sorted({r['filename'] for r in group})
+ return statistics.mean(statistics.mean(float(r[k]) for r in group if r['filename']==n) for n in ids)
+methods=['T0','TW','N0','NL']
+common=[dict(method=m,seeds='2027/2028',**{k:avg(m,[2027,2028],k) for k in fields}) for m in methods]
+perseed=[dict(method=m,seed=seed,**{k:avg(m,[seed],k) for k in fields}) for m in methods for seed in ([2026,2027,2028] if m in ['T0','TW'] else [2027,2028])]
+for suffix,rows in [('_common_seeds_table.csv',common),('_all_seeds_table.csv',perseed)]:
+ with (O/(P+suffix)).open('x',encoding='utf-8-sig',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+# Preserve far-recall protection context from unchanged frozen records, not a new target.
+far=[]
+for base,method,seeds in [('T0','TW',[2026,2027,2028]),('N0','NL',[2027,2028]),('T0','N0',[2027,2028])]:
+ ids=sorted({r['filename'] for r in rs});delta=[]
+ for n in ids:
+  b=statistics.mean(float(r['far_recall']) for r in rs if r['filename']==n and r['method']==base and r['seed'] in seeds)
+  m=statistics.mean(float(r['far_recall']) for r in rs if r['filename']==n and r['method']==method and r['seed'] in seeds)
+  delta.append(m-b)
+ ix=np.random.default_rng(20261016).integers(0,28,size=(1000,28));ci=np.quantile(np.array(delta)[ix].mean(axis=1),[.025,.975])
+ far.append(dict(comparison=method+'-'+base,seeds=seeds,delta=statistics.mean(delta),CI_low=float(ci[0]),CI_high=float(ci[1]),source='existing frozen far_recall per-image records; image paired'))
+with (O/(P+'_legacy_far_context.json')).open('x') as f:json.dump(far,f,ensure_ascii=False,indent=2)
+def fmt(x):return f'{x*100:.2f}'
+mainlines=['历史主线统一补充评价｜2026-11-03｜Sol','','可以补救：已有概率图就是原始答卷，本轮已统一重新评价原主线，不需要重新训练。',
+'本轮对象：T0/TW各2026/2027/2028三个固定2000步终点；N0/NL各2027/2028两个固定100epochs终点。扩展Loss、模块等未纳入本表，不能把本表叫作所有历史实验已重评。','',
+'统一尺子：沿用已有相对FOV尺度候选细路径（宽度代理≤6、长度≥20等既有规则），只评分原出血邻域/Omega内的部分；阈值0.5、原生d1=1不变。先每路径覆盖率，再图内平均，再按图平均。共18有效图、174条路径、5136个不重复位置；10图NA。路径是GT工程定义，不是医学确认。',
+'四组横向表统一使用共同的2027/2028种子；不丢弃2026，其结果及完整三seed TW−T0另列。统一评价不等于统一训练：N0−T0仍是完整流程比较，不能归因于网络结构一个变量。','',
+'共同两seed结果（以下单位均为百分比）：',
+'模型 | 邻域路径覆盖d1 | 全图Dice | Precision | FP/FOV | 邻域FP/面积']
+for r in common:mainlines.append(' | '.join([r['method']]+[fmt(r[k]) for k in ['near_path_d1','dice','precision','fp_density','local_fp_area']]))
+mainlines+=['',
+'科研判断：',
+'1. 原TW没有被旧指标冤枉成负结果。统一路径诊断下，三seed TW−T0平均−0.59pp，探索区间[−1.18,−0.17]pp；代价是召回略低、误报略少。原正式负面结论保持，不把新诊断区间追认为预先设定的显著性检验。',
+'2. nnU-Net相对T0确实在更广的目标上也有进步：共同两seed的邻域路径覆盖+18.84pp，探索区间[+8.00,+31.45]pp；Dice+2.02pp。18图中14图平均提高、3图下降、1图不变。局部FP/面积也上升约0.43pp，区间[−0.12,+1.25]pp；不能因此说误报保护已证明通过。这是开发集上的流程收益，不是独立测试或单变量结构消融。',
+'3. 新NL没有进一步改善这套更广目标：NL−N0平均−1.62pp，区间[−4.60,+0.61]pp。未获增益证据，也不能宣称已经证明显著更差。原S3平均+3.74pp不能推广成完整细分支恢复。',
+'4. 不需要为重新评分重训。原成绩保留，统一补充评价另列；若今后按新目标改变训练监督或做五折，才需要另定协议和新训练。','',
+'补救后的汇报建议：保留“原T0/TW受控实验未得到可靠增量”；补充“标准nnU-Net的流程收益同时体现在整体Dice和较广邻域候选路径覆盖，但局部误报存在代价”；NL作为未获得进一步收益的后续探索。指标页标注原9图77点，新补充18图174路径，不能混在同一成绩列。',
+'局限：新目标更广但不是完美金标准；短支/复杂节点/标注/原生d1尺度问题仍在。4条路径邻域内仅1–2点、2张图仅一条候选路径；保留全部，不删稀疏图。统计单位是图片，seed和位置不增加独立患者数。Dev已反复使用，全部新增结果是事后补充诊断，不修改历史主指标或成功条件。',
+'验收：新增重算T0/TW168条逐图记录，与原指标零误差；复用此前验收的N0/NL112条。独立核对全部1740条路径命中、130组统计、332份来源摘要。无新训练、GPU推理、Test访问或PPT覆盖。']
+(O/'历史主线统一重评_20261103.txt').write_text('\n'.join(mainlines),encoding='utf-8')
+def table(head,rows):
+ return '<table><thead><tr>'+''.join('<th>'+html.escape(x)+'</th>' for x in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+html.escape(str(x))+'</td>' for x in row)+'</tr>' for row in rows)+'</tbody></table>'
+body=['<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>历史主线统一补充评价</title><style>body{font:17px/1.7 "Microsoft YaHei",sans-serif;max-width:1150px;margin:32px auto;padding:0 24px;color:#183045}table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}td,th{border:1px solid #c9d5df;padding:8px}th{background:#edf4f8}a{color:#1768a5}.note{padding:14px;background:#fff5dc}code{overflow-wrap:anywhere}</style><body><h1>历史主线统一补充评价</h1><p class="note">T0/TW/N0/NL，同一GT目标与评分规则；保留原协议、原成绩和全部负面结果。所有新增比较是开发集事后诊断。</p>']
+# Explain main conclusions in prose without the plain-text duplicate table.
+for line in mainlines[:7]:body.append('<p>'+html.escape(line)+'</p>')
+body+=['<h2>共同2027/2028种子对照表</h2>']
+body.append(table(['方法','邻域路径d1 %','Dice %','Precision %','全图Recall %','FP/FOV %','邻域FP/面积 %','远处Recall %'],
+ [[r['method']]+[fmt(r[k]) for k in ['near_path_d1','dice','precision','recall','fp_density','local_fp_area','far_recall']] for r in common]))
+for line in mainlines[mainlines.index('科研判断：'):]:
+ body.append('<p>'+html.escape(line)+'</p>')
+body.append('<h2>全部种子，保留2026</h2>')
+body.append(table(['方法','seed','邻域路径d1 %','原S3 d1 %','Dice %','Precision %','FP/FOV %','邻域FP/面积 %'],
+ [[r['method'],r['seed']]+[fmt(r[k]) for k in ['near_path_d1','near_thin_recall_d1','dice','precision','fp_density','local_fp_area']] for r in perseed]))
+body.append('<h2>所有配对增量与不确定性</h2><p>同图内平均seed后按图bootstrap1000次，固定随机种子20261016；不作新成功判定，未校正多重比较。所有逐seed、逐图和删一图结果另有CSV。</p>')
+body.append(table(['比较','指标','有效图','变化pp','诊断95%区间pp'],[[r['comparison'],r['metric'],r['n_images'],f"{r['delta']*100:+.4f}",f"[{r['CI_low']*100:+.4f}, {r['CI_high']*100:+.4f}]"] for r in s['effects'] if r['seed']=='within_image_seed_average']))
+body.append('<h2>原远处召回保护：保留原逐图记录</h2>')
+body.append(table(['比较','种子','变化pp','诊断95%区间pp'],[[r['comparison'],str(r['seeds']),f"{r['delta']*100:+.4f}",f"[{r['CI_low']*100:+.4f}, {r['CI_high']*100:+.4f}]"] for r in far]))
+body.append('<h2>可复算材料</h2><ul>')
+for suffix,label in [('_plan.json','本轮统一重评范围'),('_common_seeds_table.csv','共同种子对照表'),('_all_seeds_table.csv','全部种子对照表'),('_per_image.csv','280条逐图结果'),('_per_path.csv','1740条路径记录'),('_denominators.csv','28图固定分母及NA'),('_effects.csv','130组统计'),('_primary_changes.csv','逐图增量'),('_leave_one_out.csv','单图影响'),('_legacy_far_context.json','原远处保护'),('_sources.json','来源摘要'),('_verification.json','独立核验'),('.py','评分代码'),('_verify.py','独立核验代码'),('_report.py','报告与原远处保护整理代码')]:
+ body.append(f'<li><a href="{P+suffix}">{label}</a></li>')
+body+=['</ul><p><a href="评价指标审查_20261103.html">前一轮覆盖审查和图册</a>；<a href="邻域细路径重算_20261103.html">N0/NL单独重算报告</a>。</p><p>没有自动安排后续实验；是否将候选路径诊断作为未来正式主指标，仍待批准。本地为A7阅读副本，PPT未修改。</p></body></html>']
+(O/'历史主线统一重评_20261103.html').write_text(''.join(body),encoding='utf-8')
+print('REPORT_COMPLETE')
+print('FAR',far)

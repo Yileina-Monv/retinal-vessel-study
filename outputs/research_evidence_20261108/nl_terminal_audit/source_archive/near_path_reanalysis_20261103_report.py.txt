@@ -1,0 +1,39 @@
+from pathlib import Path
+import json,html
+O=Path(__file__).resolve().parent;P='near_path_reanalysis_20261103'
+s=json.loads((O/(P+'_summary.json')).read_text());v=json.loads((O/(P+'_verification.json')).read_text());assert v['status']=='PASS'
+rows=[r for r in s['effects'] if r['metric']=='near_path_d1']
+def pp(x):return f'{x*100:+.2f}'
+lines=['邻域候选细路径重算｜2026-11-03｜Sol','','本次只重新评分，没有重新训练或推理。原实验协议和成绩不变。','',
+'我们把“只看极少数≤3位置”补充为“沿用已有候选细路径，检查其在出血邻域内的一段覆盖了多少”。同一套GT目标用于N0/NL两个seed，阈值仍0.5、原FOV/Omega和d1容差不变。',
+'候选路径沿用既有相对FOV宽度≤6、参考长度≥20等规则；不是根据本次哪个模型涨分重新选规则。路径是GT图结构，不是医学确认的完整血管。',
+'每条路径先算覆盖率，每张图内对路径平均，再对有效图片平均；不把5136个位置当成5136个独立样本。','',
+'覆盖：原指标9图77位置；新补充诊断18图174条候选路径、5136个唯一位置（路径计数5168次含共享点）。其余10图NA。新有效图每图20–1647个位置，没有仅1～2位置的图；仍有4条路径在邻域内仅1～2位置，全部保留。两张图只有一条候选路径，覆盖仍不均匀。','',
+'结果：']
+for r in rows:
+ label='两seed同图平均' if r['seed']=='within_image_seed_average' else 'seed '+r['seed']
+ lines.append(f"{label}：N0 {r['N0']*100:.2f}%，NL {r['NL']*100:.2f}%；差值 {pp(r['delta'])}pp，诊断95%区间[{pp(r['CI_low'])},{pp(r['CI_high'])}]pp。")
+lines+=['',
+'解释：NL没有显示更广的邻域细路径覆盖收益。平均差值为负，但区间跨零，不能说已经证明NL显著更差。原≤3的两seed平均+3.74pp，不能推广为较完整的细路径恢复。不同定义的绝对分数不能直接比较高低；有意义的是同一定义下N0与NL的配对差。',
+'整段零命中路径比例（逐图平均）N0 10.91%、NL 11.66%；邻接边覆盖76.60%、75.57%。它们都没有提供稳定改善证据，也不等同于真正的血管连通性。','',
+'全图结果保持：平均Dice N0 85.6562%、NL 85.6755%，差值+0.0193pp且区间跨零；Precision 86.5683%、86.5369%；FP/FOV 1.9516%、1.9571%。邻域FP/面积1.9208%、1.7910%，下降点估计也没有区间支持的确定结论。','',
+'对“公平”的说明：旧实验各模型使用同样规则，因此原窄目标上的比较仍成立；问题主要是考查范围不足，不能代表模型的全部细血管能力。新诊断扩大了对象覆盖，但也不是完美考卷，短支/复杂节点/标注和尺度局限仍在。','',
+'科研边界：规则在本次重算前写入独立诊断说明，但此前已多次查看Dev，不能称前瞻性独立验证或正式预注册。NL按旧S3监督训练，本次只描述其更广表现，不是按新目标训练的方法实验。所有分母、NA、不利图、逐seed和删一图结果均保留。',
+'结论：保留N0工作基线；本批预测可以公平地接受同一套补充评分，没必要为了重新算分重训。是否把该诊断提升为下一阶段主指标，仍需明确批准，不自动扩展NL、改Loss或做五折。',
+'',
+'验证：112条逐图旧Dice/Precision/Recall/FP-FOV/S3记录原值完全一致；696条路径的命中由独立五邻接计算逐条核对，39组统计独立复算，144份来源摘要复核通过。0 GPU训练、0推理、0 Test访问。']
+text='\n'.join(lines)
+(O/'邻域细路径重算_20261103.txt').write_text(text,encoding='utf-8')
+def table(headers,rr):
+ return '<table><tr>'+''.join('<th>'+html.escape(x)+'</th>' for x in headers)+'</tr>'+''.join('<tr>'+''.join('<td>'+html.escape(str(x))+'</td>' for x in row)+'</tr>' for row in rr)+'</table>'
+out=['<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>邻域细路径重算</title><style>body{font:17px/1.7 "Microsoft YaHei",sans-serif;max-width:1050px;margin:32px auto;padding:0 24px;color:#17324a}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #cad5df;padding:8px}th{background:#edf4f9}a{color:#1567a0}.note{background:#fff5dd;padding:14px}code{overflow-wrap:anywhere}</style><body><h1>已有模型重新评分：邻域候选细路径覆盖</h1><p class="note">补充诊断，不替换历史主指标；没有新训练、推理或Test。先阅读下方中文结论，再查看完整逐图证据。</p>']
+for para in lines:
+ if para:out.append('<p>'+html.escape(para)+'</p>')
+out+=['<h2>全部指标：两seed在同图内平均后汇总</h2>']
+out.append(table(['指标','有效图','N0 %','NL %','变化pp','诊断95%区间pp'],[[r['metric'],r['n_images'],f"{r['N0']*100:.4f}",f"{r['NL']*100:.4f}",f"{r['delta']*100:+.4f}",f"[{r['CI_low']*100:+.4f}, {r['CI_high']*100:+.4f}]"] for r in s['effects'] if r['seed']=='within_image_seed_average']))
+out+=['<p>所有区间都是1000次图像配对bootstrap的探索性描述，固定随机种子20261016，未作多重比较校正；不能据其中某项有利结果追认方法成功。完整字段名称见分析计划。</p><h2>复核数据</h2><ul>']
+for suffix,label in [('_plan.json','重算前固定的诊断规则（非新正式协议）'),('_denominators.csv','全部28图分母/NA/共享位置'),('_per_path.csv','全部174条路径×4组预测'),('_per_image.csv','全部112条逐图结果'),('_effects.csv','逐seed及同图跨seed统计'),('_primary_changes.csv','18图逐图变化'),('_leave_one_out.csv','完整删一图敏感性'),('_summary.json','完整结构化结论'),('_verification.json','独立核验'),('_sources.json','来源摘要'),('.py','CPU重算源码'),('_verify.py','独立核验源码')]:
+ out.append(f'<li><a href="{P+suffix}">{label}</a></li>')
+out+=['</ul><p>上一轮覆盖审查：<a href="评价指标审查_20261103.html">报告与6例图册</a>。</p><p>本地仅为A7阅读副本；现有PPT未修改。</p></body></html>']
+(O/'邻域细路径重算_20261103.html').write_text(''.join(out),encoding='utf-8')
+print('REPORT_COMPLETE')

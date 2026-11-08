@@ -1,0 +1,71 @@
+"""Independent reduction and direct d1 neighborhood audit; CPU-only."""
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='1')
+import json,csv,hashlib,statistics
+from pathlib import Path
+import numpy as np
+P='metric_review_20261103';O=Path(__file__).resolve().parent;R=Path('${RETINA_PROJECT_ROOT}')
+def readcsv(s):
+ with (O/(P+s)).open(encoding='utf-8-sig') as f:return list(csv.DictReader(f))
+facts=json.loads((O/(P+'_facts.json')).read_text())
+checks=readcsv('_original_reproduction.csv');metrics=readcsv('_metrics.csv');dens=readcsv('_denominators.csv');points=readcsv('_points77.csv');paths=readcsv('_paths.csv')
+assert len(checks)==280 and len(metrics)==1120 and len(dens)==112 and len(points)==77
+assert len({(x['filename'],x['method'],x['seed']) for x in checks})==280
+assert len({(x['filename'],x['y'],x['x']) for x in points})==77
+for s in facts['width_summary']:
+ rows=[r for r in dens if int(r['width_native_proxy'])==s['width']]
+ assert sum(int(r['near_width_points']) for r in rows)==s['targets']
+ assert sum(int(r['near_width_points'])>0 for r in rows)==s['valid_images']
+ assert sum(0<int(r['near_width_points'])<=2 for r in rows)==s['sparse_images']
+for row in facts['effects']:
+ w=row['width'];method,base=row['comparison'].split('-')
+ seeds=[2026,2027,2028] if base=='T0' else [2027,2028]
+ if row['seed']!='within_image_seed_average':seeds=[int(row['seed'])]
+ rr=[r for r in metrics if int(r['width_native_proxy'])==w and int(r['seed']) in seeds and r['method'] in [base,method] and int(r['denominator'])>0]
+ names=sorted({r['filename'] for r in rr});delta=[]
+ for name in names:
+  bv=[int(r['hits'])/int(r['denominator']) for r in rr if r['filename']==name and r['method']==base]
+  mv=[int(r['hits'])/int(r['denominator']) for r in rr if r['filename']==name and r['method']==method]
+  assert len(bv)==len(mv)==len(seeds)
+  delta.append(statistics.mean(mv)-statistics.mean(bv))
+ assert abs(statistics.mean(delta)-row['delta'])<1e-12
+ loo=[statistics.mean(delta[:i]+delta[i+1:]) for i in range(len(delta))]
+ assert abs(min(loo)-row['loo_min'])<1e-12 and abs(max(loo)-row['loo_max'])<1e-12
+# Direct neighborhood (five exact offsets), independent of binary_dilation implementation.
+manifest=json.loads((R/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json').read_text())
+refs={r['filename']:r for r in manifest['images']}
+source=json.loads((O/(P+'_sources.json')).read_text())
+counter=0
+for name in sorted({p['filename'] for p in points}):
+ with np.load(refs[name]['reference_npz'],allow_pickle=False) as z:
+  omega=z['Omega'].astype(bool);thin=z['thin'].astype(bool)&z['near'].astype(bool)&omega
+ coords=np.argwhere(thin);H,W=omega.shape
+ assert set(map(tuple,coords))=={(int(p['y']),int(p['x'])) for p in points if p['filename']==name}
+ for row in [x for x in checks if x['filename']==name]:
+  method=row['method'];seed=row['seed']
+  if method in ['T0','TW']:file=R/'experiments/t0_tw_core_20261016/runs'/('seed_'+seed)/method/'evaluation/step_002000/probabilities'/(name+'.npy')
+  elif method=='N0':file=R/'experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs'/('seed_'+seed)/'dev_predictions'/(name+'.npy')
+  else:file=O.parent/'runs'/('seed_'+seed)/'dev_predictions'/(name+'.npy')
+  p=np.load(file,mmap_mode='r');hit=0
+  for y,x in coords:
+   found=False
+   for dy,dx in [(0,0),(-1,0),(1,0),(0,-1),(0,1)]:
+    yy,xx=int(y+dy),int(x+dx)
+    if 0<=yy<H and 0<=xx<W and omega[yy,xx] and p[yy,xx]>=.5:found=True;break
+   hit+=int(found)
+  assert hit==int(row['hits']),(name,method,seed,hit,row['hits'])
+  counter+=1
+# Recheck hashes of every bound analysis input, excluding the audit source itself.
+hcount=0
+for file,expected in source.items():
+ h=hashlib.sha256()
+ with Path(file).open('rb') as f:
+  for b in iter(lambda:f.read(4194304),b''):h.update(b)
+ assert h.hexdigest()==expected['sha256'],('source changed',file)
+ hcount+=1
+result=dict(status='PASS',original_image_model_rows=280,all_width_rows=1120,independent_effect_summaries=len(facts['effects']),
+ direct_d1_neighborhood_rows=counter,source_hashes_rechecked=hcount,near_candidate_images=len({r['filename'] for r in paths if r['candidate']=='True' and r['width_native_proxy']=='3'}),
+ no_training=True,no_inference=True,Test_access=False,
+ implementation_note='Initial CPU preflight failed on absent train_files key; no prediction analysis ran then. Corrected to existing Train110 manifest; source attempt01 and original log retained.')
+with (O/(P+'_independent_verification.json')).open('x') as f:json.dump(result,f,ensure_ascii=False,indent=2)
+print(result,flush=True)

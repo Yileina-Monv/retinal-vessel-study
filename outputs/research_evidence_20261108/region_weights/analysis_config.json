@@ -1,0 +1,11 @@
+{
+  "bootstrap": {
+    "reps": 1000,
+    "PCG64_seed": 20261016,
+    "unit": "paired image",
+    "indices": "same table reused for all statistics with the same n"
+  },
+  "same_FP_grid": "0..1 step 0.001; smallest feasible global threshold at Z0@0.5 macro FP/FOV",
+  "threshold_fixed": 0.5,
+  "official_test_read": false
+}

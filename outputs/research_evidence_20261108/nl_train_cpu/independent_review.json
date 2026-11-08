@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": 1937071,
+  "errors": [],
+  "independent_GT_queries": 1867417,
+  "method": "Separate source/hash/history, explicit four-neighbor GT interpolation and geometry oracle, private RNG, stage-count and exposure rederivation; no imported replay implementation",
+  "elapsed_seconds": 36.06553825479932,
+  "peak_RSS_MiB": 626.3828125,
+  "seeds": [
+    {
+      "seed": 2027,
+      "attempts": 1000,
+      "audited_crops": 2000,
+      "visible": 5963,
+      "selected": 5830,
+      "nonempty_batches": 408,
+      "retained_fraction": 0.9776957907093745,
+      "Neff": 27.02847159311505,
+      "gates": {
+        "nonempty_batches": true,
+        "retained_fraction": true,
+        "Neff": true
+      },
+      "status": "PASS",
+      "top1_mass_fraction": 0.05470459518599562,
+      "top3_mass_fraction": 0.15973741794310722
+    },
+    {
+      "seed": 2028,
+      "attempts": 1000,
+      "audited_crops": 2000,
+      "visible": 5678,
+      "selected": 5562,
+      "nonempty_batches": 385,
+      "retained_fraction": 0.9795702712222614,
+      "Neff": 26.649122807017545,
+      "gates": {
+        "nonempty_batches": true,
+        "retained_fraction": true,
+        "Neff": true
+      },
+      "status": "PASS",
+      "top1_mass_fraction": 0.052995391705069124,
+      "top3_mass_fraction": 0.1543778801843318
+    }
+  ]
+}

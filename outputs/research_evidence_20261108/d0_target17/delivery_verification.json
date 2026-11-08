@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "reviewed_AI_engineering_positions": 17,
+  "medical_review_count": 0,
+  "source_atlas_hashes_verified": true,
+  "seed_rows": 34,
+  "report_pages": 1,
+  "outputs": {
+    "17位置复核_一页结论_20261030.pdf": "053b72b2bbef1098d144f44cc627252752948f9b8798c4b06fa062e822ae9bac",
+    "17位置复核_一页结论_20261030.txt": "a68af114a5513301e1f6d054ff63509884006aa0177456f522112ea24c02b7f2",
+    "cpu_summary.json": "1b7fca03d19bb29ce64ad125ca7b6dbab072b2d94956570a48c7eac09c9d6f96",
+    "engineering_observations_17.csv": "59a1fe62542fbb21c1f5cd81d8c3939ac02abaf782667896e84e6f51d5c32095",
+    "evaluation_roles_proposal.md": "ecf2ea9dc4d2e86770073e615228ed23f79e3dd66e9495e4e902a56e6c8ea176",
+    "independent_review.json": "b32c0532138c901ad2f8e92102b0ef7ce850d75e45907f55e81fd36176fb0448",
+    "native_GT_context_17.csv": "3ba5c9cb179868562b127e756b6bcad7d439f7ac60f28f522b57ef3510ff3d3e",
+    "review17_independent.py": "5aae94cbd3b8af4c08cb1fa2b1d8d896eb5740892b67843cdb7504077d10f32f",
+    "review_index.html": "148792288e2fb17b07ecb14453492a60816253a4387f69c1697cd02b7dcad9eb",
+    "review_scope.json": "9f9c3b267da9e219e5a844e790f1cec8def8bc74396ec4bff15bb8b24705a9a8",
+    "review_summary.json": "08a9d33147d39c764cd1e27ddee3402bc6550bf681ee833e20f916c6ad6a353f",
+    "seed_records_34.csv": "c2bf8f2b224c2e267445354e6ed3868fbff14c74749bac576be1a5f811e1c540"
+  }
+}

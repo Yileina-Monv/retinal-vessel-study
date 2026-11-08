@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-24",
+  "source_policy": "original papers and pinned author code; archive only, no TensorFlow execution",
+  "PMC_access": "prior web access challenged; read author arXiv v4 instead",
+  "sources": [
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/focal_1708.02002.html",
+      "url": "https://arxiv.org/html/1708.02002",
+      "bytes": 346739,
+      "sha256": "7a5d8bd4f35aefd6b27cc5692d9f798e71ea97748ff39f5dc0593b9d5aa918cd"
+    },
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/tversky_1706.05721.html",
+      "url": "https://arxiv.org/html/1706.05721",
+      "bytes": 104078,
+      "sha256": "0a8a6c66482152339102976c8001e1f881abf58674b517f5afff1afb46df90ea"
+    },
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/focal_tversky_1810.07842.html",
+      "url": "https://arxiv.org/html/1810.07842",
+      "bytes": 107688,
+      "sha256": "bf58735d74180fc3c185a389f9bd408eef91fa7d0d8ffb003aac4d5e530592a4"
+    },
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/unified_focal_2102.04525v4.html",
+      "url": "https://arxiv.org/html/2102.04525v4",
+      "bytes": 287585,
+      "sha256": "2caf2931acd1542c9315c6577230cba7925c182290f01ff88b74996564b21cf9"
+    },
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/unified_focal_author_411c9c5.py",
+      "url": "https://raw.githubusercontent.com/mlyg/unified-focal-loss/411c9c5ce43b2ef847f0903d1b841512ad8d2eee/loss_functions.py",
+      "bytes": 14875,
+      "sha256": "68d8a362a544ab04f287344c443e3c71c79d46d03d7266310035b4dfbac18d12",
+      "syntax": "FAIL_RETAINED_AUTHOR_FILE",
+      "exception": {
+        "type": "IndentationError",
+        "line": 262,
+        "message": "expected an indented block after function definition on line 261"
+      }
+    },
+    {
+      "file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/analysis/loss_function_review_20261024/sources/focal_tversky_author_94fa7f7.py",
+      "url": "https://raw.githubusercontent.com/nabsabraham/focal-tversky-unet/94fa7f7ce27e42e6a46a8483a72db3db0b635761/losses.py",
+      "bytes": 2007,
+      "sha256": "1091de3a5c5b32eec4520f610283f43e47f48a461032f0de432e32540fa7fc1d",
+      "syntax": "PASS"
+    }
+  ]
+}

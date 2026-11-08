@@ -1,0 +1,25 @@
+{
+  "phase": "TARGETED_17_COMMON_MISSES_ENGINEERING_REVIEW",
+  "authorization": "User Implement the plan: bounded CPU/atlas review only",
+  "date": "2026-10-30",
+  "seeds": [
+    2027,
+    2028
+  ],
+  "target_selection": "all17 original both_missed point IDs; no exclusion",
+  "official_metrics_unchanged": true,
+  "engineering_reviewer": "Sol AI visual observation, not signed human or medical review",
+  "medical_reviews": 0,
+  "planB_human_count": "0/105",
+  "branch_human_count": "0/26",
+  "CPU_threads": 2,
+  "wall_cap_seconds": 3600,
+  "RSS_cap_GiB": 8,
+  "no_model_load_or_forward": true,
+  "no_GPU": true,
+  "no_Test": true,
+  "context_only": "Native GT 2EDT width at old target; Zhang skeleton width distribution within radius16; 8-connected GT component inside original64x64 atlas crop. Descriptive, not new endpoint, not anatomical vessel identity.",
+  "native_context_radius": 16,
+  "atlas_crop_native_size": 64,
+  "code_sha256": "8c623e6d382450f1ce2b3292155f32fa3d72257d7e8873ed0591cc72f0ac83e3"
+}

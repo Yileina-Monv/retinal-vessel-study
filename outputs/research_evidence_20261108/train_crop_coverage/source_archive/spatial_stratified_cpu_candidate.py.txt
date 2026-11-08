@@ -1,0 +1,156 @@
+"""One predeclared CPU-only crop-origin candidate; no training implementation."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+for key in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS']:os.environ[key]='1'
+from pathlib import Path
+import sys,json,csv,hashlib,time,math,datetime,resource
+import numpy as np
+from PIL import Image
+from scipy.ndimage import distance_transform_edt
+
+ROOT=Path('${RETINA_PROJECT_ROOT}');CODE=ROOT/'code/retinal-vessel-study'
+BASE=ROOT/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1'
+OLD=BASE/'attempt_02';SCI=BASE/'scientific_b1_b2_2000_v1_20261022'
+PARENT=BASE/'focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/train_crop_exposure_v1'
+OUT=PARENT/'spatial_stratified_candidate_v1'
+sys.path.insert(0,str(CODE));sys.path.insert(0,str(PARENT))
+from train_crop_exposure_audit import exposure,integral_counts,fixtures
+from retinal_data.maples_fov import candidate_fov
+from retinal_m0.maples_core import draw_geometry
+
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for block in iter(lambda:f.read(1024*1024),b''):h.update(block)
+    return h.hexdigest()
+def load(p):return json.loads(Path(p).read_text())
+def rows(p):
+    with Path(p).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+def jwrite(p,d):
+    with Path(p).open('x',encoding='utf-8') as f:json.dump(d,f,ensure_ascii=False,indent=2,allow_nan=False)
+def cwrite(p,data):
+    with Path(p).open('x',encoding='utf-8',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=list(data[0]));w.writeheader();w.writerows(data)
+
+def origin_plan(height,width,n,image_index):
+    assert n in (72,73) and height>=512 and width>=512
+    rh,rw=height-511,width-511
+    yedges=[k*rh//6 for k in range(7)];xedges=[k*rw//12 for k in range(13)]
+    assert min(np.diff(yedges))>0 and min(np.diff(xedges))>0
+    rng=np.random.default_rng(np.random.SeedSequence([2026,0x53504154,image_index]))
+    grid=[]
+    for gy in range(6):
+        for gx in range(12):
+            grid.append((int(rng.integers(yedges[gy],yedges[gy+1])),int(rng.integers(xedges[gx],xedges[gx+1])),gy,gx))
+    grid=[grid[int(k)] for k in rng.permutation(72)]
+    if n==73:grid.append((int(rng.integers(rh)),int(rng.integers(rw)),-1,-1))
+    # Per-image draw marginal compared with the original uniform-origin law.
+    ratio=np.array([rh*rw/(72*(yedges[y+1]-yedges[y])*(xedges[x+1]-xedges[x])) for y in range(6) for x in range(12)])
+    if n==73:ratio=(72*ratio+1)/73
+    return grid,dict(min_marginal_density_ratio=float(ratio.min()),max_marginal_density_ratio=float(ratio.max()),max_relative_deviation=float(abs(ratio-1).max()))
+
+def summary(mask,count,weight):
+    a=count[mask];n=len(a)
+    return dict(n=n,zero=int((a==0).sum()),zero_fraction=float((a==0).mean()) if n else None,mean=float(a.mean()) if n else None,weighted_mean=float(weight[mask].mean()) if n else None)
+
+def main():
+    start=time.monotonic();OUT.mkdir(exist_ok=False)
+    spec=dict(id='SPATIAL_STRATIFIED_CROP_CPU_CANDIDATE_V1',created_at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(),authorization='User accepts CPU crop comparison and moving away from Loss search. No GPU or training implementation authorized.',design_predeclared_before_candidate_metrics=True,candidates=1,parameter_scan=False,source='Original A0 seed2026/2000-step Train110 trajectory, exactly8000 draws',candidate='6x12 cells over legal integer top-left origin domain, one uniform draw in each cell, permute72; if original image has73 visits append one original uniform-origin draw',integer_edges='floor(k*R/n), R=height-or-width minus511; upper endpoints exclusive',seed='default_rng(SeedSequence([2026,0x53504154,Train_manifest_index]))',generation_order='row-major cells: top then left per cell; permutation of72 after origins; optional extra top then left after permutation',augmentation='Reuse original per-draw hflip/vflip/CCW90; original draw_geometry still consumed as source, only top/left replaced',image_visits='Original order and original per-image72/73 exactly retained',labels_not_used_for_sampling=True,empty_FOV='No reject/resample. Any actual empty FOV disqualifies candidate; retain all records.',eligibility='All origins/transforms/Train identities valid; all crops have nonempty FOV; pooled unseen GT pixels, pooled unseen B2 points, and wholly unseen candidate paths must each strictly decrease vs original. Do not search another seed/grid if fail.',same_distribution='Not strictly identical: per-cell equal visits gives small unequal-integer-cell marginal deviations; exact bounds reported.',changes_allowed_now='Analysis output and existing research records only. No production sampler/model/Loss/protocol changes, Dev/Test content or GPU calls.')
+    jwrite(OUT/'candidate_spec.json',spec)
+    tests=fixtures()
+    for shape in [(960,1440),(1488,2240),(1536,2304)]:
+        for n in [72,73]:
+            a,b=origin_plan(*shape,n,0);a2,b2=origin_plan(*shape,n,0)
+            assert a==a2 and b==b2 and len(set((y,x) for _,_,y,x in a[:72]))==72
+            for y,x,gy,gx in a:
+                assert 0<=y<=shape[0]-512 and 0<=x<=shape[1]-512
+    sources=load(PARENT/'input_manifest.json')
+    for p,h in sources.items():assert sha(p)==h,'Existing source drift:'+p
+    protect=dict(sources)
+    for p in [PARENT/'summary.json',PARENT/'images_110.csv',PARENT/'strata_per_image.csv',PARENT/'candidate_paths.csv',PARENT/'train_crop_exposure_audit.py']:
+        protect[str(p)]=sha(p)
+    manifest=load(ROOT/'docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json')['rows']
+    original_images={q['filename']:q for q in rows(PARENT/'images_110.csv')}
+    original_strata={(q['filename'],q['stratum']):q for q in rows(PARENT/'strata_per_image.csv')}
+    original_paths={(q['filename'],int(q['branch_id'])):q for q in rows(PARENT/'candidate_paths.csv')}
+    baseline=load(PARENT/'summary.json');by_draw={q['filename']:[] for q in manifest}
+    original_crops=rows(OLD/'crops_8000_and_analytic_gradients.csv')
+    for q in original_crops:by_draw[q['filename']].append(q)
+    recon={q['filename']:q for q in load(SCI/'train_target_reconciliation.json')['records']}
+    bby={q['filename']:[] for q in manifest}
+    for q in rows(OLD/'branches_all_Train.csv'):bby[q['filename']].append(q)
+    images=[];strata=[];paths=[];trajectory=[];crop_table=[];independent=[];density=[]
+    first_size=set();empty=[]
+    import matplotlib
+    matplotlib.use('Agg');import matplotlib.pyplot as plt
+    for index,row in enumerate(manifest):
+        name=row['filename'];oi=original_images[name]
+        with Image.open(row['RGB']['path']) as f:rgb=np.asarray(f.convert('RGB'),np.uint8)
+        with Image.open(row['V']['path']) as f:gt=np.asarray(f)!=0
+        fov=candidate_fov(rgb);h,w=fov.shape;assert (h,w)==(int(oi['height']),int(oi['width']))
+        with np.load(recon[name]['mask_path'],allow_pickle=False) as z:b1=z['B1_reference'].astype(bool);b2=z['B2_candidate'].astype(bool)
+        old=by_draw[name];origins,den=origin_plan(h,w,len(old),index);density.append(dict(filename=name,height=h,width=w,**den))
+        rects=[]
+        for slot,(q,(y,x,gy,gx)) in enumerate(zip(old,origins)):
+            d=int(q['draw']);geo=list(map(int,draw_geometry(2026,d,h,w)));assert geo==[int(q[k]) for k in ['top','left','hflip','vflip','ccw_rot90_quarters']]
+            rects.append((y,x,*geo[2:]));trajectory.append(dict(draw=d,step=d//4+1,slot=d%4,filename=name,visit_index=slot,top=y,left=x,hflip=geo[2],vflip=geo[3],ccw_rot90_quarters=geo[4],cell_row=gy,cell_col=gx))
+        nf=integral_counts(fov,rects);ng=integral_counts(gt&fov,rects);nb1=integral_counts(b1,rects);nb2=integral_counts(b2,rects)
+        for j,(q,rect) in enumerate(zip(old,rects)):
+            if nf[j]==0:empty.append(int(q['draw']))
+            crop_table.append(dict(draw=int(q['draw']),filename=name,N_FOV=nf[j],N_GT_in_FOV=ng[j],N_B1=nb1[j],N_B2=nb2[j]))
+        count=exposure((h,w),rects);weight=exposure((h,w),rects,[1/(4*n) if n else 0 for n in nf]);base_count=exposure((h,w),[[int(q[k]) for k in ['top','left','hflip','vflip','ccw_rot90_quarters']] for q in old])
+        assert int(count[fov].sum())==sum(nf) and int(count[gt&fov].sum())==sum(ng) and int(count[b2].sum())==sum(nb2)
+        assert math.isclose(float(weight[fov].sum()),sum(n>0 for n in nf)/4,rel_tol=1e-10,abs_tol=1e-10)
+        if (h,w) not in first_size:
+            first_size.add((h,w));direct=np.zeros((h,w),np.int32);wd=np.zeros((h,w))
+            for (y,x,*_),n in zip(rects,nf):
+                direct[y:y+512,x:x+512]+=1
+                if n:wd[y:y+512,x:x+512]+=1/(4*n)
+            assert np.array_equal(direct,count) and np.allclose(wd,weight,rtol=1e-10,atol=1e-12)
+            independent.append(dict(filename=name,shape=[h,w],direct_slice_count_and_weight_match=True))
+            del direct,wd
+        dist=distance_transform_edt(fov);edge=fov&(dist<=float(oi['edge_EDT_cut_native']))
+        masks={'FOV':fov,'GT':gt&fov,'background':~gt&fov,'B1':b1,'B2':b2,'edge_FOV':edge,'interior_FOV':fov&~edge,'edge_GT':gt&edge,'interior_GT':gt&fov&~edge,'edge_B2':b2&edge,'interior_B2':b2&~edge}
+        for label,mask in masks.items():
+            st=summary(mask,count,weight);oldst=original_strata[name,label]
+            assert int(oldst['n'])==st['n']
+            strata.append(dict(filename=name,height=h,width=w,stratum=label,**st,original_zero=int(oldst['zero']),delta_zero=st['zero']-int(oldst['zero']),original_mean=float(oldst['mean']) if st['n'] else None))
+        with np.load(OLD/'path_data'/(name+'.npz'),allow_pickle=False) as z:coords=z['coords'];offset=z['offsets']
+        for bid,br in enumerate(bby[name]):
+            if br['candidate_B2']!='True':continue
+            cc=coords[int(offset[bid]):int(offset[bid+1])];ex=count[cc[:,0],cc[:,1]];maximum=0.;whole=0
+            for y,x,*_ in rects:
+                vis=(cc[:,0]>=y)&(cc[:,0]<y+512)&(cc[:,1]>=x)&(cc[:,1]<x+512)
+                maximum=max(maximum,float(vis.mean()));whole+=int(vis.all())
+            op=original_paths[name,bid];frac=float((ex>0).mean())
+            paths.append(dict(filename=name,height=h,width=w,branch_id=bid,union_point_fraction=frac,original_union_point_fraction=float(op['union_point_fraction']),delta_union_fraction=frac-float(op['union_point_fraction']),whole_path_crop_count=whole,original_whole_path_crop_count=int(op['whole_path_crop_count']),max_single_crop_fraction=maximum))
+        imst={q['stratum']:q for q in strata[-len(masks):]}
+        images.append(dict(filename=name,height=h,width=w,crops=len(rects),GT_zero=imst['GT']['zero'],original_GT_zero=int(original_strata[name,'GT']['zero']),GT_zero_fraction=imst['GT']['zero_fraction'],original_GT_zero_fraction=float(oi['GT_zero_fraction']),B2_zero=imst['B2']['zero'],original_B2_zero=int(original_strata[name,'B2']['zero']),minimum_crop_FOV=min(nf),original_minimum_crop_FOV=min(int(q['N_FOV']) for q in old),GT_mean_exposure=imst['GT']['mean']))
+        fig,axes=plt.subplots(1,2,figsize=(9,3.7))
+        for ax,z,title in [(axes[0],base_count,'Original uniform'),(axes[1],count,'Fixed 6x12 stratified')]:
+            ax.imshow(np.where(fov,z,np.nan)[::3,::3],vmin=0,vmax=40,cmap='viridis');ax.axis('off');ax.set_title(title)
+        fig.suptitle(f'{index+1:03d} {name} / {h}x{w}; GT unseen {100*float(oi["GT_zero_fraction"]):.3f}% -> {100*imst["GT"]["zero_fraction"]:.3f}%',fontsize=10)
+        fig.tight_layout();fig.savefig(OUT/f'comparison_{index+1:03d}.png',dpi=90);plt.close(fig)
+        if (index+1)%10==0:print('CPU candidate',index+1,'/110',flush=True)
+        del rgb,gt,fov,b1,b2,count,weight,base_count,dist,edge,masks
+    trajectory.sort(key=lambda q:q['draw']);crop_table.sort(key=lambda q:q['draw'])
+    assert [x['draw'] for x in trajectory]==list(range(8000)) and len(paths)==13325
+    assert len(images)==110 and sum(x['crops'] for x in images)==8000
+    cwrite(OUT/'candidate_trajectory_8000.csv',trajectory);cwrite(OUT/'crop_counts_8000.csv',crop_table);cwrite(OUT/'images_110.csv',images);cwrite(OUT/'strata_per_image.csv',strata);cwrite(OUT/'candidate_paths.csv',paths);cwrite(OUT/'origin_density_bounds.csv',density)
+    def aggregate(ims):
+        names={x['filename'] for x in ims};ss=[q for q in strata if q['filename'] in names];pp=[q for q in paths if q['filename'] in names];strat={}
+        for label in sorted({q['stratum'] for q in ss}):
+            rr=[q for q in ss if q['stratum']==label and q['n']];n=sum(q['n'] for q in rr)
+            strat[label]=dict(n=n,zero=sum(q['zero'] for q in rr),original_zero=sum(q['original_zero'] for q in rr),pooled_zero_fraction=sum(q['zero'] for q in rr)/n,macro_zero_fraction=float(np.mean([q['zero_fraction'] for q in rr])),macro_mean_exposure=float(np.mean([q['mean'] for q in rr])))
+        return dict(images=len(ims),strata=strat,paths=len(pp),wholly_unseen_paths=sum(q['union_point_fraction']==0 for q in pp),original_wholly_unseen_paths=sum(q['original_union_point_fraction']==0 for q in pp),paths_union_incomplete=sum(q['union_point_fraction']<1 for q in pp),paths_never_wholly_in_one_crop=sum(q['whole_path_crop_count']==0 for q in pp),original_paths_never_wholly_in_one_crop=sum(q['original_whole_path_crop_count']==0 for q in pp),images_GT_unseen_worse=sum(q['GT_zero']>q['original_GT_zero'] for q in ims),images_B2_unseen_worse=sum(q['B2_zero']>q['original_B2_zero'] for q in ims),paths_union_fraction_worse=sum(q['delta_union_fraction']<0 for q in pp))
+    result=dict(all=aggregate(images),by_native_size={f'{h}x{w}':aggregate([q for q in images if (q['height'],q['width'])==(h,w)]) for h,w in sorted({(q['height'],q['width']) for q in images})})
+    g=result['all'];gates=dict(origins_and_augmentation_valid=True,exact_110_and_8000=True,nonempty_FOV_all=not empty,GT_unseen_strictly_reduced=g['strata']['GT']['zero']<g['strata']['GT']['original_zero'],B2_unseen_strictly_reduced=g['strata']['B2']['zero']<g['strata']['B2']['original_zero'],wholly_unseen_paths_strictly_reduced=g['wholly_unseen_paths']<g['original_wholly_unseen_paths'])
+    result.update(predeclared_CPU_admission=gates,CPU_admission_pass=all(gates.values()),empty_FOV_draws=empty,minimum_crop_FOV=min(q['N_FOV'] for q in crop_table),max_origin_marginal_deviation=max(q['max_relative_deviation'] for q in density),new_GPU_calls=0,new_model_forwards=0,scientific_training_authorized=False)
+    jwrite(OUT/'comparison_summary.json',result)
+    for p,h in protect.items():assert sha(p)==h,'Protected input changed:'+p
+    jwrite(OUT/'input_manifest.json',protect)
+    jwrite(OUT/'validation.json',dict(status='CPU_NUMERICAL_CHECKS_COMPLETE',fixtures=tests,independent_native_size_direct_slice_checks=independent,source_hashes_unchanged=len(protect),all_original_draws_and_augmentation_preserved=8000,original_training_sampler_modified=False,model_loaded=False,Dev_content_read=False,Test_content_read=False,GPU_calls=0,parameter_updates=0,elapsed_seconds=time.monotonic()-start,peak_RSS_KiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss))
+    (OUT/'all110_comparison.html').write_text('<!doctype html><meta charset="utf-8"><title>110图采样对照</title><style>body{font-family:sans-serif}img{width:100%;max-width:900px}</style><h1>固定清单顺序全部110图</h1><p>左：原采样；右：唯一预定6×12候选。两侧统一0–40次颜色范围；FOV外空白。不表示预测或医学判断。</p>'+''.join(f'<img loading="lazy" src="comparison_{k:03d}.png">' for k in range(1,111)),encoding='utf-8')
+    print('DONE',json.dumps(dict(CPU_admission_pass=result['CPU_admission_pass'],gates=gates,elapsed_seconds=time.monotonic()-start)),flush=True)
+
+if __name__=='__main__':main()

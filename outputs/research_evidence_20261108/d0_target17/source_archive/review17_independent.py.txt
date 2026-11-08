@@ -1,0 +1,40 @@
+from pathlib import Path
+from collections import deque
+import json,csv,hashlib,math,time
+import numpy as np
+R=Path('${RETINA_PROJECT_ROOT}');S=R/'experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1';D=S/'analysis/d0_probability_fp_v1';O=D/'targeted_review_17_20261030'
+t=time.monotonic();n=0
+def ck(ok,label):
+ global n
+ n+=1
+ if not ok:raise AssertionError(label)
+def readcsv(p):return list(csv.DictReader(p.open(encoding='utf-8-sig')))
+s=json.loads((O/'cpu_summary.json').read_text());ctx=readcsv(O/'native_GT_context_17.csv');p=readcsv(D/'points_154.csv');ix=readcsv(D/'point_index_77.csv');r=readcsv(O/'seed_records_34.csv')
+ids={x['point_id'] for x in ix if int(x['both_missed'])};ck(len(ids)==17,'17 source IDs')
+ck(r==[x for x in p if x['point_id'] in ids],'34 source rows unchanged')
+ck({x['point_id'] for x in ctx}==ids,'all17 contexts')
+for name,h in s['source_hashes'].items():ck(hashlib.sha256(Path(name).read_bytes()).hexdigest()==h,'source hash')
+q=json.loads((S/'protocol.json').read_text());refs={x['filename']:x for x in json.loads(Path(q['references']['science_reference_manifest']).read_text())['images']}
+for name in {x['filename'] for x in ctx}:
+ with np.load(refs[name]['reference_npz'],allow_pickle=False) as z:g=z['GT'].astype(bool)&z['FOV'].astype(bool)
+ for row in ctx:
+  if row['filename']!=name:continue
+  y,x=int(row['native_y']),int(row['native_x']);y0,y1=max(0,y-32),min(g.shape[0],y+32);x0,x1=max(0,x-32),min(g.shape[1],x+32);a=g[y0:y1,x0:x1]
+  bg=np.argwhere(~a);dist2=((bg-[y-y0,x-x0])**2).sum(1).min();ck(abs(2*math.sqrt(int(dist2))-float(row['target_GT_width_2EDT_nativepx']))<1e-12,'width direct nearest background')
+  seen={(y-y0,x-x0)};queue=deque(seen)
+  while queue:
+   yy,xx=queue.popleft()
+   for dy in [-1,0,1]:
+    for dx in [-1,0,1]:
+     pnt=yy+dy,xx+dx
+     if 0<=pnt[0]<a.shape[0] and 0<=pnt[1]<a.shape[1] and a[pnt] and pnt not in seen:seen.add(pnt);queue.append(pnt)
+  ck(len(seen)==int(row['local_GT_component_pixels_in64window']),'component direct floodfill')
+for seed in ['2027','2028']:
+ rr=[x for x in r if x['seed']==seed];dist=sorted(float(x['nearest_predicted_foreground_distance']) for x in rr);st=s['seed_statistics'][seed]
+ ck([dist[0],dist[8],dist[-1]]==st['distance_min_median_max_nativepx'],'distance summary')
+ ck([sum(v<=cut for v in dist) for cut in [2,4,8]]==st['nearest_pred_distance_le2_le4_le8'],'distance diagnostic only')
+ ck(sum(float(x['d1_max_probability'])<.1 for x in rr)==st['d1_max_probability_below_0p1'],'low probabilities')
+ ck(len({x['filename'] for x in rr})==6,'six images')
+ck(hashlib.sha256((S/'protocol.json').read_bytes()).hexdigest()=='2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3','old science unchanged')
+result={'status':'PASS','checks':n,'elapsed_seconds':time.monotonic()-t,'method':'Source row/hash equality, direct background search for width, independent deque floodfill for GT components, direct numeric aggregation; no model/probability loading','medical_review_count':0,'new_training':0,'new_inference':0,'Test_accessed':False}
+(O/'independent_review.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result))

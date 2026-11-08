@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "rows_total": 24000,
+  "expected_rows_total": 24000,
+  "per_run": [
+    {
+      "seed": 2026,
+      "rows": 8000,
+      "draws": 8000,
+      "mean_BCE_image": 0.16498037884754013,
+      "zero_A_draws": 4980,
+      "amp_retries": 0,
+      "run_binding_sha256": "5a2af37143134ed85f8176b441b014f069853b68491269cc760d89209e0bb644"
+    },
+    {
+      "seed": 2027,
+      "rows": 8000,
+      "draws": 8000,
+      "mean_BCE_image": 0.16536605824980016,
+      "zero_A_draws": 5019,
+      "amp_retries": 0,
+      "run_binding_sha256": "a6dcab179a0619257e7928ea8f1b0793c1e0861457a6c4a448263a53c52a5f1a"
+    },
+    {
+      "seed": 2028,
+      "rows": 8000,
+      "draws": 8000,
+      "mean_BCE_image": 0.16398885312414496,
+      "zero_A_draws": 5030,
+      "amp_retries": 0,
+      "run_binding_sha256": "a573fad0d456cf04ccb7b8e4994ca06e2e37744e0d9d9e1c1405e0522ce26072"
+    }
+  ]
+}

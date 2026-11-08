@@ -1,0 +1,150 @@
+"""CPU-only fixed-endpoint diagnostics, not a training loss implementation."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OMP_NUM_THREADS']='2'
+os.environ['OPENBLAS_NUM_THREADS']='2'
+import csv,json,hashlib,time,sys
+from pathlib import Path
+import numpy as np
+import skimage
+from skimage.morphology import skeletonize
+from scipy import ndimage
+
+ROOT=Path('${RETINA_PROJECT_ROOT}')
+SCI=ROOT/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022'
+OUT=SCI/'analysis/literature_mechanism_review_20261023'
+OLD=SCI/'analysis/fp_error_analysis_v1'
+def J(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for b in iter(lambda:f.read(8*1024*1024),b''):h.update(b)
+    return h.hexdigest()
+def W(p,obj):
+    with Path(p).open('x',encoding='utf-8') as f:json.dump(obj,f,ensure_ascii=False,indent=2,allow_nan=False)
+def C(p,rows):
+    with Path(p).open('x',newline='',encoding='utf-8-sig') as f:
+        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+def divide(n,d):return float(n/d) if d else None
+def measure(pred,gt):
+    sp=skeletonize(pred,method='zhang');sg=skeletonize(gt,method='zhang')
+    pn=int(sp.sum());gn=int(sg.sum());pi=int((sp&gt).sum());gi=int((sg&pred).sum())
+    tp=divide(pi,pn);ts=divide(gi,gn)
+    if not pn or not gn:cl=1. if not pred.any() and not gt.any() else 0.
+    else:cl=2*tp*ts/(tp+ts) if tp+ts else 0.
+    return dict(topology_precision=tp,topology_sensitivity=ts,clDice=cl,
+        pred_skeleton_denominator=pn,pred_skeleton_in_GT=pi,GT_skeleton_denominator=gn,GT_skeleton_in_pred=gi,
+        false_pred_skeleton=pn-pi,empty_prediction=not pred.any(),empty_GT=not gt.any()),sp,sg
+def tests():
+    ok={};g=np.zeros((51,71),bool);g[23:28,10:61]=1
+    p=np.zeros_like(g);p[20:31,10:61]=1
+    r,_,_=measure(p,g);d=2*(p&g).sum()/(p.sum()+g.sum());assert r['clDice']==1 and d<.8
+    ok['width_blind_counterexample']=dict(clDice=r['clDice'],Dice=float(d))
+    z=np.zeros_like(g);r,_,_=measure(z,z);assert r['clDice']==1 and r['topology_precision'] is None;ok['both_empty_explicit']=True
+    r,_,_=measure(z,g);assert r['clDice']==0 and r['topology_sensitivity']==0;ok['prediction_empty']=True
+    r,_,_=measure(g,z);assert r['clDice']==0 and r['topology_precision']==0;ok['GT_empty']=True
+    r,_,_=measure(g,g);assert r['clDice']==1;ok['perfect']=True
+    p=g.copy();p[5,5:15]=1;r,_,_=measure(p,g);assert r['topology_precision']<1 and r['topology_sensitivity']==1;ok['false_branch_penalized']=True
+    p=g.copy();p[:,35]=0;r,_,_=measure(p,g);assert r['clDice']<1;ok['break_penalized']=dict(clDice=r['clDice'],pred_components=ndimage.label(p,np.ones((3,3)))[1])
+    a,_,_=measure(g,p);assert a['clDice']==r['clDice'];ok['cldice_symmetric']=True
+    q=np.zeros_like(g);q[2:4,2:4]=1;f=np.ones_like(g);f[:5]=0;assert not (q&f).any();ok['outside_FOV_zero_before_skeleton']=True
+    return ok
+def main():
+    start=time.monotonic();checks=tests();protected={}
+    def bind(p,expected=None):
+        p=Path(p).resolve();assert str(p).startswith(str(ROOT)+'/')
+        h=sha(p)
+        if expected:assert h==expected,str(p)
+        protected[str(p)]=h;return p
+    manifest=J(bind(SCI/'references/dev/manifest.json','c2b2f3fd14e9f9705570faf6ed229cfff314474d48ac14d96838d9ca7f1f7804'))
+    a0={r['filename']:r for r in J(bind(SCI/'a0_reuse_binding.json'))['probability_maps']}
+    endpoint=J(bind(SCI/'analysis/endpoint_analysis.json'));old_rows={r['filename']:r for r in endpoint['images']}
+    fp_summary=J(bind(OLD/'summary.json'));bind(OLD/'report.md');bind(OLD/'final_acceptance.json');bind(OLD/'visual_review_receipt.json')
+    expected_masks=J(bind(OLD/'input_manifest.json'))['files']
+    metrics={a:{r['filename']:r for r in J(bind(SCI/f'runs/{a}/evaluation/step_002000/metrics.json'))['images']} for a in ['B1','B2']}
+    spec=dict(status='EXPLORATORY_DIAGNOSTIC_NOT_NEW_PRIMARY_OR_PROTECTION',scope='Dev28 fixed seed2026 step2000',threshold=.5,
+        support='Full frozen FOV, including U, same as original global Dice/Precision/FP; mask before skeletonization',
+        skeleton='skimage skeletonize(method=zhang), native 2D; zero outside FOV, no GT/pred repair or additional tolerance',
+        definitions=dict(topology_precision='|S(P) & GT| / |S(P)|',topology_sensitivity='|S(GT) & P| / |S(GT)|',clDice='harmonic mean of these two ratios'),
+        empty='Ratios with denominator zero are NA; clDice=1 for both masks empty, 0 if only one is empty, 0 if both nonempty ratios sum to zero; counts and flags kept. Authors raw code has no empty guards.',
+        aggregation='per-image ratios, then equal image macro; pooled counts separately labeled; no pixel-as-independent intervals',
+        bootstrap='Reuse original 1000x28 paired image indices; conditional on one trained seed and reused Dev',
+        authors_code_note='Published metric local variable names tprec/tsens are reversed versus paper Eq1, but harmonic mean unchanged; report follows paper definitions.',
+        FP_partition='New FP: GT distance<=1; or GT distance>1 and added 8-component touches A0 prediction; or GT distance>1 and added component does not touch A0 prediction. Geometry, NOT medical mechanism classes.',
+        false_centerline='S(P) outside GT: label-relative skeleton error, not a verified fake anatomical vessel or wrong connection.',
+        predicted_margin='2*EDT(P) at same GT skeleton coordinates covered by all three models; local support margin proxy, not clinical diameter.',
+        new_inference=0,training_updates=0,GPU_calls=0,Test_accessed=False)
+    W(OUT/'diagnostic_spec.json',spec)
+    rows=[];partitions=[];widths=[];tpchanges=[];examples=[];(OUT/'skeletons').mkdir()
+    for im in manifest['images']:
+        n=im['filename']
+        with np.load(bind(im['reference_npz'],im['reference_npz_sha256']),allow_pickle=False) as z:gt=z['GT'].astype(bool);f=z['FOV'].astype(bool)
+        gt=gt&f;prob={};pred={};fp={};skel={};records={};margins={}
+        for a in ['A0','B1','B2']:
+            p=Path(a0[n]['path']) if a=='A0' else SCI/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy'
+            expected=a0[n]['sha256'] if a=='A0' else metrics[a][n]['probability_sha256']
+            prob[a]=np.load(bind(p,expected),mmap_mode='r',allow_pickle=False)
+            assert prob[a].dtype==np.float32 and prob[a].shape==gt.shape and np.isfinite(prob[a]).all() and prob[a].min()>=0 and prob[a].max()<=1
+            pred[a]=(prob[a]>=np.float32(.5))&f;fp[a]=pred[a]&~gt
+            v,skel[a],sg=measure(pred[a],gt);v.update(filename=n,method=a,FOV_pixels=int(f.sum()),GT_pixels=int(gt.sum()))
+            v['TP']=int((pred[a]&gt).sum());v['FP']=int(fp[a].sum());v['FN']=int((gt&~pred[a]).sum())
+            v['Dice']=2*v['TP']/(v['GT_pixels']+v['TP']+v['FP'])
+            assert abs(v['Dice']-old_rows[n][a]['dice'])<1e-12
+            records[a]=v;rows.append(v)
+            margins[a]=2*ndimage.distance_transform_edt(np.pad(pred[a],1))[1:-1,1:-1]
+        agree=sg&pred['A0']&pred['B1']&pred['B2'];den=int(agree.sum())
+        for a in ['A0','B1','B2']:
+            vals=margins[a][agree];diff=vals-margins['A0'][agree]
+            widths.append(dict(filename=n,method=a,common_GT_skeleton_positions=den,mean_local_support_diameter=float(vals.mean()),median_local_support_diameter=float(np.median(vals)),
+                mean_difference_from_A0=float(diff.mean()),median_difference_from_A0=float(np.median(diff)),fraction_increased=float((diff>0).mean()),fraction_decreased=float((diff<0).mean()),
+                alpha=float(im['alpha']),mean_difference_reference=float(diff.mean()*im['alpha'])))
+        gt_distance=ndimage.distance_transform_edt(~gt);a0adj=ndimage.binary_dilation(pred['A0'],structure=np.ones((3,3),np.uint8))
+        for a in ['B1','B2']:
+            new=fp[a]&~fp['A0'];lab,nc=ndimage.label(new,structure=np.ones((3,3),np.uint8));ids=np.unique(lab[new&a0adj]);ids=ids[ids>0]
+            touches=np.isin(lab,ids)&new
+            near=new&(gt_distance<=1);far_attached=new&~near&touches;far_isolated=new&~near&~touches
+            assert np.array_equal(near|far_attached|far_isolated,new)
+            for kind,mask in [('GT_le1',near),('GT_gt1_A0_attached',far_attached),('GT_gt1_A0_isolated',far_isolated)]:
+                count=int(mask.sum());skeleton_count=int((skel[a]&mask).sum())
+                partitions.append(dict(filename=n,method=a,geometric_class=kind,new_FP_pixels=count,new_FP_denominator=int(new.sum()),share=divide(count,int(new.sum())),
+                    current_prediction_skeleton_pixels_in_new_FP=skeleton_count,medical_cause='NOT_CONFIRMED'))
+            t0=records['A0']['TP'];f0=records['A0']['FP'];ng=records['A0']['GT_pixels'];dt=records[a]['TP']-t0;df=records[a]['FP']-f0
+            numerator=dt*(ng+f0)-t0*df
+            exact_delta=2*numerator/((ng+t0+f0)*(ng+t0+dt+f0+df))
+            assert abs(exact_delta-(records[a]['Dice']-records['A0']['Dice']))<1e-12
+            tpchanges.append(dict(filename=n,method=a,new_TP=int((pred[a]&gt&~pred['A0']).sum()),lost_TP=int((pred['A0']&gt&~pred[a]).sum()),net_TP=dt,net_FP=df,
+                dice_delta=exact_delta,exact_dice_change_numerator=numerator,FP_increase_break_even_for_actual_TP_change=divide(dt*(ng+f0),t0),
+                false_pred_skeleton_delta=records[a]['false_pred_skeleton']-records['A0']['false_pred_skeleton'],
+                false_pred_skeleton_current_on_new_FP=int((skel[a]&new).sum())))
+        with (OUT/'skeletons'/f'{n}.npz').open('xb') as fsave:np.savez_compressed(fsave,GT=sg.astype(np.uint8),A0=skel['A0'].astype(np.uint8),B1=skel['B1'].astype(np.uint8),B2=skel['B2'].astype(np.uint8))
+        print('CPU',n,[(a,records[a]['clDice']) for a in ['A0','B1','B2']],flush=True)
+    C(OUT/'cldice_per_image.csv',rows);C(OUT/'FP_geometric_partition.csv',partitions);C(OUT/'common_hit_local_margin.csv',widths);C(OUT/'dice_count_decomposition.csv',tpchanges)
+    indices=np.asarray(endpoint['bootstrap_indices_by_n']['28'],np.int64)
+    assert indices.shape==(1000,28)
+    means={};paired={};keys=['clDice','topology_precision','topology_sensitivity','Dice','false_pred_skeleton']
+    names=[im['filename'] for im in manifest['images']];by={(v['filename'],v['method']):v for v in rows}
+    for a in ['A0','B1','B2']:
+        ar=[by[n,a] for n in names];assert all(not v['empty_GT'] and not v['empty_prediction'] for v in ar)
+        means[a]={k:float(np.mean([v[k] for v in ar])) for k in keys}
+        means[a]['n']=28;means[a]['pred_skeleton_pooled']=sum(v['pred_skeleton_denominator'] for v in ar);means[a]['false_skeleton_pooled']=sum(v['false_pred_skeleton'] for v in ar)
+    for a,b in [('B1','A0'),('B2','A0'),('B2','B1')]:
+        comp={}
+        for k in keys:
+            v=np.array([by[n,a][k]-by[n,b][k] for n in names]);est=v[indices].mean(1)
+            comp[k]=dict(mean=float(v.mean()),CI95=np.quantile(est,[.025,.975]).tolist(),increased=int((v>0).sum()),decreased=int((v<0).sum()),unchanged=int((v==0).sum()),n=28)
+        paired[a+'-'+b]=comp
+    category_summary={a:{k:sum(r['new_FP_pixels'] for r in partitions if r['method']==a and r['geometric_class']==k) for k in ['GT_le1','GT_gt1_A0_attached','GT_gt1_A0_isolated']} for a in ['B1','B2']}
+    change_summary={a:{k:sum(v[k] for v in tpchanges if v['method']==a) for k in ['new_TP','lost_TP','net_TP','net_FP','false_pred_skeleton_delta','false_pred_skeleton_current_on_new_FP']} for a in ['B1','B2']}
+    for a in ['B1','B2']:assert sum(category_summary[a].values())==fp_summary['sets']['new_'+a]['area']
+    W(OUT/'cldice_summary.json',dict(absolute_image_macro=means,paired_image_bootstrap=paired,FP_geometry_counts=category_summary,pixel_count_changes=change_summary,
+        common_hit_margin_image_macro={a:{k:float(np.mean([r[k] for r in widths if r['method']==a])) for k in ['mean_difference_from_A0','fraction_increased','fraction_decreased']} for a in ['A0','B1','B2']},
+        note='New metrics cannot replace original primary/protection. Full-FOV hard clDice uses no d1 tolerance. No seed SD.',bootstrap_indices_reused=True))
+    for p,h in protected.items():assert sha(p)==h,p
+    W(OUT/'input_manifest.json',dict(files=protected))
+    W(OUT/'diagnostic_validation.json',dict(status='PASSED',tests=checks,images=28,maps=84,all_nonempty=True,original_Dice_reconciled=True,
+        exact_Dice_change_identity=True,FP_disjoint_partition_reconciled=True,source_hashes_unchanged=True,skimage_version=skimage.__version__,
+        native_resolution=True,threshold=.5,FOV_U_included=True,training_updates=0,new_model_inference=0,GPU_calls=0,official_Test_accessed=False,
+        elapsed_seconds=time.monotonic()-start,source_code_sha256=sha(__file__)))
+    assert 'torch' not in sys.modules
+    print('DONE',json.dumps(means,ensure_ascii=False),flush=True)
+if __name__=='__main__':main()

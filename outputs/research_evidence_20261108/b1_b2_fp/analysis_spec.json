@@ -1,0 +1,25 @@
+{
+  "id": "P1_FP_ERROR_ANALYSIS_V1",
+  "approved": "User approved proposed plan via Implement the plan.",
+  "endpoints": "seed2026 lambda0.03 step2000; A0 original T0 reused",
+  "threshold": 0.5,
+  "global_FP": "(prob>=0.5)&FOV&~GT; U remains included",
+  "distance": "Euclidean distance to GT&FOV at native scale; <=1 versus >1 descriptive only; reference distance=alpha*native; all exact squared-native-distance frequencies retained",
+  "regions": [
+    "internal",
+    "near",
+    "far",
+    "U_in_FOV"
+  ],
+  "connectivity": 8,
+  "component_filter": "none",
+  "crop_rules": [
+    "grid512 tile containing bbox midpoint of largest union-new-FP component, tie smallest (y,x)",
+    "grid512 tile with largest union-new FP at distance>1",
+    "grid512 tile with largest B1/B2 FP disagreement"
+  ],
+  "crop_ties": "row then column",
+  "medical_truth": "not inferred automatically; original human 0/26 unchanged",
+  "status": "approved post-hoc descriptive analysis, NOT a revised scientific evaluation protocol",
+  "prohibited": "no model construction/inference/training/GPU/Test/new thresholds/lambda/seeds"
+}

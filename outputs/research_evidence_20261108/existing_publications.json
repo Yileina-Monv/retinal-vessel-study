@@ -1,0 +1,65 @@
+[
+  {
+    "number": 19,
+    "title": "归档NL终点结果与评价覆盖复核：nnU-Net局部收益及误报代价",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/19",
+    "commit": "6b21313f86661e3aa46b653e99b3a7e5e81a1d56",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 18,
+    "title": "研究提案：nnU-Net 出血邻域细血管辅助监督（N0 vs NL，待审）",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/18",
+    "commit": "270a977464da08eeb3dd43447e48afaa050da819",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 16,
+    "title": "归档 D0 与 Train 配对检查：V1/V2 覆盖不足，停止进入训练",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/16",
+    "commit": "acb8ad113661c5632a4155d82e321dc75dfa0a54",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 14,
+    "title": "发布 nnU-Net 消融结果：模块未获增益，保留标准深监督",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/14",
+    "commit": "ce0bc3072d77a6c98c083ef4900b04dd3c7003cc",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 12,
+    "title": "归档出血邻域细血管调研、局部监督原则与后续实验建议",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/12",
+    "commit": "10e33cc51fe380ebbf3cac38eb9892d5608ef3d7",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 10,
+    "title": "发布 nnU-Net 双种子复现成果：Dice 提升约 2pp，严格保护未通过",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/10",
+    "commit": "3cca62335dad337b0a8791b3c8712aca3359fa22",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 8,
+    "title": "整理 TW 两轮独立分析、证据修正与未采纳实验提案",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/8",
+    "commit": "2357c8fc6cc1df5c45502f9dbf9c536f03c1d168",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 7,
+    "title": "发布 MAPLES-DR 正式结果与原 U-Net 阶段探索报告（截至 2026-10-26）",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/7",
+    "commit": "1f2b10c31dad94e4814597d09cfe139882c38116",
+    "state_at_audit": "OPEN"
+  },
+  {
+    "number": 4,
+    "title": "同步 MAPLES 本机验证与阶段二研究进展（截至 2026-10-19）",
+    "url": "https://github.com/Yileina-Monv/retinal-vessel-study/pull/4",
+    "commit": "33ad1cc693eafbbf8a5c7f60438aee7541fb8118",
+    "state_at_audit": "OPEN"
+  }
+]

@@ -1,0 +1,388 @@
+from __future__ import annotations
+import csv, hashlib, html, json, sys
+from collections import Counter, defaultdict
+from pathlib import Path
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+ROOT=Path('${RETINA_PROJECT_ROOT}')
+CODE=ROOT/'code/retinal-vessel-study'
+OUT=ROOT/'experiments/t0_tw_class_split_20261018'
+AN=OUT/'analysis'
+PROTO=ROOT/'docs/t0_tw_class_split_20261018/protocol.json'
+OLD=ROOT/'experiments/t0_tw_core_20261016'
+AB=ROOT/'experiments/t0_tw_weight_ablation_20261017'
+A15=ROOT/'experiments/a15_2_z0_t0_calibration_20261015'
+SEEDS=(2026,2027,2028)
+METRICS=('near_thin_recall_d1','precision','fp_density','far_recall','dice','recall','near_pixel_recall','near_thin_d1_diam_le2','near_thin_d1_diam_le4','near_thin_d1_diam_le5')
+CONDITIONS=('1/1','2/1','2/2')
+CONTRASTS=(('2/1','1/1'),('2/1','2/2'))
+GRID=np.linspace(0,1,1001,dtype=np.float32)
+EXPECTED_BIND='6ba7b7dd57fdd9449667d29bd4398283a20936e4841803b07949752493ba9562'
+sys.path.insert(0,str(AB/'analysis'))
+from evaluate_weight_ablation import eval_prob
+from retinal_m0.maples_evaluate import load_mask
+from retinal_m0.maples_reliability import probability_fp_grid
+
+def sha(p):
+ h=hashlib.sha256()
+ with Path(p).open('rb') as f:
+  for b in iter(lambda:f.read(1<<20),b''):h.update(b)
+ return h.hexdigest()
+def write_json(p,x):
+ Path(p).parent.mkdir(parents=True,exist_ok=True)
+ Path(p).write_text(json.dumps(x,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+def write_csv(p,rows,fields=None):
+ if not rows: raise RuntimeError('Refusing to write empty CSV: '+str(p))
+ Path(p).parent.mkdir(parents=True,exist_ok=True)
+ if fields is None: fields=list(dict.fromkeys(k for r in rows for k in r))
+ with Path(p).open('w',newline='',encoding='utf-8-sig') as f:
+  w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(rows)
+def refs_load():
+ doc=json.loads((A15/'dev_manifest.json').read_text(encoding='utf-8'))
+ if doc.get('scope')!='MAPLES_dev28' or len(doc.get('images',[]))!=28: raise RuntimeError('Frozen dev28 manifest mismatch')
+ refs={r['filename']:r for r in doc['images']}
+ if len(refs)!=28: raise RuntimeError('Non-unique dev manifest filenames')
+ return doc,refs
+def run_paths(condition,seed):
+ if condition=='1/1': return OLD/f'runs/seed_{seed}/T0'
+ if condition=='2/2': return OLD/f'runs/seed_{seed}/TW'
+ if condition=='2/1': return OUT/f'runs/seed_{seed}/w_v2_b1'
+ raise KeyError(condition)
+def probdir(condition,seed): return run_paths(condition,seed)/'evaluation/step_002000/probabilities'
+def compute_record(prob,ref,threshold=.5): return eval_prob(prob,ref,threshold)
+def load_all(refs,protocol,bind):
+ values={'Z0':{}}; probs={'Z0':{}}
+ for name,ref in refs.items():
+  p=np.load(A15/'z0/probabilities'/f'{name}.npy',allow_pickle=False)
+  if p.dtype!=np.float32 or p.shape!=tuple(ref['native_shape']) or not np.isfinite(p).all() or np.any((p<0)|(p>1)): raise RuntimeError('Invalid Z0 probability '+name)
+  probs['Z0'][name]=p; values['Z0'][name]=compute_record(p,ref,.5)
+ for cond in CONDITIONS:
+  for seed in SEEDS:
+   run=run_paths(cond,seed); summary=json.loads((run/'summary.json').read_text())
+   if summary.get('status')!='passed' or summary.get('completed_steps')!=2000 or summary.get('next_global_draw')!=8000: raise RuntimeError('Incomplete run '+str(run))
+   rb=json.loads((run/'run_binding.json').read_text())
+   if cond=='2/1' and rb.get('execution_binding_sha256')!=bind: raise RuntimeError('2/1 binding mismatch')
+   if cond=='1/1' or cond=='2/2':
+    expected=next(x for x in protocol['methods']['reuse'] if x['method']==('T0' if cond=='1/1' else 'TW') and x['seed']==seed)
+    # Frozen protocol hash is the run summary's last.pt hash; the referenced step checkpoint
+    # has its own byte hash in the protected source manifest and endpoint evaluation record.
+    if sha(run/'last.pt')!=expected['checkpoint_sha256'] or summary.get('checkpoint_sha256')!=expected['checkpoint_sha256']:
+     raise RuntimeError('Frozen reused-run summary/last checkpoint hash mismatch '+str(run))
+    sm=json.loads((ROOT/'docs/t0_tw_class_split_20261018/source_manifest.json').read_text())
+    checkpoint=run/'step_002000.pt';actual_step_hash=sha(checkpoint)
+    if sm.get('protected_sha256',{}).get(str(checkpoint))!=actual_step_hash:
+     raise RuntimeError('Reused step checkpoint differs from protected source manifest '+str(run))
+   else:
+    checkpoint=run/'step_002000.pt';actual_step_hash=sha(checkpoint)
+   ev=json.loads((run/'evaluation/step_002000/metrics.json').read_text())
+   if ev.get('status')!='passed' or ev.get('threshold')!=.5 or ev.get('dev_images')!=28 or ev.get('checkpoint_sha256')!=actual_step_hash: raise RuntimeError('Endpoint evaluation binding mismatch '+str(run))
+   if cond=='2/1' and ev.get('run_binding')!=rb: raise RuntimeError('2/1 endpoint run binding mismatch')
+   key=f'{cond}|{seed}'; values[key]={}; probs[key]={}
+   recmap={r['filename']:r for r in ev['images']}
+   if set(recmap)!=set(refs): raise RuntimeError('Endpoint image membership mismatch '+key)
+   for name,ref in refs.items():
+    p=np.load(probdir(cond,seed)/f'{name}.npy',allow_pickle=False)
+    if p.dtype!=np.float32 or p.shape!=tuple(ref['native_shape']) or not np.isfinite(p).all() or np.any((p<0)|(p>1)): raise RuntimeError('Invalid endpoint probability '+key+'/'+name)
+    q=compute_record(p,ref,.5)
+    stored=recmap[name]
+    for m in METRICS:
+     if m not in stored: continue
+     a=q[m]['value'];b=stored[m]['value']
+     if a is None or b is None:
+      if a is not b: raise RuntimeError(f'Endpoint NA mismatch {key}/{name}/{m}')
+     elif not np.isclose(float(a),float(b),rtol=0,atol=1e-12): raise RuntimeError(f'Endpoint metric mismatch {key}/{name}/{m}')
+     if q[m]['numerator']!=stored[m]['numerator'] or q[m]['denominator']!=stored[m]['denominator'] or q[m]['NA_reason']!=stored[m]['NA_reason']: raise RuntimeError(f'Endpoint count mismatch {key}/{name}/{m}')
+    probs[key][name]=p;values[key][name]=q
+ # All three step-0 evaluations must be identical shared Z0 reuse.
+ for seed in SEEDS:
+  ev=json.loads((OUT/f'runs/seed_{seed}/w_v2_b1/evaluation/step_000000/metrics.json').read_text())
+  for name in refs:
+   q=next(x for x in ev['images'] if x['filename']==name)
+   for m in METRICS:
+    # Historical Z0 files contain only the metrics recorded at that time.
+    if m not in q: continue
+    if q[m]['value']!=values['Z0'][name][m]['value'] or q[m]['numerator']!=values['Z0'][name][m]['numerator'] or q[m]['denominator']!=values['Z0'][name][m]['denominator']: raise RuntimeError('Step-0 did not reuse shared Z0 '+name+'/'+m)
+ return values,probs
+def valid_ids(z0,refs):
+ valid={m:[n for n in refs if z0[n][m]['denominator']>0] for m in METRICS}
+ expected=json.loads(PROTO.read_text())['evaluation']['primary']
+ if valid['near_thin_recall_d1']!=expected['primary_ids'] or len(valid['near_thin_recall_d1'])!=9: raise RuntimeError('Frozen primary IDs differ')
+ if sum(z0[n]['near_thin_recall_d1']['denominator'] for n in valid['near_thin_recall_d1'])!=77: raise RuntimeError('Frozen primary denominator differs from 77')
+ for m,ids in valid.items():
+  for cond in CONDITIONS:
+   for seed in SEEDS:
+    for n in ids:
+     if values_key(cond,seed,n,m) is None: raise RuntimeError(f'Unexpected NA on fixed valid set {cond}/{seed}/{n}/{m}')
+ return valid
+def values_key(cond,seed,name,metric):
+ # Bound by module-level analysis values once loaded.
+ return ALL_VALUES[f'{cond}|{seed}'][name][metric]['value']
+def fixed_rows(refs,values,bind):
+ rows=[]
+ for name in refs:
+  for m in METRICS:
+   q=values['Z0'][name][m];rows.append(dict(source='Z0',seed='',condition='Z0',filename=name,metric=m,value=q['value'],numerator=q['numerator'],denominator=q['denominator'],NA_reason=q['NA_reason'],threshold=.5,execution_binding_sha256=bind))
+  for cond in CONDITIONS:
+   for seed in SEEDS:
+    for m in METRICS:
+     q=values[f'{cond}|{seed}'][name][m];rows.append(dict(source='endpoint',seed=seed,condition=cond,filename=name,metric=m,value=q['value'],numerator=q['numerator'],denominator=q['denominator'],NA_reason=q['NA_reason'],threshold=.5,execution_binding_sha256=bind))
+ return rows
+def paired_stats(values,valid,comparisons,tag):
+ pair=[];seedrows=[];boot=[];stats={};indices={}
+ for m in METRICS:
+  ids=valid[m];n=len(ids)
+  if n not in indices: indices[n]=np.random.Generator(np.random.PCG64(20261016)).integers(0,n,(1000,n),dtype=np.int64)
+  ix=indices[n]
+  for a,b in comparisons:
+   mat=np.empty((n,3),dtype=np.float64)
+   for j,s in enumerate(SEEDS):
+    av=np.asarray([values[f'{a}|{s}'][name][m]['value'] for name in ids],dtype=float)
+    bv=np.asarray([values[f'{b}|{s}'][name][m]['value'] for name in ids],dtype=float)
+    if not np.isfinite(av).all() or not np.isfinite(bv).all(): raise RuntimeError('NA on frozen valid set')
+    mat[:,j]=av-bv
+    seedrows.append(dict(kind=tag,metric=m,contrast=f'{a}-{b}',seed=s,valid_n=n,condition_macro=float(av.mean()),reference_macro=float(bv.mean()),delta_macro=float((av-bv).mean())))
+   perimage=mat.mean(axis=1);estimate=float(perimage.mean());be=perimage[ix].mean(axis=1);lo,hi=np.quantile(be,[.025,.975],method='linear')
+   sd=float(mat.mean(axis=0).std(ddof=1));key=f'{a}-{b}'
+   stats.setdefault(key,{})[m]=dict(estimate=estimate,ci95_low=float(lo),ci95_high=float(hi),valid_n=n,seed_delta_mean=float(mat.mean(axis=0).mean()),seed_delta_sd=sd,seed_deltas={str(s):float(mat[:,j].mean()) for j,s in enumerate(SEEDS)})
+   for i,name in enumerate(ids): pair.append(dict(kind=tag,metric=m,contrast=key,filename=name,delta_mean3seed=float(perimage[i]),**{f'delta_seed_{s}':float(mat[i,j]) for j,s in enumerate(SEEDS)}))
+   for k,v in enumerate(be): boot.append(dict(kind=tag,metric=m,contrast=key,draw=k+1,indices_json=json.dumps(ix[k].tolist()),estimate=float(v)))
+ return stats,pair,seedrows,boot,indices
+def z0_rows(values,valid):
+ rows=[];summary=[]
+ for m,ids in valid.items():
+  base=float(np.mean([ALL_VALUES['Z0'][n][m]['value'] for n in ids]))
+  for cond in CONDITIONS:
+   ms=[]
+   for s in SEEDS:
+    x=float(np.mean([values[f'{cond}|{s}'][n][m]['value'] for n in ids]));ms.append(x)
+    rows.append(dict(metric=m,condition=cond,seed=s,valid_n=len(ids),Z0_macro=base,endpoint_macro=x,endpoint_minus_Z0=x-base))
+   summary.append(dict(metric=m,condition=cond,valid_n=len(ids),Z0_macro=base,endpoint_macro_mean3seed=float(np.mean(ms)),endpoint_minus_Z0_mean3seed=float(np.mean(ms)-base),**{f'seed_{s}_macro':ms[i] for i,s in enumerate(SEEDS)}))
+ return rows,summary
+def same_fp(refs,probs,valid,bind):
+ from retinal_m0.maples_reliability import probability_fp_grid
+ target=float(np.mean([ALL_VALUES['Z0'][n]['fp_density']['value'] for n in refs]))
+ grids=[];selected=[];summary={}
+ for cond in CONDITIONS:
+  for seed in SEEDS:
+   counts=[];fovs=[]
+   for name,ref in refs.items():
+    v=load_mask(ref['vessel_path']);f=load_mask(ref['fov_path']);counts.append(probability_fp_grid(probs[f'{cond}|{seed}'][name],v,f,GRID));fovs.append(int(f.sum()))
+   density=np.mean(np.stack(counts)/np.asarray(fovs,dtype=np.float64)[:,None],axis=0)
+   feasible=np.flatnonzero(density<=target);ix=int(feasible[0]) if len(feasible) else None
+   item=dict(condition=cond,seed=seed,threshold=float(GRID[ix]) if ix is not None else None,grid_index=ix,macro_fp_density=float(density[ix]) if ix is not None else None,target=target,valid_n=28 if ix is not None else 0)
+   summary[(cond,seed)]=item
+   for j,t in enumerate(GRID): grids.append(dict(condition=cond,seed=seed,grid_index=j,threshold=float(t),macro_fp_density=float(density[j]),target=target,feasible=int(density[j]<=target)))
+   if ix is not None:
+    for name,ref in refs.items():
+     q=compute_record(probs[f'{cond}|{seed}'][name],ref,float(GRID[ix]));row=dict(condition=cond,seed=seed,filename=name,threshold=float(GRID[ix]))
+     for m in METRICS:
+      row[m]=q[m]['value'];row[m+'_numerator']=q[m]['numerator'];row[m+'_denominator']=q[m]['denominator'];row[m+'_NA_reason']=q[m]['NA_reason']
+     selected.append(row)
+ return target,summary,grids,selected
+def bce_audit():
+ groups=('A_V1','A_V0','O_V1','O_V0');allrows=[];summaries=[];runchecks=[]
+ for seed in SEEDS:
+  run=OUT/f'runs/seed_{seed}/w_v2_b1';rb=json.loads((run/'run_binding.json').read_text());rows=[]
+  with (run/'bce_contributions.jsonl').open() as f:
+   for line in f: rows.append(json.loads(line))
+  if len(rows)!=8000: raise RuntimeError(f'Expected 8000 BCE contribution rows for {seed}, got {len(rows)}')
+  draws=defaultdict(list)
+  for r in rows:
+   if r['seed']!=seed or r['method']!='w_v2_b1' or r['protocol_sha256']!=json.loads(PROTO.read_text())['protocol_id'] and r['protocol_sha256']!=hashlib.sha256(PROTO.read_bytes()).hexdigest():
+    # The log stores protocol SHA, not the protocol identifier.
+    if r.get('protocol_sha256')!=hashlib.sha256(PROTO.read_bytes()).hexdigest(): raise RuntimeError('BCE protocol binding mismatch')
+   if r['code_binding_sha256']!=EXPECTED_BIND or r['run_binding_sha256']!=sha(run/'run_binding.json'): raise RuntimeError('BCE run binding mismatch')
+   if r['vessel_weight']!=2 or r['background_weight']!=1: raise RuntimeError('BCE weights mismatch')
+   draws[int(r['global_draw'])].append(r)
+  if set(draws)!=set(range(8000)): raise RuntimeError('BCE global draw coverage mismatch')
+  agg={g:{k:0.0 for k in ('n','S','W','C')} for g in groups};bces=[];zeroA=0
+  for draw,rr in draws.items():
+   if len(rr)!=1: raise RuntimeError('Expected one contribution record per draw')
+   r=rr[0];gs=r['groups']
+   if set(gs)!=set(groups): raise RuntimeError('Contribution group set mismatch')
+   if int(r['D'])!=int(r['nF']+r['nA_V1']) or int(r['nA_V1']+r['nA_V0'])!=int(r['nA']): raise RuntimeError('Contribution denominator/region count mismatch')
+   if sum(int(gs[g]['n']) for g in groups)!=int(r['nF']): raise RuntimeError('Group pixel counts do not sum to FOV')
+   if int(gs['A_V1']['n'])!=int(r['nA_V1']) or int(gs['A_V0']['n'])!=int(r['nA_V0']): raise RuntimeError('A class counts mismatch')
+   for g in groups:
+    q=gs[g];w=2.0 if g=='A_V1' else 1.0
+    if not np.isclose(float(q['W']),float(q['S'])*w,rtol=1e-6,atol=1e-5): raise RuntimeError('Weighted BCE sum mismatch')
+    if not np.isclose(float(q['C']),float(q['W'])/float(r['D']),rtol=1e-6,atol=1e-7): raise RuntimeError('Normalized BCE contribution mismatch')
+    for k in ('n','S','W','C'): agg[g][k]+=float(q[k])
+   bce=float(r['BCE_image']);dice=float(r['Dice_image']);total=float(r['total_image'])
+   if not np.isclose(sum(float(gs[g]['C']) for g in groups),bce,rtol=1e-6,atol=1e-6): raise RuntimeError('Four contributions do not sum to BCE')
+   if not np.isclose(bce+dice,total,rtol=1e-6,atol=1e-6): raise RuntimeError('BCE+Dice mismatch total loss')
+   if int(r['nA'])==0: zeroA+=1
+   bces.append(bce)
+  if sum(r['amp_retries'] for r in rows)<0: raise RuntimeError('Invalid AMP retry count')
+  mean_bce=float(np.mean(bces));fov_pixels=float(sum(agg[g]['n'] for g in groups))
+  for g in groups:
+   q=agg[g];summaries.append(dict(seed=seed,condition='2/1',group=g,draws=8000,mean_n_per_draw=q['n']/8000,sampled_pixel_instances=int(q['n']),sampled_pixel_share_of_FOV=q['n']/fov_pixels,mean_raw_BCE_sum_S=q['S']/8000,mean_weighted_BCE_sum_W=q['W']/8000,mean_normalized_contribution_C=q['C']/8000,ratio_of_means_C_over_BCE=(q['C']/8000)/mean_bce,mean_BCE_image=mean_bce,zero_A_draws=zeroA,nonzero_A_draws=8000-zeroA))
+  runchecks.append(dict(seed=seed,rows=len(rows),draws=len(draws),mean_BCE_image=mean_bce,zero_A_draws=zeroA,amp_retries=sum(int(r['amp_retries']) for r in rows),run_binding_sha256=sha(run/'run_binding.json')))
+  allrows.extend(rows)
+ return {'status':'passed','rows_total':len(allrows),'expected_rows_total':24000,'per_run':runchecks},summaries
+
+def main():
+ global ALL_VALUES
+ proto=json.loads(PROTO.read_text())
+ if hashlib.sha256(PROTO.read_bytes()).hexdigest()!='b486512cd3c3d9605fdb8f498b4e62c46c0666adcdf7544d0c7e901c8344775a': raise RuntimeError('Frozen protocol hash mismatch')
+ bind=sha(OUT/'execution_binding.json')
+ if bind!=EXPECTED_BIND: raise RuntimeError('Execution binding hash mismatch')
+ verify=json.loads((OUT/'implementation_gate/verification.json').read_text())
+ if not verify.get('all_passed') or verify.get('execution_binding_sha256')!=bind: raise RuntimeError('Implementation gate mismatch')
+ _,refs=refs_load();values,probs=load_all(refs,proto,bind);ALL_VALUES=values
+ valid=valid_ids(values['Z0'],refs)
+ for cond in CONDITIONS:
+  for seed in SEEDS:
+   for m,ids in valid.items():
+    for name in ids:
+     if values[f'{cond}|{seed}'][name][m]['value'] is None: raise RuntimeError(f'Unexpected NA {cond}/{seed}/{name}/{m}')
+ fixed=fixed_rows(refs,values,bind)
+ write_csv(AN/'fixed_0p5_per_image.csv',fixed)
+ stats,pair,seedrows,boot,ix=paired_stats(values,valid,CONTRASTS,'fixed_0p5')
+ write_csv(AN/'paired_per_image.csv',pair);write_csv(AN/'paired_seed_macro.csv',seedrows);write_csv(AN/'bootstrap_indices_estimates.csv',boot)
+ zrows,zsum=z0_rows(values,valid);write_csv(AN/'z0_comparison_seed_macro.csv',zrows);write_csv(AN/'z0_comparison_summary.csv',zsum)
+ target,sf,gridrows,sfrows=same_fp(refs,probs,valid,bind)
+ write_csv(AN/'same_fp_full_grid.csv',gridrows);write_csv(AN/'same_fp_per_image.csv',sfrows)
+ sfvals={}
+ for c in CONDITIONS:
+  for s in SEEDS:
+   sfvals[f'{c}|{s}']={r['filename']:{m:{'value':r[m],'numerator':r[m+'_numerator'],'denominator':r[m+'_denominator'],'NA_reason':r[m+'_NA_reason']} for m in METRICS} for r in sfrows if r['condition']==c and r['seed']==s}
+ sf_valid={m:[n for n in refs if values['Z0'][n][m]['denominator']>0] for m in METRICS}
+ for c in CONDITIONS:
+  for s in SEEDS:
+   if len(sfvals[f'{c}|{s}'])!=28: raise RuntimeError(f'Missing same-FP per-image rows {c}/{s}')
+ sfstats,sfpairs,sfseed,sfboot,sfix=paired_stats(sfvals,sf_valid,CONTRASTS,'same_fp_selected_threshold')
+ write_csv(AN/'same_fp_paired_per_image.csv',sfpairs);write_csv(AN/'same_fp_seed_macro.csv',sfseed);write_csv(AN/'same_fp_bootstrap_indices_estimates.csv',sfboot)
+ # Same-FP intervals are conditional on the already selected global thresholds.
+ contrib_audit,contrib=bce_audit();write_csv(AN/'bce_contribution_summary.csv',contrib)
+ # Build/repair the one previously authorized derived CSV; backup exact bytes first.
+ oldcsv=AB/'analysis/fixed_0p5_per_image.csv';repair=AN/'export_repair';repair.mkdir(parents=True,exist_ok=True)
+ expected_old='0277f055494dfa50e5254087b9f2b5d1d37ae25b85a1a479c1f7d05e00a668c3';before=oldcsv.read_bytes();before_sha=hashlib.sha256(before).hexdigest()
+ if before_sha!=expected_old: raise RuntimeError('Authorized legacy CSV pre-hash mismatch; refused to modify')
+ backup=repair/'fixed_0p5_per_image.before.csv'
+ if backup.exists():
+  if backup.read_bytes()!=before: raise RuntimeError('Existing legacy CSV backup differs from authorized original')
+ else:
+  with backup.open('xb') as f:f.write(before)
+ oldrows=list(csv.DictReader(before.decode('utf-8-sig').splitlines()))
+ if len(oldrows)!=616: raise RuntimeError(f'Authorized legacy CSV expected 616 prior rows, got {len(oldrows)}')
+ legacy_metrics=('near_thin_recall_d1','precision','fp_density','far_recall','dice','recall','near_pixel_recall','near_thin_d1_diam_le2','near_thin_d1_diam_le4','near_thin_d1_diam_le5')
+ alpha_cond={'1.0':'1/1','1.5':None,'2.0':'2/2','3.0':None}
+ # Add only the missing rows, retaining every existing row unchanged and in place.
+ oldkeys=set()
+ for r in oldrows:
+  k=(r['source'],r['seed'],r['alpha'],r['filename'],r['metric'])
+  if k in oldkeys: raise RuntimeError('Duplicate key in legacy CSV before repair')
+  oldkeys.add(k)
+ oldbinds={r['execution_binding_sha256'] for r in oldrows}
+ if len(oldbinds)!=1: raise RuntimeError('Legacy CSV contains mixed bindings')
+ legacy_bind=next(iter(oldbinds))
+ if legacy_bind!=sha(AB/'execution_binding.json'): raise RuntimeError('Legacy table binding mismatch')
+ expected_keys=set();missing=[]
+ for name in refs:
+  for m in legacy_metrics: expected_keys.add(('Z0','', '0',name,m))
+  for alpha in ('1.0','1.5','2.0','3.0'):
+   for seed in SEEDS:
+    for m in legacy_metrics: expected_keys.add(('endpoint',str(seed),alpha,name,m))
+ if not oldkeys<=expected_keys: raise RuntimeError('Unexpected key in old CSV')
+ if len(expected_keys)!=3640 or len(oldkeys)!=616: raise RuntimeError('Legacy expected/current row count mismatch')
+ # Existing rows must agree with saved probabilities and frozen labels before preserving.
+ legacy_record_cache={}
+ for r in oldrows:
+  name=r['filename'];m=r['metric'];source=r['source']
+  if source=='Z0': q=values['Z0'][name][m]
+  else:
+   alpha=r['alpha'];seed=int(r['seed']);cond=('1/1' if alpha=='1.0' else '2/2' if alpha=='2.0' else None)
+   if alpha=='1.5': cond='legacy:1.5'
+   if alpha=='3.0': cond='legacy:3.0'
+   if cond in ('1/1','2/2'): q=values[f'{cond}|{seed}'][name][m]
+   else:
+    # Use saved endpoint probabilities, never rerun inference or training.
+    la=1.5 if alpha=='1.5' else 3.0; label='w_1p5' if la==1.5 else 'w_3p0'
+    cachekey=('endpoint',str(seed),alpha,name)
+    if cachekey not in legacy_record_cache:
+     p=np.load(AB/f'runs/seed_{seed}/{label}/evaluation/step_002000/probabilities/{name}.npy',allow_pickle=False)
+     legacy_record_cache[cachekey]=compute_record(p,refs[name],.5)
+    q=legacy_record_cache[cachekey][m]
+  if r['NA_reason']!=(q['NA_reason'] or '') or r['numerator']!=str(q['numerator']) or r['denominator']!=str(q['denominator']): raise RuntimeError('Existing legacy row count/NA changed '+str((source,r['seed'],r['alpha'],name,m)))
+  oldv=r['value'];newv='' if q['value'] is None else str(q['value'])
+  if oldv=='':
+   if q['value'] is not None: raise RuntimeError('Existing legacy NA/value mismatch')
+  elif q['value'] is None or not np.isclose(float(oldv),float(q['value']),rtol=0,atol=1e-12): raise RuntimeError('Existing legacy value mismatch')
+ # Generate missing cells only using existing frozen probability maps.
+ legacy_probs={}
+ for name,ref in refs.items():
+  legacy_probs[('Z0','', '0',name)]=probs['Z0'][name]
+  for alpha in ('1.0','1.5','2.0','3.0'):
+   for seed in SEEDS:
+    if alpha=='1.0': cond='1/1';p=probs[f'{cond}|{seed}'][name]
+    elif alpha=='2.0': cond='2/2';p=probs[f'{cond}|{seed}'][name]
+    else:
+     label='w_1p5' if alpha=='1.5' else 'w_3p0'
+     p=np.load(AB/f'runs/seed_{seed}/{label}/evaluation/step_002000/probabilities/{name}.npy',allow_pickle=False)
+    legacy_probs[('endpoint',str(seed),alpha,name)]=p
+ for name in refs:
+  legacy_record_cache[('Z0','', '0',name)]=values['Z0'][name]
+  for seed in SEEDS:
+   legacy_record_cache[('endpoint',str(seed),'1.0',name)]=values[f'1/1|{seed}'][name]
+   legacy_record_cache[('endpoint',str(seed),'2.0',name)]=values[f'2/2|{seed}'][name]
+ for key in sorted(expected_keys-oldkeys):
+  source,seed,alpha,name,m=key;record_key=(source,seed,alpha,name)
+  if record_key not in legacy_record_cache:
+   legacy_record_cache[record_key]=compute_record(legacy_probs[record_key],refs[name],.5)
+  q=legacy_record_cache[record_key][m]
+  missing.append(dict(source=source,seed=seed,alpha=alpha,filename=name,metric=m,value=q['value'],numerator=q['numerator'],denominator=q['denominator'],NA_reason=q['NA_reason'] or '',threshold=.5,execution_binding_sha256=legacy_bind))
+ legacy_out=oldrows+missing
+ if len(legacy_out)!=3640 or len({(r['source'],r['seed'],r['alpha'],r['filename'],r['metric']) for r in legacy_out})!=3640: raise RuntimeError('Repaired legacy CSV key coverage failed')
+ fields=['source','seed','alpha','filename','metric','value','numerator','denominator','NA_reason','threshold','execution_binding_sha256']
+ write_csv(oldcsv,legacy_out,fields)
+ after_sha=sha(oldcsv)
+ repair_ver=dict(status='passed',path=str(oldcsv),before_sha256=before_sha,after_sha256=after_sha,before_data_rows=len(oldrows),expected_data_rows=3640,added_rows=len(missing),preserved_original_rows=len(oldrows),unique_keys=3640,source='existing saved probability maps and frozen dev references; no training or inference',official_test_read=False,backup_path=str(repair/'fixed_0p5_per_image.before.csv'),backup_sha256=sha(repair/'fixed_0p5_per_image.before.csv'))
+ write_json(repair/'repair_verification.json',repair_ver)
+ # Verify protected source files after the sole authorized old-CSV exception.
+ source_manifest=json.loads((ROOT/'docs/t0_tw_class_split_20261018/source_manifest.json').read_text())
+ protected=source_manifest.get('protected_sha256',{}); changed=[]
+ for path,expected in protected.items():
+  if path==str(oldcsv): continue
+  p=Path(path)
+  if not p.exists() or sha(p)!=expected: changed.append(path)
+ if changed: raise RuntimeError('Protected input hash mismatch: '+str(changed[:10]))
+ contrib_audit['status']='passed';contrib_audit['rows_total']=24000
+ write_json(AN/'bce_contribution_log_audit.json',contrib_audit)
+ primary=stats['2/1-1/1']['near_thin_recall_d1']
+ same_summary={f'{c}|{s}':sf[(c,s)] for c in CONDITIONS for s in SEEDS}
+ summary=dict(status='passed',protocol_sha256=sha(PROTO),execution_binding_sha256=bind,conditions=list(CONDITIONS),seeds=list(SEEDS),new_runs=3,updates_each=2000,draws_each=8000,development_images=28,evaluation_points=33,endpoint_probability_maps=84,official_test_read=False,primary=dict(metric='near_thin_recall_d1',threshold=.5,contrast='2/1-1/1',valid_n=9,target_points=77,NA_images=19,ids=valid['near_thin_recall_d1'],estimate=primary['estimate'],ci95=[primary['ci95_low'],primary['ci95_high']],seed_deltas=primary['seed_deltas'],seed_delta_sd=primary['seed_delta_sd']),fixed_0p5_statistics=stats,valid_image_ids=valid,same_FP=dict(target=target,conditions=same_summary,paired_statistics=sfstats,intervals_conditional_on_selected_threshold=True),Z0_comparison=zsum,bce_contribution_audit=contrib_audit,legacy_csv_repair=repair_ver,protected_source_hashes_checked=len(protected)-1,interpretation_limits=proto['statistics']['limitations'])
+ write_json(AN/'analysis_summary.json',summary)
+ write_json(AN/'analysis_config.json',dict(bootstrap={'resamples':1000,'unit':'whole paired development image','generator':'numpy.PCG64','seed':20261016,'same_n_indices_reused':True},threshold_fixed=.5,same_FP_grid={'start':0,'stop':1,'step':.001,'dtype':'float32','target_macro_FP_per_FOV':target,'select':'lowest feasible global threshold, no epsilon'},official_test_read=False))
+ # Plots: primary per-image changes, contribution shares, same-FP selected thresholds.
+ figdir=AN/'figures';figdir.mkdir(parents=True,exist_ok=True)
+ ids=valid['near_thin_recall_d1'];fig,ax=plt.subplots(figsize=(13,5));x=np.arange(len(ids));w=.38
+ for off,contrast,color in ((-w/2,'2/1-1/1','#2865a8'),(w/2,'2/1-2/2','#d17a22')):
+  rr=[next(q for q in pair if q['metric']=='near_thin_recall_d1' and q['contrast']==contrast and q['filename']==n)['delta_mean3seed'] for n in ids]
+  ax.bar(x+off,rr,width=w,label=contrast,color=color)
+ ax.axhline(0,color='#303b44',lw=.8);ax.set_xticks(x,[n.replace('_PP','') for n in ids],rotation=60,ha='right',fontsize=7);ax.set_ylabel('d1 recall difference');ax.set_title('Primary per-image difference (three paired seeds)');ax.legend();fig.tight_layout();fig.savefig(figdir/'primary_d1_paired.png',dpi=150);plt.close(fig)
+ fig,ax=plt.subplots(figsize=(8,5));x=np.arange(3);bottom=np.zeros(3);colors={'A_V1':'#b3534b','A_V0':'#e2a260','O_V1':'#397d8a','O_V0':'#a9c5c5'}
+ for g in ('A_V1','A_V0','O_V1','O_V0'):
+  vv=[next(q['ratio_of_means_C_over_BCE'] for q in contrib if q['seed']==s and q['group']==g) for s in SEEDS]
+  ax.bar(x,vv,bottom=bottom,label=g,color=colors[g]);bottom+=np.asarray(vv)
+ ax.set_xticks(x,[str(s) for s in SEEDS]);ax.set_ylim(0,1);ax.set_ylabel('mean contribution / mean BCE');ax.set_title('2/1 BCE contribution groups');ax.legend(ncol=2);fig.tight_layout();fig.savefig(figdir/'bce_group_contributions.png',dpi=150);plt.close(fig)
+ fig,ax=plt.subplots(figsize=(8,4));labels=[];ys=[]
+ for c in CONDITIONS:
+  for s in SEEDS: labels.append(f'{c}\n{s}');ys.append(sf[c,s]['threshold'] if sf[c,s]['threshold'] is not None else np.nan)
+ ax.bar(np.arange(9),ys,color=['#6688aa' if c in ('1/1','2/2') else '#d58b42' for c in CONDITIONS for _ in SEEDS]);ax.set_xticks(np.arange(9),labels);ax.set_ylabel('global threshold');ax.set_title('Lowest feasible threshold at common Z0 FP/FOV');fig.tight_layout();fig.savefig(figdir/'same_fp_thresholds.png',dpi=150);plt.close(fig)
+ # Human-readable report includes primary, protections, all contrasts, same-FP, and links to raw records.
+ tabs=[]
+ for m in METRICS:
+  for contrast in ('2/1-1/1','2/1-2/2'):
+   q=stats[contrast][m];tabs.append(f"<tr><td>{contrast}</td><td>{html.escape(m)}</td><td>{q['valid_n']}</td><td>{q['estimate']:+.5f}</td><td>[{q['ci95_low']:+.5f}, {q['ci95_high']:+.5f}]</td><td>{q['seed_delta_mean']:+.5f} ± {q['seed_delta_sd']:.5f}</td></tr>")
+ sftabs=''.join(f"<tr><td>{c}</td><td>{s}</td><td>{sf[c,s]['threshold'] if sf[c,s]['threshold'] is not None else 'NA'}</td><td>{sf[c,s]['macro_fp_density'] if sf[c,s]['macro_fp_density'] is not None else 'NA'}</td><td>{target:.7f}</td></tr>" for c in CONDITIONS for s in SEEDS)
+ def sign_label(q,lower=False):
+  return '满足非下降' if (q['ci95_low']>=0 if lower else q['ci95_high']<=0) else '未满足零退让'
+ pr=stats['2/1-1/1']['near_thin_recall_d1'];prec=stats['2/1-1/1']['precision'];fp=stats['2/1-1/1']['fp_density'];far=stats['2/1-1/1']['far_recall']
+ report=f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MAPLES 出血邻域类别加权 2/1 探索</title><style>body{{font:16px/1.55 system-ui,"Microsoft YaHei",sans-serif;max-width:1280px;margin:28px auto;padding:0 22px;background:#f3f6f9;color:#182432}}section{{background:#fff;padding:20px 24px;margin:16px 0;border-radius:10px}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}}.card{{background:#edf2f7;padding:14px;border-radius:8px}}table{{border-collapse:collapse;width:100%;font-size:13px}}td,th{{border-bottom:1px solid #dde3e9;padding:7px;text-align:left}}.scroll{{overflow:auto}}img{{max-width:100%;height:auto}}.note{{color:#526270}}</style><body><h1>出血邻域血管定向 2/1 探索结果</h1><p>本轮只改变既定出血内部与邻域区域 A 内的 BCE 类别权重：血管 2、背景 1；U、FOV、Dice、采样与训练预算按冻结协议执行。比较只使用 MAPLES 开发集，不访问官方 Test。</p><section><h2>执行情况</h2><div class="cards"><div class="card">新增训练 <b>3 / 3</b></div><div class="card">每条训练 <b>2,000 步</b></div><div class="card">固定评价 <b>33 / 33</b></div><div class="card">终点概率图 <b>84 张</b></div></div><p>每个种子从原 M0 起步；每条有 2,000 条配对训练记录、8,000 条损失分项记录、10 个完整检查点。两种旧对照只读复用。</p></section><section><h2>主要比较：2/1 − 1/1</h2><p>主指标为出血邻域细血管骨架召回，固定阈值 0.5；有效 9 张图、77 个位置，另 19 张图按规则保留 NA。</p><p>平均变化 <b>{pr['estimate']:+.5f}</b>，按图重抽样的 95% 区间 [{pr['ci95_low']:+.5f}, {pr['ci95_high']:+.5f}]。区间跨过零，因此没有支持主指标改善的证据。</p><img src="analysis/figures/primary_d1_paired.png"><div class="scroll"><table><thead><tr><th>比较</th><th>指标</th><th>有效图</th><th>平均变化</th><th>95%区间</th><th>三种子差均值±样本SD</th></tr></thead><tbody>{''.join(tabs)}</tbody></table></div></section><section><h2>保护指标</h2><p>对 2/1−1/1：精确率变化 {prec['estimate']:+.5f}，95%区间 [{prec['ci95_low']:+.5f}, {prec['ci95_high']:+.5f}]，未满足不下降条件；误报密度变化 {fp['estimate']:+.6f}，95%区间 [{fp['ci95_low']:+.6f}, {fp['ci95_high']:+.6f}]，未满足不增加条件；远处召回变化 {far['estimate']:+.6f}，95%区间 [{far['ci95_low']:+.6f}, {far['ci95_high']:+.6f}]，满足不下降条件。因此整体保护条件未通过。完整逐图变化见表格；同误报结果不能替代主结果或保护判定。</p></section><section><h2>同误报水平的补充比较</h2><p>各条件在预定 0–1、每 0.001 一档的全局阈值网格上，选择达到共享 Z0@0.5 宏平均误报目标 {target:.7f} 的最低阈值。此项是同一开发集上的描述性补充，区间以已选阈值为条件，不替代固定 0.5 主结果。</p><img src="analysis/figures/same_fp_thresholds.png"><div class="scroll"><table><thead><tr><th>条件</th><th>seed</th><th>阈值</th><th>宏平均误报</th><th>目标</th></tr></thead><tbody>{sftabs}</tbody></table></div></section><section><h2>BCE 分项记录</h2><p>三条新训练共 24,000 条记录；逐条核对四组像素数、加权总和、共同分母、BCE 与总损失。</p><img src="analysis/figures/bce_group_contributions.png"><p><a href="analysis/bce_contribution_summary.csv">四组贡献汇总</a> · <a href="analysis/bce_contribution_log_audit.json">日志核验</a></p></section><section><h2>逐图结果与复算文件</h2><p>所有 28 张图、全部 NA 和恶化情况都保留。唯一获批补修的旧固定阈值表已由 616 行补齐到 3,640 行，旧记录保留且逐项复核。</p><p><a href="analysis/fixed_0p5_per_image.csv">本轮固定阈值逐图指标</a> · <a href="analysis/paired_per_image.csv">逐图配对差</a> · <a href="analysis/paired_seed_macro.csv">逐种子宏均值</a> · <a href="analysis/bootstrap_indices_estimates.csv">重抽样索引和估计</a> · <a href="analysis/z0_comparison_summary.csv">相对 Z0 汇总</a> · <a href="analysis/same_fp_full_grid.csv">同误报全网格</a> · <a href="analysis/same_fp_per_image.csv">同误报逐图结果</a> · <a href="analysis/same_fp_paired_per_image.csv">同误报配对差</a> · <a href="analysis/analysis_summary.json">机器可读汇总</a> · <a href="analysis/export_repair/repair_verification.json">旧表补修核验</a></p><p class="note">这是查看既有结果后提出的开发集探索，不是独立确认。区间只反映当前开发图和三种配对种子；不作临床或患者层面结论。没有扩大种子、预算或试验系数。</p></section></body></html>'''
+ (OUT/'report.html').write_text(report,encoding='utf-8')
+ print(json.dumps({'status':'passed','primary_2_1_minus_1_1':pr,'protection':{'precision':prec,'fp_density':fp,'far_recall':far},'same_fp_target':target,'legacy_csv_repair':repair_ver},ensure_ascii=False,indent=2))
+if __name__=='__main__': main()

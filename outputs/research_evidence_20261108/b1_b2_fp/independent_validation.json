@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "component_CSV_areas_and_counts": true,
+  "region_CSV_sums": true,
+  "exact_distance_histogram_sums": true,
+  "all28_saved_masks_rebuilt_from_original_probabilities": true,
+  "original_bound_source_hashes_unchanged": true,
+  "PNG_decode": true,
+  "overviews": 28,
+  "figure_count": 85,
+  "new_model_inference": 0,
+  "training_updates": 0,
+  "GPU_calls": 0,
+  "elapsed_seconds": 22.995553003042005,
+  "implementation_sha256": "8ad087836f7248707bfd52050730e8df72cc4e10372323f31d4a4fea2ac7cdba",
+  "note": "execution.log is append-only; its early hash in validation.json is non-normative; final artifact inventory supersedes that transient entry."
+}

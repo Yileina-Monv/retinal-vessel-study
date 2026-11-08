@@ -1,0 +1,71 @@
+{
+  "rule": "Top two per arm by area of a new-FP 8-component that does not touch A0 prediction in 8-neighborhood; ties filename and first coordinate; deduplicate identical crop.",
+  "exploratory": true,
+  "no_medical_classification": true,
+  "selected": [
+    {
+      "method": "B1",
+      "filename": "20051208_41707_0400_PP",
+      "component_area": 80,
+      "component_first_yx": [
+        1119,
+        1130
+      ],
+      "native_bbox": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "figure": "atlas/20051208_41707_0400_PP_isolated_new_B1.png"
+    },
+    {
+      "method": "B1",
+      "filename": "20051116_44615_0400_PP",
+      "component_area": 63,
+      "component_first_yx": [
+        1323,
+        1595
+      ],
+      "native_bbox": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "figure": "atlas/20051116_44615_0400_PP_isolated_new_B1.png"
+    },
+    {
+      "method": "B2",
+      "filename": "20051116_44615_0400_PP",
+      "component_area": 54,
+      "component_first_yx": [
+        1323,
+        1596
+      ],
+      "native_bbox": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "figure": "atlas/20051116_44615_0400_PP_isolated_new_B1.png"
+    },
+    {
+      "method": "B2",
+      "filename": "20051208_41707_0400_PP",
+      "component_area": 50,
+      "component_first_yx": [
+        1121,
+        1129
+      ],
+      "native_bbox": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "figure": "atlas/20051208_41707_0400_PP_isolated_new_B1.png"
+    }
+  ]
+}

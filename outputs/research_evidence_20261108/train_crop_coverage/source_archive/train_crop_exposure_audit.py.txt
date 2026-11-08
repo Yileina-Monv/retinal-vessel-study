@@ -1,0 +1,217 @@
+"""CPU-only, frozen-trajectory Train110 exposure diagnosis. No model loading."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+for _k in ['OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS']:
+    os.environ[_k] = '1'
+from pathlib import Path
+import sys, json, csv, hashlib, time, math, resource
+import numpy as np
+from PIL import Image
+from scipy.ndimage import distance_transform_edt
+
+ROOT = Path('${RETINA_PROJECT_ROOT}')
+CODE = ROOT/'code/retinal-vessel-study'
+BASE = ROOT/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1'
+SCI = BASE/'scientific_b1_b2_2000_v1_20261022'
+OLD = BASE/'attempt_02'
+PARENT = BASE/'focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis'
+OUT = PARENT/'train_crop_exposure_v1'
+A0 = ROOT/'experiments/t0_tw_core_20261016/runs/seed_2026/T0'
+sys.path.insert(0, str(CODE))
+from retinal_data.maples_fov import candidate_fov
+from retinal_m0.maples_core import draw_geometry
+
+INPUTS = {}
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for block in iter(lambda:f.read(1024*1024), b''): h.update(block)
+    return h.hexdigest()
+def pin(p, expected=None):
+    p=Path(p); h=sha(p)
+    if expected is not None and h!=expected: raise RuntimeError('Source changed: '+str(p))
+    if str(p) in INPUTS and INPUTS[str(p)]!=h: raise RuntimeError('Concurrent source drift')
+    INPUTS[str(p)]=h
+    return p
+def load(p):
+    return json.loads(pin(p).read_text())
+def rows(p):
+    with pin(p).open(encoding='utf-8-sig', newline='') as f: return list(csv.DictReader(f))
+def write_json(p, d):
+    with Path(p).open('x', encoding='utf-8') as f: json.dump(d,f,ensure_ascii=False,indent=2,allow_nan=False)
+def write_csv(p, d):
+    with Path(p).open('x',encoding='utf-8',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=list(d[0]));w.writeheader();w.writerows(d)
+def exposure(shape, rects, weights=None):
+    h,w=shape; a=np.zeros((h+1,w+1),np.int32 if weights is None else np.float64)
+    for i,(y,x,_,_,_) in enumerate(rects):
+        v=1 if weights is None else weights[i]
+        a[y,x]+=v;a[y+512,x]-=v;a[y,x+512]-=v;a[y+512,x+512]+=v
+    return a.cumsum(0,dtype=a.dtype).cumsum(1,dtype=a.dtype)[:-1,:-1]
+def expected_probability(h,w,patch=512):
+    def axis(n):
+        a=np.arange(n)
+        return np.maximum(0,np.minimum(a,n-patch)-np.maximum(0,a-patch+1)+1)/(n-patch+1)
+    return axis(h)[:,None]*axis(w)[None,:]
+def integral_counts(mask, rects):
+    a=np.pad(mask.astype(np.int64),((1,0),(1,0))).cumsum(0).cumsum(1)
+    return [int(a[y+512,x+512]-a[y,x+512]-a[y+512,x]+a[y,x]) for y,x,*_ in rects]
+def stats(c,weighted,expected,mask):
+    a=c[mask];n=len(a)
+    if not n:return dict(n=0,zero=None,zero_fraction=None,mean=None,p10=None,median=None,p90=None,min=None,max=None,weighted_mean=None,expected_mean=None,expected_zero_fraction=None)
+    e=expected[mask]
+    return dict(n=n,zero=int((a==0).sum()),zero_fraction=float((a==0).mean()),mean=float(a.mean()),p10=float(np.quantile(a,.1)),median=float(np.median(a)),p90=float(np.quantile(a,.9)),min=int(a.min()),max=int(a.max()),weighted_mean=float(weighted[mask].mean()),expected_mean=float(e.mean()),expected_zero_fraction=None)
+
+def fixtures():
+    shape=(520,530);rects=[(0,0,0,0,0),(8,18,1,1,3)];weights=[.2,.7]
+    got=exposure(shape,rects); want=np.zeros(shape,np.int32);ww=np.zeros(shape)
+    for row,weight in zip(rects,weights):
+        y,x,*_=row;want[y:y+512,x:x+512]+=1;ww[y:y+512,x:x+512]+=weight
+    assert np.array_equal(got,want) and np.allclose(exposure(shape,rects,weights),ww,rtol=0,atol=1e-15)
+    ep=expected_probability(513,514)
+    brute=np.zeros((513,514))
+    for y in range(2):
+        for x in range(3):brute[y:y+512,x:x+512]+=1/6
+    assert np.allclose(ep,brute,rtol=0,atol=2e-16)
+    assert abs(ep.sum()-512**2)<1e-8
+    # Native crop membership remains unchanged by flips/90-degree rotations.
+    mask=(np.arange(520*530).reshape(shape)%7==0)
+    counts=integral_counts(mask,rects)
+    for rect,count in zip(rects,counts):
+        y,x,*_=rect;crop=mask[y:y+512,x:x+512]
+        for hf in [False,True]:
+            for vf in [False,True]:
+                for rot in range(4):
+                    z=crop[:,::-1] if hf else crop
+                    z=z[::-1] if vf else z
+                    assert int(np.rot90(z,rot).sum())==count
+    return dict(rectangle_count_and_weight_exact=True,uniform_origin_probability_enumerated=True,all_16_transforms_preserve_native_membership=True)
+
+def review_ufl():
+    u=BASE/'ufl_asymmetric_v1_20261024/diagnostics'
+    binding=load(u/'execution_binding.json');ledger=load(u/'diagnostic_ledger.json');review=load(u/'SOL_GPU_DIAGNOSTIC_REVIEW.json');completion=load(u/'completion.json')
+    for p,h in review['evidence_sha256'].items():pin(p,h)
+    assert ledger['status']=='COMPLETE' and ledger['forward_starts']==16 and ledger['autograd_calls']==96
+    assert ledger['optimizer_step_attempts']==ledger['parameter_updates']==0
+    assert len(ledger['entries'])==16 and all(x['status']=='COMPLETE' for x in ledger['entries'].values())
+    vals=[];amp=[]
+    for combo in binding['plan']:
+        q=load(u/'attempt_01'/(combo['id']+'.json'));assert q['id']==combo['id'] and q['parameter_updates']==0
+        assert q['unscaled'] and q['preclip'] and q['FOV_outside_gradient_zero']
+        assert q['input_sha256']==binding['batch_input_sha256'][combo['batch_index']]
+        for term,key in [('A0','A0_parameter_L2'),('UFL','candidate_parameter_L2'),('delta','delta_parameter_L2')]:
+            assert math.isclose(math.sqrt(sum(v[term+'_L2']**2 for v in q['per_layer'].values())),q[key],rel_tol=1e-10)
+        assert math.isclose(q['delta_to_A0'],q['delta_parameter_L2']/q['A0_parameter_L2'],rel_tol=1e-12)
+        assert q['delta_to_A0']<=2 and q['GPU_peak_reserved_MiB']<=8192
+        lim=binding['rules']['AMP_composite_relative_max' if combo['precision']=='AMP' else 'FP32_composite_relative_max']
+        assert max(q['component_additivity_error'],q['difference_additivity_error'],q['scaled_backward_relative_error'])<=lim
+        if q['AMP_vs_FP32']:
+            a=q['AMP_vs_FP32'];assert a['loss_relative']<=.01 and a['total_gradient']['relative_L2']<=.05 and a['total_gradient']['cosine']>=.99;amp.append(a)
+        vals.append(q)
+    def span(key):return [min(q[key] for q in vals),max(q[key] for q in vals)]
+    return dict(status='EXISTING_GPU16_ACCEPTANCE_INDEPENDENTLY_RECONCILED_CPU_ONLY',combinations=16,parameter_updates=0,delta_A0_ratio=span('delta_to_A0'),candidate_A0_ratio=span('candidate_to_A0'),cosine_A0_candidate=span('cosine_A0_candidate'),cosine_A0_delta=span('cosine_A0_delta'),max_AMP_gradient_relative_L2=max(a['total_gradient']['relative_L2'] for a in amp),min_AMP_gradient_cosine=min(a['total_gradient']['cosine'] for a in amp),max_reserved_MiB=completion['max_reserved_MiB'],elapsed_seconds=completion['elapsed_seconds'],prior_review_reused=True,new_GPU_calls=0,release_or_authorization_changed=False,limitation='Zero updates cannot establish training stability, restoration consistency, or Dice benefit. Delta is replacement UFL minus A0, not an auxiliary loss.')
+
+def main():
+    started=time.monotonic();OUT.mkdir(exist_ok=False)
+    test=fixtures();ufl=review_ufl();write_json(OUT/'UFL_diagnostic_reconciliation.json',ufl)
+    cfg=load(A0/'config.json');recon=load(SCI/'train_target_reconciliation.json')
+    manifest=load(ROOT/'docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json')['rows']
+    im_meta={d['filename']:d for d in rows(OLD/'images_110.csv')}
+    branches=rows(OLD/'branches_all_Train.csv');by_branch={}
+    for row in branches:by_branch.setdefault(row['filename'],[]).append(row)
+    old_crops=rows(OLD/'crops_8000_and_analytic_gradients.csv')
+    assert len(manifest)==110 and [d['filename'] for d in manifest]==cfg['train_sample_filenames']
+    rec={d['filename']:d for d in recon['records']};crop_groups={n:[] for n in cfg['train_sample_filenames']}
+    pairing=[]
+    with pin(A0/'pairing.jsonl').open() as f:pairing=[json.loads(line) for line in f]
+    assert len(pairing)==2000
+    flat=[]
+    for step,q in enumerate(pairing,1):
+        assert q['step']==step
+        for slot,draw in enumerate(q['draws']):
+            assert draw==4*(step-1)+slot and q['filenames'][slot]==cfg['train_sample_filenames'][draw%110]
+            flat.append((draw,q['filenames'][slot],q['geometry'][slot]))
+    assert len(flat)==8000 and len(old_crops)==8000
+    for (draw,name,geo),o in zip(flat,old_crops):
+        assert int(o['draw'])==draw and o['filename']==name and geo==[int(o[k]) for k in ['top','left','hflip','vflip','ccw_rot90_quarters']]
+        crop_groups[name].append((draw,geo,o))
+    for p in [CODE/'retinal_m0/maples_core.py',CODE/'retinal_data/maples_fov.py',CODE/'retinal_data/maples_native.py',CODE/'retinal_m0/model.py']:pin(p)
+    spec=dict(approval='User Implement the plan: CPU-only Train110 exposure audit and review existing UFL diagnostics; no new GPU',trajectory='A0 seed2026 fixed2000 success, 8000 actual draws; no input fingerprint re-audit',scope='Train110 RGB/GT and existing frozen branch artifacts only; no Dev image or Test content read',patch=512,draws=8000,batch=4,counts='native rectangle membership; flips/90rot preserve membership',weighted_exposure='sum over draws containing p of 1/(4*N_FOV_of_crop); BCE coefficient proxy only, not Dice or parameter gradient',expected='n_draws * probability of pixel inclusion under existing uniform integer crop-origin rule; expected zero=(1-p)^n, descriptive algorithm reference',edge_definition='Exploratory per-image FOV EDT lowest20% (ties included) versus remaining FOV; not a new evaluation metric',branch_definition='Existing approved Train graph candidate_B2 flags and coordinates; no new skeleton/path extraction',branch_caveat='Whole-path simultaneous visibility is contextual diagnostic, not a requirement of pixel supervision or proof of restored connectivity',no_training_or_protocol_changes=True)
+    write_json(OUT/'diagnostic_spec.json',spec)
+    image_rows=[];strata=[];path_rows=[];crop_rows=[];checks=[]
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    gallery=[]
+    for idx,row in enumerate(manifest):
+        name=row['filename'];meta=im_meta[name]
+        with Image.open(pin(row['RGB']['path'],row['RGB']['sha256'])) as im:rgb=np.asarray(im.convert('RGB'),np.uint8)
+        with Image.open(pin(row['V']['path'],row['V']['sha256'])) as im:gt=np.asarray(im)
+        assert gt.ndim==2 and set(np.unique(gt))<={0,1,255};gt=gt!=0
+        fov=candidate_fov(rgb);h,w=fov.shape;assert gt.shape==fov.shape and int(fov.sum())==int(meta['FOV_pixels'])
+        assert (h,w)==(int(meta['height']),int(meta['width']))
+        group=crop_groups[name];rects=[q[1] for q in group]
+        for draw,geo,_ in group:assert geo==list(map(int,draw_geometry(2026,draw,h,w)))
+        with np.load(pin(rec[name]['mask_path'],rec[name]['mask_sha256']),allow_pickle=False) as z:thin=z['B1_reference'].astype(bool);full=z['B2_candidate'].astype(bool)
+        assert thin.shape==full.shape==fov.shape and not np.any((thin|full)&~(gt&fov))
+        n_fov=integral_counts(fov,rects);n_gt=integral_counts(gt,rects);n_gf=integral_counts(gt&fov,rects);n_thin=integral_counts(thin,rects);n_full=integral_counts(full,rects)
+        for j,(draw,geo,o) in enumerate(group):
+            assert [n_fov[j],n_gt[j],n_gf[j],n_thin[j],n_full[j]]==[int(o[k]) for k in ['N_FOV','N_positive_V','N_positive_V_in_FOV','N_B1_reference','N_B2']]
+            assert n_fov[j]>0
+            crop_rows.append(dict(draw=draw,filename=name,native_height=h,native_width=w,N_FOV=n_fov[j],N_GT_in_FOV=n_gf[j],N_B1=n_thin[j],N_B2=n_full[j],BCE_coefficient=1/(4*n_fov[j])))
+        count=exposure(fov.shape,rects);weight=exposure(fov.shape,rects,[1/(4*n) for n in n_fov]);prob=expected_probability(h,w);expect=len(rects)*prob
+        assert int(count[fov].sum())==sum(n_fov) and int(count[gt&fov].sum())==sum(n_gf)
+        assert int(count[thin].sum())==sum(n_thin) and int(count[full].sum())==sum(n_full)
+        assert math.isclose(float(weight[fov].sum()),len(rects)/4,rel_tol=1e-10,abs_tol=1e-10)
+        pd=OLD/'path_data'/(name+'.npz')
+        with np.load(pin(pd,rec[name]['path_data_sha256']),allow_pickle=False) as z:coords=z['coords'];offs=z['offsets'];width=z['width_native'];body=z['body'].astype(bool);arc=z['arc_native']
+        assert len(offs)==len(by_branch[name])+1 and offs[-1]==len(coords)
+        alpha=float(meta['scale_to_reference']);coarse=np.zeros_like(fov)
+        co=coords[(width*alpha>6)&body];coarse[co[:,0],co[:,1]]=1
+        dist=distance_transform_edt(fov);cut=float(np.quantile(dist[fov],.2));edge=fov&(dist<=cut)
+        masks={'FOV':fov,'GT':gt&fov,'background':~gt&fov,'B1':thin,'B2':full,'coarse_body_proxy':coarse&fov,'edge_FOV':edge,'interior_FOV':fov&~edge,'edge_GT':gt&edge,'interior_GT':gt&fov&~edge,'edge_B2':full&edge,'interior_B2':full&~edge}
+        for label,mask in masks.items():
+            st=stats(count,weight,expect,mask)
+            if st['n']:st['expected_zero_fraction']=float(np.mean((1-prob[mask])**len(rects)))
+            strata.append(dict(filename=name,height=h,width=w,stratum=label,**st))
+        for bid,br in enumerate(by_branch[name]):
+            assert int(br['branch_id'])==bid
+            if br['candidate_B2']!='True':continue
+            lo,hi=int(offs[bid]),int(offs[bid+1]);cc=coords[lo:hi];a=count[cc[:,0],cc[:,1]];ar=arc[lo:hi];de=np.diff(ar)
+            y0,x0=cc.min(0);y1,x1=cc.max(0);simultaneous=0;maxfraction=0.
+            for y,x,*_ in rects:
+                visible=(cc[:,0]>=y)&(cc[:,0]<y+512)&(cc[:,1]>=x)&(cc[:,1]<x+512)
+                frac=float(visible.mean());maxfraction=max(maxfraction,frac);simultaneous+=int(visible.all())
+            path_rows.append(dict(filename=name,height=h,width=w,branch_id=bid,n_points=len(cc),length_reference=float(br['length_reference']),bbox_height=int(y1-y0+1),bbox_width=int(x1-x0+1),fits512=bool(y1-y0+1<=512 and x1-x0+1<=512),union_point_fraction=float((a>0).mean()),mean_exposure=float(a.mean()),minimum_exposure=int(a.min()),max_single_crop_fraction=maxfraction,whole_path_crop_count=simultaneous,union_edge_arc_fraction=float((de*((a[:-1]>0)&(a[1:]>0))).sum()/de.sum()) if len(de) and de.sum()>0 else None))
+        fovstat=next(st for st in strata[-len(masks):] if st['stratum']=='FOV');gtstat=next(st for st in strata[-len(masks):] if st['stratum']=='GT');bs=next(st for st in strata[-len(masks):] if st['stratum']=='B2')
+        imrow=dict(filename=name,height=h,width=w,crops=len(rects),fov_pixels=int(fov.sum()),GT_pixels=int((gt&fov).sum()),B2_points=int(full.sum()),FOV_zero_fraction=fovstat['zero_fraction'],GT_zero_fraction=gtstat['zero_fraction'],B2_zero_fraction=bs['zero_fraction'],GT_mean_exposure=gtstat['mean'],GT_weighted_mean=gtstat['weighted_mean'],GT_expected_mean=gtstat['expected_mean'],GT_expected_zero_fraction=gtstat['expected_zero_fraction'],edge_EDT_cut_native=cut)
+        image_rows.append(imrow);checks.append(dict(filename=name,crop_rows=len(group),all_five_crop_counts_match=True,count_conservation=True,weighted_conservation=True))
+        # Fixed manifest-order contact sheets cover all110, without case selection.
+        fig,ax=plt.subplots(figsize=(5,3.5));step=3
+        view=np.where(fov,count,np.nan)[::step,::step];ax.imshow(view,cmap='viridis',vmin=0,vmax=40)
+        ax.contour((gt&fov)[::step,::step],levels=[.5],colors=['white'],linewidths=.12,alpha=.35)
+        ax.set_title(f'{idx+1:03d} {name}\n{h}x{w}; crops={len(rects)}; GT unseen={100*gtstat["zero_fraction"]:.2f}%',fontsize=8);ax.axis('off')
+        fig.tight_layout();p=OUT/(f'coverage_{idx+1:03d}.png');fig.savefig(p,dpi=100);plt.close(fig);gallery.append(p.name)
+        if (idx+1)%10==0:print('Train exposure',idx+1,'/110',flush=True)
+        del rgb,gt,fov,thin,full,count,weight,expect,prob,coarse,dist,edge,masks
+    write_csv(OUT/'images_110.csv',image_rows);write_csv(OUT/'strata_per_image.csv',strata);write_csv(OUT/'candidate_paths.csv',path_rows);write_csv(OUT/'crops_8000_reused.csv',sorted(crop_rows,key=lambda x:x['draw']))
+    def summarize(images):
+        names={x['filename'] for x in images};rr=[x for x in path_rows if x['filename'] in names]
+        st={}
+        for label in sorted({x['stratum'] for x in strata}):
+            ss=[x for x in strata if x['filename'] in names and x['stratum']==label and x['n']]
+            if not ss:continue
+            den=sum(x['n'] for x in ss)
+            st[label]=dict(n=sum(x['n'] for x in ss),zero=sum(x['zero'] for x in ss),pooled_zero_fraction=sum(x['zero'] for x in ss)/den,macro_zero_fraction=float(np.mean([x['zero_fraction'] for x in ss])),pooled_mean_exposure=sum(x['n']*x['mean'] for x in ss)/den,macro_mean_exposure=float(np.mean([x['mean'] for x in ss])),macro_weighted_mean=float(np.mean([x['weighted_mean'] for x in ss])),macro_expected_mean=float(np.mean([x['expected_mean'] for x in ss])),macro_expected_zero_fraction=float(np.mean([x['expected_zero_fraction'] for x in ss])))
+        return dict(images=len(images),crops=sum(x['crops'] for x in images),strata=st,candidate_paths=len(rr),paths_not_fitting512=sum(not x['fits512'] for x in rr),paths_never_fully_in_one_crop=sum(x['whole_path_crop_count']==0 for x in rr),fitting_paths_never_fully_in_one_crop=sum(x['fits512'] and x['whole_path_crop_count']==0 for x in rr),paths_union_incomplete=sum(x['union_point_fraction']<1 for x in rr),paths_union_zero=sum(x['union_point_fraction']==0 for x in rr),mean_max_single_crop_fraction=float(np.mean([x['max_single_crop_fraction'] for x in rr])),mean_union_point_fraction=float(np.mean([x['union_point_fraction'] for x in rr])))
+    summary=dict(all=summarize(image_rows),by_native_size={f'{h}x{w}':summarize([x for x in image_rows if (x['height'],x['width'])==(h,w)]) for h,w in sorted({(x['height'],x['width']) for x in image_rows})})
+    write_json(OUT/'summary.json',summary)
+    # Preserve source hashes to permit independent validation without re-reading Test or running a model.
+    for p,h in list(INPUTS.items()):assert sha(p)==h,'Input changed during CPU analysis: '+p
+    write_json(OUT/'input_manifest.json',INPUTS)
+    write_json(OUT/'validation.json',dict(fixtures=test,images=110,actual_draws=8000,original_crop_table_exact_counts=40000,per_image_checks=checks,all_inputs_unchanged=len(INPUTS),new_GPU_calls=0,new_model_forward_calls=0,optimizer_updates=0,Dev_content_read=False,Test_content_read=False,elapsed_seconds=time.monotonic()-started,peak_RSS_KiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss))
+    html='<!doctype html><meta charset="utf-8"><title>Train110 actual crop exposure</title><style>body{font-family:sans-serif}section{display:grid;grid-template-columns:repeat(3,1fr)}img{width:100%}</style><h1>Train110 实际裁块覆盖</h1><p>固定清单顺序全110图；颜色范围统一0–40次，白色为GT。FOV外留白。此图不表示预测或医学判断。</p><section>'+''.join(f'<img loading="lazy" src="{p}">' for p in gallery)+'</section>'
+    (OUT/'all110_coverage.html').write_text(html,encoding='utf-8')
+    print('COMPLETE',json.dumps(dict(images=110,draws=8000,elapsed=time.monotonic()-started,summary=str(OUT/'summary.json'))),flush=True)
+
+if __name__=='__main__':main()

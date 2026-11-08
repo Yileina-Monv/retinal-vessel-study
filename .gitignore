@@ -32,6 +32,11 @@ data_checks/**/archives/
 *.gz
 *.log
 *probability*
+# Audited aggregate diagnostics, not probability arrays or model outputs.
+!outputs/research_evidence_20261108/threshold_diagnosis/probability_calibration.png
+!outputs/research_evidence_20261108/threshold_diagnosis/probability_shifts_per_image.json
+!outputs/research_evidence_20261108/threshold_diagnosis/probability_statistics_per_image.json
+!outputs/research_evidence_20261108/threshold_diagnosis/source_archive/validate_and_plot_probability_diagnosis.py.txt
 matplotlib-cache/
 *.jsonl
 ~$*

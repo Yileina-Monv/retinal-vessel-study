@@ -1,0 +1,41 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "engineering_delivery": "COMPLETE",
+  "scientific_success": false,
+  "reason": [
+    "seed2028 primary delta is negative",
+    "pooled image paired primary CI crosses zero",
+    "2027 farRecall and 2028 Precision/FP-FOV point guards fail"
+  ],
+  "primary_delta_pp": 3.739316239316239,
+  "primary_CI_pp": [
+    -4.166666666666666,
+    16.23931623931624
+  ],
+  "dice_delta_pp": 0.01933435538844706,
+  "dice_CI_pp": [
+    -0.0443019228202025,
+    0.08829760137206907
+  ],
+  "key_influence": "2027 image20060522_45248_0100_PP denominator1 changes0to1; image20051205_35276_0400_PP changes8to6; 2028 image20051117_37130_0400_PP changes8to7",
+  "primary_net_hits_per_seed": {
+    "2027": {
+      "N0": 59,
+      "NL": 58,
+      "denominator": 77
+    },
+    "2028": {
+      "N0": 59,
+      "NL": 58,
+      "denominator": 77
+    }
+  },
+  "pooled_pixel_counts_are_diagnostic_only_not_primary": true,
+  "leave_one_image_out_delta_pp_without_single_point_image": -2.043269230769231,
+  "recommendation": "Retain N0 as work baseline. NL not established as protected reliable improvement. No automatic next experiment.",
+  "prediction_hashes_checked": 56,
+  "paired_CIs_independently_recomputed": 32,
+  "Test_access": false,
+  "new_GPU_calls_in_review": 0,
+  "time": 1793701902.4412966
+}

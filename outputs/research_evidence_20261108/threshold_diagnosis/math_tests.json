@@ -1,0 +1,5 @@
+{
+  "grouped_score_AP": true,
+  "float32_threshold_ties": true,
+  "fixed28_macro_no_NA_drop": true
+}

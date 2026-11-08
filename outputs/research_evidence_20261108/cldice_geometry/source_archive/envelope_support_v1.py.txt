@@ -1,0 +1,41 @@
+"""Disjoint four-neighbor support attribution; no medical interpretation."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OPENBLAS_NUM_THREADS']='2'
+from pathlib import Path
+import json,csv,hashlib
+import numpy as np
+from scipy.ndimage import binary_dilation
+B=Path('${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022')
+O=B/'analysis/literature_mechanism_review_20261023'
+J=lambda p:json.loads(p.read_text())
+def sha(p):
+ h=hashlib.sha256()
+ with p.open('rb') as f:
+  for c in iter(lambda:f.read(8388608),b''):h.update(c)
+ return h.hexdigest()
+sources={}
+def bind(p,h=None):
+ p=Path(p);s=sha(p)
+ if h:assert s==h
+ sources[str(p)]=s;return p
+manifest=J(bind(B/'references/dev/manifest.json'))
+a0={r['filename']:r for r in J(bind(B/'a0_reuse_binding.json'))['probability_maps']}
+cross=np.array([[0,1,0],[1,1,1],[0,1,0]],bool);rows=[]
+for im in manifest['images']:
+ n=im['filename']
+ with np.load(bind(im['reference_npz'],im['reference_npz_sha256'])) as z:g=z['GT'].astype(bool);f=z['FOV'].astype(bool)
+ g&=f;p0=(np.load(bind(a0[n]['path'],a0[n]['sha256']))>=.5)&f
+ tp=binary_dilation(p0&g,structure=cross);fp=binary_dilation(p0&~g,structure=cross)
+ for a in ['B1','B2']:
+  p=(np.load(bind(B/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy'))>=.5)&f
+  new=p&~p0&~g
+  row={'filename':n,'arm':a,'new_FP':int(new.sum()),'adjacent_A0_TP_only':int((new&tp&~fp).sum()),'adjacent_A0_FP_only':int((new&fp&~tp).sum()),'adjacent_both_A0_TP_FP':int((new&tp&fp).sum()),'adjacent_neither':int((new&~tp&~fp).sum())}
+  assert row['new_FP']==sum(row[k] for k in list(row)[3:]);rows.append(row)
+with (O/'envelope_support_per_image_v1.csv').open('x',encoding='utf-8-sig',newline='') as f:
+ w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+totals={a:{k:sum(r[k] for r in rows if r['arm']==a) for k in list(rows[0])[2:]} for a in ['B1','B2']}
+for p,h in sources.items():assert sha(Path(p))==h
+with (O/'envelope_support_summary_v1.json').open('x',encoding='utf8') as f:
+ json.dump({'status':'PASSED','definition':'4-neighbor distance <=1 native pixel. Disjoint support by A0 true-positive versus false-positive foreground; both category handles ties. GT-relative geometry, not vessel anatomy. Same frozen threshold/FOV and all28 Dev.','totals':totals,'input_sha256':sources,'all_inputs_unchanged':True,'GPU_calls':0,'inference':0,'updates':0,'Test_accessed':False},f,indent=2)
+print(json.dumps(totals))

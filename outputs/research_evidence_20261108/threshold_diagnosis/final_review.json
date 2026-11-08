@@ -1,0 +1,12 @@
+{
+  "status": "CPU_DIAGNOSIS_INDEPENDENTLY_REVIEWED_AND_RECORDED",
+  "date_UTC": "2026-10-24T15:27:28.511694+00:00",
+  "executor_reviewer": "Sol",
+  "report": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/probability_fpfn_diagnosis_v1/report.md",
+  "recommendation": "Route C: Train-only effective crop exposure audit, pending user approval",
+  "new_training_or_Luna_dispatch": false,
+  "GPU_calls": 0,
+  "official_Test_access": false,
+  "original_fixed_threshold_and_protocol_unchanged": true,
+  "medical_review_not_fabricated": true
+}

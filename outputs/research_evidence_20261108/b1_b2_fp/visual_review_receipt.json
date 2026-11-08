@@ -1,0 +1,200 @@
+{
+  "records": [
+    {
+      "figure": "atlas/20051116_44615_0400_PP_far_gt_new_tile.png",
+      "filename": "20051116_44615_0400_PP",
+      "native_bbox": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "selection_reason": "Frozen far-GT new-FP tile; first generated sheet also checked for rendering alignment.",
+      "category": "possible_annotation_or_boundary",
+      "assessment": "suspected",
+      "visible_evidence": "RGB contains numerous thin, branching dark lines. GT includes only part of this network. Existing and added FP include thin extensions and rims around labeled or unlabeled linear structures; much of the conspicuous FP is retained from A0, not newly introduced.",
+      "alternative": "Some faint lines could be background texture; local width/registration differences may coexist.",
+      "medical_truth": "unknown; not a confirmed missing annotation",
+      "figure_sha256": "953537199597d86e4a9e6bc87f39dd80b4a377569addfec50911c9034d95023e",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051205_35224_0400_PP_largest_new_component.png",
+      "filename": "20051205_35224_0400_PP",
+      "native_bbox": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "selection_reason": "Largest B1 and B2 added-FP image; lowest B1 <=1 GT-distance share. All three original crop rules deduplicate to this sheet.",
+      "category": "possible_annotation_or_boundary",
+      "assessment": "suspected",
+      "visible_evidence": "Several branching dark linear trajectories visible in RGB are absent from GT. All three models already predict many of these trajectories, with small additional strips or tips in B1/B2. The large red/white network must not be described as entirely new FP.",
+      "alternative": "RGB appearance alone does not establish vessels, annotation completeness or the correctness of every added rim.",
+      "medical_truth": "unknown",
+      "figure_sha256": "16eee5bdeaa33bc89dc94f97133a6f7048c405a8e059437354197739221aef62",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051202_54530_0400_PP_largest_new_component.png",
+      "filename": "20051202_54530_0400_PP",
+      "native_bbox": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "selection_reason": "Highest B1 added-FP <=1 GT-distance share, opposite end of the distance spectrum.",
+      "category": "possible_annotation_or_boundary",
+      "assessment": "suspected",
+      "visible_evidence": "Many small added segments lie along labeled vessel edges and short tips. Thin RGB branches continue through places not fully represented by the white GT mask. No gross whole-image GT/prediction displacement is visually apparent in this sheet.",
+      "alternative": "Overwide segmentation is also compatible with this appearance; no pixel-level reannotation was performed.",
+      "medical_truth": "unknown",
+      "figure_sha256": "fde64d4c6e4d95fafbeff7f4db9c84ba63f9eec209375df26a553f5270f9a01f",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20060522_45583_0100_PP_far_gt_new_tile.png",
+      "filename": "20060522_45583_0100_PP",
+      "native_bbox": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "selection_reason": "Second largest B1 added area and second lowest near-GT share; heterogeneous difficult RGB background.",
+      "category": "background_like_visual_evidence_and_unknown",
+      "assessment": "AI_visual_suspicion_only",
+      "visible_evidence": "The crop contains bright textured patches and short irregular dark marks as well as plausible thin linear structures. Some label-relative FP follows irregular blotch-like features, while other FP follows linear RGB features. A0 already contains substantial FP here; B1/B2 add smaller boundary/tip increments.",
+      "alternative": "The image does not support declaring every blotch a specific lesion or every faint line a vessel; the newly added subset has mixed possible explanations.",
+      "medical_truth": "unknown; not counted as medically confirmed background FP",
+      "figure_sha256": "be7e14e9b0e35bd8feb49b69a0c519c0a3f0f7d6846bb131256ded01a0799478",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20060412_58889_0200_PP_far_gt_new_tile.png",
+      "filename": "20060412_58889_0200_PP",
+      "native_bbox": [
+        512,
+        512,
+        1024,
+        960
+      ],
+      "selection_reason": "Smallest B1 added-FP image; also a preserved case where B2 adds slightly more FP than B1.",
+      "category": "unknown",
+      "assessment": "uncertain",
+      "visible_evidence": "Small extra rims and fragments occur around the GT vascular network and near faint RGB lines. Some isolated predicted marks have weak visible support at this displayed resolution. No clear dominant cause can be assigned.",
+      "alternative": "Noise/texture activation, low visibility, omitted fine branches and width mismatch remain possible.",
+      "medical_truth": "unknown",
+      "figure_sha256": "8a84bac5d2e6f9c823f537a23f2505b1dd49f2982d5b444f47db163a4b3d350a",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051117_37130_0400_PP_far_gt_new_tile.png",
+      "filename": "20051117_37130_0400_PP",
+      "native_bbox": [
+        512,
+        512,
+        1024,
+        960
+      ],
+      "selection_reason": "Smallest B2 added-FP image and second smallest B1; includes bright central structure and FOV edge context.",
+      "category": "unknown_with_possible_boundary_error",
+      "assessment": "uncertain",
+      "visible_evidence": "Added pixels are sparse relative to the shared prediction. Several follow existing vessel rims or short extensions; other faint red fragments are not confidently resolved in RGB. GT/predictions remain spatially aligned overall.",
+      "alternative": "Boundary overcoverage and incomplete annotation cannot be separated confidently.",
+      "medical_truth": "unknown",
+      "figure_sha256": "37006b6648e8adf1568de66b10305f3cdc10191f5865510360684154e2136ad5",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051202_51655_0400_PP_far_gt_new_tile.png",
+      "filename": "20051202_51655_0400_PP",
+      "native_bbox": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "selection_reason": "Largest B1-minus-B2 added-area difference; selected disagreement crop coincides with far-GT tile.",
+      "category": "unknown_with_possible_annotation_or_boundary",
+      "assessment": "uncertain",
+      "visible_evidence": "B1/B2 changes appear mostly as small increments on shared rims and short branches, not a new large isolated region. Faint RGB detail makes some GT-free short predictions ambiguous.",
+      "alternative": "Real but unmarked small branches, overcoverage, and false linear responses remain possible.",
+      "medical_truth": "unknown",
+      "figure_sha256": "fe3bdebf60d6c163b28eb3a98d97e6b0fc6c73871ad943c7c1ef221145ac8ec0",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051205_31934_0400_PP_B1_B2_disagreement_tile.png",
+      "filename": "20051205_31934_0400_PP",
+      "native_bbox": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "selection_reason": "Second largest B1-minus-B2 added-area difference; dense bright-root context.",
+      "category": "possible_boundary_error_and_unknown",
+      "assessment": "suspected",
+      "visible_evidence": "FP and added changes are prominent along the boundaries between crowded larger vessel-like structures. GT and predictions disagree locally about coverage near the bright crowded center. The two methods remain visually very similar.",
+      "alternative": "Local GT width, overlap, image visibility and genuinely excessive prediction cannot be medically adjudicated here.",
+      "medical_truth": "unknown",
+      "figure_sha256": "3e5f1c5b7b90382cf2301821e14987529e2dc0d2f3e4f3c2aa0d88411da25a37",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051208_41707_0400_PP_isolated_new_B1.png",
+      "filename": "20051208_41707_0400_PP",
+      "native_bbox": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "selection_reason": "Largest B1 isolated added-FP component (80 pixels); second largest B2 (50); no 8-neighbor contact to A0 prediction.",
+      "category": "unknown",
+      "assessment": "uncertain",
+      "visible_evidence": "The selected isolated component is a small short fragment in a GT-free portion of the crop, with faint background linear detail. Its separation from A0 is a computed fact, but its biological identity is not visually secure.",
+      "alternative": "A missed small vessel and a false response to weak texture both fit the present evidence.",
+      "medical_truth": "unknown",
+      "figure_sha256": "5e3ab174d14810adeae8e065eb8bcb6ee4c0e4c97914057fa1a8dfff4761cd30",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    },
+    {
+      "figure": "atlas/20051116_44615_0400_PP_isolated_new_B1.png",
+      "filename": "20051116_44615_0400_PP",
+      "native_bbox": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "selection_reason": "Second largest B1 isolated component (63 pixels), largest B2 (54); minority failure mode deliberately retained.",
+      "category": "unknown",
+      "assessment": "uncertain",
+      "visible_evidence": "A small isolated added prediction appears near a weak narrow dark feature toward the outer FOV. The raw RGB is low contrast locally and does not establish whether this is an omitted vessel or background texture.",
+      "alternative": "Both unlabeled fine structure and genuine FP remain plausible.",
+      "medical_truth": "unknown",
+      "figure_sha256": "7b537587568818c39f4b449bf40750d4a3932d10b64061f057d71166ccad78e7",
+      "reviewer_type": "AI",
+      "human_or_expert": false
+    }
+  ],
+  "recorded_utc": "2026-10-22T15:42:41.673247+00:00",
+  "actually_viewed_unique_sheets": 10,
+  "actually_viewed_unique_images": 9,
+  "original_human_review": "0/26 unchanged",
+  "expert": "NOT_ASSESSED",
+  "all87_visually_reviewed": false
+}
