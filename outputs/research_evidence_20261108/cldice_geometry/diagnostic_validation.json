@@ -1,0 +1,37 @@
+{
+  "status": "PASSED",
+  "tests": {
+    "width_blind_counterexample": {
+      "clDice": 1.0,
+      "Dice": 0.625
+    },
+    "both_empty_explicit": true,
+    "prediction_empty": true,
+    "GT_empty": true,
+    "perfect": true,
+    "false_branch_penalized": true,
+    "break_penalized": {
+      "clDice": 0.9894736842105264,
+      "pred_components": 2
+    },
+    "cldice_symmetric": true,
+    "outside_FOV_zero_before_skeleton": true
+  },
+  "images": 28,
+  "maps": 84,
+  "all_nonempty": true,
+  "original_Dice_reconciled": true,
+  "exact_Dice_change_identity": true,
+  "FP_disjoint_partition_reconciled": true,
+  "source_hashes_unchanged": true,
+  "skimage_version": "0.25.2",
+  "native_resolution": true,
+  "threshold": 0.5,
+  "FOV_U_included": true,
+  "training_updates": 0,
+  "new_model_inference": 0,
+  "GPU_calls": 0,
+  "official_Test_accessed": false,
+  "elapsed_seconds": 54.49299266107846,
+  "source_code_sha256": "675d3bb9192b357231d4247f9b1b1a7b00612d2b2d2d2f8d95c8af97ebb4f2e9"
+}

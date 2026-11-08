@@ -29,3 +29,8 @@ FIVES 来源：Jin K. 等，*FIVES: A Fundus Image Dataset for Artificial Intell
 M1 使用的普通 Skeleton Recall 方法来源：Kirchhoff 等，ECCV 2024，[论文](https://arxiv.org/abs/2404.03010)、[作者代码](https://github.com/MIC-DKFZ/Skeleton-Recall)。方法复现不作为原创方法声明。其他研究文献见报告参考文献表。
 
 仓库公开不等于为所有文件统一重新授权。第三方内容保留各自权利；小组尚未决定为原创部分增加统一开源许可证。
+
+
+## 2026-11-08 补充图册范围
+
+`outputs/research_evidence_20261108`只增加项目生成的统计图、覆盖热图及无RGB的GT相对误差图；不发布原眼底照片、原始GT文件或概率数组。标注参考来自MAPLES-DR（Lepetit-Aimon等，2024，CC BY），保留来源署名。含RGB原图册保留A7，通过已有访问权限查看；没有把“公开数据集”解释为允许任意再分发原图。公开包来源清单分别记录原件与泛化路径后副本的SHA256，不替换历史冻结摘要。

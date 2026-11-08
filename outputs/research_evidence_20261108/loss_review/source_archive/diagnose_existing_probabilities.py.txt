@@ -1,0 +1,114 @@
+"""Read-only existing Dev probability diagnostic. Never imports torch or a model."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OPENBLAS_NUM_THREADS']='1'
+os.environ['OMP_NUM_THREADS']='1'
+
+import argparse
+import csv
+import hashlib
+import json
+import time
+from pathlib import Path
+import numpy as np
+
+ROOT=Path('${RETINA_PROJECT_ROOT}')
+SCI=ROOT/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022'
+OUT=SCI/'analysis/loss_function_review_20261024'
+THRESHOLDS=(.3,.4,.45,.5,.55,.6,.7)
+
+
+def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+
+def write_new(path,value):
+    with Path(path).open('x',encoding='utf-8') as f:json.dump(value,f,ensure_ascii=False,indent=2,allow_nan=False)
+
+
+def run():
+    started=time.monotonic()
+    spec={'kind':'EXPLORATORY_FIXED_GRID_NOT_THRESHOLD_SELECTION',
+          'thresholds':THRESHOLDS,'scientific_threshold_unchanged':.5,
+          'endpoint':2000,'Dev_images':28,'methods':['A0_2026','A0_2027','A0_2028','B1','B2'],
+          'FOV':'same sealed reference FOV, all valid pixels including original U',
+          'prediction':'probability >= threshold, same native scale',
+          'empty_prediction_precision':'NA; no imputation',
+          'GT_or_FOV_empty':'error; must match all28 nonempty baseline reference images',
+          'aggregation':'per-image metrics then macro mean; no pooling replacement',
+          'gradient_proxy':'A0 seed2026 BCE and gamma1 Focal unnormalized pixel-logit L1 ONLY; not true parameter gradients or batch-normalized gradient dose',
+          'new_model_forward_calls':0,'GPU_calls':0,'Test_access':False}
+    write_new(OUT/'diagnostic_spec.json',spec)
+    manifest=SCI/'references/dev/manifest.json';sources={str(manifest):sha(manifest)}
+    names=json.loads(manifest.read_text())['dev_ids'];assert len(names)==len(set(names))==28
+    dirs={f'A0_{s}':ROOT/f'experiments/t0_tw_core_20261016/runs/seed_{s}/T0/evaluation/step_002000' for s in [2026,2027,2028]}
+    dirs.update({g:SCI/f'runs/{g}/evaluation/step_002000' for g in ['B1','B2']})
+    expected={}
+    for group,directory in dirs.items():
+        q=directory/'metrics.json';sources[str(q)]=sha(q);d=json.loads(q.read_text())
+        if 'aggregate' in d:
+            expected[group]=d['aggregate']
+        else:
+            # B1/B2 endpoint files retain per-image counted metrics, unlike A0.
+            expected[group]={}
+            for metric in ['dice','precision','recall','fp_density']:
+                valid=[image[metric]['value'] for image in d['images']
+                       if image[metric]['value'] is not None]
+                expected[group][metric]={'mean':float(np.mean(valid)),
+                                         'n':len(valid),'NA':28-len(valid)}
+        assert d['step']==2000 and d['threshold']==.5
+    rows=[];totals={str(y):dict(N=0,BCE_logit_L1=0.,Focal1_logit_L1=0.,BCE_easy=0.,Focal1_easy=0.,BCE_wrong=0.,Focal1_wrong=0.,N_wrong=0) for y in [0,1]}
+    for name in names:
+        candidates=sorted((SCI/'references/dev').glob(name+'*.npz'))
+        reference=next(q for q in candidates if '.sol_' in q.name)
+        sources[str(reference)]=sha(reference)
+        with np.load(reference,allow_pickle=False) as z:fov=z['FOV'].astype(bool);gt=z['GT'][fov].astype(bool)
+        n=int(gt.sum());f=int(fov.sum());assert n>0 and f>0
+        for group,directory in dirs.items():
+            q=directory/'probabilities'/(name+'.npy');sources[str(q)]=sha(q)
+            full=np.load(q,allow_pickle=False);assert full.shape==fov.shape and np.isfinite(full).all()
+            prob=full[fov];assert prob.min()>=0 and prob.max()<=1
+            for t in THRESHOLDS:
+                pred=prob>=t;tp=int(np.count_nonzero(pred & gt));fp=int(pred.sum())-tp;fn=n-tp
+                rows.append({'method':group,'filename':name,'threshold':t,'TP':tp,'FP':fp,'FN':fn,'FOV':f,'GT':n,
+                             'dice':2*tp/(2*tp+fp+fn),'precision':tp/(tp+fp) if tp+fp else None,
+                             'recall':tp/n,'fp_density':fp/f})
+            if group=='A0_2026':
+                for y in [0,1]:
+                    pp=prob[gt==y].astype(np.float64);pt=pp if y else 1-pp;qv=1-pt
+                    fg=qv*(qv-pt*np.log(np.clip(pt,1e-15,1)))
+                    easy=pt>.9;wrong=pt<.5;v=totals[str(y)]
+                    v['N']+=len(pt);v['BCE_logit_L1']+=float(qv.sum());v['Focal1_logit_L1']+=float(fg.sum())
+                    v['BCE_easy']+=float(qv[easy].sum());v['Focal1_easy']+=float(fg[easy].sum())
+                    v['BCE_wrong']+=float(qv[wrong].sum());v['Focal1_wrong']+=float(fg[wrong].sum());v['N_wrong']+=int(wrong.sum())
+    with (OUT/'threshold_per_image.csv').open('x',newline='',encoding='utf-8') as f:
+        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+    aggregates={};errors=[]
+    for group in dirs:
+        aggregates[group]={}
+        for threshold in THRESHOLDS:
+            selected=[row for row in rows if row['method']==group and row['threshold']==threshold]
+            assert len(selected)==28
+            values={}
+            for metric in ['dice','precision','recall','fp_density']:
+                valid=[row[metric] for row in selected if row[metric] is not None]
+                values[metric]={'mean':float(np.mean(valid)) if valid else None,'n':len(valid),'NA':28-len(valid)}
+                if threshold==.5:
+                    error=abs(values[metric]['mean']-expected[group][metric]['mean'])
+                    errors.append(error)
+                    assert error<1e-12,(group,metric,error)
+            aggregates[group][str(threshold)]=values
+    for p,digest in sources.items():assert sha(p)==digest,'input mutated:'+p
+    summary={'status':'PASSED','methods':5,'probability_files':140,'per_image_threshold_rows':len(rows),
+             'threshold_sensitivity':aggregates,'A0_2026_logit_proxy_NOT_parameter_gradient':totals,
+             'max_original_threshold_metric_error':max(errors),'input_files_unchanged':len(sources),
+             'model_forwards':0,'parameter_updates':0,'GPU_calls':0,'Test_access':False,
+             'elapsed_seconds':time.monotonic()-started,
+             'interpretation':'fixed sensitivity only; no best-threshold selection; not clinical FP confirmation or causal loss-effect proof'}
+    write_new(OUT/'input_manifest.json',sources);write_new(OUT/'diagnostic_summary.json',summary)
+    print(json.dumps({k:v for k,v in summary.items() if k not in ['threshold_sensitivity','A0_2026_logit_proxy_NOT_parameter_gradient']},ensure_ascii=False))
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--run-read-only',action='store_true')
+    if not parser.parse_args().run_read_only:parser.error('explicit --run-read-only required')
+    run()

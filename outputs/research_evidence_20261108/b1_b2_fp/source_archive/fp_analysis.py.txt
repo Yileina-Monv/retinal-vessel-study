@@ -1,0 +1,338 @@
+"""P1 saved-endpoint CPU diagnostics. No model, torch, or training imports."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+os.environ['OMP_NUM_THREADS'] = '2'
+os.environ['OPENBLAS_NUM_THREADS'] = '2'
+import argparse
+import csv
+import hashlib
+import html
+import json
+import math
+import sys
+import time
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from scipy import ndimage
+import scipy
+import PIL
+
+ROOT = Path('${RETINA_PROJECT_ROOT}')
+SCI = ROOT / 'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022'
+OUT = SCI / 'analysis/fp_error_analysis_v1'
+REGIONS = ('internal', 'near', 'far', 'U_in_FOV')
+METHODS = ('A0', 'B1', 'B2')
+COLORS = {1:(90,150,255),2:(255,80,40),3:(255,220,50),4:(90,240,100),5:(220,80,255),6:(255,150,40),7:(255,255,255)}
+
+def sha(path):
+    h = hashlib.sha256()
+    with Path(path).open('rb') as f:
+        for b in iter(lambda:f.read(8*1024*1024), b''): h.update(b)
+    return h.hexdigest()
+
+def readj(p):
+    return json.loads(Path(p).read_text(encoding='utf-8'))
+
+def writej(p, data):
+    with Path(p).open('x', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2, allow_nan=False)
+        f.write('\n')
+
+def ratio(a,b):
+    return float(a/b) if b else None
+
+def stats(a):
+    a = np.asarray(a)
+    if not a.size: return dict(n=0, mean=None, median=None, q90=None, max=None, NA_reason='empty_set')
+    return dict(n=int(a.size), mean=float(a.mean()), median=float(np.median(a)), q90=float(np.quantile(a,.9)), max=float(a.max()), NA_reason=None)
+
+def check_prob(p,shape):
+    if p.shape != shape or p.dtype != np.float32 or not np.isfinite(p).all() or np.any(p<0) or np.any(p>1):
+        raise ValueError('invalid native float32 probability')
+
+def fp_masks(probs,gt,fov):
+    return {a:(p>=np.float32(.5)) & fov & ~gt for a,p in probs.items()}
+
+def membership(fps):
+    return fps['A0'].astype(np.uint8)+2*fps['B1'].astype(np.uint8)+4*fps['B2'].astype(np.uint8)
+
+def sets_from_fp(fps):
+    a,b,c = (fps[k] for k in METHODS)
+    return dict(FP_A0=a,FP_B1=b,FP_B2=c,
+        new_B1=b&~a,removed_B1=a&~b,retained_B1=a&b,
+        new_B2=c&~a,removed_B2=a&~c,retained_B2=a&c,
+        common_all=a&b&c,common_new=~a&b&c,
+        exclusive_new_B1=~a&b&~c,exclusive_new_B2=~a&~b&c)
+
+def tiles(shape):
+    h,w=shape
+    return [(x,y,min(x+512,w),min(y+512,h)) for y in range(0,h,512) for x in range(0,w,512)]
+
+def best_tile(mask):
+    candidates=[(int(mask[y:y1,x:x1].sum()),(x,y,x1,y1)) for x,y,x1,y1 in tiles(mask.shape)]
+    score,box=max(candidates,key=lambda t:(t[0],-t[1][1],-t[1][0]))
+    return box if score else None,score
+
+def max_component(mask):
+    lab,n=ndimage.label(mask,structure=np.ones((3,3),np.uint8))
+    if not n: return None,0
+    cnt=np.bincount(lab.ravel());cnt[0]=0;index=int(np.argmax(cnt))
+    sl=ndimage.find_objects(lab==index)[0]
+    y=(sl[0].start+sl[0].stop-1)//2; x=(sl[1].start+sl[1].stop-1)//2
+    return (x//512*512,y//512*512,min((x//512+1)*512,mask.shape[1]),min((y//512+1)*512,mask.shape[0])),int(cnt[index])
+
+def textfont(size=17):
+    path=Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+    return ImageFont.truetype(str(path),size) if path.exists() else ImageFont.load_default()
+
+def paint(rgb, layers):
+    z=rgb.astype(np.float32).copy()
+    for mask,color,alpha in layers:
+        z[mask]=(1-alpha)*z[mask]+alpha*np.asarray(color,np.float32)
+    return Image.fromarray(z.clip(0,255).astype(np.uint8))
+
+def panels(rgb,gt,fps,sets,code):
+    result=[('RGB (unaltered)',Image.fromarray(rgb)),('GT: white',paint(rgb,[(gt,(255,255,255),.72)]))]
+    for a in METHODS:
+        pred_gt=gt & ~fps[a]
+        # TP/FN are supplied separately by the caller; this placeholder is replaced.
+        result.append((a,None))
+    for a in ['B1','B2']:
+        result.append((a+' vs A0: added RED / removed CYAN / retained YELLOW',paint(rgb,[(gt,(130,110,255),.23),
+            (sets['retained_'+a],(255,230,30),.75),(sets['removed_'+a],(0,230,255),.85),(sets['new_'+a],(255,35,25),.90)])))
+    result.append(('FP membership: bits A0=1 B1=2 B2=4; see HTML legend',paint(rgb,[(code==k,COLORS[k],.88) for k in range(1,8)])))
+    return result
+
+def save_sheet(path, items, title, crop=None, overview=False):
+    size=410 if overview else 512
+    h=round(size*items[0][1].height/items[0][1].width) if overview else (crop[3]-crop[1])
+    w=size if overview else (crop[2]-crop[0])
+    ch=h+47; cw=max(w,410)
+    sheet=Image.new('RGB',(cw*4,ch*2+42),(17,20,26));d=ImageDraw.Draw(sheet)
+    d.text((8,9),title,font=textfont(16),fill='white')
+    for i,(label,im) in enumerate(items):
+        a=im.resize((w,h),Image.Resampling.LANCZOS if i==0 else Image.Resampling.NEAREST) if overview else im.crop(crop)
+        x=i%4*cw;y=i//4*ch+42
+        sheet.paste(a,(x,y+42));d.text((x+5,y+3),label[:63],font=textfont(12),fill='white')
+        if len(label)>63:d.text((x+5,y+19),label[63:126],font=textfont(12),fill='white')
+    with Path(path).open('xb') as f: sheet.save(f,format='PNG')
+    return sheet.size
+
+def synth_tests():
+    checks={}
+    f=np.ones((7,7),bool);g=np.zeros_like(f);g[3,3]=1
+    p={a:np.zeros((7,7),np.float32) for a in METHODS};p['B1'][3,4]=.5
+    x=fp_masks(p,g,f);assert x['B1'][3,4] and not x['A0'].any();checks['threshold_equality']=True
+    d=ndimage.distance_transform_edt(~g);assert d[3,4]==1 and d[4,4]>1;checks['native_euclidean_cross_not_diagonal']=True
+    fps={a:np.array([(i&(1<<k))!=0 for i in range(8)])[None,:] for k,a in enumerate(METHODS)}
+    assert np.array_equal(membership(fps),np.arange(8)[None,:]);checks['all_eight_memberships']=True
+    ss=sets_from_fp(fps)
+    for a in ['B1','B2']:
+        assert int(ss['FP_'+a].sum())-int(ss['FP_A0'].sum())==int(ss['new_'+a].sum())-int(ss['removed_'+a].sum())
+    checks['new_removed_identity']=True
+    assert int(ss['common_all'].sum())==1 and int(ss['common_new'].sum())==1;checks['shared_not_double_counted']=True
+    ff=f.copy();ff[3,4]=0;assert not fp_masks(p,g,ff)['B1'].any();checks['fov_exclusion']=True
+    u=np.zeros_like(f);u[3,4]=1;assert (x['B1']&u).sum()==1;checks['U_retained_in_global_FP']=True
+    z=np.eye(3,dtype=bool);assert ndimage.label(z,np.ones((3,3)))[1]==1;checks['eight_connected_diagonal']=True
+    assert stats([])['mean'] is None and ratio(0,0) is None;checks['empty_NA']=True
+    box,n=best_tile(np.zeros((520,520),bool));assert box is None and n==0;checks['empty_crop_NA']=True
+    a=np.ones((1024,1024),bool);assert best_tile(a)[0]==(0,0,512,512);checks['crop_tie_row_column']=True
+    assert max_component(np.zeros((5,5),bool))==(None,0);checks['empty_components']=True
+    try:check_prob(np.ones((2,2),np.float64),(2,2))
+    except ValueError:checks['reject_non_float32']=True
+    else:raise AssertionError()
+    assert 'torch' not in sys.modules;checks['no_torch_import']=True
+    return checks
+
+def run():
+    started=time.monotonic(); tests=synth_tests()
+    if (OUT/'summary.json').exists() or (OUT/'run_manifest.json').exists(): raise RuntimeError('existing run: do not overwrite')
+    OUT.mkdir(parents=True,exist_ok=True);(OUT/'atlas').mkdir();(OUT/'masks').mkdir()
+    tracked={}
+    def protect(p,expected=None):
+        p=Path(p).resolve()
+        if not str(p).startswith(str(ROOT)+'/'):raise RuntimeError('out of project input')
+        if '/Test/' in str(p) or '/test/' in str(p):raise RuntimeError('forbidden input')
+        h=sha(p)
+        if expected and h!=expected:raise RuntimeError('source SHA mismatch: '+str(p))
+        tracked[str(p)]=h
+        return p
+    manifest_path=protect(SCI/'references/dev/manifest.json','c2b2f3fd14e9f9705570faf6ed229cfff314474d48ac14d96838d9ca7f1f7804')
+    manifest=readj(manifest_path)
+    bind=readj(protect(SCI/'a0_reuse_binding.json'))
+    a0={x['filename']:x for x in bind['probability_maps']}
+    original=readj(protect(SCI/'analysis/endpoint_analysis.json'));original_rows={x['filename']:x for x in original['images']}
+    protect(SCI/'analysis/report.md');protect(SCI/'completion.json');protect(SCI/'science_budget.json')
+    protect(ROOT/'docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/scientific_b1_b2_2000_v1_20261022.json','72fb5a23d11ac1d2750aeb0aa9addf7dfa4f9753bd10ebc21233b7d0b886dfbf')
+    planb=readj(protect(ROOT/'docs/plan_b_error_analysis_20261019/source_manifest.json','4a5f4b0f6b2217ae23f7ab47aad7ea293620897c8d80ed906cd84b2a6ce72fd7'))
+    rgb_sources={x['filename']:x['inputs']['RGB'] for x in planb['images']}
+    metrics={a:{x['filename']:x for x in readj(protect(SCI/f'runs/{a}/evaluation/step_002000/metrics.json'))['images']} for a in ['B1','B2']}
+    names=[x['filename'] for x in manifest['images']]
+    if len(names)!=28 or len(set(names))!=28 or any(set(v)!=set(names) for v in [a0,rgb_sources,original_rows,*metrics.values()]):raise RuntimeError('Dev28 membership mismatch')
+    spec=dict(id='P1_FP_ERROR_ANALYSIS_V1',approved='User approved proposed plan via Implement the plan.',
+        endpoints='seed2026 lambda0.03 step2000; A0 original T0 reused',
+        threshold=.5,global_FP='(prob>=0.5)&FOV&~GT; U remains included',
+        distance='Euclidean distance to GT&FOV at native scale; <=1 versus >1 descriptive only; reference distance=alpha*native; all exact squared-native-distance frequencies retained',
+        regions=list(REGIONS),connectivity=8,component_filter='none',
+        crop_rules=['grid512 tile containing bbox midpoint of largest union-new-FP component, tie smallest (y,x)',
+                    'grid512 tile with largest union-new FP at distance>1',
+                    'grid512 tile with largest B1/B2 FP disagreement'],
+        crop_ties='row then column', medical_truth='not inferred automatically; original human 0/26 unchanged',
+        status='approved post-hoc descriptive analysis, NOT a revised scientific evaluation protocol',
+        prohibited='no model construction/inference/training/GPU/Test/new thresholds/lambda/seeds')
+    writej(OUT/'analysis_spec.json',spec)
+    writej(OUT/'run_manifest.json',dict(started_utc=datetime.now(timezone.utc).isoformat(),script_sha256=sha(__file__),
+        numpy=np.__version__,scipy=scipy.__version__,Pillow=PIL.__version__,CPU_only=True,Dev_ids=names,synthetic_checks=tests))
+    handles={};writers={}
+    def row(file,record):
+        if file not in writers:
+            handles[file]=(OUT/file).open('x',newline='',encoding='utf-8-sig')
+            writers[file]=csv.DictWriter(handles[file],fieldnames=list(record));writers[file].writeheader()
+        writers[file].writerow(record)
+    agg={}; per_image=[]; cases=[]; figures=[]; common_counts=Counter(); component_totals=Counter()
+    component_sets={'FP_A0','FP_B1','FP_B2','new_B1','new_B2','removed_B1','removed_B2','common_all','common_new'}
+    for im in manifest['images']:
+        n=im['filename'];alpha=float(im['alpha']);p=protect(im['reference_npz'],im['reference_npz_sha256'])
+        with np.load(p,allow_pickle=False) as z:
+            gt=z['GT'].astype(bool);f=z['FOV'].astype(bool);u=z['U'].astype(bool);reg={k:z[k].astype(bool) for k in REGIONS[:3]}
+        for src in im['sources'].values():protect(src['path'],src['sha256'])
+        reg['U_in_FOV']=f&u
+        if not np.array_equal(sum(x.astype(np.uint8) for x in reg.values()),f.astype(np.uint8)):raise RuntimeError('region partition')
+        if not (gt&f).any():raise RuntimeError('empty GT unexpected; requires explicit NA handling')
+        fp_background=f&~gt;fov_n=int(f.sum()); dist=ndimage.distance_transform_edt(~(gt&f));near=dist<=1
+        rgb_source=rgb_sources[n];rgb=np.asarray(Image.open(protect(rgb_source['path'],rgb_source['sha256'])).convert('RGB'))
+        assert rgb.shape[:2]==gt.shape and gt.shape==tuple(im['native_shape'])
+        probs={}
+        for a in METHODS:
+            src=a0[n] if a=='A0' else dict(path=str(SCI/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy'),sha256=metrics[a][n]['probability_sha256'])
+            probs[a]=np.load(protect(src['path'],src['sha256']),mmap_mode='r',allow_pickle=False);check_prob(probs[a],gt.shape)
+        fps=fp_masks(probs,gt,f);sets=sets_from_fp(fps);code=membership(fps);counts=np.bincount(code.ravel(),minlength=8)
+        for i in range(1,8):common_counts[i]+=int(counts[i]);row('membership.csv',dict(filename=n,code=i,A0=bool(i&1),B1=bool(i&2),B2=bool(i&4),area=int(counts[i]),FOV_pixels=fov_n,area_over_FOV=ratio(int(counts[i]),fov_n)))
+        assert int((code>0).sum())==int(sum(counts[1:]))
+        for a in METHODS:
+            pred=(probs[a]>=.5)&f;tp=int((pred&gt).sum());fp=int(fps[a].sum());fn=int((~pred&gt&f).sum())
+            rec=dict(filename=n,method=a,TP=tp,FP=fp,FN=fn,FOV_pixels=fov_n,GT_pixels=int((gt&f).sum()),
+                dice=ratio(2*tp,2*tp+fp+fn),precision=ratio(tp,tp+fp),recall=ratio(tp,tp+fn),fp_density=ratio(fp,fov_n))
+            for key in ['dice','precision','recall','fp_density']:
+                if abs(rec[key]-original_rows[n][a][key])>1e-12:raise RuntimeError('original metric mismatch')
+                if a!='A0':
+                    old=metrics[a][n][key]
+                    if abs(rec[key]-old['value'])>1e-12:raise RuntimeError('raw metric mismatch')
+            row('per_image_metrics.csv',rec)
+        image_sum=dict(filename=n,native_shape=list(gt.shape),alpha=alpha,FOV_pixels=fov_n)
+        for a in ['B1','B2']:
+            new=int(sets['new_'+a].sum());removed=int(sets['removed_'+a].sum())
+            assert int(fps[a].sum())-int(fps['A0'].sum())==new-removed
+            image_sum[a]=dict(new=new,removed=removed,net=new-removed,new_per_FOV=new/fov_n,net_per_FOV=(new-removed)/fov_n,near1=int((sets['new_'+a]&near).sum()))
+        for label,mask in sets.items():
+            area=int(mask.sum());dv=dist[mask];sq,cnt=np.unique(np.rint(dv**2).astype(np.int64),return_counts=True)
+            st=stats(dv); sr=stats(dv*alpha)
+            r0=dict(filename=n,set=label,area=area,FOV_pixels=fov_n,area_over_FOV=ratio(area,fov_n),near1_pixels=int((mask&near).sum()),far1_pixels=int((mask&~near).sum()),
+                near1_share=ratio(int((mask&near).sum()),area),distance_native_mean=st['mean'],distance_native_median=st['median'],distance_native_q90=st['q90'],distance_native_max=st['max'],
+                distance_reference_mean=sr['mean'],distance_reference_median=sr['median'],distance_reference_q90=sr['q90'],distance_reference_max=sr['max'],NA_reason=st['NA_reason'])
+            for a in METHODS:
+                values=probs[a][mask];ps=stats(values)
+                for key in ['mean','median','q90']:r0['prob_'+a+'_'+key]=ps[key]
+            row('per_image_sets.csv',r0)
+            for k,c in zip(sq,cnt):row('distance_histogram.csv',dict(filename=n,set=label,distance_squared_native=int(k),distance_native=float(math.sqrt(k)),distance_reference=float(alpha*math.sqrt(k)),count=int(c)))
+            ag=agg.setdefault(label,dict(area=0,near1=0,dist=[],refdist=[],area_per_image=[],prob_deltas=[],regions={k:dict(area=0,region_area=0,background_area=0) for k in REGIONS},components=[]))
+            ag['area']+=area;ag['near1']+=int((mask&near).sum());ag['dist'].append(dv);ag['refdist'].append(dv*alpha);ag['area_per_image'].append(dict(filename=n,area=area,density=area/fov_n))
+            for region,rm in reg.items():
+                nn=int((mask&rm).sum());bg=int((rm&~gt).sum());rn=int(rm.sum())
+                for k,v in [('area',nn),('region_area',rn),('background_area',bg)]:ag['regions'][region][k]+=v
+                row('regions.csv',dict(filename=n,set=label,region=region,area=nn,FOV_pixels=fov_n,region_pixels=rn,background_pixels=bg,
+                    area_over_FOV=ratio(nn,fov_n),area_over_region=ratio(nn,rn),area_over_background=ratio(nn,bg),NA_reason='empty_region_or_background' if not rn or not bg else None))
+            assert sum(int((mask&rm).sum()) for rm in reg.values())==area
+            for band,bm in [('distance_le1',near),('distance_gt1',~near)]:
+                nn=int((mask&bm).sum());bg=int((fp_background&bm).sum())
+                row('distance_density.csv',dict(filename=n,set=label,band=band,area=nn,background_pixels=bg,area_over_background=ratio(nn,bg),NA_reason=None if bg else 'zero_background'))
+            if label.startswith('new_'):
+                a=label.split('_',1)[1];delta=probs[a][mask]-probs['A0'][mask];ag['prob_deltas'].append(delta)
+            if label in component_sets:
+                lab,nc=ndimage.label(mask,structure=np.ones((3,3),np.uint8));pixel_check=0
+                # ndimage label order is row-major first pixel; no IDs are matched across masks.
+                for cid,sl in enumerate(ndimage.find_objects(lab),1):
+                    if sl is None:continue
+                    sub=lab[sl]==cid;yy,xx=np.nonzero(sub);area_c=len(yy);pixel_check+=area_c
+                    ys=yy+sl[0].start;xs=xx+sl[1].start;dd=dist[ys,xs];ds=stats(dd)
+                    c=dict(filename=n,set=label,component_id=cid,area=area_c,area_reference=area_c*alpha**2,area_over_FOV=area_c/fov_n,
+                        first_y=int(ys[0]),first_x=int(xs[0]),x0=int(xs.min()),y0=int(ys.min()),x1=int(xs.max()+1),y1=int(ys.max()+1),
+                        centroid_x=float(xs.mean()),centroid_y=float(ys.mean()),distance_native_min=float(dd.min()),distance_native_median=ds['median'],distance_native_q90=ds['q90'],distance_native_max=ds['max'],
+                        distance_reference_median=ds['median']*alpha,near1_pixels=int((dd<=1).sum()))
+                    for k,rm in reg.items():c['pixels_'+k]=int(rm[ys,xs].sum())
+                    for a in METHODS:c['prob_'+a+'_mean']=float(probs[a][ys,xs].mean())
+                    row('components.csv',c);ag['components'].append(area_c)
+                assert pixel_check==area
+                component_totals[label]+=nc
+        union_new=sets['new_B1']|sets['new_B2']
+        choices=[('largest_new_component',*max_component(union_new)),('far_gt_new_tile',*best_tile(union_new&~near)),('B1_B2_disagreement_tile',*best_tile(fps['B1']^fps['B2']))]
+        its=panels(rgb,gt,fps,sets,code)
+        for index,a in enumerate(METHODS,2):
+            pr=(probs[a]>=.5)&f
+            its[index]=(a+': TP GREEN / FP RED / FN BLUE',paint(rgb,[(gt&~pr,(50,110,255),.8),(gt&pr,(30,230,80),.55),(fps[a],(255,30,25),.87)]))
+        overview=OUT/'atlas'/f'{n}_overview.png';dims=save_sheet(overview,its,n+' | fixed 0.5; whole FOV; U retained',overview=True)
+        figures.append(dict(path=str(overview.relative_to(OUT)),size=list(dims),filename=n,kind='overview',bbox=None))
+        used={}
+        for kind,box,score in choices:
+            record=dict(case_id=n+'__'+kind,filename=n,selection_rule=kind,selection_score=score,native_bbox=list(box) if box else None,figure=None,
+                reviewer_type='not_assessed',assessment='NOT_REVIEWED',medical_truth='unknown',human_review=False)
+            if box:
+                key=tuple(box)
+                if key not in used:
+                    target=OUT/'atlas'/f'{n}_{kind}.png';dims=save_sheet(target,its,n+' | '+kind+' | bbox='+str(box),crop=box)
+                    used[key]=str(target.relative_to(OUT));figures.append(dict(path=used[key],size=list(dims),filename=n,kind=kind,bbox=list(box)))
+                record['figure']=used[key]
+                x,y,x1,y1=box
+                record['new_B1_pixels']=int(sets['new_B1'][y:y1,x:x1].sum());record['new_B2_pixels']=int(sets['new_B2'][y:y1,x:x1].sum())
+                record['new_union_near1_pixels']=int((union_new&near)[y:y1,x:x1].sum());record['new_union_far1_pixels']=int((union_new&~near)[y:y1,x:x1].sum())
+            cases.append(record)
+        maskpath=OUT/'masks'/f'{n}.npz'
+        with maskpath.open('xb') as file:np.savez_compressed(file,membership=code,FOV=f.astype(np.uint8),new_B1=sets['new_B1'].astype(np.uint8),removed_B1=sets['removed_B1'].astype(np.uint8),new_B2=sets['new_B2'].astype(np.uint8),removed_B2=sets['removed_B2'].astype(np.uint8))
+        per_image.append(image_sum)
+        print('CPU image',len(per_image),'/28',n,'new',image_sum['B1']['new'],image_sum['B2']['new'],flush=True)
+    for f in handles.values():f.close()
+    summary=dict(scope=spec,images=28,input_probability_maps=84,membership_counts={str(k):v for k,v in common_counts.items()},sets={},per_image=per_image,components_counts=dict(component_totals))
+    for label,a in agg.items():
+        ds=stats(np.concatenate(a['dist']));rs=stats(np.concatenate(a['refdist']));order=sorted(a['area_per_image'],key=lambda z:(-z['area'],z['filename']))
+        regions={k:dict(**v,area_share=ratio(v['area'],a['area']),density_per_region=ratio(v['area'],v['region_area']),density_per_background=ratio(v['area'],v['background_area'])) for k,v in a['regions'].items()}
+        c=np.asarray(a['components'],np.int64)
+        cs=stats(c)
+        if c.size:cs.update(single_pixel_components=int((c==1).sum()),single_pixel_area_share=float((c==1).sum()/c.sum()),largest_component_area_share=float(c.max()/c.sum()))
+        summary['sets'][label]=dict(area=a['area'],near1_pixels=a['near1'],near1_share=ratio(a['near1'],a['area']),
+            distance_native_pooled=ds,distance_reference_pooled=rs,components=cs,regions=regions,
+            per_image_macro_density=float(np.mean([x['density'] for x in order])),top1_share=ratio(order[0]['area'],a['area']),top3_share=ratio(sum(x['area'] for x in order[:3]),a['area']),
+            image_area_ranking=order,probability_increase_pooled=stats(np.concatenate(a['prob_deltas'])) if a['prob_deltas'] else None)
+    writej(OUT/'summary.json',summary);writej(OUT/'case_catalog.json',cases);writej(OUT/'figures_manifest.json',figures)
+    allfiles=[dict(path=str(p.relative_to(OUT)),sha256=sha(p),bytes=p.stat().st_size) for p in sorted(OUT.rglob('*')) if p.is_file()]
+    for p,h in tracked.items():
+        if sha(p)!=h:raise RuntimeError('input changed during run: '+p)
+    for item in figures:
+        with Image.open(OUT/item['path']) as im:
+            im.verify()
+        with Image.open(OUT/item['path']) as im:assert list(im.size)==item['size']
+    assert len(per_image)==28 and sum(x['kind']=='overview' for x in figures)==28
+    assert 'torch' not in sys.modules
+    writej(OUT/'input_manifest.json',dict(files=tracked,probability_maps=84,Dev_ids=names))
+    writej(OUT/'validation.json',dict(status='QUANTITATIVE_AND_ATLAS_FILES_VERIFIED_VISUAL_REVIEW_PENDING',
+        tests=tests,original_metric_reconciliation=True,all28=True,membership_and_change_identities=True,region_partition=True,
+        component_area_reconciliation=True,input_hashes_unchanged=True,verified_source_files=len(tracked),figure_count=len(figures),
+        training_updates=0,new_inference=0,GPU_calls=0,official_Test_accessed=False,elapsed_seconds=time.monotonic()-started,files=allfiles))
+    header='''<!doctype html><html lang="zh"><meta charset="utf-8"><title>P1 FP atlas</title><style>body{font:16px system-ui;background:#10141c;color:#eee;margin:24px}a{color:#8fcaff}img{max-width:100%;display:block;margin:12px 0}section{border-top:1px solid #777;padding:16px 0}code{color:#ffd17b}</style><h1>A0/B1/B2 新增误报图册：全部28张 Dev</h1><p>固定2000步、0.5阈值。标签相对FP不等于已确认医学背景。原人工审核仍0/26；AI观察另记，不伪造人工结论。</p><p>叠加颜色：TP绿、FP红、FN蓝。变化图：新增红、消除青、保留黄；GT淡紫。七类图的位编码：A0=1、B1=2、B2=4。</p><p>七类图颜色：1蓝(A0独有)、2红(B1独有)、3黄(A0+B1)、4绿(B2独有)、5紫(A0+B2)、6橙(B1+B2新增)、7白(三组共有)。</p><p>全图缩略仅用于定位；局部为原生像素，不插值。网格选择规则与原始bbox见case_catalog.json。距离&gt;1不自动认定为背景。</p><p><a href="summary.json">定量摘要</a> | <a href="per_image_sets.csv">逐图集合</a> | <a href="components.csv">全部连通区域</a> | <a href="regions.csv">区域统计</a> | <a href="case_catalog.json">案例清单（初始未审核）</a></p>'''
+    parts=[header]
+    for n in names:
+        parts.append('<section id="'+n+'"><h2>'+n+'</h2>')
+        for fig in [x for x in figures if x['filename']==n]:
+            path=html.escape(fig['path']);parts.append('<p>'+html.escape(fig['kind'])+' '+html.escape(str(fig['bbox']))+'</p><a href="'+path+'"><img loading="lazy" src="'+path+'"></a>')
+        parts.append('</section>')
+    parts.append('</html>')
+    with (OUT/'index.html').open('x',encoding='utf-8') as f:f.write('\n'.join(parts))
+    print('COMPLETE CPU quantitative + atlas',len(figures),'figures',time.monotonic()-started,flush=True)
+
+if __name__=='__main__':
+    ap=argparse.ArgumentParser();ap.add_argument('--self-test',action='store_true');ap.add_argument('--run',action='store_true');args=ap.parse_args()
+    if args.self_test:print(json.dumps(synth_tests(),indent=2))
+    elif args.run:run()
+    else:ap.error('explicit --self-test or --run required')

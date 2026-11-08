@@ -1,0 +1,63 @@
+"""Read existing endpoint masks only. No torch/model/GPU or protocol edits."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OMP_NUM_THREADS']='2'
+os.environ['OPENBLAS_NUM_THREADS']='2'
+from pathlib import Path
+import json,csv,hashlib,time
+import numpy as np
+from scipy.ndimage import distance_transform_edt
+
+SCI=Path('${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022')
+OUT=SCI/'analysis/literature_mechanism_review_20261023'
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for b in iter(lambda:f.read(8388608),b''):h.update(b)
+    return h.hexdigest()
+def J(p):return json.loads(Path(p).read_text())
+def W(p,x):
+    with p.open('x',encoding='utf8') as f:json.dump(x,f,ensure_ascii=False,indent=2)
+
+def main():
+    start=time.monotonic();sources={}
+    def bind(p,h=None):
+        p=Path(p);actual=sha(p)
+        if h:assert actual==h,str(p)
+        sources[str(p)]=actual;return p
+    spec={'status':'EXPLORATORY_GEOMETRIC_PROXIES_NOT_MEDICAL_CLASSIFICATION','threshold':.5,'scope':'same Dev28 and frozen FOV, native pixels','r':1,'boundary_envelope':'new FP within Euclidean distance <=1 of A0 foreground; includes both lateral edge and tip extension; not proof of vessel thickening','novel_unsupported_axis':'S(P_B) outside GT at distance >1 from S(P_A0); counts centerline positions, not anatomical branches','loss_of_unsupported_axis':'S(P_A0) outside GT at distance >1 from S(P_B)','forbidden_inference':'no branch anatomy or true background/GT-omission claims; no reconstruction of frozen endpoint primary/protection','new_model_inference':0,'GPU_calls':0,'Test_accessed':False}
+    W(OUT/'focused_geometry_spec_v1.json',spec)
+    manifest=J(bind(SCI/'references/dev/manifest.json'))
+    a0={x['filename']:x for x in J(bind(SCI/'a0_reuse_binding.json'))['probability_maps']}
+    metrics={arm:{r['filename']:r for r in J(bind(SCI/f'runs/{arm}/evaluation/step_002000/metrics.json'))['images']} for arm in ['B1','B2']}
+    rows=[]
+    for im in manifest['images']:
+        n=im['filename']
+        with np.load(bind(im['reference_npz'],im['reference_npz_sha256'])) as z:g=z['GT'].astype(bool);f=z['FOV'].astype(bool)
+        g&=f
+        p0=(np.load(bind(a0[n]['path'],a0[n]['sha256']))>=.5)&f
+        with np.load(bind(OUT/f'skeletons/{n}.npz')) as z:s0=z['A0'].astype(bool);sb={a:z[a].astype(bool) for a in ['B1','B2']}
+        d0=distance_transform_edt(~p0);ds0=distance_transform_edt(~s0)
+        for arm in ['B1','B2']:
+            p=(np.load(bind(SCI/f'runs/{arm}/evaluation/step_002000/probabilities/{n}.npy',metrics[arm][n]['probability_sha256']))>=.5)&f
+            new=p&~p0&~g;s=sb[arm];ds=distance_transform_edt(~s)
+            novel=s&~g&(ds0>1);lost=s0&~g&(ds>1)
+            row={'filename':n,'arm':arm,'height':f.shape[0],'width':f.shape[1],'new_FP':int(new.sum()),'new_FP_within_1px_A0':int((new&(d0<=1)).sum()),'new_FP_beyond_1px_A0':int((new&(d0>1)).sum()),'unsupported_axis_A0':int((s0&~g).sum()),'unsupported_axis_arm':int((s&~g).sum()),'novel_unsupported_axis_beyond_1px':int(novel.sum()),'lost_unsupported_axis_beyond_1px':int(lost.sum()),'novel_axis_in_new_FP':int((novel&new).sum()),'novel_axis_in_old_FP':int((novel&p0).sum())}
+            assert row['new_FP']==row['new_FP_within_1px_A0']+row['new_FP_beyond_1px_A0']
+            assert row['novel_unsupported_axis_beyond_1px']==row['novel_axis_in_new_FP']+row['novel_axis_in_old_FP']
+            row['envelope_fraction']=row['new_FP_within_1px_A0']/row['new_FP'];rows.append(row)
+    with (OUT/'focused_geometry_per_image_v1.csv').open('x',encoding='utf-8-sig',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    totals={}
+    for a in ['B1','B2']:
+        rr=[r for r in rows if r['arm']==a]
+        sums={k:sum(r[k] for r in rr) for k in rr[0] if k not in ['filename','arm','height','width','envelope_fraction']}
+        sums['envelope_fraction_pooled']=sums['new_FP_within_1px_A0']/sums['new_FP']
+        sums['envelope_fraction_image_macro']=float(np.mean([r['envelope_fraction'] for r in rr]))
+        sums['images_envelope_majority']=sum(r['envelope_fraction']>.5 for r in rr)
+        sums['images_novel_axis_gt_lost_axis']=sum(r['novel_unsupported_axis_beyond_1px']>r['lost_unsupported_axis_beyond_1px'] for r in rr)
+        totals[a]=sums
+    for p,h in sources.items():assert sha(p)==h,p
+    W(OUT/'focused_geometry_summary_v1.json',{'status':'PASSED','totals':totals,'images':28,'rows':len(rows),'source_sha256':sources,'all_inputs_unchanged':True,'elapsed_seconds':time.monotonic()-start,'GPU_calls':0,'model_inference':0,'updates':0,'Test_accessed':False})
+    print(json.dumps(totals,ensure_ascii=False))
+if __name__=='__main__':main()

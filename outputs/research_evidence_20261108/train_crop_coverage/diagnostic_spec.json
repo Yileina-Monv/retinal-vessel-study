@@ -1,0 +1,15 @@
+{
+  "approval": "User Implement the plan: CPU-only Train110 exposure audit and review existing UFL diagnostics; no new GPU",
+  "trajectory": "A0 seed2026 fixed2000 success, 8000 actual draws; no input fingerprint re-audit",
+  "scope": "Train110 RGB/GT and existing frozen branch artifacts only; no Dev image or Test content read",
+  "patch": 512,
+  "draws": 8000,
+  "batch": 4,
+  "counts": "native rectangle membership; flips/90rot preserve membership",
+  "weighted_exposure": "sum over draws containing p of 1/(4*N_FOV_of_crop); BCE coefficient proxy only, not Dice or parameter gradient",
+  "expected": "n_draws * probability of pixel inclusion under existing uniform integer crop-origin rule; expected zero=(1-p)^n, descriptive algorithm reference",
+  "edge_definition": "Exploratory per-image FOV EDT lowest20% (ties included) versus remaining FOV; not a new evaluation metric",
+  "branch_definition": "Existing approved Train graph candidate_B2 flags and coordinates; no new skeleton/path extraction",
+  "branch_caveat": "Whole-path simultaneous visibility is contextual diagnostic, not a requirement of pixel supervision or proof of restored connectivity",
+  "no_training_or_protocol_changes": true
+}

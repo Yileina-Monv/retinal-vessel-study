@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "protocol_sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+  "execution_binding_sha256": "2c90d8afb9faa2c434522a46235075385251e5e5c0ba1d4e45c362902794fcd2",
+  "formal_runs": 6,
+  "updates_each": 2000,
+  "draws_each": 8000,
+  "dev_images": 28,
+  "primary_images": 9,
+  "primary_denominators": [
+    13,
+    8,
+    3,
+    27,
+    6,
+    1,
+    1,
+    14,
+    4
+  ],
+  "primary_positions": 77,
+  "primary_NA_images": 19,
+  "fixed_0p5": {
+    "near_thin_recall_d1": {
+      "estimate": -0.006001371742112483,
+      "ci95_low": -0.015260631001371741,
+      "ci95_high": 0.0,
+      "valid_n": 9,
+      "seed_macro_mean": -0.006001371742112482,
+      "seed_macro_sd": 0.007133965727954293
+    },
+    "precision": {
+      "estimate": 0.0006048458001502536,
+      "ci95_low": 0.00016190278005649925,
+      "ci95_high": 0.0011982904719690373,
+      "valid_n": 28,
+      "seed_macro_mean": 0.0006048458001502536,
+      "seed_macro_sd": 0.0006287231007124141
+    },
+    "fp_density": {
+      "estimate": -0.00012149390255466256,
+      "ci95_low": -0.0002495380554324809,
+      "ci95_high": -3.545483347412e-05,
+      "valid_n": 28,
+      "seed_macro_mean": -0.00012149390255466256,
+      "seed_macro_sd": 0.00011163283894035235
+    },
+    "far_recall": {
+      "estimate": -0.0004053731211476024,
+      "ci95_low": -0.0007010705529110179,
+      "ci95_high": -0.00017552470291770406,
+      "valid_n": 28,
+      "seed_macro_mean": -0.0004053731211476024,
+      "seed_macro_sd": 0.0005148899681378168
+    },
+    "dice": {
+      "estimate": 7.679813742123538e-05,
+      "ci95_low": -0.00014439987411762537,
+      "ci95_high": 0.0003909913707122996,
+      "valid_n": 28,
+      "seed_macro_mean": 7.679813742123538e-05,
+      "seed_macro_sd": 0.00016698900352112202
+    },
+    "recall": {
+      "estimate": -0.00046806437754035295,
+      "ci95_low": -0.000776131008828492,
+      "ci95_high": -0.00021262430658557977,
+      "valid_n": 28,
+      "seed_macro_mean": -0.00046806437754035295,
+      "seed_macro_sd": 0.00047445075838627946
+    },
+    "near_pixel_recall": {
+      "estimate": -0.002658181967254432,
+      "ci95_low": -0.0052222913720442726,
+      "ci95_high": -0.0011077434736717,
+      "valid_n": 18,
+      "seed_macro_mean": -0.002658181967254432,
+      "seed_macro_sd": 0.0025853438670352265
+    }
+  },
+  "common_Z0_FP_target": 0.011634106399528646,
+  "same_FP_thresholds": {
+    "seed_2026_T0": {
+      "threshold": 0.7979999780654907,
+      "macro_fp_density": 0.01162981691083659,
+      "target": 0.011634106399528646,
+      "grid_index": 798
+    },
+    "seed_2026_TW": {
+      "threshold": 0.796999990940094,
+      "macro_fp_density": 0.011628559009871904,
+      "target": 0.011634106399528646,
+      "grid_index": 797
+    },
+    "seed_2027_T0": {
+      "threshold": 0.7549999952316284,
+      "macro_fp_density": 0.011604310256482045,
+      "target": 0.011634106399528646,
+      "grid_index": 755
+    },
+    "seed_2027_TW": {
+      "threshold": 0.7509999871253967,
+      "macro_fp_density": 0.011626294522053413,
+      "target": 0.011634106399528646,
+      "grid_index": 751
+    },
+    "seed_2028_T0": {
+      "threshold": 0.7960000038146973,
+      "macro_fp_density": 0.011613254277298224,
+      "target": 0.011634106399528646,
+      "grid_index": 796
+    },
+    "seed_2028_TW": {
+      "threshold": 0.7929999828338623,
+      "macro_fp_density": 0.011629637892924635,
+      "target": 0.011634106399528646,
+      "grid_index": 793
+    }
+  },
+  "interpretation": {
+    "primary_clear_support": false,
+    "protection_clear_support": false,
+    "protection_costs": {
+      "far_recall": -0.0004053731211476024
+    },
+    "protected_gain": false,
+    "limits": "开发集复用、9张有效主图、患者独立性未知；不等于独立外部确认、临床安全或收敛最优。"
+  },
+  "bootstrap": {
+    "reps": 1000,
+    "seed": 20261016,
+    "generator": "PCG64",
+    "unit": "paired image"
+  },
+  "qualitative_focus_images": [
+    "20051202_51655_0400_PP",
+    "20060522_45248_0100_PP",
+    "20051116_44785_0400_PP"
+  ],
+  "official_test_read": false
+}

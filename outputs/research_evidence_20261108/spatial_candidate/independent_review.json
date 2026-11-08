@@ -1,0 +1,24 @@
+{
+  "status": "CPU_CANDIDATE_INDEPENDENT_REVIEW_PASSED",
+  "candidate_count": 1,
+  "exact_trajectory_regenerated": 8000,
+  "aggregate_counts_and_all_paths_reconciled": true,
+  "input_hashes_unchanged": 476,
+  "crop_distribution": {
+    "original": {
+      "minimum_FOV": 477,
+      "empty_GT": 7,
+      "FOV_under_one_percent": 5,
+      "mean_GT_fraction": 0.15410690758847642
+    },
+    "candidate": {
+      "minimum_FOV": 1386,
+      "empty_GT": 4,
+      "FOV_under_one_percent": 3,
+      "mean_GT_fraction": 0.15413741886405574
+    }
+  },
+  "CPU_admission_pass": true,
+  "GPUs_started": 0,
+  "science_authorized": false
+}

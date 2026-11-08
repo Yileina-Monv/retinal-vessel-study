@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 81,
+  "elapsed_seconds": 0.4937818320468068,
+  "method": "Source row/hash equality, direct background search for width, independent deque floodfill for GT components, direct numeric aggregation; no model/probability loading",
+  "medical_review_count": 0,
+  "new_training": 0,
+  "new_inference": 0,
+  "Test_accessed": false
+}

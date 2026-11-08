@@ -1,0 +1,53 @@
+{
+  "status": "DIRECTLY_PAIRED_COMPARABLE",
+  "methods": [
+    "A0",
+    "D",
+    "B1",
+    "B2"
+  ],
+  "seed": 2026,
+  "endpoint": 2000,
+  "model": "same original U-Net and FIVES M0",
+  "M0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+  "Train_images": 110,
+  "Dev_images": 28,
+  "frozen_threshold": 0.5,
+  "GT_FOV": "same sealed native reference, includes original U for whole-image metrics",
+  "aggregation": "per-image macro over fixed28, pooled counts separately labelled",
+  "pixel_rule": "probability>=threshold, no filtering or postprocessing",
+  "pair_checks": {
+    "B1": {
+      "batches_exact": 2000,
+      "actual_inputs_exact": 8000
+    },
+    "B2": {
+      "batches_exact": 2000,
+      "actual_inputs_exact": 8000
+    },
+    "D": {
+      "batches_exact": 2000,
+      "actual_inputs_exact": 8000
+    }
+  },
+  "shared_config_fields_checked": [
+    "seed",
+    "max_steps",
+    "source_m0_sha256",
+    "batch_size",
+    "patch",
+    "learning_rate",
+    "weight_decay",
+    "betas",
+    "eps",
+    "scheduler",
+    "clip_norm",
+    "amp",
+    "amp_initial_scale",
+    "mean",
+    "std",
+    "train_sample_filenames"
+  ],
+  "D_directory_note": "D phase has legacy runs/seed_2026/C folder name; actual checkpoint/metrics method and phase are D, not candidate C",
+  "historical_primary_and_guard_rules_not_rewritten": true
+}

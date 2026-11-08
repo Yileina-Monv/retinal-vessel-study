@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "single negative",
+      "expected": [
+        "SELECTED"
+      ],
+      "actual": [
+        "SELECTED"
+      ],
+      "counts": {
+        "visible": 1,
+        "after_GT_domain": 1,
+        "after_collision": 1,
+        "with_negative": 1,
+        "precap": 1,
+        "selected": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "two negatives",
+      "expected": [
+        "SELECTED"
+      ],
+      "actual": [
+        "SELECTED"
+      ],
+      "counts": {
+        "visible": 1,
+        "after_GT_domain": 1,
+        "after_collision": 1,
+        "with_negative": 1,
+        "precap": 1,
+        "selected": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "negative leaves output",
+      "expected": [
+        "NO_NEGATIVE"
+      ],
+      "actual": [
+        "NO_NEGATIVE"
+      ],
+      "counts": {
+        "visible": 1,
+        "after_GT_domain": 1,
+        "after_collision": 1,
+        "with_negative": 0,
+        "precap": 0,
+        "selected": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "negative wrong polarity",
+      "expected": [
+        "NO_NEGATIVE"
+      ],
+      "actual": [
+        "NO_NEGATIVE"
+      ],
+      "counts": {
+        "visible": 1,
+        "after_GT_domain": 1,
+        "after_collision": 1,
+        "with_negative": 0,
+        "precap": 0,
+        "selected": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "positive wrong polarity",
+      "expected": [
+        "GT_DOMAIN_INVALID"
+      ],
+      "actual": [
+        "GT_DOMAIN_INVALID"
+      ],
+      "counts": {
+        "visible": 1,
+        "after_GT_domain": 0,
+        "after_collision": 0,
+        "with_negative": 0,
+        "precap": 0,
+        "selected": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate positive deterministic identity",
+      "expected": [
+        "SELECTED",
+        "POSITIVE_COLLISION"
+      ],
+      "actual": [
+        "SELECTED",
+        "POSITIVE_COLLISION"
+      ],
+      "counts": {
+        "visible": 2,
+        "after_GT_domain": 2,
+        "after_collision": 1,
+        "with_negative": 1,
+        "precap": 1,
+        "selected": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "positive outside output",
+      "expected": [
+        "OUTSIDE_OUTPUT"
+      ],
+      "actual": [
+        "OUTSIDE_OUTPUT"
+      ],
+      "counts": {
+        "visible": 0,
+        "after_GT_domain": 0,
+        "after_collision": 0,
+        "with_negative": 0,
+        "precap": 0,
+        "selected": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "no native target",
+      "expected": [],
+      "actual": [],
+      "counts": {
+        "visible": 0,
+        "after_GT_domain": 0,
+        "after_collision": 0,
+        "with_negative": 0,
+        "precap": 0,
+        "selected": 0
+      },
+      "passed": true
+    }
+  ],
+  "count": 8,
+  "actual_native_crop_instances": 0,
+  "GPU_queries": 0,
+  "model_forwards": 0
+}

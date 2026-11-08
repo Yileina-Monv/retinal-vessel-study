@@ -1,0 +1,19 @@
+{
+  "bootstrap": {
+    "resamples": 1000,
+    "unit": "whole paired development image",
+    "generator": "numpy.PCG64",
+    "seed": 20261016,
+    "same_n_indices_reused": true
+  },
+  "threshold_fixed": 0.5,
+  "same_FP_grid": {
+    "start": 0,
+    "stop": 1,
+    "step": 0.001,
+    "dtype": "float32",
+    "target_macro_FP_per_FOV": 0.011634106399528646,
+    "select": "lowest feasible global threshold, no epsilon"
+  },
+  "official_test_read": false
+}

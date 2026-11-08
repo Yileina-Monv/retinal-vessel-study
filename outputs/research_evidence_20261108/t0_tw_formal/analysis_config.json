@@ -1,0 +1,9 @@
+{
+  "analysis_source_sha256": "281e6fd005d912b56fb1818793fea0044a17d0edd6a69be9be889c52e9fae053",
+  "protocol_sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+  "binding_sha256": "2c90d8afb9faa2c434522a46235075385251e5e5c0ba1d4e45c362902794fcd2",
+  "fixed_threshold": 0.5,
+  "same_FP_grid": "np.linspace(0,1,1001,dtype=np.float32)",
+  "bootstrap_seed": 20261016,
+  "bootstrap_reps": 1000
+}

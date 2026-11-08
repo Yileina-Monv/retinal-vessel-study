@@ -1,0 +1,59 @@
+"""Independent D0 verification: KD-tree geometry, no model or threshold search."""
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2')
+from pathlib import Path
+import json,csv,hashlib,time,statistics
+import numpy as np
+from scipy.spatial import cKDTree
+ROOT=Path('${RETINA_PROJECT_ROOT}');B=ROOT/'experiments/nnunet2d_branch_20261020';S=B/'deep_supervision_ablation_20261028/science100_v1';O=S/'analysis/d0_probability_fp_v1';start=time.monotonic();checks=0;maxerr=0.
+def check(ok,label):
+ global checks
+ checks+=1;assert ok,label
+def close(a,b,label):
+ global maxerr
+ e=abs(a-b);maxerr=max(maxerr,e);check(e<1e-12,label)
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def z(p):p=np.clip(np.asarray(p,dtype=np.float64),1e-6,1-1e-6);return np.log(p/(1-p))
+d=json.loads((O/'summary.json').read_text());q=json.loads((S/'protocol.json').read_text());refs=json.loads(Path(q['references']['science_reference_manifest']).read_text())['images'];points=list(csv.DictReader((O/'points_154.csv').open(encoding='utf-8-sig')));images=list(csv.DictReader((O/'image_regions_56.csv').open(encoding='utf-8-sig')))
+check(len(points)==154 and len(images)==56,'row counts')
+for ref in refs:
+ rows=[r for r in points if r['filename']==ref['filename']]
+ if not rows:continue
+ with np.load(ref['reference_npz']) as f:gt=f['GT'].astype(bool);near=f['near'].astype(bool);om=f['Omega'].astype(bool)
+ for seed in [2027,2028]:
+  p=np.load(B/f'replication_seed2027_2028_100epochs_v1_20261026/runs/seed_{seed}/dev_predictions'/(ref['filename']+'.npy'));pr=(p>=.5)&om
+  for row in [r for r in rows if int(r['seed'])==seed]:
+   y,x=int(row['y']),int(row['x']);check(gt[y,x] and near[y,x] and om[y,x],'target in frozen GT/region')
+   # Any GT within8 of a background within12 of target must lie in this20px box.
+   ya,yb=max(0,y-20),min(gt.shape[0],y+21);xa,xb=max(0,x-20),min(gt.shape[1],x+21);coords=np.argwhere(gt[ya:yb,xa:xb])+[ya,xa]
+   yy,xx=np.mgrid[max(0,y-12):min(gt.shape[0],y+13),max(0,x-12):min(gt.shape[1],x+13)];grid=np.column_stack([yy.ravel(),xx.ravel()]);dist=cKDTree(coords).query(grid,workers=2)[0]
+   take=(np.linalg.norm(grid-[y,x],axis=1)<=12)&(dist>=2)&(dist<=8)&near[grid[:,0],grid[:,1]]&om[grid[:,0],grid[:,1]]&~gt[grid[:,0],grid[:,1]];bg=grid[take];values=p[bg[:,0],bg[:,1]]
+   check(len(bg)==int(row['background_count']),'independent KD-tree background count')
+   if len(values):
+    close(float(values.astype(float).mean()),float(row['background_mean_probability']),'background probability')
+    close(float(z(values).mean()),float(row['background_mean_logit']),'background logit')
+    gap=float(z(p[y,x])-z(values).mean());close(gap,float(row['logit_gap']),'independent gap')
+   cells=[(a,b) for a,b in [(y,x),(y-1,x),(y+1,x),(y,x-1),(y,x+1)] if 0<=a<p.shape[0] and 0<=b<p.shape[1] and om[a,b]]
+   hit=any(pr[a,b] for a,b in cells);check(int(hit)==int(row['d1_hit']),'direct coordinate d1')
+   check(int(not hit and len(values)>0 and gap<1)==int(row['qualifying_miss']),'diagnostic predicate')
+   close(max(float(p[a,b]) for a,b in cells),float(row['d1_max_probability']),'direct d1 probability')
+for row in images:
+ check(sum(int(row[r+'_FP']) for r in ['internal','near','far','uncertain'])==int(row['full_FP']),'regional FP sum')
+ check(sum(int(row[r+'_area']) for r in ['internal','near','far','uncertain'])==int(row['fov_pixels']),'regional area sum')
+ for r in ['internal','near','far','uncertain']:
+  for denom,key in [('area','FP_per_area'),('background_pixels','FP_per_background')]:
+   n=int(row[r+'_'+denom]);v=row[r+'_'+key]
+   if n:close(int(row[r+'_FP'])/n,float(v),'region ratio')
+   else:check(v=='','empty region NA')
+stats={}
+for seed in [2027,2028]:
+ rows=[r for r in points if int(r['seed'])==seed];qualified=[r for r in rows if r['qualifying_miss']=='1'];miss=[r for r in rows if r['d1_hit']=='0'];ids=sorted({r['filename'] for r in qualified})
+ check(len(ids)==d['seed_statistics'][str(seed)]['qualifying_image_count'],'gate image count')
+ stats[str(seed)]={'qualifying_count':len(qualified),'qualifying_images':len(ids),'qualifying_probability_ranges':{k:{'min':min(float(r[k]) for r in qualified),'median':statistics.median(float(r[k]) for r in qualified),'max':max(float(r[k]) for r in qualified)} for k in ['center_probability','d1_max_probability','background_mean_probability','logit_gap']},'misses_with_gap_at_least1':sum(float(r['logit_gap'])>=1 for r in miss if r['logit_gap'])}
+both=[pid for pid in sorted({r['point_id'] for r in points}) if all(next(r for r in points if r['point_id']==pid and int(r['seed'])==s)['qualifying_miss']=='1' for s in [2027,2028])]
+check(len(list((O/'figures').glob('P*.png')))==77 and len(list((O/'figures').glob('overview*.jpg')))==9,'atlas all77 plus9')
+html=(O/'atlas.html').read_text();check(all('id="'+pid+'"' in html for pid in {r['point_id'] for r in points}),'all point anchors')
+for p,h in d['source_hashes'].items():check(sha(p)==h,'source unchanged')
+frozen=json.loads((O/'protocol.json').read_text());check(sha(S/'protocol.json')==frozen['frozen_science_protocol_sha256'],'old scientific protocol unchanged')
+out={'status':'PASS','checks':checks,'max_numeric_error':maxerr,'elapsed_seconds':time.monotonic()-start,'seed_diagnostics':stats,'qualifying_in_both_seeds':both,'medical_review_count':0,'new_training':0,'new_inference':0,'Test_accessed':False,'atlas_case_selection':'all77, no favorable-case filtering'}
+(O/'independent_review.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n');print(json.dumps(out,ensure_ascii=False))

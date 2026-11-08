@@ -1,2 +1,5 @@
 # Preserve archived byte hashes across platforms; new text should use UTF-8 LF.
 * -text
+
+# Preserve archival evidence bytes and recorded hashes.
+outputs/research_evidence_20261108/** -text

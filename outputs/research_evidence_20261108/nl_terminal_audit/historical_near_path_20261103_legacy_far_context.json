@@ -1,0 +1,36 @@
+[
+  {
+    "comparison": "TW-T0",
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "delta": -0.00040537312114761033,
+    "CI_low": -0.0007010705529110246,
+    "CI_high": -0.00017552470291771328,
+    "source": "existing frozen far_recall per-image records; image paired"
+  },
+  {
+    "comparison": "NL-N0",
+    "seeds": [
+      2027,
+      2028
+    ],
+    "delta": 0.0007479451632191127,
+    "CI_low": -0.0004978580309519672,
+    "CI_high": 0.002030745395151262,
+    "source": "existing frozen far_recall per-image records; image paired"
+  },
+  {
+    "comparison": "N0-T0",
+    "seeds": [
+      2027,
+      2028
+    ],
+    "delta": 0.031236703997634174,
+    "CI_low": 0.021046842453480246,
+    "CI_high": 0.041045979742429774,
+    "source": "existing frozen far_recall per-image records; image paired"
+  }
+]

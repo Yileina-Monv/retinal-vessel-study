@@ -1,0 +1,18 @@
+{
+  "seed": 2027,
+  "attempts": 1000,
+  "audited_crops": 2000,
+  "visible": 5963,
+  "selected": 5830,
+  "nonempty_batches": 408,
+  "nonempty_crops": 457,
+  "mode": "RESELECT_FROM_BOUND_V1_GEOMETRY_NO_NEW_NATIVE_REPLAY",
+  "retained_fraction": 0.9776957907093745,
+  "Neff": 27.02847159311505,
+  "gates": {
+    "nonempty_batches": true,
+    "retained_fraction": true,
+    "Neff": true
+  },
+  "pass": true
+}

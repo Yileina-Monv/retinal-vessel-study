@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "phase": "pre-analysis",
+  "checks": {
+    "protocol_manifest_hashes": true,
+    "565_protected_hashes": true,
+    "308_maps_float32_native_finite_range": true,
+    "11x28x77_inventory_9valid_19NA": true,
+    "checkpoint_lineage_metrics": true,
+    "CPU_synthetic_checks": true,
+    "CUDA_hidden": true
+  },
+  "source_hashes_checked": 565,
+  "probability_maps_checked": 308,
+  "training_updates": 0,
+  "new_model_inference": 0,
+  "official_test_accessed": false,
+  "execution_binding_sha256": "aa9859425454cb5acc375319ba5c6b9d9d922f4ebd57cfd5c485ac6f6b3de325",
+  "reuse_manifest_sha256": "140bfbc8a18c4cd46f66e9673c5f583642aeba45baea66da4ce0c4af8f7baaae",
+  "helper_sha256s": {
+    "visual_annotation_helper": "48609996302f32a041eaec0bbcd5b4163cc33b9057f7051e2639c0c571f49481",
+    "finalization_helper": "46ef0e76a60db77f3668a7a9741bbcdec722713a38566dd43f9d596ea55d52df"
+  }
+}

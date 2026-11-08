@@ -1,0 +1,32 @@
+[
+  {
+    "path": "atlas/20051208_41707_0400_PP_isolated_new_B1.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051208_41707_0400_PP",
+    "kind": "isolated_new_adverse_supplement",
+    "bbox": [
+      1024,
+      1024,
+      1536,
+      1536
+    ]
+  },
+  {
+    "path": "atlas/20051116_44615_0400_PP_isolated_new_B1.png",
+    "size": [
+      2048,
+      1160
+    ],
+    "filename": "20051116_44615_0400_PP",
+    "kind": "isolated_new_adverse_supplement",
+    "bbox": [
+      1536,
+      1024,
+      2048,
+      1536
+    ]
+  }
+]

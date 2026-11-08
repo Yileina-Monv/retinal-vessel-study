@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "independent_checks_passed": true,
+  "seeds": [
+    {
+      "seed": 2027,
+      "attempts": 1000,
+      "audited_crops": 2000,
+      "visible": 5963,
+      "selected": 5830,
+      "nonempty_batches": 408,
+      "retained_fraction": 0.9776957907093745,
+      "Neff": 27.02847159311505,
+      "gates": {
+        "nonempty_batches": true,
+        "retained_fraction": true,
+        "Neff": true
+      },
+      "status": "PASS",
+      "top1_mass_fraction": 0.05470459518599562,
+      "top3_mass_fraction": 0.15973741794310722
+    },
+    {
+      "seed": 2028,
+      "attempts": 1000,
+      "audited_crops": 2000,
+      "visible": 5678,
+      "selected": 5562,
+      "nonempty_batches": 385,
+      "retained_fraction": 0.9795702712222614,
+      "Neff": 26.649122807017545,
+      "gates": {
+        "nonempty_batches": true,
+        "retained_fraction": true,
+        "Neff": true
+      },
+      "status": "PASS",
+      "top1_mass_fraction": 0.052995391705069124,
+      "top3_mass_fraction": 0.1543778801843318
+    }
+  ],
+  "formula_tests": 52,
+  "synthetic_selection_tests": 8,
+  "oracle_queries": 1867417,
+  "replay_receipt_status": "COMPLETE_PENDING_INDEPENDENT_REVIEW",
+  "CPU_execution_complete": true,
+  "GPU_engineering": "HOLD",
+  "scientific_training": "HOLD",
+  "lambda": null,
+  "limitations": [
+    "No real network/AMP/parameter gradients validated",
+    "No medical human validation",
+    "Prefix replay does not prove future full scientific trajectory pairing",
+    "Native target size/image concentration retained",
+    "No NR: no lesion specificity"
+  ],
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "Test_access": false,
+  "Dev_pixel_access": false
+}

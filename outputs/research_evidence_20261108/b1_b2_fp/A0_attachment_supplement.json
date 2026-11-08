@@ -1,0 +1,113 @@
+{
+  "status": "EXPLORATORY_DESCRIPTIVE_NOT_NEW_EVALUATION",
+  "rationale": "Distinguish widening/continuation of A0 label-relative FP from entirely new isolated responses; no medical or loss-causal claim.",
+  "distance": "Native Euclidean distance to A0 FP; <=1 uses existing tolerance value only descriptively.",
+  "adjacency": "8-neighbor component touch, not vessel connectivity restoration.",
+  "score_band": "0.45<=A0_probability<0.5 inherited Plan B descriptive band, NOT a new prediction threshold.",
+  "results": {
+    "B1": {
+      "counts": {
+        "new_pixels": 57856,
+        "GT_distance_le1": 11769,
+        "A0_FP_distance_le1": 38764,
+        "A0_FP_distance_gt1": 19092,
+        "A0_score_ge045_lt05": 24617,
+        "A0_score_lt045": 33239,
+        "new_components": 27437,
+        "new_component_pixels_touching_A0_FP_8": 50503,
+        "new_component_pixels_touching_A0_prediction_8": 53640,
+        "new_component_pixels_not_touching_A0_prediction_8": 4216
+      },
+      "shares": {
+        "GT_distance_le1": 0.20341883296460178,
+        "A0_FP_distance_le1": 0.670008296460177,
+        "A0_FP_distance_gt1": 0.329991703539823,
+        "A0_score_ge045_lt05": 0.4254874170353982,
+        "A0_score_lt045": 0.5745125829646017,
+        "new_component_pixels_touching_A0_FP_8": 0.8729086006637168,
+        "new_component_pixels_touching_A0_prediction_8": 0.927129424778761,
+        "new_component_pixels_not_touching_A0_prediction_8": 0.07287057522123894
+      },
+      "scores_pooled": {
+        "A0": {
+          "q10": 0.32262346148490906,
+          "median": 0.4385429173707962,
+          "q90": 0.49021488428115845
+        },
+        "B": {
+          "q10": 0.5083552300930023,
+          "median": 0.5504828095436096,
+          "q90": 0.6393974721431732
+        },
+        "delta": {
+          "q10": 0.0475231409072876,
+          "median": 0.13338735699653625,
+          "q90": 0.251381054520607
+        },
+        "distance_A0_FP": {
+          "q10": 1.0,
+          "median": 1.0,
+          "q90": 6.082762530298219
+        }
+      },
+      "image_macro_shares": {
+        "A0_FP_distance_le1": 0.6642067693177135,
+        "A0_score_ge045_lt05": 0.4262310359763046,
+        "new_component_pixels_touching_A0_FP_8": 0.8672254577507018,
+        "new_component_pixels_touching_A0_prediction_8": 0.926869201076476
+      }
+    },
+    "B2": {
+      "counts": {
+        "new_pixels": 52495,
+        "GT_distance_le1": 10292,
+        "A0_FP_distance_le1": 35818,
+        "A0_FP_distance_gt1": 16677,
+        "A0_score_ge045_lt05": 23564,
+        "A0_score_lt045": 28931,
+        "new_components": 25322,
+        "new_component_pixels_touching_A0_FP_8": 46170,
+        "new_component_pixels_touching_A0_prediction_8": 48886,
+        "new_component_pixels_not_touching_A0_prediction_8": 3609
+      },
+      "shares": {
+        "GT_distance_le1": 0.1960567673111725,
+        "A0_FP_distance_le1": 0.6823126012001143,
+        "A0_FP_distance_gt1": 0.3176873987998857,
+        "A0_score_ge045_lt05": 0.4488808457948376,
+        "A0_score_lt045": 0.5511191542051624,
+        "new_component_pixels_touching_A0_FP_8": 0.8795123345080483,
+        "new_component_pixels_touching_A0_prediction_8": 0.9312505952947899,
+        "new_component_pixels_not_touching_A0_prediction_8": 0.06874940470521002
+      },
+      "scores_pooled": {
+        "A0": {
+          "q10": 0.3353523910045624,
+          "median": 0.44260695576667786,
+          "q90": 0.490839546918869
+        },
+        "B": {
+          "q10": 0.5080354928970336,
+          "median": 0.5485275983810425,
+          "q90": 0.6329809427261353
+        },
+        "delta": {
+          "q10": 0.04556052684783936,
+          "median": 0.1262219250202179,
+          "q90": 0.23517629504203796
+        },
+        "distance_A0_FP": {
+          "q10": 1.0,
+          "median": 1.0,
+          "q90": 5.656854249492381
+        }
+      },
+      "image_macro_shares": {
+        "A0_FP_distance_le1": 0.6763157361526881,
+        "A0_score_ge045_lt05": 0.44954399659996575,
+        "new_component_pixels_touching_A0_FP_8": 0.8733278991606238,
+        "new_component_pixels_touching_A0_prediction_8": 0.930585960534294
+      }
+    }
+  }
+}

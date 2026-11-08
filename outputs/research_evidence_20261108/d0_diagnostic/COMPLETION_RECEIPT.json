@@ -1,0 +1,12 @@
+{
+  "status": "D0_DELIVERY_AND_STATUS_VERIFIED",
+  "decision": "SUPPORT_NEXT_TRAIN_PAIRING_CPU_CHECK",
+  "backup": "${RETINA_PROJECT_ROOT}/docs/.continuity_backups/d0_completed_20261029_232243",
+  "new_training": 0,
+  "new_model_inference": 0,
+  "Train_pairing_run": false,
+  "Test_accessed": false,
+  "historical_science_protocol_sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3",
+  "report_sha256": "07d3ba6586c4b31d269b9823daf50b1b7161d14d9c8f89a92fa38a86dcfef2d3",
+  "artifacts_verified": 97
+}

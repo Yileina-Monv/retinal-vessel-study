@@ -1,0 +1,61 @@
+{
+  "analysis_id": "historical_near_path_20261103",
+  "authorization": "用户要求补救并重新评价之前的数据；复用现有终点的CPU统一补充评分。",
+  "inherited_rule_path": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/analysis/near_path_reanalysis_20261103_plan.json",
+  "inherited_rule_sha256": "58a32122e32303f4881f46c6ac73f7cc226c3e2f86e5c945105f04e8302e6b42",
+  "target_and_metric_changes": "NONE; exact same GT candidate paths, near/Omega, .5, native d1, per-path then per-image aggregation as existing NL-N0 supplemental analysis",
+  "models": {
+    "T0": [
+      2026,
+      2027,
+      2028
+    ],
+    "TW": [
+      2026,
+      2027,
+      2028
+    ],
+    "N0": [
+      2027,
+      2028
+    ],
+    "NL": [
+      2027,
+      2028
+    ]
+  },
+  "endpoints": {
+    "T0/TW": "fixed2000 successful updates",
+    "N0/NL": "fixed100epochs"
+  },
+  "comparisons": [
+    {
+      "contrast": "TW-T0",
+      "seeds": [
+        2026,
+        2027,
+        2028
+      ],
+      "type": "historical paired weighting experiment, rescored posthoc"
+    },
+    {
+      "contrast": "NL-N0",
+      "seeds": [
+        2027,
+        2028
+      ],
+      "type": "paired local supervision experiment, rescored posthoc"
+    },
+    {
+      "contrast": "N0-T0",
+      "seeds": [
+        2027,
+        2028
+      ],
+      "type": "pipeline comparison, NOT single-variable architecture ablation"
+    }
+  ],
+  "supplementary_statistics": "same image-level1000 bootstrap seed20261016 and all image leave-one-out, no new success criteria",
+  "scope_exclusion": "no other loss/module arms in this mainline table; no new training/inference/Test; historical standards/results untouched; not independent validation",
+  "reuse": "Reuse previously verified N0/NL per-path and per-image records; recompute only six T0/TW trajectories; require prior delivery/source SHA unchanged"
+}

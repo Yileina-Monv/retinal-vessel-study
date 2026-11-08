@@ -1,0 +1,217 @@
+"""Exploratory CPU metric validity review; immutable endpoints and definitions."""
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='2',MPLBACKEND='Agg')
+import sys,json,csv,hashlib,time,math
+from pathlib import Path
+import numpy as np
+from scipy.ndimage import binary_dilation, distance_transform_edt
+from PIL import Image
+R=Path('${RETINA_PROJECT_ROOT}'); C=R/'code/retinal-vessel-study'
+sys.path.insert(0,str(C))
+from retinal_m1.maps import targets
+B=R/'experiments/nnunet2d_branch_20261020'
+BASE=B/'replication_seed2027_2028_100epochs_v1_20261026'
+TERM=B/'deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103'
+OUT=TERM/'analysis'; PREFIX='metric_review_20261103'
+MAN=R/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json'
+RGBMAN=R/'docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json'
+FORMAL=R/'experiments/t0_tw_core_20261016'
+WIDTHS=[2,3,4,5]
+CROSS=np.array([[0,1,0],[1,1,1],[0,1,0]],bool)
+sources={}
+def sha(p):
+ p=Path(p);h=hashlib.sha256()
+ with p.open('rb') as f:
+  for b in iter(lambda:f.read(4194304),b''):h.update(b)
+ return h.hexdigest()
+def bind(p,expected=None):
+ p=Path(p);h=sha(p)
+ if expected is not None: assert h==expected,('source drift',str(p),h,expected)
+ sources[str(p)]=dict(sha256=h,size=p.stat().st_size,mtime_ns=p.stat().st_mtime_ns)
+ return p
+def read(p):
+ bind(p);return json.loads(Path(p).read_text())
+def dump(s,x):
+ p=OUT/(PREFIX+s)
+ with p.open('x') as f:json.dump(x,f,ensure_ascii=False,allow_nan=False,indent=2)
+def table(s,rows):
+ assert rows
+ with (OUT/(PREFIX+s)).open('x',encoding='utf-8-sig',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+def ratio(a,b):return float(a/b) if b else None
+def mean(x):return float(np.mean(x)) if len(x) else None
+t0=time.monotonic()
+manifest=read(MAN); rgbs={x['filename']:x for x in read(RGBMAN)['images']}
+names=[x['filename'] for x in manifest['images']]
+assert len(names)==28 and len(set(names))==28
+split=read(R/'data/maples_handoff_20261008/split_record.json')
+trainrows=read(R/'docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json')['rows']
+assert len(trainrows)==110
+assert set(names)==set(split['dev_files']) and not(set(names)&{x['filename'] for x in trainrows})
+oldnl=read(OUT/'NL_N0_COMPARISON.json')
+ff=bind(FORMAL/'analysis/fixed_0p5_per_image.csv')
+with ff.open(encoding='utf-8-sig') as f:
+ formal={(x['seed'],x['method'],x['filename']):x for x in csv.DictReader(f) if x['source']=='formal'}
+models=[(m,s) for s in [2026,2027,2028] for m in ['T0','TW']]+[(m,s) for s in [2027,2028] for m in ['N0','NL']]
+checks=[];denrows=[];pathrows=[];pointrows=[];metrics=[];imstats=[]
+# Synthetic width checks use the actual project generator, no model.
+synthetic=[]
+for w in range(1,7):
+ a=np.zeros((64,96),bool);a[30:30+w,10:86]=True
+ v=targets(a,np.ones_like(a));s=v['skeleton'].copy();s[:,:30]=False;s[:,66:]=False
+ d=2*v['skeleton_radius'][s]
+ synthetic.append(dict(raster_strip_width=w,diameter_proxy=np.unique(d).tolist(),selected_le3=int((d<=3).sum()),denominator=int(s.sum())))
+for num,rec in enumerate(manifest['images']):
+ name=rec['filename'];print('IMAGE',num+1,28,name,flush=True)
+ rp=bind(rec['reference_npz'],rec['reference_npz_sha256'])
+ with np.load(rp,allow_pickle=False) as z:a={k:z[k] for k in z.files}
+ gt=a['GT'].astype(bool);fov=a['FOV'].astype(bool);omega=a['Omega'].astype(bool);near=a['near'].astype(bool)&omega
+ for role,key in [('GT','GT'),('FOV','FOV')]:
+  source=rec['sources'][role];p=bind(source['path'],source['sha256'])
+  with Image.open(p) as im: ar=np.asarray(im)>0
+  assert np.array_equal(ar,a[key].astype(bool)),(name,role)
+ bind(rec['sources']['regions']['path'],rec['sources']['regions']['sha256'])
+ with np.load(rec['sources']['regions']['path'],allow_pickle=False) as z:
+  assert np.array_equal(z['near'].astype(bool)&omega,near)
+  assert np.array_equal(fov&~z['U'].astype(bool),omega)
+ t=targets(gt,fov);sk=t['skeleton'];diam=2*t['skeleton_radius']
+ assert np.array_equal((sk&(diam<=3)&near),(a['thin'].astype(bool)&near)),('S3 disagreement',name)
+ assert np.array_equal(sk&(diam<=3)&omega,a['full_S3'].astype(bool)),('fullS3 disagreement',name)
+ shape='x'.join(map(str,gt.shape));alpha=float(rec['alpha'])
+ coords=a['coords'];off=a['offsets'];chosen=a['candidate_B2'].astype(bool)
+ candidate=a['B2_reference'].astype(bool)&omega
+ pathunion=np.zeros(gt.shape,bool);pathunion[coords[:,0],coords[:,1]]=True
+ fullcount=int((sk&omega).sum());nearcount=int((sk&near).sum())
+ for width in WIDTHS:
+  sm=sk&(diam<=width)&omega;nm=sm&near;n=int(nm.sum())
+  row=dict(filename=name,shape=shape,width_native_proxy=width,alpha=alpha,width_reference_equivalent=width*alpha,
+   all_omega_skeleton=fullcount,near_skeleton=nearcount,full_width_points=int(sm.sum()),near_width_points=n,
+   NA=n==0,sparse_1_or_2=0<n<=2,near_selection_fraction=ratio(n,nearcount),
+   selected_candidate_unique=int((nm&candidate).sum()),selected_non_candidate_mapped=int((nm&pathunion&~candidate).sum()),
+   selected_unmapped=int((nm&~pathunion).sum()))
+  denrows.append(row)
+  for i,(start,end) in enumerate(zip(off[:-1],off[1:])):
+   c=coords[start:end];v=omega[c[:,0],c[:,1]];nmask=near[c[:,0],c[:,1]]
+   cc=np.unique(c[v],axis=0);cn=np.unique(c[nmask],axis=0)
+   if not len(cn):continue
+   fullsel=sm[cc[:,0],cc[:,1]];nearsel=sm[cn[:,0],cn[:,1]]
+   pp=rec['paths'][i]
+   widths=diam[cn[:,0],cn[:,1]]
+   pathrows.append(dict(filename=name,shape=shape,branch_id=i,width_native_proxy=width,
+    candidate=bool(chosen[i]),kind=pp['kind'],length_reference=pp['length_reference'],
+    body_width_reference_median=pp.get('body_width_reference_median'),valid_full_points=len(cc),near_points=len(cn),
+    selected_full_points=int(fullsel.sum()),selected_near_points=int(nearsel.sum()),
+    full_width_coverage=ratio(int(fullsel.sum()),len(cc)),near_width_coverage=ratio(int(nearsel.sum()),len(cn)),
+    region_fraction=ratio(len(cn),len(cc)),primary_over_full=ratio(int(nearsel.sum()),len(cc)),
+    near_width_min=float(widths.min()),near_width_median=float(np.median(widths)),near_width_max=float(widths.max()),
+    short_lt20=pp['length_reference']<20,complex_junction=bool(pp.get('junction_complex_GT_only',False))))
+ for y,x in np.argwhere(sk&(diam<=3)&near):
+  pointrows.append(dict(filename=name,y=int(y),x=int(x),diameter_proxy=float(diam[y,x]),candidate=bool(candidate[y,x]),graph_mapped=bool(pathunion[y,x])))
+ for method,seed in models:
+  if method in ['T0','TW']:probfile=FORMAL/'runs'/f'seed_{seed}'/method/'evaluation/step_002000/probabilities'/(name+'.npy')
+  elif method=='N0':probfile=BASE/'runs'/f'seed_{seed}'/'dev_predictions'/(name+'.npy')
+  else:probfile=TERM/'runs'/f'seed_{seed}'/'dev_predictions'/(name+'.npy')
+  bind(probfile)
+  p=np.load(probfile,mmap_mode='r',allow_pickle=False)
+  assert p.shape==gt.shape and p.dtype==np.float32 and np.isfinite(p).all() and p.min()>=0 and p.max()<=1
+  pred=(p>=.5)&fov;regional=pred&omega;hit=binary_dilation(regional,structure=CROSS)
+  tp=int((pred&gt&fov).sum());fp=int((pred&~gt&fov).sum());fn=int((~pred&gt&fov).sum())
+  dice=ratio(2*tp,2*tp+fp+fn);near3=sk&(diam<=3)&near;den=int(near3.sum());numhit=int((near3&hit).sum())
+  recall=ratio(numhit,den)
+  if method in ['T0','TW']:
+   old=formal[str(seed),method,name]
+   assert den==int(old['near_thin_recall_d1_denominator']) and numhit==int(old['near_thin_recall_d1_numerator']),(method,seed,name,'counts')
+   oldrec=float(old['near_thin_recall_d1']) if old['near_thin_recall_d1'] else None;olddice=float(old['dice'])
+  else:
+   old=oldnl['per_image'][str(seed)][name][method];oldrec=old['near_thin_recall_d1'];olddice=old['dice']
+  assert (recall is None and oldrec is None) or (recall is not None and oldrec is not None and abs(recall-oldrec)<1e-12),(method,seed,name,'recall')
+  assert abs(dice-olddice)<1e-12,(method,seed,name,'dice')
+  checks.append(dict(filename=name,method=method,seed=seed,denominator=den,hits=numhit,dice=dice,recall=recall,passed=True))
+  for width in WIDTHS:
+   mask=sk&(diam<=width)&near;d=int(mask.sum());h=int((mask&hit).sum())
+   metrics.append(dict(filename=name,method=method,seed=seed,width_native_proxy=width,denominator=d,hits=h,recall=ratio(h,d),NA=d==0))
+  del p
+# Persist detailed facts before exploratory aggregation. No historical overwrite.
+assert len(checks)==280 and len(pointrows)==77
+table('_original_reproduction.csv',checks);table('_denominators.csv',denrows);table('_paths.csv',pathrows);table('_points77.csv',pointrows);table('_metrics.csv',metrics)
+summary=[]
+for width in WIDTHS:
+ rows=[x for x in denrows if x['width_native_proxy']==width]
+ valid=[x for x in rows if x['near_width_points']]
+ pp=[x for x in pathrows if x['width_native_proxy']==width and x['candidate']]
+ reached=[x for x in pp if x['selected_near_points']]
+ summary.append(dict(width=width,valid_images=len(valid),NA_images=28-len(valid),targets=sum(x['near_width_points'] for x in rows),
+  sparse_images=sum(x['sparse_1_or_2'] for x in rows),max_image_points=max(x['near_width_points'] for x in rows),
+  median_valid_points=float(np.median([x['near_width_points'] for x in valid])),
+  candidate_paths_intersecting_near=len(pp),candidate_paths_reached=len(reached),
+  candidate_paths_zero=len(pp)-len(reached),candidate_paths_fully_covered_near=sum(x['near_width_coverage']==1 for x in pp),
+  median_path_near_coverage=mean([]) if not pp else float(np.median([x['near_width_coverage'] for x in pp])),
+  median_reached_path_near_coverage=float(np.median([x['near_width_coverage'] for x in reached])) if reached else None,
+  median_reached_path_full_width_coverage=float(np.median([x['full_width_coverage'] for x in reached])) if reached else None,
+  candidate_near_point_occurrences=sum(x['near_points'] for x in pp),selected_candidate_occurrences=sum(x['selected_near_points'] for x in pp),
+  selected_candidate_unique=sum(x['selected_candidate_unique'] for x in rows),
+  selected_non_candidate_mapped=sum(x['selected_non_candidate_mapped'] for x in rows),selected_unmapped=sum(x['selected_unmapped'] for x in rows)))
+table('_width_summary.csv',summary)
+sizes=[]
+for shape in sorted(set(x['shape'] for x in denrows)):
+ for width in WIDTHS:
+  rows=[x for x in denrows if x['shape']==shape and x['width_native_proxy']==width]
+  sizes.append(dict(shape=shape,width=width,images=len(rows),near_present_images=sum(x['near_skeleton']>0 for x in rows),
+   valid_images=sum(x['near_width_points']>0 for x in rows),targets=sum(x['near_width_points'] for x in rows),
+   sparse_images=sum(x['sparse_1_or_2'] for x in rows),full_width_points=sum(x['full_width_points'] for x in rows),
+   all_omega_skeleton=sum(x['all_omega_skeleton'] for x in rows),near_skeleton=sum(x['near_skeleton'] for x in rows),
+   reference_equivalent_min=min(x['width_reference_equivalent'] for x in rows),reference_equivalent_max=max(x['width_reference_equivalent'] for x in rows)))
+table('_size_summary.csv',sizes)
+lookup={(x['method'],x['seed'],x['width_native_proxy'],x['filename']):x for x in metrics}
+effects=[];loos=[];individual=[]
+for baseline,method,seeds in [('T0','TW',[2026,2027,2028]),('N0','NL',[2027,2028])]:
+ for width in WIDTHS:
+  valid=[n for n in names if lookup[baseline,seeds[0],width,n]['denominator']>0]
+  for seedset in [[s] for s in seeds]+[seeds]:
+   label=str(seedset[0]) if len(seedset)==1 else 'within_image_seed_average'
+   deltas=[];basevals=[];newvals=[];basehits=0;newhits=0;points=0
+   for n in valid:
+    bs=[lookup[baseline,s,width,n] for s in seedset];ms=[lookup[method,s,width,n] for s in seedset]
+    assert len({x['denominator'] for x in bs+ms})==1
+    bv=mean([x['recall'] for x in bs]);mv=mean([x['recall'] for x in ms]);delta=mv-bv
+    deltas.append(delta);basevals.append(bv);newvals.append(mv)
+    basehits+=sum(x['hits'] for x in bs);newhits+=sum(x['hits'] for x in ms);points+=sum(x['denominator'] for x in bs)
+    individual.append(dict(comparison=method+'-'+baseline,seed=label,width=width,filename=n,denominator=bs[0]['denominator'],baseline=bv,candidate=mv,delta=delta,contribution_to_macro=delta/len(valid)))
+   delta=mean(deltas);leave=[mean(deltas[:i]+deltas[i+1:]) for i in range(len(valid))]
+   # Diagnostic CI uses same image as unit; fixed RNG not tuned, not a new test of success.
+   ix=np.random.default_rng(20261016).integers(0,len(valid),size=(1000,len(valid)))
+   ci=np.quantile(np.array(deltas)[ix].mean(axis=1),[.025,.975])
+   same9=[n for n in valid if lookup[baseline,seeds[0],3,n]['denominator']>0]
+   same9delta=mean([mean([lookup[method,s,width,n]['recall']-lookup[baseline,s,width,n]['recall'] for s in seedset]) for n in same9])
+   effects.append(dict(comparison=method+'-'+baseline,seed=label,width=width,n_images=len(valid),
+    baseline_macro=mean(basevals),candidate_macro=mean(newvals),delta=delta,diagnostic_CI_low=float(ci[0]),diagnostic_CI_high=float(ci[1]),
+    baseline_hits_sum_over_seed=basehits,candidate_hits_sum_over_seed=newhits,denominator_sum_over_seed=points,
+    pooled_point_delta=(newhits-basehits)/points,loo_min=min(leave),loo_max=max(leave),
+    loo_opposite_sign=sum(v*delta<0 for v in leave),same_original9_delta=same9delta))
+   for n,v in zip(valid,leave):loos.append(dict(comparison=method+'-'+baseline,seed=label,width=width,omitted_image=n,remaining_n=len(valid)-1,delta=v,diagnostic_only=True))
+table('_effects.csv',effects);table('_leave_one_out.csv',loos);table('_paired_images.csv',individual)
+# Choose 6 GT-only case crops: both singleton images; then each native size worst
+# nonzero near coverage candidate; then largest near candidate with zero S3 coverage.
+cases=[]
+def add_case(row,reason):
+ if row and not any(x['filename']==row['filename'] and x['branch_id']==row['branch_id'] for x in cases):cases.append(dict(row,selection_reason=reason))
+p3=[x for x in pathrows if x['width_native_proxy']==3]
+for n in sorted(x['filename'] for x in denrows if x['width_native_proxy']==3 and x['near_width_points']==1):
+ rows=[x for x in p3 if x['filename']==n and x['selected_near_points']>0]
+ if rows:add_case(sorted(rows,key=lambda x:(not x['candidate'],-x['near_points'],x['branch_id']))[0],'single_target_image')
+for shape in sorted(set(x['shape'] for x in denrows)):
+ rows=[x for x in p3 if x['shape']==shape and x['candidate'] and x['selected_near_points']>0]
+ if rows:add_case(sorted(rows,key=lambda x:(x['near_width_coverage'],-x['near_points'],x['filename'],x['branch_id']))[0],'lowest_nonzero_candidate_coverage_in_size')
+rows=[x for x in p3 if x['candidate'] and x['selected_near_points']==0]
+if rows:add_case(sorted(rows,key=lambda x:(-x['near_points'],x['filename'],x['branch_id']))[0],'largest_near_candidate_with_zero_S3')
+dump('_facts.json',dict(status='CPU_FACTS_COMPLETE',threshold=.5,widths=WIDTHS,scope='Dev28 existingGT/predictions only; historical standards unchanged',
+ synthetic=synthetic,reproduction_checks=280,reproduction_max_error_tolerance=1e-12,width_summary=summary,size_summary=sizes,effects=effects,cases=cases,
+ limitations=['GT graph paths are engineering proxies, not medical branches','native resolution association is confounded by image content; not causal','cumulative widths change both targets and valid images; same9 diagnostic supplied','pooled positions are not independent patients','no posthoc winner selection; all added diagnostics exploratory'],
+ elapsed_seconds=time.monotonic()-t0))
+# Changed-source check before delivery.
+for p,b in sources.items():
+ st=Path(p).stat()
+ assert st.st_size==b['size'] and st.st_mtime_ns==b['mtime_ns'],('input changed during review',p)
+sources[str(Path(__file__))]=dict(sha256=sha(__file__),size=Path(__file__).stat().st_size,mtime_ns=Path(__file__).stat().st_mtime_ns)
+dump('_sources.json',sources)
+print('COMPLETE',json.dumps(summary,ensure_ascii=False),flush=True)

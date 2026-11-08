@@ -1,0 +1,34 @@
+{
+  "source_authority": "A7 existing STATUS/decisions and fixed experimental evidence",
+  "scanned_project_evidence_files": 4621,
+  "selected_source_files": 629,
+  "imported_files": 504,
+  "exact_duplicates_linked": 10,
+  "intentionally_retained_on_A7": 115,
+  "stage_count": 16,
+  "existing_open_PRs": [
+    4,
+    7,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    19
+  ],
+  "PPT_included": false,
+  "new_training": 0,
+  "model_forwards": 0,
+  "Test_access": false,
+  "scope_limit": "Selected scientific analysis artifacts, not a full server backup or all intermediate engineering attempts; original source files retained at A7",
+  "remaining_private_assets": [
+    "RGB atlases and raw datasets",
+    "weights and probability arrays",
+    "complete execution environments and intermediate backups"
+  ],
+  "medical_review_unchanged": {
+    "PlanB": "0/105",
+    "branch_targets": "0/26"
+  }
+}

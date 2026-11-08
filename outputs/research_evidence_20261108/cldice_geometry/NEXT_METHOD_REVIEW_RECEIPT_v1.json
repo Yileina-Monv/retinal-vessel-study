@@ -1,0 +1,24 @@
+{
+  "status": "CPU_DIAGNOSIS_AND_PROPOSAL_DELIVERED_AWAITING_USER_APPROVAL",
+  "time": "2026-10-23 15:47:20.615586+08:00",
+  "old_artifacts_unchanged": 59,
+  "new_artifact_sha256": {
+    "NEXT_METHOD_PROPOSAL_v1.md": "4590582eeba44b53719179afbc2a416329078cc8801dd029fdb5b0a4d25ef8c6",
+    "focused_geometry_v1.py": "99e08be6a88f5c0c4b12ed24e4ba655f373cfd6b2c57f32d7d64244c5f5c6589",
+    "focused_geometry_spec_v1.json": "5fe9a1c5aa89406eb26901b9fe3910321c1fb4f77cb7ad49e3150244388acad5",
+    "focused_geometry_per_image_v1.csv": "27b897f4fcadd227f8299ef0d5beab91f4437b7b6140eaea25607256c9e41c55",
+    "focused_geometry_summary_v1.json": "fc9d4480cc93b11330030c842f6838483125cd7acad764f36f873fd5cdbadf50",
+    "envelope_support_v1.py": "01b2df688d12d4c0ab93aa8f8750b63c58d4642423ca0e798bab8a1035036bd1",
+    "envelope_support_per_image_v1.csv": "0067b198c24c0a6302f2932cd84f390e9d6a7761e458bc2f724ce49cb3706afb",
+    "envelope_support_summary_v1.json": "ac3caf4076822bb67d26196ca2f21c755c3b75d44a38c49ea6b6780b1f7bbe0e"
+  },
+  "original_frozen_protocol_changed": false,
+  "new_loss_implemented": false,
+  "new_model_inference": 0,
+  "GPU_calls": 0,
+  "updates": 0,
+  "official_Test_accessed": false,
+  "Luna_task_dispatched": false,
+  "human_review": "0/26 unchanged",
+  "backup": "${RETINA_PROJECT_ROOT}/docs/.continuity_backups/20261023T_p1_next_method_proposal_v1"
+}

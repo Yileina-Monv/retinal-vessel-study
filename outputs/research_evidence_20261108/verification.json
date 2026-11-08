@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 6495,
+  "new_training": 0,
+  "model_forwards": 0,
+  "Test_access": false,
+  "historical_CIs_regenerated": false,
+  "scope": "public files, arithmetic, complete denominators, figures and links"
+}

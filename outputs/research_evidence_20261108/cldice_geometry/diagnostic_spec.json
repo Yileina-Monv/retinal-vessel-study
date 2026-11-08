@@ -1,0 +1,23 @@
+{
+  "status": "EXPLORATORY_DIAGNOSTIC_NOT_NEW_PRIMARY_OR_PROTECTION",
+  "scope": "Dev28 fixed seed2026 step2000",
+  "threshold": 0.5,
+  "support": "Full frozen FOV, including U, same as original global Dice/Precision/FP; mask before skeletonization",
+  "skeleton": "skimage skeletonize(method=zhang), native 2D; zero outside FOV, no GT/pred repair or additional tolerance",
+  "definitions": {
+    "topology_precision": "|S(P) & GT| / |S(P)|",
+    "topology_sensitivity": "|S(GT) & P| / |S(GT)|",
+    "clDice": "harmonic mean of these two ratios"
+  },
+  "empty": "Ratios with denominator zero are NA; clDice=1 for both masks empty, 0 if only one is empty, 0 if both nonempty ratios sum to zero; counts and flags kept. Authors raw code has no empty guards.",
+  "aggregation": "per-image ratios, then equal image macro; pooled counts separately labeled; no pixel-as-independent intervals",
+  "bootstrap": "Reuse original 1000x28 paired image indices; conditional on one trained seed and reused Dev",
+  "authors_code_note": "Published metric local variable names tprec/tsens are reversed versus paper Eq1, but harmonic mean unchanged; report follows paper definitions.",
+  "FP_partition": "New FP: GT distance<=1; or GT distance>1 and added 8-component touches A0 prediction; or GT distance>1 and added component does not touch A0 prediction. Geometry, NOT medical mechanism classes.",
+  "false_centerline": "S(P) outside GT: label-relative skeleton error, not a verified fake anatomical vessel or wrong connection.",
+  "predicted_margin": "2*EDT(P) at same GT skeleton coordinates covered by all three models; local support margin proxy, not clinical diameter.",
+  "new_inference": 0,
+  "training_updates": 0,
+  "GPU_calls": 0,
+  "Test_accessed": false
+}

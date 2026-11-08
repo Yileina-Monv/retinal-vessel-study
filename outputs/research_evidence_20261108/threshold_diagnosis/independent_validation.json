@@ -1,0 +1,132 @@
+{
+  "status": "INDEPENDENT_CPU_DIAGNOSTIC_CHECKS_PASSED",
+  "metadata_and_training_pairs": {
+    "status": "DIRECTLY_PAIRED_COMPARABLE",
+    "methods": [
+      "A0",
+      "D",
+      "B1",
+      "B2"
+    ],
+    "seed": 2026,
+    "endpoint": 2000,
+    "model": "same original U-Net and FIVES M0",
+    "M0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+    "Train_images": 110,
+    "Dev_images": 28,
+    "frozen_threshold": 0.5,
+    "GT_FOV": "same sealed native reference, includes original U for whole-image metrics",
+    "aggregation": "per-image macro over fixed28, pooled counts separately labelled",
+    "pixel_rule": "probability>=threshold, no filtering or postprocessing",
+    "pair_checks": {
+      "B1": {
+        "batches_exact": 2000,
+        "actual_inputs_exact": 8000
+      },
+      "B2": {
+        "batches_exact": 2000,
+        "actual_inputs_exact": 8000
+      },
+      "D": {
+        "batches_exact": 2000,
+        "actual_inputs_exact": 8000
+      }
+    },
+    "shared_config_fields_checked": [
+      "seed",
+      "max_steps",
+      "source_m0_sha256",
+      "batch_size",
+      "patch",
+      "learning_rate",
+      "weight_decay",
+      "betas",
+      "eps",
+      "scheduler",
+      "clip_norm",
+      "amp",
+      "amp_initial_scale",
+      "mean",
+      "std",
+      "train_sample_filenames"
+    ],
+    "D_directory_note": "D phase has legacy runs/seed_2026/C folder name; actual checkpoint/metrics method and phase are D, not candidate C",
+    "historical_primary_and_guard_rules_not_rewritten": true
+  },
+  "legacy_seven_threshold_checks": 4116,
+  "direct_bruteforce_count_checks": 96,
+  "independent_AP_algorithm_checks": [
+    {
+      "method": "A0",
+      "filename": "20051116_44615_0400_PP",
+      "absolute_error": 1.3322676295501878e-15
+    },
+    {
+      "method": "D",
+      "filename": "20051116_44615_0400_PP",
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "method": "B1",
+      "filename": "20051116_44615_0400_PP",
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "method": "B2",
+      "filename": "20051116_44615_0400_PP",
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "method": "A0",
+      "filename": "20051117_37078_0400_PP",
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "method": "D",
+      "filename": "20051117_37078_0400_PP",
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "B1",
+      "filename": "20051117_37078_0400_PP",
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "method": "B2",
+      "filename": "20051117_37078_0400_PP",
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "A0",
+      "filename": "20060522_45248_0100_PP",
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "D",
+      "filename": "20060522_45248_0100_PP",
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "method": "B1",
+      "filename": "20060522_45248_0100_PP",
+      "absolute_error": 0.0
+    },
+    {
+      "method": "B2",
+      "filename": "20060522_45248_0100_PP",
+      "absolute_error": 5.551115123125783e-16
+    }
+  ],
+  "input_files_unchanged": 164,
+  "all28_plot_panels": 28,
+  "figures": [
+    "threshold_PR_overview.png",
+    "all28_Dice_thresholds.png",
+    "probability_calibration.png"
+  ],
+  "model_inference": 0,
+  "GPU_calls": 0,
+  "training_updates": 0,
+  "official_Test_access": false,
+  "elapsed_seconds": 28.280005687032826
+}

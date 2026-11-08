@@ -1,0 +1,31 @@
+{
+  "protocol_id": "maples_plan_b_existing_predictions_error_analysis_v1_20261019",
+  "protocol_sha256": "5822922a71e2f05ccc15fb68bde4a370c14738ebca5757ab6a93811b744b0b26",
+  "source_manifest_sha256": "4a5f4b0f6b2217ae23f7ab47aad7ea293620897c8d80ed906cd84b2a6ce72fd7",
+  "implementation_path": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/retinal_m0/plan_b_error_analysis.py",
+  "implementation_sha256": "d4ec23b0e6dc6650a83d1c055f7301f1778a27257491f5fbd983c91101aa1a7d",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "libraries": {
+    "numpy": "2.2.6",
+    "PIL": "12.3.0",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9",
+    "cv2": "5.0.0"
+  },
+  "CUDA_VISIBLE_DEVICES": "",
+  "torch_cuda_available": false,
+  "analysis_mode": "CPU saved arrays only; no model construction/loading/inference/training/Test access",
+  "conditions": 11,
+  "prediction_maps": 308,
+  "protected_hashes_checked": 565,
+  "created_utc": "2026-10-19T03:04:25Z",
+  "visual_annotation_helper": {
+    "path": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/retinal_m0/plan_b_visual_annotations.py",
+    "sha256": "48609996302f32a041eaec0bbcd5b4163cc33b9057f7051e2639c0c571f49481"
+  },
+  "finalization_helper": {
+    "path": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/retinal_m0/plan_b_finalize.py",
+    "sha256": "46ef0e76a60db77f3668a7a9741bbcdec722713a38566dd43f9d596ea55d52df"
+  }
+}

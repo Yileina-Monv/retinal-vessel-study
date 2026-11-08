@@ -1,0 +1,44 @@
+{
+  "status": "CPU_NUMERICAL_CHECKS_COMPLETE",
+  "fixtures": {
+    "rectangle_count_and_weight_exact": true,
+    "uniform_origin_probability_enumerated": true,
+    "all_16_transforms_preserve_native_membership": true
+  },
+  "independent_native_size_direct_slice_checks": [
+    {
+      "filename": "20051019_38557_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "direct_slice_count_and_weight_match": true
+    },
+    {
+      "filename": "20051116_43995_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "direct_slice_count_and_weight_match": true
+    },
+    {
+      "filename": "20051116_44690_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "direct_slice_count_and_weight_match": true
+    }
+  ],
+  "source_hashes_unchanged": 476,
+  "all_original_draws_and_augmentation_preserved": 8000,
+  "original_training_sampler_modified": false,
+  "model_loaded": false,
+  "Dev_content_read": false,
+  "Test_content_read": false,
+  "GPU_calls": 0,
+  "parameter_updates": 0,
+  "elapsed_seconds": 125.37532540410757,
+  "peak_RSS_KiB": 1116496
+}

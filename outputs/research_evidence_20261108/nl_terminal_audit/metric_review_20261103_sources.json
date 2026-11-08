@@ -1,0 +1,1997 @@
+{
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json": {
+    "sha256": "c2b2f3fd14e9f9705570faf6ed229cfff314474d48ac14d96838d9ca7f1f7804",
+    "size": 21087753,
+    "mtime_ns": 1792663682911337968
+  },
+  "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json": {
+    "sha256": "739d78606fabf1667dacc8234e50f49257a83c579c69aee7d0b4a7a35c267d93",
+    "size": 57555,
+    "mtime_ns": 1792407364615568702
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/split_record.json": {
+    "sha256": "481ab77faad423ebd326dc2252010c74db9ecc24adfd9d63eef09fd9163e14d0",
+    "size": 1863,
+    "mtime_ns": 1791428746808336138
+  },
+  "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json": {
+    "sha256": "b76145167581be445ff2d5271a9f54672029253256dfb59b32419355855258fe",
+    "size": 89460,
+    "mtime_ns": 1792407364613568702
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/analysis/NL_N0_COMPARISON.json": {
+    "sha256": "442042580d98d0938d59025c7ae8cb057246ce7c50f8296d758e2cd32d04f367",
+    "size": 8175163,
+    "mtime_ns": 1793679059737118137
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/analysis/fixed_0p5_per_image.csv": {
+    "sha256": "b5378a94e47daf44b687c1ae19efbd1fae313430798fa132654e88e8c8274b51",
+    "size": 50601,
+    "mtime_ns": 1792233268648612459
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051116_44615_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "f0f4ac743ff146c182328c03cdd4ed2aa117975171845d38967577bc55670caa",
+    "size": 346011,
+    "mtime_ns": 1792663636928336395
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_44615_0400_PP.png": {
+    "sha256": "8d7efd79fd2a2fb17b098eaa376a35f258e4c8681179b8e828224e3400eb6173",
+    "size": 76499,
+    "mtime_ns": 1791428788944334631
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051116_44615_0400_PP/fov.png": {
+    "sha256": "a11214717ec763ca63adee7d96527da725a3e1bbfa10953dd277ca4f1ef98864",
+    "size": 12033,
+    "mtime_ns": 1792067595501944382
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051116_44615_0400_PP.npz": {
+    "sha256": "c7cad440afd6beac42b92470e45570a7d55ab24ca6d5c2e0a9e9616c4023f567",
+    "size": 43953,
+    "mtime_ns": 1792073970322162480
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "a899cccdfdbea0d7b87e042cfcb28b5f7c386d96ecc9a0d8fa15450eb54a3fca",
+    "size": 14155904,
+    "mtime_ns": 1792222617977248074
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "c91c9d48f6a40f2053f0d3d244402e55ead0c3d5a363db6747aa3d2a7b292553",
+    "size": 14155904,
+    "mtime_ns": 1792224786402322261
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "70a42ad72123372f39b5b6de316918a267ef0b0114a92c484468547dba3a1813",
+    "size": 14155904,
+    "mtime_ns": 1792228356580444405
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "4954c079a7d3c56891747011b48e559942ecd273bf6d0351463ea186011cc919",
+    "size": 14155904,
+    "mtime_ns": 1792226764692389943
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "83b7294a1757e9d9c04ab796def828fb129537e4d6dcac18abefc03c3e0766b1",
+    "size": 14155904,
+    "mtime_ns": 1792229937344498487
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051116_44615_0400_PP.npy": {
+    "sha256": "c382a576ed226f7a621f7bde3bc89b6cf62e7f6776f0c900425f81547ca72556",
+    "size": 14155904,
+    "mtime_ns": 1792231932740566754
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051116_44615_0400_PP.npy": {
+    "sha256": "ef55d739ae2dd5c70ef8aed450f24acfb8540b6f0ac6ab25231216a4a8a33f38",
+    "size": 14155904,
+    "mtime_ns": 1793035979471075130
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051116_44615_0400_PP.npy": {
+    "sha256": "217ea60af840f4420cac8592d054283867cc758b2b1a39f25c9aa3d53ee61eae",
+    "size": 14155904,
+    "mtime_ns": 1793678298403145365
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051116_44615_0400_PP.npy": {
+    "sha256": "de2b91c2b06776448bda42334f788bebd3f3bfce7bec005c1bac047855138ba7",
+    "size": 14155904,
+    "mtime_ns": 1793080847395610170
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051116_44615_0400_PP.npy": {
+    "sha256": "d29a6bbc1f502164e2d9f001b677443ea83918bcbc25b1cac65d50b92125aedf",
+    "size": 14155904,
+    "mtime_ns": 1793678684008131574
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051116_44785_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "10aae24e51ffb86754ecfe0960a1310e7e26d4afb571909e5081fb1caf0c59a6",
+    "size": 313171,
+    "mtime_ns": 1792663639502336483
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_44785_0400_PP.png": {
+    "sha256": "a1a9dc8b8fa021a4e9d2c55175dff3df3365a0206a5c72de1019530046888f5c",
+    "size": 67113,
+    "mtime_ns": 1791428788950334631
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051116_44785_0400_PP/fov.png": {
+    "sha256": "b4e5eeb95627d21f52d6219030d86b5c76c512a4ec2ad1412edd3bf0af43c45b",
+    "size": 11946,
+    "mtime_ns": 1792067598404944481
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051116_44785_0400_PP.npz": {
+    "sha256": "1b745948b79c277a3b9d5cfb8274bca2d9e998f07b13a09e745ead1be3ec30b7",
+    "size": 40674,
+    "mtime_ns": 1792073980170162817
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "9e1fb40d968cfa3792bd460f105f731c42930b296379e385fc4f7433fb7127c8",
+    "size": 14155904,
+    "mtime_ns": 1792222619873248139
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "3d8f8d6ced97df22ee492a496659bae7d4b1e9d89580ef3ce2b6efbb9d88629a",
+    "size": 14155904,
+    "mtime_ns": 1792224788225322323
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "4fd2221739b328481b0143bbccc54c1dcc72dad9ec50d1c05246eb4600a38df0",
+    "size": 14155904,
+    "mtime_ns": 1792228358493444471
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "2388afacbeb8533b8486364e62267ed68f551a7c3362ce0b7562f2879e2b81eb",
+    "size": 14155904,
+    "mtime_ns": 1792226766602390008
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "f8306327cc7a1f4a548c6158bae7afdc179f177bbb83bd6ebeb22ee32b37dc17",
+    "size": 14155904,
+    "mtime_ns": 1792229939245498552
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051116_44785_0400_PP.npy": {
+    "sha256": "2012f9142ea191d145d80680e8176112e7017e79a622415dead596f63a3e7449",
+    "size": 14155904,
+    "mtime_ns": 1792231934629566819
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051116_44785_0400_PP.npy": {
+    "sha256": "b6bbf179c304173ee1755bd0fd9965f9fc4c4c8e532e279d7c58eef1c4ee1198",
+    "size": 14155904,
+    "mtime_ns": 1793035992599075579
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051116_44785_0400_PP.npy": {
+    "sha256": "1464c93d2c78fcad43d24ddb9450b50405c15c6656739bb8f632f2319fd1b630",
+    "size": 14155904,
+    "mtime_ns": 1793678311548144894
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051116_44785_0400_PP.npy": {
+    "sha256": "08b1cde7129f8bebf65ba108d42352a9c4f27d6fa6c24ccabe0640a1f8f1b1ba",
+    "size": 14155904,
+    "mtime_ns": 1793080860431610616
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051116_44785_0400_PP.npy": {
+    "sha256": "8bd87b79058531241935d4645356bb3f9123a60826bf8c6c9c1634184346d3d1",
+    "size": 14155904,
+    "mtime_ns": 1793678697149131104
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051117_37078_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "7a0c9c734f6e83d2e2fef672f2ccff180c28de1434e1fbaa41bc636c27c62032",
+    "size": 158173,
+    "mtime_ns": 1792663640712336524
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051117_37078_0400_PP.png": {
+    "sha256": "fcf94c956d41223cc81f7fb2e37e5560e9aea978bde8a2d74222fa9e2043caf6",
+    "size": 32032,
+    "mtime_ns": 1791428788975334630
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051117_37078_0400_PP/fov.png": {
+    "sha256": "cbfad511e2aa2d16e91d3ee54aadb91ca91e0aafc726f65c8df1ceedee93f97e",
+    "size": 6460,
+    "mtime_ns": 1792067600257944544
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051117_37078_0400_PP.npz": {
+    "sha256": "65bd881e4a83748f756914127842dfea0cfdb8e3bb3be891c989af1f712991fb",
+    "size": 31421,
+    "mtime_ns": 1792073982109162883
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "2ce64737f7e05f41ff9bfc85f734db1194a3ea7a2e77d52e22083904918cb6ab",
+    "size": 5529728,
+    "mtime_ns": 1792222620590248163
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "6849dc37a33c74a07aa942f1ec47c5d303d76af6f6e52755d3af669d649afde5",
+    "size": 5529728,
+    "mtime_ns": 1792224788970322349
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "004f220a71690fb89c757b912a6ebcc176ac5204f57ecb7df0d08d4c5e7e0f15",
+    "size": 5529728,
+    "mtime_ns": 1792228359243444497
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "24bb80c43944f9bc3e1bfc359052bc4c1fba38832324d696ea3543f506eda63e",
+    "size": 5529728,
+    "mtime_ns": 1792226767353390034
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "7a10281d9d545d911c985f5d03d1c5e4739c9be735ccbfe28d041d5d23c16767",
+    "size": 5529728,
+    "mtime_ns": 1792229939949498576
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051117_37078_0400_PP.npy": {
+    "sha256": "bafa74d57dde0479ae1c8d44300a0d4d7dc136b1805ef5ed7a0f7fbf27017b24",
+    "size": 5529728,
+    "mtime_ns": 1792231935339566843
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051117_37078_0400_PP.npy": {
+    "sha256": "0d314fb9c9f122622b7d3d06c6b52b96631e7d2883c3189e8a7e247425715fe3",
+    "size": 5529728,
+    "mtime_ns": 1793036002203075908
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051117_37078_0400_PP.npy": {
+    "sha256": "fc5d9ed4d0cfc445ceb61ac670cccd96f73179dfa1d4a35c6484e6d194b35d2b",
+    "size": 5529728,
+    "mtime_ns": 1793678321086144553
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051117_37078_0400_PP.npy": {
+    "sha256": "84fdc9814486a4e9b5184c5bea69253a8e98f6b75d60a2f23223dc6f78e3867c",
+    "size": 5529728,
+    "mtime_ns": 1793080870234610951
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051117_37078_0400_PP.npy": {
+    "sha256": "532f93068fe9a7138180f9f143575e8f03919498899a1d35d64e62fdbd3ea6c2",
+    "size": 5529728,
+    "mtime_ns": 1793678706764130760
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051117_37130_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "cc7f76a086b063cc64e723a6f1a51d062ff8283c4a4bc22a46923271e71b465c",
+    "size": 148268,
+    "mtime_ns": 1792663641756336560
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051117_37130_0400_PP.png": {
+    "sha256": "4129e88f6b20dfac62688e94924d5b55f5347584e34c9f76f13cc51f7ad19a6d",
+    "size": 29160,
+    "mtime_ns": 1791428788978334630
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051117_37130_0400_PP/fov.png": {
+    "sha256": "b9ab1117953183e772a3882130c76e02f729286eae7940e1f219c65e52993222",
+    "size": 6474,
+    "mtime_ns": 1792067601015944570
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051117_37130_0400_PP.npz": {
+    "sha256": "9f366e1727a752dd98942592937bd596c5237304ba4dccdc951db7f2670f67fc",
+    "size": 31839,
+    "mtime_ns": 1792073984001162948
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "8fcec1d6028d5b43362950e717b98c9420e2bea998f17bce446c368c7169a872",
+    "size": 5529728,
+    "mtime_ns": 1792222621300248188
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "3268bf3b6b99f7681de8e00a56040bade54a2ae7e3da0dacc0948e0cdd9e51a8",
+    "size": 5529728,
+    "mtime_ns": 1792224789678322373
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "a75311f117d63a56483544ac531d1fcfdff3a2a92e7b11709a188804af35fbcb",
+    "size": 5529728,
+    "mtime_ns": 1792228359948444521
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "879110936566127d74b9f22b3dc17b813f14cd152d295d8b8b8a4057f33f862c",
+    "size": 5529728,
+    "mtime_ns": 1792226768065390059
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "3aa6e18889194ac2dc86c32c6e9afa2175c9fa2fe064b9bc825c5c3b123d4dff",
+    "size": 5529728,
+    "mtime_ns": 1792229940651498600
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051117_37130_0400_PP.npy": {
+    "sha256": "5f34ba521186d07779e0441936def7c9c0091f9e3398d22c157ca8e1c23f1e26",
+    "size": 5529728,
+    "mtime_ns": 1792231936043566867
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051117_37130_0400_PP.npy": {
+    "sha256": "0f5e1be95f229ee0f58144ecd2247e16de646bfbcc6c50fd7497c69e01b444cd",
+    "size": 5529728,
+    "mtime_ns": 1793036012045076245
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051117_37130_0400_PP.npy": {
+    "sha256": "5f935a10c2ee0fd4c1f966398d30476a20846c5578af44743ef63ce9a5ef850a",
+    "size": 5529728,
+    "mtime_ns": 1793678330738144208
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051117_37130_0400_PP.npy": {
+    "sha256": "95c2a5b64462dcd8404794ec16af20c61cb12c49e0423bb5a02a812dd2b9a250",
+    "size": 5529728,
+    "mtime_ns": 1793080881521611338
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051117_37130_0400_PP.npy": {
+    "sha256": "ca4e1d5b52891e9805c018d0c47837ef67d139346fe46ab347209a1b54d068de",
+    "size": 5529728,
+    "mtime_ns": 1793678716736130404
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051202_51655_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "5ff9aa2bd8f13f76effefc0443294716810c29936c2ec887de7f98a530bfd3c2",
+    "size": 275504,
+    "mtime_ns": 1792663644163336642
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_51655_0400_PP.png": {
+    "sha256": "8ec27939fef2833abb76da692bddad322490aac69debe1e51b5da3f34881ae68",
+    "size": 55475,
+    "mtime_ns": 1791428789015334629
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051202_51655_0400_PP/fov.png": {
+    "sha256": "289bfc2337cc908d339cdbe36fe32010ec71f5b1db67256271aee64753f5dd85",
+    "size": 12065,
+    "mtime_ns": 1792067602506944621
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051202_51655_0400_PP.npz": {
+    "sha256": "884dd92a92b9039697c9c436b6b38ab3203ca86422508a290d40216c16fc46bb",
+    "size": 49411,
+    "mtime_ns": 1792073993510163273
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "c2c2efd8957ab1265718ea80babe739578266d2b06bb4510aa36208e4b491390",
+    "size": 14155904,
+    "mtime_ns": 1792222623212248253
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "d878c0b2071d7bb35a3647fa5434548c1d52ae9ce90e8b80cbe485a9b954480b",
+    "size": 14155904,
+    "mtime_ns": 1792224791531322437
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "ebc64bee36f8faa5390c32cc07432bba56dc212fe9a7b8903a2ec917a914ff69",
+    "size": 14155904,
+    "mtime_ns": 1792228361710444581
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "30608f46e73a82cf9615f83bb9c41f26a2137f612e4b7edfcd09e46f749ebadf",
+    "size": 14155904,
+    "mtime_ns": 1792226769947390123
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "f6d1ea5c8668d7bfeb9a4ce77f620d9e55d9a045fb56008091ded0d51bb6fd1a",
+    "size": 14155904,
+    "mtime_ns": 1792229942504498664
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051202_51655_0400_PP.npy": {
+    "sha256": "2821551a9b46d605ba016e9f1bf080810c4af6755f2c4fb87a4d321eee1c4f25",
+    "size": 14155904,
+    "mtime_ns": 1792231937919566932
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051202_51655_0400_PP.npy": {
+    "sha256": "ec4f00cc749f9e70adc219bc896df53c40cb27275fa36693459aeb78b1fbfe75",
+    "size": 14155904,
+    "mtime_ns": 1793036025233076696
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051202_51655_0400_PP.npy": {
+    "sha256": "d2850596b665ccf20771f89f54965ae7f9201f738dc60136d29f37b70f9115ce",
+    "size": 14155904,
+    "mtime_ns": 1793678343961143735
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051202_51655_0400_PP.npy": {
+    "sha256": "0bec6ddd0a7fe66bd4ca891bc85dc02869029c6b32bf79bb6273cc0969fddecf",
+    "size": 14155904,
+    "mtime_ns": 1793080894844611793
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051202_51655_0400_PP.npy": {
+    "sha256": "fb1b42e1249ead07fe282e240ca705f961c580f7f30b468941aaf1d4aa9c6392",
+    "size": 14155904,
+    "mtime_ns": 1793678730001129929
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051202_54530_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "e60aaa81f960d8ba2510f63f839a68d82715c0bdc0f1145496d1c86d8814f95e",
+    "size": 170564,
+    "mtime_ns": 1792663645446336686
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_54530_0400_PP.png": {
+    "sha256": "c227b66ff92c5d54716709aaf6f446e98d9fa832d46e2abaaf22795b42769aaf",
+    "size": 33198,
+    "mtime_ns": 1791428789021334629
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051202_54530_0400_PP/fov.png": {
+    "sha256": "113f763dac192f11d52abbbc940a9aafb2a793293fd0473b2f766e397cd5939b",
+    "size": 6468,
+    "mtime_ns": 1792067605548944725
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051202_54530_0400_PP.npz": {
+    "sha256": "487fddd6afd17418d30f0d977e6308d25bd30a3c72737cb728caa29c85402340",
+    "size": 44262,
+    "mtime_ns": 1792073995358163336
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "ffa6305d091cf7c96ea8624fe48c015d543d9c3f65ba650879eb22368d5082f5",
+    "size": 5529728,
+    "mtime_ns": 1792222623961248279
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "38bfeda3973085180bbe324ff0c6df769f892a0e128d118ba912a906ad148ee0",
+    "size": 5529728,
+    "mtime_ns": 1792224792225322460
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "19582bc16dfd65d5a5805d43ab7f2c56d33172e48a8b4bb3b22424bf10cbc949",
+    "size": 5529728,
+    "mtime_ns": 1792228362408444605
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "28d76d4150e3a29839a2a6ede0774e74070510acd42b7bd54e29bc8d4f7de9ea",
+    "size": 5529728,
+    "mtime_ns": 1792226770695390148
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "4e240c4826b70eea568247dc8d5bcc3a18b8c70d6cfdf7945ac91d048062f9c4",
+    "size": 5529728,
+    "mtime_ns": 1792229943258498690
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051202_54530_0400_PP.npy": {
+    "sha256": "ece8243276d9619bc3ca2a1b1d95ef8d8b2f9d2450faadddc9c881bca4eaab7d",
+    "size": 5529728,
+    "mtime_ns": 1792231938667566957
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051202_54530_0400_PP.npy": {
+    "sha256": "3e8b0cd1d4f3085d4afa7bae87ea87616793ce2b723b48f85f766afdfa79efaa",
+    "size": 5529728,
+    "mtime_ns": 1793036035162077036
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051202_54530_0400_PP.npy": {
+    "sha256": "19780d2ec8b30eaab21082379ffbe0ca5373b1d3d38ec05a5ccc3484c5e3cef9",
+    "size": 5529728,
+    "mtime_ns": 1793678353862143381
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051202_54530_0400_PP.npy": {
+    "sha256": "abbbfce649f610c73907c77a7ab14c6b1dea6a73284e9c5bc7638c67be304382",
+    "size": 5529728,
+    "mtime_ns": 1793080904803612134
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051202_54530_0400_PP.npy": {
+    "sha256": "8e37cf3f1a3f0acc0cc2c3cf69e2e7564133b752632ea19d0ec3b28c770968dc",
+    "size": 5529728,
+    "mtime_ns": 1793678739534129588
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_31934_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "f449ce26672483c2768f61b2d5fdd7e7b7f1f075a667b8c766d37da2252fb7f4",
+    "size": 324883,
+    "mtime_ns": 1792663648002336774
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_31934_0400_PP.png": {
+    "sha256": "39b844c75d69cf484793a8505c3142a494fee716fd3c8c13a715573b3f5817d4",
+    "size": 63315,
+    "mtime_ns": 1791428789037334628
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051205_31934_0400_PP/fov.png": {
+    "sha256": "a7fe1d865fb76eaba7a2d72fdaf9e36f0e4873b9416406eda42ea8f7f21c3655",
+    "size": 11967,
+    "mtime_ns": 1792067606958944774
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051205_31934_0400_PP.npz": {
+    "sha256": "3ccb2f6e53fabeb4d4c8862d9b586a04d9b7db0c2e835a543ce64cf5b5383e59",
+    "size": 61412,
+    "mtime_ns": 1792074004730163657
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "b3579f578c7fafddd68280d8a4b06bb50a7a6e82ea08b46b90b5046d7158a1a7",
+    "size": 14155904,
+    "mtime_ns": 1792222625767248341
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "2d07c96122f0d8fb844966c416dbaa31538e9fff78ea166c284c3c090789538a",
+    "size": 14155904,
+    "mtime_ns": 1792224794067322523
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "82f4b264f683f6ddacc3ca467f80c76ec46eec51e86c679d18edd071544156ef",
+    "size": 14155904,
+    "mtime_ns": 1792228364210444666
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "b130c9ce7ec8cfbd86c82fd872f924b5653c8f4f7abd7a04b6230254371fde67",
+    "size": 14155904,
+    "mtime_ns": 1792226772564390212
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "081b4a785b26597653d97a456bb055e5908abf7a1149207a75659862fa7d50d3",
+    "size": 14155904,
+    "mtime_ns": 1792229945050498751
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": {
+    "sha256": "0260260f2a0addd2eef26d26e90c1b090bf12f38cea3c2dc5b8ee1182c22c26f",
+    "size": 14155904,
+    "mtime_ns": 1792231940536567021
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_31934_0400_PP.npy": {
+    "sha256": "4b3b5c13e459cc1408d08229a91f9c53b67aceaf4e46457f87237210720669ff",
+    "size": 14155904,
+    "mtime_ns": 1793036048692077499
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051205_31934_0400_PP.npy": {
+    "sha256": "da750a7cc695d3ddd780f7d75e2737cbe9d7d2bdc421e42c3b2e36ea3107c005",
+    "size": 14155904,
+    "mtime_ns": 1793678367161142906
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_31934_0400_PP.npy": {
+    "sha256": "e2f084b0d06b98e215d1b70859300320b03a04e0a3896cf8277458d974cdfc61",
+    "size": 14155904,
+    "mtime_ns": 1793080918047612587
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051205_31934_0400_PP.npy": {
+    "sha256": "728650d5e0f3fd3f38107051e364962f75a7eef1da8ff31cc2e8f98d6f19ba41",
+    "size": 14155904,
+    "mtime_ns": 1793678752673129119
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35224_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "292f772126109cb4a1973aac86a81aac6287aaa0cdecd607d0920e140499b841",
+    "size": 124190,
+    "mtime_ns": 1792663648862336803
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_35224_0400_PP.png": {
+    "sha256": "6634d5576082740752b9ff01554594b35dc172d64aa501db1c0fecbc04be8439",
+    "size": 23007,
+    "mtime_ns": 1791428789042334628
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051205_35224_0400_PP/fov.png": {
+    "sha256": "29dc70452c1fc93fc8c2f727c814a259e47b487d43b7d10fab6caf80cda341d6",
+    "size": 6547,
+    "mtime_ns": 1792067609393944857
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051205_35224_0400_PP.npz": {
+    "sha256": "c0a2be45b47c12af2a85064791d7bee700f5d716214874e89be509149e2acb85",
+    "size": 30265,
+    "mtime_ns": 1792074006566163720
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "9530565cf037a79a32d2f8e6afdb5cd40601b0076e431d6fe4fc7ec057af625e",
+    "size": 5529728,
+    "mtime_ns": 1792222626485248365
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "bb5d4a8ad5401563370ea2a4bac0113354d895e99015ed70d78db492e6bae8c7",
+    "size": 5529728,
+    "mtime_ns": 1792224794774322547
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "78b1490f4e75d61255b6734749829c200113593caed5d742cbfe3205ab33830a",
+    "size": 5529728,
+    "mtime_ns": 1792228364961444692
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "8674a0c026e9f6fd9b9a53333b699e93a23e2ac1f27aea9a9bf11a83d5dabe9e",
+    "size": 5529728,
+    "mtime_ns": 1792226773311390238
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "6576813eb2a445f671fc876780c072131e64c3ef4d2389b37f1c099abccb9e35",
+    "size": 5529728,
+    "mtime_ns": 1792229945779498776
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051205_35224_0400_PP.npy": {
+    "sha256": "b6a90ac4ef8460c89634861d2dc30cbc85a9dd567965dc4c202b4d06e074547f",
+    "size": 5529728,
+    "mtime_ns": 1792231941259567046
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35224_0400_PP.npy": {
+    "sha256": "cfddc6a72cac146aeab8e7f22b615d318204f411349d60c207c97347944b0403",
+    "size": 5529728,
+    "mtime_ns": 1793036058508077834
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051205_35224_0400_PP.npy": {
+    "sha256": "d69b1b1513a8f6f2f7df20cccc9286eb1b53188694161ebcf81f84af644c0417",
+    "size": 5529728,
+    "mtime_ns": 1793678377214142546
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35224_0400_PP.npy": {
+    "sha256": "1578423364e407d1515e7da8463c9f73cbdd7f76107c915095b27400306101d7",
+    "size": 5529728,
+    "mtime_ns": 1793080927959612926
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051205_35224_0400_PP.npy": {
+    "sha256": "4bfc4b3a0f662ab5f8456db3eed50d1d895c784971e45411d726a97ca100ac2c",
+    "size": 5529728,
+    "mtime_ns": 1793678762463128768
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35276_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "9cca8a262a65a3289c848b4dcdcfd54f300fdbf80ded75cbd7423d471d2431c2",
+    "size": 155597,
+    "mtime_ns": 1792663649854336837
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_35276_0400_PP.png": {
+    "sha256": "44c138957b82e516b891d4c6d63beb3076495b4fc5d013a9cd1188f70cc2a407",
+    "size": 29396,
+    "mtime_ns": 1791428789048334628
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051205_35276_0400_PP/fov.png": {
+    "sha256": "1aca90adb0ae7c1d05d4cc95c709df1480914c887e4ea6144338037ec5deca61",
+    "size": 6471,
+    "mtime_ns": 1792067610172944884
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051205_35276_0400_PP.npz": {
+    "sha256": "a1d25ec9d48c1118b3df7d7020a2c75cdac5b9f59a4f99f47dbc25c44e7161f0",
+    "size": 37749,
+    "mtime_ns": 1792074008435163784
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "e582034a9c9391109f4d4cc1af96c2f5f51abfb1da520f26a9ae55dcc4cd534a",
+    "size": 5529728,
+    "mtime_ns": 1792222627163248388
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "f96f728310f04a32c350615cade808e24bf90f8b2ca817c9548d60fe43adb502",
+    "size": 5529728,
+    "mtime_ns": 1792224795444322570
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "d8458cd3bd65de24b2f489dd0ad34f052685937e7baf60c3f4837820d3a6127f",
+    "size": 5529728,
+    "mtime_ns": 1792228365679444717
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "ff447d7a28ce49725cb0bede3b4019a58173eb3213f5a8895b66670db216cb34",
+    "size": 5529728,
+    "mtime_ns": 1792226774030390263
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "196b7435da569c94732308ea0ed14d34d2f95753077c2d48d337529d2ad08d41",
+    "size": 5529728,
+    "mtime_ns": 1792229946490498800
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051205_35276_0400_PP.npy": {
+    "sha256": "ad924b1e0f86e151595546f2048b9a545df8829993f660d3660a1525ae978bde",
+    "size": 5529728,
+    "mtime_ns": 1792231941965567070
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35276_0400_PP.npy": {
+    "sha256": "c51de60c46b8da28e727694ef2273f3ad57ff43a6648a86ad7fe491e6b85f712",
+    "size": 5529728,
+    "mtime_ns": 1793036068200078166
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051205_35276_0400_PP.npy": {
+    "sha256": "6eea815bd9162378c26592612e16afbdb6a6e209dbbd0cd753d4e056ff6d99ed",
+    "size": 5529728,
+    "mtime_ns": 1793678386888142200
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35276_0400_PP.npy": {
+    "sha256": "231092d8ba74046418e634b02e2206c843b3ba1ae603746aa8655714674a337c",
+    "size": 5529728,
+    "mtime_ns": 1793080938130613274
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051205_35276_0400_PP.npy": {
+    "sha256": "83f1ca9e37b27be06a675f0589e16e549855bbd5c0c1b53e5224714cde8db58f",
+    "size": 5529728,
+    "mtime_ns": 1793678771963128429
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051205_35305_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "80c7696ceecfa8f989deb350a79e12d95ad9cd8b765849816387e134aba5281d",
+    "size": 111415,
+    "mtime_ns": 1792663650668336865
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_35305_0400_PP.png": {
+    "sha256": "85fcbd37336ffe6704286ab1fdde8ca40298dfa3d03a6905614058afbf3f0a2e",
+    "size": 22197,
+    "mtime_ns": 1791428789052334628
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051205_35305_0400_PP/fov.png": {
+    "sha256": "fc5d8d1cd335dcf6c2d24132b0cd4c42a1e21cfd5a50f063f3398f51ab6032d1",
+    "size": 6511,
+    "mtime_ns": 1792067611478944928
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051205_35305_0400_PP.npz": {
+    "sha256": "b47437ced317b4f763ce80a53ade5f6a0942505964ccd941e25cf26e65afe116",
+    "size": 23539,
+    "mtime_ns": 1792074010267163846
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "a2cdafd47da5839b1ecb2fc708c71a5f99748c6551232dba81024cb5bf41f195",
+    "size": 5529728,
+    "mtime_ns": 1792222627846248412
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "7cc89c0d03a7fd8a1a1ba5354fb554e3b64e1a732408958b135628675fc81120",
+    "size": 5529728,
+    "mtime_ns": 1792224796153322595
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "90e78e0f7b4782ca67b671b51dd671a3800fdc71b9aac8f8a78c2db68ec2015f",
+    "size": 5529728,
+    "mtime_ns": 1792228366340444739
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "5f7f0dcb690048ae7c9ff6d2bb30744a580545ca80f350f07eb90c08869eae7b",
+    "size": 5529728,
+    "mtime_ns": 1792226774739390287
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "a34ce934b71e82d260b90eb32898a42ee19040416697d8fedff8bb90bb4bed39",
+    "size": 5529728,
+    "mtime_ns": 1792229947201498824
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051205_35305_0400_PP.npy": {
+    "sha256": "e07ca8649f1377f2d2a29e00552928ee4fc7f6c8b8efe7ca11a59d808fc925bc",
+    "size": 5529728,
+    "mtime_ns": 1792231942656567094
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_35305_0400_PP.npy": {
+    "sha256": "ad085faaeab1da6719b1b57b1fc7e6ecc3d42a4ea0cd7bbeb5b3709f65364d3b",
+    "size": 5529728,
+    "mtime_ns": 1793036077917078498
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051205_35305_0400_PP.npy": {
+    "sha256": "2a78330caed587f636f9af7698dbc32a1c04a926be44908cdea116e230650eca",
+    "size": 5529728,
+    "mtime_ns": 1793678396648141851
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_35305_0400_PP.npy": {
+    "sha256": "4e0c65edd4d12d56325b0a559ffed777878e4262088dba00b4b6ae02c0181ac7",
+    "size": 5529728,
+    "mtime_ns": 1793080948851613641
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051205_35305_0400_PP.npy": {
+    "sha256": "08c1db6475ba09288e13fa617aacf75fe23bc3322dedd5b4c811947384276af2",
+    "size": 5529728,
+    "mtime_ns": 1793678781861128075
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051208_41707_0400_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "02e54043bc7426002e9fb824751774e8403be96dab8ebb3af4c133811736a1c6",
+    "size": 251503,
+    "mtime_ns": 1792663652876336940
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_41707_0400_PP.png": {
+    "sha256": "c1973acb5d10fbca113110f53ccf56709b9db5eef4eb0ef61c7c5fe53bc185a0",
+    "size": 47546,
+    "mtime_ns": 1791428789125334625
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20051208_41707_0400_PP/fov.png": {
+    "sha256": "20e6f2df8661b5220a3aec5f7951e770ff95d6832cf44af582c532bebd3a45db",
+    "size": 12033,
+    "mtime_ns": 1792067612860944976
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20051208_41707_0400_PP.npz": {
+    "sha256": "7d35a53526131c8611cbe3576e9b55e0828f181cf4029765012b4787a1d83727",
+    "size": 52011,
+    "mtime_ns": 1792074019801164172
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "a101d65858d1723d09f9b9a189e04d5bcc2c30ea9484f08c70c3b7f41079b0f4",
+    "size": 14155904,
+    "mtime_ns": 1792222629713248476
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "6abfd56674ac588b0814e6c38ac8189318586f228fe6fcbcf801099584b64c20",
+    "size": 14155904,
+    "mtime_ns": 1792224798027322659
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "875f04ab6e7a04ad97f82e5ec4b9f5831bbd4fca77b50abccb1739f7de10227d",
+    "size": 14155904,
+    "mtime_ns": 1792228368209444803
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "b0617d4c4fb3e974ddfcdd8ba747935cb2b0664138b2e3de4216194b33bbd788",
+    "size": 14155904,
+    "mtime_ns": 1792226776611390351
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "18cc4b503ac4886b10f1837e62c5783b3a4c28749ae58754c6f9c4b498ed477a",
+    "size": 14155904,
+    "mtime_ns": 1792229949006498886
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051208_41707_0400_PP.npy": {
+    "sha256": "e85680f2ba1ba7bc77abd4286a60e12ae94e8e8244ef42a764b9e9c0d5c2ab63",
+    "size": 14155904,
+    "mtime_ns": 1792231944450567155
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051208_41707_0400_PP.npy": {
+    "sha256": "5c3b9e5c05e20cf79fc06c8bf524075c4dabea5c3c97c18d8a13a156789f6608",
+    "size": 14155904,
+    "mtime_ns": 1793036091489078963
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051208_41707_0400_PP.npy": {
+    "sha256": "59d5e20c9ab0908f79f407dfe5f62825092b8cf0a8b867689f71f74c223c40e2",
+    "size": 14155904,
+    "mtime_ns": 1793678410121141369
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051208_41707_0400_PP.npy": {
+    "sha256": "9266401a2036af8bef45abc099ed21589e6dfbf721c74381d52e00432f4568cf",
+    "size": 14155904,
+    "mtime_ns": 1793080962509614108
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051208_41707_0400_PP.npy": {
+    "sha256": "2d3068344cb7dc1568b77d8b931743d98a57c884e05f701b0d6d12f067cc864e",
+    "size": 14155904,
+    "mtime_ns": 1793678795358127592
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060407_41937_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "52868be6fd482818cabd69bc0bf40f0ee74bf73bbdfc6fad9c27992472578483",
+    "size": 162681,
+    "mtime_ns": 1792663653953336977
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060407_41937_0200_PP.png": {
+    "sha256": "430c160093ab7477b118f7de64290416c992648c1cb13e718a357d250862d72d",
+    "size": 32860,
+    "mtime_ns": 1791428789170334623
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060407_41937_0200_PP/fov.png": {
+    "sha256": "9bc60a84bbd7e1fd93728f3733a64837ae1800724bd9c2cc9bf33cffd3d2c193",
+    "size": 6507,
+    "mtime_ns": 1792067615765945075
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060407_41937_0200_PP.npz": {
+    "sha256": "4761a25f8ade98a6107cc839a11ce16c78066cd07233cb083910876cc5085beb",
+    "size": 35862,
+    "mtime_ns": 1792074021705164238
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "e6623f33a2227ee19876e1cc3a7bd003d94e21b99ecfe187e2955a2f694ca59d",
+    "size": 5529728,
+    "mtime_ns": 1792222630448248501
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "7236b9319c7b74811a126101ddbfcd95cc2056aa6fbec34eb7910c4de7368d9e",
+    "size": 5529728,
+    "mtime_ns": 1792224798775322684
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "d01f64b491d544f4e1f957aaa3b52679b9c8926e4769abff352a8eae0c3f445b",
+    "size": 5529728,
+    "mtime_ns": 1792228368960444829
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "ba1750bbbf9ca9d6568c5185667f6a3c3382caf17ab213860647b5e5f74a06f3",
+    "size": 5529728,
+    "mtime_ns": 1792226777356390376
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "5c594b99def481366ae97e0e2fe36035ea77f7255ec8d76aeb7dfcee3af47d94",
+    "size": 5529728,
+    "mtime_ns": 1792229949707498910
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060407_41937_0200_PP.npy": {
+    "sha256": "013a7d739b1051e6d3b7b7b9635b7037b7391f99e4b7898033be3de3c21cf355",
+    "size": 5529728,
+    "mtime_ns": 1792231945153567179
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060407_41937_0200_PP.npy": {
+    "sha256": "619efdf3be7ac9409c4f88b9dde068e53e265a2780e3ef07d5109f2a1f9c1c73",
+    "size": 5529728,
+    "mtime_ns": 1793036101499079305
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060407_41937_0200_PP.npy": {
+    "sha256": "55d0b5c9f568020b84ed6404fcc2c57329a4d1d83c66468db40017fd516672c4",
+    "size": 5529728,
+    "mtime_ns": 1793678420073141013
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060407_41937_0200_PP.npy": {
+    "sha256": "eb75df8234b2110dda4ccb2c6beffd566115750d8265d7e7bec72c6424bc3650",
+    "size": 5529728,
+    "mtime_ns": 1793080972064614435
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060407_41937_0200_PP.npy": {
+    "sha256": "edb9a425cc0218cfc6599c8a41f9e16337403f24a96abd87a5935c83da3d6286",
+    "size": 5529728,
+    "mtime_ns": 1793678804906127251
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_57853_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "f04318108debf59a6a72ec2b6b93260fa3bc955978a131a010760692b47d6c73",
+    "size": 167566,
+    "mtime_ns": 1792663655133337018
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_57853_0200_PP.png": {
+    "sha256": "0cc471692c0b312b6bfc35bf69ecc23e8dbb5a43c5c695595f82c60c4741c1f6",
+    "size": 33955,
+    "mtime_ns": 1791428789215334622
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060411_57853_0200_PP/fov.png": {
+    "sha256": "4693108b73e82c5e2febe64020bd5419197cf1573b74e44ea2075852ee2678a2",
+    "size": 6407,
+    "mtime_ns": 1792067616519945101
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060411_57853_0200_PP.npz": {
+    "sha256": "e27a214bd47231ab53a185f72526c5be83f936b719de58f22157473e1c66254c",
+    "size": 35363,
+    "mtime_ns": 1792074023571164301
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "9aa4213777fbf2337ef8e882876166faf2f4723432761a01bc4f9f1d76aed6e0",
+    "size": 5529728,
+    "mtime_ns": 1792222631131248524
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "70d8882867deb68c8944a73f6920114b699d72476e579ec55d3006625057edea",
+    "size": 5529728,
+    "mtime_ns": 1792224799448322707
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "2c9649b409eb43e26acff9249ad8e5d194667f3ecb0a6d950478effb38282139",
+    "size": 5529728,
+    "mtime_ns": 1792228369619444852
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "08962b5a6ba753962da7437de9a6b7f682a9a51f6cf2eec7d12bc3c834bd519a",
+    "size": 5529728,
+    "mtime_ns": 1792226778023390399
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "5fc4c2d54a3061e12458da4e94ffecf5eb97d49b007105d538c110c9944669b1",
+    "size": 5529728,
+    "mtime_ns": 1792229950366498933
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060411_57853_0200_PP.npy": {
+    "sha256": "bd2121a23db7c0121b5d0d8f346dd7c077d338b0fc000ddb7ed5e8c4621ef45b",
+    "size": 5529728,
+    "mtime_ns": 1792231945814567202
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_57853_0200_PP.npy": {
+    "sha256": "a5a7bf87c9204ea894eb621152e45c80e4eec3461dc2644b183a29d6f246615f",
+    "size": 5529728,
+    "mtime_ns": 1793036111444079645
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060411_57853_0200_PP.npy": {
+    "sha256": "a3e10fd7ef7af37dde629fc87b6322fcec33d12ff690c8472c6c1a28e898828d",
+    "size": 5529728,
+    "mtime_ns": 1793678429937140661
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_57853_0200_PP.npy": {
+    "sha256": "360972ffbcc304c9088e87bdba6731f5254d043a7b7c3a66f446729f0f23392a",
+    "size": 5529728,
+    "mtime_ns": 1793080981541614760
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060411_57853_0200_PP.npy": {
+    "sha256": "22550dd4f951e697e01b34e0c0ed84cd593b056d1465ada37aa379ffa1bc44af",
+    "size": 5529728,
+    "mtime_ns": 1793678814510126907
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61214_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "b48c1ec058c0c529c511e04256110f5a12510c5f373ccba484a0467849ef1bfc",
+    "size": 152080,
+    "mtime_ns": 1792663656149337052
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_61214_0200_PP.png": {
+    "sha256": "02061e14d55a391c88f5bdcc5cb4eaee30807f8aa422f0d9841ea02934d3ea92",
+    "size": 30386,
+    "mtime_ns": 1791428789254334620
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060411_61214_0200_PP/fov.png": {
+    "sha256": "2ef4f3a3ca7b270bd1b7a6030c2cf6e1d1fc9f4c7db3b2428d84b03fe35e5de0",
+    "size": 6445,
+    "mtime_ns": 1792067617977945151
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060411_61214_0200_PP.npz": {
+    "sha256": "2d449eed9e39fd122b27f975ad4fb8f137792997179cca4b0967e251ed459cc7",
+    "size": 35174,
+    "mtime_ns": 1792074025427164365
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "ec760ef6a0a39a7a3a209384739dd05a4035be3e98d8c0d2b375918ba3b211df",
+    "size": 5529728,
+    "mtime_ns": 1792222631809248547
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "1cca9b1a907c4b3ca5f4957b371e96fe090422d31501880494dcb2de666559d4",
+    "size": 5529728,
+    "mtime_ns": 1792224800153322731
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "bafff7c9f4284fbfc746f1856a0aef022f9e68cc67baa6103fda10df52fa9f5e",
+    "size": 5529728,
+    "mtime_ns": 1792228370338444876
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "eb9e51eafe259eff3d35c51143f92c04ac525ac568e72bc7ace97fe9de38d811",
+    "size": 5529728,
+    "mtime_ns": 1792226778732390423
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "ec69493c1d09059fb3f76db386e0268c9159f90b8ed4619eb26718d4036f64f8",
+    "size": 5529728,
+    "mtime_ns": 1792229951070498957
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": {
+    "sha256": "97bda3718c40826ce4cc7a6fd175b224c8dc840cbdc6016ab97e04ab8d34b4ec",
+    "size": 5529728,
+    "mtime_ns": 1792231946523567226
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_61214_0200_PP.npy": {
+    "sha256": "5e2640d1589eafcded28f4d6fbaabc53c2b1adc339355e9f8357e74abf869706",
+    "size": 5529728,
+    "mtime_ns": 1793036121358079985
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060411_61214_0200_PP.npy": {
+    "sha256": "f672586ecb1fbf462e376da0ca6f3a149dc6925c9a911bf7641e9259d74117ea",
+    "size": 5529728,
+    "mtime_ns": 1793678439914140304
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_61214_0200_PP.npy": {
+    "sha256": "5bee86445a00c0284e72f0469cef007f2db18443ae84aa2b75617f5421420c15",
+    "size": 5529728,
+    "mtime_ns": 1793080992827615146
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060411_61214_0200_PP.npy": {
+    "sha256": "6c5543c78ce7d6ad11c72bbc7c092f6643483829b919a49e159f159b3f3498bb",
+    "size": 5529728,
+    "mtime_ns": 1793678824326126556
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61478_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "ba5479ced1e502c6846dae3cf74fc7a45b90e875d71435f5e7e25b3a0580bc14",
+    "size": 173556,
+    "mtime_ns": 1792663657416337096
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_61478_0200_PP.png": {
+    "sha256": "3c1d2859425ecad137510d27de58d09358b896a5f3ff605686d28f427f7d0abe",
+    "size": 33826,
+    "mtime_ns": 1791428789256334620
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060411_61478_0200_PP/fov.png": {
+    "sha256": "ad14867a7a6742708599b277e820295dd0987384c04dd393e0adb9520c8cfcef",
+    "size": 6512,
+    "mtime_ns": 1792067618741945177
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060411_61478_0200_PP.npz": {
+    "sha256": "baa78ebb8013d4c359bbbaff7a21254aa5f6b45ca8f3dd9ce8cc847eb601ace8",
+    "size": 39217,
+    "mtime_ns": 1792074027262164428
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "64bae626db94e0c87f9c717f5c5770e5ecb0e00b0567634296aaf6f8406664e3",
+    "size": 5529728,
+    "mtime_ns": 1792222632523248572
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "b0a69f2fbd5d9b1d39d3e44072ce1bae548e905a2b32c4eb80e72db6ce235f0f",
+    "size": 5529728,
+    "mtime_ns": 1792224800832322755
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "b2fd3e0106f2df1f53d8c98c723b9853e8afa2753a1cb19fb807c50969465a6d",
+    "size": 5529728,
+    "mtime_ns": 1792228370996444899
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "8744bbd432eeb809a625228ac5ad3617d948ccb4fed660f57da9be0a757936ba",
+    "size": 5529728,
+    "mtime_ns": 1792226779444390448
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "623ec5cda4dcf4c5db0ca1a731ae597ad9756922f8e2fab06f27e17a294aa4cc",
+    "size": 5529728,
+    "mtime_ns": 1792229951753498980
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060411_61478_0200_PP.npy": {
+    "sha256": "bfd9374c37a107b5e35f68a170cf31730f74f8e3498d48b4afce98e33529cbab",
+    "size": 5529728,
+    "mtime_ns": 1792231947223567250
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_61478_0200_PP.npy": {
+    "sha256": "43ca6921e46fd22c376f303ed2688cab7f9427a86abdbfe1709e40dc8d9fe1e0",
+    "size": 5529728,
+    "mtime_ns": 1793036131073080317
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060411_61478_0200_PP.npy": {
+    "sha256": "96e334054e7e50e9fbce2237538167f6a4436dedfdefdbf79f1d3ad7e2067445",
+    "size": 5529728,
+    "mtime_ns": 1793678449469139962
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_61478_0200_PP.npy": {
+    "sha256": "e1b06c34dee70588e9479b25332b98ff38cebf526503b7af06c0bab3c225a314",
+    "size": 5529728,
+    "mtime_ns": 1793081003289615504
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060411_61478_0200_PP.npy": {
+    "sha256": "d4a099f7ee26ad04c71d503684ea24e6fe4b2ba92501be1cfb1dd1c9dc9c6c86",
+    "size": 5529728,
+    "mtime_ns": 1793678833803126217
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_51656_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "d1963536667b4805bdd77c05c9583e41ee0d6040b3f19e2812a3167a8a6e71cb",
+    "size": 169762,
+    "mtime_ns": 1792663658528337134
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_51656_0200_PP.png": {
+    "sha256": "fb3ad8ad118b92b92b2770703ac656f356f1c49df136ac0783a00c34fd8b94d7",
+    "size": 34783,
+    "mtime_ns": 1791428789264334620
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_51656_0200_PP/fov.png": {
+    "sha256": "af051d59b2091374a151dafd134239c62d6b86e2c15f80019f618faa405835b8",
+    "size": 6428,
+    "mtime_ns": 1792067620771945246
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060412_51656_0200_PP.npz": {
+    "sha256": "f0775789feac2e9b4ec59597fa0a7004484395534c7f5d30588bb5ea3333bf16",
+    "size": 37563,
+    "mtime_ns": 1792074029169164493
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "3c806b96088de74500510cd391370666f5cc8204634ec16f5ddb2e98b37a8e79",
+    "size": 5529728,
+    "mtime_ns": 1792222633188248594
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "1ead8c6028e4af7f7691920391f2559aae26e7fd11d3df09221a38b92c12da7c",
+    "size": 5529728,
+    "mtime_ns": 1792224801502322778
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "9415e87a17d7d436869d57f382899b33f9c4fd01025826f78cdd837cdca23022",
+    "size": 5529728,
+    "mtime_ns": 1792228371654444921
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "bfdee7e87a8ddc083e23dea9313e599ac0e69113740414e981e04fec5114a913",
+    "size": 5529728,
+    "mtime_ns": 1792226780109390471
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "0cce35b3b77a8f835aa042581f2d4df801259260950a9f756d4c5e19ec49600d",
+    "size": 5529728,
+    "mtime_ns": 1792229952461499004
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_51656_0200_PP.npy": {
+    "sha256": "317789299ab43cd419e5768ec7996be0c5f7574a59a15fced984a977a3e573e8",
+    "size": 5529728,
+    "mtime_ns": 1792231947918567274
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_51656_0200_PP.npy": {
+    "sha256": "1515404b5c31f247e67974eaba74a3716e4a8858fcdd32ca925d3ef01a7a081d",
+    "size": 5529728,
+    "mtime_ns": 1793036140646080644
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_51656_0200_PP.npy": {
+    "sha256": "7fc10235bc07fea9522c3e62452f19de6c7cf1cd3d5ec3e449bfc81990ea103a",
+    "size": 5529728,
+    "mtime_ns": 1793678459002139621
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_51656_0200_PP.npy": {
+    "sha256": "bf8c6b1849e7edb098ba239ba1f7fecfc7c0d7bc44e5d4c90f8867099601586e",
+    "size": 5529728,
+    "mtime_ns": 1793081013026615837
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_51656_0200_PP.npy": {
+    "sha256": "a68129b2c4e6559afba9dffe7bc7d479e9c189ac35d07f5d320dd45e980dc165",
+    "size": 5529728,
+    "mtime_ns": 1793678843778125860
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_58287_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "5dc174b04cd6898b12ddf2f6abf1fad43186500817b330af64309764e57fca8a",
+    "size": 187030,
+    "mtime_ns": 1792663659764337176
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_58287_0200_PP.png": {
+    "sha256": "f6ef04f4b5cffed87fc8ceae0ac1256f38ce79558890ed2bb604aed96e40cfd5",
+    "size": 38074,
+    "mtime_ns": 1791428789286334619
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_58287_0200_PP/fov.png": {
+    "sha256": "ab846a037f6b3322f4d2f97282bc66c071125cebf3887ae379bd7db371970913",
+    "size": 6447,
+    "mtime_ns": 1792067621503945271
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060412_58287_0200_PP.npz": {
+    "sha256": "789a078f40afea987b7cad1fa24d578834b1da9afb7e671ab3503d60686a3d35",
+    "size": 36652,
+    "mtime_ns": 1792074031042164557
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "bba1c2d426fc4305e26179ae849e8f8b9399f746b26fe39fa816eae8d66595fd",
+    "size": 5529728,
+    "mtime_ns": 1792222633870248618
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "b70039833d27697903466eb91a11f3a60ffee04933649f69ca0642e762c5d773",
+    "size": 5529728,
+    "mtime_ns": 1792224802212322802
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "03c1e40c72e9fbd70c015f9b495d4b15b0a2be001aad5ae23324cd140ef7412d",
+    "size": 5529728,
+    "mtime_ns": 1792228372362444945
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "c24308f0dfe4f5af997a592602880b4e744a7a496cc5ad8c32eb428e5956f9b6",
+    "size": 5529728,
+    "mtime_ns": 1792226780821390495
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "be2e9fc6b66ae70688c828f2863755246a02f77b6d6ee88989075e7db65bd37b",
+    "size": 5529728,
+    "mtime_ns": 1792229953126499027
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_58287_0200_PP.npy": {
+    "sha256": "1589dce6b3bd36642d46603b0fd52eaaa07cb6e7a2e75298bb123bf64dc45a4b",
+    "size": 5529728,
+    "mtime_ns": 1792231948632567298
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_58287_0200_PP.npy": {
+    "sha256": "f50c7079e4985c5c8c09f587e72177234416bb7f78cd6ad9900986bd80a2c3ba",
+    "size": 5529728,
+    "mtime_ns": 1793036150130080969
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_58287_0200_PP.npy": {
+    "sha256": "2ada079725e16039f004a65558b826ac903b60e76a2f710d6b463e1c6199f1fc",
+    "size": 5529728,
+    "mtime_ns": 1793678468626139277
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_58287_0200_PP.npy": {
+    "sha256": "ffe03040c7ea2ac783a415d16ce19eb5b1381b372b1195368118d3c46ec40349",
+    "size": 5529728,
+    "mtime_ns": 1793081023315616189
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_58287_0200_PP.npy": {
+    "sha256": "d960c8723d975ff733e88957e491315d54561536fa863cb7d130d18927bc5b71",
+    "size": 5529728,
+    "mtime_ns": 1793678853336125519
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_58889_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "14224075f7e01175b1a86daba11ff6470c64c9484666ec30f9b896f851a6cfa2",
+    "size": 139550,
+    "mtime_ns": 1792663660774337211
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_58889_0200_PP.png": {
+    "sha256": "cafc88f01623c0b685cd74d54a22279937a8da4af0c272c37e639fc727bdf458",
+    "size": 26806,
+    "mtime_ns": 1791428789298334619
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_58889_0200_PP/fov.png": {
+    "sha256": "36f121ee4bd05d4a6fea75b95b26a286f9fb18237a19c4ff977a4e3e4ecea04d",
+    "size": 6474,
+    "mtime_ns": 1792067622268945297
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060412_58889_0200_PP.npz": {
+    "sha256": "a268e0c5662036e297eb4e99e381807ab2d6b1987728ea9749b68044b4776b1e",
+    "size": 35939,
+    "mtime_ns": 1792074032888164620
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "29c6ab8a374419ecce10c046f771559c072b8a0b7bc60cc03d612b656fd7f366",
+    "size": 5529728,
+    "mtime_ns": 1792222634589248642
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "637ee2a73101cc756d2de55ca4d4391f5b82ac25e745fbb01a108b3298bc7651",
+    "size": 5529728,
+    "mtime_ns": 1792224802936322827
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "9f1fae7646dd620326d51a253c4951a3e0b8665e74483d1c23617d540dd101bf",
+    "size": 5529728,
+    "mtime_ns": 1792228373015444968
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "5101a4c0a59973b78f9963066aa69f40b57d1258fc373af2c352437c577f32af",
+    "size": 5529728,
+    "mtime_ns": 1792226781490390518
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "00cdf672ed232aa78fcd8673c24c8de91843cf2798b6dbbc3664e5bebdbceb7a",
+    "size": 5529728,
+    "mtime_ns": 1792229953783499050
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_58889_0200_PP.npy": {
+    "sha256": "1f940bf434adaa35a514c54b7af99231ec466eb8de0520e7a963b2478141e3cd",
+    "size": 5529728,
+    "mtime_ns": 1792231949341567322
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_58889_0200_PP.npy": {
+    "sha256": "0886bb2bd9e51e828c67b47469b7c7a2f336399a4bd5d00f47cdfd8e1be0d48f",
+    "size": 5529728,
+    "mtime_ns": 1793036159706081297
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_58889_0200_PP.npy": {
+    "sha256": "8c7df086011f4d3c3b1b05c1cb62614a3276a5f1e45fe028259847d6bad07548",
+    "size": 5529728,
+    "mtime_ns": 1793678478305138931
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_58889_0200_PP.npy": {
+    "sha256": "f48de484c5785d055937172cdba309e805878b92d25f6ad630ec9f8bd4850518",
+    "size": 5529728,
+    "mtime_ns": 1793081032821616514
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_58889_0200_PP.npy": {
+    "sha256": "02d90918c2f3741941bb76a7c0df771fed9bd13124efef0a18ca642a9bc4abff",
+    "size": 5529728,
+    "mtime_ns": 1793678863026125172
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_60913_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "e2ea01b2457eb889d8b3b55f6f13803b832dfed07dc5f92e0539e77348381d4f",
+    "size": 129326,
+    "mtime_ns": 1792663661679337242
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_60913_0200_PP.png": {
+    "sha256": "bfafb60ed2de4144654138030c5e1cf5f8a2cf6b3497cf5b4fb4f02c4cd2d677",
+    "size": 24015,
+    "mtime_ns": 1791428789363334616
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_60913_0200_PP/fov.png": {
+    "sha256": "800886c4cf36fb2a92bc9337864900147a7a952630d6b04c388424c09613d919",
+    "size": 6516,
+    "mtime_ns": 1792067623021945323
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060412_60913_0200_PP.npz": {
+    "sha256": "aca589c76d618ae567664fc6b91af68d361537bfe9f408112848fe4760f098dd",
+    "size": 35043,
+    "mtime_ns": 1792074034703164682
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "238a4d0a7274a2aadc841b7deabb04f74bab367006f29a6477d6ddd32849baa1",
+    "size": 5529728,
+    "mtime_ns": 1792222635250248665
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "88e19059e969ec7418fd1a7345ec564888f3e69f1fcbc663d901d81b3e645159",
+    "size": 5529728,
+    "mtime_ns": 1792224803591322849
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "6b67396de54bfa99cf6e406ad3474e77e84e7eab41588bf3387950448b623b2f",
+    "size": 5529728,
+    "mtime_ns": 1792228373721444992
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "3071bf61d206da4f56fa5702d70e369dacad5fcabd2fcd55b8707bd66e1dbc65",
+    "size": 5529728,
+    "mtime_ns": 1792226782150390540
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "996c8953d07501d921e26c614a627cada31431925a9e7ce23ac70e154b9ae3e0",
+    "size": 5529728,
+    "mtime_ns": 1792229954488499074
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": {
+    "sha256": "9c8db5fcdc0e32c0090c3f0e376ddd10bf53e8c6f745a27f922eb51896349756",
+    "size": 5529728,
+    "mtime_ns": 1792231950040567346
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_60913_0200_PP.npy": {
+    "sha256": "9b027d3a25d57114047fbe5e32c1ad5ef5b1fbe2858f17274b227c2c7c222bbb",
+    "size": 5529728,
+    "mtime_ns": 1793036169780081641
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_60913_0200_PP.npy": {
+    "sha256": "ecb9c882489c43ea24d8992bac5ff282ad14141d3f6b736fe87558a4603c0d0d",
+    "size": 5529728,
+    "mtime_ns": 1793678488475138567
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_60913_0200_PP.npy": {
+    "sha256": "7b3c39963271d9ad6d6a78df04c88d221f1b66ddfef3bab6e85db9e1b2875386",
+    "size": 5529728,
+    "mtime_ns": 1793081042676616851
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_60913_0200_PP.npy": {
+    "sha256": "dfe8ef62ba8629137a8f6b991a2ef5adea356bd0268af026233e55e02e07dbc6",
+    "size": 5529728,
+    "mtime_ns": 1793678872642124828
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_61299_0200_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "ba7ba32f187fa1615db9121192725433db00d4178b7b176f88a040071c8bea5b",
+    "size": 170380,
+    "mtime_ns": 1792663662861337282
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61299_0200_PP.png": {
+    "sha256": "22a2d352151ebf694bc58de97229783ca6444b6c29fe2a23f15adc273345d0aa",
+    "size": 34291,
+    "mtime_ns": 1791428789425334614
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_61299_0200_PP/fov.png": {
+    "sha256": "4d67e4d2b8613192736677d1cbadbc37764ccae746010bd1533da203545568c3",
+    "size": 6547,
+    "mtime_ns": 1792067623748945348
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060412_61299_0200_PP.npz": {
+    "sha256": "16bc523818230cb501807a8888120e40ddc51ca00b179d82c7af9db17273b76f",
+    "size": 34872,
+    "mtime_ns": 1792074036559164746
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "acb6be8d3a083c4f2e4cbe429e0450f21e511a209a8daf92a38f5c776ef5bfdf",
+    "size": 5529728,
+    "mtime_ns": 1792222635961248689
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "e073d9af06a548fe6dae150571a15ea7e68c67d00a672ae7cc44574b95178cc3",
+    "size": 5529728,
+    "mtime_ns": 1792224804302322873
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "d706c58d81e2729cafa6f0c22e299efa9de18463095f3f4429165a43debe11b0",
+    "size": 5529728,
+    "mtime_ns": 1792228374393445015
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "bd8e07823dd99b817efb2502ae06e6775c4ca794c38921a9b29c0ab3468c1fc4",
+    "size": 5529728,
+    "mtime_ns": 1792226782811390563
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "49db6b57990258310ce8ebf14244fb3ab7e72228390f124492a098872ec3687e",
+    "size": 5529728,
+    "mtime_ns": 1792229955147499096
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_61299_0200_PP.npy": {
+    "sha256": "d293c1fae49e6361f8842ce57aad94c9838e18403acc360a2ac8602e482a9a46",
+    "size": 5529728,
+    "mtime_ns": 1792231950697567369
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_61299_0200_PP.npy": {
+    "sha256": "69bae9a620be6a1647d62c26b0b57e8342da9460b45b48160a71495b9b65a425",
+    "size": 5529728,
+    "mtime_ns": 1793036179404081970
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_61299_0200_PP.npy": {
+    "sha256": "583a7b128effcf0fa486e59442b6e077e4cca605b7211f2ef83329e540328f8d",
+    "size": 5529728,
+    "mtime_ns": 1793678498259138217
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_61299_0200_PP.npy": {
+    "sha256": "cc8931829eef88bc489932cd447ed799fb54012631e2569793fd000ca27d7610",
+    "size": 5529728,
+    "mtime_ns": 1793081052360617182
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_61299_0200_PP.npy": {
+    "sha256": "ddb0c3e32067f34a84319f875d9d93531f3a0886144c234e4b7e55308786160c",
+    "size": 5529728,
+    "mtime_ns": 1793678882094124490
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060522_45248_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "a21acda4f3e88d244cec0af668d888fe17782a00f1c7ba819b06d0a900e9d3d4",
+    "size": 301791,
+    "mtime_ns": 1792663665271337365
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060522_45248_0100_PP.png": {
+    "sha256": "b78285f76d775f60551bd7cfcb48e765c88604e7f34b965242b59b5c2c1e05fc",
+    "size": 63359,
+    "mtime_ns": 1791428789481334612
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060522_45248_0100_PP/fov.png": {
+    "sha256": "e68c8ea8950d7addeccc27192037fed20a19cfab6560ed8874b86baa0bb34124",
+    "size": 11919,
+    "mtime_ns": 1792067625057945393
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060522_45248_0100_PP.npz": {
+    "sha256": "84ffbffbaf40173ca00742c47e6bcf0ea2c1224afc9bd5be0f096ffab05de86a",
+    "size": 43079,
+    "mtime_ns": 1792074044902165031
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "6ee919869f71abcd4eefa0509d984f446bc38b60cbf3889c63fe16afd70cef98",
+    "size": 13332608,
+    "mtime_ns": 1792222637703248749
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "9050329825754a42101b71434a5f217cc327c79fd548219dec80bc751c467ae0",
+    "size": 13332608,
+    "mtime_ns": 1792224806127322936
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "efc12ca08e0cef469cf6f41dc69466d7c890ced4a386a07f2b91634a9808e13d",
+    "size": 13332608,
+    "mtime_ns": 1792228376184445076
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "c506dab09cfce928b04e9c711837312274f148aa6a7830c12a14b1b8a57949a2",
+    "size": 13332608,
+    "mtime_ns": 1792226784650390626
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "99fe5d484e3acd021d072ed5e0e17773c8cec975311ed862153fd93da89ae374",
+    "size": 13332608,
+    "mtime_ns": 1792229956921499157
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": {
+    "sha256": "4628dcb5408b25b69d1336c8f06c6fba4c4a9166963170148855114eef0e1dcf",
+    "size": 13332608,
+    "mtime_ns": 1792231952531567432
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45248_0100_PP.npy": {
+    "sha256": "ac0b07188f484aac62c93826e24d9933d8ff72beb1c42daa71cc827230e91a6a",
+    "size": 13332608,
+    "mtime_ns": 1793036191795082394
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060522_45248_0100_PP.npy": {
+    "sha256": "f8489c19e313894c424ccf41bcd17ac0d6593187a3e6b5afda6b12995e61a788",
+    "size": 13332608,
+    "mtime_ns": 1793678510436137782
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45248_0100_PP.npy": {
+    "sha256": "1084072bb6b2fcf02583b4a542c90f29b4323e9fc9e2de7d6f3c07a8f1091814",
+    "size": 13332608,
+    "mtime_ns": 1793081064985617614
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060522_45248_0100_PP.npy": {
+    "sha256": "8a9e2e66c6358e97594c166550eee73d2fdd68aae2041c8a0eb187c5c1085455",
+    "size": 13332608,
+    "mtime_ns": 1793678894682124040
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060522_45583_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "00b05bcced735e3f97f657c2dfc041b50cd1f2216f267bea932f256a2387de79",
+    "size": 288760,
+    "mtime_ns": 1792663667532337442
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060522_45583_0100_PP.png": {
+    "sha256": "7a7791ce9d0d0ef1f53d5f3348852c0f727b88e95324842c770d901297efa89b",
+    "size": 51026,
+    "mtime_ns": 1791428789484334612
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060522_45583_0100_PP/fov.png": {
+    "sha256": "728c52ced0b9524919ef7265e5bb38391944343e7c18320a70ff8f95fc9d49f8",
+    "size": 11525,
+    "mtime_ns": 1792067626762945451
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060522_45583_0100_PP.npz": {
+    "sha256": "92c8585044604871e6c0cb29fd3cef8842a8d7894b498cfa659519d42ae23db1",
+    "size": 74916,
+    "mtime_ns": 1792074052953165307
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "0bfea6ad976fca7235ea16aff285c37286ae28663ac9324ccdca11d74a612fb1",
+    "size": 13332608,
+    "mtime_ns": 1792222639570248813
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "ec2132700b77f3b27457aed7e530b9d31e7d7fca08799a82c94ba7b94b5d36cf",
+    "size": 13332608,
+    "mtime_ns": 1792224807911322997
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "07e972e50fb934779f7ae069c909c9d3693b0b2d8e83d082a38d24479d2acfa1",
+    "size": 13332608,
+    "mtime_ns": 1792228378036445139
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "659d442d4c95f69cda320a047b83dd7efab8e9419d400e90b54dd2394b3abc36",
+    "size": 13332608,
+    "mtime_ns": 1792226786396390686
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "19deb70e6ab0691573fc87b210c51f1956f6816bb51ea24c9ad9d7d3fc352e6f",
+    "size": 13332608,
+    "mtime_ns": 1792229958644499216
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": {
+    "sha256": "be5d1a7f0d1d6bc4cec16a37c0d473e136ce05bfa77273baf89f2f022c26837a",
+    "size": 13332608,
+    "mtime_ns": 1792231954307567492
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45583_0100_PP.npy": {
+    "sha256": "ae030c0d277d696efab925d2d7871fa2807bbd441a4b03164e40bbfcc94fcd9f",
+    "size": 13332608,
+    "mtime_ns": 1793036204438082827
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060522_45583_0100_PP.npy": {
+    "sha256": "2f2dd5f55d5a739b83d8599bc8b430c2d9e0bc970ba86ec026f490e7fdca9272",
+    "size": 13332608,
+    "mtime_ns": 1793678522959137334
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45583_0100_PP.npy": {
+    "sha256": "eb66fe2b2755944d0b02881d6ab7371a779a3fc49bed7b88b394d0d8895b2b36",
+    "size": 13332608,
+    "mtime_ns": 1793081078041618061
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060522_45583_0100_PP.npy": {
+    "sha256": "bc9459b29806797ca8a8916609db25f0916d2c0909ecda9828245a278be6f58d",
+    "size": 13332608,
+    "mtime_ns": 1793678908085123561
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060523_43038_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "4353a7090e935a046745f5627c167aac48b7d0ad793433b0e2ee63cfb4a65f0a",
+    "size": 293873,
+    "mtime_ns": 1792663669878337522
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_43038_0100_PP.png": {
+    "sha256": "adc540297825f885c52f320759846015d475c4b7cdae26426edff70f334b88f9",
+    "size": 60845,
+    "mtime_ns": 1791428789501334612
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060523_43038_0100_PP/fov.png": {
+    "sha256": "ed51f2ccfdb8816bbb7df6ab00af5c3ab76c92b282bb5281f48229e47200c4ac",
+    "size": 11914,
+    "mtime_ns": 1792067628715945518
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060523_43038_0100_PP.npz": {
+    "sha256": "fb62ad5167801a10bbfa5120b6537fb3ad322a279da3790c38c20fe32c452049",
+    "size": 51463,
+    "mtime_ns": 1792074061280165591
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "be170b59408644fb90811c2ea6737929b00d8185ddc0e71ad18740755cb7ab3e",
+    "size": 13332608,
+    "mtime_ns": 1792222641341248873
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "4031ba335e8e5f88ca0dc7df3f0330e090a2b8d90c4da2fc87a7b0c3f10d79a9",
+    "size": 13332608,
+    "mtime_ns": 1792224809673323057
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "8e6fe0c1e29def665ad48b7e16d03106b2c6eee5b4db44e19ed597323db21f83",
+    "size": 13332608,
+    "mtime_ns": 1792228379912445204
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "fa77b95ca560d08bbe52efa2e534781cdfd71389584ff0bf1af37d3d4ae13183",
+    "size": 13332608,
+    "mtime_ns": 1792226788140390745
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "98c3f8c6ee2836828c70318cf0951c942ee1bacc3db6d52840057d01e77cee82",
+    "size": 13332608,
+    "mtime_ns": 1792229960404499276
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060523_43038_0100_PP.npy": {
+    "sha256": "8755dd24779e63df2875bc486e2d6a80c3ff3b4c8d6662b96e1966e39b477b7a",
+    "size": 13332608,
+    "mtime_ns": 1792231956093567553
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060523_43038_0100_PP.npy": {
+    "sha256": "948932f888a2bd4f215eaed80e180c39fe097b7da9506e58dea0859eb1c04683",
+    "size": 13332608,
+    "mtime_ns": 1793036216623083244
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060523_43038_0100_PP.npy": {
+    "sha256": "77080bb5dcd93df47b776557dce15681dd06ec2431dd6c3d44fa5c82031d1594",
+    "size": 13332608,
+    "mtime_ns": 1793678535293136893
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060523_43038_0100_PP.npy": {
+    "sha256": "ea8912b3ede168ff2a2d3231e01f3642cdd2b1406d0cc64a8c1ebf8a7ef18b0d",
+    "size": 13332608,
+    "mtime_ns": 1793081090459618486
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060523_43038_0100_PP.npy": {
+    "sha256": "744eca60e6246d012c6fbe12a130a0fec4f046602cb485e78be976ee2766feda",
+    "size": 13332608,
+    "mtime_ns": 1793678920426123119
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060523_49859_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "b0ba56888d9d214a86f03f300b25695428ac981d992bf4fbcbbd40da909dcb7a",
+    "size": 311503,
+    "mtime_ns": 1792663672340337606
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_49859_0100_PP.png": {
+    "sha256": "9a518297c3401e1275de3eebbb7b2d81730b775e1f05874fd302deca706a800b",
+    "size": 64133,
+    "mtime_ns": 1791428789529334611
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060523_49859_0100_PP/fov.png": {
+    "sha256": "741f654b20c8d4bf4053fe196fc2180f1a2374148a1b58115ef0137a8afa9eb6",
+    "size": 12026,
+    "mtime_ns": 1792067630931945594
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060523_49859_0100_PP.npz": {
+    "sha256": "647bfeeb8156d58885a08461df853c76d5067efe78f843701d3c5d5ddb7f7337",
+    "size": 44885,
+    "mtime_ns": 1792074069507165873
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "374504dae681edef279fa2f46fce52968c4a7e0d2ab6d7a83d3e3a43d1b3e208",
+    "size": 13332608,
+    "mtime_ns": 1792222643098248933
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "634623ec482649166b410c83cc6c7a715423cedf40119735936e4b80fe0f9f7e",
+    "size": 13332608,
+    "mtime_ns": 1792224811450323118
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "a921399c7a2e03f0010470a093a742d6b012c296ac20f685df3c5bb91aa53da1",
+    "size": 13332608,
+    "mtime_ns": 1792228381671445264
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "a445e7b055a8061df65908edb372199867aa39a0ad63a271068bcd27574bb51a",
+    "size": 13332608,
+    "mtime_ns": 1792226789972390808
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "c1419489ce67c93491f535932544898da41987a9d5dce4afb3493eef89c8f418",
+    "size": 13332608,
+    "mtime_ns": 1792229962215499338
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060523_49859_0100_PP.npy": {
+    "sha256": "cfae20ef4ffc981ed151f03bcc24b9a45bd5fa29dda5092dffac65a3221acda9",
+    "size": 13332608,
+    "mtime_ns": 1792231957941567617
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060523_49859_0100_PP.npy": {
+    "sha256": "b261889344e73ced09263cca960c0da903c53f62cae0a8780f39bc018a6b4b45",
+    "size": 13332608,
+    "mtime_ns": 1793036228706083657
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060523_49859_0100_PP.npy": {
+    "sha256": "fa0a64b073e74499f613154e1692fd571b14fd699d62c4b2259789f761f32d68",
+    "size": 13332608,
+    "mtime_ns": 1793678547620136452
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060523_49859_0100_PP.npy": {
+    "sha256": "01457d69a675001730443338091c3289e44845fa04a6665795620241b7ead5a7",
+    "size": 13332608,
+    "mtime_ns": 1793081102800618908
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060523_49859_0100_PP.npy": {
+    "sha256": "4147fb221d22af84b6c9c446a6a3a9af5519a50502d0d587064a798a2b0735fa",
+    "size": 13332608,
+    "mtime_ns": 1793678932739122679
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_36895_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "4ffce9f3c2e7f521ceaa41288fa3de5a6cf94f5344972213a2370613852fe06f",
+    "size": 297399,
+    "mtime_ns": 1792663674739337688
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_36895_0100_PP.png": {
+    "sha256": "544db12dfdc5cb523bcb9f885a57831fb10256cf68a30f592a14b89c8f55f600",
+    "size": 59654,
+    "mtime_ns": 1791428789550334610
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060530_36895_0100_PP/fov.png": {
+    "sha256": "a41228da66b1a954b04d2782e52715df6a0a0779a2cd781d656f5c5524689054",
+    "size": 12109,
+    "mtime_ns": 1792067633174945671
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060530_36895_0100_PP.npz": {
+    "sha256": "b5ddcc5fabab0df91d09898b94ba25a5281da715cec27a59a059b2fa0f649fe3",
+    "size": 47647,
+    "mtime_ns": 1792074077750166155
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "e37f2847038dbfd0fb219c068ee7938fbabbcb7cf92ba3517a23f03b4bec4f64",
+    "size": 13332608,
+    "mtime_ns": 1792222644948248997
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "57a8a798d59e04fc13d9862520450ad0909d6eee17c5aa71e037303ba804b825",
+    "size": 13332608,
+    "mtime_ns": 1792224813210323178
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "b2e4f25bd85f7709284115e1f9458d18de4568fd79106a4e9e68e2e88b607359",
+    "size": 13332608,
+    "mtime_ns": 1792228383397445323
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "9c9bc90398d73d28eeac915eda23c4bd2373b07073844cddfa0b97c7981b1451",
+    "size": 13332608,
+    "mtime_ns": 1792226791726390868
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "7126c31a1f3e96d3eca318187bee3c44cbbd82da996d516dc3dfc8a0deb9fdf3",
+    "size": 13332608,
+    "mtime_ns": 1792229963954499398
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060530_36895_0100_PP.npy": {
+    "sha256": "76ce022bc4f80ecb7077103df7cd7263c1b39c5ab850a25d518c64633bd6e550",
+    "size": 13332608,
+    "mtime_ns": 1792231959659567675
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_36895_0100_PP.npy": {
+    "sha256": "3f29479f05396197737bae17f020e2cde633d085711c6480d1065a9bda201bde",
+    "size": 13332608,
+    "mtime_ns": 1793036241674084101
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060530_36895_0100_PP.npy": {
+    "sha256": "d4c575e89952d746a18c03254b0fa907fc2109e70d4468132985c7ca634a8038",
+    "size": 13332608,
+    "mtime_ns": 1793678560889135977
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_36895_0100_PP.npy": {
+    "sha256": "700217290f18264e406f1b8974cc8c37102d16731c4a263263571a14521775e6",
+    "size": 13332608,
+    "mtime_ns": 1793081115591619346
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060530_36895_0100_PP.npy": {
+    "sha256": "0bcfa6d3aceadb2108fa1f9fb87dd12dd8a52b7391480c8f730681aeb66b823b",
+    "size": 13332608,
+    "mtime_ns": 1793678945459122224
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_53062_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "b1c04ef306a89466b73d9e3c42ccdf15fd4fa1221fca9bb590a2c0dc3fe83481",
+    "size": 312113,
+    "mtime_ns": 1792663677205337773
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_53062_0100_PP.png": {
+    "sha256": "8b9046b7ef25265138e798479e1fbc443dc8ef6b5ea402351651914927f72f19",
+    "size": 65368,
+    "mtime_ns": 1791428789558334609
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060530_53062_0100_PP/fov.png": {
+    "sha256": "bd0de4c23010cfed6fbb5195fdbddf8e24dfecac96ebdce2cf038976c46f30c0",
+    "size": 11452,
+    "mtime_ns": 1792067635384945746
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060530_53062_0100_PP.npz": {
+    "sha256": "4be0151f4cb720ff77d33f83ec8ff180b89c28dd68b99f2f8e274de4367ce03c",
+    "size": 38644,
+    "mtime_ns": 1792074086016166438
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "c1542b6437926a3853afd1bf4d8cf6d67713386e97b0186012f1803d231198be",
+    "size": 13332608,
+    "mtime_ns": 1792222646699249057
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "ec48f8144d07c1b9a1d17a6b9d1ecca4945fadc6fb7777e18db0dd1333a74ae7",
+    "size": 13332608,
+    "mtime_ns": 1792224814985323239
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "35a9ae4b09f2d61dce4ca15ce087920d796b60ba10954fe27c4e4f080a1c7074",
+    "size": 13332608,
+    "mtime_ns": 1792228385203445385
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "a74d080fa685d55d4c484f668048f7de168e862130ec6b3f78b8ac26e7ec3cac",
+    "size": 13332608,
+    "mtime_ns": 1792226793478390928
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "d515793fe0eef4bd0b62ab82567cf7ddf6dd491ce73de6eb7a3835e3818a8c64",
+    "size": 13332608,
+    "mtime_ns": 1792229965684499457
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060530_53062_0100_PP.npy": {
+    "sha256": "f23aa91b27fbed7ac9f45dc3868bd25c6efb35cf22ac61eef0878d0029710ce3",
+    "size": 13332608,
+    "mtime_ns": 1792231961502567739
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_53062_0100_PP.npy": {
+    "sha256": "c6aeba881822fd145f2195a580502d9ed5811aaabb417789e0f3200563c93e1e",
+    "size": 13332608,
+    "mtime_ns": 1793036254333084534
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060530_53062_0100_PP.npy": {
+    "sha256": "bd8387a608a3c9a38fecab379bacb2571330ea3cfeb6039a6f4023c46cda9920",
+    "size": 13332608,
+    "mtime_ns": 1793678573917135511
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_53062_0100_PP.npy": {
+    "sha256": "84ecced9c513031bd303d970f6158995f7f0034235cf669a50128081e3c7fb74",
+    "size": 13332608,
+    "mtime_ns": 1793081129010619805
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060530_53062_0100_PP.npy": {
+    "sha256": "7d1572e4446a9554a08c03c44c9c4deb6abcd1cbf11d57054a698dedec9d64cf",
+    "size": 13332608,
+    "mtime_ns": 1793678958523121757
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_54390_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "479a97fd7a11e9599726e975a8a87b67b3ec8aa61c1fc5688e31db7e5864155c",
+    "size": 241845,
+    "mtime_ns": 1792663679200337841
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_54390_0100_PP.png": {
+    "sha256": "30f85b40e0c1e30564ce18a7bcc2fce077b808c9c96992bbb02588c7da039be5",
+    "size": 42595,
+    "mtime_ns": 1791428789586334608
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060530_54390_0100_PP/fov.png": {
+    "sha256": "368b1c59327ad6dc83d718a3be8039dfeac53c1ab3940a2a0fb4fbf4bb5ee34b",
+    "size": 11509,
+    "mtime_ns": 1792067637418945816
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060530_54390_0100_PP.npz": {
+    "sha256": "e8ac09774eb85748f496978bd15ae78f840a23519538bef52139f88edbed04e8",
+    "size": 61379,
+    "mtime_ns": 1792074094181166717
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "454a6e80aa22ef68df90654b6c0ac031d1608b5a6d0cfcfeb3e07ef10bcebfb8",
+    "size": 13332608,
+    "mtime_ns": 1792222648555249120
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "078e4633c376dd02092e04a22ce5dc98750d273f580b2dbb822403ccd95f6d2d",
+    "size": 13332608,
+    "mtime_ns": 1792224816741323299
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "f2278fe059c3bf8643b9fcd59efd453ef324c0717545c2785f64246b211b1597",
+    "size": 13332608,
+    "mtime_ns": 1792228386950445444
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "095b8684ffe74719c40ccbd8656afe1964a5342a7657906b671d5fffe4e9630f",
+    "size": 13332608,
+    "mtime_ns": 1792226795311390991
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "1342b60aab51a6d4e85007b0f731630fd35138592c383ad2559eb447729b3dc3",
+    "size": 13332608,
+    "mtime_ns": 1792229967460499518
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060530_54390_0100_PP.npy": {
+    "sha256": "304b3a7711550340834b1f96d43895e3454d722de8b61b0fab5de26c58e90d59",
+    "size": 13332608,
+    "mtime_ns": 1792231963264567799
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_54390_0100_PP.npy": {
+    "sha256": "36048c3c4d452159b80b9bbca5230c753db06f432e0d744f9176b1b5302d2ef0",
+    "size": 13332608,
+    "mtime_ns": 1793036267555084986
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060530_54390_0100_PP.npy": {
+    "sha256": "7304472c84bcadeebc7c52fc86179be23228473e7edb78bb7c4d2c23cb92afc1",
+    "size": 13332608,
+    "mtime_ns": 1793678587277135034
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_54390_0100_PP.npy": {
+    "sha256": "eccc2c7ae174f1e603b27b8c59cf55769209eaf400f2d8aa759aadb19e021d50",
+    "size": 13332608,
+    "mtime_ns": 1793081142959620282
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060530_54390_0100_PP.npy": {
+    "sha256": "7e28def229d362924548c5eeeb177ca5809efbd345abd38d722b5c2b279d4727",
+    "size": 13332608,
+    "mtime_ns": 1793678972350121262
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_55390_0100_PP.sol_e42b9f3bdbef.npz": {
+    "sha256": "2702dbf1e4f83d9c14709b3875b1904cdea7cef15e5d307e84610e56c8fb98f0",
+    "size": 297930,
+    "mtime_ns": 1792663681531337921
+  },
+  "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_55390_0100_PP.png": {
+    "sha256": "341fe556afc57fbaa46b4570d096a012e7ae40d1355bb3158178f09e76bcc3ea",
+    "size": 59400,
+    "mtime_ns": 1791428789598334608
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_1_maples_dev_evaluation_20261015/dev/20060530_55390_0100_PP/fov.png": {
+    "sha256": "9f1136ccb2b85924a8f500037dc5e6721b6d550b17493501a9220f4ca4066c72",
+    "size": 11923,
+    "mtime_ns": 1792067639382945883
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/references/20060530_55390_0100_PP.npz": {
+    "sha256": "cbce8e40e1bda71ee1cd5d87d73924fb3b0b16d1ba5386d36e9f1ad26099e94f",
+    "size": 51402,
+    "mtime_ns": 1792074102344166996
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "24d50ff3aa971f0977e8e76c3adfbdeac93d74ad6661e2af0406ad95f7b637cb",
+    "size": 13332608,
+    "mtime_ns": 1792222650371249182
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "6b405a3c3db5c934a9f4116a4f9e31ac72071a061d48a67e118482191c56b25e",
+    "size": 13332608,
+    "mtime_ns": 1792224818506323359
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "0c92fba726f6afeca19925c8b32f003cdcbc129bb3d669e260e0fea2c987d517",
+    "size": 13332608,
+    "mtime_ns": 1792228388730445505
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "60ad6fcf8ec3f4a1b595acee23376d0f9e57838d8ff7bc239896bc1ae61505ca",
+    "size": 13332608,
+    "mtime_ns": 1792226797141391053
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "16399e0a7caed6ad12ba4094513c0851890ea62f201ab9816e1826ec6ddb1079",
+    "size": 13332608,
+    "mtime_ns": 1792229969214499578
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060530_55390_0100_PP.npy": {
+    "sha256": "f5e450647418a389dad13c23a39fbe03cf978dc7237cb22f5f84f3b9f24336cf",
+    "size": 13332608,
+    "mtime_ns": 1792231965096567861
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060530_55390_0100_PP.npy": {
+    "sha256": "50ed251f56b5238cfbd48942324ecc2a646569667b3ebecc9feca92d4809770e",
+    "size": 13332608,
+    "mtime_ns": 1793036280040085414
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060530_55390_0100_PP.npy": {
+    "sha256": "41c2829a089698a33258450e88f7ce7b13bfdcb8c8a7998dde62d09af0a9ad08",
+    "size": 13332608,
+    "mtime_ns": 1793678599885134583
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060530_55390_0100_PP.npy": {
+    "sha256": "e801f51a5bf661f94a3fe98f4f9cccd34d2f73adc6935cfc45d2b34495e7fd28",
+    "size": 13332608,
+    "mtime_ns": 1793081155948620726
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060530_55390_0100_PP.npy": {
+    "sha256": "72acc534df6332509cbd0e682f3b084c813b0d522302c4a2a41d6110c70e328e",
+    "size": 13332608,
+    "mtime_ns": 1793678984939120812
+  },
+  "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/analysis/metric_review_20261103.py": {
+    "sha256": "c9e88914991aa8fe0edc05c9889bce3b860e589e2b9a521d2c08908bc70b4df0",
+    "size": 15934,
+    "mtime_ns": 1793706110582150723
+  }
+}

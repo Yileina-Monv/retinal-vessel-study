@@ -1,0 +1,7 @@
+{
+  "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/execution_binding.json": "2c90d8afb9faa2c434522a46235075385251e5e5c0ba1d4e45c362902794fcd2",
+  "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/engineering/verification.json": "f076606c50d279bc03143b3a2b6129f389a6d1888ca8e9f6e3ad9932d2894e0e",
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/dev_manifest.json": "ac70cbfe6b714e0e59fd1dce520a7d02ddeb607fc36a78d06a83fb39575df607",
+  "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/protection_rules.json": "1c0cc98985f591a3ebd9b2c5245c98f3fceb1f1c6bdc6a5c73f669b32fad822b"
+}

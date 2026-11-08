@@ -1,0 +1,29 @@
+{
+  "analysis_id": "near_path_reanalysis_20261103",
+  "status": "EXPLORATORY_RULES_RECORDED_BEFORE_THIS_RESCORING",
+  "authorization": "用户同意复用已有预测重算；仅CPU补充分析，不改变历史冻结协议，不授权训练/推理/Test或新的正式主指标。",
+  "comparison": "NL minus N0, paired seed2027/2028, existing fixed100epochs endpoints",
+  "data": "same Dev28 and existing native GT/FOV/Omega/hemorrhage-near masks; no new GT or patient independence claim",
+  "targets": "Reuse existing frozen B2 candidate GT graph paths (open, relative FOV body width median<=6, reference length>=20). Keep only path coordinates within original near & Omega. Deduplicate within each path; retain shared anchors across paths explicitly. No new pruning, thresholds or path pairing.",
+  "primary_diagnostic": "Per path near-portion d1 recall; mean paths within image; mean valid images. Zero near targets -> NA; same target set for all four predictions.",
+  "support": "prediction>=0.5 & Omega; Euclidean d1<=1 native pixel (center +4 neighbours); no diagonal or new tolerance",
+  "secondary": [
+    "d0 path recall",
+    "full Omega path d1 for same near-intersecting paths",
+    "zero-hit near-path fraction",
+    "adjacent edge hit coverage inside contiguous valid near runs; not true connectivity",
+    "image pooled unique-target recall",
+    "all-image Dice/Precision/Recall/FP-FOV",
+    "original S3-near d1",
+    "near FP / area and FP / background"
+  ],
+  "denominators": "All28 rows retained. Report per path/image counts, images and paths with1-2 target pixels, shared point occurrences vs unique positions; no removal of sparse images.",
+  "statistics": {
+    "bootstrap": "image paired 1000 reps; fixed seed20261016; percentile95%; exploratory, no multiplicity correction",
+    "seeds": "separately and average paired delta within image before bootstrap; not independent patients",
+    "influence": "leave each valid image out once, diagnostic only"
+  },
+  "interpretation": "No new success/failure threshold. Do not replace past endpoint or declare a method successful. Broader candidate paths remain GT-engineering proxies, not medical truth. NL was trained under old S3 targets; these scores describe endpoints, not an experiment designed for the new target.",
+  "stop": "Any GT/probability hash or reproduced original Dice/S3 inconsistency stops scoring and is reported.",
+  "outputs": "Existing terminal_evaluation analysis directory; prefixed plan/script/CSV/JSON/Chinese report; existing STATUS/decisions updated after verification. PPT unchanged."
+}

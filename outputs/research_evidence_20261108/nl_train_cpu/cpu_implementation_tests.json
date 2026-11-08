@@ -1,0 +1,322 @@
+{
+  "status": "PASS",
+  "count": 52,
+  "tests": [
+    {
+      "name": "full B empty crop normalization",
+      "actual": 0.3465735912322998,
+      "expected": 0.34657359027997264,
+      "passed": true
+    },
+    {
+      "name": "positive gradient",
+      "actual": -0.125,
+      "expected": -0.125,
+      "passed": true
+    },
+    {
+      "name": "negative gradient",
+      "actual": 0.125,
+      "expected": 0.125,
+      "passed": true
+    },
+    {
+      "name": "background logit opposite",
+      "actual": 0.125,
+      "expected": 0.125,
+      "passed": true
+    },
+    {
+      "name": "empty crop gradient zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "two negatives half total",
+      "actual": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    {
+      "name": "two equal negative weights",
+      "actual": 0.125,
+      "expected": 0.125,
+      "passed": true
+    },
+    {
+      "name": "extreme finite -1000.0",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "extreme finite 1000.0",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "all empty differentiable zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "all empty grad zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "lambda0 bypass metadata",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "no negative rejected",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "duplicate negatives rejected",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "polarity conflict rejected",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "shared negative accumulation",
+      "actual": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    {
+      "name": "two-logit CE equivalence",
+      "actual": 0.8042942881584167,
+      "expected": 0.8042942881584167,
+      "passed": true
+    },
+    {
+      "name": "finite difference (0, 0, 0, 0)",
+      "actual": 0.17717479169368744,
+      "expected": 0.17717184126377106,
+      "passed": true
+    },
+    {
+      "name": "finite difference (0, 1, 0, 0)",
+      "actual": -0.17717479169368744,
+      "expected": -0.17717184126377106,
+      "passed": true
+    },
+    {
+      "name": "finite difference (0, 0, 0, 1)",
+      "actual": -0.34496185183525085,
+      "expected": -0.34498724341392517,
+      "passed": true
+    },
+    {
+      "name": "finite difference (0, 1, 0, 1)",
+      "actual": 0.34496185183525085,
+      "expected": 0.34498724341392517,
+      "passed": true
+    },
+    {
+      "name": "synthetic parameter chain (0, 0)",
+      "actual": -0.43389198184013367,
+      "expected": -0.4338536560535431,
+      "passed": true
+    },
+    {
+      "name": "synthetic parameter chain (0, 1)",
+      "actual": -0.27868151664733887,
+      "expected": -0.27865615487098694,
+      "passed": true
+    },
+    {
+      "name": "synthetic parameter chain (1, 0)",
+      "actual": 0.4338323771953583,
+      "expected": 0.4338536560535431,
+      "passed": true
+    },
+    {
+      "name": "synthetic parameter chain (1, 1)",
+      "actual": 0.2786219120025635,
+      "expected": 0.27865615487098694,
+      "passed": true
+    },
+    {
+      "name": "private RNG deterministic",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "all eligible targets retained",
+      "actual": 30,
+      "expected": 30,
+      "passed": true
+    },
+    {
+      "name": "python RNG unchanged",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "numpy RNG unchanged",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "torch CPU RNG unchanged",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse None[]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse None[0]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse None[1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse None[0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[1.0, 0.0], [0.0, 1.0]][]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[1.0, 0.0], [0.0, 1.0]][0]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[1.0, 0.0], [0.0, 1.0]][1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[1.0, 0.0], [0.0, 1.0]][0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.0, -1.0], [1.0, 0.0]][]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.0, -1.0], [1.0, 0.0]][0]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.0, -1.0], [1.0, 0.0]][1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.0, -1.0], [1.0, 0.0]][0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.8, 0.0], [0.0, 0.8]][]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.8, 0.0], [0.0, 0.8]][0]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.8, 0.0], [0.0, 0.8]][1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous mapping inverse [[0.8, 0.0], [0.0, 0.8]][0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates None[]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates None[0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates [[1. 0.]\n [0. 1.]][]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates [[1. 0.]\n [0. 1.]][0, 1]",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates [[ 0.8 -0.2]\n [ 0.2  0.8]][]",
+      "actual": 3.8146972691777137e-07,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "native grid coordinates [[ 0.8 -0.2]\n [ 0.2  0.8]][0, 1]",
+      "actual": 3.8146972691777137e-07,
+      "expected": 0.0,
+      "passed": true
+    }
+  ],
+  "device": "CPU synthetic tensors only",
+  "real_network_gradients": false,
+  "optimizer_updates": 0,
+  "GPU_queries": 0
+}

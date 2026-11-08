@@ -1,0 +1,342 @@
+{
+  "status": "COMPLETE_CPU_CONTEXT",
+  "selected_ids": [
+    "P003",
+    "P004",
+    "P005",
+    "P007",
+    "P024",
+    "P025",
+    "P026",
+    "P027",
+    "P028",
+    "P030",
+    "P058",
+    "P065",
+    "P066",
+    "P067",
+    "P068",
+    "P076",
+    "P077"
+  ],
+  "selected_images": 6,
+  "point_rows": 17,
+  "seed_rows": 34,
+  "seed_statistics": {
+    "2027": {
+      "points": 17,
+      "distance_min_median_max_nativepx": [
+        2.0,
+        8.0,
+        60.30754513325841
+      ],
+      "nearest_pred_distance_le2_le4_le8": [
+        1,
+        5,
+        10
+      ],
+      "d1_max_probability_below_0p1": 13,
+      "qualifying_original_gap_lt1": 7,
+      "d1_misses": 17
+    },
+    "2028": {
+      "points": 17,
+      "distance_min_median_max_nativepx": [
+        1.4142135623730951,
+        8.246211251235321,
+        60.207972893961475
+      ],
+      "nearest_pred_distance_le2_le4_le8": [
+        2,
+        3,
+        7
+      ],
+      "d1_max_probability_below_0p1": 15,
+      "qualifying_original_gap_lt1": 11,
+      "d1_misses": 17
+    }
+  },
+  "source_hashes": {
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/points_154.csv": "b6e04f771101c3761e6d5cdf1c2d9b7ad0cef76a5498b12cf25dbf91859864ff",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/point_index_77.csv": "2286fd6ac5c23d84975a7dddb84f8468207fc1101271f4a5013c049dc8ff5248",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/image_regions_56.csv": "b75245ab04240c8be2c10bb4c341ea647d0109e25883d567c25e87e3683b70ae",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/summary.json": "789ba7dd6c2a2d86a2d803bcb5bb62df190958692104e1c1364da5fbb4f91ea8",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/atlas.html": "b98ea9771093d8a11920bba97ef9b791921e345fad74b4fc7bffc1c7a80eca00",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/delivery_verification.json": "e4f4c48bdf6100dca04db5c25b2a1be17fc7be0f86f82f995387698b856d2438",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P003.png": "2ab881caab32b3865603e58a838322dd8dbf9ac11db3eafc22056a652ffae1fa",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20051117_37130_0400_PP.jpg": "62af2b738cd10af0a9585a69248034d03caaec31a8807bdd2fcf042d1e347ac8",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P004.png": "b321241e20d1247bd236607d620a77d9bdf156c0d35da8378ab56ec197e690ee",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P005.png": "667b5b90ea4312a7d23404ff7398cac701c60a20480bfa7737fad285badd8d2d",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P007.png": "4e7413e083800958ef05a47e077ae665f0c5a2d766733ff3c3e91830552d7ade",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P024.png": "9c99f86595e466a099cf47f59000eac1546ebd44b92773271bc6aadbfeb2986c",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20060411_61214_0200_PP.jpg": "29f8a6f7c17c58c728c2fecec10448275e4c3a253e555b30a57de97555561598",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P025.png": "a89ec2560d76d6113efbf133b7e1453b4277b433502be101c2ae70925772bdd4",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20060411_61478_0200_PP.jpg": "c9f463bd65c47e5a6aac4192d949bf6d73195c856d54b21804d879d10525ceda",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P026.png": "407903bb486d0a0b5d746d9cf42989161f37ce1b0af2479a5c55132b079bc5de",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P027.png": "b05711ab0df175fabfeea0756c1d8178dfbd65e0144d8dce723758a63f78d4d0",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P028.png": "893e9c3d13b4b554229060fdfb16d7c763c7d6d594859ef8df3a51fcb281e955",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P030.png": "d8fc32fbf0d8d4d886ab742079fa6d8bd2a388ca36d9045e5cf15556e4fff5fb",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P058.png": "7435a29be3d1e49b90fa6deebb7ec02d9627a3c2826e6f7926caec051367913b",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20060412_60913_0200_PP.jpg": "89e34564eddef0d80a77285a3cb6513f3971617694978a60e105c148cd249d13",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P065.png": "7f937a3e0c54353f02782d8123767e1927035044518502f951baea7d58eb93fb",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20060522_45583_0100_PP.jpg": "0738dc0cacbb0536d7414215f343a38e8bf43eaa3953ac991378400e5b73e149",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P066.png": "665cf558ef05f6397422628eadc2df7562cc11c4ad4edd2ca8898e8626898c9c",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P067.png": "df33ab2da64a862e75c9727b5f6501087087a9ac6bcf879ccc2a37e076628a29",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P068.png": "98dcbe5eb8b2fe55efec019ee4388b413886dac114f6b331dfcb27a32f032f4b",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P076.png": "343790cd5502c3bb1e67ac13ccbcd3b35e69f2b264822377a5a2062dd3bb043c",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/overview_20060530_54390_0100_PP.jpg": "459bd984c4d0f7c221fad54f18454a5dc338272ed0978e7a991e7992531e1d63",
+    "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/figures/P077.png": "c807fcbc42f358e1690f0ee61a0dbb56cb724477592f40073d75a7d29fb65239",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20051117_37130_0400_PP.sol_e42b9f3bdbef.npz": "cc7f76a086b063cc64e723a6f1a51d062ff8283c4a4bc22a46923271e71b465c",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61214_0200_PP.sol_e42b9f3bdbef.npz": "b48c1ec058c0c529c511e04256110f5a12510c5f373ccba484a0467849ef1bfc",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060411_61478_0200_PP.sol_e42b9f3bdbef.npz": "ba5479ced1e502c6846dae3cf74fc7a45b90e875d71435f5e7e25b3a0580bc14",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060412_60913_0200_PP.sol_e42b9f3bdbef.npz": "e2ea01b2457eb889d8b3b55f6f13803b832dfed07dc5f92e0539e77348381d4f",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060522_45583_0100_PP.sol_e42b9f3bdbef.npz": "00b05bcced735e3f97f657c2dfc041b50cd1f2216f267bea932f256a2387de79",
+    "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/20060530_54390_0100_PP.sol_e42b9f3bdbef.npz": "479a97fd7a11e9599726e975a8a87b67b3ec8aa61c1fc5688e31db7e5864155c"
+  },
+  "elapsed_seconds": 2.179106037132442,
+  "peak_RSS_MiB": 295.6484375,
+  "checks": [
+    {
+      "name": "17 identities34 rows",
+      "pass": true
+    },
+    {
+      "name": "all selected miss both",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20051117_37130_0400_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P003",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P003",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P003",
+      "pass": true
+    },
+    {
+      "name": "target retained P004",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P004",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P004",
+      "pass": true
+    },
+    {
+      "name": "target retained P005",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P005",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P005",
+      "pass": true
+    },
+    {
+      "name": "target retained P007",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P007",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P007",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20060411_61214_0200_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P024",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P024",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P024",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20060411_61478_0200_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P025",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P025",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P025",
+      "pass": true
+    },
+    {
+      "name": "target retained P026",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P026",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P026",
+      "pass": true
+    },
+    {
+      "name": "target retained P027",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P027",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P027",
+      "pass": true
+    },
+    {
+      "name": "target retained P028",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P028",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P028",
+      "pass": true
+    },
+    {
+      "name": "target retained P030",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P030",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P030",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20060412_60913_0200_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P058",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P058",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P058",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20060522_45583_0100_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P065",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P065",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P065",
+      "pass": true
+    },
+    {
+      "name": "target retained P066",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P066",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P066",
+      "pass": true
+    },
+    {
+      "name": "target retained P067",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P067",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P067",
+      "pass": true
+    },
+    {
+      "name": "target retained P068",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P068",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P068",
+      "pass": true
+    },
+    {
+      "name": "reference hash 20060530_54390_0100_PP",
+      "pass": true
+    },
+    {
+      "name": "target retained P076",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P076",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P076",
+      "pass": true
+    },
+    {
+      "name": "target retained P077",
+      "pass": true
+    },
+    {
+      "name": "target component nonzero P077",
+      "pass": true
+    },
+    {
+      "name": "context has skeleton P077",
+      "pass": true
+    }
+  ],
+  "new_model_loads": 0,
+  "new_model_forward": 0,
+  "new_training": 0,
+  "Test_accessed": false,
+  "medical_review_count": 0,
+  "historical_science_protocol_sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3"
+}

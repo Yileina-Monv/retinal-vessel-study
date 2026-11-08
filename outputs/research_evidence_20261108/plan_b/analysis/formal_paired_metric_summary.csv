@@ -1,0 +1,8 @@
+metric,contrast,mean,n_images,NA_images,ci95_low,ci95_high,bootstrap_replicates,rng,training_seed_sd
+near_thin_recall_d1,three-seed paired image mean TW_minus_T0,-0.006001371742112483,9,19,-0.015260631001371741,0.0,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+dice,three-seed paired image mean TW_minus_T0,7.679813742123538e-05,28,0,-0.00016667155011692883,0.0003770038279710215,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+precision,three-seed paired image mean TW_minus_T0,0.0006048458001502536,28,0,0.00015555662850406205,0.0011509166346632103,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+recall,three-seed paired image mean TW_minus_T0,-0.00046806437754035295,28,0,-0.0007993408571309392,-0.00022002926643580078,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+fp_density,three-seed paired image mean TW_minus_T0,-0.00012149390255466256,28,0,-0.00023515982634780643,-3.576636651811259e-05,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+near_pixel_recall,three-seed paired image mean TW_minus_T0,-0.002658181967254432,18,10,-0.005162242889121592,-0.0010981448139449283,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level
+far_recall,three-seed paired image mean TW_minus_T0,-0.0004053731211476024,28,0,-0.0007101893585383796,-0.00017735759479588768,1000,PCG64(20261016),reported separately per seed; bootstrap is image-level

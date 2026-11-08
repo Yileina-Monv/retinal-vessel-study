@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "a2de7e7bb0c3bee647bc9ab8a7e41ffc0d5dc1a0433d29d0a34b0e8986d1f4b7",
+  "training_execution_binding_sha256": "424592f6825410580cd1551131aee63ed7499c7f86c64a5c4cb2ecc537acebe1",
+  "evaluation_source_sha256": "b9bb428198c4a50e4d87021da040a2a5f74c9eaea349cccf03990f1616e67d3b",
+  "dev_manifest_sha256": "ac70cbfe6b714e0e59fd1dce520a7d02ddeb607fc36a78d06a83fb39575df607",
+  "inference": {
+    "patch": 512,
+    "stride": 256,
+    "batch_size": 4,
+    "amp": false,
+    "tta": false,
+    "resize": false,
+    "threshold": 0.5
+  },
+  "official_test_accessed": false
+}

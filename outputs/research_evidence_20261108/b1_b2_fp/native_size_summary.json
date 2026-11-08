@@ -1,0 +1,41 @@
+{
+  "(1536, 2304)": {
+    "n": 5,
+    "B1": {
+      "new_pixels": 11691,
+      "mean_new_FP_over_FOV": 0.001410974781828516,
+      "mean_net_FP_over_FOV": 0.001200804263545904
+    },
+    "B2": {
+      "new_pixels": 9876,
+      "mean_new_FP_over_FOV": 0.0011919000850070572,
+      "mean_net_FP_over_FOV": 0.0009475638440959508
+    }
+  },
+  "(960, 1440)": {
+    "n": 15,
+    "B1": {
+      "new_pixels": 26677,
+      "mean_new_FP_over_FOV": 0.0027456143078734624,
+      "mean_net_FP_over_FOV": 0.0025175884107714276
+    },
+    "B2": {
+      "new_pixels": 24634,
+      "mean_new_FP_over_FOV": 0.0025353610256825896,
+      "mean_net_FP_over_FOV": 0.002301819775829716
+    }
+  },
+  "(1488, 2240)": {
+    "n": 8,
+    "B1": {
+      "new_pixels": 19488,
+      "mean_new_FP_over_FOV": 0.0016241051298346314,
+      "mean_net_FP_over_FOV": 0.0013492937918040634
+    },
+    "B2": {
+      "new_pixels": 17985,
+      "mean_new_FP_over_FOV": 0.0014988409277283579,
+      "mean_net_FP_over_FOV": 0.001235958091690631
+    }
+  }
+}

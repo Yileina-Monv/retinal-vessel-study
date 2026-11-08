@@ -1,0 +1,26 @@
+{
+  "retrieved_date": "2026-10-23",
+  "files": {
+    "sources/cldice_cvpr2021.pdf": "46dd1ab6259572d8068b251dc526174ee34c7ae407c57183f953bf102561004f",
+    "sources/cldice_commit.json": "8d99416e65c8d493b538eb17592f28570ce81e7949ad907f7baa40cfaa0ff104",
+    "sources/cldice_cvpr2021.txt": "72b8c3727c3aae6d4efe387aea0cd44dd255adc619488b53a7bc3311fd93b1f2",
+    "sources/cldice_cvpr2021_supplement.pdf": "44e60674e0c3068bc849b66b55c614560a42a7b109c74cb5d3a72871885686ae",
+    "sources/cldice_cldice_metric_cldice.py": "3a0ecff37f0537b068444fef29fad7f16101aa24d2929681e525b16838ad0795",
+    "sources/cldice_cldice_loss_pytorch_cldice.py": "57872404b6bc026388eb0ecee4bda4b57e9f4b3a3fbd33212c24951f4869860e",
+    "sources/cldice_cldice_loss_pytorch_soft_skeleton.py": "65294ece70e96fc60e8eb0369a1ae481354c1b90ef1e6ece1824608bd1c60148",
+    "sources/SkelCon_commit.json": "ebd3451b5c20c94fd881e1d6d67430b88d5a4c820bfb23f3c722b72ec7b3714b",
+    "sources/skelcon_proj_nets_sample.py": "cb64cbb3342804a688402ec5bf40c6b31100dd7a26734ff71e85102f09eafecb",
+    "sources/skelcon_proj_nets_sim.py": "cb8241dfcb8b16dd0d732653ddda87e60224fa89f87fc40c60b553354b556954",
+    "sources/skelcon_proj_nets_siam.py": "23ab686b0d53a8a0870fdb8f4cd4d94168e35b740f883ffbd9fc39457a2615cc",
+    "sources/skelcon_proj_grad.py": "f9ac0b84610039eb71c7a22114a0fa5a490495f482c06f002213e48a80d54388",
+    "sources/cldice_cvpr2021_supplement.txt": "e7b3eac0a661905ef95ee1e72531dfebdffe2602a60ce8359dcbed373c910344",
+    "sources/recall_skeleton_recall_training_data_augmentation_skeletonization.py": "1a745fb1ac1110063e5c27fd52fb74b882813d2a299bb15b82f7d7d43076e6e1",
+    "sources/recall_skeleton_recall_training_loss_compound_losses.py": "945a231d29a3bb8292841cd731322093376246d681c528a56a5e2a81dbe7af91",
+    "sources/skeleton_recall_author_v2.html": "ff0fa923b696c911a041f1b3deede3e2fcb32a1130aadf4c077b7af18accf1af",
+    "sources/Skeleton-Recall_commit.json": "0698d8315852ed7a6c2c5312d75b571608232b7caaa0f76f9e6e385821388dc4"
+  },
+  "clDice_commit": "47d31a6cc4a8101b1ffe8052994821961e57af9f",
+  "Skeleton_Recall_commit": "c7bac3c72ca7bb4f3d891235f051f0c4d07d7229",
+  "SkelCon_commit": "0e617a7eca85eeda2d291f483014ddecdffc8a08",
+  "SkelCon_full_paper_obtained": false
+}

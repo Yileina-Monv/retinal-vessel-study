@@ -1,0 +1,95 @@
+"""CPU plots of the actual fixed GT references; no model or medical annotation."""
+import os
+os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='1',MPLBACKEND='Agg')
+import sys,json,csv,hashlib
+from pathlib import Path
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from PIL import Image
+R=Path('${RETINA_PROJECT_ROOT}');C=R/'code/retinal-vessel-study';sys.path.insert(0,str(C))
+from retinal_m1.maps import targets
+OUT=Path(__file__).resolve().parent;P='metric_review_20261103'
+f=json.loads((OUT/(P+'_facts.json')).read_text())
+m=json.loads((R/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/scientific_b1_b2_2000_v1_20261022/references/dev/manifest.json').read_text())
+byname={x['filename']:x for x in m['images']}
+rgbm={x['filename']:x for x in json.loads((R/'docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json').read_text())['images']}
+figdir=OUT/(P+'_figures');figdir.mkdir(exist_ok=False)
+# Complete 28-image denominator plot, same rows across all four widths.
+with (OUT/(P+'_denominators.csv')).open(encoding='utf-8-sig') as h:rows=list(csv.DictReader(h))
+names=[x['filename'] for x in m['images']]
+lookup={(r['filename'],int(r['width_native_proxy'])):int(r['near_width_points']) for r in rows}
+fig,ax=plt.subplots(figsize=(12,9))
+arr=np.array([[lookup[n,w] for w in [2,3,4,5]] for n in names])
+im=ax.imshow(np.log1p(arr),cmap='Blues',aspect='auto')
+for i in range(28):
+ for j in range(4):ax.text(j,i,str(arr[i,j]),ha='center',va='center',fontsize=8,color='white' if arr[i,j]>100 else 'black')
+ax.set_xticks(range(4),['<=2','<=3 (original)','<=4','<=5'])
+ax.set_yticks(range(28),names,fontsize=8)
+ax.set_title('GT target denominators: all Dev28, zeros retained')
+ax.set_xlabel('Native 2 x EDT diameter proxy (pixels); cumulative thresholds')
+fig.tight_layout();fig.savefig(figdir/'denominators.png',dpi=160);plt.close(fig)
+# All exploratory width effects, never choose a width by benefit.
+fig,axs=plt.subplots(1,2,figsize=(12,4))
+for ax,comparison in zip(axs,['TW-T0','NL-N0']):
+ rows=[x for x in f['effects'] if x['comparison']==comparison and x['seed']=='within_image_seed_average']
+ ax.axhline(0,color='gray',lw=1)
+ ax.errorbar([x['width'] for x in rows],[x['delta']*100 for x in rows],
+  yerr=[[100*(x['delta']-x['diagnostic_CI_low']) for x in rows],[100*(x['diagnostic_CI_high']-x['delta']) for x in rows]],
+  marker='o',capsize=4,label='All valid images: diagnostic CI')
+ ax.plot([x['width'] for x in rows],[x['same_original9_delta']*100 for x in rows],marker='s',ls='--',label='Original-set intersection (8 at <=2)')
+ ax.set_xticks([2,3,4,5]);ax.set_title(comparison);ax.set_xlabel('Native diameter proxy cutoff');ax.set_ylabel('Recall change (percentage points)');ax.legend(fontsize=8)
+fig.suptitle('Sensitivity only: no replacement of the original primary endpoint')
+fig.tight_layout();fig.savefig(figdir/'effects.png',dpi=160);plt.close(fig)
+records=[]
+# Ensure each native size has a GT-only case even when it has zero S3 targets.
+with (OUT/(P+'_paths.csv')).open(encoding='utf-8-sig') as h: pathrows=list(csv.DictReader(h))
+for shape in sorted({r['shape'] for r in pathrows}):
+ if not any(c['shape']==shape for c in f['cases']):
+  candidates=[r for r in pathrows if r['shape']==shape and r['width_native_proxy']=='3' and r['candidate']=='True']
+  r=sorted(candidates,key=lambda x:(-int(x['near_points']),x['filename'],int(x['branch_id'])))[0]
+  for k in ['branch_id','near_points','selected_near_points','valid_full_points','selected_full_points']:r[k]=int(r[k])
+  r['candidate']=True;r['selection_reason']='size_without_nonzero_S3_largest_near_candidate'
+  f['cases'].append(r)
+for i,case in enumerate(f['cases'],1):
+ name=case['filename'];rec=byname[name]
+ with np.load(rec['reference_npz'],allow_pickle=False) as z:a={k:z[k] for k in z.files}
+ gt=a['GT'].astype(bool);om=a['Omega'].astype(bool);near=a['near'].astype(bool)&om
+ v=targets(gt,a['FOV'].astype(bool));sk=v['skeleton'];diam=2*v['skeleton_radius']
+ start,end=a['offsets'][case['branch_id']:case['branch_id']+2]
+ coords=a['coords'][start:end];y0,x0=np.maximum(coords.min(axis=0)-20,0);y1,x1=np.minimum(coords.max(axis=0)+21,gt.shape)
+ rgbpath=Path(rgbm[name]['inputs']['RGB']['path'])
+ raw=rgbpath.read_bytes();assert hashlib.sha256(raw).hexdigest()==rgbm[name]['inputs']['RGB']['sha256']
+ with Image.open(rgbpath) as image:rgb=np.asarray(image.convert('RGB'))
+ crop=rgb[y0:y1,x0:x1];cg=gt[y0:y1,x0:x1];cn=near[y0:y1,x0:x1]
+ fig,axs=plt.subplots(1,3,figsize=(13,5))
+ for ax in axs:
+  ax.imshow(crop);ax.set_xlim(-.5,crop.shape[1]-.5);ax.set_ylim(crop.shape[0]-.5,-.5);ax.axis('off')
+ # Transparent GT overlay; no smoothing, no additional generated labels.
+ overlay=np.zeros((*cg.shape,4));overlay[cg]=[.2,1,.2,.35]
+ axs[0].imshow(overlay,interpolation='nearest');axs[0].set_title('RGB + GT (green)')
+ cx=coords[:,1]-x0;cy=coords[:,0]-y0
+ for ax in axs[1:]:
+  ax.plot(cx,cy,c='cyan',lw=1.4,label='Existing GT graph path')
+  if cn.any() and (~cn).any():ax.contour(cn.astype(float),levels=[.5],colors=['dodgerblue'],linewidths=.8)
+ for width,color,label in [(5,'magenta','4 < width <= 5'),(4,'orange','3 < width <= 4'),(3,'yellow','width <= 3')]:
+  low=4 if width==5 else 3 if width==4 else 0
+  mask=sk&(diam<=width)&(diam>low)&near
+  yx=np.argwhere(mask[y0:y1,x0:x1])
+  if len(yx):axs[1].scatter(yx[:,1],yx[:,0],s=12,c=color,label=label,zorder=4)
+ axs[1].set_title('Near targets: S3/S4/S5; blue = near boundary')
+ full=sk&(diam<=3)&om;yx=np.argwhere(full[y0:y1,x0:x1])
+ if len(yx):axs[2].scatter(yx[:,1],yx[:,0],s=12,c='yellow',label='All S3 in Omega')
+ axs[2].set_title('S3 without near clipping (yellow)')
+ # Show exact widths at at most six evenly spaced vertices; independent of predictions.
+ indexes=np.unique(np.linspace(0,len(coords)-1,min(6,len(coords))).astype(int))
+ labels=[]
+ for j in indexes:
+  y,x=coords[j];d=float(diam[y,x]);labels.append(dict(y=int(y),x=int(x),diameter_proxy=d,inside_near=bool(near[y,x])))
+  axs[2].annotate(f'{d:.2f}',(x-x0,y-y0),xytext=(3,3),textcoords='offset points',fontsize=8,color='white',bbox=dict(facecolor='black',alpha=.6,pad=.7))
+ fig.suptitle(f'Case {i:02d}: {name} / path {case["branch_id"]}\nNative size {gt.shape[0]}x{gt.shape[1]}; S3 near coverage {case["selected_near_points"]}/{case["near_points"]}; GT path is not anatomy verification',fontsize=10)
+ fig.tight_layout();filename=f'case_{i:02d}.png';fig.savefig(figdir/filename,dpi=160);plt.close(fig)
+ records.append(dict(case_id=i,filename=filename,selection=case,crop_native_yx=[int(y0),int(x0),int(y1),int(x1)],width_labels=labels,RGB_path=str(rgbpath),RGB_sha256=hashlib.sha256(raw).hexdigest()))
+with (OUT/(P+'_atlas_manifest.json')).open('x') as h:json.dump(records,h,ensure_ascii=False,indent=2)
+print('PLOTS_COMPLETE',len(records),flush=True)

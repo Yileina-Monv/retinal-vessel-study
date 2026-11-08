@@ -1,0 +1,20 @@
+{
+  "D": {
+    "recall_075_090_valid_points": 31,
+    "Precision_delta_positive_points": 0,
+    "Precision_delta_min": -0.0015346064759627076,
+    "Precision_delta_max": -0.0009085734329639106
+  },
+  "B1": {
+    "recall_075_090_valid_points": 31,
+    "Precision_delta_positive_points": 0,
+    "Precision_delta_min": -0.003347748691914121,
+    "Precision_delta_max": -0.0012193052428224327
+  },
+  "B2": {
+    "recall_075_090_valid_points": 31,
+    "Precision_delta_positive_points": 0,
+    "Precision_delta_min": -0.003345649012877261,
+    "Precision_delta_max": -0.0013597070357707075
+  }
+}

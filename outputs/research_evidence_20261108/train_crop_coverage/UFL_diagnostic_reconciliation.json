@@ -1,0 +1,29 @@
+{
+  "status": "EXISTING_GPU16_ACCEPTANCE_INDEPENDENTLY_RECONCILED_CPU_ONLY",
+  "combinations": 16,
+  "parameter_updates": 0,
+  "delta_A0_ratio": [
+    0.6318309209217693,
+    0.7859797921712519
+  ],
+  "candidate_A0_ratio": [
+    0.2472222356249979,
+    0.37946859561115365
+  ],
+  "cosine_A0_candidate": [
+    0.9034705972555683,
+    0.9993010570915758
+  ],
+  "cosine_A0_delta": [
+    -0.9998742487508475,
+    -0.9895398455033869
+  ],
+  "max_AMP_gradient_relative_L2": 0.014639135419492851,
+  "min_AMP_gradient_cosine": 0.9998932513658385,
+  "max_reserved_MiB": 4492.0,
+  "elapsed_seconds": 34.01891765499022,
+  "prior_review_reused": true,
+  "new_GPU_calls": 0,
+  "release_or_authorization_changed": false,
+  "limitation": "Zero updates cannot establish training stability, restoration consistency, or Dice benefit. Delta is replacement UFL minus A0, not an auxiliary loss."
+}

@@ -1,0 +1,222 @@
+"""Exploratory four-weight MAPLES analysis with frozen paired-image statistics."""
+import csv,hashlib,html,json
+from pathlib import Path
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from retinal_m0.maples_evaluate import load_mask
+from retinal_m0.maples_reliability import probability_fp_grid
+from evaluate_weight_ablation import eval_prob
+ROOT=Path("${RETINA_PROJECT_ROOT}");OUT=ROOT/"experiments/t0_tw_weight_ablation_20261017";AN=OUT/"analysis";OLD=ROOT/"experiments/t0_tw_core_20261016";A15=ROOT/"experiments/a15_2_z0_t0_calibration_20261015"
+SEEDS=(2026,2027,2028);ALPHAS=(1.0,1.5,2.0,3.0);LABEL={1.0:"T0",1.5:"w_1p5",2.0:"TW",3.0:"w_3p0"}
+METRICS=("near_thin_recall_d1","precision","fp_density","far_recall","dice","recall","near_pixel_recall","near_thin_d1_diam_le2","near_thin_d1_diam_le4","near_thin_d1_diam_le5")
+PRIMARY="near_thin_recall_d1";GRID=np.linspace(0,1,1001,dtype=np.float32)
+CONTRASTS=((1.5,1.0),(3.0,1.0),(2.0,1.0),(1.5,2.0),(3.0,2.0))
+def sha(p):
+ h=hashlib.sha256()
+ with Path(p).open("rb") as f:
+  for b in iter(lambda:f.read(1048576),b""):h.update(b)
+ return h.hexdigest()
+def wj(p,x):
+ p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2,allow_nan=False)+"\n",encoding="utf-8")
+def wc(p,rows):
+ if not rows:raise ValueError("Empty CSV: "+str(p))
+ keys=list(dict.fromkeys(k for r in rows for k in r))
+ with Path(p).open("w",newline="",encoding="utf-8-sig") as f:
+  w=csv.DictWriter(f,fieldnames=keys,extrasaction="ignore");w.writeheader();w.writerows(rows)
+def load_refs():
+ d=json.loads((A15/"dev_manifest.json").read_text());rows=d["images"]
+ if d.get("scope")!="MAPLES_dev28" or len(rows)!=28:raise RuntimeError("Frozen dev28 manifest mismatch")
+ return rows,{r["filename"]:r for r in rows}
+def condition_paths(alpha,seed):
+ if alpha in (1.0,2.0):
+  method="T0" if alpha==1.0 else "TW";run=OLD/f"runs/seed_{seed}/{method}"
+  probdir=run/"evaluation/step_002000/probabilities"
+ else:
+  label="w_1p5" if alpha==1.5 else "w_3p0";run=OUT/f"runs/seed_{seed}/{label}"
+  probdir=run/"evaluation/step_002000/probabilities"
+ return run,probdir
+def load_fixed_results(refrows,refs):
+ vals={};probs={}
+ for name,r in refs.items():
+  p=np.load(A15/"z0/probabilities"/(name+".npy"),allow_pickle=False)
+  vals.setdefault("Z0",{})[name]=eval_prob(p,r,.5);probs.setdefault("Z0",{})[name]=p
+ for alpha in ALPHAS:
+  for seed in SEEDS:
+   run,pdir=condition_paths(alpha,seed)
+   summ=json.loads((run/"summary.json").read_text())
+   if summ.get("status")!="passed" or summ.get("completed_steps")!=2000 or summ.get("next_global_draw")!=8000:raise RuntimeError("Incomplete track "+str(run))
+   mpath=run/"evaluation/step_002000/metrics.json";ed=json.loads(mpath.read_text())
+   if ed.get("threshold")!=.5 or ed.get("dev_images")!=28 or ed.get("checkpoint_sha256")!=sha(run/"step_002000.pt"):raise RuntimeError("Endpoint evaluation binding mismatch "+str(run))
+   if alpha in (1.5,3.0) and ed.get("run_binding")!=json.loads((run/"run_binding.json").read_text()):raise RuntimeError("New evaluation/run binding mismatch")
+   vals[(alpha,seed)]={};probs[(alpha,seed)]={}
+   for name,r in refs.items():
+    p=np.load(pdir/(name+".npy"),allow_pickle=False)
+    if p.dtype!=np.float32 or p.shape!=tuple(r["native_shape"]) or not np.isfinite(p).all() or np.any((p<0)|(p>1)):raise ValueError("Invalid original-size float32 endpoint probability")
+    probs[(alpha,seed)][name]=p
+    if alpha in (1.5,3.0):
+     q=next(x for x in ed["images"] if x["filename"]==name)
+    else:
+     q=next(x for x in ed["images"] if x["filename"]==name)
+     # The old frozen record has only the core metrics; recalculate supplemental diameter tiers from its saved probability.
+     extra=eval_prob(p,r,.5)
+     for k in ("near_thin_d1_diam_le2","near_thin_d1_diam_le4","near_thin_d1_diam_le5"):q[k]=extra[k]
+    vals[(alpha,seed)][name]=q
+ return vals,probs
+def metric_names_for(z0,refs):
+ valid={}
+ for m in METRICS:
+  valid[m]=[n for n in refs if z0[n][m]["denominator"]>0]
+ return valid
+def finite_fixed(vals,valid):
+ issues=[]
+ for m,ids in valid.items():
+  for a in ALPHAS:
+   for s in SEEDS:
+    for n in ids:
+     x=vals[(a,s)][n][m]["value"]
+     if x is None:issues.append({"alpha":a,"seed":s,"metric":m,"filename":n,"issue":"extra_NA_on_frozen_valid_set"})
+ return issues
+def fixed_rows(vals,z0,refs,valid,bind):
+ rows=[]
+ for n in refs:
+  for m in METRICS:
+   q=z0[n][m];rows.append({"source":"Z0","seed":"","alpha":0,"filename":n,"metric":m,"value":q["value"],"numerator":q["numerator"],"denominator":q["denominator"],"NA_reason":q["NA_reason"],"threshold":.5,"execution_binding_sha256":bind})
+  for a in ALPHAS:
+   for s in SEEDS:
+    q=vals[(a,s)][n][m];rows.append({"source":"endpoint","seed":s,"alpha":a,"filename":n,"metric":m,"value":q["value"],"numerator":q["numerator"],"denominator":q["denominator"],"NA_reason":q["NA_reason"],"threshold":.5,"execution_binding_sha256":bind})
+ return rows
+def paired_statistics(vals,valid):
+ paired_rows=[];seed_rows=[];boot_rows=[];stats={};rngs={}
+ for m in METRICS:
+  ids=valid[m];n=len(ids)
+  if n not in rngs:rngs[n]=np.random.Generator(np.random.PCG64(20261016)).integers(0,n,(1000,n),dtype=np.int64)
+  ix=rngs[n]
+  for a,b in CONTRASTS:
+   mat=np.empty((n,3),dtype=np.float64)
+   for j,s in enumerate(SEEDS):
+    av=np.array([vals[(a,s)][name][m]["value"] for name in ids],dtype=float)
+    bv=np.array([vals[(b,s)][name][m]["value"] for name in ids],dtype=float)
+    if not np.isfinite(av).all() or not np.isfinite(bv).all():raise RuntimeError(f"NA in frozen valid set {m}/{a}-{b}/{s}")
+    mat[:,j]=av-bv
+    seed_rows.append({"metric":m,"contrast":f"{a:g}-{b:g}","alpha":a,"reference_alpha":b,"seed":s,"valid_n":n,
+       "alpha_macro":float(av.mean()),"reference_macro":float(bv.mean()),"delta_macro":float((av-bv).mean())})
+   mean_by_image=mat.mean(axis=1);estimate=float(mean_by_image.mean())
+   be=mean_by_image[ix].mean(axis=1);lo,hi=np.quantile(be,[.025,.975],method="linear")
+   sd=float(mat.mean(axis=0).std(ddof=1))
+   key=f"{a:g}-{b:g}"
+   stats.setdefault(key,{})[m]={"estimate":estimate,"ci95_low":float(lo),"ci95_high":float(hi),"valid_n":n,
+      "seed_delta_mean":float(mat.mean(axis=0).mean()),"seed_delta_sd":sd,
+      "seed_deltas":{str(s):float(mat[:,j].mean()) for j,s in enumerate(SEEDS)}}
+   for i,name in enumerate(ids):
+    paired_rows.append({"metric":m,"contrast":key,"filename":name,"delta_mean3seed":float(mean_by_image[i]),
+      **{f"delta_seed_{s}":float(mat[i,j]) for j,s in enumerate(SEEDS)}})
+   for k,estimate_b in enumerate(be):
+    boot_rows.append({"metric":m,"contrast":key,"draw":k+1,"indices_json":json.dumps(ix[k].tolist()),"estimate":float(estimate_b)})
+ return stats,paired_rows,seed_rows,boot_rows
+def z0_comparison(vals,z0,valid):
+ rows=[];summary=[]
+ for m,ids in valid.items():
+  zbase=float(np.mean([z0[n][m]["value"] for n in ids]))
+  for a in ALPHAS:
+   seedvals=[]
+   for s in SEEDS:
+    v=float(np.mean([vals[(a,s)][n][m]["value"] for n in ids]));seedvals.append(v)
+    rows.append({"metric":m,"alpha":a,"seed":s,"valid_n":len(ids),"Z0_macro":zbase,"endpoint_macro":v,"endpoint_minus_Z0":v-zbase})
+   summary.append({"metric":m,"alpha":a,"valid_n":len(ids),"Z0_macro":zbase,"endpoint_macro_mean3seed":float(np.mean(seedvals)),
+      "endpoint_minus_Z0_mean3seed":float(np.mean(seedvals)-zbase),**{f"seed_{s}_macro":seedvals[i] for i,s in enumerate(SEEDS)}})
+ return rows,summary
+def same_fp(probs,refs,z0,bind):
+ target=float(np.mean([z0[n]["fp_density"]["value"] for n in refs]))
+ gridrows=[];same={};selected=[]
+ for a in ALPHAS:
+  for s in SEEDS:
+   counts=[];fovs=[]
+   for n,r in refs.items():
+    p=probs[(a,s)][n];v=load_mask(r["vessel_path"]);f=load_mask(r["fov_path"])
+    counts.append(probability_fp_grid(p,v,f,GRID));fovs.append(int(f.sum()))
+   dens=np.mean(np.stack(counts)/np.asarray(fovs)[:,None],axis=0);ok=np.flatnonzero(dens<=target);ix=int(ok[0]) if len(ok) else None
+   same[(a,s)]={"threshold":float(GRID[ix]) if ix is not None else None,"grid_index":ix,"macro_fp_density":float(dens[ix]) if ix is not None else None,"target":target}
+   for j,t in enumerate(GRID):gridrows.append({"alpha":a,"seed":s,"grid_index":j,"threshold":float(t),"macro_fp_density":float(dens[j]),"target":target,"feasible":int(dens[j]<=target)})
+   if ix is not None:
+    for n,r in refs.items():
+     q=eval_prob(probs[(a,s)][n],r,float(GRID[ix]))
+     selected.append({"alpha":a,"seed":s,"filename":n,"threshold":float(GRID[ix]),**{m:q[m]["value"] for m in METRICS},
+       **{m+"_numerator":q[m]["numerator"] for m in METRICS},**{m+"_denominator":q[m]["denominator"] for m in METRICS},
+       **{m+"_NA_reason":q[m]["NA_reason"] for m in METRICS}})
+ return target,same,gridrows,selected
+def write_plots(stats,paired,summaryrows):
+ figdir=AN/"figures";figdir.mkdir(parents=True,exist_ok=True)
+ # Primary 9-image paired differences for the two new exploratory weights against alpha=1.
+ rows=[r for r in paired if r["metric"]==PRIMARY and r["contrast"] in ("1.5-1","3-1")]
+ names=list(dict.fromkeys(r["filename"] for r in rows));fig,ax=plt.subplots(figsize=(13,5))
+ x=np.arange(len(names));w=.38
+ for off,contrast,color in ((-w/2,"1.5-1","#2865a8"),(w/2,"3-1","#d17a22")):
+  rr=[next(q for q in rows if q["filename"]==n and q["contrast"]==contrast)["delta_mean3seed"] for n in names]
+  ax.bar(x+off,rr,width=w,label=contrast,color=color)
+ ax.axhline(0,color="#303b44",lw=.8);ax.set_xticks(x,[n.replace("_PP","") for n in names],rotation=60,ha="right",fontsize=7);ax.set_ylabel("d1 recall difference");ax.set_title("Primary per-image differences (3 paired seeds)");ax.legend();fig.tight_layout();fig.savefig(figdir/"primary_d1_paired.png",dpi=150);plt.close(fig)
+ # Contribution share of mean BCE by four frozen groups, six runs.
+ rr=[q for q in summaryrows["contributions"] if q["group"] in ("A_V1","A_V0","O_V1","O_V0")]
+ labels=[];values=[];colors={"A_V1":"#b3534b","A_V0":"#e2a260","O_V1":"#397d8a","O_V0":"#a9c5c5"}
+ for seed in SEEDS:
+  for a in (1.5,3.0):
+   labels.append(f"{seed}\nα={a:g}")
+   for g in ("A_V1","A_V0","O_V1","O_V0"):
+    values.append(next(q["ratio_of_means_C_over_BCE"] for q in rr if q["seed"]==seed and q["alpha"]==a and q["group"]==g))
+ fig,ax=plt.subplots(figsize=(11,5));base=np.zeros(6);x=np.arange(6)
+ for j,g in enumerate(("A_V1","A_V0","O_V1","O_V0")):
+  vals=values[j::4];ax.bar(x,vals,bottom=base,label=g,color=colors[g]);base+=np.asarray(vals)
+ ax.set_xticks(x,labels);ax.set_ylabel("ratio-of-means contribution share");ax.set_ylim(0,1);ax.set_title("Four BCE contribution groups (new runs)");ax.legend(ncol=4);fig.tight_layout();fig.savefig(figdir/"bce_group_contributions.png",dpi=150);plt.close(fig)
+ # Same-FP selected thresholds for all 12 conditions.
+ fig,ax=plt.subplots(figsize=(9,4));labs=[];ys=[]
+ for a in ALPHAS:
+  for s in SEEDS:
+   labs.append(f"α={a:g}, {s}");ys.append(summaryrows["same_fp"][(a,s)]["threshold"])
+ ax.bar(np.arange(12),ys,color=["#6688aa" if a in (1.,2.) else "#d58b42" for a in ALPHAS for s in SEEDS])
+ ax.set_xticks(np.arange(12),labs,rotation=55,ha="right");ax.set_ylabel("global threshold");ax.set_title("Lowest feasible threshold at common Z0 FP/FOV");fig.tight_layout();fig.savefig(figdir/"same_fp_thresholds.png",dpi=150);plt.close(fig)
+def main():
+ AN.mkdir(parents=True,exist_ok=True);bind=json.loads((OUT/"implementation_gate/verification.json").read_text())["execution_binding_sha256"]
+ if not bind:raise RuntimeError("Missing execution binding")
+ refrows,refs=load_refs();vals,probs=load_fixed_results(refrows,refs);z0=vals["Z0"]
+ ids=metric_names_for(z0,refs);primary=ids[PRIMARY]
+ protocol=json.loads((ROOT/"docs/t0_tw_weight_ablation_20261017/protocol.json").read_text())
+ if primary!=protocol["evaluation"]["primary"]["primary_ids"] or len(primary)!=9 or sum(z0[n][PRIMARY]["denominator"] for n in primary)!=77:raise RuntimeError("Primary fixed 9/77 set mismatch")
+ issues=finite_fixed(vals,ids)
+ if issues:wj(AN/"analysis_blockers.json",{"status":"blocked_extra_NA","issues":issues});raise RuntimeError("Unexpected extra NA on frozen-valid set; analysis paused")
+ wc(AN/"fixed_0p5_per_image.csv",fixed_rows(vals,z0,refs,ids,bind))
+ stats,pairrows,seedrows,boot=paired_statistics(vals,ids)
+ wc(AN/"paired_per_image.csv",pairrows);wc(AN/"paired_seed_macro.csv",seedrows);wc(AN/"bootstrap_indices_estimates.csv",boot)
+ zrows,zsum=z0_comparison(vals,z0,ids);wc(AN/"z0_comparison_seed_macro.csv",zrows);wc(AN/"z0_comparison_summary.csv",zsum)
+ target,same,gridrows,sfrows=same_fp(probs,refs,z0,bind);wc(AN/"same_fp_full_grid.csv",gridrows);wc(AN/"same_fp_per_image.csv",sfrows)
+ sfseed=[]
+ for a,b in CONTRASTS:
+  for m in METRICS:
+   valid=ids[m]
+   for s in SEEDS:
+    aa=[r[m] for r in sfrows if r["alpha"]==a and r["seed"]==s and r["filename"] in valid]
+    bb=[r[m] for r in sfrows if r["alpha"]==b and r["seed"]==s and r["filename"] in valid]
+    if len(aa)!=len(valid) or len(bb)!=len(valid) or any(x is None for x in aa+bb):continue
+    sfseed.append({"metric":m,"contrast":f"{a:g}-{b:g}","seed":s,"valid_n":len(valid),"alpha_macro":float(np.mean(aa)),"reference_macro":float(np.mean(bb)),"delta_macro":float(np.mean(aa)-np.mean(bb))})
+ wc(AN/"same_fp_seed_macro.csv",sfseed)
+ contribution=json.load(open(AN/"bce_contribution_log_audit.json"));contribrows=list(csv.DictReader((AN/"bce_contribution_summary.csv").open(encoding="utf-8-sig")))
+ wj(AN/"analysis_summary.json",{"status":"passed","protocol_sha256":sha(ROOT/"docs/t0_tw_weight_ablation_20261017/protocol.json"),"execution_binding_sha256":bind,
+  "weights":[1,1.5,2,3],"seeds":list(SEEDS),"new_runs":6,"updates_each":2000,"draws_each":8000,"development_images":28,
+  "primary":{"metric":PRIMARY,"threshold":.5,"valid_n":len(primary),"target_points":sum(z0[n][PRIMARY]["denominator"] for n in primary),"NA_images":len(refs)-len(primary),"ids":primary},
+  "fixed_0p5_statistics":stats,"same_FP":{"common_Z0_target":target,"conditions":{f"alpha_{a:g}_seed_{s}":same[a,s] for a in ALPHAS for s in SEEDS}},
+  "contribution_log_audit":contribution,"interpretation_limits":"Post-result multi-weight exploration; no multiplicity correction; intervals are descriptive and conditional on these development images and three paired seeds, not independent confirmation."})
+ wj(AN/"analysis_config.json",{"bootstrap":{"reps":1000,"PCG64_seed":20261016,"unit":"paired image","indices":"same table reused for all statistics with the same n"},"same_FP_grid":"0..1 step 0.001; smallest feasible global threshold at Z0@0.5 macro FP/FOV","threshold_fixed":.5,"official_test_read":False})
+ write_plots(stats,pairrows,{"contributions":contribrows,"same_fp":same})
+ # Human-readable, self-contained summary page with direct links to every reproducibility table.
+ primary_stats=stats["1.5-1"][PRIMARY];other=stats["3-1"][PRIMARY]
+ table=[]
+ for m in METRICS:
+  for contrast in ("1.5-1","3-1","2-1","1.5-2","3-2"):
+   s=stats[contrast][m];table.append(f"<tr><td>{html.escape(contrast)}</td><td>{html.escape(m)}</td><td>{s['valid_n']}</td><td>{s['estimate']:+.5f}</td><td>[{s['ci95_low']:+.5f}, {s['ci95_high']:+.5f}]</td><td>{s['seed_delta_mean']:+.5f} ± {s['seed_delta_sd']:.5f}</td></tr>")
+ same_table="".join(f"<tr><td>{a:g}</td><td>{s}</td><td>{same[a,s]['threshold'] if same[a,s]['threshold'] is not None else 'NA'}</td><td>{same[a,s]['macro_fp_density'] if same[a,s]['macro_fp_density'] is not None else 'NA'}</td><td>{target:.7f}</td></tr>" for a in ALPHAS for s in SEEDS)
+ rows0="".join(f"<tr><td>{q['alpha']:g}</td><td>{q['metric']}</td><td>{q['valid_n']}</td><td>{q['endpoint_macro_mean3seed']:+.5f}</td><td>{q['endpoint_minus_Z0_mean3seed']:+.5f}</td></tr>" for q in zsum if q["metric"] in (PRIMARY,"dice","precision","recall","fp_density","far_recall"))
+ report=f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MAPLES 四档权重探索性消融</title><style>body{{font:16px/1.55 system-ui,"Microsoft YaHei",sans-serif;max-width:1320px;margin:28px auto;padding:0 22px;background:#f3f6f9;color:#182432}}section{{background:#fff;padding:20px 24px;margin:16px 0;border-radius:10px}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}}.card{{background:#edf2f7;padding:14px;border-radius:8px}}table{{border-collapse:collapse;width:100%;font-size:13px}}td,th{{border-bottom:1px solid #dde3e9;padding:7px;text-align:left}}.scroll{{overflow:auto}}img{{max-width:100%;height:auto}}.note{{color:#526270}}</style><body><h1>MAPLES 出血邻域权重探索性消融</h1><p>四档权重 α=1、1.5、2、3；新训练仅 1.5 与 3，各三种子；每条 2,000 次成功更新，主终点固定为第 2,000 步、阈值 0.5。</p><section><h2>执行情况</h2><div class="cards"><div class="card">正式新增轨迹 <b>6 / 6</b></div><div class="card">每条更新 <b>2,000</b></div><div class="card">逐图贡献记录 <b>48,000</b></div><div class="card">开发图 <b>28</b></div></div><p>实现门槛、配对输入、初始状态及每步损失核算均通过。官方 Test 未访问。旧 α=1/2 的训练轨迹只读复用；缺失的旧分项 BCE 记录保持 NA。</p></section><section><h2>主指标结果</h2><p>唯一主指标为出血邻域、直径≤3 的细骨架 d1 召回；固定 9 图 / 77 个参考点，另 19 图按冻结规则保留 NA。</p><p>1.5−1：均值 {primary_stats['estimate']:+.5f}，95%按图配对区间 [{primary_stats['ci95_low']:+.5f}, {primary_stats['ci95_high']:+.5f}]。3−1：均值 {other['estimate']:+.5f}，95%区间 [{other['ci95_low']:+.5f}, {other['ci95_high']:+.5f}]。这些区间不作多重比较校正，权重搜索属于看过原结果后的探索。</p><img src="analysis/figures/primary_d1_paired.png"><div class="scroll"><table><thead><tr><th>比较</th><th>指标</th><th>有效图</th><th>均值差</th><th>95%按图区间</th><th>三种子差均值±样本SD</th></tr></thead><tbody>{"".join(table)}</tbody></table></div></section><section><h2>四组 BCE 贡献</h2><p>每图先按实际权重和归一化，再对 8,000 个抽样图像求均值；份额使用“平均贡献 / 平均 BCE”。像素数为重复裁块的采样像素实例，不代表唯一像素，也不等同梯度贡献。</p><img src="analysis/figures/bce_group_contributions.png"><p><a href="analysis/bce_contribution_summary.csv">总体分项</a> · <a href="analysis/bce_contributions_by_window.csv">每 200 步窗口</a> · <a href="analysis/bce_contributions_by_image.csv">按训练图分布</a> · <a href="analysis/bce_contribution_log_audit.json">日志绑定与核验</a></p></section><section><h2>统一同误报补充分析</h2><p>对每个种子、每档权重，在冻结的 0–1、0.001 网格上选达到共同 Z0@0.5 宏平均 FP/FOV 目标的最低全局阈值；此结果不取代固定 0.5 主评价。</p><img src="analysis/figures/same_fp_thresholds.png"><div class="scroll"><table><thead><tr><th>权重</th><th>seed</th><th>阈值</th><th>实际宏 FP/FOV</th><th>共同目标</th></tr></thead><tbody>{same_table}</tbody></table></div></section><section><h2>相对原始 M0 的固定阈值变化</h2><div class="scroll"><table><thead><tr><th>权重</th><th>指标</th><th>有效图</th><th>终点均值</th><th>相对 Z0 差</th></tr></thead><tbody>{rows0}</tbody></table></div></section><section><h2>逐图结果与复算材料</h2><p>报告保留所有 28 图的逐图指标、恶化案例及 NA 原因；主指标逐图表和配对差可下载复核。</p><p><a href="analysis/fixed_0p5_per_image.csv">全部固定0.5逐图指标</a> · <a href="analysis/paired_per_image.csv">全部按图配对差</a> · <a href="analysis/paired_seed_macro.csv">逐种子宏值与差</a> · <a href="analysis/bootstrap_indices_estimates.csv">重抽样索引和估计</a> · <a href="analysis/z0_comparison_summary.csv">相对 Z0 汇总</a> · <a href="analysis/same_fp_full_grid.csv">完整同误报阈值网格</a> · <a href="analysis/same_fp_per_image.csv">同误报逐图指标</a> · <a href="analysis/analysis_summary.json">机器可读汇总</a> · <a href="completion_verification.json">完成核验</a></p><p class="note">本轮是观察旧结果后的有限探索，不是独立外部确认；置信区间条件于当前开发图和三个配对种子，不能证明临床安全或患者层面的不劣。没有选择事后最优权重作为确认结论。</p></section></body></html>'''
+ (OUT/"report.html").write_text(report,encoding="utf-8")
+ # All required numeric results remain available in the raw JSON and CSV; this compact report is only a reader view.
+ print(json.dumps({"status":"passed","contrasts":list(stats),"primary_1p5_minus_1":primary_stats,"primary_3_minus_1":other,"same_fp_target":target},ensure_ascii=False,indent=2))
+if __name__=="__main__":main()

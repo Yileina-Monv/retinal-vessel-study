@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "checks": 1897,
+  "max_numeric_error": 3.552713678800501e-15,
+  "elapsed_seconds": 3.0241558628622442,
+  "seed_diagnostics": {
+    "2027": {
+      "qualifying_count": 7,
+      "qualifying_images": 5,
+      "qualifying_probability_ranges": {
+        "center_probability": {
+          "min": 8.99284568731673e-05,
+          "median": 0.00027372167096473277,
+          "max": 0.004886374808847904
+        },
+        "d1_max_probability": {
+          "min": 0.00012830943160224706,
+          "median": 0.0004373344127088785,
+          "max": 0.01796896941959858
+        },
+        "background_mean_probability": {
+          "min": 9.560418505114083e-05,
+          "median": 0.0038016481821181343,
+          "max": 0.06009617457245477
+        },
+        "logit_gap": {
+          "min": -2.3942522330155986,
+          "median": -0.22451659369145194,
+          "max": 0.47566794427139847
+        }
+      },
+      "misses_with_gap_at_least1": 11
+    },
+    "2028": {
+      "qualifying_count": 11,
+      "qualifying_images": 5,
+      "qualifying_probability_ranges": {
+        "center_probability": {
+          "min": 2.449082603561692e-05,
+          "median": 7.78275280026719e-05,
+          "max": 0.007317397277802229
+        },
+        "d1_max_probability": {
+          "min": 3.4808123018592596e-05,
+          "median": 9.535461140330881e-05,
+          "max": 0.018176931887865067
+        },
+        "background_mean_probability": {
+          "min": 4.294756271924093e-05,
+          "median": 0.00044963648286210696,
+          "max": 0.04123772297857496
+        },
+        "logit_gap": {
+          "min": -3.055129209173626,
+          "median": -0.28125571213719525,
+          "max": 0.8209238144820716
+        }
+      },
+      "misses_with_gap_at_least1": 7
+    }
+  },
+  "qualifying_in_both_seeds": [
+    "P024",
+    "P030",
+    "P058",
+    "P065",
+    "P067",
+    "P068",
+    "P076"
+  ],
+  "medical_review_count": 0,
+  "new_training": 0,
+  "new_inference": 0,
+  "Test_accessed": false,
+  "atlas_case_selection": "all77, no favorable-case filtering"
+}

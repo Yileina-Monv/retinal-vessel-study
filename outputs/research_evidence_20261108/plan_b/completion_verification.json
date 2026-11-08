@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "protocol_sha256": "5822922a71e2f05ccc15fb68bde4a370c14738ebca5757ab6a93811b744b0b26",
+  "source_manifest_sha256": "4a5f4b0f6b2217ae23f7ab47aad7ea293620897c8d80ed906cd84b2a6ce72fd7",
+  "execution_binding_sha256": "aa9859425454cb5acc375319ba5c6b9d9d922f4ebd57cfd5c485ac6f6b3de325",
+  "preanalysis_gate": "passed",
+  "counts": {
+    "conditions": 11,
+    "probability_maps": 308,
+    "Dev_images": 28,
+    "primary_valid_images": 9,
+    "primary_positions": 77,
+    "primary_NA_images": 19,
+    "point_condition_rows": 847,
+    "image_condition_rows": 308,
+    "NA_image_condition_rows": 209,
+    "region_rows": 1232,
+    "FP_components": 549260,
+    "visual_review_cases": 105
+  },
+  "checks": {
+    "all_565_protected_inputs_unchanged": true,
+    "308_fixed_probability_maps_only": true,
+    "all_7_original_metrics_per_image_reconciled": true,
+    "NA_19_images_preserved_209_condition_rows": true,
+    "847_point_308_image_1232_region_rows_unique": true,
+    "all_549260_FP_components_area_reconciled_in_analysis": true,
+    "formal_class_split_budget_blocks_separated": true,
+    "all_105_actual_AI_visual_reviews_logged": true,
+    "human_review_truthfully_pending": true,
+    "report_figures_and_tables_exist": true,
+    "zero_training_updates": true,
+    "zero_new_model_inference": true,
+    "official_test_accessed": false
+  },
+  "protected_inputs_rehashed": 565,
+  "human_visual_reviews": 0,
+  "AI_visual_reviews": 105,
+  "remaining_human_adjudication": "pending; not claimed as engineering failure",
+  "attempts": [
+    "attempt_01_summary_write_bug",
+    "attempt_02_report_count_type"
+  ],
+  "completed_utc": "2026-10-19T03:26:40Z"
+}

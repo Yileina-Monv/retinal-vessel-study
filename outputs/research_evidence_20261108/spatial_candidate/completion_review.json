@@ -1,0 +1,19 @@
+{
+  "status": "CPU_CANDIDATE_COMPLETE_AND_ACCEPTED_NO_GPU_AUTHORIZATION",
+  "completed_at": "2026-10-25T14:16:06.796801+08:00",
+  "CPU_admission_pass": true,
+  "science_authorized": false,
+  "production_sampler_changed": false,
+  "new_GPU_calls": 0,
+  "new_model_calls": 0,
+  "existing_UFL_blocks_unchanged": true,
+  "record_backups": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/focal_dice_scientific_2000_v1_20261024/runs/seed_2026/C/analysis/train_crop_exposure_v1/spatial_stratified_candidate_v1/management_before_record_update",
+  "record_before_sha256": {
+    "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/STATUS.md": "920e376e18c2d7c235d08cb2462084fe7fe49b2ed565cfa0862d15af37db5f68",
+    "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/项目全局状态与研究决策.md": "a81cdd758993e70ba8b1bc72c400f7783331f59d5b276d2c98bb6f41acbe7f4f"
+  },
+  "record_after_sha256": {
+    "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/STATUS.md": "74a6fa71ba6386eddc64fff44840a31244271b2fe7a0cb627afa98c35d75924a",
+    "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/项目全局状态与研究决策.md": "96dae516826665c91436340fd40353ec748a7b2ce144c11af875be9deaffabf8"
+  }
+}

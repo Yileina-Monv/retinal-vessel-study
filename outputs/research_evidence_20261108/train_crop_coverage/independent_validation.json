@@ -1,0 +1,38 @@
+{
+  "status": "INDEPENDENT_CPU_VALIDATION_PASSED",
+  "selection_rule": "first manifest image in each native-size group; chosen without outcome",
+  "direct_slice_checks": [
+    {
+      "filename": "20051116_43995_0400_PP",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "direct_slice_counts_match": true,
+      "direct_slice_weighted_exposure_match": true
+    },
+    {
+      "filename": "20051019_38557_0100_PP",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "direct_slice_counts_match": true,
+      "direct_slice_weighted_exposure_match": true
+    },
+    {
+      "filename": "20051116_44690_0400_PP",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "direct_slice_counts_match": true,
+      "direct_slice_weighted_exposure_match": true
+    }
+  ],
+  "all110_conservation_checks": true,
+  "all13325_path_bounds": true,
+  "input_hashes_unchanged": 471,
+  "GPU_calls": 0,
+  "Test_content": false
+}

@@ -1,0 +1,583 @@
+{
+  "cases": [
+    {
+      "path": "case_01.png",
+      "case_id": 1,
+      "filename": "20060412_60913_0200_PP",
+      "crop_native_yx": [
+        381,
+        815,
+        501,
+        890
+      ],
+      "selection_reason": "single_target_image",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 530,
+            "FN": 768,
+            "FP": 111
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 506,
+            "FN": 792,
+            "FP": 109
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 696,
+            "FN": 602,
+            "FP": 112
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 587,
+            "FN": 711,
+            "FP": 114
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 553,
+            "FN": 745,
+            "FP": 166
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 541,
+            "FN": 757,
+            "FP": 159
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 651,
+            "FN": 647,
+            "FP": 96
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 588,
+            "FN": 710,
+            "FP": 124
+          }
+        }
+      ],
+      "sha256": "1ed143eef97d54ca7307ca62fbcae39947d66abf4e2bdde7360f13858235a6dc"
+    },
+    {
+      "path": "case_02.png",
+      "case_id": 2,
+      "filename": "20060522_45248_0100_PP",
+      "crop_native_yx": [
+        846,
+        1622,
+        1049,
+        1748
+      ],
+      "selection_reason": "single_target_image",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 4134,
+            "FN": 1043,
+            "FP": 743
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 4130,
+            "FN": 1047,
+            "FP": 745
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 4272,
+            "FN": 905,
+            "FP": 788
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 4319,
+            "FN": 858,
+            "FP": 787
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 4151,
+            "FN": 1026,
+            "FP": 767
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 4156,
+            "FN": 1021,
+            "FP": 777
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 4347,
+            "FN": 830,
+            "FP": 741
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 4317,
+            "FN": 860,
+            "FP": 709
+          }
+        }
+      ],
+      "sha256": "2ee1c1984c4c03bfb591773849fb478c43d5374024bad65dc668cd497c9f2f08"
+    },
+    {
+      "path": "case_03.png",
+      "case_id": 3,
+      "filename": "20060522_45583_0100_PP",
+      "crop_native_yx": [
+        783,
+        1581,
+        933,
+        1686
+      ],
+      "selection_reason": "lowest_nonzero_candidate_coverage_in_size",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 964,
+            "FN": 191,
+            "FP": 486
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 965,
+            "FN": 190,
+            "FP": 467
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 824,
+            "FN": 331,
+            "FP": 317
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 803,
+            "FN": 352,
+            "FP": 310
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 991,
+            "FN": 164,
+            "FP": 666
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 990,
+            "FN": 165,
+            "FP": 595
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 800,
+            "FN": 355,
+            "FP": 256
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 837,
+            "FN": 318,
+            "FP": 301
+          }
+        }
+      ],
+      "sha256": "dc0994c24dde75a3c10461eeecef043ff21604b08a408c5b30c04ca2f6c1a51c"
+    },
+    {
+      "path": "case_04.png",
+      "case_id": 4,
+      "filename": "20060411_61214_0200_PP",
+      "crop_native_yx": [
+        819,
+        489,
+        883,
+        546
+      ],
+      "selection_reason": "lowest_nonzero_candidate_coverage_in_size",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 107,
+            "FN": 310,
+            "FP": 21
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 108,
+            "FN": 309,
+            "FP": 23
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 158,
+            "FN": 259,
+            "FP": 120
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 181,
+            "FN": 236,
+            "FP": 155
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 106,
+            "FN": 311,
+            "FP": 21
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 106,
+            "FN": 311,
+            "FP": 19
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 177,
+            "FN": 240,
+            "FP": 120
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 193,
+            "FN": 224,
+            "FP": 114
+          }
+        }
+      ],
+      "sha256": "931a4efe042894406ac506860dbca5aaf0ec35a3d9239783b893f75654394459"
+    },
+    {
+      "path": "case_05.png",
+      "case_id": 5,
+      "filename": "20060522_45583_0100_PP",
+      "crop_native_yx": [
+        559,
+        1562,
+        716,
+        1631
+      ],
+      "selection_reason": "largest_near_candidate_with_zero_S3",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 1033,
+            "FN": 320,
+            "FP": 356
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 1032,
+            "FN": 321,
+            "FP": 359
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 1141,
+            "FN": 212,
+            "FP": 372
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 1156,
+            "FN": 197,
+            "FP": 449
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 1079,
+            "FN": 274,
+            "FP": 635
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 1077,
+            "FN": 276,
+            "FP": 585
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 1188,
+            "FN": 165,
+            "FP": 389
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 1072,
+            "FN": 281,
+            "FP": 315
+          }
+        }
+      ],
+      "sha256": "6b37321d62ec23426eac5c3988f5b0572a4a8e74f2bea43a8417bbaa5726fd00"
+    },
+    {
+      "path": "case_06.png",
+      "case_id": 6,
+      "filename": "20051205_31934_0400_PP",
+      "crop_native_yx": [
+        1102,
+        1569,
+        1368,
+        1642
+      ],
+      "selection_reason": "size_without_nonzero_S3_largest_near_candidate",
+      "counts": [
+        {
+          "method": "T0",
+          "seed": 2027,
+          "counts": {
+            "TP": 2261,
+            "FN": 925,
+            "FP": 188
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2027,
+          "counts": {
+            "TP": 2247,
+            "FN": 939,
+            "FP": 182
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2027,
+          "counts": {
+            "TP": 2639,
+            "FN": 547,
+            "FP": 352
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2027,
+          "counts": {
+            "TP": 2671,
+            "FN": 515,
+            "FP": 419
+          }
+        },
+        {
+          "method": "T0",
+          "seed": 2028,
+          "counts": {
+            "TP": 2417,
+            "FN": 769,
+            "FP": 219
+          }
+        },
+        {
+          "method": "TW",
+          "seed": 2028,
+          "counts": {
+            "TP": 2410,
+            "FN": 776,
+            "FP": 220
+          }
+        },
+        {
+          "method": "N0",
+          "seed": 2028,
+          "counts": {
+            "TP": 2526,
+            "FN": 660,
+            "FP": 355
+          }
+        },
+        {
+          "method": "NL",
+          "seed": 2028,
+          "counts": {
+            "TP": 2622,
+            "FN": 564,
+            "FP": 437
+          }
+        }
+      ],
+      "sha256": "7533db2ee48bd8ab281a95a975c06449db4b4360cdb91c315f9b8882cfb6bf6a"
+    }
+  ],
+  "inputs": {
+    "data/maples_handoff_20261008/labels/Vessels/20060412_60913_0200_PP.png": "bfafb60ed2de4144654138030c5e1cf5f8a2cf6b3497cf5b4fb4f02c4cd2d677",
+    "experiments/a15_1_maples_dev_evaluation_20261015/dev/20060412_60913_0200_PP/fov.png": "800886c4cf36fb2a92bc9337864900147a7a952630d6b04c388424c09613d919",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "6b67396de54bfa99cf6e406ad3474e77e84e7eab41588bf3387950448b623b2f",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "3071bf61d206da4f56fa5702d70e369dacad5fcabd2fcd55b8707bd66e1dbc65",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060412_60913_0200_PP.npy": "9b027d3a25d57114047fbe5e32c1ad5ef5b1fbe2858f17274b227c2c7c222bbb",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060412_60913_0200_PP.npy": "ecb9c882489c43ea24d8992bac5ff282ad14141d3f6b736fe87558a4603c0d0d",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "996c8953d07501d921e26c614a627cada31431925a9e7ce23ac70e154b9ae3e0",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060412_60913_0200_PP.npy": "9c8db5fcdc0e32c0090c3f0e376ddd10bf53e8c6f745a27f922eb51896349756",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060412_60913_0200_PP.npy": "7b3c39963271d9ad6d6a78df04c88d221f1b66ddfef3bab6e85db9e1b2875386",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060412_60913_0200_PP.npy": "dfe8ef62ba8629137a8f6b991a2ef5adea356bd0268af026233e55e02e07dbc6",
+    "data/maples_handoff_20261008/labels/Vessels/20060522_45248_0100_PP.png": "b78285f76d775f60551bd7cfcb48e765c88604e7f34b965242b59b5c2c1e05fc",
+    "experiments/a15_1_maples_dev_evaluation_20261015/dev/20060522_45248_0100_PP/fov.png": "e68c8ea8950d7addeccc27192037fed20a19cfab6560ed8874b86baa0bb34124",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "efc12ca08e0cef469cf6f41dc69466d7c890ced4a386a07f2b91634a9808e13d",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "c506dab09cfce928b04e9c711837312274f148aa6a7830c12a14b1b8a57949a2",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45248_0100_PP.npy": "ac0b07188f484aac62c93826e24d9933d8ff72beb1c42daa71cc827230e91a6a",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060522_45248_0100_PP.npy": "f8489c19e313894c424ccf41bcd17ac0d6593187a3e6b5afda6b12995e61a788",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "99fe5d484e3acd021d072ed5e0e17773c8cec975311ed862153fd93da89ae374",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060522_45248_0100_PP.npy": "4628dcb5408b25b69d1336c8f06c6fba4c4a9166963170148855114eef0e1dcf",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45248_0100_PP.npy": "1084072bb6b2fcf02583b4a542c90f29b4323e9fc9e2de7d6f3c07a8f1091814",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060522_45248_0100_PP.npy": "8a9e2e66c6358e97594c166550eee73d2fdd68aae2041c8a0eb187c5c1085455",
+    "data/maples_handoff_20261008/labels/Vessels/20060522_45583_0100_PP.png": "7a7791ce9d0d0ef1f53d5f3348852c0f727b88e95324842c770d901297efa89b",
+    "experiments/a15_1_maples_dev_evaluation_20261015/dev/20060522_45583_0100_PP/fov.png": "728c52ced0b9524919ef7265e5bb38391944343e7c18320a70ff8f95fc9d49f8",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "07e972e50fb934779f7ae069c909c9d3693b0b2d8e83d082a38d24479d2acfa1",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "659d442d4c95f69cda320a047b83dd7efab8e9419d400e90b54dd2394b3abc36",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060522_45583_0100_PP.npy": "ae030c0d277d696efab925d2d7871fa2807bbd441a4b03164e40bbfcc94fcd9f",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060522_45583_0100_PP.npy": "2f2dd5f55d5a739b83d8599bc8b430c2d9e0bc970ba86ec026f490e7fdca9272",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "19deb70e6ab0691573fc87b210c51f1956f6816bb51ea24c9ad9d7d3fc352e6f",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060522_45583_0100_PP.npy": "be5d1a7f0d1d6bc4cec16a37c0d473e136ce05bfa77273baf89f2f022c26837a",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060522_45583_0100_PP.npy": "eb66fe2b2755944d0b02881d6ab7371a779a3fc49bed7b88b394d0d8895b2b36",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060522_45583_0100_PP.npy": "bc9459b29806797ca8a8916609db25f0916d2c0909ecda9828245a278be6f58d",
+    "data/maples_handoff_20261008/labels/Vessels/20060411_61214_0200_PP.png": "02061e14d55a391c88f5bdcc5cb4eaee30807f8aa422f0d9841ea02934d3ea92",
+    "experiments/a15_1_maples_dev_evaluation_20261015/dev/20060411_61214_0200_PP/fov.png": "2ef4f3a3ca7b270bd1b7a6030c2cf6e1d1fc9f4c7db3b2428d84b03fe35e5de0",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "bafff7c9f4284fbfc746f1856a0aef022f9e68cc67baa6103fda10df52fa9f5e",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "eb9e51eafe259eff3d35c51143f92c04ac525ac568e72bc7ace97fe9de38d811",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20060411_61214_0200_PP.npy": "5e2640d1589eafcded28f4d6fbaabc53c2b1adc339355e9f8357e74abf869706",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20060411_61214_0200_PP.npy": "f672586ecb1fbf462e376da0ca6f3a149dc6925c9a911bf7641e9259d74117ea",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "ec69493c1d09059fb3f76db386e0268c9159f90b8ed4619eb26718d4036f64f8",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20060411_61214_0200_PP.npy": "97bda3718c40826ce4cc7a6fd175b224c8dc840cbdc6016ab97e04ab8d34b4ec",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20060411_61214_0200_PP.npy": "5bee86445a00c0284e72f0469cef007f2db18443ae84aa2b75617f5421420c15",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20060411_61214_0200_PP.npy": "6c5543c78ce7d6ad11c72bbc7c092f6643483829b919a49e159f159b3f3498bb",
+    "data/maples_handoff_20261008/labels/Vessels/20051205_31934_0400_PP.png": "39b844c75d69cf484793a8505c3142a494fee716fd3c8c13a715573b3f5817d4",
+    "experiments/a15_1_maples_dev_evaluation_20261015/dev/20051205_31934_0400_PP/fov.png": "a7fe1d865fb76eaba7a2d72fdaf9e36f0e4873b9416406eda42ea8f7f21c3655",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "82f4b264f683f6ddacc3ca467f80c76ec46eec51e86c679d18edd071544156ef",
+    "experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "b130c9ce7ec8cfbd86c82fd872f924b5653c8f4f7abd7a04b6230254371fde67",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/dev_predictions/20051205_31934_0400_PP.npy": "4b3b5c13e459cc1408d08229a91f9c53b67aceaf4e46457f87237210720669ff",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2027/dev_predictions/20051205_31934_0400_PP.npy": "da750a7cc695d3ddd780f7d75e2737cbe9d7d2bdc421e42c3b2e36ea3107c005",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "081b4a785b26597653d97a456bb055e5908abf7a1149207a75659862fa7d50d3",
+    "experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities/20051205_31934_0400_PP.npy": "0260260f2a0addd2eef26d26e90c1b090bf12f38cea3c2dc5b8ee1182c22c26f",
+    "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/dev_predictions/20051205_31934_0400_PP.npy": "e2f084b0d06b98e215d1b70859300320b03a04e0a3896cf8277458d974cdfc61",
+    "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/terminal_evaluation_20261103/runs/seed_2028/dev_predictions/20051205_31934_0400_PP.npy": "728650d5e0f3fd3f38107051e364962f75a7eef1da8ff31cc2e8f98d6f19ba41"
+  },
+  "metric_checks": 96,
+  "RGB_read": false,
+  "Test_read": false,
+  "model_forwards": 0,
+  "scope": "six original metric-coverage cases; not representative prevalence"
+}

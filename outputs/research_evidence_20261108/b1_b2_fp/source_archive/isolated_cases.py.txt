@@ -1,0 +1,50 @@
+"""Deterministic adverse-case supplement; no model or threshold changes."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+import importlib.util,json
+from pathlib import Path
+import numpy as np
+from scipy import ndimage
+from PIL import Image
+
+O=Path(__file__).resolve().parent;S=O.parent.parent
+sp=importlib.util.spec_from_file_location('fp_diagnostic_plot',O/'fp_analysis.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
+manifest=m.readj(S/'references/dev/manifest.json');a0={r['filename']:r for r in m.readj(S/'a0_reuse_binding.json')['probability_maps']}
+planb=m.readj(m.ROOT/'docs/plan_b_error_analysis_20261019/source_manifest.json');rgbs={r['filename']:r['inputs']['RGB']['path'] for r in planb['images']}
+best={a:[] for a in ['B1','B2']}
+for im in manifest['images']:
+    n=im['filename']
+    with np.load(im['reference_npz'],allow_pickle=False) as z:gt=z['GT'].astype(bool);fov=z['FOV'].astype(bool)
+    p=np.load(a0[n]['path'],mmap_mode='r');old=(p>=.5)&fov;adj=ndimage.binary_dilation(old,structure=np.ones((3,3),np.uint8))
+    for a in ['B1','B2']:
+        b=np.load(S/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy',mmap_mode='r');new=(b>=.5)&fov&~gt&~old
+        lab,nc=ndimage.label(new,structure=np.ones((3,3),np.uint8));counts=np.bincount(lab.ravel());counts[0]=0
+        excluded=np.unique(lab[new&adj]);counts[excluded]=0
+        if not counts.any():continue
+        cid=int(np.argmax(counts));yy,xx=np.nonzero(lab==cid);first=[int(yy[0]),int(xx[0])]
+        y=(int(yy.min())+int(yy.max()))//2;x=(int(xx.min())+int(xx.max()))//2
+        box=[x//512*512,y//512*512,min((x//512+1)*512,fov.shape[1]),min((y//512+1)*512,fov.shape[0])]
+        best[a].append(dict(method=a,filename=n,component_area=int(counts[cid]),component_first_yx=first,native_bbox=box))
+selected=[]
+for a in ['B1','B2']:
+    ordered=sorted(best[a],key=lambda r:(-r['component_area'],r['filename'],r['component_first_yx']))
+    selected.extend(ordered[:2])
+figures=[];used={}
+for r in selected:
+    n=r['filename'];box=r['native_bbox'];key=(n,tuple(box))
+    if key in used:r['figure']=used[key];continue
+    im=next(z for z in manifest['images'] if z['filename']==n)
+    with np.load(im['reference_npz'],allow_pickle=False) as z:gt=z['GT'].astype(bool);fov=z['FOV'].astype(bool)
+    rgb=np.asarray(Image.open(rgbs[n]).convert('RGB'))
+    probs={a:np.load(a0[n]['path'] if a=='A0' else S/f'runs/{a}/evaluation/step_002000/probabilities/{n}.npy',mmap_mode='r') for a in m.METHODS}
+    fps=m.fp_masks(probs,gt,fov);sets=m.sets_from_fp(fps);code=m.membership(fps);panels=m.panels(rgb,gt,fps,sets,code)
+    for index,a in enumerate(m.METHODS,2):
+        p=(probs[a]>=.5)&fov
+        panels[index]=(a+': TP GREEN / FP RED / FN BLUE',m.paint(rgb,[(gt&~p,(50,110,255),.8),(gt&p,(30,230,80),.55),(fps[a],(255,30,25),.87)]))
+    file='atlas/'+n+'_isolated_new_'+r['method']+'.png'
+    dims=m.save_sheet(O/file,panels,n+' | largest isolated new FP | bbox='+str(box),crop=box)
+    used[key]=file;r['figure']=file;figures.append(dict(path=file,size=list(dims),filename=n,kind='isolated_new_adverse_supplement',bbox=box))
+m.writej(O/'isolated_case_selection.json',dict(rule='Top two per arm by area of a new-FP 8-component that does not touch A0 prediction in 8-neighborhood; ties filename and first coordinate; deduplicate identical crop.',
+    exploratory=True,no_medical_classification=True,selected=selected))
+m.writej(O/'additional_figures_manifest.json',figures)
+print(json.dumps(selected,ensure_ascii=False,indent=2))
