@@ -1,0 +1,188 @@
+"""Independent CPU checks and all-image plots for the completed diagnostic."""
+import os
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['OMP_NUM_THREADS']='2'
+os.environ['OPENBLAS_NUM_THREADS']='1'
+from pathlib import Path
+import csv,json,hashlib,time,importlib.util
+import numpy as np
+from scipy.ndimage import distance_transform_edt
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+ROOT=Path('${RETINA_PROJECT_ROOT}');CODE=ROOT/'code/retinal-vessel-study'
+BASE=ROOT/'experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1'
+SCI=BASE/'scientific_b1_b2_2000_v1_20261022'
+DSTAGE=BASE/'focal_dice_scientific_2000_v1_20261024';DOUT=DSTAGE/'runs/seed_2026/C'
+OUT=DOUT/'analysis/probability_fpfn_diagnosis_v1'
+METHODS=['A0','D','B1','B2'];COLORS={'A0':'#202020','D':'#d55e00','B1':'#0072b2','B2':'#8c56a1'}
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def dump(p,q):
+    with Path(p).open('x',encoding='utf8') as f:json.dump(q,f,ensure_ascii=False,indent=2,allow_nan=False)
+
+
+def main():
+    started=time.monotonic();summary=json.loads((OUT/'diagnostic_summary.json').read_text())
+    manifest=json.loads((OUT/'input_manifest.json').read_text());audit={}
+    for p,h in manifest.items():assert sha(p)==h
+    refs=json.loads((SCI/'references/dev/manifest.json').read_text())['images'];names=[r['filename'] for r in refs]
+    t0=ROOT/'experiments/t0_tw_core_20261016/runs/seed_2026/T0';a0cfg=json.loads((t0/'config.json').read_text())
+    pairs=[json.loads(x) for x in (t0/'pairing.jsonl').read_text().splitlines()]
+    assert len(pairs)==2000 and [x['step'] for x in pairs]==list(range(1,2001))
+    audit[str(t0/'config.json')]=sha(t0/'config.json');audit[str(t0/'pairing.jsonl')]=sha(t0/'pairing.jsonl')
+    shared=['seed','max_steps','source_m0_sha256','batch_size','patch','learning_rate','weight_decay','betas','eps','scheduler','clip_norm','amp','amp_initial_scale','mean','std','train_sample_filenames']
+    cfgs={'A0':a0cfg};pair_checks={}
+    for method in ['B1','B2','D']:
+        config=SCI/'configs'/(method+'.json') if method!='D' else t0/'config.json'
+        cfg=json.loads(config.read_text());cfgs[method]=cfg
+        for k in shared:assert cfg[k]==a0cfg[k],(method,k)
+        train=SCI/'runs'/method/'train.jsonl' if method!='D' else DOUT/'train.jsonl'
+        rows=[json.loads(x) for x in train.read_text().splitlines()]
+        assert len(rows)==2000 and [x['step'] for x in rows]==list(range(1,2001))
+        assert all(row['pair']==p for row,p in zip(rows,pairs))
+        pair_checks[method]={'batches_exact':2000,'actual_inputs_exact':8000}
+        audit[str(config)]=sha(config);audit[str(train)]=sha(train)
+    q=json.loads((DSTAGE/'protocol.json').read_text());assert q['experiment']['gamma']==1 and q['experiment']['seed']==2026
+    for f in [DSTAGE/'protocol.json',DSTAGE/'SCIENTIFIC_PROTOCOL.md',SCI/'SCIENCE_RELEASE.json',SCI/'ready_binding.json']:
+        audit[str(f)]=sha(f)
+    # Same original U-Net code and architecture are pinned by both stage bindings.
+    old=json.loads((SCI/'ready_binding.json').read_text())['sources']
+    new=json.loads((DSTAGE/'cpu_preparation/source_binding.json').read_text())
+    for rel in ['retinal_m0/model.py','configs/development_v1.json']:
+        p=str(CODE/rel);assert sha(p)==old[p] and sha(p)==new['inherited_receipts']['original_expected_sha256'][p];audit[p]=sha(p)
+    comparison={'status':'DIRECTLY_PAIRED_COMPARABLE','methods':METHODS,'seed':2026,'endpoint':2000,
+                'model':'same original U-Net and FIVES M0','M0_sha256':a0cfg['source_m0_sha256'],
+                'Train_images':110,'Dev_images':28,'frozen_threshold':.5,
+                'GT_FOV':'same sealed native reference, includes original U for whole-image metrics',
+                'aggregation':'per-image macro over fixed28, pooled counts separately labelled',
+                'pixel_rule':'probability>=threshold, no filtering or postprocessing',
+                'pair_checks':pair_checks,'shared_config_fields_checked':shared,
+                'D_directory_note':'D phase has legacy runs/seed_2026/C folder name; actual checkpoint/metrics method and phase are D, not candidate C',
+                'historical_primary_and_guard_rules_not_rewritten':True}
+    dump(OUT/'comparability_review.json',comparison)
+    packs={};curves={};counts={}
+    for method in METHODS:
+        with np.load(OUT/(method+'_all_threshold_counts.npz'),allow_pickle=False) as z:
+            t=z['thresholds'];tf=z['thresholds_float32'];tp=z['TP'];fp=z['FP'];g=z['GT'];f=z['FOV'];assert list(z['filenames'])==names
+        counts[method]=(tp,fp,g,f);fn=g[:,None]-tp
+        values={'dice':2*tp/(2*tp+fp+fn),'precision':np.divide(tp,tp+fp,out=np.full(tp.shape,np.nan),where=tp+fp>0),'recall':tp/g[:,None],'fp_density':fp/f[:,None]}
+        packs[method]=values;curves[method]={k:v.mean(axis=0) for k,v in values.items()}
+        for k in values:assert abs(curves[method][k][5000]-summary['methods'][method]['fixed_05'][k])<1e-12
+    # Independent comparison against the previous seven-threshold CPU diagnostic.
+    legacy=SCI/'analysis/loss_function_review_20261024/threshold_per_image.csv';audit[str(legacy)]=sha(legacy)
+    groups={'A0_2026':'A0','B1':'B1','B2':'B2'};checks=0
+    with legacy.open() as f:
+        for row in csv.DictReader(f):
+            if row['method'] not in groups:continue
+            method=groups[row['method']];i=names.index(row['filename']);j=int(round(float(row['threshold'])*10000));tp,fp,g,_=counts[method]
+            for k,v in [('TP',int(tp[i,j])),('FP',int(fp[i,j])),('FN',int(g[i]-tp[i,j]))]:assert v==int(row[k]);checks+=1
+            for k in ['dice','precision','recall','fp_density']:assert abs(packs[method][k][i,j]-float(row[k]))<1e-12;checks+=1
+    dirs={'A0':t0/'evaluation/step_002000/probabilities','D':DOUT/'evaluation/step_002000/probabilities',
+          'B1':SCI/'runs/B1/evaluation/step_002000/probabilities','B2':SCI/'runs/B2/evaluation/step_002000/probabilities'}
+    stat=json.loads((OUT/'probability_statistics_per_image.json').read_text());by={(x['method'],x['filename']):x for x in stat}
+    # Validate exact AP with a second algorithm, first image per native size,
+    # selected without reference to scores or outcomes.
+    chosen={}
+    for r in refs:chosen.setdefault(tuple(r['native_shape']),r)
+    ap_checks=[];brute_checks=0
+    for r in chosen.values():
+        with np.load(r['reference_npz'],allow_pickle=False) as z:fov=z['FOV'].astype(bool);y=z['GT'][fov].astype(bool)
+        i=names.index(r['filename'])
+        for method in METHODS:
+            prob=np.load(dirs[method]/(r['filename']+'.npy'),allow_pickle=False)[fov]
+            fg=np.sort(prob[y]);bg=np.sort(prob[~y]);p_tp=len(fg)-np.searchsorted(fg,fg,side='left');p_fp=len(bg)-np.searchsorted(bg,fg,side='left')
+            ap=float(np.mean(p_tp/(p_tp+p_fp)));err=abs(ap-by[(method,r['filename'])]['AP_exact']);assert err<1e-12
+            ap_checks.append({'method':method,'filename':r['filename'],'absolute_error':err})
+            jbest=int(round(summary['methods'][method]['best_on_same_Dev']['threshold']*10000))
+            for j in [1000,5000,9000,jbest]:
+                pred=prob>=tf[j];assert int((pred&y).sum())==counts[method][0][i,j] and int((pred&~y).sum())==counts[method][1][i,j];brute_checks+=2
+    # D-only complement to existing B1/B2 spatial evidence, same native r=1.
+    support=[]
+    for r in refs:
+        name=r['filename']
+        with np.load(r['reference_npz'],allow_pickle=False) as z:fov=z['FOV'].astype(bool);gt=z['GT'].astype(bool)&fov
+        p=np.load(dirs['A0']/(name+'.npy'),allow_pickle=False)>=.5;p&=fov
+        d=np.load(dirs['D']/(name+'.npy'),allow_pickle=False)>=.5;d&=fov
+        new=d&~p&~gt;near_tp=distance_transform_edt(~(p&gt))<=1;near_fp=distance_transform_edt(~(p&~gt))<=1
+        support.append({'filename':name,'new_FP':int(new.sum()),'near_A0_TP_only':int((new&near_tp&~near_fp).sum()),
+                        'near_A0_FP_only':int((new&near_fp&~near_tp).sum()),'near_both':int((new&near_fp&near_tp).sum()),
+                        'near_neither':int((new&~near_tp&~near_fp).sum())})
+    pooled={k:sum(x[k] for x in support) for k in support[0] if k!='filename'}
+    assert pooled['new_FP']==34637 and sum(pooled[k] for k in ['near_A0_TP_only','near_A0_FP_only','near_both','near_neither'])==pooled['new_FP']
+    dump(OUT/'D_new_FP_support.json',{'definition':'reuse native Euclidean r<=1, GT-relative support; not anatomy or all-thickening confirmation','totals':pooled,'per_image':support})
+    # Leave-one-image-out threshold sensitivity: reuses counts, not independent validation.
+    main=np.arange(1000,9001);loio={}
+    for method in METHODS:
+        dice=packs[method]['dice'];total=dice.sum(axis=0);held=[]
+        for i,name in enumerate(names):
+            j=int(main[np.argmax((total-dice[i])[main]/27)])
+            held.append({'filename':name,'threshold_fitted_on_other27':float(t[j]),'heldout_dice':float(dice[i,j]),'fixed05_dice':float(dice[i,5000])})
+        loio[method]={'mean_heldout_dice':float(np.mean([x['heldout_dice'] for x in held])),
+                      'mean_gain_over_fixed05':float(np.mean([x['heldout_dice']-x['fixed05_dice'] for x in held])),
+                      'per_image':held,'independent_validation':False,'note':'all28 previously inspected; internal stability check only, not fresh calibration data'}
+    dump(OUT/'LOIO_threshold_sensitivity.json',loio)
+    # Original native-size strata, descriptive and not disease-adjusted.
+    sizes={}
+    for shape in chosen:
+        ids=[i for i,r in enumerate(refs) if tuple(r['native_shape'])==shape]
+        sizes[str(shape)]={'n_images':len(ids),'methods':{m:{'Dice05':float(packs[m]['dice'][ids,5000].mean()),'AP_macro':float(np.mean([by[(m,names[i])]['AP_exact'] for i in ids]))} for m in METHODS}}
+    dump(OUT/'native_size_descriptive.json',sizes)
+    # Overview and all28: no case selection.
+    plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False})
+    fig,ax=plt.subplots(2,2,figsize=(13.5,9))
+    for method in METHODS:
+        c=curves[method];color=COLORS[method]
+        ax[0,0].plot(t[main],100*c['dice'][main],label=method,color=color)
+        zoom=np.arange(3500,7001);ax[0,1].plot(t[zoom],100*c['dice'][zoom],color=color,label=method)
+        use=main[np.isfinite(c['precision'][main])]
+        ax[1,0].plot(100*c['recall'][use],100*c['precision'][use],color=color,label=method)
+        ax[1,1].plot(100*c['fp_density'][main],100*c['recall'][main],color=color,label=method)
+        for a in [ax[0,0],ax[0,1]]:a.scatter([.5],[100*c['dice'][5000]],color=color,s=20,zorder=3)
+        ax[1,0].scatter([100*c['recall'][5000]],[100*c['precision'][5000]],color=color,s=20)
+        ax[1,1].scatter([100*c['fp_density'][5000]],[100*c['recall'][5000]],color=color,s=20)
+    ax[0,0].set(xlabel='Global probability threshold',ylabel='Dice, image macro (%)',title='Fixed endpoint2000: threshold sensitivity')
+    ax[0,1].set(xlabel='Global probability threshold',ylabel='Dice, image macro (%)',title='Near the working point (zoom)')
+    ax[1,0].set(xlabel='Recall, image macro (%)',ylabel='Precision, image macro (%)',xlim=(75,95),title='PR curves: one global threshold per point')
+    ax[1,1].set(xlabel='FP/FOV, image macro (%)',ylabel='Recall, image macro (%)',xlim=(1,4),title='Recall versus FP cost')
+    for a in ax.flat:a.grid(alpha=.2);a.legend()
+    fig.suptitle('A0 / D / B1 / B2 | seed2026 Dev28 | dots: threshold0.5 | diagnostic only')
+    fig.tight_layout();fig.savefig(OUT/'threshold_PR_overview.png',dpi=170);plt.close(fig)
+    fig,ax=plt.subplots(7,4,figsize=(16,19),sharex=True)
+    for i,a in enumerate(ax.flat):
+        for method in METHODS:a.plot(t[main],100*packs[method]['dice'][i,main],color=COLORS[method],lw=.9,label=method)
+        a.axvline(.5,color='grey',lw=.6,ls=':');a.set_title(names[i],fontsize=7);a.tick_params(labelsize=7);a.grid(alpha=.15)
+    ax[0,0].legend(fontsize=7);fig.suptitle('All28 Dev images; same global threshold axis; no selected examples')
+    fig.tight_layout(rect=[0,0,1,.98]);fig.savefig(OUT/'all28_Dice_thresholds.png',dpi=140);plt.close(fig)
+    fig,ax=plt.subplots(2,2,figsize=(13.5,9));centers=(np.arange(100)+.5)/100
+    for method in METHODS:
+        rows=[x for x in stat if x['method']==method];color=COLORS[method]
+        for j,cls in enumerate(['GT_positive','GT_background']):
+            h=np.sum([x[cls]['histogram100'] for x in rows],axis=0);ax[0,j].plot(centers,h/h.sum(),color=color,label=method)
+        nn=np.sum([x['reliability_N'] for x in rows],axis=0);ps=np.sum([x['reliability_sum_p'] for x in rows],axis=0);ys=np.sum([x['reliability_sum_y'] for x in rows],axis=0);valid=nn>0
+        ax[1,0].plot(ps[valid]/nn[valid],ys[valid]/nn[valid],color=color,label=method)
+    ax[0,0].set(title='GT vessel: class-conditional probability distribution',xlabel='Predicted vessel probability',ylabel='Fraction within GT vessels')
+    ax[0,1].set(title='GT background: class-conditional distribution',xlabel='Predicted vessel probability',ylabel='Fraction within GT background',yscale='log')
+    ax[1,0].plot([0,1],[0,1],ls='--',color='grey');ax[1,0].set(title='20-bin reliability, pixel pooled (descriptive)',xlabel='Mean predicted vessel probability',ylabel='Observed GT vessel fraction')
+    for j,method in enumerate(['D','B1','B2']):
+        v=summary['probability_shift_vs_A0'][method];values=[100*v[c]['mean_delta_image_macro'] for c in ['all_FOV','GT_positive','GT_background']]
+        ax[1,1].bar(np.arange(3)+(j-1)*.23,values,width=.23,color=COLORS[method],label=method)
+    ax[1,1].set(xticks=[0,1,2],xticklabels=['All FOV','GT vessel','GT background'],ylabel='Mean probability change (pp)',title='Class-dependent changes relative to A0');ax[1,1].axhline(0,color='grey',lw=.7)
+    for a in ax.flat:a.grid(alpha=.15);a.legend()
+    fig.suptitle('Calibration diagnostics are not Dice or independent validation')
+    fig.tight_layout();fig.savefig(OUT/'probability_calibration.png',dpi=160);plt.close(fig)
+    # Reuse old spatial evidence explicitly rather than regenerate B1/B2 analyses.
+    for rel in ['fp_error_analysis_v1/report.md','literature_mechanism_review_20261023/report.md','literature_mechanism_review_20261023/focused_geometry_summary_v1.json','literature_mechanism_review_20261023/envelope_support_summary_v1.json']:
+        path=SCI/'analysis'/rel;audit[str(path)]=sha(path)
+    for p,h in {**manifest,**audit}.items():assert sha(p)==h
+    dump(OUT/'FINAL_INPUT_MANIFEST.json',{**manifest,**audit})
+    validation={'status':'INDEPENDENT_CPU_DIAGNOSTIC_CHECKS_PASSED','metadata_and_training_pairs':comparison,
+        'legacy_seven_threshold_checks':checks,'direct_bruteforce_count_checks':brute_checks,
+        'independent_AP_algorithm_checks':ap_checks,'input_files_unchanged':len(set(manifest)|set(audit)),
+        'all28_plot_panels':28,'figures':['threshold_PR_overview.png','all28_Dice_thresholds.png','probability_calibration.png'],
+        'model_inference':0,'GPU_calls':0,'training_updates':0,'official_Test_access':False,'elapsed_seconds':time.monotonic()-started}
+    dump(OUT/'independent_validation.json',validation)
+    print('VALIDATED_AND_PLOTTED',checks,'legacy checks;',len(ap_checks),'independent AP checks;',json.dumps(pooled),flush=True)
+
+
+if __name__=='__main__':main()
