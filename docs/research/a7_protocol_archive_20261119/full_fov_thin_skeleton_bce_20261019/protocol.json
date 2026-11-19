@@ -1,0 +1,602 @@
+{
+  "protocol_id": "maples_full_fov_thin_skeleton_bce_seed2026_v1_20261019",
+  "status": "FROZEN_USER_APPROVED_CONDITIONAL_ON_REAL_HUMAN_AND_ENGINEERING_GATES",
+  "date": "2026-10-19",
+  "project_root": "${RETINA_PROJECT_ROOT}",
+  "authority": {
+    "role": "Sol freezes scientific rules; existing Luna implements gates and the one conditionally approved trajectory",
+    "user_authorization": "用户明确批准：原T0与T0+归一化细骨架BCE(lambda=0.1)，seed2026、2000成功更新；先零系数重放、Crop数量/空目标/梯度/恢复检查及真实小批人工目标核验。仅本轮一条新探索；普通血管正样本BCE对照仅设计、不授权训练；三seed待以后批准。",
+    "historical_conclusions_preserved": "原阶段二PPT、全部旧冻结包、正式T0/TW三seed负面结论、权重/2/1/4000探索结论不改；新目标不是原实验已验证目标。PlanB真实人工仍0/105；不追认用户非结构化看图为已完成审核。"
+  },
+  "question": "在同一M0、相同Train裁块和2000步预算下，新增只由Train GT生成的窄骨架归一化正类BCE，能否提高全域<=3骨架d1覆盖，并保持误报及原保护？此层不能识别骨架特异性因果机制或证明连续性改善。",
+  "scope": {
+    "seed": 2026,
+    "new_scientific_trajectories": 1,
+    "scientific_updates": 2000,
+    "scientific_draws": 8000,
+    "engineering_updates_max": 300,
+    "total_new_successful_updates_max": 2300,
+    "baseline_retraining": false,
+    "train_images": 110,
+    "dev_images": 28,
+    "official_test_access": false,
+    "new_other_losses": false,
+    "new_inference_allowed_after_gates": "仅本轮新候选固定0/200..2000评价；step0只读复用已绑定原Z0概率。不得为补全旧T0曲线新推理旧模型。",
+    "before_real_human_gate": "只允许CPU代码/测试/目标/采样审计、现有概率分析及无推理图册；禁止任何GPU参数更新或新模型推理。",
+    "no_auto_escalation": "不扫描lambda，不增seed/steps/结构/损失/阈值，不自动启动消融组。"
+  },
+  "sources": {
+    "formal_protocol": "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json",
+    "old_evaluation": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/evaluation_protocol_v1.json",
+    "original_ppt": "${RETINA_PROJECT_ROOT}/docs/a13_t0_protocol_closeout_20261015/sources/stage2_ppt_transcript.md",
+    "plan_b_manifest": "${RETINA_PROJECT_ROOT}/docs/plan_b_error_analysis_20261019/source_manifest.json",
+    "source_manifest": "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/source_manifest.json",
+    "train_manifest": "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json",
+    "dev_reference_manifest": "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json",
+    "baseline_run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0",
+    "baseline_checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/step_002000.pt",
+    "baseline_checkpoint_sha256": "23f4a78cb763b5ba10ae3231f86ff93a4d43869cd4a11aa04d59411228fd2163",
+    "zero_replay_reference": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/step_000200.pt",
+    "prior_cpu_analysis": "prior_cpu_analysis.py + prior_cpu_analysis_summary.json: archived prior read-only post-hoc description, NOT original frozen endpoint or independent validation"
+  },
+  "target_definition": {
+    "training_inputs": "Only frozen Train Vessels GT and original RGB-derived FOV. No Dev probabilities/errors, H maps, U maps, image-specific weights, endpoints or branch graphs enter the added training target.",
+    "foreground": "G=V & FOV, full native image; raw GT and frozen RGB FOV remain unchanged",
+    "skeleton": "skimage.morphology.skeletonize(G, method='zhang'), no pruning, erosion, dilation, tube expansion or crop-local re-skeletonization",
+    "radius": "scipy.ndimage.distance_transform_edt(np.pad(G,1))[1:-1,1:-1].astype(float32); width=2*radius evaluated at skeleton pixels",
+    "train_mask": "S_train=skeleton & (radius<=1.5), equivalent to width<=3.0 native pixels, bool mask, subset of G",
+    "U_policy": "Base T0 includes U unchanged. Added target uses only V/FOV and does NOT consult U; valid Train S points in U are retained. Evaluation excludes frozen U for the new skeleton endpoint, just as existing regional support. This intentional train/eval distinction is explicit.",
+    "geometry": "Precompute whole-image S_train once; apply exactly the existing crop,hflip,vflip,CCW_rot90 geometry to RGB,V,FOV,S. No resize, no target-dependent crop/resample and no random-number consumption in target generation.",
+    "units": "Native pixel width proxy, not physical calibre or a definition of all biological capillaries",
+    "library_versions": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "scikit-image": "0.25.2",
+      "torch": "2.4.0+cu121",
+      "Pillow": "12.3.0"
+    },
+    "expected_dev_reference": "Evaluation uses independently generated Dev GT/FOV-only S3, clipped to Omega after skeletonization; 28 valid images/7291 points. Original near target stays 9 images/77 points/19 NA."
+  },
+  "loss": {
+    "computation_dtype": "float32 after unchanged AMP forward; BCEWithLogits/softplus(-z), never log(sigmoid(z))",
+    "baseline": "Reuse bound T0 masked BCE+unweighted soft Dice implementation WITHOUT changing numeric operation order or smoothing (Dice epsilon=1e-6).",
+    "base_per_crop_BCE": "sum(F*BCEWithLogits(z,V))/sum(F)",
+    "base_per_crop_Dice": "1-(2*sum(sigmoid(z)*V*F)+1e-6)/(sum(sigmoid(z)*F)+sum(V*F)+1e-6)",
+    "target_count": "N_j=sum(S_train_j), integer count after frozen geometry",
+    "aux_per_crop": "if N_j>0: sum(S_j*BCEWithLogits(z_j,ones))/N_j; else differentiable exact zero with zero auxiliary logits gradient",
+    "batch": "mean_j(base_BCE_j+base_Dice_j+0.1*aux_j), j=1..4; empty-target crops remain in the four-crop mean",
+    "lambda": 0.1,
+    "lambda_search": false,
+    "no_implicit_normalization": "Do not divide by FOV for aux, pool skeleton counts across batch, average only nonempty crops, multiply the whole T0 loss by a target mask, or modify base BCE denominator/Dice.",
+    "lambda_zero": "Explicit bypass to original T0 loss, not an approximate implementation; zero-replay numeric operations and gradients must be identical.",
+    "empty_FOV": "Existing error_no_resampling; an empty skeleton is not an error and does not change sampling."
+  },
+  "controls": {
+    "base_config_sha256": "f295d2348045c29991f7190d62f1807cc92931a29de0ffb43e9490c54c92f828",
+    "base_config": {
+      "kind": "MAPLES_T0_TW_formal_core_v1",
+      "loss": "unit_weight_BCE_plus_original_unweighted_masked_Dice",
+      "data_root": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008",
+      "source_m0": "${RETINA_PROJECT_ROOT}/checkpoints/m0_10000_20261008/last.pt",
+      "source_m0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+      "normalization_source": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/releases/development_v1/normalization.json",
+      "normalization_sha256": "c7ccde8948b08f9f38730034ef4c126c77b73af173ea8a841acdb6fd82b08f77",
+      "mean": [
+        0.429275223900028,
+        0.19375142502503398,
+        0.07753014774123759
+      ],
+      "std": [
+        0.18544595955624413,
+        0.10540798459784542,
+        0.052217286214809804
+      ],
+      "batch_size": 4,
+      "patch": 512,
+      "crops_per_image": 4,
+      "seed": 2026,
+      "amp": true,
+      "amp_dtype": "float16",
+      "amp_initial_scale": 1024,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "clip_norm": 1,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "scheduler": null,
+      "accumulation": 1,
+      "num_workers": 0,
+      "max_steps": 2000,
+      "save_every": 200,
+      "safe_stop_seconds": 7200,
+      "sampling": "manifest_order_four_round_robin_passes_per_epoch",
+      "geometry_rng": "SeedSequence(seed,global_draw)",
+      "augmentation_order": "crop,hflip,vflip,CCW_rot90",
+      "hflip_probability": 0.5,
+      "vflip_probability": 0.5,
+      "quarter_turn_probability_each": 0.25,
+      "empty_fov": "error_no_resampling",
+      "photometric": false,
+      "resize": false,
+      "official_test": false,
+      "phase": "formal_paired_2000_fixed_endpoint",
+      "method": "T0",
+      "train_sample_filenames": [
+        "20051019_38557_0100_PP",
+        "20051020_55346_0100_PP",
+        "20051020_55701_0100_PP",
+        "20051020_58065_0100_PP",
+        "20051020_58214_0100_PP",
+        "20051020_58276_0100_PP",
+        "20051020_62385_0100_PP",
+        "20051020_64007_0100_PP",
+        "20051020_64945_0100_PP",
+        "20051020_65230_0100_PP",
+        "20051021_39661_0100_PP",
+        "20051116_43995_0400_PP",
+        "20051116_44051_0400_PP",
+        "20051116_44126_0400_PP",
+        "20051116_44690_0400_PP",
+        "20051116_54454_0400_PP",
+        "20051116_55593_0400_PP",
+        "20051116_55643_0400_PP",
+        "20051116_55656_0400_PP",
+        "20051201_37462_0400_PP",
+        "20051202_37349_0400_PP",
+        "20051202_40508_0400_PP",
+        "20051202_41034_0400_PP",
+        "20051202_41143_0400_PP",
+        "20051202_48264_0400_PP",
+        "20051202_48586_0400_PP",
+        "20051202_55834_0400_PP",
+        "20051205_31388_0400_PP",
+        "20051205_32981_0400_PP",
+        "20051205_35354_0400_PP",
+        "20051205_35392_0400_PP",
+        "20051205_57988_0400_PP",
+        "20051205_58125_0400_PP",
+        "20051205_59538_0400_PP",
+        "20051207_55266_0400_PP",
+        "20051207_56227_0400_PP",
+        "20051208_39243_0400_PP",
+        "20051208_39438_0400_PP",
+        "20051208_39498_0400_PP",
+        "20051208_39524_0400_PP",
+        "20051208_40972_0400_PP",
+        "20051208_42314_0400_PP",
+        "20051208_42322_0400_PP",
+        "20051208_42552_0400_PP",
+        "20051212_41169_0400_PP",
+        "20051214_57260_0100_PP",
+        "20051214_57940_0100_PP",
+        "20051216_44832_0200_PP",
+        "20051216_47514_0200_PP",
+        "20060407_41330_0200_PP",
+        "20060407_41831_0200_PP",
+        "20060407_45107_0200_PP",
+        "20060407_46422_0200_PP",
+        "20060410_40481_0200_PP",
+        "20060410_41767_0200_PP",
+        "20060410_44248_0200_PP",
+        "20060410_46874_0200_PP",
+        "20060410_46893_0200_PP",
+        "20060410_47166_0200_PP",
+        "20060410_47331_0200_PP",
+        "20060411_58238_0200_PP",
+        "20060411_58303_0200_PP",
+        "20060411_58328_0200_PP",
+        "20060411_58571_0200_PP",
+        "20060411_58971_0200_PP",
+        "20060411_58993_0200_PP",
+        "20060411_59190_0200_PP",
+        "20060411_59919_0200_PP",
+        "20060411_60283_0200_PP",
+        "20060411_61060_0200_PP",
+        "20060411_61548_0200_PP",
+        "20060412_51952_0200_PP",
+        "20060412_52020_0200_PP",
+        "20060412_52038_0200_PP",
+        "20060412_52840_0200_PP",
+        "20060412_58471_0200_PP",
+        "20060412_58497_0200_PP",
+        "20060412_58668_0200_PP",
+        "20060412_59012_0200_PP",
+        "20060412_59100_0200_PP",
+        "20060412_59717_0200_PP",
+        "20060412_60337_0200_PP",
+        "20060412_60396_0200_PP",
+        "20060412_60573_0200_PP",
+        "20060412_61081_0200_PP",
+        "20060412_61251_0200_PP",
+        "20060412_61365_0200_PP",
+        "20060412_61433_0200_PP",
+        "20060412_61501_0200_PP",
+        "20060412_63032_0200_PP",
+        "20060522_45967_0100_PP",
+        "20060523_43016_0100_PP",
+        "20060523_45235_0100_PP",
+        "20060523_45389_0100_PP",
+        "20060523_48199_0100_PP",
+        "20060523_48425_0100_PP",
+        "20060523_49681_0100_PP",
+        "20060523_50408_0100_PP",
+        "20060523_50489_0100_PP",
+        "20060530_36860_0100_PP",
+        "20060530_53233_0100_PP",
+        "20060530_53522_0100_PP",
+        "20060530_53540_0100_PP",
+        "20060530_53954_0100_PP",
+        "20060530_54117_0100_PP",
+        "20060530_54529_0100_PP",
+        "20060530_54718_0100_PP",
+        "20060530_55180_0100_PP",
+        "20060530_55746_0100_PP",
+        "20060530_55837_0100_PP"
+      ],
+      "protocol_sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+      "execution_binding_id": "t0_tw_core_20261016"
+    },
+    "allowed_config_differences": [
+      "kind",
+      "phase",
+      "method",
+      "loss label",
+      "new protocol/execution/output binding",
+      "new auxiliary lambda/target metadata"
+    ],
+    "immutable_numeric": "All numeric train settings, architecture, normalization, sample order and augmentation remain equal to baseline_config; max_steps=2000.",
+    "initialization": "Load only original M0 model parameters; fresh AdamW/AMP/RNG states matching formal T0 start. Do not resume T0/A15.2/4000/M1.",
+    "pairing": "All 8000 RGB/V/FOV draw tensors, filenames and geometry match formal seed2026 T0 by step/draw. Added S is separately hashed; its construction must not perturb inputs/RNG.",
+    "hardware": {
+      "physical_gpu": 0,
+      "gpu_uuid": "${GPU_UUID}",
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "lock": "${RETINA_PROJECT_ROOT}/experiments/a14_gpu0.lock",
+      "readiness": "仅使用既有GPU0，在原显存/利用率/无其他计算进程条件满足时运行；繁忙则等待或记录阻塞，不杀他人任务"
+    },
+    "runtime_budget": "Expected 0.5-1 GPU hour; accumulate at most 5400 seconds GPU occupancy for gate training + research + new evaluation, excluding CPU prep and queue. At limit save full state/pause; no automatic extra allocation. Existing safe_stop config is not changed.",
+    "storage": "Check space before training; require >=20 GiB free in the experiment filesystem, never delete prior outputs to make room."
+  },
+  "ablation_matrix": [
+    {
+      "id": "A0_T0",
+      "loss": "BCE+Dice",
+      "role": "fixed primary comparator",
+      "execution": "read-only reuse existing formal seed2026 step2000, no full retraining"
+    },
+    {
+      "id": "A1_THIN_BCE",
+      "loss": "BCE+Dice+0.1*mean_BCE_on_S3",
+      "role": "only authorized new scientific trajectory",
+      "execution": "seed2026, fresh M0, exactly 2000 successful updates, conditional gates"
+    },
+    {
+      "id": "A2_POSITIVE_BCE",
+      "loss": "BCE+Dice+0.1*mean_BCE_on_V_and_FOV",
+      "role": "future proposed control for general positive-class emphasis",
+      "execution": "NOT_AUTHORIZED; do not implement or train this arm under this task. Requires separate protocol/user approval after reviewing A1.",
+      "design_note": "Proposed future same initialization/seed/draw/optimizer/budget; only aux support changes S3 to all positive V&FOV. Same lambda and per-crop normalization are not guaranteed matched gradient dose: report empty-crop exposure, target counts and real gradient/L1/L2 mass before making geometry-specific claims."
+    },
+    {
+      "id": "FUTURE_3_SEED",
+      "role": "repeatability check",
+      "execution": "NOT_AUTHORIZED; future paired seeds2026/2027/2028 with independently frozen design. No claim of independent Dev validation, nor three independent M0 pretraining seeds."
+    }
+  ],
+  "gates": {
+    "order": [
+      "C0_CPU_SOURCE_AND_TARGETS",
+      "H1_REAL_HUMAN_TARGET_REVIEW",
+      "G2_GPU_ENGINEERING",
+      "G3_FINAL_LAUNCH_CHECK"
+    ],
+    "C0": {
+      "updates": 0,
+      "model_inference": 0,
+      "checks": [
+        "Bind new code/config/sources without modifying old bindings; independently reconstruct old seven metrics and new endpoint from existing T0 probabilities.",
+        "All 110 Train whole-image S masks match the bound Zhang/padded-EDT reference; bool/native shape/S subset of V&FOV, no data modification, include degenerate fixtures.",
+        "All 8000 future Train draw metadata match baseline; compute target/FOV/positive counts per actual crop, empty fraction per image/size, distribution min/q25/median/q75/max; zeros do not alter draw sequence.",
+        "New Dev S3 mask equals stored thin reference before Omega; new all-domain denominator7291 and 28 valid; old near77/9/19NA and other old metric numerators/denominators reproduce.",
+        "Synthetic CPU loss/gradient fixtures: empty S, single S, unequal counts, all-FOV, empty FOV error, lambda0 identity; no pooling denominator and no background positive target.",
+        "Archive deterministic review selection manifest and unfilled real-human CSV; AI may describe but must not mark human acceptance.",
+        "Every metric/reference valid ID set is fixed before candidate inference. Additional unexpected NA -> stop, not pairwise deletion.",
+        "Train S and the complete8000-draw plan must contain at least one nonempty S crop; otherwise stop as a target-definition failure. Individual zero crops/images remain in the fixed cohort and are fully reported."
+      ]
+    },
+    "H1": {
+      "real_reviewer_minimum": 1,
+      "status_at_freeze": "NOT_PERFORMED",
+      "cases_max": 22,
+      "selection": "12 Train target-definition cases + up to6 Dev old-prediction cases +4 Dev FP cases; all deterministic, pre-candidate, no model forward.",
+      "train_cases": "Strata native sizes(960x1440,1488x2240,1536x2304) x S3 GT-skeleton endpoint(degree1 in full unpruned 8-neighbor skeleton)/nonendpoint. In each stratum choose two distinct flattened (filename,y,x) ranks floor(.25*(n-1)) and floor(.75*(n-1)); empty/singleton strata recorded, no favorable substitution.",
+      "dev_cases": "For each of the three native sizes choose lexicographic median (filename,y,x) in full-domain S3 for all11 old conditions miss and all11 hit; unavailable cells recorded, not replaced with another definition.",
+      "fp_cases": "Formal T0 three-seed mean FP/FOV: two highest and two lowest Dev images, ties filename. Largest existing 8-connected label-relative FP component of seed2026 T0, ties first row-major component; cases are illustrative not biological FP adjudication.",
+      "display": "256-native-pixel clamped crop plus full-image context, unmodified RGB/GT/FOV/full skeleton/S3 panels; for Dev add existing predictions. Exact target marker must not hide it; display-only enlargement is not evaluation preprocessing.",
+      "record_fields": [
+        "case_id",
+        "split",
+        "filename",
+        "native_bbox",
+        "source_sha256s",
+        "reviewer_type=human",
+        "reviewer_name",
+        "reviewed_at",
+        "definition_alignment=yes/no/uncertain",
+        "visible_vessel=visible/limited/uncertain",
+        "artifact_or_label_limit",
+        "notes",
+        "overall_accept_or_pause",
+        "verbatim_human_evidence_reference"
+      ],
+      "pass": "All selected available cases actually reviewed by a real researcher with actual identity/time/evidence; all Train overlay/definition alignment confirmed, no unresolved implementation misalignment; overall signed/quoted researcher acceptance of fixed target as usable exploratory supervision. Uncertain visibility/biology is allowed and retained but suspected systematic GT-spur/target-definition failure pauses scientific review. No deleting targets/Dev cases to pass.",
+      "truthfulness": "AI-filled templates/categories do not satisfy human review. Original PlanB human0/105 remains unchanged unless separately actually reviewed; this stage has its own task-local review evidence. CPU atlas ready -> pause and request real review. Human acceptance after seeing bound cases unlocks already conditionally authorized GPU work, not new arms."
+    },
+    "G2": {
+      "successful_updates_max": 300,
+      "allowed_only_after_C0_H1": true,
+      "runs": [
+        {
+          "id": "lambda0_replay",
+          "successful_updates": 200,
+          "start": "same M0/fresh T0 states",
+          "comparison": "Original T0 first200 log/input records and stored step_000200.pt; bitwise/equivalent canonical tensor digests for model,AdamW,AMP,RNG,cursor; metadata labels/output paths/time excluded, no tolerance relaxation."
+        },
+        {
+          "id": "A1_continuous",
+          "successful_updates": 50,
+          "start": "fresh M0",
+          "comparison": "A1 independent process continuous50"
+        },
+        {
+          "id": "A1_resume",
+          "successful_updates": 50,
+          "start": "fresh M0",
+          "comparison": "A1 25 + independent-process25; match continuous50 complete states and input/S fingerprints"
+        }
+      ],
+      "gradients": "On fixed real Train crops in engineering first50 record base BCE,Dice,unweighted aux,weighted aux and target count; base/aux logits gradient L1/L2 and ratios, combined preclip parameter gradient norm. Use no extra forward, no optimizer update for diagnostics and no RNG changes.",
+      "analytic_check": "For batch B=4 and nonempty crop j, d(lambda*L_aux)/dz=0.1*S*(sigmoid(z)-1)/(4*N_j); outside S/empty crop exactly zero. Weighted auxiliary logits L1 <=0.1 across the batch; compare FP32 analytic gradient with rtol1e-5/atol1e-7. All norm/ratios finite or explicitly NA for zero denominator; magnitude ratio alone is not permission to change lambda.",
+      "no_dev_during_engineering": "No candidate Dev inference, no use of short-run scores for method selection; only fixed Train batches. All engineering states discarded; A1 scientific run starts fresh.",
+      "budget_failure": "Preserve failed attempts and actual update count; exceeding300 engineering updates requires renewed user approval, not automatic retries."
+    },
+    "G3": {
+      "checks": [
+        "H1 genuine evidence and all gate checks passed with exact protocol/source/implementation hashes; state cannot self-declare complete.",
+        "Bind all110 Train target hashes/crop plan/new code and exact initial T0 state; no target from Dev source; GPU0 idle and original lock, adequate disk and time budget.",
+        "Final configuration whitelist and all protected hashes rechecked; controls not weakened; only A1 scientific run enabled."
+      ]
+    },
+    "execution_gate_verdict_file": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/implementation_gate/verification.json",
+    "launch_policy": "Only existing Luna may execute engineering after C0+H1, and then the one approved A1 scientific trajectory after G2+G3; no additional training authorization is needed once these real prerequisites pass. Any scientific change needs user confirmation."
+  },
+  "evaluation": {
+    "new_primary": "fov_thin_recall_d1_w3: per-image count(S3&Omega&dist(P&Omega)<=1)/count(S3&Omega), P=probability>=0.5",
+    "reference_order": "Generate full native Zhang skeleton/radius on V&FOV before U clipping; eval Omega=FOV&~U. Euclidean d1 includes center and four axial neighbors, excludes diagonal sqrt2. No prediction thinning, dilation other than fixed matching support, closing, pruning or topology repair.",
+    "fixed_new_primary_valid_images": 28,
+    "fixed_new_primary_positions": 7291,
+    "per_image_denominators": [
+      {
+        "filename": "20051116_44615_0400_PP",
+        "denominator": 127
+      },
+      {
+        "filename": "20051116_44785_0400_PP",
+        "denominator": 102
+      },
+      {
+        "filename": "20051117_37078_0400_PP",
+        "denominator": 259
+      },
+      {
+        "filename": "20051117_37130_0400_PP",
+        "denominator": 262
+      },
+      {
+        "filename": "20051202_51655_0400_PP",
+        "denominator": 119
+      },
+      {
+        "filename": "20051202_54530_0400_PP",
+        "denominator": 1549
+      },
+      {
+        "filename": "20051205_31934_0400_PP",
+        "denominator": 99
+      },
+      {
+        "filename": "20051205_35224_0400_PP",
+        "denominator": 146
+      },
+      {
+        "filename": "20051205_35276_0400_PP",
+        "denominator": 113
+      },
+      {
+        "filename": "20051205_35305_0400_PP",
+        "denominator": 50
+      },
+      {
+        "filename": "20051208_41707_0400_PP",
+        "denominator": 51
+      },
+      {
+        "filename": "20060407_41937_0200_PP",
+        "denominator": 820
+      },
+      {
+        "filename": "20060411_57853_0200_PP",
+        "denominator": 181
+      },
+      {
+        "filename": "20060411_61214_0200_PP",
+        "denominator": 205
+      },
+      {
+        "filename": "20060411_61478_0200_PP",
+        "denominator": 701
+      },
+      {
+        "filename": "20060412_51656_0200_PP",
+        "denominator": 554
+      },
+      {
+        "filename": "20060412_58287_0200_PP",
+        "denominator": 290
+      },
+      {
+        "filename": "20060412_58889_0200_PP",
+        "denominator": 469
+      },
+      {
+        "filename": "20060412_60913_0200_PP",
+        "denominator": 83
+      },
+      {
+        "filename": "20060412_61299_0200_PP",
+        "denominator": 278
+      },
+      {
+        "filename": "20060522_45248_0100_PP",
+        "denominator": 90
+      },
+      {
+        "filename": "20060522_45583_0100_PP",
+        "denominator": 121
+      },
+      {
+        "filename": "20060523_43038_0100_PP",
+        "denominator": 98
+      },
+      {
+        "filename": "20060523_49859_0100_PP",
+        "denominator": 94
+      },
+      {
+        "filename": "20060530_36895_0100_PP",
+        "denominator": 108
+      },
+      {
+        "filename": "20060530_53062_0100_PP",
+        "denominator": 100
+      },
+      {
+        "filename": "20060530_54390_0100_PP",
+        "denominator": 16
+      },
+      {
+        "filename": "20060530_55390_0100_PP",
+        "denominator": 206
+      }
+    ],
+    "mandatory_metrics": [
+      "fov_thin_recall_d1_w3",
+      "fov_thin_recall_d0_w3",
+      "dice",
+      "precision",
+      "fp_density",
+      "recall",
+      "far_recall",
+      "near_pixel_recall",
+      "near_thin_recall_d1"
+    ],
+    "supplementary": "Cumulative full-domain width<=2,<=4,<=5 d1/d0 using GT-only frozen targets; strata by native image size. Not alternative primary/selection criteria.",
+    "original_metrics": "Existing seven metrics from the frozen evaluator and all original near/internal/far/U/FOV definitions unchanged; FP density=FP/FOV including U, not FP/background FPR; original near thin remains9 valid/77 positions/19NA.",
+    "timepoints": [
+      0,
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1200,
+      1400,
+      1600,
+      1800,
+      2000
+    ],
+    "inference": "Frozen native tiled patch512,stride256,batch4,AMP false, gaussian blend, no TTA/noresize, original FIVES normalization. All28 Dev each time.",
+    "selection": "Only step2000; no best checkpoint, early stopping by Dev, favorable width/threshold/seed/image selection or early outcome-driven extension.",
+    "probabilities": "Retain all10 new evaluation points' native float32 maps (280), counts and source checkpoint SHA. Step0 references existing original-Z0 maps (28), do not overwrite/copy old outputs. Retain all10 complete checkpoints.",
+    "baseline_reuse": "Recompute new endpoint CPU from existing formal T0 step2000 probabilities; reuse original fixed metrics. Do not load old T0 checkpoints for new inference to fill intermediate curves.",
+    "zero_baseline": "Report existing Z0 absolute values through CPU reuse; it is not the new incremental comparator.",
+    "same_FP": {
+      "required": false,
+      "if_reported": "Only terminal supplement with original global grid0..1/1000, smallest feasible threshold to Z0 target0.011634106399528646; actual gap/threshold shown. No per-image threshold, no rescue of failed fixed0.5 result."
+    },
+    "connectivity_scope": "No new clDice/path/terminal-branch success endpoint in this minimal run; retained native probabilities permit future approved analysis. Coverage improvement alone is not continuity or anatomical repair."
+  },
+  "statistics": {
+    "primary_contrast": "A1 step2000 minus formal T0 seed2026 step2000, per-image paired macro difference",
+    "bootstrap": {
+      "resamples": 1000,
+      "generator": "numpy.random.Generator(numpy.random.PCG64(20261016))",
+      "order": "Fixed original Dev order/effective ID set for each metric. Independently reinitialize generator for EACH distinct n; same-n metrics reuse that (1000,n) indices array.",
+      "interval": "np.quantile(estimates,[.025,.975],method='linear')",
+      "save": "All indices and replicate estimates. Do not copy PlanB finalize.py continuous-RNG bug."
+    },
+    "reporting": "Both absolute and paired values, all per-image numerators/denominators/NA/improved-worse-tie and leave-one-image influence as descriptive only. Preserve unfavorable and failed conditions; no p-value/point-level significance search.",
+    "seed_sd": "NA for single-seed exploratory contrast; no fabricated SD from point/image repeats",
+    "uncertainty": "Intervals conditional on this M0 and seed2026, image resampling not validated patient sampling; Dev repeatedly used including CPU direction exploration. Prospective freezing cannot erase prior selection bias."
+  },
+  "interpretation": {
+    "primary_clear": "Primary paired mean>0 and image-bootstrap95%lower>0, conditional exploratory signal only; mean>0 but CI crosses0=uncertain, not confirmed improvement.",
+    "original_protection_clear": "All simultaneous: precision lowerCI>=0, far_recall lowerCI>=0, fp_density upperCI<=0; no clinical safety/noninferiority claim.",
+    "original_protection_cost": "Mean precision/far below0 or mean FP above0=observed cost; mean on allowed side but interval crosses line=protection evidence insufficient.",
+    "additional_safety": "Point differences of overall Dice and full-image Recall must each be>=0; report their intervals, do not call crossed intervals noninferiority. Mandatory d0 paired mean must not be negative for the 'promising' flag.",
+    "promising_flag": "Primary mean>0, original protection means on allowed sides, Dice/fullRecall/d0 point safety passed; use only to discuss applying for future A2/three-seed authorization. If CIs fail, explicitly uncertain. Never auto-launch another group.",
+    "protected_exploratory_gain": "primary_clear AND original_protection_clear AND additional_safety; still only reused-Dev/one-seed evidence, not independent validation or method success.",
+    "mechanism": "A1 vs T0 alone cannot establish skeleton-specific advantage over generic positive weighting, topology/continuity repair, original TW success, physical vessel recovery or clinical benefit.",
+    "engineering_completion": "Fair, complete, reproducible delivery irrespective of positive/negative/inconclusive scientific result."
+  },
+  "outputs": {
+    "root": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019",
+    "code": "New retinal_m0/maples_thin_skeleton_bce*.py and targeted tests, new wrappers as needed; read-only reuse old bound pure functions. Do not modify protected old training/evaluation code or bindings.",
+    "preparation": [
+      "execution_binding.json",
+      "source_manifest/reuse references",
+      "targets/ Train110 masks+hashes",
+      "implementation_gate/crop_plan_and_counts.csv (8000)",
+      "implementation_gate/manual_selection.csv",
+      "implementation_gate/manual_review.csv",
+      "implementation_gate/atlas/",
+      "implementation_gate/verification.json"
+    ],
+    "run": "runs/seed_2026/THIN_BCE_lambda0p1/ : exact config, complete state/checkpoints, train/pairing/crop-loss records and per200-step evaluation",
+    "loss_rows": "8000 actual successful-draw crop rows linked to the same forward/update: N_FOV,N_positive,N_S,empty flag,BCE,Dice,aux_unweighted,aux_weighted; reconcile mean back to train loss. No extra forward for log collection.",
+    "final": [
+      "analysis/fixed_0p5_per_image.csv",
+      "analysis/paired_metrics.json/csv",
+      "analysis/bootstrap_indices_and_estimates",
+      "analysis/point_changes_and_influence",
+      "analysis/negative_cases",
+      "report.html or report.md",
+      "reuse_manifest.json",
+      "completion_verification.json"
+    ],
+    "counts": {
+      "scientific_updates": 2000,
+      "scientific_pairing_rows": 2000,
+      "scientific_draws": 8000,
+      "crop_loss_rows": 8000,
+      "new_checkpoints": 10,
+      "new_evaluations": 10,
+      "new_native_probability_maps": 280,
+      "step0_reused_maps": 28
+    },
+    "completion_and_handoff": "Existing Luna writes actual evidence/gates/human status/update counts/result and limitations to unique STATUS then stops for Sol scientific review."
+  },
+  "stop_conditions": [
+    "Human gate unavailable/pending: finish CPU artifacts, write pending evidence and stop before ANY GPU engineering or inference. Never substitute AI review.",
+    "Source/target/split/initial-state/crop pairing or exact lambda0/recovery mismatch: preserve attempts, pause/report; no full T0 retraining or tolerance relaxation.",
+    "Wrong normalization, off-target gradient, unexpected NA, nonfinite loss/gradient, original AMP retries exhausted, OOM or suspected systematic target/label problem: pause, no unapproved numerical/scientific change.",
+    "GPU busy: wait/report, never kill others or switch GPU; disk insufficient: pause, never purge old results.",
+    "GPU occupancy reaches5400s, engineering success count would exceed300, or scientific trajectory reaches2000: save state/report and stop; extra budget needs user approval.",
+    "Unfavorable intermediate Dev is NOT an early-stop criterion. At final negative/protection failure: deliver it, no lambda search/extra seed/step/arm.",
+    "Any change to evaluation/labels/target definition/loss/coefficient/budget/arms requires explicit user approval before implementation."
+  ]
+}

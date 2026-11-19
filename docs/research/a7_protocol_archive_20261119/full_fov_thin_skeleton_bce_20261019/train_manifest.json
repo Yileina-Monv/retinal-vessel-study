@@ -1,0 +1,2097 @@
+{
+  "protocol_id": "maples_full_fov_thin_skeleton_bce_seed2026_v1_20261019",
+  "count": 110,
+  "order": "original manifest filtered train, exactly baseline train_sample_filenames",
+  "rows": [
+    {
+      "index": 0,
+      "filename": "20051019_38557_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051019_38557_0100_PP.tif",
+        "sha256": "abb4b5f8d222df4a78eaa2ddb047d6d505bc9d23bd125b68cfc436fbe6125754"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051019_38557_0100_PP.png",
+        "sha256": "6bc8a4429e544a45dccaf233317f0ce2e24ee39da4509180620150e3a329b500"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 1,
+      "filename": "20051020_55346_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_55346_0100_PP.tif",
+        "sha256": "fe2e24992574debbafe488cb636603f3799c09b7f8ac923022947d6470257015"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_55346_0100_PP.png",
+        "sha256": "a45704e7cb8ab595dc3140cc2da61e5c9b22fbd4b4f386821c282d92ddc338ae"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 2,
+      "filename": "20051020_55701_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_55701_0100_PP.tif",
+        "sha256": "03be8340729e821df7fbd93ab6f6eb443beb6d2b830d968875e865f6644d32eb"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_55701_0100_PP.png",
+        "sha256": "0331eea6b5f2e9bfa04c3cc2a2ff9b87a800a1b6c3cdc378e89d290f5154eb5a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 3,
+      "filename": "20051020_58065_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_58065_0100_PP.tif",
+        "sha256": "c431306b260ddd02a97d48b3b9768a45de810b05b509fdd0ab1e489fe8085595"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_58065_0100_PP.png",
+        "sha256": "5171848cc5044da2dc5867022311a62916000ab4107599aaab9baa5c0d5a62e5"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 4,
+      "filename": "20051020_58214_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_58214_0100_PP.tif",
+        "sha256": "ad4f413f6abbd29a5ec37bb8759448cc021efeaef00f21a6b07849af7b987661"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_58214_0100_PP.png",
+        "sha256": "4fd331362116aacdbcba919ce3bf55e95551afff7b567e560b71da4b0624d153"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 5,
+      "filename": "20051020_58276_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_58276_0100_PP.tif",
+        "sha256": "98fc5d28e3bba52a8e80ae6b9b229a1475f4e6b3283bb84d5a2f8d24641fa98d"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_58276_0100_PP.png",
+        "sha256": "ca9b35f00e171cfb79d188124d94cbe86f7a31d4af5c72c9a25d61693e4a5cd2"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 6,
+      "filename": "20051020_62385_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_62385_0100_PP.tif",
+        "sha256": "15cf3ecf7ffa23f977f8043563b3358d9eb987f02fdaea8eb342a0ef6f0cdd72"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_62385_0100_PP.png",
+        "sha256": "669eac19ece90a11d13f64e8d81b089b8f7147bb9dce84e28cdcb9b473ffc347"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 7,
+      "filename": "20051020_64007_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_64007_0100_PP.tif",
+        "sha256": "8af44ae381e89ccb7b60f6253b66a030d0670b7b97e940a9274ce1274322f29e"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_64007_0100_PP.png",
+        "sha256": "02aeab32b95031d79a62e4827f9758784405b0b6ed4a8c486e8edcf93d2dd436"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 8,
+      "filename": "20051020_64945_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_64945_0100_PP.tif",
+        "sha256": "ce367c56b6f8b4f759abb12e318a69d92c222845f2d29bb434817774fda67a35"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_64945_0100_PP.png",
+        "sha256": "c2b1d3d36e8371e8a9109c8d2636aef814a9a9a5e725c5bfdba7952440e39fa4"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 9,
+      "filename": "20051020_65230_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051020_65230_0100_PP.tif",
+        "sha256": "b1113becd16bc92eae062e0d1bcfa7991e0a2f55f3cd81d8330de8846c9e5d15"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051020_65230_0100_PP.png",
+        "sha256": "af4905f42f02cc3e9ff4ec5374f7934178532b23c118377c642e4db24c4135db"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 10,
+      "filename": "20051021_39661_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051021_39661_0100_PP.tif",
+        "sha256": "beb09f5ce8854721eeda6c74dc0aa7aaa3bf2b57119dbb4416b86c7335648b84"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051021_39661_0100_PP.png",
+        "sha256": "b683d61ca54a4a2f993f963f4d9efd7afcfaa6fafdb13f4efbb755819c033222"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 11,
+      "filename": "20051116_43995_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_43995_0400_PP.tif",
+        "sha256": "95bf775ebaa36562aeb5bfa3e7039edd953d7febee8ad601916bbd2917fdaa81"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_43995_0400_PP.png",
+        "sha256": "31406b79368b58e470b9764c3e90e764a0665aaf053d98394ab46690af4af9cb"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 12,
+      "filename": "20051116_44051_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_44051_0400_PP.tif",
+        "sha256": "80b69710df5db6fd2ae7e129a263e1589306141d528376902f72af9e3fa351c3"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_44051_0400_PP.png",
+        "sha256": "1b808645df4d37037a77fc818394f04d6e7c332d1d1e8fb9356a197c0c4a1cec"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 13,
+      "filename": "20051116_44126_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_44126_0400_PP.tif",
+        "sha256": "ba04e4258a91272757d75b93b7e842a30ae3a2aafa3ef82d0ac9a605878641f2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_44126_0400_PP.png",
+        "sha256": "f87abd04a66f9995bccca6c4f51f5d9e6407156e1cc5f38ac9201327abe06c17"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 14,
+      "filename": "20051116_44690_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_44690_0400_PP.tif",
+        "sha256": "e550bd7e3cb1b67093b81139afacc6f17c473ba119ef71174f9daca7befe3ef4"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_44690_0400_PP.png",
+        "sha256": "3211c33ca1db985037c87cc96a003e3f1b3b1531f8524c7edb303e6cf66c399d"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 15,
+      "filename": "20051116_54454_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_54454_0400_PP.tif",
+        "sha256": "694ba7a8300f8b0dc2366eacc3a2e30caf1603077b9a49c7c955d597e0358d3a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_54454_0400_PP.png",
+        "sha256": "5ae9720fa3be7673b77801c7bb87fb48be3eef712dea90fbac5a00756c3fc995"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 16,
+      "filename": "20051116_55593_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_55593_0400_PP.tif",
+        "sha256": "d60dd4c4db9518e2e05b805c7c51dfd39cdabcc2d936f0783b4bf49b0f4ba787"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_55593_0400_PP.png",
+        "sha256": "dd2a7c61cf5d5840f2ef221b74538ed593761134a7936498cda79f7e69a5d2b7"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 17,
+      "filename": "20051116_55643_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_55643_0400_PP.tif",
+        "sha256": "e1267d15a62ce46b8519efc9f526cf62b93664c41052ee6a44bfb376ee9fd925"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_55643_0400_PP.png",
+        "sha256": "e1025a120773b6967df7ac94562e62e06c229af00078ffcdfbbb1aa10ea9f47a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 18,
+      "filename": "20051116_55656_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051116_55656_0400_PP.tif",
+        "sha256": "a712c6cbde4431c9fcf28d83a6242c5b0a5f10a797cf069b02378ddd077a90c8"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051116_55656_0400_PP.png",
+        "sha256": "3bd8d195effb4ee3a246ad3a7042b68013a44c1560fdba200b3e54651df0ad6a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 19,
+      "filename": "20051201_37462_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051201_37462_0400_PP.tif",
+        "sha256": "5a49222dfc53b459e5bc62c3119b35536447fe9e8ff0672d6d01693e47ac1433"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051201_37462_0400_PP.png",
+        "sha256": "22430372d56ddfe7bbe3cb622201799822edc1c27e1026ee73b3053d2da890cd"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 20,
+      "filename": "20051202_37349_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_37349_0400_PP.tif",
+        "sha256": "f51c43c2261e43dbd2edfb646f0c9f481615a887ad3efa8e85204b1863edfea8"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_37349_0400_PP.png",
+        "sha256": "e1be0f310c539de2b7dfdad98cc88b1ae219e410ae6b9b0a22da0979045ed527"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 21,
+      "filename": "20051202_40508_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_40508_0400_PP.tif",
+        "sha256": "937da2ef8c54d10254ca8635c4b7bb7851127481e4cad89256f67949a804cf1e"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_40508_0400_PP.png",
+        "sha256": "3a97aadadf855d244943ed3ba2d25bd8e302a11ff1cb1b51ac734f249b9f3fec"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 22,
+      "filename": "20051202_41034_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_41034_0400_PP.tif",
+        "sha256": "cf3c97076c368350346f8bc8cc7f3cb374c7f1e6174999f0a9e857e51226f773"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_41034_0400_PP.png",
+        "sha256": "560b8ceb032cc4a6ecd1e55aab2af90bc104d36f0e73684d01ee86992945f08b"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 23,
+      "filename": "20051202_41143_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_41143_0400_PP.tif",
+        "sha256": "9aadf4bcad318b9371b1055aad7a6531879447a4d39e94d12cefae022c7126e3"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_41143_0400_PP.png",
+        "sha256": "8fc511dd8dcc4fc00ea6d1afec50ea3122b640bc436f4f03a93d07b12c07984e"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 24,
+      "filename": "20051202_48264_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_48264_0400_PP.tif",
+        "sha256": "0cdb6ed392a6110ff340de5bf21e0834a010cea352e2049996abe1db313f8a7a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_48264_0400_PP.png",
+        "sha256": "de036ee6fea8f1687759d3caedd6c5f6768e9ec323ee2c9e96b49576064b99f8"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 25,
+      "filename": "20051202_48586_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_48586_0400_PP.tif",
+        "sha256": "9b9e9646c75b39ffef182505ba1d32c955b1033bf9aec53bd4ba3d1806a0ed36"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_48586_0400_PP.png",
+        "sha256": "84c70f25ce25e119ea404b2b43a26f126697f7a163ea20136bbe162c0a2c319a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 26,
+      "filename": "20051202_55834_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051202_55834_0400_PP.tif",
+        "sha256": "03c034fe50f679f416daef39c9973b3c89f5a7142698556f5cdcd99225281bb1"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051202_55834_0400_PP.png",
+        "sha256": "f909564eb7325b821afd36807cfa8adf2b093b605168275c20fbb542946603a9"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 27,
+      "filename": "20051205_31388_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_31388_0400_PP.tif",
+        "sha256": "22d2ab4d49661041ad64fc4aba89ee3001ce4064c3bea6d7b8c3329c417ca82b"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_31388_0400_PP.png",
+        "sha256": "0666a5c85e98f92b3f313931c8c364fcc1a7fc48c0e5bdfd2a0e70ae7cd2238a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 28,
+      "filename": "20051205_32981_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_32981_0400_PP.tif",
+        "sha256": "40aa3ac43e8ec7f027210aa5e3792fe183a8ee70e702b32bf3290b8b3e1ebcd2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_32981_0400_PP.png",
+        "sha256": "c1b2487fcea2174308b5533b3b58b42ef383a6c50389d5ba866dfd95252ad8b7"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 29,
+      "filename": "20051205_35354_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_35354_0400_PP.tif",
+        "sha256": "9ea3e85ada0a5adf89d1ce57b7886f445ea98d2a3ee6214ef1f22db16ca470ad"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_35354_0400_PP.png",
+        "sha256": "d722da16f7a468efa233f1cc7191b120896b776b97aad13269becceb8acc4ef8"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 30,
+      "filename": "20051205_35392_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_35392_0400_PP.tif",
+        "sha256": "6b5d73879c729dc21b2b1e4cdde667a070b976f0f8eec413f4ff3ac9c52d505d"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_35392_0400_PP.png",
+        "sha256": "8b566c5fca3fdd7b5e15d821699a4d14182e568b9620a2700ce8b6ab081b0771"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 31,
+      "filename": "20051205_57988_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_57988_0400_PP.tif",
+        "sha256": "d0480c69af65999d5920c64b0e07ff074a231ff1d523b56e94d8dc72f48ed473"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_57988_0400_PP.png",
+        "sha256": "b1ef27bd61caae08886b13d50bea7c04a8b372d71f717cb6a75c856c03b30fde"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 32,
+      "filename": "20051205_58125_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_58125_0400_PP.tif",
+        "sha256": "671447e13329df36c5de941d790ada842291df7a5a9447e1b4059fc884deaec8"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_58125_0400_PP.png",
+        "sha256": "8f5594119a7d5fd213385e1917c16b6a08be2c9bc81cf55194b5a05146001174"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 33,
+      "filename": "20051205_59538_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051205_59538_0400_PP.tif",
+        "sha256": "e7433aaccdc0377c261226f1395aead441b57535204d07bf9e87fcab5e4f842b"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051205_59538_0400_PP.png",
+        "sha256": "0837a1a49ac0cea92a7d03a839a8cc73142d959707be2adca1d2e2128e859252"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 34,
+      "filename": "20051207_55266_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051207_55266_0400_PP.tif",
+        "sha256": "f0e2a6f08cc47829b6bb8af29b4e142def0b61181d17b67717b841eaaa195ede"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051207_55266_0400_PP.png",
+        "sha256": "7a64f4a5a0f43dde072b3eb14aa286d749608bb2b8aa4f686832d1ec2d341c72"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 35,
+      "filename": "20051207_56227_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051207_56227_0400_PP.tif",
+        "sha256": "b16fc73cc9ea071e2a900fb099f34eb57a54be67a9cc3f2b3d59819a72a65802"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051207_56227_0400_PP.png",
+        "sha256": "3c606697be8a81e7c9e396216c9f5bb4a1ebdda59028f9160530bfde6f099473"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 36,
+      "filename": "20051208_39243_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_39243_0400_PP.tif",
+        "sha256": "648dd9d7ee93e7e1f7b78f193ec50d14cd0c6e659bf3fe3525e9a4f2031a513c"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_39243_0400_PP.png",
+        "sha256": "6b957da8f28e7aa6c6a877bab64f17c30d013f7a32030acdd2741d46a9534d6a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 37,
+      "filename": "20051208_39438_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_39438_0400_PP.tif",
+        "sha256": "5b8a7ed60ff98f72b38679c026459c03fe83875b142bfa8b2ce92c0f82f8b520"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_39438_0400_PP.png",
+        "sha256": "255fdf6e7d71e4053e2b701c06b20b50b4b16977c347a75b4a2ae4957c504826"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 38,
+      "filename": "20051208_39498_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_39498_0400_PP.tif",
+        "sha256": "d583ea624d1f7fd96862213afe7290dc84b9b029b1ad3ffca2d6fb0677966788"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_39498_0400_PP.png",
+        "sha256": "82428d00dc86b83cb677673151fea51919d8e60a40783bc01386a3e5d99ad7ad"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 39,
+      "filename": "20051208_39524_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_39524_0400_PP.tif",
+        "sha256": "cd19ef245f22da442a9db13b9e8c019ea1ff625a8c13eb7477021fee07d49b71"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_39524_0400_PP.png",
+        "sha256": "55c84a0b9cc8848e0bd48dba10efd874af53b0fc9365e0cfc91d3f5107a08983"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 40,
+      "filename": "20051208_40972_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_40972_0400_PP.tif",
+        "sha256": "2da1af81aa6c091c56d45abd6e3b7d3ea591d15f2af6af0fc7b8cecb546557aa"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_40972_0400_PP.png",
+        "sha256": "2c1447d403ea48c9f2efc7e1009a7792957121dbb1006b416223a77ce0ca0f75"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 41,
+      "filename": "20051208_42314_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_42314_0400_PP.tif",
+        "sha256": "b98793ea144adac3078ef3de080fd1ad1cc0e2629bcc7e3e5069704409017316"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_42314_0400_PP.png",
+        "sha256": "2247a518d860f5c8bb66e079ba0fd89c91a5d84c1f72a598572fe4a0aaebc8c3"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 42,
+      "filename": "20051208_42322_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_42322_0400_PP.tif",
+        "sha256": "28cf2105aff4e64faaae9652fc7b6e9054c1351ec0f8470723ce2e31536efbd7"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_42322_0400_PP.png",
+        "sha256": "8a090b8a221bad3adbb8175bf550012dd8c8966349c75d2335d29ca4825a9740"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 43,
+      "filename": "20051208_42552_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051208_42552_0400_PP.tif",
+        "sha256": "b9352156ebea21eaee2f10223ac0e0947416c21965887f3b2b4d49f078dceea7"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051208_42552_0400_PP.png",
+        "sha256": "e262a3cd9adc8f5768919f42fbf757ff0600fbb29cf911ec3b3eb5f71f741e90"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 44,
+      "filename": "20051212_41169_0400_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1536,
+        2304
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051212_41169_0400_PP.tif",
+        "sha256": "6348a54cffbcf00c26809b09fa50edf47bcc399cd7bcee62e59d17313605a096"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051212_41169_0400_PP.png",
+        "sha256": "f757e2cd3664d13458768279e5354d45f54075faccfa5c3e78c5d0a552cfb02b"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 45,
+      "filename": "20051214_57260_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051214_57260_0100_PP.tif",
+        "sha256": "3b496e62679e29f40263e16b27d4b451cce192828871ac2147b2d7ca13a1a7e5"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051214_57260_0100_PP.png",
+        "sha256": "dd26ffa55ae7e8f1292bf5b1166ec5fea66eef7fff349ab2245c44998e40ead0"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 46,
+      "filename": "20051214_57940_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051214_57940_0100_PP.tif",
+        "sha256": "196d4aea27554a1fb61fb3ae00b67545614f036cfb0f9b5b8a73e61d6e7b8099"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051214_57940_0100_PP.png",
+        "sha256": "e123472448330c88d37748830252d11a68abf3621e1f6df2fce228e15fc5a4dc"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 47,
+      "filename": "20051216_44832_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051216_44832_0200_PP.tif",
+        "sha256": "69273eba0072ea0930535126c93e74a8fb4634678f91bf749725d6ddf55ddd59"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051216_44832_0200_PP.png",
+        "sha256": "1817acd6810019661b62a8aaab2e47075e448a4cbfbbb075067586e336c15ba7"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 48,
+      "filename": "20051216_47514_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20051216_47514_0200_PP.tif",
+        "sha256": "aa1e01d8033b112bf67a162355107c5a3c894688c4e93710055b6d5e16dd6f08"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20051216_47514_0200_PP.png",
+        "sha256": "f48280ddfb85fed40a51c024de8d0371e3a023ba31076a15f3eecdd49ee08810"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 49,
+      "filename": "20060407_41330_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060407_41330_0200_PP.tif",
+        "sha256": "6036c85f5f9fdcf2eeebe530f83d732c2e2b879bac7b17b876e496d4d5a832c5"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060407_41330_0200_PP.png",
+        "sha256": "6bfd563f3736a2362c6a60855dece43f53617f9c4c55855f41980f558a0beee9"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 50,
+      "filename": "20060407_41831_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060407_41831_0200_PP.tif",
+        "sha256": "caf1e3db89e55901480c27414da9734a57731270be7bcf2a86bc1ff1cab6cf16"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060407_41831_0200_PP.png",
+        "sha256": "1a58384c4f838a6b31eb6a7fc26b27d15d40ceb6e25b1b1ab2e55c9dd782aa53"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 51,
+      "filename": "20060407_45107_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060407_45107_0200_PP.tif",
+        "sha256": "ede00e2e4a8ab963f1d575eed796434a0b259c05b3ff8b2e0fd9a7e52c78180b"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060407_45107_0200_PP.png",
+        "sha256": "09b53c05c9212d85be99d5c40c66e91918e36c2c12e1ec3ca45a77fd559024b0"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 52,
+      "filename": "20060407_46422_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060407_46422_0200_PP.tif",
+        "sha256": "0e732a11cf2b99815515173f9114836d10f298fa8c685744c8da5f768235d197"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060407_46422_0200_PP.png",
+        "sha256": "87a41fa47ff6cee141d8741e2622e5fcb87de76aa5df77d2feb94dbde18a4f84"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 53,
+      "filename": "20060410_40481_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_40481_0200_PP.tif",
+        "sha256": "cad4c00dfd324cb4cea693d1963ac62079bdee752b920f24938f7af8ff090cf6"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_40481_0200_PP.png",
+        "sha256": "ea1cf468019bbad6de5b71fc82686294ec8a5520eb10a74d932d8d495fca245a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 54,
+      "filename": "20060410_41767_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_41767_0200_PP.tif",
+        "sha256": "5d8a0110c5f117d3916859de43f42be4336f78c376d9e5f811af04a6b47af011"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_41767_0200_PP.png",
+        "sha256": "db4113c69bcb648d2df33a2ae6056a19fe6ce7ec7f372a66d2e39403c20d0bb8"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 55,
+      "filename": "20060410_44248_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_44248_0200_PP.tif",
+        "sha256": "3448741c571f93aeb259c6b7b5fb5533145944facc140de6e0c7dc2a47a14e7f"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_44248_0200_PP.png",
+        "sha256": "837ebe965d0c0c425c993d92acaeeb847cf1a1ae0f6ce87b96c94146ea17267b"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 56,
+      "filename": "20060410_46874_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_46874_0200_PP.tif",
+        "sha256": "a8bf9bfe3c493ce64831a89722404530da579d23a40d2d056f05a823a35a5ce8"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_46874_0200_PP.png",
+        "sha256": "9cca7d372de221337fac0cfe5350e79c3b42eb66bbb24de82d516416313e4a01"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 57,
+      "filename": "20060410_46893_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_46893_0200_PP.tif",
+        "sha256": "f43d78c86210281c4b8c201f466f8eb6a3648443f851099dee36c7443802b700"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_46893_0200_PP.png",
+        "sha256": "ed748b127e006383130dac605f5f5120d5827eef29a430ff187c043512a1d232"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 58,
+      "filename": "20060410_47166_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_47166_0200_PP.tif",
+        "sha256": "6a80dab104fc6c87a6d6af4f6519a2ca2e79a4eb4ddf7178c1582868527f5463"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_47166_0200_PP.png",
+        "sha256": "38cbfe2d82f7ac7c7124e629cfee33341226aa41400475d60b64ab43fd74837c"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 59,
+      "filename": "20060410_47331_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060410_47331_0200_PP.tif",
+        "sha256": "84c2355c8719ebf754b7e5320694305c674d7c46639945d12f40d8425c9c9c8c"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060410_47331_0200_PP.png",
+        "sha256": "94d555ca6d6cc6e1ebdd40e14742040b9b0c169449d7a7dd7e04a212638b1535"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 60,
+      "filename": "20060411_58238_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58238_0200_PP.tif",
+        "sha256": "96cfbfe6cba07860ef01ff6be11b4bfd8cdb0b3fea8418cc3d6b5b2c13f0ae27"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58238_0200_PP.png",
+        "sha256": "2800ccd91ed24b8993570df2d1467b0118304babff929e5948242ff29c403ca5"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 61,
+      "filename": "20060411_58303_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58303_0200_PP.tif",
+        "sha256": "d2ea0971ed0a32886532ec9a8281301b9223c863f8ddb1ae5c7e969899650744"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58303_0200_PP.png",
+        "sha256": "2574f97467f844ad1ec3455babbc95afa635e61fbfa5e055a2b4d0551ae3868d"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 62,
+      "filename": "20060411_58328_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58328_0200_PP.tif",
+        "sha256": "e2fd1741a7c3ecefdb10692a3c5bc2be24192d61414896b5a9c02b4ed23acc3f"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58328_0200_PP.png",
+        "sha256": "bc09d28e1866858e247ad1a09b9a156c1ba2fbfa8e56c86613687756787fac19"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 63,
+      "filename": "20060411_58571_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58571_0200_PP.tif",
+        "sha256": "bb38f21e40c05583682a928b8b1296cecfc0a12db988728cba1fa99e51d6ff68"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58571_0200_PP.png",
+        "sha256": "d5b7d9d8176001edd6df2a7e1cd05496c22837033369b54c7bfc11787e6eb96f"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 64,
+      "filename": "20060411_58971_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58971_0200_PP.tif",
+        "sha256": "73d9769eab4686afb35cab67a6be9aef049ac1f17ca7d16d853ae761ce2745ac"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58971_0200_PP.png",
+        "sha256": "16ebfc81838450fbcc58184b8f1847b7a23436ab5380b09a37d511903b316716"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 65,
+      "filename": "20060411_58993_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_58993_0200_PP.tif",
+        "sha256": "8b6fdd5a73102eb8c2f8bd8b29f2cdcce702272db6ff4c29d5d813a041ed6c07"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_58993_0200_PP.png",
+        "sha256": "2a5b090dc44532fad2c5c6d4796efe11ede2b38f553205963cd5cdb59e05f488"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 66,
+      "filename": "20060411_59190_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_59190_0200_PP.tif",
+        "sha256": "55d1c9464001d302e17314bb4aa9d6286da071a26a3d69c92bb7f0fbdee82069"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_59190_0200_PP.png",
+        "sha256": "30416604328a4818c42381533ebff6e3356e880dad8ee93e37ab1b9c08379952"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 67,
+      "filename": "20060411_59919_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_59919_0200_PP.tif",
+        "sha256": "d098290ffe8e37811e521b33b6e9be1addc2c3c948448efd6a1213260c088ced"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_59919_0200_PP.png",
+        "sha256": "f9db2a8907ea997c55ad2d160b26c43d82f1ddbf6dbf096c4723f6a594f7650f"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 68,
+      "filename": "20060411_60283_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_60283_0200_PP.tif",
+        "sha256": "5438a27cc7180587a7b34544a388d54f41808461e6e4dd9a419874e457f982fa"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_60283_0200_PP.png",
+        "sha256": "2d06533d622c6813345f6a5634a226a2e45a191cc7f78aa26d2057c2478e89d7"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 69,
+      "filename": "20060411_61060_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_61060_0200_PP.tif",
+        "sha256": "3c459bdf9785b2e351bc460f99dd9f73b73ae3d2b643cb31e0d5d8e91826afca"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_61060_0200_PP.png",
+        "sha256": "4085eb5b679e504e4764b0c617f2ed33f5b194856daf794cec9e0b68cb76e0fe"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 70,
+      "filename": "20060411_61548_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060411_61548_0200_PP.tif",
+        "sha256": "3adc194262a6dc588667187f010290a4cfe616f50c1e054cf57e0e7909648f5b"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060411_61548_0200_PP.png",
+        "sha256": "c96df7848079fcc7f96c10894e0111c70678a8c8611f567d873634dc4dd29e01"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 71,
+      "filename": "20060412_51952_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_51952_0200_PP.tif",
+        "sha256": "2ecc9c983df5471ce7fb37c527c3ee4a12c37ba997b30a439aa5ba9b1d2e4e2c"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_51952_0200_PP.png",
+        "sha256": "4fac84c1f74411cfed003910d166f8409b24ce17e69289f02f144c036c7bcb60"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 72,
+      "filename": "20060412_52020_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_52020_0200_PP.tif",
+        "sha256": "cd2202c3d4b0d756d7da32d108960bb64a76d6e714b0908619ba5e22d9e7cc3a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_52020_0200_PP.png",
+        "sha256": "95466fd81115a0eee461932da46f1d07436a50531bbb9058e35806793d3e7441"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 73,
+      "filename": "20060412_52038_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_52038_0200_PP.tif",
+        "sha256": "a079c97da2c0191403f454f80d6b0b4ca09130c2a0dc8762cf2d4b7a5aa0dd16"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_52038_0200_PP.png",
+        "sha256": "52b5d1619c8dddcb4624f67cf72eda06868d0a99fa5552e579a390891e13043d"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 74,
+      "filename": "20060412_52840_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_52840_0200_PP.tif",
+        "sha256": "f5c445d846be98e7af864d90458d271c8690203a3f014fe2b95fc0f9a9c64409"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_52840_0200_PP.png",
+        "sha256": "e732168f978a12f21ab1cdf7716d7368abcb3fbc488af17486c708c9092ccfee"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 75,
+      "filename": "20060412_58471_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_58471_0200_PP.tif",
+        "sha256": "05a9a81b00a815242134abe6e18e534c64cbb6605c30d16d8b12b7afb7bf474a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_58471_0200_PP.png",
+        "sha256": "f448e83bc012929175d955101b7d4c1cff113d5147ff5b9876932b40159d347f"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 76,
+      "filename": "20060412_58497_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_58497_0200_PP.tif",
+        "sha256": "b1bf212fc66dd8a747d804b4783566918fe6fe23ca8d87ecbd0ce44d2afd1322"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_58497_0200_PP.png",
+        "sha256": "bf92edd44a3a891f25a97f3a67fe93b9536e1d9010c2427291041612413a4e91"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 77,
+      "filename": "20060412_58668_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_58668_0200_PP.tif",
+        "sha256": "9d85857e663ffb4d3f4b9aeedcd33957d4f3f149104c2b442e6e5c077ce1f1bb"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_58668_0200_PP.png",
+        "sha256": "6161f376d340ef130a83db6829d234bd8118bd25159920fa7da0bff838d1c6e0"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 78,
+      "filename": "20060412_59012_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_59012_0200_PP.tif",
+        "sha256": "120ff9a1f41e3e75bb6364bf7ea4e238366fcab4e025383f0d7e5f094ef04417"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_59012_0200_PP.png",
+        "sha256": "f1ae3f245689de15dd443d7c1eb843b9814b5d3b3b171296f2b1f51d88d3ebaf"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 79,
+      "filename": "20060412_59100_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_59100_0200_PP.tif",
+        "sha256": "69e9d37a4175cbf365e49b7eee97db6e4fb1612d3ccd37a249ce5119c6fcac93"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_59100_0200_PP.png",
+        "sha256": "a1e6a742a51033597e2d5c3b3598de1bdfc883f272f4c300e4ebf9aabf238f36"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 80,
+      "filename": "20060412_59717_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_59717_0200_PP.tif",
+        "sha256": "f0c2cdb240d8f0399fafa122ef840ab0c7b797b61a4f019d7794f0fecda27291"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_59717_0200_PP.png",
+        "sha256": "edb897c95d7a0281c22afee5611612675cd222c5afeb6cfb5867ccaf5ddc4ee5"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 81,
+      "filename": "20060412_60337_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_60337_0200_PP.tif",
+        "sha256": "7e6b1e3aaa293e6a1079643cdc02eb714dea173121ec57717602417865cf602a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_60337_0200_PP.png",
+        "sha256": "0259e6b23187090f32e99f71cb0ec1e89e6781191622c7c98ead3a8c24687a39"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 82,
+      "filename": "20060412_60396_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_60396_0200_PP.tif",
+        "sha256": "8ccb1695df894682f042a88d6517a4300a42ca14a1d9f793d0f28f1b5685f118"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_60396_0200_PP.png",
+        "sha256": "d8023d7ed45c5a10535b2826d457aa23a2b4b46e07b4dfad982f6e4b3e96ef98"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 83,
+      "filename": "20060412_60573_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_60573_0200_PP.tif",
+        "sha256": "dc49dcfbf992171f19d0caaa06e49247f00775186ac8d6d383181ffffd7e83b2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_60573_0200_PP.png",
+        "sha256": "071065f0e4cd0ec64f6cbec4f72a931badc33d89668e18962c7972a84c04f24a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 84,
+      "filename": "20060412_61081_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_61081_0200_PP.tif",
+        "sha256": "ff13c58b9e97b99a5ffeb608601541b8f612e42775184f945ae0233098765634"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61081_0200_PP.png",
+        "sha256": "cdc164d7ffb692f01a37508de38c082f88ee3e6716fcd01e8fa32cc7f9c08efb"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 85,
+      "filename": "20060412_61251_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_61251_0200_PP.tif",
+        "sha256": "2e50be1e07beda47a42ac4e8b389cb4ad2aecbac90e579b2c8ed3dace9571b85"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61251_0200_PP.png",
+        "sha256": "3b891c21e3c77d3b64a0e57d6ad3066af1fa0a93652d575d0dc62ba8f51899de"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 86,
+      "filename": "20060412_61365_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_61365_0200_PP.tif",
+        "sha256": "037963fc5e23df5e073ce145e61315cda0f09d9563c33738f6b319b477efc368"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61365_0200_PP.png",
+        "sha256": "24e09cb78ef6b8a9b7a1101ae61129d6882b29e59a3d4e0302d2b3cb42e2da7d"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 87,
+      "filename": "20060412_61433_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_61433_0200_PP.tif",
+        "sha256": "da76b662e9f04a94fc7fb83fae87753560b3aa24bedfaf9f1fc0a5972ffa511d"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61433_0200_PP.png",
+        "sha256": "a55744531c186897ccafb6b12572681f50da39fe1eba92b52a19fe7c9092abc8"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 88,
+      "filename": "20060412_61501_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_61501_0200_PP.tif",
+        "sha256": "f4b01d3884404a08d03efa857fe423a2308c83f6c34ea0e7aead6e59d813a5c6"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_61501_0200_PP.png",
+        "sha256": "67463f1f5a5dded9ea53b94a8f0a693754760846edb4c4316cbc3f4bd4a40022"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 89,
+      "filename": "20060412_63032_0200_PP",
+      "trial_split": "train",
+      "native_shape": [
+        960,
+        1440
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060412_63032_0200_PP.tif",
+        "sha256": "9d1e09e0db8447f5525041a7194d3d262e6ffb0f0c98df5c80a9622c14c79a79"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060412_63032_0200_PP.png",
+        "sha256": "55e1cb51316d171cae83a338b3e79e96cdb9cb2ed69a075ec203658475ab6993"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 90,
+      "filename": "20060522_45967_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060522_45967_0100_PP.tif",
+        "sha256": "ca67c06fc718b79098589602ef647ce5ec59edafc4cfd3adfbcca14e90d2a2b6"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060522_45967_0100_PP.png",
+        "sha256": "ccacb093f87343872f8052f60e9511e60f0b4d747f9e231d8da27bfbb3d15d87"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 91,
+      "filename": "20060523_43016_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_43016_0100_PP.tif",
+        "sha256": "24ec619f300aba6b8476e69efbf2b3e0dcadd5a5497c0a4202847a0344b3747d"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_43016_0100_PP.png",
+        "sha256": "7e5ad36b12ea74f9b9d630cbdde2c57599b2e8736e9486b943685a8ce58e78df"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 92,
+      "filename": "20060523_45235_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_45235_0100_PP.tif",
+        "sha256": "0f2afb56fec88492cc4af13952fcd99fd3a083bb10634f80d996812eb6387686"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_45235_0100_PP.png",
+        "sha256": "8b9bdaf017604e10408cf77e23a654234ddcbf04c482710642cb2a26c78c479a"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 93,
+      "filename": "20060523_45389_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_45389_0100_PP.tif",
+        "sha256": "11714530f60e214722dbba3df460c3d58116f21336096283f5b2b0a675d331dc"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_45389_0100_PP.png",
+        "sha256": "0ffa3adf21995715e8fcb6d32e598c6fa1e6356583eec181d8bcb29efea71838"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 94,
+      "filename": "20060523_48199_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_48199_0100_PP.tif",
+        "sha256": "2797d97ee380b8d53532c9db86521798e3c96113b382d1ef727402bada693366"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_48199_0100_PP.png",
+        "sha256": "aaa691a7c76b20532c002ab49fd582bcab1a3d01e7b9f703e2efc4b64c705133"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 95,
+      "filename": "20060523_48425_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_48425_0100_PP.tif",
+        "sha256": "d6f079e07d841ced066a2043ed95c5b76a06de9e6ae064fb1cc79e7131ab6ca2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_48425_0100_PP.png",
+        "sha256": "3ce3f4e80887eec3fdc7af64a63aa7432705a78faf357a1065d3c480b365e0ce"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 96,
+      "filename": "20060523_49681_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_49681_0100_PP.tif",
+        "sha256": "6fa5ad22808d60927c3e0849a8a8fa22547411fb759b72da2f19d7f158d60e44"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_49681_0100_PP.png",
+        "sha256": "0d5099e6f41173625e95ca9fe2aa050003a7f1e961c9dfc334e80dad2f514f4b"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 97,
+      "filename": "20060523_50408_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_50408_0100_PP.tif",
+        "sha256": "95c21b0d36de12afe9cc4539c80c0327191067b0912e8355cc119a73edc4bfea"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_50408_0100_PP.png",
+        "sha256": "cb6ede9d4223029c0bb1bc5915dd704a93e242c695bbbf500ba09a05d70b09f6"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 98,
+      "filename": "20060523_50489_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060523_50489_0100_PP.tif",
+        "sha256": "a8d30e66d8d2e354ca1ce5abaf31e422ddc976399d7a4d1c72066791dc43c03b"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060523_50489_0100_PP.png",
+        "sha256": "e0d03cbdeae6a368fdf15f815db5a6d416f826a0aa95063413ef3f3adf76142d"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 99,
+      "filename": "20060530_36860_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_36860_0100_PP.tif",
+        "sha256": "8feae40c122a2ce1e4ce411806a3162fe3fc464150c0543c72f25247ca80514f"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_36860_0100_PP.png",
+        "sha256": "6fc34186c247a428f54392b0b8b5d4cbb266198d80bbe5fec2176aff6efab825"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 100,
+      "filename": "20060530_53233_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_53233_0100_PP.tif",
+        "sha256": "cf65bce5b7932343dc06b5f42bc6f45899bdcb12ba48cd76c18238070304d46f"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_53233_0100_PP.png",
+        "sha256": "093a43f53d4aa28cecdc61641290d870c8839ef94e0877823043c459f19ff9c1"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 101,
+      "filename": "20060530_53522_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_53522_0100_PP.tif",
+        "sha256": "7cfb074799559d19c3d5def574338a4f2098d1e6c9c4d2b5f90d1141db2f5e12"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_53522_0100_PP.png",
+        "sha256": "dbcf5b6289120e71844c00a4a8e753ef69f8ded4c97c69eb4abf1d240d12012f"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 102,
+      "filename": "20060530_53540_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_53540_0100_PP.tif",
+        "sha256": "d25d6fdc93dcb8d2794a06a046b5172d3603825984a5527599902d877347490a"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_53540_0100_PP.png",
+        "sha256": "62f8d78b885eaf8da9e40ce9c7779d7bd89e989f76beb106331adc7c9ddb27c3"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 103,
+      "filename": "20060530_53954_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_53954_0100_PP.tif",
+        "sha256": "f6231836f2718edf67bbdc4ac769069ee14f53ef6ee664fb36e42439601d13fa"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_53954_0100_PP.png",
+        "sha256": "446062c9bbeca2bc6a8cafae4628008a150e95a0a8d0388abe4d239f950e361e"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 104,
+      "filename": "20060530_54117_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_54117_0100_PP.tif",
+        "sha256": "746a67070007658684708674a714c5bd34a13218770075cbe54de07cf0a85983"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_54117_0100_PP.png",
+        "sha256": "0f35a80364f67bcb19ea487a2f5b3acb6b11b020af1823e04141f8a5c58e40c0"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 105,
+      "filename": "20060530_54529_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_54529_0100_PP.tif",
+        "sha256": "623d4af467990408922b1fdaa68204737e6704d876163452b2fb1a43604a7dff"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_54529_0100_PP.png",
+        "sha256": "0a258ff38a5d84da935edda50dd1edd66140ff0075c2063bd512f78c33b88761"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 106,
+      "filename": "20060530_54718_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_54718_0100_PP.tif",
+        "sha256": "b9b26143f5a281ba8ee6bde21bf687c29f99de792a6862a9dd43c5f3f32323f2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_54718_0100_PP.png",
+        "sha256": "6bf803a2f428f90929eb525970be5127300ec1bad8cf8dfefa02fdce14072458"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 107,
+      "filename": "20060530_55180_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_55180_0100_PP.tif",
+        "sha256": "711841ed7f7c6843b694a0c15ce805a3b6715298cbf06393bbf15af270e1a9c2"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_55180_0100_PP.png",
+        "sha256": "792618bff661ec3a222b55c308db5b652d5a56c5f1e4543b46ccb1aa913d5307"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 108,
+      "filename": "20060530_55746_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_55746_0100_PP.tif",
+        "sha256": "01c20542d1b81b8f8641d2f744da65b30a300b3a6e51d9021d7b943725964a21"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_55746_0100_PP.png",
+        "sha256": "e521882fc867a1fc3e44f37f81088711be9346d53a915b96de45e0fbf2da29c5"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    },
+    {
+      "index": 109,
+      "filename": "20060530_55837_0100_PP",
+      "trial_split": "train",
+      "native_shape": [
+        1488,
+        2240
+      ],
+      "RGB": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/images/20060530_55837_0100_PP.tif",
+        "sha256": "4227920a3bcadef7d9b40797c9abc31c7f8bd4c5de4146014bd4024b5e753a6d"
+      },
+      "V": {
+        "path": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Vessels/20060530_55837_0100_PP.png",
+        "sha256": "4e847bdb784ff2de987000b31b68eff258bc7cc26134ffd8f1779be861fd2766"
+      },
+      "FOV": "derive only from bound candidate_fov(RGB), original implementation",
+      "target": "whole native Zhang skeleton(V&FOV) & padded_EDT_radius<=1.5; only this Train target can enter auxiliary loss"
+    }
+  ]
+}

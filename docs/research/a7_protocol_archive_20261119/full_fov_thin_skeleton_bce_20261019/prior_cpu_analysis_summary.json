@@ -1,0 +1,3251 @@
+{
+  "analysis_label": "POST_HOC_NEW_DIRECTION_CPU_DESCRIPTION_NOT_FROZEN_FORMAL_EVALUATION",
+  "definitions": {
+    "width": "2*EDT at Zhang full-FOV GT skeleton; <=3,(3,6],>6 native px",
+    "support_primary_description": "FOV minus frozen U; FOV including U also reported",
+    "threshold": 0.5,
+    "d1": "5-pixel Euclidean <=1 support dilation; no closing or filtering",
+    "endpoint": "unpruned GT skeleton 8-neighbor degree=1, not anatomical adjudication",
+    "junction": "GT skeleton degree>=3 pixel, not confirmed bifurcation"
+  },
+  "reference_counts": [
+    {
+      "filename": "20051116_44615_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "FOV_pixels": 1655843,
+      "U_pixels": 184,
+      "groups": {
+        "thin": {
+          "F": 127,
+          "Omega": 127
+        },
+        "medium": {
+          "F": 4461,
+          "Omega": 4461
+        },
+        "thick": {
+          "F": 26680,
+          "Omega": 26680
+        },
+        "nonthin": {
+          "F": 31141,
+          "Omega": 31141
+        },
+        "all_skeleton": {
+          "F": 31268,
+          "Omega": 31268
+        },
+        "graph_endpoints": {
+          "F": 215,
+          "Omega": 215
+        },
+        "graph_junction_pixels": {
+          "F": 1028,
+          "Omega": 1028
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 127,
+          "Omega": 127
+        },
+        "thin_not_near": {
+          "F": 127,
+          "Omega": 127
+        }
+      },
+      "junction_clusters": 309
+    },
+    {
+      "filename": "20051116_44785_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "FOV_pixels": 1658559,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 102,
+          "Omega": 102
+        },
+        "medium": {
+          "F": 3278,
+          "Omega": 3278
+        },
+        "thick": {
+          "F": 23305,
+          "Omega": 23305
+        },
+        "nonthin": {
+          "F": 26583,
+          "Omega": 26583
+        },
+        "all_skeleton": {
+          "F": 26685,
+          "Omega": 26685
+        },
+        "graph_endpoints": {
+          "F": 166,
+          "Omega": 166
+        },
+        "graph_junction_pixels": {
+          "F": 763,
+          "Omega": 763
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 102,
+          "Omega": 102
+        },
+        "thin_not_near": {
+          "F": 102,
+          "Omega": 102
+        }
+      },
+      "junction_clusters": 231
+    },
+    {
+      "filename": "20051117_37078_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 650120,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 259,
+          "Omega": 259
+        },
+        "medium": {
+          "F": 7040,
+          "Omega": 7040
+        },
+        "thick": {
+          "F": 7634,
+          "Omega": 7634
+        },
+        "nonthin": {
+          "F": 14674,
+          "Omega": 14674
+        },
+        "all_skeleton": {
+          "F": 14933,
+          "Omega": 14933
+        },
+        "graph_endpoints": {
+          "F": 100,
+          "Omega": 100
+        },
+        "graph_junction_pixels": {
+          "F": 703,
+          "Omega": 703
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 259,
+          "Omega": 259
+        },
+        "thin_not_near": {
+          "F": 259,
+          "Omega": 259
+        }
+      },
+      "junction_clusters": 181
+    },
+    {
+      "filename": "20051117_37130_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 652350,
+      "U_pixels": 135,
+      "groups": {
+        "thin": {
+          "F": 262,
+          "Omega": 262
+        },
+        "medium": {
+          "F": 7477,
+          "Omega": 7477
+        },
+        "thick": {
+          "F": 4957,
+          "Omega": 4957
+        },
+        "nonthin": {
+          "F": 12434,
+          "Omega": 12434
+        },
+        "all_skeleton": {
+          "F": 12696,
+          "Omega": 12696
+        },
+        "graph_endpoints": {
+          "F": 81,
+          "Omega": 81
+        },
+        "graph_junction_pixels": {
+          "F": 451,
+          "Omega": 451
+        },
+        "thin_internal": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_near": {
+          "F": 13,
+          "Omega": 13
+        },
+        "thin_far": {
+          "F": 248,
+          "Omega": 248
+        },
+        "thin_not_near": {
+          "F": 249,
+          "Omega": 249
+        }
+      },
+      "junction_clusters": 131
+    },
+    {
+      "filename": "20051202_51655_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "FOV_pixels": 1661075,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 119,
+          "Omega": 119
+        },
+        "medium": {
+          "F": 6504,
+          "Omega": 6504
+        },
+        "thick": {
+          "F": 14968,
+          "Omega": 14968
+        },
+        "nonthin": {
+          "F": 21472,
+          "Omega": 21472
+        },
+        "all_skeleton": {
+          "F": 21591,
+          "Omega": 21591
+        },
+        "graph_endpoints": {
+          "F": 87,
+          "Omega": 87
+        },
+        "graph_junction_pixels": {
+          "F": 605,
+          "Omega": 605
+        },
+        "thin_internal": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 118,
+          "Omega": 118
+        },
+        "thin_not_near": {
+          "F": 119,
+          "Omega": 119
+        }
+      },
+      "junction_clusters": 159
+    },
+    {
+      "filename": "20051202_54530_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 651823,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 1549,
+          "Omega": 1549
+        },
+        "medium": {
+          "F": 8282,
+          "Omega": 8282
+        },
+        "thick": {
+          "F": 5526,
+          "Omega": 5526
+        },
+        "nonthin": {
+          "F": 13808,
+          "Omega": 13808
+        },
+        "all_skeleton": {
+          "F": 15357,
+          "Omega": 15357
+        },
+        "graph_endpoints": {
+          "F": 113,
+          "Omega": 113
+        },
+        "graph_junction_pixels": {
+          "F": 706,
+          "Omega": 706
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 1549,
+          "Omega": 1549
+        },
+        "thin_not_near": {
+          "F": 1549,
+          "Omega": 1549
+        }
+      },
+      "junction_clusters": 178
+    },
+    {
+      "filename": "20051205_31934_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "FOV_pixels": 1655042,
+      "U_pixels": 4417,
+      "groups": {
+        "thin": {
+          "F": 99,
+          "Omega": 99
+        },
+        "medium": {
+          "F": 2369,
+          "Omega": 2367
+        },
+        "thick": {
+          "F": 23212,
+          "Omega": 23206
+        },
+        "nonthin": {
+          "F": 25581,
+          "Omega": 25573
+        },
+        "all_skeleton": {
+          "F": 25680,
+          "Omega": 25672
+        },
+        "graph_endpoints": {
+          "F": 125,
+          "Omega": 125
+        },
+        "graph_junction_pixels": {
+          "F": 702,
+          "Omega": 702
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 99,
+          "Omega": 99
+        },
+        "thin_not_near": {
+          "F": 99,
+          "Omega": 99
+        }
+      },
+      "junction_clusters": 206
+    },
+    {
+      "filename": "20051205_35224_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 654816,
+      "U_pixels": 793,
+      "groups": {
+        "thin": {
+          "F": 146,
+          "Omega": 146
+        },
+        "medium": {
+          "F": 4695,
+          "Omega": 4695
+        },
+        "thick": {
+          "F": 4636,
+          "Omega": 4621
+        },
+        "nonthin": {
+          "F": 9331,
+          "Omega": 9316
+        },
+        "all_skeleton": {
+          "F": 9477,
+          "Omega": 9462
+        },
+        "graph_endpoints": {
+          "F": 48,
+          "Omega": 48
+        },
+        "graph_junction_pixels": {
+          "F": 260,
+          "Omega": 260
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 146,
+          "Omega": 146
+        },
+        "thin_not_near": {
+          "F": 146,
+          "Omega": 146
+        }
+      },
+      "junction_clusters": 76
+    },
+    {
+      "filename": "20051205_35276_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 653619,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 113,
+          "Omega": 113
+        },
+        "medium": {
+          "F": 6695,
+          "Omega": 6695
+        },
+        "thick": {
+          "F": 5808,
+          "Omega": 5808
+        },
+        "nonthin": {
+          "F": 12503,
+          "Omega": 12503
+        },
+        "all_skeleton": {
+          "F": 12616,
+          "Omega": 12616
+        },
+        "graph_endpoints": {
+          "F": 79,
+          "Omega": 79
+        },
+        "graph_junction_pixels": {
+          "F": 497,
+          "Omega": 497
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 8,
+          "Omega": 8
+        },
+        "thin_far": {
+          "F": 105,
+          "Omega": 105
+        },
+        "thin_not_near": {
+          "F": 105,
+          "Omega": 105
+        }
+      },
+      "junction_clusters": 133
+    },
+    {
+      "filename": "20051205_35305_0400_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 653476,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 50,
+          "Omega": 50
+        },
+        "medium": {
+          "F": 3103,
+          "Omega": 3103
+        },
+        "thick": {
+          "F": 4974,
+          "Omega": 4974
+        },
+        "nonthin": {
+          "F": 8077,
+          "Omega": 8077
+        },
+        "all_skeleton": {
+          "F": 8127,
+          "Omega": 8127
+        },
+        "graph_endpoints": {
+          "F": 43,
+          "Omega": 43
+        },
+        "graph_junction_pixels": {
+          "F": 201,
+          "Omega": 201
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 50,
+          "Omega": 50
+        },
+        "thin_not_near": {
+          "F": 50,
+          "Omega": 50
+        }
+      },
+      "junction_clusters": 58
+    },
+    {
+      "filename": "20051208_41707_0400_PP",
+      "shape": [
+        1536,
+        2304
+      ],
+      "FOV_pixels": 1653765,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 51,
+          "Omega": 51
+        },
+        "medium": {
+          "F": 1501,
+          "Omega": 1501
+        },
+        "thick": {
+          "F": 16631,
+          "Omega": 16631
+        },
+        "nonthin": {
+          "F": 18132,
+          "Omega": 18132
+        },
+        "all_skeleton": {
+          "F": 18183,
+          "Omega": 18183
+        },
+        "graph_endpoints": {
+          "F": 72,
+          "Omega": 72
+        },
+        "graph_junction_pixels": {
+          "F": 391,
+          "Omega": 391
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 51,
+          "Omega": 51
+        },
+        "thin_not_near": {
+          "F": 51,
+          "Omega": 51
+        }
+      },
+      "junction_clusters": 125
+    },
+    {
+      "filename": "20060407_41937_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643203,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 820,
+          "Omega": 820
+        },
+        "medium": {
+          "F": 6982,
+          "Omega": 6982
+        },
+        "thick": {
+          "F": 6889,
+          "Omega": 6889
+        },
+        "nonthin": {
+          "F": 13871,
+          "Omega": 13871
+        },
+        "all_skeleton": {
+          "F": 14691,
+          "Omega": 14691
+        },
+        "graph_endpoints": {
+          "F": 112,
+          "Omega": 112
+        },
+        "graph_junction_pixels": {
+          "F": 574,
+          "Omega": 574
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 820,
+          "Omega": 820
+        },
+        "thin_not_near": {
+          "F": 820,
+          "Omega": 820
+        }
+      },
+      "junction_clusters": 169
+    },
+    {
+      "filename": "20060411_57853_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643120,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 181,
+          "Omega": 181
+        },
+        "medium": {
+          "F": 8238,
+          "Omega": 8238
+        },
+        "thick": {
+          "F": 7178,
+          "Omega": 7178
+        },
+        "nonthin": {
+          "F": 15416,
+          "Omega": 15416
+        },
+        "all_skeleton": {
+          "F": 15597,
+          "Omega": 15597
+        },
+        "graph_endpoints": {
+          "F": 127,
+          "Omega": 127
+        },
+        "graph_junction_pixels": {
+          "F": 620,
+          "Omega": 620
+        },
+        "thin_internal": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 180,
+          "Omega": 180
+        },
+        "thin_not_near": {
+          "F": 181,
+          "Omega": 181
+        }
+      },
+      "junction_clusters": 181
+    },
+    {
+      "filename": "20060411_61214_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643463,
+      "U_pixels": 66,
+      "groups": {
+        "thin": {
+          "F": 205,
+          "Omega": 205
+        },
+        "medium": {
+          "F": 6451,
+          "Omega": 6451
+        },
+        "thick": {
+          "F": 6769,
+          "Omega": 6769
+        },
+        "nonthin": {
+          "F": 13220,
+          "Omega": 13220
+        },
+        "all_skeleton": {
+          "F": 13425,
+          "Omega": 13425
+        },
+        "graph_endpoints": {
+          "F": 101,
+          "Omega": 101
+        },
+        "graph_junction_pixels": {
+          "F": 531,
+          "Omega": 531
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 3,
+          "Omega": 3
+        },
+        "thin_far": {
+          "F": 202,
+          "Omega": 202
+        },
+        "thin_not_near": {
+          "F": 202,
+          "Omega": 202
+        }
+      },
+      "junction_clusters": 146
+    },
+    {
+      "filename": "20060411_61478_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643365,
+      "U_pixels": 1137,
+      "groups": {
+        "thin": {
+          "F": 701,
+          "Omega": 701
+        },
+        "medium": {
+          "F": 8754,
+          "Omega": 8754
+        },
+        "thick": {
+          "F": 6236,
+          "Omega": 6236
+        },
+        "nonthin": {
+          "F": 14990,
+          "Omega": 14990
+        },
+        "all_skeleton": {
+          "F": 15691,
+          "Omega": 15691
+        },
+        "graph_endpoints": {
+          "F": 112,
+          "Omega": 112
+        },
+        "graph_junction_pixels": {
+          "F": 635,
+          "Omega": 635
+        },
+        "thin_internal": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_near": {
+          "F": 27,
+          "Omega": 27
+        },
+        "thin_far": {
+          "F": 673,
+          "Omega": 673
+        },
+        "thin_not_near": {
+          "F": 674,
+          "Omega": 674
+        }
+      },
+      "junction_clusters": 194
+    },
+    {
+      "filename": "20060412_51656_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 642877,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 554,
+          "Omega": 554
+        },
+        "medium": {
+          "F": 8891,
+          "Omega": 8891
+        },
+        "thick": {
+          "F": 6328,
+          "Omega": 6328
+        },
+        "nonthin": {
+          "F": 15219,
+          "Omega": 15219
+        },
+        "all_skeleton": {
+          "F": 15773,
+          "Omega": 15773
+        },
+        "graph_endpoints": {
+          "F": 111,
+          "Omega": 111
+        },
+        "graph_junction_pixels": {
+          "F": 605,
+          "Omega": 605
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 554,
+          "Omega": 554
+        },
+        "thin_not_near": {
+          "F": 554,
+          "Omega": 554
+        }
+      },
+      "junction_clusters": 176
+    },
+    {
+      "filename": "20060412_58287_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 642899,
+      "U_pixels": 773,
+      "groups": {
+        "thin": {
+          "F": 290,
+          "Omega": 290
+        },
+        "medium": {
+          "F": 9459,
+          "Omega": 9459
+        },
+        "thick": {
+          "F": 8605,
+          "Omega": 8605
+        },
+        "nonthin": {
+          "F": 18064,
+          "Omega": 18064
+        },
+        "all_skeleton": {
+          "F": 18354,
+          "Omega": 18354
+        },
+        "graph_endpoints": {
+          "F": 162,
+          "Omega": 162
+        },
+        "graph_junction_pixels": {
+          "F": 825,
+          "Omega": 825
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 290,
+          "Omega": 290
+        },
+        "thin_not_near": {
+          "F": 290,
+          "Omega": 290
+        }
+      },
+      "junction_clusters": 245
+    },
+    {
+      "filename": "20060412_58889_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643532,
+      "U_pixels": 48,
+      "groups": {
+        "thin": {
+          "F": 469,
+          "Omega": 469
+        },
+        "medium": {
+          "F": 5550,
+          "Omega": 5550
+        },
+        "thick": {
+          "F": 5623,
+          "Omega": 5623
+        },
+        "nonthin": {
+          "F": 11173,
+          "Omega": 11173
+        },
+        "all_skeleton": {
+          "F": 11642,
+          "Omega": 11642
+        },
+        "graph_endpoints": {
+          "F": 85,
+          "Omega": 85
+        },
+        "graph_junction_pixels": {
+          "F": 379,
+          "Omega": 379
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 6,
+          "Omega": 6
+        },
+        "thin_far": {
+          "F": 463,
+          "Omega": 463
+        },
+        "thin_not_near": {
+          "F": 463,
+          "Omega": 463
+        }
+      },
+      "junction_clusters": 108
+    },
+    {
+      "filename": "20060412_60913_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 644245,
+      "U_pixels": 802,
+      "groups": {
+        "thin": {
+          "F": 83,
+          "Omega": 83
+        },
+        "medium": {
+          "F": 6440,
+          "Omega": 6440
+        },
+        "thick": {
+          "F": 3272,
+          "Omega": 3272
+        },
+        "nonthin": {
+          "F": 9712,
+          "Omega": 9712
+        },
+        "all_skeleton": {
+          "F": 9795,
+          "Omega": 9795
+        },
+        "graph_endpoints": {
+          "F": 58,
+          "Omega": 58
+        },
+        "graph_junction_pixels": {
+          "F": 249,
+          "Omega": 249
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_far": {
+          "F": 82,
+          "Omega": 82
+        },
+        "thin_not_near": {
+          "F": 82,
+          "Omega": 82
+        }
+      },
+      "junction_clusters": 77
+    },
+    {
+      "filename": "20060412_61299_0200_PP",
+      "shape": [
+        960,
+        1440
+      ],
+      "FOV_pixels": 643329,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 278,
+          "Omega": 278
+        },
+        "medium": {
+          "F": 9202,
+          "Omega": 9202
+        },
+        "thick": {
+          "F": 6766,
+          "Omega": 6766
+        },
+        "nonthin": {
+          "F": 15968,
+          "Omega": 15968
+        },
+        "all_skeleton": {
+          "F": 16246,
+          "Omega": 16246
+        },
+        "graph_endpoints": {
+          "F": 147,
+          "Omega": 147
+        },
+        "graph_junction_pixels": {
+          "F": 764,
+          "Omega": 764
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 278,
+          "Omega": 278
+        },
+        "thin_not_near": {
+          "F": 278,
+          "Omega": 278
+        }
+      },
+      "junction_clusters": 220
+    },
+    {
+      "filename": "20060522_45248_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1499242,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 90,
+          "Omega": 90
+        },
+        "medium": {
+          "F": 4140,
+          "Omega": 4140
+        },
+        "thick": {
+          "F": 21021,
+          "Omega": 21021
+        },
+        "nonthin": {
+          "F": 25161,
+          "Omega": 25161
+        },
+        "all_skeleton": {
+          "F": 25251,
+          "Omega": 25251
+        },
+        "graph_endpoints": {
+          "F": 146,
+          "Omega": 146
+        },
+        "graph_junction_pixels": {
+          "F": 732,
+          "Omega": 732
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 1,
+          "Omega": 1
+        },
+        "thin_far": {
+          "F": 89,
+          "Omega": 89
+        },
+        "thin_not_near": {
+          "F": 89,
+          "Omega": 89
+        }
+      },
+      "junction_clusters": 219
+    },
+    {
+      "filename": "20060522_45583_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1497612,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 121,
+          "Omega": 121
+        },
+        "medium": {
+          "F": 5084,
+          "Omega": 5084
+        },
+        "thick": {
+          "F": 15488,
+          "Omega": 15488
+        },
+        "nonthin": {
+          "F": 20572,
+          "Omega": 20572
+        },
+        "all_skeleton": {
+          "F": 20693,
+          "Omega": 20693
+        },
+        "graph_endpoints": {
+          "F": 121,
+          "Omega": 121
+        },
+        "graph_junction_pixels": {
+          "F": 728,
+          "Omega": 728
+        },
+        "thin_internal": {
+          "F": 2,
+          "Omega": 2
+        },
+        "thin_near": {
+          "F": 14,
+          "Omega": 14
+        },
+        "thin_far": {
+          "F": 105,
+          "Omega": 105
+        },
+        "thin_not_near": {
+          "F": 107,
+          "Omega": 107
+        }
+      },
+      "junction_clusters": 207
+    },
+    {
+      "filename": "20060523_43038_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1497443,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 98,
+          "Omega": 98
+        },
+        "medium": {
+          "F": 8368,
+          "Omega": 8368
+        },
+        "thick": {
+          "F": 16820,
+          "Omega": 16820
+        },
+        "nonthin": {
+          "F": 25188,
+          "Omega": 25188
+        },
+        "all_skeleton": {
+          "F": 25286,
+          "Omega": 25286
+        },
+        "graph_endpoints": {
+          "F": 162,
+          "Omega": 162
+        },
+        "graph_junction_pixels": {
+          "F": 699,
+          "Omega": 699
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 98,
+          "Omega": 98
+        },
+        "thin_not_near": {
+          "F": 98,
+          "Omega": 98
+        }
+      },
+      "junction_clusters": 213
+    },
+    {
+      "filename": "20060523_49859_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1497737,
+      "U_pixels": 2789,
+      "groups": {
+        "thin": {
+          "F": 94,
+          "Omega": 94
+        },
+        "medium": {
+          "F": 6459,
+          "Omega": 6446
+        },
+        "thick": {
+          "F": 20686,
+          "Omega": 20679
+        },
+        "nonthin": {
+          "F": 27145,
+          "Omega": 27125
+        },
+        "all_skeleton": {
+          "F": 27239,
+          "Omega": 27219
+        },
+        "graph_endpoints": {
+          "F": 186,
+          "Omega": 185
+        },
+        "graph_junction_pixels": {
+          "F": 957,
+          "Omega": 957
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 94,
+          "Omega": 94
+        },
+        "thin_not_near": {
+          "F": 94,
+          "Omega": 94
+        }
+      },
+      "junction_clusters": 296
+    },
+    {
+      "filename": "20060530_36895_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1504145,
+      "U_pixels": 828,
+      "groups": {
+        "thin": {
+          "F": 108,
+          "Omega": 108
+        },
+        "medium": {
+          "F": 7237,
+          "Omega": 7237
+        },
+        "thick": {
+          "F": 17945,
+          "Omega": 17945
+        },
+        "nonthin": {
+          "F": 25182,
+          "Omega": 25182
+        },
+        "all_skeleton": {
+          "F": 25290,
+          "Omega": 25290
+        },
+        "graph_endpoints": {
+          "F": 127,
+          "Omega": 127
+        },
+        "graph_junction_pixels": {
+          "F": 712,
+          "Omega": 712
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 108,
+          "Omega": 108
+        },
+        "thin_not_near": {
+          "F": 108,
+          "Omega": 108
+        }
+      },
+      "junction_clusters": 214
+    },
+    {
+      "filename": "20060530_53062_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1495636,
+      "U_pixels": 0,
+      "groups": {
+        "thin": {
+          "F": 100,
+          "Omega": 100
+        },
+        "medium": {
+          "F": 2896,
+          "Omega": 2896
+        },
+        "thick": {
+          "F": 23858,
+          "Omega": 23858
+        },
+        "nonthin": {
+          "F": 26754,
+          "Omega": 26754
+        },
+        "all_skeleton": {
+          "F": 26854,
+          "Omega": 26854
+        },
+        "graph_endpoints": {
+          "F": 157,
+          "Omega": 157
+        },
+        "graph_junction_pixels": {
+          "F": 868,
+          "Omega": 868
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 100,
+          "Omega": 100
+        },
+        "thin_not_near": {
+          "F": 100,
+          "Omega": 100
+        }
+      },
+      "junction_clusters": 251
+    },
+    {
+      "filename": "20060530_54390_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1507145,
+      "U_pixels": 180,
+      "groups": {
+        "thin": {
+          "F": 16,
+          "Omega": 16
+        },
+        "medium": {
+          "F": 2252,
+          "Omega": 2252
+        },
+        "thick": {
+          "F": 13417,
+          "Omega": 13417
+        },
+        "nonthin": {
+          "F": 15669,
+          "Omega": 15669
+        },
+        "all_skeleton": {
+          "F": 15685,
+          "Omega": 15685
+        },
+        "graph_endpoints": {
+          "F": 54,
+          "Omega": 54
+        },
+        "graph_junction_pixels": {
+          "F": 292,
+          "Omega": 292
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 4,
+          "Omega": 4
+        },
+        "thin_far": {
+          "F": 12,
+          "Omega": 12
+        },
+        "thin_not_near": {
+          "F": 12,
+          "Omega": 12
+        }
+      },
+      "junction_clusters": 89
+    },
+    {
+      "filename": "20060530_55390_0100_PP",
+      "shape": [
+        1488,
+        2240
+      ],
+      "FOV_pixels": 1500670,
+      "U_pixels": 1872,
+      "groups": {
+        "thin": {
+          "F": 206,
+          "Omega": 206
+        },
+        "medium": {
+          "F": 9441,
+          "Omega": 9431
+        },
+        "thick": {
+          "F": 15255,
+          "Omega": 15254
+        },
+        "nonthin": {
+          "F": 24696,
+          "Omega": 24685
+        },
+        "all_skeleton": {
+          "F": 24902,
+          "Omega": 24891
+        },
+        "graph_endpoints": {
+          "F": 112,
+          "Omega": 112
+        },
+        "graph_junction_pixels": {
+          "F": 675,
+          "Omega": 675
+        },
+        "thin_internal": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_near": {
+          "F": 0,
+          "Omega": 0
+        },
+        "thin_far": {
+          "F": 206,
+          "Omega": 206
+        },
+        "thin_not_near": {
+          "F": 206,
+          "Omega": 206
+        }
+      },
+      "junction_clusters": 184
+    }
+  ],
+  "three_seed_blocks": {
+    "T0": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5062917099604913,
+        "d1_macro": 0.5874868107817744
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7068709242544903,
+        "d1_macro": 0.7508480816252888
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.958029931655194,
+        "d1_macro": 0.9682424690442575
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8589620235813629,
+        "d1_macro": 0.8824134566337334
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8524014788945731,
+        "d1_macro": 0.8766069443914304
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3178823646142227,
+        "d1_macro": 0.38499870816568066
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9442024166806968,
+        "d1_macro": 0.9622991308952961
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.03333333333333333
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.447954822954823,
+        "d1_macro": 0.5105801263208671
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5128234427778102,
+        "d1_macro": 0.591377799870873
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5120409498930616,
+        "d1_macro": 0.5906008451346972
+      },
+      "thin_minus_nonthin_d1": {
+        "mean": -0.294926645851959,
+        "ci95": [
+          -0.3423551759370899,
+          -0.24979036416686876
+        ],
+        "n_images": 28,
+        "negative_images": 28,
+        "min": -0.5229290040728021,
+        "max": -0.06757245517712922
+      }
+    },
+    "T0_F_including_U": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5062917099604913,
+        "d1_macro": 0.5874868107817744
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7068619178397928,
+        "d1_macro": 0.750845188499958
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.958022504343904,
+        "d1_macro": 0.9682412762503956
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8589543072709708,
+        "d1_macro": 0.8824118415531961
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8523942255071529,
+        "d1_macro": 0.8766057466998003
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3180152163599776,
+        "d1_macro": 0.3851173752198315
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9442024166806968,
+        "d1_macro": 0.9622991308952961
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.03333333333333333
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.447954822954823,
+        "d1_macro": 0.5105801263208671
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5128234427778102,
+        "d1_macro": 0.591377799870873
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5120409498930616,
+        "d1_macro": 0.5906008451346972
+      }
+    },
+    "TW": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5054298167470435,
+        "d1_macro": 0.5867570012219158
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7060453717874752,
+        "d1_macro": 0.7499128970540435
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9576965761370898,
+        "d1_macro": 0.9679279312056362
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.85842485270181,
+        "d1_macro": 0.8818419639601055
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.851861280417186,
+        "d1_macro": 0.8760275512066652
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3191031370905874,
+        "d1_macro": 0.3854288504090625
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9434061799555366,
+        "d1_macro": 0.9616798250587084
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.03333333333333333
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.4433251933251933,
+        "d1_macro": 0.5045787545787546
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5120587491761455,
+        "d1_macro": 0.5907425765537255
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5112740583287927,
+        "d1_macro": 0.5899683958659839
+      },
+      "thin_minus_nonthin_d1": {
+        "mean": -0.29508496273818974,
+        "ci95": [
+          -0.34287349042286547,
+          -0.24890160304656458
+        ],
+        "n_images": 28,
+        "negative_images": 28,
+        "min": -0.5188709362533414,
+        "max": -0.07245907000019114
+      }
+    },
+    "TW_F_including_U": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5054298167470435,
+        "d1_macro": 0.5867570012219158
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7060414671463296,
+        "d1_macro": 0.7499101974996752
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.957689149165238,
+        "d1_macro": 0.9679267497138329
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8584176695597947,
+        "d1_macro": 0.8818404352604603
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8518545589825102,
+        "d1_macro": 0.8760264440527898
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3192352969001666,
+        "d1_macro": 0.3855468255270376
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9434061799555366,
+        "d1_macro": 0.9616798250587084
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.03333333333333333
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.4433251933251933,
+        "d1_macro": 0.5045787545787546
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5120587491761455,
+        "d1_macro": 0.5907425765537255
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5112740583287927,
+        "d1_macro": 0.5899683958659839
+      }
+    },
+    "2_1": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5070033370661097,
+        "d1_macro": 0.5895639553399219
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7086437667641112,
+        "d1_macro": 0.7522022869626722
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9584767482523727,
+        "d1_macro": 0.9685880869516854
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8598209238280052,
+        "d1_macro": 0.8830931010002236
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8532591080488616,
+        "d1_macro": 0.8772937283500515
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.31841513202316657,
+        "d1_macro": 0.38742667703638933
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9447882343050276,
+        "d1_macro": 0.9626857018591634
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.06666666666666667
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.447954822954823,
+        "d1_macro": 0.5137324952139768
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5135384684748339,
+        "d1_macro": 0.5927416367114636
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5127549147010527,
+        "d1_macro": 0.5920768978805372
+      },
+      "thin_minus_nonthin_d1": {
+        "mean": -0.29352914566030186,
+        "ci95": [
+          -0.3415246040378586,
+          -0.2477083826589566
+        ],
+        "n_images": 28,
+        "negative_images": 28,
+        "min": -0.5191658266077459,
+        "max": -0.07113549385315669
+      }
+    },
+    "2_1_F_including_U": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5070033370661097,
+        "d1_macro": 0.5895639553399219
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7086344540293655,
+        "d1_macro": 0.7521991317849528
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9584687918522486,
+        "d1_macro": 0.968586877633897
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8598126169252538,
+        "d1_macro": 0.8830913834359103
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8532512681440886,
+        "d1_macro": 0.877292433865495
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.31854729183274577,
+        "d1_macro": 0.38754499812245236
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9447882343050276,
+        "d1_macro": 0.9626857018591634
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.06666666666666667
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.447954822954823,
+        "d1_macro": 0.5137324952139768
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5135384684748339,
+        "d1_macro": 0.5927416367114636
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5127549147010527,
+        "d1_macro": 0.5920768978805372
+      }
+    }
+  },
+  "conditions": {
+    "formal_T0_seed2026_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5112783017085757,
+        "d1_macro": 0.5942859579325992
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7146377256517906,
+        "d1_macro": 0.7591177639891024
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9589510014770058,
+        "d1_macro": 0.9693147958330419
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8626213606085008,
+        "d1_macro": 0.8863739485057105
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.856164860831873,
+        "d1_macro": 0.8806772234586829
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3296117397734365,
+        "d1_macro": 0.3985901938933541
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9459234372922618,
+        "d1_macro": 0.9642045257689291
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.449023199023199,
+        "d1_macro": 0.5131257631257632
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5178423062209762,
+        "d1_macro": 0.5989739831192368
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5170545107767935,
+        "d1_macro": 0.5980675413760306
+      }
+    },
+    "formal_TW_seed2026_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.512614509942606,
+        "d1_macro": 0.5957452034601255
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7145706615987237,
+        "d1_macro": 0.759290585333539
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9585760173256176,
+        "d1_macro": 0.9689878946421857
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8623012224042518,
+        "d1_macro": 0.8861585165475035
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8558439337554429,
+        "d1_macro": 0.880492819814374
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.33464450349142527,
+        "d1_macro": 0.39971642395948964
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.945162102749919,
+        "d1_macro": 0.9636768576791421
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.43513431013431014,
+        "d1_macro": 0.4992368742368743
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5195758140041519,
+        "d1_macro": 0.6007242094406331
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5187751457237476,
+        "d1_macro": 0.5998208644075503
+      }
+    },
+    "formal_T0_seed2027_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.49374469241106117,
+        "d1_macro": 0.5723966909919982
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.6934042947824582,
+        "d1_macro": 0.7387303370372946
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9554717801941871,
+        "d1_macro": 0.965918461891257
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8524400376276418,
+        "d1_macro": 0.8764064024796799
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8456942174608076,
+        "d1_macro": 0.8704128436634805
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3037851086279168,
+        "d1_macro": 0.3684702728160755
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9405088411125215,
+        "d1_macro": 0.9591829768491732
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.4265873015873016,
+        "d1_macro": 0.49068986568986567
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5006005013390191,
+        "d1_macro": 0.5770532589471447
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.49983152997799857,
+        "d1_macro": 0.5761949650480148
+      }
+    },
+    "formal_TW_seed2027_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.4929268876178007,
+        "d1_macro": 0.5718271094817908
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.6932531509777774,
+        "d1_macro": 0.7381593197657415
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9553345850147903,
+        "d1_macro": 0.9657882344316635
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.852320749414515,
+        "d1_macro": 0.8761995841283797
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8455803083937468,
+        "d1_macro": 0.8701817162117128
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3049036064946152,
+        "d1_macro": 0.3699549841792628
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9392455346473566,
+        "d1_macro": 0.9583886239859206
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.4265873015873016,
+        "d1_macro": 0.49068986568986567
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.4996885721968644,
+        "d1_macro": 0.5764173798810878
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.4989259585191041,
+        "d1_macro": 0.5755658373394714
+      }
+    },
+    "formal_T0_seed2028_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.513852135761837,
+        "d1_macro": 0.5957777834207258
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7125707523292223,
+        "d1_macro": 0.7546961438494691
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9596670132943895,
+        "d1_macro": 0.9694941494084732
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8618246725079463,
+        "d1_macro": 0.8844600189158097
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8553453583910382,
+        "d1_macro": 0.8787307660521275
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3202502454413146,
+        "d1_macro": 0.38793565778761235
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9461749716373069,
+        "d1_macro": 0.9635098900677859
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.1
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.46825396825396826,
+        "d1_macro": 0.5279247501469724
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5200275207734352,
+        "d1_macro": 0.5981061575462379
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5192368089243925,
+        "d1_macro": 0.5975400289800462
+      }
+    },
+    "formal_TW_seed2028_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5107480526807235,
+        "d1_macro": 0.5926986907238313
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7103123027859243,
+        "d1_macro": 0.7522887860628498
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9591791260708616,
+        "d1_macro": 0.9690076645430593
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.860652586286663,
+        "d1_macro": 0.8831677912044334
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8541595991023687,
+        "d1_macro": 0.8774081175939089
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.31776130128572194,
+        "d1_macro": 0.386615143088435
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9458109024693336,
+        "d1_macro": 0.9629739935110626
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.1
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.46825396825396826,
+        "d1_macro": 0.5238095238095238
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5169118613274198,
+        "d1_macro": 0.595086140339456
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5161210707435266,
+        "d1_macro": 0.5945184858509299
+      }
+    },
+    "class_split_exploratory_w_v2_b1_seed2026_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5148677331069547,
+        "d1_macro": 0.6003223794953616
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7168873141517945,
+        "d1_macro": 0.760969806939178
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9595300610591371,
+        "d1_macro": 0.9697270435724146
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8637392888280901,
+        "d1_macro": 0.887259883744523
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8573091610080023,
+        "d1_macro": 0.8816083828304916
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.33106942715669774,
+        "d1_macro": 0.40238927568894106
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9467003327520699,
+        "d1_macro": 0.9649087151781028
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.1
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.449023199023199,
+        "d1_macro": 0.5311298783521006
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5215026888738443,
+        "d1_macro": 0.602745621458677
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5207077211915822,
+        "d1_macro": 0.6021770023688229
+      }
+    },
+    "class_split_exploratory_w_v2_b1_seed2027_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.4952482221732951,
+        "d1_macro": 0.5742482051533049
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.6971983954378883,
+        "d1_macro": 0.7417024946741307
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9561026668222957,
+        "d1_macro": 0.9664771522215645
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8542186428649897,
+        "d1_macro": 0.8779048175982904
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8474815237794509,
+        "d1_macro": 0.8719391798174108
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.30591659975651775,
+        "d1_macro": 0.3710955875776826
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9416075810237293,
+        "d1_macro": 0.9595955099010014
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.4265873015873016,
+        "d1_macro": 0.48214285714285715
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5020510826906931,
+        "d1_macro": 0.579036461876394
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5012872758382592,
+        "d1_macro": 0.578177650124778
+      }
+    },
+    "class_split_exploratory_w_v2_b1_seed2028_step2000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5108940559180796,
+        "d1_macro": 0.5941212813710992
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7118455907026506,
+        "d1_macro": 0.7539345592747082
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9597975168756853,
+        "d1_macro": 0.9695600650610776
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8615048397909356,
+        "d1_macro": 0.8841146016578577
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8549866393591324,
+        "d1_macro": 0.8783336224022522
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.31825936915628433,
+        "d1_macro": 0.38879516784254425
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9460567891392834,
+        "d1_macro": 0.9635528804983856
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0.1
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.46825396825396826,
+        "d1_macro": 0.5279247501469724
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.517061633859964,
+        "d1_macro": 0.5964428267993203
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.516269747073317,
+        "d1_macro": 0.5958760411480105
+      }
+    },
+    "budget_exploratory_T0_seed2026_step4000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.544124695734627,
+        "d1_macro": 0.626593789065286
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7309296153339336,
+        "d1_macro": 0.7670565353036735
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9612391364068217,
+        "d1_macro": 0.9692683380455067
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8719662168675305,
+        "d1_macro": 0.8914008333726348
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8657797063985389,
+        "d1_macro": 0.8859420660349269
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.34369575526726176,
+        "d1_macro": 0.4123967263545218
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.952321826522205,
+        "d1_macro": 0.9684089879362939
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.5138380138380138,
+        "d1_macro": 0.5944014832903721
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5500947818559375,
+        "d1_macro": 0.6292935631825692
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5492476469797855,
+        "d1_macro": 0.6283644265068448
+      }
+    },
+    "budget_exploratory_TW_seed2026_step4000": {
+      "thin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5384414996281426,
+        "d1_macro": 0.6199320012927533
+      },
+      "medium": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.7270245072160131,
+        "d1_macro": 0.7636967706422509
+      },
+      "thick": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.960499458613835,
+        "d1_macro": 0.9686602395025423
+      },
+      "nonthin": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8700343033249619,
+        "d1_macro": 0.8896459738188129
+      },
+      "all_skeleton": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.8637760276673541,
+        "d1_macro": 0.8841261345252338
+      },
+      "graph_endpoints": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.3374819771321002,
+        "d1_macro": 0.41008114102037235
+      },
+      "graph_junction_pixels": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.9515270256858035,
+        "d1_macro": 0.9674611056829381
+      },
+      "thin_internal": {
+        "n_images": 5,
+        "NA_images": 23,
+        "d0_macro": 0,
+        "d1_macro": 0
+      },
+      "thin_near": {
+        "n_images": 9,
+        "NA_images": 19,
+        "d0_macro": 0.49120426898204683,
+        "d1_macro": 0.5583932528376973
+      },
+      "thin_far": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.544534298859428,
+        "d1_macro": 0.6249488943028568
+      },
+      "thin_not_near": {
+        "n_images": 28,
+        "NA_images": 0,
+        "d0_macro": 0.5436889000408172,
+        "d1_macro": 0.6240229581024881
+      }
+    }
+  },
+  "paired_contrasts": {
+    "TW_minus_T0/thin": {
+      "mean": -0.000729809559858491,
+      "ci95": [
+        -0.002976002805701619,
+        0.0010639308177026441
+      ],
+      "n": 28,
+      "improved": 11,
+      "worse": 12,
+      "tie": 5
+    },
+    "2_1_minus_T0/thin": {
+      "mean": 0.0020771445581475112,
+      "ci95": [
+        0.0003055248682754167,
+        0.00408258690201501
+      ],
+      "n": 28,
+      "improved": 13,
+      "worse": 7,
+      "tie": 8
+    },
+    "TW_minus_T0/medium": {
+      "mean": -0.0009351845712454427,
+      "ci95": [
+        -0.0014317450862863395,
+        -0.00047855350054404767
+      ],
+      "n": 28,
+      "improved": 6,
+      "worse": 22,
+      "tie": 0
+    },
+    "2_1_minus_T0/medium": {
+      "mean": 0.0013542053373834663,
+      "ci95": [
+        0.0009419146644614239,
+        0.001824297384782807
+      ],
+      "n": 28,
+      "improved": 25,
+      "worse": 2,
+      "tie": 1
+    },
+    "TW_minus_T0/thick": {
+      "mean": -0.0003145378386211325,
+      "ci95": [
+        -0.000555221184062387,
+        -0.00010377077714855024
+      ],
+      "n": 28,
+      "improved": 5,
+      "worse": 19,
+      "tie": 4
+    },
+    "2_1_minus_T0/thick": {
+      "mean": 0.00034561790742817936,
+      "ci95": [
+        0.0001722564852923514,
+        0.000520799486063758
+      ],
+      "n": 28,
+      "improved": 18,
+      "worse": 6,
+      "tie": 4
+    },
+    "TW_minus_T0/nonthin": {
+      "mean": -0.0005714926736278535,
+      "ci95": [
+        -0.0008604480398010556,
+        -0.0002981228613719503
+      ],
+      "n": 28,
+      "improved": 8,
+      "worse": 20,
+      "tie": 0
+    },
+    "2_1_minus_T0/nonthin": {
+      "mean": 0.0006796443664902989,
+      "ci95": [
+        0.0004951918958884913,
+        0.0008751468197850995
+      ],
+      "n": 28,
+      "improved": 25,
+      "worse": 3,
+      "tie": 0
+    },
+    "TW_minus_T0/graph_endpoints": {
+      "mean": 0.0004301422433818715,
+      "ci95": [
+        -0.000979876956227731,
+        0.001973927885995553
+      ],
+      "n": 28,
+      "improved": 10,
+      "worse": 9,
+      "tie": 9
+    },
+    "2_1_minus_T0/graph_endpoints": {
+      "mean": 0.00242796887070866,
+      "ci95": [
+        0.0011021083348567284,
+        0.003971474486245262
+      ],
+      "n": 28,
+      "improved": 14,
+      "worse": 3,
+      "tie": 11
+    },
+    "TW_minus_T0/graph_junction_pixels": {
+      "mean": -0.0006193058365876364,
+      "ci95": [
+        -0.0012071783469988688,
+        -0.00014051566980119936
+      ],
+      "n": 28,
+      "improved": 5,
+      "worse": 16,
+      "tie": 7
+    },
+    "2_1_minus_T0/graph_junction_pixels": {
+      "mean": 0.0003865709638672599,
+      "ci95": [
+        4.128938346872441e-05,
+        0.0007220876752137553
+      ],
+      "n": 28,
+      "improved": 13,
+      "worse": 7,
+      "tie": 8
+    }
+  },
+  "recurrence": [
+    {
+      "filename": "20051116_44615_0400_PP",
+      "thin_points": 127,
+      "T0_all3_miss": 45,
+      "TW_all3_miss": 49,
+      "class_all3_miss": 45,
+      "formal6_all_miss": 45,
+      "formal9_all_miss": 45,
+      "all11_miss": 42,
+      "T0_seed_disagreement": 15,
+      "T0_TW_all3_miss_Jaccard": 0.9183673469387755
+    },
+    {
+      "filename": "20051116_44785_0400_PP",
+      "thin_points": 102,
+      "T0_all3_miss": 23,
+      "TW_all3_miss": 23,
+      "class_all3_miss": 23,
+      "formal6_all_miss": 23,
+      "formal9_all_miss": 23,
+      "all11_miss": 22,
+      "T0_seed_disagreement": 4,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20051117_37078_0400_PP",
+      "thin_points": 259,
+      "T0_all3_miss": 67,
+      "TW_all3_miss": 68,
+      "class_all3_miss": 68,
+      "formal6_all_miss": 67,
+      "formal9_all_miss": 67,
+      "all11_miss": 64,
+      "T0_seed_disagreement": 10,
+      "T0_TW_all3_miss_Jaccard": 0.9852941176470589
+    },
+    {
+      "filename": "20051117_37130_0400_PP",
+      "thin_points": 262,
+      "T0_all3_miss": 162,
+      "TW_all3_miss": 160,
+      "class_all3_miss": 159,
+      "formal6_all_miss": 159,
+      "formal9_all_miss": 159,
+      "all11_miss": 153,
+      "T0_seed_disagreement": 14,
+      "T0_TW_all3_miss_Jaccard": 0.9754601226993865
+    },
+    {
+      "filename": "20051202_51655_0400_PP",
+      "thin_points": 119,
+      "T0_all3_miss": 24,
+      "TW_all3_miss": 22,
+      "class_all3_miss": 24,
+      "formal6_all_miss": 22,
+      "formal9_all_miss": 22,
+      "all11_miss": 19,
+      "T0_seed_disagreement": 3,
+      "T0_TW_all3_miss_Jaccard": 0.9166666666666666
+    },
+    {
+      "filename": "20051202_54530_0400_PP",
+      "thin_points": 1549,
+      "T0_all3_miss": 647,
+      "TW_all3_miss": 647,
+      "class_all3_miss": 645,
+      "formal6_all_miss": 643,
+      "formal9_all_miss": 642,
+      "all11_miss": 612,
+      "T0_seed_disagreement": 97,
+      "T0_TW_all3_miss_Jaccard": 0.9877112135176651
+    },
+    {
+      "filename": "20051205_31934_0400_PP",
+      "thin_points": 99,
+      "T0_all3_miss": 41,
+      "TW_all3_miss": 41,
+      "class_all3_miss": 41,
+      "formal6_all_miss": 41,
+      "formal9_all_miss": 41,
+      "all11_miss": 36,
+      "T0_seed_disagreement": 5,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20051205_35224_0400_PP",
+      "thin_points": 146,
+      "T0_all3_miss": 82,
+      "TW_all3_miss": 84,
+      "class_all3_miss": 84,
+      "formal6_all_miss": 82,
+      "formal9_all_miss": 82,
+      "all11_miss": 79,
+      "T0_seed_disagreement": 11,
+      "T0_TW_all3_miss_Jaccard": 0.9761904761904762
+    },
+    {
+      "filename": "20051205_35276_0400_PP",
+      "thin_points": 113,
+      "T0_all3_miss": 19,
+      "TW_all3_miss": 19,
+      "class_all3_miss": 19,
+      "formal6_all_miss": 19,
+      "formal9_all_miss": 19,
+      "all11_miss": 19,
+      "T0_seed_disagreement": 9,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20051205_35305_0400_PP",
+      "thin_points": 50,
+      "T0_all3_miss": 31,
+      "TW_all3_miss": 31,
+      "class_all3_miss": 31,
+      "formal6_all_miss": 31,
+      "formal9_all_miss": 31,
+      "all11_miss": 29,
+      "T0_seed_disagreement": 0,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20051208_41707_0400_PP",
+      "thin_points": 51,
+      "T0_all3_miss": 9,
+      "TW_all3_miss": 9,
+      "class_all3_miss": 9,
+      "formal6_all_miss": 9,
+      "formal9_all_miss": 9,
+      "all11_miss": 9,
+      "T0_seed_disagreement": 2,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20060407_41937_0200_PP",
+      "thin_points": 820,
+      "T0_all3_miss": 358,
+      "TW_all3_miss": 358,
+      "class_all3_miss": 356,
+      "formal6_all_miss": 355,
+      "formal9_all_miss": 354,
+      "all11_miss": 332,
+      "T0_seed_disagreement": 44,
+      "T0_TW_all3_miss_Jaccard": 0.9833795013850416
+    },
+    {
+      "filename": "20060411_57853_0200_PP",
+      "thin_points": 181,
+      "T0_all3_miss": 89,
+      "TW_all3_miss": 90,
+      "class_all3_miss": 89,
+      "formal6_all_miss": 89,
+      "formal9_all_miss": 89,
+      "all11_miss": 81,
+      "T0_seed_disagreement": 6,
+      "T0_TW_all3_miss_Jaccard": 0.9888888888888889
+    },
+    {
+      "filename": "20060411_61214_0200_PP",
+      "thin_points": 205,
+      "T0_all3_miss": 75,
+      "TW_all3_miss": 74,
+      "class_all3_miss": 76,
+      "formal6_all_miss": 74,
+      "formal9_all_miss": 74,
+      "all11_miss": 70,
+      "T0_seed_disagreement": 10,
+      "T0_TW_all3_miss_Jaccard": 0.9866666666666667
+    },
+    {
+      "filename": "20060411_61478_0200_PP",
+      "thin_points": 701,
+      "T0_all3_miss": 405,
+      "TW_all3_miss": 405,
+      "class_all3_miss": 405,
+      "formal6_all_miss": 403,
+      "formal9_all_miss": 403,
+      "all11_miss": 370,
+      "T0_seed_disagreement": 34,
+      "T0_TW_all3_miss_Jaccard": 0.9901719901719902
+    },
+    {
+      "filename": "20060412_51656_0200_PP",
+      "thin_points": 554,
+      "T0_all3_miss": 294,
+      "TW_all3_miss": 298,
+      "class_all3_miss": 296,
+      "formal6_all_miss": 294,
+      "formal9_all_miss": 294,
+      "all11_miss": 275,
+      "T0_seed_disagreement": 28,
+      "T0_TW_all3_miss_Jaccard": 0.9865771812080537
+    },
+    {
+      "filename": "20060412_58287_0200_PP",
+      "thin_points": 290,
+      "T0_all3_miss": 143,
+      "TW_all3_miss": 143,
+      "class_all3_miss": 142,
+      "formal6_all_miss": 142,
+      "formal9_all_miss": 141,
+      "all11_miss": 118,
+      "T0_seed_disagreement": 15,
+      "T0_TW_all3_miss_Jaccard": 0.9861111111111112
+    },
+    {
+      "filename": "20060412_58889_0200_PP",
+      "thin_points": 469,
+      "T0_all3_miss": 209,
+      "TW_all3_miss": 209,
+      "class_all3_miss": 214,
+      "formal6_all_miss": 207,
+      "formal9_all_miss": 206,
+      "all11_miss": 188,
+      "T0_seed_disagreement": 43,
+      "T0_TW_all3_miss_Jaccard": 0.981042654028436
+    },
+    {
+      "filename": "20060412_60913_0200_PP",
+      "thin_points": 83,
+      "T0_all3_miss": 37,
+      "TW_all3_miss": 36,
+      "class_all3_miss": 37,
+      "formal6_all_miss": 36,
+      "formal9_all_miss": 36,
+      "all11_miss": 32,
+      "T0_seed_disagreement": 0,
+      "T0_TW_all3_miss_Jaccard": 0.972972972972973
+    },
+    {
+      "filename": "20060412_61299_0200_PP",
+      "thin_points": 278,
+      "T0_all3_miss": 92,
+      "TW_all3_miss": 92,
+      "class_all3_miss": 90,
+      "formal6_all_miss": 92,
+      "formal9_all_miss": 90,
+      "all11_miss": 82,
+      "T0_seed_disagreement": 20,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20060522_45248_0100_PP",
+      "thin_points": 90,
+      "T0_all3_miss": 41,
+      "TW_all3_miss": 40,
+      "class_all3_miss": 40,
+      "formal6_all_miss": 40,
+      "formal9_all_miss": 40,
+      "all11_miss": 39,
+      "T0_seed_disagreement": 4,
+      "T0_TW_all3_miss_Jaccard": 0.975609756097561
+    },
+    {
+      "filename": "20060522_45583_0100_PP",
+      "thin_points": 121,
+      "T0_all3_miss": 30,
+      "TW_all3_miss": 30,
+      "class_all3_miss": 30,
+      "formal6_all_miss": 30,
+      "formal9_all_miss": 30,
+      "all11_miss": 26,
+      "T0_seed_disagreement": 11,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20060523_43038_0100_PP",
+      "thin_points": 98,
+      "T0_all3_miss": 43,
+      "TW_all3_miss": 42,
+      "class_all3_miss": 43,
+      "formal6_all_miss": 41,
+      "formal9_all_miss": 41,
+      "all11_miss": 39,
+      "T0_seed_disagreement": 4,
+      "T0_TW_all3_miss_Jaccard": 0.9318181818181818
+    },
+    {
+      "filename": "20060523_49859_0100_PP",
+      "thin_points": 94,
+      "T0_all3_miss": 36,
+      "TW_all3_miss": 37,
+      "class_all3_miss": 36,
+      "formal6_all_miss": 36,
+      "formal9_all_miss": 36,
+      "all11_miss": 34,
+      "T0_seed_disagreement": 6,
+      "T0_TW_all3_miss_Jaccard": 0.972972972972973
+    },
+    {
+      "filename": "20060530_36895_0100_PP",
+      "thin_points": 108,
+      "T0_all3_miss": 30,
+      "TW_all3_miss": 29,
+      "class_all3_miss": 29,
+      "formal6_all_miss": 29,
+      "formal9_all_miss": 29,
+      "all11_miss": 23,
+      "T0_seed_disagreement": 5,
+      "T0_TW_all3_miss_Jaccard": 0.9666666666666667
+    },
+    {
+      "filename": "20060530_53062_0100_PP",
+      "thin_points": 100,
+      "T0_all3_miss": 33,
+      "TW_all3_miss": 33,
+      "class_all3_miss": 33,
+      "formal6_all_miss": 33,
+      "formal9_all_miss": 33,
+      "all11_miss": 23,
+      "T0_seed_disagreement": 5,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20060530_54390_0100_PP",
+      "thin_points": 16,
+      "T0_all3_miss": 6,
+      "TW_all3_miss": 6,
+      "class_all3_miss": 6,
+      "formal6_all_miss": 6,
+      "formal9_all_miss": 6,
+      "all11_miss": 5,
+      "T0_seed_disagreement": 1,
+      "T0_TW_all3_miss_Jaccard": 1
+    },
+    {
+      "filename": "20060530_55390_0100_PP",
+      "thin_points": 206,
+      "T0_all3_miss": 35,
+      "TW_all3_miss": 34,
+      "class_all3_miss": 35,
+      "formal6_all_miss": 34,
+      "formal9_all_miss": 34,
+      "all11_miss": 29,
+      "T0_seed_disagreement": 3,
+      "T0_TW_all3_miss_Jaccard": 0.9714285714285714
+    }
+  ],
+  "rows_computed": 6776,
+  "elapsed_seconds": 84.62965685199015,
+  "gpu_updates": 0,
+  "model_forward_calls": 0,
+  "files_written": 0
+}

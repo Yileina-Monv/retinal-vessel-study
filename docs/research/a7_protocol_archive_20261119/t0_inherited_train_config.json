@@ -1,0 +1,51 @@
+{
+  "kind": "A14_engineering_T0",
+  "loss": "existing_masked_BCE_plus_Dice_unit_weights",
+  "data_root": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008",
+  "source_m0": "${RETINA_PROJECT_ROOT}/checkpoints/m0_10000_20261008/last.pt",
+  "source_m0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+  "normalization_source": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/releases/development_v1/normalization.json",
+  "normalization_sha256": "c7ccde8948b08f9f38730034ef4c126c77b73af173ea8a841acdb6fd82b08f77",
+  "mean": [
+    0.429275223900028,
+    0.19375142502503398,
+    0.07753014774123759
+  ],
+  "std": [
+    0.18544595955624413,
+    0.10540798459784542,
+    0.052217286214809804
+  ],
+  "batch_size": 4,
+  "patch": 512,
+  "crops_per_image": 4,
+  "seed": 2026,
+  "amp": true,
+  "amp_dtype": "float16",
+  "amp_initial_scale": 1024.0,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "clip_norm": 1.0,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "scheduler": null,
+  "accumulation": 1,
+  "num_workers": 0,
+  "max_steps": 2000,
+  "save_every": 200,
+  "safe_stop_seconds": 7200,
+  "sampling": "manifest_order_four_round_robin_passes_per_epoch",
+  "geometry_rng": "SeedSequence(seed,global_draw)",
+  "augmentation_order": "crop,hflip,vflip,CCW_rot90",
+  "hflip_probability": 0.5,
+  "vflip_probability": 0.5,
+  "quarter_turn_probability_each": 0.25,
+  "empty_fov": "error_no_resampling",
+  "photometric": false,
+  "resize": false,
+  "official_test": false,
+  "phase": "A15_2_single_seed_budget_calibration_NOT_formal_T0_TW"
+}

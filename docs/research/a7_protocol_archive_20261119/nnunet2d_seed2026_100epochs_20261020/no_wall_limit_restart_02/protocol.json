@@ -1,0 +1,242 @@
+{
+  "protocol_id": "maples_nnunet2d_seed2026_100epochs_no_wall_limit_restart02_20261020",
+  "status": "FROZEN_USER_APPROVED_CONDITIONAL_ON_PRELAUNCH_GATES",
+  "date": "2026-10-20",
+  "authority": {
+    "user_approval": "User selected a fresh restart cancelling the 10-hour hard stop while retaining exactly100epochs, then explicitly instructed Implement the plan. Sol executes directly; previous916-update interrupted trajectory remains preserved and separately accounted.",
+    "classification": "独立旁支、单种子开发集探索、模型流程比较；不是正式三seed实验、严格单变量消融、独立验证或临床验证。",
+    "roles": "Sol directly implements this approved operational amendment and reviews evidence; no new Luna or GPU mainline delegation.",
+    "P1": "U-Net B1/B2 CPU definition/human review/design continues independently and has resource priority; S3 H1 not released; no B1/B2 GPU authorization."
+  },
+  "question": "在不加自定义骨架Loss的标准2D nnU-Net流程及固定有限预算下，整体血管分割和既定全域细骨架覆盖相对原T0如何变化，误报与远处召回代价如何？",
+  "scope": {
+    "new_scientific_trajectories": 1,
+    "seed": 2026,
+    "epochs": 100,
+    "iterations_per_epoch": 250,
+    "planned_optimizer_attempts": 25000,
+    "successful_updates_required_for_complete": 25000,
+    "extra_engineering_optimizer_updates": 0,
+    "no_replay_budget": false,
+    "internal_train_monitor_batches_per_epoch": 50,
+    "internal_monitor_total": 5000,
+    "dev_final_cases": 28,
+    "test_access": false,
+    "baseline_retraining": false,
+    "replay_exception": "One explicitly approved fresh restart only, in a separate directory; prior916 successful updates are discarded for scientific comparison but retained in cumulative usage. No automatic retries or continuation."
+  },
+  "paths": {
+    "proposal": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_feasibility_20261020.md",
+    "freeze_directory": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02",
+    "branch_code": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02",
+    "python": "${RETINA_PROJECT_ROOT}/envs/nnunet2d_v2/bin/python",
+    "data_root": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020",
+    "raw": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/raw",
+    "preprocessed": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/preprocessed",
+    "engineering": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/engineering",
+    "scientific_root": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit",
+    "nnUNet_results": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit/nnunet_results",
+    "predictions": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit/dev_predictions",
+    "evaluation": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit/analysis"
+  },
+  "data": {
+    "dataset": "Dataset501_MAPLES",
+    "train_manifest": "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json",
+    "dev_manifest": "${RETINA_PROJECT_ROOT}/docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json",
+    "train_count": 110,
+    "dev_count": 28,
+    "train_native_sizes": {
+      "960x1440": 58,
+      "1488x2240": 33,
+      "1536x2304": 19
+    },
+    "fold": "all",
+    "no_default_cv": true,
+    "planning": "Reuse existing Train-only fingerprint/plans and exported 0/1 labels/RGB; no replan, rescale, data split change or Dev normalization fitting.",
+    "support": "Standard native binary vessel/background labels, default crop/padding background supervision; no project FOV loss masking. Accepted difference from T0. Original FOV masks unchanged and used for external metrics.",
+    "dev_usage": "ID-whitelisted RGB conversion solely for final inference; no Dev curves or label-driven planning/training. GT and frozen references used only for CPU endpoint evaluation. No dataset-root globs, imagesTs or official Test copy."
+  },
+  "recipe": {
+    "nnunetv2": "2.8.1",
+    "torch": "2.4.0+cu121",
+    "architecture": "PlainConvUNet, standard 2d ExperimentPlanner",
+    "trainer": "nnUNetTrainer_100epochs",
+    "plans_name": "nnUNetPlans_8GBtarget",
+    "plans_sha256": "26507b98404e6f6855708567d224675805f3d2fd7680df8abd8caf74c7eb1fe9",
+    "patch_size": [
+      1024,
+      1536
+    ],
+    "batch_size": 2,
+    "initialization": "Fresh random official initialization after setting seed2026, never load engineering/M0/T0 weights, optimizer/scaler or scheduler.",
+    "loss": "Official class-mode softmax CE+Dice, standard deep supervision (8 output levels per frozen plans); weight_ce=weight_dice=1; no skeleton/FOV/regional/custom loss. Negative combined Dice loss is not itself nonfinite failure.",
+    "optimizer": {
+      "name": "SGD",
+      "initial_lr": 0.01,
+      "momentum": 0.99,
+      "nesterov": true,
+      "weight_decay": 0.00003,
+      "gradient_clip_norm": 12
+    },
+    "scheduler": "Official PolyLRScheduler with num_epochs=100; standard epoch stepping 0..99, not first100 epochs of a1000-epoch schedule.",
+    "normalization": "Frozen NaturalImage2DIO/RGB per-image per-channel ZScoreNormalization; retain default planner geometry; no FIVES/M0 normalization or FOV masking.",
+    "sampling": "Official Train110 fold=all patch loader, foreground oversampling parameter0.33 and standard augmentations; input stream not paired with T0.",
+    "precision": "Standard CUDA AMP/GradScaler as verified; nnUNet_compile=false; no silent precision/batch/patch/loss changes."
+  },
+  "randomness": {
+    "main_seed": 2026,
+    "python_hash_seed": "2026 set before interpreter startup",
+    "seed_targets": [
+      "python.random",
+      "numpy",
+      "torch CPU",
+      "torch CUDA"
+    ],
+    "augmentation_train_workers": 1,
+    "augmentation_val_workers": 1,
+    "explicit_worker_seeds": {
+      "train": [
+        2026
+      ],
+      "internal_train_monitor": [
+        2027
+      ]
+    },
+    "implementation_boundary": "Set actual worker seeds via branch-local, source-bound runtime adapter; do not edit installed nnU-Net/batchgenerators. Record effective seed lists and prove CPU worker seed plumbing with synthetic no-model tests before launch. No seeds=None for scientific loader. Distribution/sampling/augmentation recipe remains official.",
+    "cudnn": {
+      "deterministic": true,
+      "benchmark": false
+    },
+    "limitations": "Fixed-input engineering restore does NOT prove serialization/replay of native worker queues, GPU determinism or patient independence. Record library/runtime/input digests. No promise of bitwise full-stream resume.",
+    "failure_resume": "Default is one uninterrupted scientific run. On interruption, snapshot model/optimizer/scaler/scheduler/main RNG and successful/attempt counters where feasible, preserve logs, mark incomplete, stop to Sol/user. No auto resume/restart/replay because native augmentation queues are not recovered. No resetting spent update/GPU budgets."
+  },
+  "budget": {
+    "device": "Physical GPU0 pinned by frozen UUID; GPU1 reserved for future separately authorized P1 work. No shared-card memory squeeze or batch/patch change.",
+    "estimated_gpu_hours": {
+      "updates": 6.78,
+      "internal_train_monitor": 0.46,
+      "total_without_other_overhead": 7.24,
+      "planning_range": [
+        8,
+        10
+      ]
+    },
+    "cumulative_gpu_wall_cap_seconds": null,
+    "cap_scope": "No normal-progress wall-clock deadline. Persist actual process lifetimes and separately preserve all previous scientific attempts. Fixed100epochs/25000 attempts remains the only training budget. No automatic restart.",
+    "free_disk_min_GiB": 50,
+    "cpu_policy": "Use one Train and one internal monitor augmentation worker, bounded BLAS threads; no CPU/NAS saturation. P1 CPU continues. GPU0 occupied => wait/report, never kill others or silently move to GPU1.",
+    "stop_at_cap": "At25000 attempted updates stop; completion requires25000 successful updates and5000 Train-only monitor batches. Nonfinite/OOM/AMP skip/explicit interruption fails without supplemental updates. No9.5h or10h cut-off."
+  },
+  "monitoring": {
+    "logging": "All25000 attempted/success events with epoch/iteration/actual Train case IDs, LR, loss, preclip gradient norm, AMP scale/skips, successful optimizer count, runtime/memory. Record per-step inputs/targets or stable hashes without consuming RNG or adding forward passes.",
+    "internal_monitor": "50 Train-only patch batches per epoch, fold=all val set must equal Train110. Not Dev validation; not clinical/independent evidence. No early stopping based on internal scores.",
+    "checkpoints": "Use standard periodic/final checkpointing only inside new scientific directory, preserve failures. Best checkpoint may exist as software artifact but never used for external prediction or comparison. Record initial fresh-state digest and final checkpoint SHA/metadata; no existing engineering or old model overwrite.",
+    "completion": "Exactly100epochs and25000 attempts/successes, 0AMP skips, finite loss/gradients and5000 internal Train monitor batches. Nonfinite, skipped update, OOM or interrupted budget is incomplete, not supplemented with extra attempts."
+  },
+  "inference": {
+    "when": "Only after complete terminal100epochs, exactly one prescribed model (checkpoint_final.pth), fold explicitly all; no best, ensemble, TTA, auto-detected folds or postprocessing search.",
+    "method": "Official nnUNetPredictor native preprocessing/inverse export, tile_step_size=0.5, Gaussian weighting, use_mirroring=false, standard installed CUDA autocast. No original T0 tiling/normalization forced onto nnU-Net. Do not invoke train CLI's extra perform_actual_validation on all110 Train after training.",
+    "probability": "Obtain class1 vessel softmax probabilities, inverse transpose/resampling/cropping to each original HxW; save float32 arrays [0,1], finite. Evaluate probability>=0.5, not argmax hard mask. Save source image/checkpoint/plans/code hashes.",
+    "preflight_export": "CPU synthetic class/channel/orientation/shape checks using official inverse-export path for three sizes before launch; existing nearest-neighbor identity marker test alone does not prove probability export. Verify background reinsertion and no unintended foreground/background channel reversal.",
+    "outputs": 28,
+    "no_step0_or_intermediate_dev_inference": true,
+    "no_automatic_oom_fallback": "Pause/report on OOM or predictor changing tiling, precision, accumulation device or patch size; preserve final artifact. No automatic retraining/config search."
+  },
+  "evaluation": {
+    "primary": "Whole-FOV Dice, per-image then macro over original Dev28.",
+    "key_secondary": [
+      "fov_thin_recall_d1_w3",
+      "fov_thin_recall_d0_w3"
+    ],
+    "mandatory": [
+      "dice",
+      "precision",
+      "fp_density",
+      "recall",
+      "far_recall",
+      "near_pixel_recall",
+      "near_thin_recall_d1",
+      "fov_thin_recall_d0_w3",
+      "fov_thin_recall_d1_w3"
+    ],
+    "threshold": 0.5,
+    "definitions": "Reuse bound original evaluate_arrays and full-native Zhang(V&FOV), width2*EDT before U clipping. Original whole-FOV metric masks/FP denominator unchanged. Full thin target S3&Omega withOmega=FOV&~U; match P&Omega, Euclidean native d1=1 (cross, not diagonal). No GT/target/width/radius/threshold changes.",
+    "expected_denominators": {
+      "fov_S3_images": 28,
+      "fov_S3_positions": 7291,
+      "original_near_images": 9,
+      "original_near_positions": 77,
+      "original_near_NA_images": 19
+    },
+    "baseline": "Readonly original T0 seed2026 step2000 probabilities and metrics bound in source_manifest. Recompute on CPU if needed; no T0 retraining or inference. Other formal seeds only historical context, never pool them as three paired nnU-Net runs.",
+    "protection": "Relative to T0 at fixed0.5: Precision not lower, FP/FOV not higher, far recall not lower (macro pointwise allowed degradation0); report intervals and all per-image worsening. Also report whole recall and full thin d0/d1, never hide tradeoffs. Not a clinical noninferiority proof.",
+    "full_branch_metrics": "NOT authorized before branch-definition/human approval; no current B1/B2 pilot reference scoring. Coverage improvement alone is not connectivity/anatomical repair.",
+    "same_FP": "Not part of this first run; no threshold sweep or learned postprocessing."
+  },
+  "statistics": {
+    "contrast": "Final nnU-Net seed2026 minus T0 seed2026 step2000, paired by original fixed Dev image order.",
+    "bootstrap": "1000 whole-image paired resamples, numpy Generator(PCG64(20261016)); restart for EACH distinct effective n, share indices for same-n metrics; quantile .025/.975 method=linear; save indices and estimates.",
+    "report": "Absolute values, per-image numerators/denominators/NA, macro differences/95% intervals, improve/worse/tie and native-size strata. No pointwise iid tests or outcome-selected subsets. Single-seed variation SD=NA.",
+    "interpretation": "Different pretraining, initialization, loss, sampling, preprocessing, FOV training support and budget: process comparison only. Positive Dice without thin improvement supports overall-flow signal only; protection failure is not cost-free gain. Intervals crossing0 are inconclusive; even positive protected result is hypothesis-generating on reused Dev, not independent confirmation. Negative100epochs cannot exclude fully-trained nnU-Net."
+  },
+  "prelaunch_gates": [
+    "Read current AGENTS/STATUS; confirm current approval and resource availability, new run path absent/empty, no active run duplicate.",
+    "Rehash source_manifest files/T0 predictions and current derived raw/preprocessed Train whitelist; source data/split/old results unchanged; source/package/plans drift stops launch.",
+    "Reconcile stale engineering budget hash with independent logs in a new append-only scientific/preflight/budget_binding_reconciliation.json; do not edit old execution_binding, ledger, or verification. Four phases sum222.736955810s plus24.021517600s Train probe=246.758473410s; declared246.771468868s is conservatively larger, attempts100. Explain exact file-version history if unavailable label provenance limit. No extra engineering updates.",
+    "Bind new scientific wrapper/supervisor/evaluator code and full startup configuration; CPU/synthetic tests for hard25000attempt cap and no wall-time cut-off, finite/AMP failure stop, worker seeds, correct100epoch LR horizon, fixed checkpoint choice and probability inverse export. No default train CLI or1000epochs.",
+    "Preserve documented shared-readonly dependency limitation; actual imported package files/versions match frozen hashes, no pip install/upgrade on base environment.",
+    "Persist preflight/verification.json with all pass or explicit stop. No GPU updates before gate pass; first CUDA model is fresh scientific run, all updates count against25000."
+  ],
+  "stops": [
+    "source or membership/denominator drift",
+    "unexpected scientific hyperparameter or seed plumbing",
+    "nonfinite loss/gradient, AMP skip, OOM",
+    "25000attempts limit; no wall-clock truncation",
+    "unknown sampler/queue recovery or interrupted scientific run",
+    "unapproved GT definition, seed/config/threshold/checkpoint expansion"
+  ],
+  "acceptance": {
+    "engineering": "Complete authorized trajectory and prescribed final28probabilities with fair source binding, readable evidence and exact metrics/counts. Negative/inconclusive outcomes are valid delivery. Do not require positive metrics to call engineering complete.",
+    "deliverables": [
+      "scientific/preflight/verification.json",
+      "scientific/execution_binding.json",
+      "scientific/budget_ledger.json",
+      "per-update/epoch logs and failure evidence",
+      "fresh initialization digest and final checkpoint identity",
+      "28 native float32 vessel probabilities + export verification",
+      "per-image fixed0.5 metric counts/NA",
+      "paired macro/intervals and bootstrap indices",
+      "scientific/report.md and completion_verification.json",
+      "original STATUS updated with actual outcome/gaps; stop and return to Sol"
+    ],
+    "not_authorized": [
+      "additional seeds/configurations/losses/epochs",
+      "baseline retraining or engineering replay",
+      "B1/B2 or old S3 GPU",
+      "official Test access",
+      "automatic scientific restart/resume",
+      "Dev-guided checkpoint/threshold selection"
+    ]
+  },
+  "source_manifest": "source_manifest.json",
+  "sol_engineering_review": "sol_engineering_review.json",
+  "operational_amendment": {
+    "parent_protocol_sha256": "4541e03ba04c397764f363322108f6e4bc0246a67dbf7f5af93096a2a7d64983",
+    "parent_protocol": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_seed2026_100epochs_20261020/protocol.json",
+    "previous_scientific_root": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v1",
+    "discarded_successful_updates": 916,
+    "previous_cumulative_gpu_process_seconds": 1441.2038553139428,
+    "gpu0_uuid": "${GPU_UUID}",
+    "gpu1_uuid": "${GPU_UUID}",
+    "no_new_B1_B2_training_authorization": true,
+    "unchanged_scientific_sections": [
+      "data",
+      "recipe",
+      "randomness",
+      "monitoring",
+      "evaluation",
+      "statistics"
+    ],
+    "previous_frozen_bundle_immutable": true
+  }
+}

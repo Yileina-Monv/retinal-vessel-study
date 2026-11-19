@@ -1,0 +1,144 @@
+{
+  "id": "NNUNET_COMPLETE_RUN_PROPOSAL_20261025",
+  "status": "PROPOSAL_NOT_FROZEN_NO_GPU_RELEASE",
+  "prepared_at": "2026-10-25T18:39:50.527633+08:00",
+  "user_authorized_this_turn": [
+    "existing-record/source review",
+    "CPU-only evidence checks",
+    "executable-plan preparation",
+    "existing STATUS/research record update"
+  ],
+  "GPU_authorized_this_turn": false,
+  "current_facts": {
+    "old_attempts": 6527,
+    "old_successes": 6526,
+    "old_AMP_skips": 1,
+    "final_checkpoint_exists": false,
+    "CPU_tests_previously_passed_not_rerun": 37,
+    "protected_original_files_rechecked": 16,
+    "candidate_sources_rechecked": 5,
+    "old_elapsed_seconds": 9921.701394297008,
+    "observed_seconds_per_attempt_including_Train_monitors": 1.5201013320510202,
+    "estimated_25000_attempt_hours": 10.556259250354307,
+    "observed_peak_reserved_GiB": 8.771484375
+  },
+  "recommendation": {
+    "trajectory": "one new fresh seed2026 random-initialized standard2D nnU-Net; preserve old incomplete trajectory, no non-exact resume",
+    "scientific_budget": {
+      "epochs": 100,
+      "train_attempts_per_epoch": 250,
+      "total_train_attempt_cap": 25000,
+      "internal_Train_monitor_batches": 5000,
+      "successful_updates_and_skips_separately_counted": true,
+      "skip_replacement_or_extra_epochs": false,
+      "normal_progress_wall_deadline": null
+    },
+    "AMP": {
+      "standard_GradScaler_backoff_allowed_only_if_loss_and_states_finite": true,
+      "safe_skip_requires_zero_real_optimizer_calls_and_unchanged_parameter_optimizer_state": true,
+      "success_requires_one_finite_real_parameter_update": true,
+      "pause_at_consecutive_skips": 5,
+      "pause_at_total_skips": 25,
+      "fatal": [
+        "nonfinite forward loss/model/optimizer",
+        "unhandled gradient overflow or inconsistent step/scaler counts",
+        "OOM",
+        "source/data/resource drift",
+        "attempt/update cap violation",
+        "unexpected worker exit"
+      ],
+      "threshold_status": "engineering proposal; require explicit approval; not chosen on Dev"
+    },
+    "original_recipe": {
+      "Train": 110,
+      "Dev": 28,
+      "fold": "all",
+      "plans": "existing nnUNetPlans_8GBtarget unchanged",
+      "batch": 2,
+      "patch": [
+        1024,
+        1536
+      ],
+      "Loss": "official softmax CE+Dice plus official deep supervision",
+      "optimizer": "official SGD .01/momentum .99/Nesterov, WD3e-5, clip12",
+      "scheduler": "official Poly100, each epoch0..99; not1000-epoch prefix",
+      "initialization": "fresh official random initialization, no M0/old/engineering weights",
+      "normalization_sampling_augmentation": "unchanged existing standard planner/loader; no project FOV training mask",
+      "comparison": "whole-pipeline comparison with existing A0, not single-variable ablation"
+    },
+    "resource": {
+      "GPU": "GPU0 UUID ${GPU_UUID} only",
+      "GPU1_query_use": false,
+      "concurrency": "exclusive GPU0, project shared lock; no concurrent P1 GPU",
+      "historical_physical_use_about_GiB": 9,
+      "no_silent_batch_patch_memory_compression": true,
+      "estimated_training_hours": [
+        10,
+        12
+      ],
+      "final_export_evaluation": "additional time measured in engineering; reserve up to1h as planning buffer, not cutoff"
+    },
+    "recovery": "uninterrupted job preferred; full model/optimizer/scaler/scheduler/main RNG/cursor/counters/log-prefix checkpoints; native producer queues not serializable, so no strict native-stream resume claim or automatic restart; interruption requires separate decision; preserve all old and new costs"
+  },
+  "implementation_minimum": [
+    "Reuse official run_training/train_step, existing seeded worker adapter and original data/export/evaluation; branch-local observer integration only, no installed-package changes",
+    "Persist an in-flight attempt reservation before computation; classify success/safe AMP skip/fatal afterward; hard crash leaves charged/unknown event and stopped state, never refund",
+    "Observer must not introduce extra forward/backward/optimizer calls; compare per-step loss/LR/state/RNG against uninstrumented CPU fixture on finite steps",
+    "Explicit train/monitor/finalize cursor; epoch marker must not advance due to a mid-epoch save; preserve partial epoch outputs and metadata",
+    "Authorize only exact phase/config/source/summary with GPU0 lock and persistent caps; deny stale release/out-of-scope args; no automatic scientific launch after engineering"
+  ],
+  "proposed_CPU_acceptance": [
+    "Reuse unchanged37-test evidence, then test actual new full-loop integration with short CPU fixtures",
+    "Continuous-vs-new-process fixed-input restoration verifies available states exactly, while native queued-stream restore remains explicitly unsupported",
+    "Atomic ledger/budget exhaustion/unknown-crash and skip5/25 boundaries, epoch/monitor/finalize/LR100 boundaries",
+    "Three-native-size probability inverse export and class1 orientation checks; old fixed metric denominators/NA unchanged",
+    "Actual source/version/plans/Train/Dev whitelist hashes remain bound; no Test data reads"
+  ],
+  "proposed_GPU_engineering": {
+    "status": "NOT_AUTHORIZED",
+    "attempt_cap": 32,
+    "expected_successes": 31,
+    "forced_controlled_AMP_skips": 1,
+    "sequence": "30 ordinary Train updates,1 explicitly injected overflow confined to engineering,1 finite recovery update",
+    "internal_Train_monitor_batch_cap": 5,
+    "wall_cap_seconds": 900,
+    "Dev_or_Test_inference": false,
+    "no_extra_update_retry": true,
+    "forced_skip_check": "loss finite, GradScaler decrease, zero optimizer calls, model/optimizer bitwise unchanged; subsequent finite real update succeeds",
+    "other_acceptance": [
+      "finite true unscaled gradient before original clip12 on successful attempts",
+      "31 successes+1 forced skip=32 attempts, with32 forwards/backwards and no extra optimizer calls",
+      "persistent counters/last checkpoint/input identities/real resource and source binding",
+      "no count reset; scientific initialization must be fresh, never engineering checkpoint"
+    ],
+    "on_failure": "stop and retain exact failed/pending cost; no unapproved retry"
+  },
+  "scientific_endpoint": {
+    "status": "NOT_AUTHORIZED_PENDING_ENGINEERING_AND_SEPARATE_USER_APPROVAL",
+    "only_model": "checkpoint_final.pth after100 epochs/25000 attempts and5000 Train-only monitor batches, no fatal/unknown, skips below limits; report exact successful count",
+    "Dev_inference": "single prescribed28-case final evaluation, original native-space class1 probabilities>=.5, no TTA/ensemble/threshold/checkpoint selection",
+    "primary": "ordinary image-macro Dice vs existing A0 seed2026, positive mean and paired image bootstrap95% lower>0; PCG64 seed20261016,1000 resamples, linear quantile",
+    "protection": "Report Precision/Recall/FP-FOV/far recall/coarse recall/hard-clDice and original neighborhood; apply current original nondegradation guards separately; failure is not hidden by Dice or skeleton gains",
+    "branch_recall": "reuse already verified P1 path definition only as supplementary metric; preserve original S3/near valid IDs and NA",
+    "claim": "single-seed repeated-use Dev exploration, whole-pipeline comparison; no independent validation or automatic seed expansion"
+  },
+  "evidence": {
+    "old_CPU_verification": {
+      "path": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit/repair_amp_cpu_20261021/attempt_01/verification.json",
+      "sha256": "b5c2f71605fb7a6dbd5dd66a03a9a030b9b2a305eabae61e57082c011fba3676"
+    },
+    "old_frozen_protocol": {
+      "path": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/protocol.json",
+      "sha256": "6e095d04c29178eea076c6026119f40c2d8d92a41eb52d1612cf2c49732cb975"
+    },
+    "candidate_code_sha256": {
+      "revised_policy.py": "50ea67beaef7a6edbed4d1daac9cba596a0be123d3fa7ed896ddfc7e1a1cdb74",
+      "revised_recovery.py": "6447cf5ec9617c690548334323477690767727e48f3d833e0ba7a2541f9f389c",
+      "revised_runtime.py": "9a209943e0f8ae0eb1a52c0a08fbf7782331ab308f635c78f78e9b0d58f1629d",
+      "run_cpu_review.py": "db95a86007fc5ea706e5e972f5abeb3e165b40c1b538ddb8a244e0f33c8ef9e8",
+      "test_amp_recovery_revision.py": "96728a360b7cd30ab4f86332d412194d8c871f73029ccfe1da4125b2f5317184"
+    },
+    "per_update_sha256": "5e2a61da4f62b3f97e4b8dba40813f97df97f287037c3ecdf1d6f2a23d215ee3",
+    "ledger_sha256": "aa71b68518dd2cf9d849e6dffbc7be92db5e6d4f9fefac9bd9eea69bc5aab585"
+  }
+}

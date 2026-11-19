@@ -1,0 +1,29 @@
+{
+  "phase": "NNUNET_REPLICATION_2027_2028_V1",
+  "seeds": [
+    2027,
+    2028
+  ],
+  "serial_order": [
+    2027,
+    2028
+  ],
+  "device": "${GPU_UUID}",
+  "total_train_attempt_cap": 50000,
+  "total_monitor_cap": 10000,
+  "official_Test_allowed": false,
+  "GPU1_allowed": false,
+  "seed_protocol_sha256": {
+    "2027": "5cb0b2b84e27b0cdbfe94b58365c862a77759eee0b8982281eb5de923a1ce957",
+    "2028": "d7745705d058a01fdde86891484f6b0d337a5c928321474b57d2e1ed8a2e1813"
+  },
+  "normative_sha256": "b4157b3010917201a1dce5ab04125e73db4c8111c912e93f601eaf44283d0dc0",
+  "user_approval": "Implement the plan.",
+  "old_source_binding": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v4_prefixfix_20261025/source_binding.json",
+  "accepted_observer_branch": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025",
+  "original_2026_result": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/analysis/endpoint_100epochs.json",
+  "original_A0_GT_validity_fixture": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/spatial_stratified_scientific_2000_v1_20261025/cpu_preparation/A0_endpoint_fixture/analysis/endpoint_2000.json",
+  "no_new_GPU_engineering": true,
+  "estimated_GPU_hours": 24,
+  "no_normal_progress_wall_cap": true
+}

@@ -1,0 +1,86 @@
+{
+  "amendment_id": "b1_b2_gt_relative_review_gates_v3_20261021",
+  "status": "EFFECTIVE_USER_APPROVED_GATE_AMENDMENT_ONLY",
+  "date": "2026-10-21",
+  "authority": "User explicitly approved replacing medical-style9/26 quantity gates, preserving0/26, and CPU-only G1 engineering preparation; no direct GPU or scientific execution authorization.",
+  "parent_version": {
+    "file": "gates_amendment_v2.json",
+    "sha256": "2867b31f4df2b6098af622ab64b72cfb0f5caecb0d00723a7b121f93a2874b5d",
+    "markdown_sha256": "b5326b0da92a73bb4b5a092bf5c54502e7144aec058582ae664361fe17593beb",
+    "approved_proposal_file": "GATE_REASSESSMENT_PROPOSAL.md",
+    "approved_proposal_sha256": "89b5b23ec3a3fb647782210740c4d6b7f1f575b4ceb567ba1070e83f6fc3a9e9"
+  },
+  "precedence": {
+    "supersedes": ["V2 G2 minimum9 real medical-style review requirement and associated human-completeness stops", "V2 scientific minimum26 medical-style review requirement and associated human-completeness stops", "Earlier management text describing the approved replacement as still pending"],
+    "inherits_unchanged": ["V2 G1 source/phase/resource and numerical pass checks", "G1 max32 fixed diagnostic forwards including failures and zero optimizer calls", "G1 weighted-aux versus A0 actual unscaled parameter-gradient review trigger", "G2 strict replay/resume, original U-Net AMP retries and cumulative400 successful-update ceiling", "Separate Sol review/release per phase; G1 never implies G2", "All original frozen S3/formal protocols, original S3 H1 hold and negative conclusions", "No Test access, no Dev inference during engineering, GPU0 only, GPU1 owned by others"],
+    "old_files_and_evidence_immutable": true,
+    "notice": "Read V3 together with the SHA-pinned V2 technical requirements. Do not continue enforcing canceled9/26 count gates; do not fake a human-pass field to bypass them."
+  },
+  "medical_review": {
+    "mandatory_minimum_cases_before_G2": 0,
+    "mandatory_minimum_cases_before_scientific_training": 0,
+    "meaning": "The fixed medical-style quantity requirement is canceled, NOT retrospectively passed.",
+    "legacy_human_reviewed": 0,
+    "legacy_total_cases": 26,
+    "legacy_status": "UNREVIEWED_0_OF_26_PRESERVE_WITHOUT_SIGNATURES",
+    "medical_anatomical_truth_status": "NOT_ASSESSED_BY_EXPERT",
+    "expert_review": "Arrange when necessary; no fixed expert-case count or expert-availability prerequisite for the current GT-relative exploration. Optional expert evidence is separate and never inferred from CPU/AI display checks.",
+    "claim_limit": "GT-defined graph-path coverage only; no claim of medically correct anatomy, true perfusion, anatomical vessel pairing or clinical efficacy. Coverage is not connectivity.",
+    "systematic_target_error": "Pause the affected stage immediately, preserve evidence and ask Sol/user; cancellation of quantity gates does not waive systematic target/source/label/scale errors."
+  },
+  "replacement_evidence_requirements": {
+    "automatic_tests": "Bound original core and branch-loss tests, and real tests of each new entry/phase/permission/counter guard;26 existing tests are software tests, not26 medical cases.",
+    "Train_full_accounting": "Train110 whitelist, source/target hashes, binary shape/count checks, B1 subset B2 subset GT&FOV, no target from Dev misses; reuse verified CPU evidence when binding is unchanged.",
+    "target_and_transform": "Full-native GT graph/EDT before crops; bound geometry and original input fingerprints; no GT repair, pruning, extra dilation or alternative sampling.",
+    "definition_sensitivity": "Keep the existing Train-only width5/6/7 and length10/20/30 metadata sensitivity table, exclusions and size strata. No target or threshold selected by Dev model performance.",
+    "numerical_engineering": "G1 actual unscaled parameter gradients/zero-lambda/empty-target/AMP behavior, followed by separately authorized G2 strict update and recovery evidence; CPU alone never grants GPU PASS.",
+    "risk_record": "Explicitly retain pilot scope, coarse roots, excluded short paths, graph versus anatomy distinction, uncertain GT visibility/crossings, and lack of expert validation; never substitute AI for a real signature."
+  },
+  "candidate_design_retained_not_yet_scientific_freeze": {
+    "selection": "Open GT graph path: median nonjunction width_ref<=6 and length_ref>=20; retain exact current implementation and candidate bytes.",
+    "scale": "width_native=2*padded EDT(GT&FOV); width_ref and arc_ref multiply medianTrain_FOV_diameter/D_image; reference diameter911.1106643779144; not physical calibre.",
+    "B1": "Same candidate paths intersect pointwise width_ref<=6",
+    "B2": "Whole same candidate graph paths including boundary anchors; no junction-core expansion or anatomical pairing",
+    "root_short_graph": "Retain local coarse root within selected chain only; short excluded paths keep A0 supervision/audit, not biological spurs; do not bridge GT gaps or extrapolate beyond FOV.",
+    "sensitivity_width_at_length20": {"5": 10262, "6": 13325, "7": 16073},
+    "sensitivity_interpretation": "Relative to6/20, width5 removes3063 paths (~23.0%); width7 adds2748 (~20.6%). This is material scope dependence, not biological validation or a reason to choose a higher-coverage definition.",
+    "excluded_short_fine_open_paths": 5586,
+    "scientific_target_freeze_complete": false,
+    "before_scientific_training": "Explicitly freeze exact target definition/bytes and research limitations; keep candidate DRAFT/NOT_FOR_TRAINING scientific status until that separate freeze. This amendment freezes gate policy only.",
+    "loss_and_controls": "A0 original BCE+Dice; B1/B2 normalized positive skeleton BCE lambda0.1 on single-pixel targets, original M0/seed/geometry/batch/optimizer/lr/budget. No Soft Recall or GT tube introduced."
+  },
+  "authorization_now": {
+    "management_backup_and_gate_update": true,
+    "Luna_G1_CPU_implementation_and_preflight": true,
+    "G1_GPU_execution": false,
+    "G2_GPU_execution": false,
+    "scientific_training": false,
+    "G1_release_issued": false,
+    "G2_release_issued": false,
+    "automatic_CPU_pass_to_GPU_launch": false,
+    "automatic_G1_to_G2": false,
+    "automatic_G2_to_scientific": false,
+    "phase_release_policy": "After CPU preflight Luna stops and returns actual evidence. Sol independently reviews and issues a separate evidence-bound G1-only gate decision. Neither this amendment nor CPU PASS is a GPU launch permission. Following actual G1 results, Sol submits a concrete G2 recommendation to the user; no G2 launch without its later authorization/release."
+  },
+  "Luna_current_task": {
+    "conversation": "Existing original Luna engineering dialogue only; no new progress or model-memory system",
+    "scope": "G1-only entry plus CPU preflight/tests, no GPU retinal forward, no parameter updates, no G2/scientific worker or automatic launch",
+    "output_root": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/g1_engineering_v3",
+    "output_isolation": "New CPU preflight attempts below this existing P1 stage only; never overwrite the old S3 implementation_gate or prior CPU evidence. Counter/release test fixtures live in explicitly isolated temporary/test paths, never the real production release or GPU ledger. Future actual diagnostic counters must be shared across attempts, not reset per attempt directory.",
+    "reuse": "Existing Train110/real32-draw evidence at target_definition_review_v1/sol_readiness_review_20261021/attempt_01; existing8-batch manifest at scientific_review_20261021/attempt_01/G1_fixed_batches.json. Do not recreate target definitions/atlas or rerun old audits unnecessarily.",
+    "required_CPU_checks": ["No-argument CLI never launches; explicit CPU preflight does not initialize CUDA, construct/forward a retinal U-Net or update parameters", "Missing release, wrong phase, changed code/config/target/batch hashes, wrong GPU0 UUID or source outside Train whitelist are rejected before retinal model execution", "Bind V3 plus inherited V2 technical rules; legacy0/26 reports remain false/unreviewed without blocking this approved GT-relative policy; do not set human_gate_passed=true", "Fixed8 batches x B1/B2 x FP32/AMP =32 combinations; persistent pre-forward reservations/started/completed/failure counters, no reset on failure/crash/restart; no hidden warmup or duplicate rerun", "optimizer.step attempted call is prohibited and recorded in G1; use CPU substitutes to test refusal/failure paths, never a real GPU trial", "Design unscaled base/weighted-aux/combined full-parameter and layer norms/directions, zero-lambda, FP32 analytic gradient, empty support and AMP comparison outputs from the same graph; log actual backward/autograd calls", "Do not import old CPU preparation CLIs that overwrite CUDA_VISIBLE_DEVICES; use the safe bound loss/geometry primitives", "Source/target/M0/config/environment binding and input provenance current; reuse valid evidence instead of recomputing full Train audit", "Read-only GPU0 resource/UUID/disk/lock availability observations permitted; snapshot is not lock ownership, actual future launch must recheck and acquire mutual exclusion; do not query/use/reserve/interfere with GPU1"],
+    "deliverables": ["New G1-only source and targeted CPU test files, without editing old bound code", "CPU test logs and preflight/verification with source/phase/budget/failure/refusal assertions", "Execution binding including V3/V2, exact batch/Train target/input/M0/config/environment digests", "Persisted counter schema and failure/crash test evidence, optimizer-call guard evidence", "Actual modified-file/evidence/remaining-gap report in the one STATUS; GPU_launch_authorized=false"],
+    "finish": "Stop after CPU preparation and return evidence to Sol. Never self-create a genuine G1 release or auto-enter GPU/G2/scientific work."
+  },
+  "inherited_GPU_limits_not_current_permissions": {
+    "G1_fixed_batch_steps": [115, 1442, 1660, 1, 4, 3, 66, 400],
+    "G1_max_diagnostic_forwards": 32,
+    "G1_parameter_updates": 0,
+    "G1_gradient_review_trigger": "weighted-aux full-parameter L2>A0, or A0 zero while aux nonzero, blocks G2 for Sol review; no automatic lambda/normalization change",
+    "G2_successful_update_ceiling": 400,
+    "G2_allocations": {"lambda0_replay200": 200, "B1_continuous50": 50, "B1_independent25plus25": 50, "B2_continuous50": 50, "B2_independent25plus25": 50},
+    "G2_AMP_and_resume": "Original same-batch AMP backoff, >8 retries stops; no failed-draw advance; true optimizer-event accounting including failed-subrun consumption. Strict complete-state/model/AdamW/scaler/RNG/draw/input/target equality. No tolerance relaxation or nnU-Net non-exact resume policy.",
+    "resource": "GPU0 only;15-30GPU minute estimate for G1/G2 is not a wall-clock hard cutoff or permission to expand a run"
+  },
+  "actual_state": {"legacy_human_reviewed": 0, "legacy_total_cases": 26, "G1": "NOT_RUN_ENTRY_CPU_PREFLIGHT_PENDING", "G2": "NOT_RUN_NOT_AUTHORIZED", "scientific": "NOT_AUTHORIZED", "new_GPU_work": 0, "official_Test_accessed": false}
+}

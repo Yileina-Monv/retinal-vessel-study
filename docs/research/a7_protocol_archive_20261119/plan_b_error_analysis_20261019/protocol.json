@@ -1,0 +1,539 @@
+{
+  "protocol_id": "maples_plan_b_existing_predictions_error_analysis_v1_20261019",
+  "status": "FROZEN_USER_APPROVED_BEFORE_ANALYSIS",
+  "date": "2026-10-19",
+  "authority": "User explicitly approved Plan B error analysis and report production using existing T0/TW and necessary 2/1 endpoint predictions, Dev28/9 effective images/77 positions, no training or new segmentation inference. Luna implements and executes this analysis after input validation, and records real outputs in existing STATUS for Sol review; no further startup approval is needed inside this scope.",
+  "project_root": "${RETINA_PROJECT_ROOT}",
+  "purpose": "Preserve the formal negative T0/TW conclusion. Describe hemorrhage-neighborhood thin-vessel misses and label-relative false positives, their repetition across existing seeds/methods and possible causes, to decide whether future structural supervision has a concrete evidential basis.",
+  "research_context": {
+    "PPT": {
+      "path": "${RETINA_PROJECT_ROOT}/docs/a13_t0_protocol_closeout_20261015/sources/stage2_ppt_transcript.md",
+      "sha256": "782fc24e2b686ecb91570b1d99aa6d11218ca24bf9ef1c1faa7d6c2b07a97d31",
+      "section": "10. 风险识别与备选方案",
+      "Plan_B": "保底交付 T0 + 负结果 + 错误分析；保护指标通过才做 TR；不为正结果回头挑半径"
+    },
+    "latest_scientific_review": {
+      "path": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/analysis/sol_review_20261019.json",
+      "sha256": "81962c2cc2f4255c13226c9d59f48388864ac69186227e157c3a4ac5278af67b",
+      "scope": "Completed seed2026 2000-to-4000 budget review; primary differences concentrated in two images and three threshold-adjacent positions; supplementary matched-FP gains did not persist."
+    },
+    "formal_protocol": {
+      "path": "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json",
+      "sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd"
+    },
+    "source_manifest": {
+      "path": "${RETINA_PROJECT_ROOT}/docs/plan_b_error_analysis_20261019/source_manifest.json",
+      "sha256": "4a5f4b0f6b2217ae23f7ab47aad7ea293620897c8d80ed906cd84b2a6ce72fd7"
+    },
+    "preservation": "Do not modify or supersede the original formal 2000-step three-seed conclusions. Class-split and 4000 results remain exploratory, not independent confirmation. Current regional BCE/budget search is closed; Plan B is analysis, not another method search."
+  },
+  "scope": {
+    "executor": "Existing Luna engineering conversation, via existing server STATUS current handoff",
+    "reviewer": "Sol after Luna completion",
+    "conditions": [
+      {
+        "condition_id": "formal_T0_seed2026_step2000",
+        "phase": "formal",
+        "method": "T0",
+        "seed": 2026,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "69db8fb864a8211c5c3e13dac451ab66d2c37823f29be3b9c9127660ea4a24ba",
+        "checkpoint_sha256_in_evaluation": "23f4a78cb763b5ba10ae3231f86ff93a4d43869cd4a11aa04d59411228fd2163"
+      },
+      {
+        "condition_id": "formal_TW_seed2026_step2000",
+        "phase": "formal",
+        "method": "TW",
+        "seed": 2026,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "21d3b661e38257f8b3087740f86ee85e987bcc8fec1c97e9b1c17b275d67497b",
+        "checkpoint_sha256_in_evaluation": "a064da51729b1a20e155d176a97429f51796474da45b8a0bc4c239a3558506a4"
+      },
+      {
+        "condition_id": "formal_T0_seed2027_step2000",
+        "phase": "formal",
+        "method": "T0",
+        "seed": 2027,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "1ce1b9fff3ccc96fadecb4eca66c9a0214dac8f8363bac9a0ad6d0b59a3e0d40",
+        "checkpoint_sha256_in_evaluation": "ea347ae1e2dcb36eaf201c35595696e278bb2079cb68bcf7f7aee82a5ac9ba6f"
+      },
+      {
+        "condition_id": "formal_TW_seed2027_step2000",
+        "phase": "formal",
+        "method": "TW",
+        "seed": 2027,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "d27895d8cbeb39c0af67985feaaf58430b82b8b9c06af02ada01e0614e155716",
+        "checkpoint_sha256_in_evaluation": "d45b8711c6f80f5c965255372f878ec5d31063d52cbe066b2c677ac64fa70342"
+      },
+      {
+        "condition_id": "formal_T0_seed2028_step2000",
+        "phase": "formal",
+        "method": "T0",
+        "seed": 2028,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "ff426ace9fa9c1019c39fa7fa8b8f5de83cc87639e9bcb324e2afb57c70f9eb7",
+        "checkpoint_sha256_in_evaluation": "99661ee8a137c5339b5d9b9341b9d010f88cd8a8c342bbcafdadc0203d6cce7c"
+      },
+      {
+        "condition_id": "formal_TW_seed2028_step2000",
+        "phase": "formal",
+        "method": "TW",
+        "seed": 2028,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "f922b5cfe6a7e801237459129d507a2249422bf9215fe8d7e7af59c5cc59e32d",
+        "checkpoint_sha256_in_evaluation": "a4ef329b4284269a6d32e0efafd14605bd878a2975b4252992a9df39fcb5d95a"
+      },
+      {
+        "condition_id": "class_split_exploratory_w_v2_b1_seed2026_step2000",
+        "phase": "class_split_exploratory",
+        "method": "w_v2_b1",
+        "seed": 2026,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2026/w_v2_b1",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2026/w_v2_b1/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "38d31723df6b84f27a82181aaf3452d5fb5d5967f28290be57615428f7cacd96",
+        "checkpoint_sha256_in_evaluation": "69bf89da3d9f66b527c6207fd75866e29c84c18023c47cd11a328b5ad591d5a3"
+      },
+      {
+        "condition_id": "class_split_exploratory_w_v2_b1_seed2027_step2000",
+        "phase": "class_split_exploratory",
+        "method": "w_v2_b1",
+        "seed": 2027,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2027/w_v2_b1",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2027/w_v2_b1/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "e8f7f54ef8e9a701b83f7f29cd9548200f60814c6eadeffaab6546f5f0e366fc",
+        "checkpoint_sha256_in_evaluation": "86ac1f0a089987cbf7728034767dd10a22eddc85b302291c75580cbfa7e420e2"
+      },
+      {
+        "condition_id": "class_split_exploratory_w_v2_b1_seed2028_step2000",
+        "phase": "class_split_exploratory",
+        "method": "w_v2_b1",
+        "seed": 2028,
+        "step": 2000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2028/w_v2_b1",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/runs/seed_2028/w_v2_b1/evaluation/step_002000/metrics.json",
+        "metrics_sha256": "7fa6048364aaea50102139bad19b4915678e6ef70893c80bb7a06cd1bc64ae91",
+        "checkpoint_sha256_in_evaluation": "dbd5407b1b052b75e0b821e81fc54371289744bc4f41854e11c2f2ee0a49fd2f"
+      },
+      {
+        "condition_id": "budget_exploratory_T0_seed2026_step4000",
+        "phase": "budget_exploratory",
+        "method": "T0",
+        "seed": 2026,
+        "step": 4000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/T0/evaluation/step_004000/metrics.json",
+        "metrics_sha256": "becacc8e55ec0f2cf71242125c6e2c3f8fa6c900745219d531f9f3e66aeff70b",
+        "checkpoint_sha256_in_evaluation": "223a07af5cfa61322b268f913456551932da09a22773cca5fe81595f75e21f19"
+      },
+      {
+        "condition_id": "budget_exploratory_TW_seed2026_step4000",
+        "phase": "budget_exploratory",
+        "method": "TW",
+        "seed": 2026,
+        "step": 4000,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW",
+        "metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018/runs/seed_2026/TW/evaluation/step_004000/metrics.json",
+        "metrics_sha256": "f1ca6e719fec47d0381ca0c49d820bd2d2a64038f7999531d491c0dd1ff70823",
+        "checkpoint_sha256_in_evaluation": "946b27a837e905dafc2f15b0677b763bbef0bdc52bd52f7178fe75dddf9d6dc1"
+      }
+    ],
+    "formal_primary_block": "T0 and original region TW 2/2, seeds 2026/2027/2028, fixed step2000: 6 conditions",
+    "class_split_supplement": "Existing 2/1 vessel/background class-split, seeds 2026/2027/2028, fixed step2000: 3 exploratory conditions, included to diagnose repeated misses and FP tradeoffs",
+    "budget_supplement": "Existing T0/TW seed2026 step4000 only: 2 conditions; retain paired step2000 comparisons, never add this as a fourth seed",
+    "data": "Only 28 fixed Dev images and their existing RGB/GT/H/U/FOV/frozen regional bundles. No train-set analysis expansion, official Test or unrelated project inputs.",
+    "source_probability_maps": 308,
+    "checkpoint_selection": "Exact fixed endpoints listed in source_manifest, no intermediate/best checkpoint selection",
+    "zero_training_updates": true,
+    "zero_new_segmentation_model_inference": true,
+    "allowed_operations": [
+      "Read existing native probabilities and explicitly listed Dev inputs",
+      "CPU thresholding, arithmetic, distances, connected-component measurements and deterministic plots",
+      "AI-assisted visual inspection of existing images/overlays, explicitly labeled as AI visual observations, not human confirmation or new segmentation inference",
+      "Create only same-stage new analysis code/tests/results/reports, and update existing management records"
+    ],
+    "forbidden": [
+      "Any model construction/weight loading/forward/backward/optimizer step, new prediction generation, training or GPU experiment",
+      "Official Test binary access or use for debugging",
+      "New seeds/methods/budgets or clDice/Skeleton Recall Loss implementation",
+      "Reweighting, changing FOV/H/U/regions/thin definition/d1 support, masks, labels, splits or formal results",
+      "Performance-driven threshold/radius/sample/checkpoint changes",
+      "Overwriting old experiment files, protocols, bound code or prior review evidence",
+      "Parallel project status/memory, GitHub changes, automatic synchronization or cleanup"
+    ]
+  },
+  "frozen_measurement": {
+    "definition_source": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/evaluation_protocol_v1.json",
+    "development_manifest": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/dev_manifest.json",
+    "primary": {
+      "name": "near_thin_recall_d1_diameter_le3",
+      "contrast": "Original formal TW-T0 remains unchanged; this stage describes errors for all prespecified existing conditions.",
+      "threshold": 0.5,
+      "diameter_max": 3,
+      "d1_tolerance": 1,
+      "match_support": "Omega",
+      "aggregation": "每图比率后宏平均，不按77点池化",
+      "valid_n": 9,
+      "target_points": 77,
+      "primary_ids": [
+        "20051117_37130_0400_PP",
+        "20051205_35276_0400_PP",
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_58889_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45248_0100_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "denominators": [
+        13,
+        8,
+        3,
+        27,
+        6,
+        1,
+        1,
+        14,
+        4
+      ],
+      "NA_other_images": 19
+    },
+    "threshold": 0.5,
+    "binary_prediction": "P=(probability>=0.5)&FOV at original native resolution",
+    "regional_support": "Omega=FOV & ~U; reuse frozen internal/near/far/ thin bundle. Do not recreate or alter hemorrhage dilation or thin skeleton for convenience.",
+    "point_target": "T=stored thin & stored near; exactly 77 native target pixels in the 9 original valid images; other 19 images retain zero denominator and NA.",
+    "d1_hit": "For target x, s(x)=max probability(q) over q in Omega with Euclidean distance(q,x)<=1. hit_d1=(s>=0.5), mathematically matching original distance-to-supported-prediction definition. The 5-pixel center/cross is valid; diagonal distance sqrt(2) is excluded.",
+    "direct_hit_vs_tolerated": "Record center probability/hit separately. A center miss with d1_hit=true is already a matched target, not a primary FN.",
+    "exact_nearest_distance": "Record Euclidean distance to P&Omega; empty support yields NA with reason, never an invented distance or gap. Nearest prediction need not be the same anatomical branch.",
+    "global_FP": "FP=P & ~GT & FOV, including U as in original global metrics. This is relative to existing GT, not proof a structure is biologically false.",
+    "global_FN": "FN=GT & FOV & ~P. Distinguish these pixel misses from d1 target misses.",
+    "global_denominator": "FP/FOV uses all original FOV pixels, not the number of background pixels, and is not FPR.",
+    "NA": "Preserve numerator, denominator, NA reason, fixed effective sets; no filling zero or pairwise dropping extra NA.",
+    "no_new_workpoint": "No new threshold grid/ROC fitting, matching-FP threshold selection or radius search. Prior matched-FP review may be cited as already-completed context, clearly supplementary."
+  },
+  "point_catalog_and_rows": {
+    "source": "Use the exact point_catalog and Dev order frozen in source_manifest.",
+    "identity": "point_id=filename:y{native_row}:x{native_col}; 0-based y/x. Within each image enumerate target pixels in row-major order; same identity in every condition.",
+    "catalog_rows": 77,
+    "observation_rows": 847,
+    "image_condition_rows": 308,
+    "primary_NA_image_condition_rows": 209,
+    "point_fields": [
+      "condition_id",
+      "phase",
+      "method",
+      "seed",
+      "step",
+      "filename",
+      "point_id",
+      "native_y",
+      "native_x",
+      "image_primary_denominator",
+      "center_probability",
+      "center_hit_0p5",
+      "d1_local_max_probability",
+      "d1_margin_to_0p5",
+      "d1_witness_y",
+      "d1_witness_x",
+      "d1_hit",
+      "point_FN_d1",
+      "score_band",
+      "nearest_supported_prediction_distance_px",
+      "nearest_supported_prediction_y",
+      "nearest_supported_prediction_x",
+      "distance_NA_reason",
+      "visual_review_record_id"
+    ],
+    "d1_witness_tie": "Among equal maxima in the valid 5-pixel support choose lexicographically smallest (y,x); preserve the continuous score without rounding for decisions.",
+    "score_bands": {
+      "threshold_adjacent_score_miss": "d1_hit=false and 0.45<=s<0.5",
+      "below_near_band_score_miss": "d1_hit=false and 0<=s<0.45",
+      "covered": "d1_hit=true"
+    },
+    "score_band_limits": "0.45 is a prespecified descriptive margin boundary, informed by the completed review, not a new prediction threshold or performance criterion. Always store the exact score/margin; do not generate predictions at 0.45, claim probability calibration, infer image visibility from score alone, or adjust the band to improve the narrative.",
+    "diagnostic_distance_features": "Exact native distances/offsets and optional H/U/FOV boundary distances are descriptive. Empty H/U reference features must be NA with reason; never change evaluation masks or use an arbitrary additional spatial tolerance to turn a miss into a hit.",
+    "paired_rows": "Retain paired T0/TW observations within the same seed/point and method-specific 2000/4000 comparisons. Do not count the same target across conditions as independent target evidence."
+  },
+  "error_evidence_taxonomy": {
+    "computed_observations": [
+      "Existing-label pixel FP/FN and frozen-d1 hit/miss",
+      "Continuous probability, signed 0.5 margin, prespecified descriptive score band",
+      "Native location, nearest supported prediction distance and witness",
+      "Per-image/method/seed recurring misses and observed paired changes"
+    ],
+    "visual_categories": [
+      "position_offset",
+      "vessel_break_or_missing_segment",
+      "image_visibility_limitation",
+      "annotation_or_reference_limitation"
+    ],
+    "category_values": [
+      "not_assessed",
+      "not_observed",
+      "suspected",
+      "supported_by_visual_review",
+      "uncertain"
+    ],
+    "reviewer_types": [
+      "AI",
+      "human"
+    ],
+    "required_review_fields": [
+      "case_id",
+      "case_type",
+      "filename",
+      "point_id_or_NA",
+      "conditions_actually_viewed",
+      "reviewer_type",
+      "reviewer_identifier",
+      "reviewed_at",
+      "figure_paths_and_native_bbox",
+      "category",
+      "assessment",
+      "visible_evidence",
+      "alternative_explanation",
+      "limitation_or_uncertainty",
+      "needs_human_confirmation"
+    ],
+    "honesty_rules": [
+      "Distances, missed-point clusters or disconnected predicted components alone do not confirm anatomical displacement or vessel breaks; nearby parallel vessels and crossings are alternatives.",
+      "Offset/break interpretations require the original RGB, GT and matched predictions with surrounding vessel context. A d1-tolerated offset must not be relabeled a primary miss.",
+      "Low score is not automatically low RGB visibility, and disagreement with GT is not automatically bad annotation.",
+      "AI visual observations are labeled AI-assisted suggestions even when visually supported. Never invent a human reviewer, expert signature or clinical confirmation. Actual identified researcher review is allowed; new dual-expert review is not required.",
+      "Multiple possible causes may coexist. Class frequencies are not forced to sum to 100%; report overlaps, unresolved cases and reviewed denominators.",
+      "Keep confirmed computed facts, visual evidence, causal hypotheses and unknowns in separate report sections. Do not infer gradient conflict, a loss mechanism, disease causality or topology improvement from these descriptive data."
+    ],
+    "coverage": "Create 77 primary-point review cases and 28 whole-image FP review cases. Luna must actually inspect their image panels using available image-viewing capability, recording AI or actual human review honestly. Per-condition claims must identify which panels were viewed.",
+    "completion_limit": "All 105 cases must have real AI-assisted or human visual review records for full Plan B visual delivery. Cause labels may remain uncertain. If image-viewing capability is unavailable, deliver quantitative outputs but explicitly mark the visual part incomplete; never mark all_passed or fabricate visual inspection to finish.",
+    "human_pending": "Human adjudication can remain pending with explicit uncertainty; it does not prevent an engineering-complete AI-assisted analysis and is not to be represented as human-confirmed science."
+  },
+  "FP_distribution": {
+    "image_coverage": 28,
+    "condition_coverage": 11,
+    "required_per_image": [
+      "TP",
+      "FP",
+      "FN",
+      "FOV_pixels",
+      "GT_vessel_pixels",
+      "Dice",
+      "Precision",
+      "Recall",
+      "FP/FOV",
+      "far_recall",
+      "near_pixel_recall",
+      "primary_d1_recall with numerator/denominator/NA"
+    ],
+    "partition": [
+      "internal",
+      "near",
+      "far",
+      "U_in_FOV"
+    ],
+    "partition_rule": "Reuse frozen internal/near/far masks partitioning Omega and add FOV&U. These four disjoint masks cover FOV; sum regional FP/FN/TP back to the global counts.",
+    "region_rows": 1232,
+    "region_fields": [
+      "condition_id",
+      "filename",
+      "region",
+      "FOV_region_pixels",
+      "GT_vessel_pixels",
+      "TP",
+      "FP",
+      "FN",
+      "FP_over_full_FOV",
+      "FP_over_region_area",
+      "conditional_rate_NA_reason"
+    ],
+    "components": "Label the exact FP mask with fixed 8-connectivity. Retain every component regardless of size; record component ID, pixel area, native bbox/centroid and pixel counts in the four frozen regions. Components are label-relative error clusters, not confirmed false blood-vessel branches.",
+    "component_identity": "For each image/condition, label components deterministically by their smallest native (y,x); store library version. Do not match component IDs across methods as though they represent the same object.",
+    "descriptive_features": "Optionally record exact distance-to-GT and FP probability summaries to aid error interpretation; no component-size filter may alter the reported original FP counts.",
+    "required_summaries": "All per-image distributions, zero-FP cases, seed-specific and image-macro paired changes, adverse and favorable cases. No lesion-boundary/visibility stratum establishes a causal effect."
+  },
+  "recurrence_and_statistics": {
+    "formal_block": "For each method and point, number of missed seeds among the three original seeds (0..3), all-three-missed flag, any-seed missed flag and between-seed disagreement. Count both T0->TW recoveries and losses within each paired seed.",
+    "class_split_block": "Report the same three-seed recurrence separately for 2/1; paired 2/1-T0 and 2/1-TW remain post-hoc exploratory.",
+    "budget_block": "For seed2026 only, report each method hit transitions, gained/lost positions, changes in image counts and (TW-T0)4000-(TW-T0)2000. Do not pool into formal three-seed aggregation.",
+    "aggregation": "Use per-image ratios and original macro means for method performance. Point counts and recurrence are descriptive and must not replace the frozen image-macro primary metric.",
+    "intervals": "When displaying paired performance intervals reproduce the original frozen per-image bootstrap: 1000 paired-image resamples, PCG64(20261016), fixed effective Dev order, same-n shared indices and linear [0.025,0.975] quantiles. No point-level p values or invented seed SD for single-seed supplements.",
+    "required_reconciliation": "Reproduce all original 7 metrics from the stored probabilities and verify them against each condition metrics.json. Preserve the completed formal/class-split/budget reports; any mismatch pauses related interpretation rather than silently changing the old result.",
+    "cause_frequency_denominators": "Report all-77 positions and all-28 images plus actual reviewed/assessable counts and per-condition coverage. Distinguish point-level, image-level and point-condition-level frequencies; 847 observations are repeated measurements of 77 targets, not 847 independent samples.",
+    "report_limits": [
+      "9 effective images and 77 sparse positions",
+      "19 primary-NA images still contribute to FP analysis",
+      "Patient independence unknown",
+      "Development-set reuse, post-hoc diagnostic bins and hypotheses",
+      "Class-split and single-seed budget supplements do not convert negative formal results into an independent positive result"
+    ]
+  },
+  "visualization_and_case_selection": {
+    "all_image_atlas": "All 28 images: RGB/GT and original-0.5 predictions/errors, with clear method/seed/step/phase labels and links to all 11 conditions; distinguish the formal six-condition block from both exploratory blocks.",
+    "all_point_atlas": "All 77 target positions: native RGB/GT and an 11-condition prediction/error montage with the target, 1-pixel matching support and scores labeled. Every target remains accessible, whether TP or FN.",
+    "point_crop": "128x128 native-pixel display crop centered on the target, clipped at image borders; store exact [x0,y0,x1,y1] and provide full-image context. Display magnification is allowed but masks use nearest-neighbor display, not evaluation resampling.",
+    "FP_crop": "256x256 native-pixel display crop centered on the selected component centroid, clipped at borders, with exact bbox and whole-image context. Display window sizes do not change lesion dilation or evaluation support.",
+    "representative_report_union": [
+      "All three previously influential images: 20051205_35276_0400_PP, 20060411_61478_0200_PP, 20060530_54390_0100_PP. Explicitly disclose selection from prior review.",
+      "Top 3 primary-valid images by mean missed-primary fraction across the six formal conditions.",
+      "Image with lowest and image with highest original three-seed TW-T0 primary macro contribution; if no positive change exists do not label the highest as an improvement.",
+      "Top 3 images by mean FP/FOV across the six formal conditions, plus the largest positive and largest negative formal paired TW-T0 FP/FOV image changes.",
+      "One missed formal point closest below 0.5, one with lowest d1 score, and one with smallest finite nearest-prediction distance among d1 misses, each as a measurement-based illustrative case, not an automatically confirmed mechanism.",
+      "For selected FP-case images display the largest FP component in the lowest-seed formal T0 and TW conditions; no size filtering of quantitative counts."
+    ],
+    "tie_breaking": "Ties resolved by filename ascending, then native y/x, condition_id and component_id; deduplicate the union but retain every selection reason in case_selection.csv.",
+    "visual_hypotheses": "A visually suspected break/visibility limitation may be added to the report if the complete atlas reveals it; log the explicit qualitative selection reason and reviewer/evidence. It cannot replace the predetermined quantitative cases or be presented as representative prevalence.",
+    "prohibited": "No generative editing/inpainting, GT repair, selective cropping that hides context, undocumented contrast manipulation or outcome-driven omission. Scientific overlays are deterministic renderings of the actual source data.",
+    "legend": "Keep RGB and GT independently visible; include color legend for TP/FP/FN, H/near/U/FOV and target/d1 markers. Do not obscure a one-pixel target with a filled annotation marker."
+  },
+  "outputs": {
+    "root": "${RETINA_PROJECT_ROOT}/experiments/plan_b_error_analysis_20261019",
+    "root_files": [
+      "execution_binding.json",
+      "reuse_manifest.json",
+      "completion_verification.json",
+      "report.html",
+      "leader_summary.md"
+    ],
+    "analysis_tables": {
+      "image_manifest.csv": {
+        "rows": 28,
+        "purpose": "Frozen Dev membership, primary denominators and 19 NA states, input provenance"
+      },
+      "point_catalog.csv": {
+        "rows": 77,
+        "purpose": "Stable native point identities and image denominators"
+      },
+      "per_point_observations.csv": {
+        "rows": 847,
+        "purpose": "All hit/miss/continuous score/distance observations, no outcome filtering"
+      },
+      "per_condition_image_metrics.csv": {
+        "rows": 308,
+        "purpose": "All original metrics, numerators/denominators/NA, FP and FN counts, in wide format"
+      },
+      "fp_by_region.csv": {
+        "rows": 1232,
+        "purpose": "All four frozen FOV partitions, zero regions and NA retained"
+      },
+      "fp_components.csv": {
+        "rows": "data-dependent, every 8-connected FP component",
+        "purpose": "Complete spatial FP distribution without minimum-size exclusion"
+      },
+      "point_recurrence.csv": {
+        "rows": 231,
+        "purpose": "77 positions x T0/TW/2_1, each using three step2000 seeds, phase clearly marked"
+      },
+      "formal_paired_point_changes.csv": {
+        "rows": 231,
+        "purpose": "77 positions x 3 paired formal seeds; recoveries/losses/ties"
+      },
+      "class_split_paired_point_changes.csv": {
+        "rows": 462,
+        "purpose": "77 x 3 seeds x two exploratory contrasts (2/1-T0 and 2/1-TW)"
+      },
+      "budget_point_changes.csv": {
+        "rows": 77,
+        "purpose": "Four endpoint observations of the same seed and point, method/temporal/interaction changes"
+      },
+      "visual_review_log.csv": {
+        "rows_minimum": 105,
+        "purpose": "Actual 77 point and 28 image reviews; additional category/condition rows allowed with unique keys"
+      },
+      "case_selection.csv": {
+        "rows": "deterministic selected-case union",
+        "purpose": "Selection rules/ranks/ties/reasons and figure links"
+      },
+      "summary.json": {
+        "purpose": "Coverage, metrics, recurrence, FP distributions, evidence levels and unresolved questions"
+      }
+    },
+    "figures": "figures/ with all-77 point montages and all-28 image atlas, selected-case FP/offset/break/visibility panels and exact native bbox metadata",
+    "report_sections": [
+      "Question and PPT Plan B rationale; original formal negative result",
+      "Fixed sources/definitions/phase separation and complete denominators",
+      "Quantitative misses, recurrence, FP cost and paired findings",
+      "Representative cases and contrary cases with explicit selection rules",
+      "Computed facts versus actual visual evidence versus mechanism hypotheses and unknowns",
+      "Whether clDice/Skeleton Recall Loss has a justified next research target, limits, resource considerations and need for separate approval"
+    ],
+    "audience": "Chinese scientific report suitable for group leader, concise leader_summary.md with links to full offline HTML report/data/figures; no need to create a new presentation or hosting system.",
+    "closure": "All links and image files must actually exist and render; manifest counts match exact coverage; validation JSON records real checks and unresolved items. Do not repeat previous missing-receipt or row-count-overstatement issues."
+  },
+  "structure_supervision_assessment": {
+    "not_implementation": true,
+    "clDice": "Evaluate whether visually supported and seed-repeated continuity errors are important enough to motivate topology/centerline precision-recall supervision. Distinguish this objective from the frozen local d1 recall; assess soft-skeleton iterations, masks/crop boundaries, annotation continuity, false bridges and compute overhead as potential risks.",
+    "Skeleton_Recall_Loss": "Evaluate whether persistent low-score reference skeleton misses are a relevant target, with the risk that an added recall term does not directly control background FP and tubed skeleton/mask choices may alter supervision. Preserve BCE/Dice and guardrail evidence; do not choose a new loss coefficient or implement it.",
+    "decision_matrix": "If evidence is mainly threshold-adjacent or reference/visibility-limited, do not present structure loss as a demonstrated solution. If repeated genuine missing segments are visually supported, propose a separately controlled future comparison rather than claiming efficacy from this analysis.",
+    "literature": "Read primary clDice/Skeleton Recall Loss papers and the critical 2025 SRL preprint; cite applicability and limitations, not cross-dataset gains as project evidence.",
+    "reference_urls": [
+      "http${LOCAL_PATH}",
+      "http${LOCAL_PATH}",
+      "http${LOCAL_PATH}"
+    ],
+    "future_authorization": "Every new loss, model, training, dataset expansion, prediction forward pass or evaluation definition change requires explicit user approval."
+  },
+  "implementation_and_validation": {
+    "new_code": "retinal_m0/plan_b_error_analysis.py and necessary same-scope new helpers/tests; bind all exact new files and reused frozen functions to the protocol/source manifest.",
+    "no_old_code_changes": true,
+    "compute": "CPU-only offline array/image processing. Set CUDA_VISIBLE_DEVICES empty; no model loading or network forward, not even for engineering checks. Process images/conditions in streaming fashion and record actual CPU/runtime/storage use.",
+    "entrypoint": "Explicit validate/analyze modes; verify exact protocol hash, source allowlist, Dev membership and new output root. No implicit training/inference command or path fallback to arbitrary experiments.",
+    "preflight_before_full_analysis": [
+      "Verify all 565 protected input hashes and the exact 11-condition/308-prediction inventory, native shapes, float32 finite probabilities in [0,1] and saved model/config lineage metadata.",
+      "Verify 77 frozen point IDs, original 9 image denominators, 19 NA states and Omega/d1 support.",
+      "CPU synthetic checks: probability exactly 0.5 included; d1 cross versus excluded diagonal; U/FOV exclusion; center miss but d1 hit; empty predictions/distances; NA zero denominators; region-partition sums; FP connectivity/zero-FP cases.",
+      "Check duplicate keys and fixed row counts; separate formal/class-split/budget blocks and paired seed/point identities; no pooled 4000-as-seed statistics.",
+      "Check native crop coordinates/legends/figure source identities and the 0.45 diagnostic-only band. Visual-review fields must preserve unreviewed/AI/human distinctions.",
+      "Inspect code paths to confirm no neural model construction/weights/forward/optimizer or official Test access; do not run training-based tests."
+    ],
+    "binding": "Create execution_binding.json and reuse_manifest.json before substantive analysis; store source hashes, environment/library versions and validation evidence. New implementation changes require affected checks to be rerun with a new binding, retaining failed attempts.",
+    "validation_artifact": "validation/verification.json with true checks, evidence paths, protocol/source/execution binding hashes and all_passed only if actually satisfied",
+    "final_checks": [
+      "Recompute all original 7 fixed-0.5 metrics for all 11 conditions from stored predictions and compare to stored per-image counts/aggregates, including 77 position counts and NA.",
+      "Verify each FP component pixel area sums to its original FP mask and all four region counts sum to FOV counts.",
+      "Verify full CSV coverage/unique keys, per-point recurrence and all paired cross-seed/method/temporal relations.",
+      "Verify all 105 actual visual review cases, figure links/native bbox records, explicit evidence-level labels and unresolved categories.",
+      "Verify formal negative/class-split/budget conclusions not rewritten; all protected files unchanged; zero training/inference and no Test access.",
+      "Produce real completion_verification.json and report only after these checks, with exact counts from manifests, not hardcoded subtract-one counters."
+    ],
+    "failure": "Missing/corrupt/misbound saved predictions or changed definitions stop the affected analysis and are reported. Do not regenerate predictions, drop cases or silently substitute checkpoints. Routine same-scope implementation fixes are authorized; changes to scientific definitions/data scope or new experiments return to the user."
+  },
+  "acceptance": {
+    "counts": {
+      "conditions": 11,
+      "existing_probability_maps": 308,
+      "Dev_images": 28,
+      "primary_valid_images": 9,
+      "primary_positions": 77,
+      "primary_NA_images": 19,
+      "point_condition_rows_expected": 847,
+      "image_condition_rows_expected": 308,
+      "NA_image_condition_rows_expected": 209
+    },
+    "minimum_actual_visual_cases": 105,
+    "all_point_and_image_rows_present": true,
+    "19_NA_images_preserved": true,
+    "original_fixed_0p5_counts_reproducible": true,
+    "all_unfavorable_and_unresolved_cases_retained": true,
+    "computed_visual_hypothetical_levels_separated": true,
+    "report_and_reproducible_data_exist": true,
+    "zero_training_and_new_segmentation_inference": true,
+    "protected_inputs_unchanged_and_Test_unaccessed": true,
+    "success_is_not_positive_method_result": "A negative, mixed or unresolved mechanism finding is a valid scientific output. Honest incomplete visual inspection must be marked incomplete rather than fabricated.",
+    "handoff": "Luna updates existing STATUS with real code, validation, quantitative/visual findings, evidence paths and unresolved issues. Then stop and hand to Sol for scientific review; do not autonomously start structural-loss experiments."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": 2166,
+  "source_files": 419,
+  "python_files": 342,
+  "source_hashes": "retained as provenance; public hashes checked here",
+  "server_cpu_tests": {
+    "test_maples_core": 4,
+    "test_maples_class_split": 7,
+    "passed": 11,
+    "CUDA_VISIBLE_DEVICES": "",
+    "scope": "synthetic tensors and geometry, original A7 source; no model inference"
+  },
+  "errors": [],
+  "limitations": [
+    "not full training reproduction",
+    "no GPU or Test execution",
+    "public paths are literal placeholders",
+    "original non-primary historical bootstrap limitations retained"
+  ]
+}

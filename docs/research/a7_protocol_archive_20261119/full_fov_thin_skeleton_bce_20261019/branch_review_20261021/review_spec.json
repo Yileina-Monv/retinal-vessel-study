@@ -1,0 +1,85 @@
+{
+  "review_id": "b1_b2_skeleton_recall_scientific_review_20261021",
+  "status": "APPROVED_REVIEW_FRAMEWORK_CPU_IMPLEMENTATION_NOT_TARGET_FREEZE",
+  "authorization": {
+    "user_instruction": "Implement the plan.",
+    "approved_now": ["Record the reviewed framework and remaining scientific gates", "CPU synthetic loss and geometry tests", "Bind existing Train-only evidence and eight diagnostic batches", "Existing STATUS and research-decision handoff for Luna"],
+    "current_gpu_execution_permitted": false,
+    "current_scientific_training_permitted": false,
+    "conditional_engineering_only": "Proposed G1/G2 scope may be implemented by existing Luna, but GPU execution waits for genuine human review, resolution of target semantics, and Sol's explicit gate release in STATUS. This receipt is not that release.",
+    "official_Test_access_permitted": false,
+    "candidate_Dev_inference_permitted": false,
+    "nnunet_restart_permitted": false
+  },
+  "source_versions": {
+    "paper": "http${LOCAL_PATH}",
+    "author_repo": "http${LOCAL_PATH}",
+    "author_2024_commit": "37e7508fcdeb5b5626b4202451e3607a639c4971",
+    "author_current_review_commit": "c7bac3c72ca7bb4f3d891235f051f0c4d07d7229",
+    "no_author_trainer_installed_or_executed": true
+  },
+  "candidate_definition": {
+    "status": "PILOT_SEMANTICS_PENDING_GENUINE_HUMAN_REVIEW",
+    "source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/attempt_02/candidate_definition_DRAFT.json",
+    "native_skeleton": "Zhang(V & existing FOV) before crops; padded full-image EDT; no repair, pruning, bridging or tube",
+    "path": "maximal degree-2 chain between endpoint / junction-cluster boundary anchors; do not pair across complex junctions",
+    "D_reference": 911.1106643779144,
+    "selection": "OPEN path: length_native*D_reference/D>=20; median(nonjunction width_native*D_reference/D)<=6; D=2*sqrt(FOV_area/pi)",
+    "B1": "selected paths intersect pointwise width_native*D_reference/D<=6",
+    "B2": "same selected paths, all skeleton points incl boundary anchors; do not expand junction cores",
+    "short_paths": "L_ref<20 excluded from auxiliary only, retained in audit and overall BCE+Dice; not labelled false spur",
+    "coarse_roots": "retain within selected chain even when local width_ref>6; do not extend beyond graph path; root inclusion needs human confirmation",
+    "complex_gap_boundary": "retain flags; no anatomical pairing, GT gap repair, or outside-FOV extrapolation",
+    "semantic_blockers": ["6/20 and short-real-branch exclusions", "locally coarse root versus intended full thin branch", "graph path versus anatomical branch at complex junctions", "three-size FOV-relative proxy is not physical calibre"],
+    "old_S3_H1_released": false
+  },
+  "loss": {
+    "base": "exact bound weighted_masked_loss(logits,V,FOV,FOV,epsilon=1e-6): original BCE+Dice",
+    "auxiliary": "per crop: sum(S*softplus(-float32(logits)))/N_S for N_S>0; exact differentiable zero otherwise; mean over all four crops",
+    "lambda": 0.1,
+    "lambda_zero": "exact bound A0 function bypass, no auxiliary arithmetic",
+    "empty": "retain empty crop in batch denominator four; no resampling, count floor above one, common activation gate, or implicit minimum target count",
+    "gradient": "lambda*S*(sigmoid(z)-1)/(4*N_S); target exterior and empty target zero; auxiliary logit L1<=lambda",
+    "not_implemented_as_candidate": ["Soft Recall", "clDice", "GT-contained skeleton tube", "generic vessel-positive BCE control"],
+    "dose_caveat": "B1/B2 own N_S changes shared-point weights as well as support; same lambda is not equal gradient dose"
+  },
+  "controls": {
+    "A0": "read-only original T0 seed2026; engineering-only lambda0 replay is not a new scientific control",
+    "B1_B2_initialization": "independent fresh identical M0; no engineering checkpoint as scientific initialization",
+    "seed": 2026,
+    "batch": 4,
+    "patch": 512,
+    "learning_rate": 0.0001,
+    "optimizer": "original AdamW betas0.9/0.999 eps1e-8 weight_decay1e-4",
+    "scheduler": null,
+    "clip_norm": 1.0,
+    "AMP": "original float16 and initial GradScaler1024",
+    "pairing": "same frozen 8000 draws, sample order, crop/flip/CCW90, RGB/V/FOV tensors, original RNG and num_workers0",
+    "scientific_budget_proposal_only": "B1/B2 each seed2026 2000 successful updates, fixed final endpoint; not currently authorized",
+    "no_search": "no lambda sweep, checkpoint selection, threshold tuning, extra seed/arm, or outcome-driven extension"
+  },
+  "human_gate": {
+    "existing_cases": 26,
+    "signed_at_review": 0,
+    "priority_cases": {"root_width": ["CASE_01", "CASE_18", "CASE_21"], "complex_junction": ["CASE_05", "CASE_13", "CASE_22"], "gap": ["CASE_06", "CASE_15", "CASE_24"], "short": ["CASE_07", "CASE_16", "CASE_25"], "boundary": ["CASE_14", "CASE_23"], "loop": ["CASE_08", "CASE_17", "CASE_26"]},
+    "rule": "All26 actually reviewed before target freeze; preserve pause/uncertain judgments and resolve policy, never delete cases or fabricate signatures. Structural CSV validation is not authenticity or scientific acceptance. Source human_review_BLANK.csv remains unchanged; submitted real review evidence must be bound separately."
+  },
+  "engineering": {
+    "gpu": "physical GPU0 only; GPU1 belongs to another user; no GPU work until gate release",
+    "G1": {"fixed_batch_steps_one_based": [115, 1442, 1660, 1, 4, 3, 66, 400], "batch_count": 8, "methods": ["B1", "B2"], "precisions": ["FP32", "AMP"], "max_forward_backward_diagnostics": 32, "optimizer_updates": 0, "state": "same fresh M0 state for paired diagnostics; snapshot/restore RNG and do not consume scientific stream", "records": ["counts, empty flags, base BCE/Dice and unweighted/weighted aux", "unscaled base/weighted-aux/combined actual network parameter gradient L2, cosine and per-layer norms", "logit gradients and analytic target support check", "clip norm/fraction, finite status, loss scaler, peak VRAM, elapsed time", "FP32 versus AMP observed differences; do not promise bitwise equality across precisions"], "gradient_hold": "If weighted auxiliary full-parameter L2 exceeds A0 on any fixed batch, or base is zero while aux is nonzero, pause before G2 and ask Sol; not automatic scientific rejection or permission to alter lambda. Nonfinite always blocks."},
+    "G2": {"max_successful_updates_total": 400, "lambda0_replay": 200, "B1_continuous50": 50, "B1_independent25plus25": 50, "B2_continuous50": 50, "B2_independent25plus25": 50, "resume_compare": "model, optimizer, scaler, all RNG, step/next_global_draw, input/target fingerprints; strict equality of bound deterministic state, no tolerance relaxation", "AMP_retries": "inherit original U-Net same-batch backoff, >8 retries stops; distinguish attempts/retries from successful updates and do not advance draw on failure; do not import nnU-Net skip policy", "evaluation": "Train-only engineering; no Dev scoring/model selection; preserve all failed attempts; consumed successful updates count across failed subruns too"},
+    "cost_estimate_not_wall_clock_kill": "15-30 GPU minutes for G1/G2; actual time and all engineering work logged, estimate not a forced timeout or automatic extension",
+    "not_done_by_this_CPU_implementation": ["real network forward or parameter gradient", "AMP GPU validation", "complete-state cross-process replay", "GPU launcher or scientific training loop"]
+  },
+  "evaluation_framework_not_yet_new_reference_freeze": {
+    "threshold": 0.5,
+    "native_matching": "d0 exact, d1 Euclidean radius1 center+four axial neighbors; retain original Omega and original metrics",
+    "primary_proposal": "GT-defined candidate-path skeleton d1 Recall: within each image equal-weight path means, then equal-weight valid image mean; d0 mandatory",
+    "mandatory_breakdown": ["B1-supported positions versus B2-added locally wider positions", "point versus physical-pixel arc-length weighting", "whole-missed paths: zero hits, with denominators and d0/d1", "longest covered and uncovered arc, computed separately per Omega-valid interval", "native size, path length, short excluded paths, complex junction flags and adverse images"],
+    "protection": ["overall Dice", "Precision", "FP/FOV with original denominator", "whole-image Recall", "coarse-vessel skeleton Recall width_ref>6 d0; native-width and d1 supplementary", "far Recall", "original lesion-neighborhood pixel and thin-skeleton metrics, 9valid/77positions/19NA"],
+    "connectivity": "coverage/longest-hit-run is not endpoint graph connectivity; undilated prediction connectivity in a GT-defined corridor remains a diagnostic proposal requiring radius, endpoints and ownership rules before implementation; ambiguous junctions/U cuts NA, no gap bridging",
+    "pending_before_candidate_Dev_scoring": ["genuine target acceptance and exact short/complex policy", "GT-only Dev branch IDs, denominators and NA", "operational continuity corridor/endpoints/ownership if used", "new guard and statistical decision rules"],
+    "bias": "repeatedly used Dev and seed2026 exploration, not independent validation; no target labels from Dev misses; all negative/adverse results retained"
+  },
+  "stop_conditions": ["human semantic gate incomplete", "protected source or target drift", "lambda0 replay or strict resume mismatch", "target outside GT/FOV or wrong crop pairing/normalization", "nonfinite loss/model state, AMP retry limit, OOM", "G1 gradient hold triggered", "GPU0 unavailable; never use GPU1 or kill other jobs", "engineering budget exhausted", "scientific definition, metric, lambda, budget or arm change requires user approval"]
+}

@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "id": "NL_ABSOLUTE_CE_SCIENCE100_PREPARATION_20261101",
+  "status": "USER_APPROVED_CPU_IMPLEMENTATION_PENDING_SOL_GPU_RELEASE",
+  "authorization": {
+    "preparation_approved": true,
+    "user_message": "Implement the plan.",
+    "science_training_approved": true,
+    "GPU_inference_approved": true,
+    "GPU_release_issued": false,
+    "new_N0_training_allowed": false,
+    "Test_allowed": false,
+    "automatic_next_experiment": false,
+    "user_messages": [
+      "开始训练吧",
+      "Implement the plan."
+    ]
+  },
+  "question": "Can local balanced positive/negative absolute CE improve frozen near thin skeleton d1 recall versus N0 with protected segmentation quality? No NR, lesion-specificity or anatomical connectivity claim.",
+  "method": {
+    "baseline": "historical standard2D nnUNet N0, seeds2027/2028",
+    "candidate": "NL",
+    "lambda": 0.0018152656553044105,
+    "calibration_source": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/engineering_v1/repair_v2/LAMBDA_CALIBRATION.json",
+    "lambda_recalibration_or_scan": false,
+    "aux_formula": "mean_over_full_B(mean_over_valid_positive_groups(0.5*softplus(-z_pos)+0.5*mean_neg softplus(z_neg)))",
+    "z": "foreground_logit-background_logit, highest-resolution output only",
+    "max_positive_groups_per_crop": null,
+    "max_negatives_per_group": 2,
+    "empty": "graph-connected zero; no valid negative -> omit whole group; keep empty crops in B denominator",
+    "base": "native full CE+Dice+unchanged Deep Supervision",
+    "private_rng": "PCG64 SeedSequence([20261031,model_seed,one_based_consumed_training_attempt,crop_index])",
+    "no_Dev_targets": true,
+    "target_definition_source": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/protocol.json"
+  },
+  "training": {
+    "seeds": [
+      2027,
+      2028
+    ],
+    "order": [
+      2027,
+      2028
+    ],
+    "fresh_initialization": true,
+    "use_engineering_weights": false,
+    "load_N0_endpoint": false,
+    "epochs": 100,
+    "train_attempts_per_epoch": 250,
+    "monitor_batches_per_epoch": 50,
+    "train_attempts_per_seed": 25000,
+    "monitor_batches_per_seed": 5000,
+    "total_train_attempts": 50000,
+    "batch": 2,
+    "patch": [
+      1024,
+      1536
+    ],
+    "SGD": {
+      "initial_lr": 0.01,
+      "momentum": 0.99,
+      "nesterov": true,
+      "weight_decay": 3e-05
+    },
+    "lr": ".01*(1-epoch/100)^.9, epoch0..99",
+    "deep_supervision_weights": [
+      0.5039370078740157,
+      0.25196850393700787,
+      0.12598425196850394,
+      0.06299212598425197,
+      0.031496062992125984,
+      0.015748031496062992,
+      0.007874015748031496,
+      0
+    ],
+    "clip_norm": 12,
+    "AMP": "unchanged original GradScaler",
+    "train_and_internal_monitor": "Train110 only; native one worker per pool, seed and seed+1; no Dev during training",
+    "attempt_budget": "success+verified safe AMP skips=25000; no catch-up; failures/unknown/replays never cleared",
+    "ordinary_training_code_modified_this_preparation": false
+  },
+  "pairing": {
+    "eligibility": "ELIGIBLE_FOR_CONDITIONAL_ONLINE_PAIRING; full NL alignment not yet demonstrated",
+    "initial_compare": [
+      "model",
+      "optimizer",
+      "scaler",
+      "RNG at same original initialization point"
+    ],
+    "every_attempt_before_forward": [
+      "consumed ordinal",
+      "epoch",
+      "iteration",
+      "image IDs in order",
+      "input tensor SHA256",
+      "full target pyramid SHA256",
+      "learning rate"
+    ],
+    "monitor_compare": [
+      "5000 IDs in order",
+      "Train membership",
+      "zero optimizer calls",
+      "same source and producer seed",
+      "50 per epoch"
+    ],
+    "monitor_limit": "Original monitors contain IDs only, no input/GT byte hashes. Do not claim retrospective monitor byte equivalence; preserve source/seed/schedule and compare IDs. No optimizer update in monitoring.",
+    "mismatch": "stop before forward/update; no automatic rebaseline or downgrade of comparison",
+    "new_skips_need_match_N0": false,
+    "explanation": "Same input attempt budget and optimizer rule, not forced same number of successful updates. Report differing skip counts as training response.",
+    "at_end": "all25000 rows and5000 monitor IDs matched before declaring strict training input pairing"
+  },
+  "runtime": {
+    "device": "${GPU_UUID}",
+    "GPU1_allowed": false,
+    "serial": true,
+    "shared_lock": "${RETINA_PROJECT_ROOT}/experiments/a14_gpu0.lock",
+    "GPU_admission": "no compute processes, memory used<512MiB, utilization<10%; refuse busy device, do not kill or switch",
+    "allocator_cap_MiB": 10240,
+    "CPU_threads": 2,
+    "augmentation_workers_per_pool": 1,
+    "min_free_disk_GiB": 50,
+    "train_hours_estimate": [
+      60,
+      90
+    ],
+    "train_hours_cap_per_seed": 50,
+    "total_train_hours_cap": 100,
+    "estimate_basis": {
+      "role_wall_seconds_proxy": {
+        "base2027": 62.35899782180786,
+        "zero2027": 47.96599841117859,
+        "base2028": 56.75099778175354,
+        "zero2028": 48.13199830055237,
+        "cont": 176.98899364471436,
+        "split_a": 99.66399645805359,
+        "split_b": 106.11099624633789
+      },
+      "naive_cont32_two_seed_hours": 76.8181396027406,
+      "old_26_32_hour_estimate_not_supported_by_full_diagnostics": true,
+      "planning_train_GPU_hours": [
+        60,
+        90
+      ],
+      "proposed_train_hours_cap_per_seed": 50,
+      "proposed_total_train_hours_cap": 100,
+      "proposed_final_inference_hours_cap_per_seed": 0.5,
+      "warning": "Short-run file timestamps include startup/checkpoint overhead; not isolated steady-state benchmark. No new timing experiment."
+    },
+    "heartbeat_seconds": 30,
+    "hang_no_progress_seconds": 1800,
+    "wall_cap_action": "stop safely, preserve partial result; no budget extension/restart automatically",
+    "unattended": "detached server controller, one-shot bound release, child parent-death guard; SSH disconnect harmless",
+    "failed_seed": "stop remaining controller phases; do not run seed2028 after unresolved technical failure or infer partial checkpoint"
+  },
+  "gradients": {
+    "each_train_attempt": true,
+    "same_forward_graph": true,
+    "unweighted_component_grads": "autograd.grad with retain_graph; must not accumulate into parameter.grad or alter RNG",
+    "base_diagnostic_scale": "current native training GradScaler scale",
+    "aux_diagnostic_scale": 128,
+    "unscale_before_statistics": true,
+    "norm": "all trainable parameters, preclip L2; absent grad zero; FP64 aggregate",
+    "weighted_ratio": "lambda*||g_aux||2/||g_base||2",
+    "zero_denominator": "both exactly0 -> ratio0 and cosineNA; base0 with aux>0 -> stop",
+    "cosine": "dot(g_base,g_aux)/(norms), zero norm NA; record but no newly invented cosine stop",
+    "ratio_stop_strictly_greater_than": 2,
+    "diagnostic_nonfinite": "stop before optimizer; no auto rescale/retry or lambda change",
+    "training_gradient_nonfinite": "only original proven AMP safe-skip path allowed, model/optimizer unchanged and scale reduced; otherwise fatal",
+    "AMP_pause_consecutive": 5,
+    "AMP_pause_cumulative": 25,
+    "post_update_nonfinite": "fatal, preserve charged update; never rollback silently",
+    "no_double_backward_update": "component diagnostics do not call optimizer; exactly one total-loss backward and at most one optimizer step per attempt"
+  },
+  "checkpoints": {
+    "latest": "atomic full snapshot after attempts30,200 and every250; also after each official epoch-end",
+    "retained_epochs": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "fields": [
+      "model",
+      "optimizer",
+      "GradScaler",
+      "scheduler",
+      "all RNG",
+      "official epoch/cursor",
+      "attempt/skip/failure budget",
+      "partial epoch outputs",
+      "logger",
+      "log prefix hashes",
+      "source/release binding"
+    ],
+    "historical_overwrite": false,
+    "model_selection": "checkpoint_final.pth only, never best/intermediate",
+    "recovery": "native asynchronous queue exact recovery not verified; no automatic resume/replay/restart; save interrupted snapshot and failure ledger, return for review"
+  },
+  "inference": {
+    "only_after": "both seeds finished100epochs and full input pairing verified",
+    "Dev_images_per_seed": 28,
+    "native_tiles_per_seed_cap": 67,
+    "hours_cap_per_seed": 0.5,
+    "total_new_forward_cap": 134,
+    "threshold": 0.5,
+    "TTA": false,
+    "ensemble": false,
+    "postprocessing": false,
+    "N0": "reuse existing bound probabilities; do not infer again",
+    "no_partial_or_best_checkpoint": true,
+    "failure": "retain completed tiles/images and counters, no automatic inference rerun"
+  },
+  "evaluation": {
+    "status": "USER_APPROVED_PRE_RESULT_FROZEN",
+    "primary": "Frozen near_thin_recall_d1, image macro,9valid/77points/19NA",
+    "primary_signal": "Eachseed mean NL-N0 >0 AND lower bound of pooled-within-image-across-seeds paired95CI >0",
+    "CI": {
+      "resampling_unit": "image",
+      "first_average_seeds_within_image": true,
+      "replicates": 1000,
+      "PCG64_seed": 20261016,
+      "percentiles": [
+        2.5,
+        97.5
+      ],
+      "quantile": "linear",
+      "reuse_original_indices_where_defined": true
+    },
+    "Dice_margin": null,
+    "formal_noninferiority_claim": false,
+    "Dice_guard": "Eachseed image-mean NL-N0 >=0 as conservative point-estimate screen; report CI separately, no proof of no degradation from nonsignificance",
+    "local_FP_primary": "Image macro FP/(frozen Rnear & Omega area),18 original nonempty images; same fixed support",
+    "local_FP_guard": "Eachseed mean delta<=0; pooled paired CI upper<=0 needed for interval-level no-increase evidence; crossing0 uncertain",
+    "local_FP_supplements": [
+      "FP pixels",
+      "FP/valid background",
+      "per-image and pooled totals, separate from macro"
+    ],
+    "other_direction_guards": {
+      "Precision": ">=0",
+      "FP/FOV": "<=0",
+      "far_recall": ">=0"
+    },
+    "auxiliary": [
+      "coarse_vessel_recall",
+      "hard_clDice",
+      "full_FOV_thin_path_recall",
+      "all per-image hits/lost hits/denominators/NA",
+      "leave-one-image-out sensitivity, not deletion or replacement primary"
+    ],
+    "limitations": [
+      "Repeated Dev use",
+      "Two seeds do not create independent patients",
+      "Original thin-point definition not anatomical whole-branch guarantee",
+      "No NR so no lesion specificity",
+      "GT-relative automatic results not expert medical verification"
+    ],
+    "result_categories": [
+      "Local gain and point/interval guard evidence separately stated",
+      "Recall-quality tradeoff",
+      "No detected local gain",
+      "Insufficient evidence"
+    ],
+    "negative_results_complete_delivery": true,
+    "reference_file": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/SCIENCE_EVALUATION_REFERENCE.json",
+    "per_seed_guard_unit": "Each seed paired image-macro NL-N0 on the frozen valid set for that metric; never pool pixels or treat seeds as patients",
+    "other_guard_CI": "Report per-seed and within-image-seed-averaged paired95CI; upper<=0 for FP/FOV, lower>=0 for Precision/farRecall and Dice are interval-level nonadverse evidence, distinct from point screens; no formal noninferiority claim",
+    "full_success_wording": "Primary signal plus all point guards -> local gain signal with point protection on reused Dev. Claim interval-supported protection only for guards whose adverse-direction CI bound also passes; crossing zero remains unknown, never independent validation."
+  },
+  "output_contract": {
+    "new_science_dir": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1",
+    "creation": "User explicitly approved scientific stage; independent source/CPU release remains required before GPU execution",
+    "files": [
+      "protocol.json",
+      "SOURCE_BINDING.json",
+      "SCIENCE_RELEASE.json after approval and CPU admission",
+      "runs/seed_2027 and seed_2028: initialization,attempts,auxiliary_gradients,monitor,budget,heartbeat,checkpoints,completion_or_failure",
+      "endpoint predictions and per-image metrics",
+      "paired summary,one-page Chinese conclusion,delivery receipt"
+    ],
+    "authority": "Existing STATUS and project research decisions only"
+  },
+  "implementation_acceptance_before_release": [
+    "Reuse existing native constructor/loop and proven sparse auxiliary implementation; adapt metadata sidecar without changing native arrays/RNG",
+    "Do not import CPU replay.py into GPU worker: it sets CUDA_VISIBLE_DEVICES empty; extract audited pure mapping functions with source binding",
+    "Geometry/GT candidate sidecar travels with each actual batch; select negatives in main process using consumed attempt, not producer prefetch ordinal",
+    "CPU integration compare first32 batches each seed to existing historical hashes and all-target traces, including original discard; no model forward/GPU",
+    "CPU mocked one-shot authorization, stage/digest mismatch, duplicate launch, counters persisted before operation, no optimizer before all checks, monitor no-update, fail/unknown/skip totals and no automatic resume",
+    "Reuse completed GPU engineering evidence; do not invent another GPU acceptance budget or reuse fixtures cyclically for science",
+    "Freeze implementation hashes, evaluation reference and this card; user scientific approval and Sol source/CPU review required before release"
+  ],
+  "completion": "Complete fair evidence including negative or technically failed runs is a complete engineering delivery. Scientific effectiveness is judged separately. No new experiment automatically.",
+  "scope_note": "用户2026-11-01批准PPT当日交付和后续科学训练；仅完成原生CPU入口验收并独立绑定后启动，不能跳过。"
+}

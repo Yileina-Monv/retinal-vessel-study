@@ -41,7 +41,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertTrue(all(r['trial_split']=='train' for r in result[:3]))
         self.assertEqual(result[3]['trial_split'],'validation')
     def test_path_traversal_rejected(self):
-        for p in ('../a','C:/a','a\\b','/a','a/../b'):
+        for p in ('../a','${LOCAL_PATH}','a\\b','/a','a/../b'):
             with self.assertRaises(ValueError):safe(Path.cwd(),p)
     def test_registry_rejects_stale_conflicting_and_copied_authority(self):
         with fixture_directory() as tmp:

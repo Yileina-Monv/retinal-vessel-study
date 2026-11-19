@@ -1,0 +1,23 @@
+{
+  "status": "USER_APPROVED_FRESH_NO_WALL_LIMIT_RESTART",
+  "approved_by": "user in current Sol conversation",
+  "user_messages": [
+    "Selected restart now rather than retain old time limit",
+    "Implement the plan."
+  ],
+  "executor": "Sol",
+  "utc": "2026-10-20T09:27:44.709620+00:00",
+  "seed": 2026,
+  "epochs": 100,
+  "attempt_cap": 25000,
+  "wall_clock_hard_cap_seconds": null,
+  "prior_successful_updates": 916,
+  "prior_budget_ledger_sha256": "16afff55904605fbe2209dcdc7310538d40242371c95eee4e0991cc1a5321a5c",
+  "preflight_sha256": "a743fdccc8b45a25c145eb2c179c9a8fd67247e2f4f86b34283290ac18896360",
+  "execution_binding_sha256": "a250cd268e7e60b41d94f3320018149b8c7707527bbcbd0daf7481c23e5d7fb1",
+  "protocol_sha256": "6e095d04c29178eea076c6026119f40c2d8d92a41eb52d1612cf2c49732cb975",
+  "prior_gpu_process_seconds": 1441.2038553139428,
+  "automatic_restart": false,
+  "official_test_authorized": false,
+  "B1_B2_training_authorized": false
+}

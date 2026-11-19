@@ -1,0 +1,95 @@
+{
+  "amendment_id": "P1_B1_B2_G2_ENGINEERING_EXCEPTION_01_20261021",
+  "status": "USER_APPROVED_CONDITIONAL_G2_ENGINEERING_CPU_PREFLIGHT_REQUIRED",
+  "user_authorization_verbatim": "“批准上述 G2 方案",
+  "authorization_interpretation": "Explicit approval of the immediately preceding G2 proposal, including its one-time gradient admission exception, lambda0.1,400 budget and operational pause conditions; not scientific training.",
+  "date": "2026-10-21",
+  "parent_policy": {
+    "V3_json_sha256": "7333078e1ebafcc169905f32f10e03fa7ef5d503747665afc0e3c16eb2594d0c",
+    "V2_json_sha256": "2867b31f4df2b6098af622ab64b72cfb0f5caecb0d00723a7b121f93a2874b5d"
+  },
+  "approved_proposal": {
+    "path": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/g1_engineering_v3/sol_repair_20261021/gpu_attempt_01/g2_engineering_proposal.json",
+    "sha256": "a375865fae90db8900b3e24e43eff71cd42ca8785a322e6c338ddbd5c78db971",
+    "readable_report_sha256": "2bc35967246416cb505f57de3838494ded639b59cc52cab564e6530f804284fa",
+    "G1_risk_analysis_sha256": "bc6500c105b97a6eefcc049a68fc993fdab76a876054204832215afc6b68d9f6",
+    "scope": "Incorporate this SHA-pinned proposal's controls, matrix, accounting, numerical stops and acceptance. Its prospective approval language is fulfilled by this user approval; source document remains immutable.",
+    "historical_G1_overall_PASS": false,
+    "accepted_observation": "G1 10/32 weighted-aux/A0 L2>1; max1.197174, finite and positive net cosine; no update or stability/effect claim."
+  },
+  "precedence": {
+    "one_time_G2_admission_exception": "Permit this G2 engineering matrix despite G1 fixed-combination gradient ratios>1. Do not retrospectively mark the old <=1 gate passed or waive other G1 numerical/source checks.",
+    "operational_pause_now_approved": "At B-trajectory scheduled audit steps1,5,10,25,50, weighted-aux/A0 parameter L2>2 or zero A0 with positive aux pauses before optimizer.step. Ratio2 is an engineering review line, not a stability theorem; do not move it after results. Negative cosine alone is recorded/reviewed, not automatic divergence.",
+    "scope_end": "This exception ends with the one G2 matrix or a failure/pause; no permission to reset consumption, repeat G1, add replacement runs or launch science.",
+    "unchanged": [
+      "V3 medical-count cancellation with actual0/26 and expert NOT_ASSESSED",
+      "Original M0/U-Net/A0 BCE+Dice and seed2026/batch4/patch512/lr/AdamW/scaler/clip/sampling/augmentation",
+      "Existing Train-GT native6/20 B1/B2 mask bytes, single-pixel normalized positive BCE lambda0.1",
+      "Strict replay/resume/input/target checks and original U-Net same-batch AMP backoff (>8 retries stops)",
+      "Original S3 H1 hold, formal negative conclusions, scientific target/evaluation freeze and future user training authorization",
+      "No Dev scoring/inference or Test access, GPU0 only and GPU1 prohibited"
+    ],
+    "old_files_immutable": true
+  },
+  "authorization_now": {
+    "Luna_CPU_G2_implementation_and_preflight": true,
+    "G2_GPU_conditionally_authorized": true,
+    "G2_GPU_released_now": false,
+    "immediate_GPU_execution_allowed": false,
+    "scientific_training_authorized": false,
+    "new_G1_GPU_work_allowed": false,
+    "release_condition": "Original Luna returns bound CPU evidence and stops. Sol independently accepts CPU/source/accounting/recovery guards and issues an actual G2-only release cross-bound to STATUS, implementation, this exception and evidence. This policy file is NOT G2_RELEASE.json.",
+    "normal_substage_continuation": "After that release, passing substages continue within this same scope without repeated user approvals; failures/pauses stop for Sol/user. G2 completion never launches science."
+  },
+  "budget": {
+    "global_charged_update_ceiling": 400,
+    "lambda0_replay200": 200,
+    "B1_continuous50": 50,
+    "B1_independent25plus25": 50,
+    "B2_continuous50": 50,
+    "B2_independent25plus25": 50,
+    "verified_successes_attempts_retries_uncertain_separate": true,
+    "failed_subrun_completed_updates_remain_charged": true,
+    "uncertain_optimizer_invocation_remains_separately_charged": true,
+    "no_automatic_restart_or_budget_refund": true,
+    "baseline_forward_calls": 400,
+    "baseline_gradient_API_calls": 440,
+    "retry_forward_attempt_ceiling_derived_not_extra_run_permission": 3600
+  },
+  "Luna_current_handoff": {
+    "conversation": "Existing original Luna engineering dialogue, no newly created agent/dialogue or memory system",
+    "phase": "G2_CPU_IMPLEMENTATION_ONLY",
+    "code": "Dedicated G2-only runner and tests; do not change G1 runner to permit optimizer.step or alter old source-bound experiments.",
+    "output_stage": "${RETINA_PROJECT_ROOT}/experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/g2_engineering_v3",
+    "CPU_scope": "Tiny isolated CPU fixtures and real data/source fingerprints; do not initialize CUDA, construct/forward retinal U-Net or load retinal checkpoints for model probes. M0 can be hashed. Reuse valid Train110/target evidence; compare actual per-batch T0 fingerprints again during future real replay.",
+    "must_deliver": [
+      "G2-only source/tests, no-arg/phase/release/hash refusal checks and immutable execution binding",
+      "Persistent one-stage global400 and per-trajectory budgets, real optimizer events, durable pre-step reservation, failure/crash/uncertain accounting tests",
+      "Controlled AMP retry tests, same-batch/draw invariance and no silent skipped-update accounting",
+      "Same-forward unscaled base/aux diagnostics, lambda0 bypass, empty/sparse targets and no p.grad/RNG/scaler/update perturbation on tiny CPU models",
+      "Planned continuous50 versus independent25+25 state/log/loader/sampler alignment tests",
+      "Approved ratio>2/zero-A0-positive-aux guard, nonfinite/failure/resource stops and no automatic science transition",
+      "Source/M0/config/Train/target/evidence binding, read-only GPU0/disk observations and original shared-lock integration",
+      "CPU verification/report/logs with actual remaining gaps; write STATUS and stop for Sol review"
+    ],
+    "forbidden_now": "No actual G2 GPU update, hidden GPU warmup/diagnostic, real G2 release creation, Dev inference/Test, extra seeds/arms/steps, candidate regeneration or human-signature changes."
+  },
+  "resource": {
+    "GPU0_UUID": "${GPU_UUID}",
+    "GPU1_forbidden": true,
+    "shared_lock": "${RETINA_PROJECT_ROOT}/experiments/a14_gpu0.lock",
+    "GPU_estimate_minutes": [15, 30],
+    "wall_clock_hard_kill": false
+  },
+  "actual_state_at_approval": {
+    "G1": "32_OF_32_CONSUMED_GRADIENT_GATE_EXCEPTION_REQUIRED_NOT_RETROACTIVE_PASS",
+    "G1_remaining_forwards": 0,
+    "G2_runner_exists": false,
+    "G2_CPU_preflight_passed": false,
+    "G2_GPU_updates": 0,
+    "G2_release_issued": false,
+    "scientific_training_started": false,
+    "human_reviewed": 0,
+    "human_total": 26
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "protocol_id": "maples_class_split_2_1_exploratory_v1_20261018",
+  "version": 1,
+  "status": "FROZEN_USER_APPROVED_EXPLORATORY",
+  "approved_date": "2026-10-18",
+  "classification": {
+    "phase": "post_formal_and_post_uniform_ablation_exploration_not_independent_validation",
+    "question": "在既定内部+邻域A内，血管2/非血管1能否在相同预算下改善主细骨架召回？",
+    "notation": "本轮2/1=(A内V=1权重2,A内V=0权重1)；T0在此记号为1/1，原TW为2/2。不得与原PPT的区域内2/区域外1混淆。",
+    "region": "沿用既定A=Rin∪Rnear，包括出血内部与邻域；本轮不缩成仅Rnear。",
+    "mechanism_limits": "背景约91%像素但区域内BCE贡献与血管接近，不能断言背景支配更新。新方案检验完整目标的条件作用；不单独证明背景项因果机制、最优权重或病灶位置特异性。"
+  },
+  "authorization": {
+    "source": "用户于Sol现有对话明确批准：只新增2/1，seed2026/2027/2028，各2000次成功更新；先通过必要映射、归一化和配对检查，再启动已批准三条。",
+    "protocol_approved": true,
+    "engineering_permission": "允许新增2/1实现、CPU无参数更新的针对性验证、必要恢复/评价/记录及指定CSV漏项修补。",
+    "gpu_training_permission": "有条件已批准：implementation_gate/verification.json逐项真实通过且协议/源码/数据/复用绑定核对一致后，现有Luna可直接启动且仅启动三条2/1；不需再次询问用户。门槛前禁止任何参数更新。",
+    "executor": "现有Luna｜工程执行与调试对话",
+    "reviewer": "现有Sol｜科研规划与审查对话",
+    "forbidden": [
+      "训练1/2、其他组合/系数、更多种子或延长预算",
+      "重训已有1/1、2/2、1.5或3.0以补对照或日志",
+      "额外GPU工程短训、TR/随机位置对照",
+      "访问官方Test用于训练/推理/调参/工程检查",
+      "修改原始数据/标注/划分/FOV/区域/指标/Dice/既定归一化或旧冻结协议",
+      "改写旧负面结果、删除不利样本/失败/中断、GitHub操作或自动同步"
+    ],
+    "conflict": "科研规则冲突或不能保证配对公平性时暂停并在STATUS报告，不自行放宽规则或补跑旧组。",
+    "after_complete": "回写现有STATUS实际修改/验证/证据/遗留问题后停止，交Sol科研审查。"
+  },
+  "parents": {
+    "formal_protocol": "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json",
+    "formal_sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+    "uniform_ablation_protocol": "${RETINA_PROJECT_ROOT}/docs/t0_tw_weight_ablation_20261017/protocol.json",
+    "uniform_ablation_sha256": "a2de7e7bb0c3bee647bc9ab8a7e41ffc0d5dc1a0433d29d0a34b0e8986d1f4b7",
+    "a13": "${RETINA_PROJECT_ROOT}/docs/a13_t0_protocol_closeout_20261015/protocol.json",
+    "source_manifest": "${RETINA_PROJECT_ROOT}/docs/t0_tw_class_split_20261018/source_manifest.json",
+    "preserve_formal": "原TW−T0主差−0.006001371742112483，95%区间[−0.015260631001371741,0]，远处召回下降；主改善和保护未获支持。",
+    "preserve_ablation": "统一1.5和3相对1主差均−0.006106890366149625，区间[−0.017146776406035666,+0.0027434842249657062]，未显示主增益；原结论保留。",
+    "inheritance": "从父协议沿用以下具体数值与定义；只新增A内按训练血管标签拆分BCE权重。本协议不回改A13/PPT或旧阶段。"
+  },
+  "methods": {
+    "new_train": [
+      {
+        "method": "v2_b1",
+        "vessel_weight": 2,
+        "background_weight": 1
+      }
+    ],
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "new_runs": 3,
+    "reuse": [
+      {
+        "label": "1/1",
+        "method": "T0",
+        "seed": 2026,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/step_002000.pt",
+        "checkpoint_sha256": "585471534976755336e15b9bd6f899069f02ee09a3c68c5fe3b17771782f73bc",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      },
+      {
+        "label": "2/2",
+        "method": "TW",
+        "seed": 2026,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/step_002000.pt",
+        "checkpoint_sha256": "d6f5dc84d342fb0493620dd4b8213e64b2a1ec63261d7f500ed8095d9d6c135e",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      },
+      {
+        "label": "1/1",
+        "method": "T0",
+        "seed": 2027,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/step_002000.pt",
+        "checkpoint_sha256": "ba8d8732bc57e970b921c71145a536880fa1cf92257b31f0aec0cc598027dbd1",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/T0/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      },
+      {
+        "label": "2/2",
+        "method": "TW",
+        "seed": 2027,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/step_002000.pt",
+        "checkpoint_sha256": "7e17b8687177ad025ca132e13bb6ea9bccbf05b8c7cf4b8cf8a2691935443c8c",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      },
+      {
+        "label": "1/1",
+        "method": "T0",
+        "seed": 2028,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/step_002000.pt",
+        "checkpoint_sha256": "1660d729d0deebd9c33d451c682beb9aea89ebb46d8bb80fca5dbc71a1e97abf",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/T0/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      },
+      {
+        "label": "2/2",
+        "method": "TW",
+        "seed": 2028,
+        "run": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW",
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/step_002000.pt",
+        "checkpoint_sha256": "ca5cf11a0fb630ccfb8e0fd37181b33d6cf592ac24d0e74e39ad6df8984228b7",
+        "config": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/config.json",
+        "pairing": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/pairing.jsonl",
+        "endpoint_metrics": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/metrics.json",
+        "endpoint_probabilities": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/evaluation/step_002000/probabilities",
+        "source": "completed_formal_core_read_only_not_new_repeat"
+      }
+    ],
+    "primary_contrast": "2/1−同seed T0(1/1)",
+    "supplementary_contrast": "2/1−同seed TW(2/2)",
+    "interpretation_of_supplement": "在A内血管系数固定2时移除背景额外加权，仍包含原权重总和归一化的联动；不是背景梯度的孤立因果归因。"
+  },
+  "regions": {
+    "train_images": 110,
+    "development_images": 28,
+    "data_root": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008",
+    "manifest": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/data_manifest.csv",
+    "split": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/split_record.json",
+    "input": "RGB only；H/U/V只用于既定训练权重或监督/评价，不增加模型输入通道",
+    "V": "既定 Vessels 标注，按原原生尺寸读取器解释",
+    "H": "确定 Hemorrhages",
+    "U": "BrightUncertains ∪ RedUncertains",
+    "FOV": "沿用已绑定的 RGB candidate_fov；不得用标签修补",
+    "native_region_order": [
+      "读取完整原图RGB、V、H、U和既定FOV，不resize",
+      "r=max(1,ceil(native_RGB_width/100))；对完整原图 H 做欧氏圆盘膨胀 D",
+      "Omega=FOV & ~U；Rin=H & Omega；Rnear=(D & ~H) & Omega；Rfar=Omega & ~D",
+      "在完整原图生成w，再按同一裁剪/翻转/逆时针90度旋转同步处理RGB/V/FOV/w；不得按裁块重建邻域"
+    ],
+    "U_training": "不忽略U；U与普通区域一样按1参与BCE和原Dice；仅从区域评价及额外加权排除",
+    "empty_fov": "error_no_resampling",
+    "weight_definition": "w=1+A*((w_v−1)*V+(w_b−1)*(1−V))；FOV外有效F*w=0",
+    "region_identity": "A=Rin∪Rnear，不因类别系数或w>1与否改变"
+  },
+  "objective": {
+    "dtype": "既有AMP前向后float32计算损失",
+    "A": "(Rin|Rnear)，原图构建并显式随图像同步裁剪/翻转/旋转；A不可由w>1反推",
+    "general_mapping": "w=1+A*((w_v−1)*V+(w_b−1)*(1−V))；FOV外有效F*w=0",
+    "new_mapping": "A&V=1:2；A&V=0:1；其余FOV含U:1；FOV外不计",
+    "per_image_BCE": "sum(F*w*BCEWithLogits(z,V))/D",
+    "D_general": "nF+(w_v−1)*n_A_V1+(w_b−1)*n_A_V0=sum(F*w)",
+    "D_new_2_1": "nF+n_A_V1；不能用nF+nA、nF或整批分母替代",
+    "Dice_image": "1-(2*sum(sigmoid(z)*V*F)+1e-6)/(sum(sigmoid(z)*F)+sum(V*F)+1e-6)",
+    "total": "mean_i(BCE_image_i+Dice_image_i)，batch=4；Dice系数1且完全不加权",
+    "U": "权重恒1，仍参与原BCE及Dice；只从额外加权和区域评价排除",
+    "invariants": [
+      "1/1退化原T0的损失值及logits梯度",
+      "2/2退化原TW的损失值及logits梯度",
+      "A为空或A内无血管时新2/1退化T0；空FOV报错不重采样",
+      "不得仅替换BCE pos_weight而遗漏本协议实际权重分母",
+      "权重不进入预测输入；预测只用RGB；不按预测标签定训练权重"
+    ]
+  },
+  "training": {
+    "config_template": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/config.json",
+    "inherited_numeric": {
+      "batch_size": 4,
+      "patch": 512,
+      "crops_per_image": 4,
+      "amp": true,
+      "amp_dtype": "float16",
+      "amp_initial_scale": 1024,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "clip_norm": 1,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "scheduler": null,
+      "accumulation": 1,
+      "num_workers": 0,
+      "safe_stop_seconds": 7200,
+      "photometric": false,
+      "resize": false
+    },
+    "architecture": "原5层UNet，通道32/64/128/256/512，GroupNorm8，不更改",
+    "source_M0": "${RETINA_PROJECT_ROOT}/checkpoints/m0_10000_20261008/last.pt",
+    "source_M0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79",
+    "normalization_source": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/releases/development_v1/normalization.json",
+    "normalization_sha256": "c7ccde8948b08f9f38730034ef4c126c77b73af173ea8a841acdb6fd82b08f77",
+    "mean": [
+      0.429275223900028,
+      0.19375142502503398,
+      0.07753014774123759
+    ],
+    "std": [
+      0.18544595955624413,
+      0.10540798459784542,
+      0.052217286214809804
+    ],
+    "sampling": "manifest_order_four_round_robin_passes_per_epoch；每轮440draw；每图4次裁剪；继承原 draw_geometry SeedSequence([seed,global_draw]) 与裁剪/翻转/旋转顺序，原相同概率不变",
+    "determinism": "沿用确定性算法、cudnn deterministic=true benchmark=false、TF32=false、threads=2、AdamW foreach=false；DataLoader私有seed发生器；评价独立进程且不改变训练随机状态。",
+    "successful_updates_each": 2000,
+    "draws_each": 8000,
+    "extra_total_updates": 6000,
+    "extra_total_draws": 24000,
+    "initialization": "三条各从原M0独立开始，新建原优化器/scaler/RNG；不从任何T0/TW/1.5/3训练结果接续。",
+    "pairing": "同seed与原T0/TW配对初始态及全部8000draw图像/几何/RGB/V/FOV/顺序；只允许A内预定类别BCE权重不同。",
+    "run_order": [
+      {
+        "seed": 2026,
+        "method": "v2_b1"
+      },
+      {
+        "seed": 2027,
+        "method": "v2_b1"
+      },
+      {
+        "seed": 2028,
+        "method": "v2_b1"
+      }
+    ],
+    "checkpoint_steps": [
+      0,
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1200,
+      1400,
+      1600,
+      1800,
+      2000
+    ],
+    "primary_checkpoint": 2000,
+    "checkpoint_and_resume": "沿用model/optimizer/scaler/RNG/next_draw/配置源码绑定的完整保存与严格恢复；每200步保存。新贡献日志每步4行，恢复按step+global_draw核对并备份保存点后尾，不可套用旧一行一步的截断方法。新绑定不得覆盖已有运行绑定；影响公平性的修复停报，不擅自重跑或改预算。",
+    "step_semantics": "仅成功优化器更新计步；溢出时沿用原同一批重试与有限次数保护，记录实际scaler/重试；不同方法损失/梯度/权重及相应优化轨迹不同是预期，不要求TW与T0参数相等。",
+    "hardware": {
+      "physical_gpu": 0,
+      "gpu_uuid": "${GPU_UUID}",
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "lock": "${RETINA_PROJECT_ROOT}/experiments/a14_gpu0.lock",
+      "readiness": "仅使用既有GPU0，在原显存/利用率/无其他计算进程条件满足时运行；繁忙则等待或记录阻塞，不杀他人任务"
+    },
+    "no_adaptive_selection": "不按中途效果早停、延长或挑保存点；保留失败和中断。运行顺序不随结果改变。",
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "evaluation": {
+    "definition_source": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/evaluation_protocol_v1.json",
+    "definition_scope": "原评价配置中主/补充指标、掩码、分母、推理、NA规则沿用；selection、calibration_max_updates等校准专属项只适用旧阶段。本协议明确覆盖正式选模、保护参照和统计规则，不能整份旧配置盲拷冒充正式协议。",
+    "development_manifest": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/dev_manifest.json",
+    "primary": {
+      "name": "near_thin_recall_d1_diameter_le3",
+      "contrast": "2/1−同seed T0(1/1)",
+      "threshold": 0.5,
+      "diameter_max": 3,
+      "d1_tolerance": 1,
+      "match_support": "Omega",
+      "aggregation": "每图比率后宏平均，不按77点池化",
+      "valid_n": 9,
+      "target_points": 77,
+      "primary_ids": [
+        "20051117_37130_0400_PP",
+        "20051205_35276_0400_PP",
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_58889_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45248_0100_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "denominators": [
+        13,
+        8,
+        3,
+        27,
+        6,
+        1,
+        1,
+        14,
+        4
+      ],
+      "NA_other_images": 19
+    },
+    "inference": {
+      "native": true,
+      "patch": 512,
+      "stride": 256,
+      "batch_size": 4,
+      "amp": false,
+      "gaussian_blend": "existing_tiled_probability",
+      "TTA": false,
+      "resize": false,
+      "normalization": "同原M0/FIVES冻结归一化；FOV外输入0",
+      "probability": "原尺寸float32；概率>=阈值；保存来源模型/图像及推理绑定摘要"
+    },
+    "schedule": {
+      "fixed_threshold_steps": [
+        0,
+        200,
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1400,
+        1600,
+        1800,
+        2000
+      ],
+      "same_FP_steps": [
+        2000
+      ],
+      "note": "新轨迹0/每200/2000的固定0.5评价；可在完整训练后独立进程读取已保存点统一评价，不反馈选模或改变训练RNG；0步沿用已绑定Z0。旧组引用既有评价，不重新推理。"
+    },
+    "supplementary": [
+      "各seed及各方法相对Z0的全部绝对指标及变化",
+      "全图Dice/Precision/Recall/FP密度、远处召回、邻域像素及原≤2/4/5补充细骨架档",
+      "28图逐图误报与保护指标、9图主召回的改善/下降/不变、极端恶化图及必要叠加图；不删不利样本，不设事后全图零恶化门槛"
+    ],
+    "NA": "沿用既有计数/分母0=>NA，报告每项有效图ID与n；固定参考图，不按方法更换有效集合；任何预期n/分母改变或预测异常均暂停对比查明，不事后填0。",
+    "no_redundant_audits": "不重复A11～A15.1整套检查或A15.2已完成的点位/留一图工程审计；新代码只做必要针对性一致性核对。",
+    "report_all": "三个方案×三个seed及共享Z0全部列出；统一原指标和NA，缺失旧补充项仅用保存概率与冻结标注新增推导并标来源，不覆盖旧正式结果。"
+  },
+  "same_FP": {
+    "role": "终点描述性补充，不用于选模或拯救主结果；同一开发集拟合和评价，不是独立Test",
+    "target_source": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/protection_rules.json::baseline.fp_density",
+    "target_macro_FP_per_FOV": 0.011634106399528646,
+    "reference": "共同原Z0@0.5目标不变，新2/1每seed选一个全局阈值，旧1/1和2/2引用既有网格与阈值。",
+    "grid": "np.linspace(0,1,1001,dtype=np.float32)，含两端，保存网格数值与实现",
+    "selection": "对每个method/seed终点各选一个全局阈值；全部28图宏平均FP/FOV<=共同目标的最小可行阈值；不增加科学容忍epsilon；无可行=>NA并报告原因",
+    "report": [
+      "全部网格FP密度与可行标记",
+      "所选阈值、实际误报、相对目标差距、有效图n",
+      "所选全局阈值下逐图/逐点计数与指标、2/1−1/1及2/1−2/2配对补充差",
+      "逐图误报增减，不能将宏均值不超目标称为每图误报受控",
+      "9个方案/seed条件完整展示；新组只对终点做网格；不能按开发图单独调门槛"
+    ],
+    "not_allowed": [
+      "按图调阈值",
+      "固定0.798或0.8替代既定网格",
+      "多次尝试选最有利网格/目标",
+      "把留一图开发敏感性描述为独立验证"
+    ]
+  },
+  "statistics": {
+    "delta_definition": "每项指标每图先平均三个配对seed差，主差为固定有效图上mean；每个预定对照分别报告。同一指标所有权重/对照共用相同按图bootstrap索引。",
+    "report_seed_variation": "报告三个seed各自配对宏均差与全部原始宏均值；三个配对差均值±样本SD(ddof=1)。",
+    "bootstrap": {
+      "resamples": 1000,
+      "unit": "整图配对，有放回，样本量保持该指标有效n",
+      "generator": "numpy.random.Generator(numpy.random.PCG64(20261016))",
+      "seed": 20261016,
+      "indices": "按dev_manifest固定顺序排列有效ID；每种n使用从该seed新初始化生成器的一张(1000,n)索引表，同n指标复用该表；三seed差向量整行一起抽取；保存索引表和每次估计。",
+      "interval": "np.quantile(bootstrap_estimates,[0.025,0.975],method='linear')"
+    },
+    "NA": "指标固定有效集合按原分母确定；若预期有效图中某方法产生额外NA，不能pairwise删除/更换样本，应记录不可比较并排查；不伪造置信区间。",
+    "do_not_treat_as_independent": [
+      "27个图×seed组合",
+      "77个评价位置",
+      "3次来自同一M0的重复",
+      "共享Z0或重叠留一图拟合集"
+    ],
+    "limitations": [
+      "主样本9图/77点，小分母和19图NA保留",
+      "患者独立性未知；按图区间条件于现有三seed，不同时覆盖患者/训练总体不确定性",
+      "复用既有开发集、三个配对seed及seed2026校准历史；本轮三条新轨迹不是独立外部确认。",
+      "无正式p值/多重比较筛选；补充档不替代唯一主比较"
+    ],
+    "multiplicity": "看到正式及四档结果后提出的新方法探索。虽然只新增一种方案，开发集和历史方法反复使用；95%区间仅描述，不提供筛选后的整体95%保证，不作确认性显著性宣称。",
+    "same_FP_intervals": "若报告区间，条件于已经选出的各全局阈值，不在bootstrap中重新拟合；仍为开发集描述性补充，不覆盖阈值拟合不确定性。"
+  },
+  "protection": {
+    "contrast": "2/1−同seed T0(1/1)，固定0.5/2000步，零退让不变；相对TW差完整补充报告但不替代保护参照。",
+    "allowed_degradation": 0,
+    "metrics": {
+      "precision": {
+        "direction": "higher",
+        "valid_n": 28
+      },
+      "fp_density": {
+        "direction": "lower",
+        "valid_n": 28
+      },
+      "far_recall": {
+        "direction": "higher",
+        "valid_n": 28
+      }
+    },
+    "report_Z0": "保留T0/TW对原Z0在相同0.5下的绝对表现及原零退让参照，不改A15.2无合格结果；T0未胜过Z0不是不准做TW对照的门槛。",
+    "interpretation": "这是增量代价判读，不能冒称临床安全或已严格证明统计不劣；逐图不均衡必须报告。"
+  },
+  "interpretation": {
+    "primary_clear_support": "沿用原方向条件：三个seed主差均>0且按图95%区间下界>0，只可作为探索性候选信号；不能称独立确认。",
+    "protection_clear_support": "Precision与far_recall差的95%区间下界>=0；FP密度差的95%区间上界<=0，三项同时成立。",
+    "protection_cost": "平均差越过零退让线即报告观察到代价；平均未恶化但区间跨保护线=>保护证据不足，不能用未显著变差冒充不劣。",
+    "protected_gain": "主信号与原全部保护支持同时成立，也仅称当前开发集探索候选。保护失败如实报告代价；无结果达到条件则报告无候选，不扩搜。",
+    "scope": "禁止将探索最优视为独立验证，禁止改写原权重2正式负面结论。"
+  },
+  "contribution_logging": {
+    "purpose": "在本轮三条2/1实际训练中，区分加权区域与其他FOV位置的血管/非血管BCE贡献；日志不改变优化目标。",
+    "groups": {
+      "A_V1": "A & (V==1)",
+      "A_V0": "A & (V==0)",
+      "O_V1": "(FOV & ~A) & (V==1)",
+      "O_V0": "(FOV & ~A) & (V==0)"
+    },
+    "partition": "四组互斥且覆盖FOV；O含U，FOV外排除；A_V0表示血管标注中的非血管，不称正常组织。",
+    "source": "成功更新实际使用的同一forward中detach记录；不额外forward/backward/更新，不消耗随机流；只记最后成功尝试。A来自显式几何，不能由w>1推断。",
+    "per_image_definition": {
+      "nF": "sum(F)",
+      "nA": "sum(A)",
+      "denominator_D": "nF+(w_v−1)*n_A_V1+(w_b−1)*n_A_V0=sum(F*w)",
+      "group_count": "n_g=sum(group_g)",
+      "raw_sum": "S_g=sum(group_g*BCEWithLogits(z,V))",
+      "weighted_sum": "W_g=c_g*S_g，其中A_V1系数2，A_V0/O_V1/O_V0系数1",
+      "normalized_contribution": "C_g=W_g/D",
+      "BCE_image": "sum_g C_g",
+      "Dice_image": "同一forward下原未加权FOV Dice",
+      "total_image": "BCE_image+Dice_image"
+    },
+    "required_per_image_fields": [
+      "protocol/code binding",
+      "seed",
+      "vessel_weight、background_weight、method",
+      "step",
+      "global_draw",
+      "batch_slot",
+      "filename",
+      "geometry",
+      "input_sha256",
+      "nF",
+      "nA",
+      "D",
+      "各组n_g/S_g/W_g/C_g",
+      "BCE_image",
+      "Dice_image",
+      "total_image",
+      "AMP retry count"
+    ],
+    "step_reconciliation": "train.jsonl每步保存BCE_batch=mean4(BCE_image)、Dice_batch=mean4(Dice_image)、actual_total_loss；sum_g mean4(C_g)=BCE_batch，BCE_batch+Dice_batch=actual_total_loss。",
+    "numerics": {
+      "logging_only_rtol": 1e-05,
+      "logging_only_atol": 1e-07,
+      "note": "仅用于float32分项加和重排的记录核对；不是科学指标/保护容忍。优化值和梯度不能因记录而变化。"
+    },
+    "empty_groups": "n_g=0时S/W/C都为0；组内平均S/n_g为NA，不能伪造0均值。整图BCE为0时贡献份额为NA，但实际损失仍照常计算；空FOV仍报错。",
+    "aggregation": "先每图除以各自D，再四图平均；按全部8000draw及每200步窗口汇总每组平均C。汇总份额=该组mean(C)/mean(BCE)，注明ratio-of-means；不能将各图S先相加后除统一D。另报像素取样数量/比例、无加权区域draw数及逐训练图分布，明确重复取样不等于独立像素。",
+    "evidence_limits": "旧1/1、2/2实际分项日志缺失，保持NA，不补造或重训；像素数、BCE数值和对模型更新的作用不得混为一谈。",
+    "output": "每条bce_contributions.jsonl 8000行（每成功步4行），三条共24000；train/pairing每条2000行；从首次更新即写入实际协议SHA、源码与运行绑定，不用协议ID冒充SHA。"
+  },
+  "implementation_gate": {
+    "status_at_freeze": "NOT_IMPLEMENTED_NOT_PASSED；本冻结不冒充工程已通过",
+    "allowed_checks": "CPU无参数更新的单元/真实输入与同种子检查；不新增GPU工程更新",
+    "required": [
+      "全原图H膨胀和A构建在裁块之前；边界/翻转/旋转与原相同，不消耗采样随机流",
+      "血管/背景/U/视野外映射、无出血/无A血管/空组/空FOV边界",
+      "1/1对既有T0、2/2对既有TW，实际损失值和logits梯度一致；Dice不变；2/1用手工小数组核对D与批平均",
+      "A按几何显式传递：A_V0在权重1时仍计入A_V0，不能以w>1定义A",
+      "四组计数互斥覆盖FOV，S/W/C/D逐图与实际BCE/Dice/总损失对账；记录开关不改变目标/梯度/随机流",
+      "三seed各8000draw的图像顺序/几何与同seed原T0/TW一致；真实输入按旧门槛前缀及边界抽样核对，正式过程逐批全部记录并与旧输入摘要比较",
+      "三条初始模型/新建优化器/scaler/RNG摘要与同seed原正式初始态一致；唯一方法差异为A内类别权重",
+      "沿用严格恢复语义；四行/步贡献日志按step+draw与完整保存点截断/保留尾备份，重复/漏行报错",
+      "命令行无明确训练模式不启动；训练只接受本协议2/1与三seed；门槛失败或绑定变化拒绝更新"
+    ],
+    "binding": "Luna生成新execution_binding.json，绑定本协议SHA、source_manifest、新代码及所有读取/损失/采样/恢复/评价依赖；不能补改冻结协议，不得硬编码或隐式别名切换旧任务。"
+  },
+  "export_repair": {
+    "authorized_old_output": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_weight_ablation_20261017/analysis/fixed_0p5_per_image.csv",
+    "observed_rows_before": 616,
+    "expected_rows_after": 3640,
+    "metrics": [
+      "near_thin_recall_d1",
+      "precision",
+      "fp_density",
+      "far_recall",
+      "dice",
+      "recall",
+      "near_pixel_recall",
+      "near_thin_d1_diam_le2",
+      "near_thin_d1_diam_le4",
+      "near_thin_d1_diam_le5"
+    ],
+    "key": "(source,seed,alpha,filename,metric)唯一",
+    "source": "原四档×三seed终点预测/标注/完整metrics与共享Z0，13条件×28图×10指标；旧缺失的补充计数只由既有概率与冻结参考计算，不推理/不训练",
+    "scope": "在新阶段辅助脚本中修复导出，先原样备份旧CSV，验证后仅替换这一张旧衍生CSV；旧绑定源码、分析生成脚本、模型、预测、机器统计、旧报告及历史completion记录不覆盖。旧报告链接仍指同一路径。",
+    "verification": "3640行、键无重复且条件×图×指标无漏项；数值/分母/NA与实际来源逐项一致；原已有616行对应值保留；原主/保护统计及负面结论不变。",
+    "evidence": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018/analysis/export_repair/verification.json",
+    "backup": "原CSV字节副本+原/新摘要、修复脚本摘要、源文件绑定与逐项核对保存新阶段analysis/export_repair；旧全量分析入口不得顺带重写其他文件",
+    "protected_exception": "仅上述旧CSV可变，其原始SHA写入source_manifest的authorized_derived_output_exception；不可重写旧哈希清单来伪装历史未变。"
+  },
+  "implementation": {
+    "code_root": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study",
+    "new_files": [
+      "retinal_m0/maples_class_split.py",
+      "retinal_m0/maples_class_split_experiment.py",
+      "retinal_m0/maples_class_split_gate.py",
+      "tests/test_maples_class_split.py"
+    ],
+    "scope": "必要同范围新辅助文件可增加并绑定；旧训练/评价依赖只读复用，修复仅限上述旧CSV例外；Sol本轮不实施训练代码。",
+    "output_root": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_class_split_20261018",
+    "layout": {
+      "gate": "implementation_gate/verification.json及实际测试/输入核对证据",
+      "runs": "runs/seed_{2026,2027,2028}/w_v2_b1：配置/绑定/2000步训练及配对日志/8000行贡献/10完整保存点/11固定评价/28终点概率",
+      "analysis": "三个方案全指标/计数/NA、逐seed及逐图配对、bootstrap索引估计、同误报网格及逐图结果、四组贡献与原表修补证据",
+      "root": "execution_binding.json、reuse_manifest.json、completion_verification.json、report.html；可保留必要执行日志，不能新建项目总进度"
+    },
+    "expected_new_totals": {
+      "runs": 3,
+      "successful_updates": 6000,
+      "sampled_image_draws": 24000,
+      "BCE_contribution_rows": 24000,
+      "train_rows": 6000,
+      "pairing_rows": 6000,
+      "trained_checkpoints": 30,
+      "fixed_evaluation_points": 33,
+      "endpoint_probability_maps": 84,
+      "analysis_fixed_table_rows_with_shared_Z0": 2800
+    },
+    "continuity": "STATUS是唯一进度。门槛通过/阻塞、每seed完成和最终完成时简明回写；不要求用户搬运完整报告。"
+  },
+  "acceptance": [
+    "三条2/1均公平完成2000次成功更新，旧1/1和2/2不重训；初始状态/全部8000draw输入成对一致，绑定可核对",
+    "区域/U/FOV、Dice、每图实际权重总和归一化及全部原设置保持，仅预定类别权重变化",
+    "新24000行四组实际BCE贡献与6000次实际更新对账，无伪造旧分项；保留失败和恢复证据",
+    "28开发图、9主有效图/77位置/19NA保持；主/保护、Dice/Recall/Precision/误报/远处召回、逐图/seed/同误报与Z0完整可复算",
+    "原四档导出漏项经备份修复为3640行并逐项对账；不训练、不改旧负面统计或旧冻结记录",
+    "原正式及四档探索负面结论完整保留；本轮为事后探索，不称独立验证/机制确证；官方Test未访问",
+    "阳性、阴性或证据不足均可完成工程交付；结束回写STATUS后停止交Sol审查，不自动追加任何实验"
+  ]
+}

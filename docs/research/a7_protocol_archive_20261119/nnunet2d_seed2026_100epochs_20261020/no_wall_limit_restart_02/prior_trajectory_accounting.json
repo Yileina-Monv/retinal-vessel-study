@@ -1,0 +1,20 @@
+{
+  "status": "PRESERVED_INTERRUPTED_NOT_USED_FOR_SCIENTIFIC_COMPARISON",
+  "prior_root": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v1",
+  "attempts": 916,
+  "successful_updates": 916,
+  "amp_skips": 0,
+  "gpu_process_seconds": 1441.2038553139428,
+  "prior_budget_ledger_sha256": "16afff55904605fbe2209dcdc7310538d40242371c95eee4e0991cc1a5321a5c",
+  "stop_record_sha256": "fff1437d20fa3b86719d30bc6b928227221ca4ae33a47518c87435810fa22c3b",
+  "snapshot": {
+    "status": "INCOMPLETE_STOPPED",
+    "reason": "external watchdog signal 15; incomplete, no automatic resume",
+    "attempts": 916,
+    "successful_updates": 916,
+    "unresumable_snapshot_written": true,
+    "snapshot_save_error": null,
+    "automatic_resume": false
+  },
+  "note": "Old ledger successful_updates=null and initialization=false are stale inherited failure fields; actual per_update and stop_record establish916 successful updates. Preserve originals; do not rewrite them."
+}
