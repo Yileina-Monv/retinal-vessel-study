@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "protocol_id": "NNUNET_NL_ABSOLUTE_CE_CPU_V2_ALLTARGETS_20261031",
+  "date": "2026-10-31",
+  "authorization": {
+    "user_message": "下一步怎么做啊，我批准，你直接做吧",
+    "scope": "Approved N0/NL review plan: CPU implementation, Train-only feasibility and Sol review; subsequent GPU engineering and scientific training separately authorized.",
+    "status": "CPU_ONLY_AUTHORIZED",
+    "GPU_allowed": false,
+    "model_forward_allowed": false,
+    "optimizer_step_allowed": false,
+    "Test_allowed": false,
+    "GitHub_modification_allowed": false,
+    "dispatch": "Sol directly implements approved CPU revision; no new Luna session"
+  },
+  "roles": {
+    "Sol": "Freeze approved CPU card, source preflight, scientific review and gate recommendations",
+    "Luna": "Implement and execute bounded CPU checks in existing conversation; report actual results to STATUS"
+  },
+  "question": "Relative to standard nnU-Net N0, can local balanced absolute positive/negative CE improve frozen hemorrhage-neighborhood thin-skeleton d1 recall with acceptable quality cost? No lesion specificity claim without NR.",
+  "source_scope": {
+    "Train_images": 110,
+    "native_target_images": 30,
+    "native_target_points": 351,
+    "Dev_images": 28,
+    "Dev_pixel_access_for_CPU": false,
+    "Test_access": false,
+    "train_mapping": "../train_pairing_cpu_v1/mapping.json",
+    "cache": "../train_pairing_cpu_v1/cache",
+    "old_pairing_failures_retained": true,
+    "old_80percent_NR_gate_applies": false
+  },
+  "target": {
+    "positive": "Reuse native Zhang skeleton(GT & FOV), padded 2*EDT <= 3, frozen Rnear/Omega; no d1 dilation, no Dev-derived targets",
+    "negative": "Same native Rnear/Omega, not complete GT; Euclidean distance to complete GT in [2,8], distance to positive <=12 native pixels",
+    "native_scale_unchanged": true,
+    "medical_review_counts": {
+      "Plan_B": "0/105",
+      "branch": "0/26"
+    },
+    "medical_correctness_asserted": false
+  },
+  "sampling": {
+    "max_positive_groups_per_crop": null,
+    "max_distinct_negatives_per_positive": 2,
+    "one_negative_allowed": true,
+    "zero_negative_action": "Skip whole positive group; no positive-only/negative-only fallback",
+    "order": "Retain ALL mapped valid deduplicated positive groups; each with min(2,available) negatives via unchanged private RNG. No positive cap or cap parameter search.",
+    "RNG": "numpy Generator PCG64 SeedSequence([20261031, model_seed, one_based_attempt, crop_index]); private stream, never shared with native loader/augmentation/model RNG",
+    "across_positive_negative_reuse": "Allowed, count and report; one negative may receive weights from different positive groups",
+    "collision": "Deduplicate each polarity by transformed pixel; lowest original (y,x) identity wins, no replacement targets; opposite-label collision invalidates that group",
+    "no_recrop_or_oversampling": true
+  },
+  "loss": {
+    "z": "highest_resolution_foreground_logit - highest_resolution_background_logit",
+    "expected_logits_shape": "[B,2,H,W]; actual highest-resolution output selected by verified native order/shape",
+    "group": "0.5*softplus(-z_pos) + 0.5*mean(softplus(z_neg))",
+    "crop": "mean(group_loss) over selected valid positives; empty crop graph-connected finite zero",
+    "batch": "sum(crop_loss)/full_batch_size, including empty crops",
+    "total": "native full deep-supervised CE+Dice + lambda*aux",
+    "calculation": "FP32 stable logits softplus; no probability clipping; lambda==0 bypass before aux computation",
+    "base_loss_unchanged": true,
+    "deep_supervision_unchanged": true,
+    "extra_heads": false
+  },
+  "CPU": {
+    "seeds": [
+      2027,
+      2028
+    ],
+    "attempts_per_seed": 1000,
+    "batch": 2,
+    "max_crop_instances": 4000,
+    "threads": 2,
+    "RSS_limit_GiB": 8,
+    "wall_limit_seconds": 7200,
+    "max_parallel_replay_processes": 1,
+    "native_replay": "Actual baseline loader and transforms, original worker seed semantics and train-prefetch discard; compare first 1000 actual ID/inputSHA/targetSHA per seed against immutable historical attempts.jsonl. No native model construction or checkpoint loading.",
+    "visible_denominator": "All original native positive identities mapped inside final output before GT/domain rejection, negative availability, collision filtering and 16-positive cap; each identity once per crop. Do not silently replace by eligible/successful targets.",
+    "retained_numerator": "Selected unique valid positive groups after all mapping, validity, negative and cap checks",
+    "effective_images": "Per image mass=sum(1/B) over nonempty auxiliary crops from that image; normalize masses to w_i. Neff=1/sum(w_i^2). This is loss coefficient exposure, NOT measured parameter-gradient contribution.",
+    "pass_per_seed": {
+      "minimum_nonempty_batches": 32,
+      "minimum_retained_over_visible": 0.5,
+      "minimum_effective_images": 3
+    },
+    "hard_stop": [
+      "Any input/label/manifest/source mismatch",
+      "Cannot reproduce historical input stream",
+      "Any mapping or target-polarity error",
+      "Nonfinite CPU loss/analytic gradient",
+      "Per-seed quantitative gate failure",
+      "Resource cap reached; retain partial evidence, no automatic rerun"
+    ],
+    "diagnostics": "Report all110 images, zeros, all351 target identities, pre/post cap, per-stage exclusion causes, three native sizes, top-image concentration, negative reuse; native coverage is not augmented exposure",
+    "synthetic_tests": [
+      "Two-logit equivalence",
+      "Hand-computed per-group/crop/full-batch normalization",
+      "Positive and negative gradient signs",
+      "Variable negative counts 1/2",
+      "Empty positive and no-negative crops",
+      "All-empty batch differentiable zero",
+      "Duplicate identities and cross-polarity collision rejection",
+      "Extreme logits finite FP32",
+      "lambda0 bypass including invalid auxiliary metadata",
+      "Native RNG state unchanged",
+      "No optimizer/GPU/Dev/Test authorization"
+    ],
+    "atlas": "Deterministic first qualifying examples for native sizes, empty target, one/two/zero surviving negatives, border, mapping collision and cap. Missing strata explicitly NA; no selecting visually favorable outcomes.",
+    "reuse_seed2027": "Re-select all eligible groups from bound original full geometry/negative traces, retain historical batch fingerprints; no new native replay or RGB access for seed2027.",
+    "new_native_replay_seeds": [
+      2028
+    ]
+  },
+  "future_lambda": {
+    "status": "NOT_CALIBRATED_GPU_NOT_AUTHORIZED",
+    "value": null,
+    "reference_seed": 2027,
+    "batches": 32,
+    "selection": "First32 nonempty actualTrain batches in frozen CPU trace, before any model-dependent selection",
+    "formula": "0.1*sqrt(sum_j(||g_base_j||_2^2)/sum_j(||g_aux_j||_2^2))",
+    "gradient": "All trainable parameters, true unscaled preclip gradients at original seed2027 initialization; model parameters never updated during calibration",
+    "same_value_both_seeds": true,
+    "no_Dev_search": true,
+    "abnormal": "Stop if zero/invalid denominator or nonfinite; no automatic clipping/retuning of lambda"
+  },
+  "future_engineering": {
+    "status": "HOLD_REQUIRES_SEPARATE_USER_APPROVAL",
+    "max_no_update_diagnostic_forwards": 40,
+    "max_update_attempts": 128,
+    "max_GPU_hours": 2,
+    "zero_coeff_replay": "N0 and lambda0 each16 updates for each of seeds2027/2028:64 attempts",
+    "restore": "NL32 continuous versus16+16 interrupted fixed-input replay:64 attempts; fresh original initialization, no Dev",
+    "gradient_ratio_pause_gt": 2,
+    "clip_norm": 12,
+    "AMP": "Original verified safe-skip policy: consecutive5 or cumulative25 pause; no catch-up updates; nonfinite/unknown fatal",
+    "native_queue_resume": "Unsupported unless separately proved; fixed-input resume test does not establish queue resume",
+    "no_GPU_release_issued": true
+  },
+  "future_science": {
+    "status": "HOLD_REQUIRES_SEPARATE_USER_APPROVAL",
+    "seeds": [
+      2027,
+      2028
+    ],
+    "initialization": "Fresh corresponding official nnU-Net random seed; match historical N0 initialization digest. Never M0 or N0 endpoint weights.",
+    "batch": 2,
+    "patch": [
+      1024,
+      1536
+    ],
+    "epochs": 100,
+    "attempts_per_epoch": 250,
+    "attempts_per_seed": 25000,
+    "monitor_per_seed": 5000,
+    "successful_plus_allowed_skips_equals_attempt_budget": true,
+    "checkpoint": "final only",
+    "threshold": 0.5,
+    "base_configuration": "Original PlainConvUNet CE+Dice deep supervision/SGD .01 momentum.99 Nesterov wd3e-5/Poly100 exponent.9/clip12/native AMP/Train-only monitors unchanged",
+    "paired_baseline": "Reuse N0 only if initialization, actualseed, lambda0 and all scientific input/GT/ID/LR pairing verified; otherwise stop and request budget decision, no automatic N0 rerun",
+    "GPU_hours_provisional": [
+      26,
+      32
+    ],
+    "historical_GPU_hours_each": [
+      12.2852649973,
+      12.3493648009
+    ],
+    "endpoint_inference": "28 Dev images/67 native tiles per seed; no TTA/ensemble/postprocess/intermediate Dev; separate final inference budget",
+    "GPU_assignment": "Resource access rechecked at later release; old GPU permissions are not assumed",
+    "automatic_restart": false
+  },
+  "evaluation": {
+    "status": "Approved design for future candidate; not amendment to historical protocols; full scientific card/release pending",
+    "primary": "Frozen near_thin_recall_d1, image macro,9valid/77points/19NA",
+    "primary_signal": "Eachseed mean NL-N0 >0 AND lower bound of pooled-within-image-across-seeds paired95CI >0",
+    "CI": {
+      "resampling_unit": "image",
+      "first_average_seeds_within_image": true,
+      "replicates": 1000,
+      "PCG64_seed": 20261016,
+      "percentiles": [
+        2.5,
+        97.5
+      ],
+      "quantile": "linear",
+      "reuse_original_indices_where_defined": true
+    },
+    "Dice_margin": null,
+    "formal_noninferiority_claim": false,
+    "Dice_guard": "Eachseed image-mean NL-N0 >=0 as conservative point-estimate screen; report CI separately, no proof of no degradation from nonsignificance",
+    "local_FP_primary": "Image macro FP/(frozen Rnear & Omega area),18 original nonempty images; same fixed support",
+    "local_FP_guard": "Eachseed mean delta<=0; pooled paired CI upper<=0 needed for interval-level no-increase evidence; crossing0 uncertain",
+    "local_FP_supplements": [
+      "FP pixels",
+      "FP/valid background",
+      "per-image and pooled totals, separate from macro"
+    ],
+    "other_direction_guards": {
+      "Precision": ">=0",
+      "FP/FOV": "<=0",
+      "far_recall": ">=0"
+    },
+    "auxiliary": [
+      "coarse_vessel_recall",
+      "hard_clDice",
+      "full_FOV_thin_path_recall",
+      "all per-image hits/lost hits/denominators/NA",
+      "leave-one-image-out sensitivity, not deletion or replacement primary"
+    ],
+    "limitations": [
+      "Repeated Dev use",
+      "Two seeds do not create independent patients",
+      "Original thin-point definition not anatomical whole-branch guarantee",
+      "No NR so no lesion specificity",
+      "GT-relative automatic results not expert medical verification"
+    ],
+    "result_categories": [
+      "Local gain and point/interval guard evidence separately stated",
+      "Recall-quality tradeoff",
+      "No detected local gain",
+      "Insufficient evidence"
+    ],
+    "negative_results_complete_delivery": true
+  },
+  "transitions": {
+    "now": "CPU implementation and feasibility authorized",
+    "after_CPU": "Sol review only; GPU remains HOLD",
+    "after_engineering": "Submit separately approvable scientific card; no automatic training"
+  },
+  "amendment": {
+    "parent_protocol_sha256": "8baef44ca204127414370420d7ff64d8a69a98b755bfcbc5e167e89960e39b28",
+    "only_scientific_change": "Remove positive group cap16; original formula, crop/fullB means, <=2 negatives, labels, input streams and gates unchanged",
+    "old_result": "FAIL retained",
+    "GPU_not_authorized": true
+  }
+}

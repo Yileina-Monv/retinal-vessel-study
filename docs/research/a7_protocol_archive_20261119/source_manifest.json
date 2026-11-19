@@ -1,0 +1,3773 @@
+[
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/__init__.py",
+    "path": "retinal_m0/__init__.py",
+    "kind": "source",
+    "source_sha256": "521bb07156113a29b18d9f3ed575f80d4e19f7f9335e8e22856f8bb1c824f148",
+    "size": 84,
+    "public_sha256": "521bb07156113a29b18d9f3ed575f80d4e19f7f9335e8e22856f8bb1c824f148",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/inference.py",
+    "path": "retinal_m0/inference.py",
+    "kind": "source",
+    "source_sha256": "fb3d06db00cae7353768f5435fea047141731f46de66eef26e642f8d437bcdb2",
+    "size": 2129,
+    "public_sha256": "fb3d06db00cae7353768f5435fea047141731f46de66eef26e642f8d437bcdb2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/model.py",
+    "path": "retinal_m0/model.py",
+    "kind": "source",
+    "source_sha256": "73455935440847bdda286def8745a990c381033a27fa696b7668fa4d476ca893",
+    "size": 1784,
+    "public_sha256": "73455935440847bdda286def8745a990c381033a27fa696b7668fa4d476ca893",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/objectives.py",
+    "path": "retinal_m0/objectives.py",
+    "kind": "source",
+    "source_sha256": "ba9de651fc798d74e18e3d7fca0ae7984c6ad46ad88686fcaec30976cec492a2",
+    "size": 1314,
+    "public_sha256": "ba9de651fc798d74e18e3d7fca0ae7984c6ad46ad88686fcaec30976cec492a2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/state.py",
+    "path": "retinal_m0/state.py",
+    "kind": "source",
+    "source_sha256": "457acb2a886dae24bde6ea3e01329d4c1abb475680b38a82902d7b4abf9e56d8",
+    "size": 1871,
+    "public_sha256": "457acb2a886dae24bde6ea3e01329d4c1abb475680b38a82902d7b4abf9e56d8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_interface.py",
+    "path": "retinal_m0/maples_interface.py",
+    "kind": "source",
+    "source_sha256": "08b7146444561d039a0a1bef4f1a63925f87f3d076f0982726638ab61694a512",
+    "size": 8780,
+    "public_sha256": "08b7146444561d039a0a1bef4f1a63925f87f3d076f0982726638ab61694a512",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/run.py",
+    "path": "retinal_m0/run.py",
+    "kind": "source",
+    "source_sha256": "f0676bf178b04fd88d756283152d55efb7c9a909b0ad6f23f0fd9e152baa5f3d",
+    "size": 19116,
+    "public_sha256": "f0676bf178b04fd88d756283152d55efb7c9a909b0ad6f23f0fd9e152baa5f3d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_t0.py",
+    "path": "retinal_m0/maples_t0.py",
+    "kind": "source",
+    "source_sha256": "fe62f1c2fd14d670373ec674e2530409743fb06acbcf5240482743b790594b0a",
+    "size": 16223,
+    "public_sha256": "c3f4cfac4e2723382c7b3e97b914b707247ec230d51d80b87d051b6e71ac55ce",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_evaluate.py",
+    "path": "retinal_m0/maples_evaluate.py",
+    "kind": "source",
+    "source_sha256": "565f3d548d45f5949d13ff56cb55b199098c3c27c2b57cdad7c822d56c5bc553",
+    "size": 9445,
+    "public_sha256": "25fc8170b06446f84877abf14a80efd0cbea43ab6252da5d357a9d0821a0202c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_protocol.py",
+    "path": "retinal_m0/maples_protocol.py",
+    "kind": "source",
+    "source_sha256": "164486660d3aabb8f29c3edc17b3574bcf9c458d3446de6b72b5c191e72a12c6",
+    "size": 2601,
+    "public_sha256": "164486660d3aabb8f29c3edc17b3574bcf9c458d3446de6b72b5c191e72a12c6",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_calibrate.py",
+    "path": "retinal_m0/maples_calibrate.py",
+    "kind": "source",
+    "source_sha256": "10d9c2c01b081bae824c9e0a8fa8f39aea6bbdf32d6910d25ded6fb8f17994bb",
+    "size": 12476,
+    "public_sha256": "10d9c2c01b081bae824c9e0a8fa8f39aea6bbdf32d6910d25ded6fb8f17994bb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_reliability.py",
+    "path": "retinal_m0/maples_reliability.py",
+    "kind": "source",
+    "source_sha256": "aebcc15799ac63a6bba5c09e8b73b1a8f801d5a30283f568556ef6c70a0d5d2e",
+    "size": 30171,
+    "public_sha256": "d79c769d52c620feafcf5b74dc8511a4051b595e76002ec8af257eba6c078802",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_core.py",
+    "path": "retinal_m0/maples_core.py",
+    "kind": "source",
+    "source_sha256": "b9d8fb614870be3dfc57c423a4b37d236b713016784faf77cbe0d8839ea465e5",
+    "size": 11141,
+    "public_sha256": "b9d8fb614870be3dfc57c423a4b37d236b713016784faf77cbe0d8839ea465e5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_core_experiment.py",
+    "path": "retinal_m0/maples_core_experiment.py",
+    "kind": "source",
+    "source_sha256": "cf7a7154267ea093b8a41182c568e5777c6fea490c01e9e072890fe2fbcb118d",
+    "size": 18475,
+    "public_sha256": "ed15d5c7d68931720c5988ca1e188d8f2218a55b13e90f0bea3efbc7b7511d9d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_core_gate.py",
+    "path": "retinal_m0/maples_core_gate.py",
+    "kind": "source",
+    "source_sha256": "34d568b8da6ff0c7c0fc98b5413a8b8ec73eaea71c1332acb057dc3206888785",
+    "size": 9902,
+    "public_sha256": "913917760e4609986ee82d043e2aa14b86a483141fd12d75c11e6a0c006d7de0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_weight_ablation_experiment.py",
+    "path": "retinal_m0/maples_weight_ablation_experiment.py",
+    "kind": "source",
+    "source_sha256": "8b5cf9d0e4aa44f571f23b54a5e8caec4a6917197a5e33009000600e998acaed",
+    "size": 16100,
+    "public_sha256": "bd25108cf0f129d9a3210bf53c68707b81b37045ec11a28c4c44c2920b6b2577",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_weight_ablation.py",
+    "path": "retinal_m0/maples_weight_ablation.py",
+    "kind": "source",
+    "source_sha256": "700bdb459662ac33e57ba3ebc914c5d9c592cc4ddcc532aaae02c1ce5bbf662c",
+    "size": 5134,
+    "public_sha256": "700bdb459662ac33e57ba3ebc914c5d9c592cc4ddcc532aaae02c1ce5bbf662c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_weight_ablation_gate.py",
+    "path": "retinal_m0/maples_weight_ablation_gate.py",
+    "kind": "source",
+    "source_sha256": "209ccfbbadaf1d1c24f082722918ef19d4fe30f6c8e692afdc4e6393b2f80009",
+    "size": 5455,
+    "public_sha256": "5964ca9dd2613e61f07e19f0ff5ef53c34bbe2fe482297c902e6500384b6e2b2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_class_split.py",
+    "path": "retinal_m0/maples_class_split.py",
+    "kind": "source",
+    "source_sha256": "137c14727d737201adaee3343f996d4e696e5569511fb29fba94dce45257d215",
+    "size": 13628,
+    "public_sha256": "137c14727d737201adaee3343f996d4e696e5569511fb29fba94dce45257d215",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_class_split_gate.py",
+    "path": "retinal_m0/maples_class_split_gate.py",
+    "kind": "source",
+    "source_sha256": "30b37bb1b7c99c86f69a7dd393a23264bc04204c2c13f921cfbc5c0d23a39826",
+    "size": 11094,
+    "public_sha256": "f414ae4286f5bc3105fcc7f5c601f2046fd3b700d9c9039e443987aeccf104e9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_class_split_experiment.py",
+    "path": "retinal_m0/maples_class_split_experiment.py",
+    "kind": "source",
+    "source_sha256": "392fb6b2be077c0855d45412b3911e12e1edbd8e8295dd584ece916722e088c3",
+    "size": 17598,
+    "public_sha256": "609ce20b272b94e595bbf15dde7582541602ab76047748250c29260a1110e9fe",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_budget_extension.py",
+    "path": "retinal_m0/maples_budget_extension.py",
+    "kind": "source",
+    "source_sha256": "fdf236aa7edaab42141a306b873fd6d89892a2b8b9e60869887d2ee7f31efe33",
+    "size": 36374,
+    "public_sha256": "df31a0e9770c2d23054c7f6215cac8acb7a544b5f7d403ad1b6b24a429e82927",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_budget_extension_analysis.py",
+    "path": "retinal_m0/maples_budget_extension_analysis.py",
+    "kind": "source",
+    "source_sha256": "c6692ccc4a0d8289e09210c5e38c760fc6968f60d0acdbd0d399ded8ee29fe19",
+    "size": 23594,
+    "public_sha256": "c6692ccc4a0d8289e09210c5e38c760fc6968f60d0acdbd0d399ded8ee29fe19",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/plan_b_error_analysis.py",
+    "path": "retinal_m0/plan_b_error_analysis.py",
+    "kind": "source",
+    "source_sha256": "d4ec23b0e6dc6650a83d1c055f7301f1778a27257491f5fbd983c91101aa1a7d",
+    "size": 24546,
+    "public_sha256": "fde9e334dd8c78019fafe3841360c3d8e1295120c40f5509a4549dd839d81936",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/plan_b_visual_annotations.py",
+    "path": "retinal_m0/plan_b_visual_annotations.py",
+    "kind": "source",
+    "source_sha256": "48609996302f32a041eaec0bbcd5b4163cc33b9057f7051e2639c0c571f49481",
+    "size": 1150,
+    "public_sha256": "c037e46e7ad4b79faedb672e44deb55aae37b91530a228570e39d3eed9daa729",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/plan_b_finalize.py",
+    "path": "retinal_m0/plan_b_finalize.py",
+    "kind": "source",
+    "source_sha256": "46ef0e76a60db77f3668a7a9741bbcdec722713a38566dd43f9d596ea55d52df",
+    "size": 22972,
+    "public_sha256": "e74c2aa37d743876cfdd76e98903b66e8e66a70d1a2f4441d03d7e2aa01f2aa9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_thin_skeleton_bce_cpu_gate.py",
+    "path": "retinal_m0/maples_thin_skeleton_bce_cpu_gate.py",
+    "kind": "source",
+    "source_sha256": "56e09f469439aaea02e1b433544a718ef13c4d0b83542f0b10ba82c5baa51572",
+    "size": 46243,
+    "public_sha256": "d26be3e3d91acf55f9c76333213d9aad9c6b5a82cd65b6e1e09c31ac009d7991",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_bce.py",
+    "path": "retinal_m0/maples_branch_bce.py",
+    "kind": "source",
+    "source_sha256": "d84b8184bce3cb4f7895ad88ab39fdc6f4e8e9d1660d1002e6f9444f82bf3412",
+    "size": 5227,
+    "public_sha256": "d84b8184bce3cb4f7895ad88ab39fdc6f4e8e9d1660d1002e6f9444f82bf3412",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_bce_prepare.py",
+    "path": "retinal_m0/maples_branch_bce_prepare.py",
+    "kind": "source",
+    "source_sha256": "5b8d9b7e487548dd370a63a7ee71868f718146aedaa95ab859187fec6d2e78cb",
+    "size": 10002,
+    "public_sha256": "f6035f09ecbb3eeb3609364d4904cd99db80dd9e432357ad856f7c051bccaae8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g1_entry.py",
+    "path": "retinal_m0/maples_g1_entry.py",
+    "kind": "source",
+    "source_sha256": "3af6b1de9bc1ec7177c5a6cc15334ba136f67d30fcd1c135c0e70c608d3f6ca9",
+    "size": 39396,
+    "public_sha256": "4b21d78a9f3b1a3423df2700b45a9bda87d68bf38e41b6748945f5a13958f16c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g1_safety.py",
+    "path": "retinal_m0/maples_g1_safety.py",
+    "kind": "source",
+    "source_sha256": "5cafb30468344a4117802c539ad641e98e36cb29a9b2938bf77bac0fd4d3c349",
+    "size": 13818,
+    "public_sha256": "42d6ea272cd19f66ee10711b10ddf044a89497768a25eacd48260b80b4c9936c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g1_diagnostics.py",
+    "path": "retinal_m0/maples_g1_diagnostics.py",
+    "kind": "source",
+    "source_sha256": "608d38efec2fd4d17969ccdbf6b7c25fcf24d54c91944f507213c6704acde2ed",
+    "size": 7069,
+    "public_sha256": "608d38efec2fd4d17969ccdbf6b7c25fcf24d54c91944f507213c6704acde2ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g1_runtime.py",
+    "path": "retinal_m0/maples_g1_runtime.py",
+    "kind": "source",
+    "source_sha256": "879966a8aa0ea17430369d9b5c2ce46ff816e9bd428e2a2f59333bbe330d5b9b",
+    "size": 20877,
+    "public_sha256": "10f30c3e82e025131f08faadeba0e89006c16b05f5b57d3198d0f96ec1eaf40c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g2_engineering.py",
+    "path": "retinal_m0/maples_g2_engineering.py",
+    "kind": "source",
+    "source_sha256": "8dc0224d2f5756d671ec994d72c634c1f992b569f7538b4de8ec8355b88be6bd",
+    "size": 17602,
+    "public_sha256": "8dc0224d2f5756d671ec994d72c634c1f992b569f7538b4de8ec8355b88be6bd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g2_runtime.py",
+    "path": "retinal_m0/maples_g2_runtime.py",
+    "kind": "source",
+    "source_sha256": "92f27a5675ff75d888ce6a9537ce7196a8494abbfcb7c07bb5ea2b4757d7d9d8",
+    "size": 15051,
+    "public_sha256": "dbb279fceeafbd236d905be18e11ce813f39ebe09253a833df68eae841430ccc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g2_worker.py",
+    "path": "retinal_m0/maples_g2_worker.py",
+    "kind": "source",
+    "source_sha256": "908c3a32d64d2575f8c83e575a3f3e07d9b3c6d3954dbe7af3d0a4be5615dd29",
+    "size": 18702,
+    "public_sha256": "908c3a32d64d2575f8c83e575a3f3e07d9b3c6d3954dbe7af3d0a4be5615dd29",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g2_v4.py",
+    "path": "retinal_m0/maples_g2_v4.py",
+    "kind": "source",
+    "source_sha256": "3d7aa31f82d5b1916d9481368fd92b731105db891549062f35016769329d5225",
+    "size": 17829,
+    "public_sha256": "3d7aa31f82d5b1916d9481368fd92b731105db891549062f35016769329d5225",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_g2_v4_worker.py",
+    "path": "retinal_m0/maples_g2_v4_worker.py",
+    "kind": "source",
+    "source_sha256": "0d8f342a5122e93afc2a6cabde6611ebcf8bdba5b91f648ebd1786f290be86c9",
+    "size": 18862,
+    "public_sha256": "0d8f342a5122e93afc2a6cabde6611ebcf8bdba5b91f648ebd1786f290be86c9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_science_reference.py",
+    "path": "retinal_m0/maples_branch_science_reference.py",
+    "kind": "source",
+    "source_sha256": "e42b9f3bdbef62b238fb0de4fae1021cfd9b19cc55d57fe188b1340091bb0bf3",
+    "size": 15228,
+    "public_sha256": "cbb2e6d628cdc002355a0ff688c3e52c941ef49fac598c5317bdbf4ecd943c88",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_science_analysis.py",
+    "path": "retinal_m0/maples_branch_science_analysis.py",
+    "kind": "source",
+    "source_sha256": "222f378e13c46922b7bc08eab6a5ecd3adc0ee0b58a33c9f5fae34f726eaa2b2",
+    "size": 13264,
+    "public_sha256": "222f378e13c46922b7bc08eab6a5ecd3adc0ee0b58a33c9f5fae34f726eaa2b2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_science_worker.py",
+    "path": "retinal_m0/maples_branch_science_worker.py",
+    "kind": "source",
+    "source_sha256": "4b44c1d4fdb582500cdb9ac576f8e7d836fc4175c97df9aaee8fae6f6b64ba55",
+    "size": 34087,
+    "public_sha256": "4b44c1d4fdb582500cdb9ac576f8e7d836fc4175c97df9aaee8fae6f6b64ba55",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_branch_science.py",
+    "path": "retinal_m0/maples_branch_science.py",
+    "kind": "source",
+    "source_sha256": "33a92fb385001902a890fe74d2869803a2e72ff02787333838e71213f67600c7",
+    "size": 47754,
+    "public_sha256": "973da054937d4a460207c0d2aa3148ff307214e7375d8e6076bac969c9b850bc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice.py",
+    "path": "retinal_m0/maples_soft_cldice.py",
+    "kind": "source",
+    "source_sha256": "296b3174a2cd27d3a326c40314d11caa0d743713613c2646f00d857ab3ee9a90",
+    "size": 4140,
+    "public_sha256": "296b3174a2cd27d3a326c40314d11caa0d743713613c2646f00d857ab3ee9a90",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_cpu.py",
+    "path": "retinal_m0/maples_soft_cldice_cpu.py",
+    "kind": "source",
+    "source_sha256": "2fb6c2b3b73c4944a986faa28cea0c8a68735bc0004362e3864c3268d52752fa",
+    "size": 19065,
+    "public_sha256": "fbd10acc29c747faebca6732b43d1b4e9dec551ee5aab83bfa870fe4af699ece",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_gpu_diag.py",
+    "path": "retinal_m0/maples_soft_cldice_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "631dd9de964d21e955c8c084b26587162221353b3215e88a01b7d904e1eeccea",
+    "size": 26252,
+    "public_sha256": "696de043e21d7e2e8034f58c6bd4bff69dbef0203e8475e5ce4776a3b3358f12",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_engineering_core.py",
+    "path": "retinal_m0/maples_soft_cldice_engineering_core.py",
+    "kind": "source",
+    "source_sha256": "677946aad3fae2c324338cb08fde4c85e0a1aa35e231400ac247e93552bcad17",
+    "size": 15413,
+    "public_sha256": "677946aad3fae2c324338cb08fde4c85e0a1aa35e231400ac247e93552bcad17",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_engineering.py",
+    "path": "retinal_m0/maples_soft_cldice_engineering.py",
+    "kind": "source",
+    "source_sha256": "e06df28b68c4ba39c8d57d6fdd80b7cc4a2d20b3c514627240238f6c23d9230b",
+    "size": 16425,
+    "public_sha256": "4429f925163bb84ace8e04aa6c47ad42ddb09247d304501f280db29c43122471",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_science_analysis.py",
+    "path": "retinal_m0/maples_soft_cldice_science_analysis.py",
+    "kind": "source",
+    "source_sha256": "bfdcb35169291f12c284d8cafeacaec7d9d59b4cd0960b3e9ba7a8a79a2f56c5",
+    "size": 9351,
+    "public_sha256": "bfdcb35169291f12c284d8cafeacaec7d9d59b4cd0960b3e9ba7a8a79a2f56c5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_science.py",
+    "path": "retinal_m0/maples_soft_cldice_science.py",
+    "kind": "source",
+    "source_sha256": "15629aa0d3e0a1eb85f5af33c791e21e7c94d6ed796152b725f5090fed727a0b",
+    "size": 57699,
+    "public_sha256": "822adeb1f957469ab71df00bcd77b48c61bc4f712900acfa5e1ab151cfdae177",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_soft_cldice_science_core.py",
+    "path": "retinal_m0/maples_soft_cldice_science_core.py",
+    "kind": "source",
+    "source_sha256": "446a3e479c5660c21cf1af5b1310c3fffe0d7550fc5e2e64ab3b6162849237a8",
+    "size": 22943,
+    "public_sha256": "446a3e479c5660c21cf1af5b1310c3fffe0d7550fc5e2e64ab3b6162849237a8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice.py",
+    "path": "retinal_m0/maples_focal_dice.py",
+    "kind": "source",
+    "source_sha256": "e6c416f61e0db51d04da565b2d9791c9fc019d1b727cd2f422db08ac58d0b05a",
+    "size": 2962,
+    "public_sha256": "e6c416f61e0db51d04da565b2d9791c9fc019d1b727cd2f422db08ac58d0b05a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_cpu.py",
+    "path": "retinal_m0/maples_focal_dice_cpu.py",
+    "kind": "source",
+    "source_sha256": "639c23a6e1abf0ae6a46187d3a93a96d0d14f3c42c073c9819192895ccb1db13",
+    "size": 13891,
+    "public_sha256": "e2f2db5a226e81d93d04c09b61b3a54b930fee5d4cd884d4d19f8d56fef3255a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_gpu_diag.py",
+    "path": "retinal_m0/maples_focal_dice_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "113f62e4d7e0dbfe5f12d025d5f0df0bc82d3de12370799093d0eaccefd52d7b",
+    "size": 31741,
+    "public_sha256": "d8bf9506450092c1b6a53959010f7c2c874f9c1c0b207d43c728342f10b9a9f2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_engineering.py",
+    "path": "retinal_m0/maples_focal_dice_engineering.py",
+    "kind": "source",
+    "source_sha256": "f76ab24d7382cc5495fdb3677d5e1e1aa68546798eb4c1b602ca33be3f1d0a3c",
+    "size": 22615,
+    "public_sha256": "072bdcc70e03f19b98c7be7e9a6f212e44feb15f9261963763880f2ba8d0d1aa",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_engineering_core.py",
+    "path": "retinal_m0/maples_focal_dice_engineering_core.py",
+    "kind": "source",
+    "source_sha256": "4dd85a559f47478767168e71acc924c15f18f7b39e8114874e65adf67ed9cae2",
+    "size": 11669,
+    "public_sha256": "4dd85a559f47478767168e71acc924c15f18f7b39e8114874e65adf67ed9cae2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_science.py",
+    "path": "retinal_m0/maples_focal_dice_science.py",
+    "kind": "source",
+    "source_sha256": "e335204560b647c48eec984299b905ea72183a88f083069e5f0c2c2e3f5130b9",
+    "size": 62582,
+    "public_sha256": "bf6e723792297d0927adc908b31318860ce68622e34071d6b895ee50455be818",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_science_core.py",
+    "path": "retinal_m0/maples_focal_dice_science_core.py",
+    "kind": "source",
+    "source_sha256": "405a7f6a7bfd7edbc2d178ce1c14b8dc72c13333c3f45cf4a9bf4c407415adf7",
+    "size": 22822,
+    "public_sha256": "405a7f6a7bfd7edbc2d178ce1c14b8dc72c13333c3f45cf4a9bf4c407415adf7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_focal_dice_science_analysis.py",
+    "path": "retinal_m0/maples_focal_dice_science_analysis.py",
+    "kind": "source",
+    "source_sha256": "6cb41165cb26712b8fb36d9d283a11f277084301b5489b43d2859020e1d90008",
+    "size": 11507,
+    "public_sha256": "6cb41165cb26712b8fb36d9d283a11f277084301b5489b43d2859020e1d90008",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl.py",
+    "path": "retinal_m0/maples_ufl.py",
+    "kind": "source",
+    "source_sha256": "8ba87bca04515feb70846198a83a9cb030e33ad9fbe2a53f629ce7f6bc3388ed",
+    "size": 2953,
+    "public_sha256": "8ba87bca04515feb70846198a83a9cb030e33ad9fbe2a53f629ce7f6bc3388ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_engineering.py",
+    "path": "retinal_m0/maples_ufl_engineering.py",
+    "kind": "source",
+    "source_sha256": "cb7144a4681ef3b78f45e7ce43a2cdbbbc407b11bf95f40882005523ebeb4814",
+    "size": 23086,
+    "public_sha256": "e7aed2d83edfef841d04a6a62b90c808eec12aab4ed079aabfae4958bf671e64",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_engineering_core.py",
+    "path": "retinal_m0/maples_ufl_engineering_core.py",
+    "kind": "source",
+    "source_sha256": "2f90c1e9dc531101d5d046f7ec2eee5dd13e959f4a20d0c66c679dbd157cc558",
+    "size": 11903,
+    "public_sha256": "2f90c1e9dc531101d5d046f7ec2eee5dd13e959f4a20d0c66c679dbd157cc558",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_gpu_diag.py",
+    "path": "retinal_m0/maples_ufl_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "75153f357f3ec1a574e7311dc961625c67e608c2ebde037b173e3d0e2d49fb57",
+    "size": 27551,
+    "public_sha256": "25847144eb703685094e806ae77129919e80b9fc9a3a7ddea45fdf116b137124",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_science.py",
+    "path": "retinal_m0/maples_ufl_science.py",
+    "kind": "source",
+    "source_sha256": "08be5375bb82caf3646f1bc098904854cc99824a7277fb847aeec969b97a91b0",
+    "size": 62131,
+    "public_sha256": "f5fdba46ade90131168841ae5c8de8cd96df62c0a25bc4ee59c73684c45d639f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_science_analysis.py",
+    "path": "retinal_m0/maples_ufl_science_analysis.py",
+    "kind": "source",
+    "source_sha256": "a5dd48f212e1548bf89ff0c3af5d743f3364dd3948ba2b2d03b38a75a1ae5fd9",
+    "size": 11527,
+    "public_sha256": "a5dd48f212e1548bf89ff0c3af5d743f3364dd3948ba2b2d03b38a75a1ae5fd9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_ufl_science_core.py",
+    "path": "retinal_m0/maples_ufl_science_core.py",
+    "kind": "source",
+    "source_sha256": "d833df67a03549bcd01a70e7a2ee9d03df3e3e0e1d28eb06ed91e03971544084",
+    "size": 22835,
+    "public_sha256": "d833df67a03549bcd01a70e7a2ee9d03df3e3e0e1d28eb06ed91e03971544084",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_stratified_data.py",
+    "path": "retinal_m0/maples_stratified_data.py",
+    "kind": "source",
+    "source_sha256": "1111b639ff43db9bddaee42396e6143b8112ce21ce4191be05d01a92653b38ed",
+    "size": 2681,
+    "public_sha256": "1111b639ff43db9bddaee42396e6143b8112ce21ce4191be05d01a92653b38ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_stratified_science.py",
+    "path": "retinal_m0/maples_stratified_science.py",
+    "kind": "source",
+    "source_sha256": "f7d0471f4f335fef2d89da89b34d3b10d7d6697badde1c9fd0d3b9f919ce31c2",
+    "size": 60623,
+    "public_sha256": "08d601ffae6f010ecbb955fb62fd1343dcf7cc83204674f128b4ba056bc1ce41",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_stratified_science_core.py",
+    "path": "retinal_m0/maples_stratified_science_core.py",
+    "kind": "source",
+    "source_sha256": "fdbebb99430ee0101a5c4587b346bdc4af400aace99225c91a9d7555c33c367f",
+    "size": 22261,
+    "public_sha256": "fdbebb99430ee0101a5c4587b346bdc4af400aace99225c91a9d7555c33c367f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m0/maples_stratified_science_analysis.py",
+    "path": "retinal_m0/maples_stratified_science_analysis.py",
+    "kind": "source",
+    "source_sha256": "58fe73658abe0507781074357dbc79319c69b518158b51353e87d659a4c51ae3",
+    "size": 11567,
+    "public_sha256": "58fe73658abe0507781074357dbc79319c69b518158b51353e87d659a4c51ae3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/__init__.py",
+    "path": "retinal_m1/__init__.py",
+    "kind": "source",
+    "source_sha256": "858caf7e3ef4e0a24b3645dfcb2f305eb6c3c5f72cd38a4e25b2fa85fb967108",
+    "size": 77,
+    "public_sha256": "858caf7e3ef4e0a24b3645dfcb2f305eb6c3c5f72cd38a4e25b2fa85fb967108",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/data.py",
+    "path": "retinal_m1/data.py",
+    "kind": "source",
+    "source_sha256": "ba8f6e3efbb9bda20e085bbc25f27fc3538e10f19dbf5f49e28c51ba905634dd",
+    "size": 2515,
+    "public_sha256": "ba8f6e3efbb9bda20e085bbc25f27fc3538e10f19dbf5f49e28c51ba905634dd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/evaluate.py",
+    "path": "retinal_m1/evaluate.py",
+    "kind": "source",
+    "source_sha256": "15decb525cc996005bbd95178b154ae6e5b835f81677e3b5e1fac6b703c2ea7a",
+    "size": 2273,
+    "public_sha256": "15decb525cc996005bbd95178b154ae6e5b835f81677e3b5e1fac6b703c2ea7a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/inference.py",
+    "path": "retinal_m1/inference.py",
+    "kind": "source",
+    "source_sha256": "d222de1aa422d2fa8ee6d3ce72e3f31fa8e739e696ea555a95b33fa2e1946e8c",
+    "size": 714,
+    "public_sha256": "d222de1aa422d2fa8ee6d3ce72e3f31fa8e739e696ea555a95b33fa2e1946e8c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/jobs.py",
+    "path": "retinal_m1/jobs.py",
+    "kind": "source",
+    "source_sha256": "dd82f92ca947da9134d49b733b907de9fb87b0145f0a46dec44f532d07189df9",
+    "size": 1931,
+    "public_sha256": "dd82f92ca947da9134d49b733b907de9fb87b0145f0a46dec44f532d07189df9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/loss.py",
+    "path": "retinal_m1/loss.py",
+    "kind": "source",
+    "source_sha256": "65fad7c1d6fdf43241c77288860fc5d3334447fd28417c9030041215da0f1279",
+    "size": 1459,
+    "public_sha256": "65fad7c1d6fdf43241c77288860fc5d3334447fd28417c9030041215da0f1279",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/maps.py",
+    "path": "retinal_m1/maps.py",
+    "kind": "source",
+    "source_sha256": "3d41ea0c78cc0438a18de1612de9f27922c0e4b163770be3878254a33c471c24",
+    "size": 5037,
+    "public_sha256": "3d41ea0c78cc0438a18de1612de9f27922c0e4b163770be3878254a33c471c24",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/metrics.py",
+    "path": "retinal_m1/metrics.py",
+    "kind": "source",
+    "source_sha256": "2c03da394c3a02af85ce2cf50a72c49d72a5c4d96c15c5a26a975066e102eeb8",
+    "size": 2661,
+    "public_sha256": "2c03da394c3a02af85ce2cf50a72c49d72a5c4d96c15c5a26a975066e102eeb8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/preflight.py",
+    "path": "retinal_m1/preflight.py",
+    "kind": "source",
+    "source_sha256": "d68ebb4d6023d3c9f926525baa3bdfbe75c3fc28372d334065a1420c911e28ed",
+    "size": 6000,
+    "public_sha256": "d68ebb4d6023d3c9f926525baa3bdfbe75c3fc28372d334065a1420c911e28ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/run.py",
+    "path": "retinal_m1/run.py",
+    "kind": "source",
+    "source_sha256": "445189761bde71842d41cd5c0da5249f9931716f67012e49e10898ae4da93bb0",
+    "size": 6930,
+    "public_sha256": "445189761bde71842d41cd5c0da5249f9931716f67012e49e10898ae4da93bb0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/transfer.py",
+    "path": "retinal_m1/transfer.py",
+    "kind": "source",
+    "source_sha256": "93d331266855811f304ff66a3bb18729b561468bdd6fb3c1a0f0f09ca99034b1",
+    "size": 3446,
+    "public_sha256": "93d331266855811f304ff66a3bb18729b561468bdd6fb3c1a0f0f09ca99034b1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_m1/verify.py",
+    "path": "retinal_m1/verify.py",
+    "kind": "source",
+    "source_sha256": "6ceb8dbf38c66a2814f538beb2d39be549bcbb72d6e25aea0a9c690852edbf08",
+    "size": 2743,
+    "public_sha256": "6ceb8dbf38c66a2814f538beb2d39be549bcbb72d6e25aea0a9c690852edbf08",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/__init__.py",
+    "path": "retinal_data/__init__.py",
+    "kind": "source",
+    "source_sha256": "9c543b29464b3932275f1a641d40ec77cf879c8b144004f4f60935ca71df5555",
+    "size": 78,
+    "public_sha256": "9c543b29464b3932275f1a641d40ec77cf879c8b144004f4f60935ca71df5555",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/fives.py",
+    "path": "retinal_data/fives.py",
+    "kind": "source",
+    "source_sha256": "95e7ab84ca03567bc1cd0ca12f31aeb569bae104518f0195537de77e11b6fb3d",
+    "size": 11601,
+    "public_sha256": "95e7ab84ca03567bc1cd0ca12f31aeb569bae104518f0195537de77e11b6fb3d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/prepare.py",
+    "path": "retinal_data/prepare.py",
+    "kind": "source",
+    "source_sha256": "7614bce4030dd90113e7678be435e5f4a0da62a7921ec66e1270091b65aa942c",
+    "size": 8285,
+    "public_sha256": "7614bce4030dd90113e7678be435e5f4a0da62a7921ec66e1270091b65aa942c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/verify.py",
+    "path": "retinal_data/verify.py",
+    "kind": "source",
+    "source_sha256": "3fdb205458da690495bbc1357b537b6b9bdc5c2d70bf6cc822a397cd104c88f9",
+    "size": 9040,
+    "public_sha256": "3fdb205458da690495bbc1357b537b6b9bdc5c2d70bf6cc822a397cd104c88f9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/maples_native.py",
+    "path": "retinal_data/maples_native.py",
+    "kind": "source",
+    "source_sha256": "797e422eabfb7125ae94a5064844a0d3ca9f3552439b045ed3f847dcc60e9250",
+    "size": 9126,
+    "public_sha256": "797e422eabfb7125ae94a5064844a0d3ca9f3552439b045ed3f847dcc60e9250",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/maples_fov.py",
+    "path": "retinal_data/maples_fov.py",
+    "kind": "source",
+    "source_sha256": "e3f60b67906fb7be680655231a600de52256a482de43a79737868550ebe6ad6e",
+    "size": 1468,
+    "public_sha256": "e3f60b67906fb7be680655231a600de52256a482de43a79737868550ebe6ad6e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_data/maples.py",
+    "path": "retinal_data/maples.py",
+    "kind": "source",
+    "source_sha256": "4706a78d3d7b6ecc983151a0fda82895e1709e5b95b506db4609d5ba8eee3155",
+    "size": 3983,
+    "public_sha256": "4706a78d3d7b6ecc983151a0fda82895e1709e5b95b506db4609d5ba8eee3155",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/__init__.py",
+    "path": "retinal_release/__init__.py",
+    "kind": "source",
+    "source_sha256": "ca85868d47d33c85c72c253a0116bb8f6b0bd0519e4650644f83be7b1dbc9778",
+    "size": 81,
+    "public_sha256": "ca85868d47d33c85c72c253a0116bb8f6b0bd0519e4650644f83be7b1dbc9778",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/common.py",
+    "path": "retinal_release/common.py",
+    "kind": "source",
+    "source_sha256": "e101d90eaf1911943ebc1e0fa83d5a50d027309c3929573032fea4534eb9cac4",
+    "size": 1648,
+    "public_sha256": "e101d90eaf1911943ebc1e0fa83d5a50d027309c3929573032fea4534eb9cac4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/data.py",
+    "path": "retinal_release/data.py",
+    "kind": "source",
+    "source_sha256": "6fd46481985e9fb387259c81227f1034bdbdca51b6f7174cba0c918039d3b973",
+    "size": 2680,
+    "public_sha256": "6fd46481985e9fb387259c81227f1034bdbdca51b6f7174cba0c918039d3b973",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/exchange.py",
+    "path": "retinal_release/exchange.py",
+    "kind": "source",
+    "source_sha256": "731af264a672e3a4033c26fb26ae7166c1d6ddd9009f47b03d879ccd49f91bbc",
+    "size": 8346,
+    "public_sha256": "731af264a672e3a4033c26fb26ae7166c1d6ddd9009f47b03d879ccd49f91bbc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/freeze.py",
+    "path": "retinal_release/freeze.py",
+    "kind": "source",
+    "source_sha256": "63a03d50f070d4f6dd6fd3a0d6b5b074a042aa872c54d8ccd486c35430374e4e",
+    "size": 5506,
+    "public_sha256": "63a03d50f070d4f6dd6fd3a0d6b5b074a042aa872c54d8ccd486c35430374e4e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/qa.py",
+    "path": "retinal_release/qa.py",
+    "kind": "source",
+    "source_sha256": "3d2a77cfe555d48519f2cb106990c5e01c2a71ecc885911842a422b812e35dd5",
+    "size": 1713,
+    "public_sha256": "3d2a77cfe555d48519f2cb106990c5e01c2a71ecc885911842a422b812e35dd5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/run.py",
+    "path": "retinal_release/run.py",
+    "kind": "source",
+    "source_sha256": "4c061c716a5fb0987438fa39354767146cd768c11bcd29d9dd1a1e8ac347c8b9",
+    "size": 6365,
+    "public_sha256": "4c061c716a5fb0987438fa39354767146cd768c11bcd29d9dd1a1e8ac347c8b9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/transfer.py",
+    "path": "retinal_release/transfer.py",
+    "kind": "source",
+    "source_sha256": "5c03978221d73dc6b9f2d7aa21ee3e639a70d23fd4caca436f6bf8b05e468779",
+    "size": 3242,
+    "public_sha256": "5c03978221d73dc6b9f2d7aa21ee3e639a70d23fd4caca436f6bf8b05e468779",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_release/verify.py",
+    "path": "retinal_release/verify.py",
+    "kind": "source",
+    "source_sha256": "64a377a808018a87ef8929a5ce943ffbf13b8bd24770975d04732290f1530878",
+    "size": 4829,
+    "public_sha256": "64a377a808018a87ef8929a5ce943ffbf13b8bd24770975d04732290f1530878",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/__init__.py",
+    "path": "retinal_prefetch/__init__.py",
+    "kind": "source",
+    "source_sha256": "2714893b7dbfb2af2f6037e1f57ec120ab5a61e3eb2ac306dcc37805f2d1e2eb",
+    "size": 78,
+    "public_sha256": "2714893b7dbfb2af2f6037e1f57ec120ab5a61e3eb2ac306dcc37805f2d1e2eb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/benchmark.py",
+    "path": "retinal_prefetch/benchmark.py",
+    "kind": "source",
+    "source_sha256": "9eb4fa799325ea230ee330996c94ffcfc67149713e8e8ee08edb2bf4cbd75dd8",
+    "size": 7105,
+    "public_sha256": "9eb4fa799325ea230ee330996c94ffcfc67149713e8e8ee08edb2bf4cbd75dd8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/jobs.py",
+    "path": "retinal_prefetch/jobs.py",
+    "kind": "source",
+    "source_sha256": "f90678f233471716e1f9f6855706ab986e0c66e15be12b3a8ecf454fed770da0",
+    "size": 1990,
+    "public_sha256": "f90678f233471716e1f9f6855706ab986e0c66e15be12b3a8ecf454fed770da0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/loader.py",
+    "path": "retinal_prefetch/loader.py",
+    "kind": "source",
+    "source_sha256": "9c5d5a79d3e913a00270dc97817171f3b07fac32973a478b99729be4b5ac0e37",
+    "size": 2176,
+    "public_sha256": "9c5d5a79d3e913a00270dc97817171f3b07fac32973a478b99729be4b5ac0e37",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/release.py",
+    "path": "retinal_prefetch/release.py",
+    "kind": "source",
+    "source_sha256": "8144fba22ba6dd5bd117cfdaea23fc63b3c7d91e74fd5095b44747019d3910e0",
+    "size": 1940,
+    "public_sha256": "8144fba22ba6dd5bd117cfdaea23fc63b3c7d91e74fd5095b44747019d3910e0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/resources.py",
+    "path": "retinal_prefetch/resources.py",
+    "kind": "source",
+    "source_sha256": "5c300a6f05ece0405b8861fc86b4be53cfe4943d548377344e98cf91e669da86",
+    "size": 4907,
+    "public_sha256": "5c300a6f05ece0405b8861fc86b4be53cfe4943d548377344e98cf91e669da86",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/run.py",
+    "path": "retinal_prefetch/run.py",
+    "kind": "source",
+    "source_sha256": "b0b98ab5641a2cc1d32f293c195df44aa09a951b7095c801f65432234e89702d",
+    "size": 7827,
+    "public_sha256": "b0b98ab5641a2cc1d32f293c195df44aa09a951b7095c801f65432234e89702d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/runner_acceptance.py",
+    "path": "retinal_prefetch/runner_acceptance.py",
+    "kind": "source",
+    "source_sha256": "08b2f18ff5f76f568ca3470ea167c8dbe3d80f73d7bb4e2c7e34cd647d347ba2",
+    "size": 1632,
+    "public_sha256": "08b2f18ff5f76f568ca3470ea167c8dbe3d80f73d7bb4e2c7e34cd647d347ba2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_prefetch/transfer.py",
+    "path": "retinal_prefetch/transfer.py",
+    "kind": "source",
+    "source_sha256": "71f9bba1df187522771fe6b93faef75c2ecd7a78ba33c7ecb417424d53e254c5",
+    "size": 2356,
+    "public_sha256": "71f9bba1df187522771fe6b93faef75c2ecd7a78ba33c7ecb417424d53e254c5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/__init__.py",
+    "path": "retinal_c1/__init__.py",
+    "kind": "source",
+    "source_sha256": "0932c80456e59461a09c624c5f7f939d4766f72baecd9f545963310e223c9820",
+    "size": 82,
+    "public_sha256": "0932c80456e59461a09c624c5f7f939d4766f72baecd9f545963310e223c9820",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/audit.py",
+    "path": "retinal_c1/audit.py",
+    "kind": "source",
+    "source_sha256": "427ff5818c5c657bdf2c51ef205d5d1c12fcf9e4cc38b63397a1385b4ce661a5",
+    "size": 6892,
+    "public_sha256": "427ff5818c5c657bdf2c51ef205d5d1c12fcf9e4cc38b63397a1385b4ce661a5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/diagnostics.py",
+    "path": "retinal_c1/diagnostics.py",
+    "kind": "source",
+    "source_sha256": "764aecdf0703e62f55df8734d94edd83d9021695ec342571d00152c23be2d26f",
+    "size": 6425,
+    "public_sha256": "764aecdf0703e62f55df8734d94edd83d9021695ec342571d00152c23be2d26f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/evaluation.py",
+    "path": "retinal_c1/evaluation.py",
+    "kind": "source",
+    "source_sha256": "cb74d885a2f3142beece021ec5557372befc50d0312d1541f6f79330fd4c888c",
+    "size": 4985,
+    "public_sha256": "cb74d885a2f3142beece021ec5557372befc50d0312d1541f6f79330fd4c888c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/geometry.py",
+    "path": "retinal_c1/geometry.py",
+    "kind": "source",
+    "source_sha256": "ae8eca135ba335a5125f00a791757c0d0812cbf6f6d388b7abc08416c37ee889",
+    "size": 6539,
+    "public_sha256": "ae8eca135ba335a5125f00a791757c0d0812cbf6f6d388b7abc08416c37ee889",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/objectives.py",
+    "path": "retinal_c1/objectives.py",
+    "kind": "source",
+    "source_sha256": "028360d0e956b49df4c21e0ef1aae9a56f84e88629b275a2dbcd4b4955b4d75b",
+    "size": 2489,
+    "public_sha256": "028360d0e956b49df4c21e0ef1aae9a56f84e88629b275a2dbcd4b4955b4d75b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/pilot.py",
+    "path": "retinal_c1/pilot.py",
+    "kind": "source",
+    "source_sha256": "8ef0cec73c15103ab8b6da90fb0629c76d415a1c386c55e2f765f29cb6042afe",
+    "size": 11596,
+    "public_sha256": "8ef0cec73c15103ab8b6da90fb0629c76d415a1c386c55e2f765f29cb6042afe",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/preflight.py",
+    "path": "retinal_c1/preflight.py",
+    "kind": "source",
+    "source_sha256": "66ced88e1997aef528ce44585d28a76bab91bcdcf5f9bb1c60eeb10b4c387487",
+    "size": 7323,
+    "public_sha256": "66ced88e1997aef528ce44585d28a76bab91bcdcf5f9bb1c60eeb10b4c387487",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/review118.py",
+    "path": "retinal_c1/review118.py",
+    "kind": "source",
+    "source_sha256": "e422864bd9385e24a74bb5cdfb428560b9584f0ff8c1780c6965b554eef4a8d6",
+    "size": 9669,
+    "public_sha256": "e422864bd9385e24a74bb5cdfb428560b9584f0ff8c1780c6965b554eef4a8d6",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_c1/test_core.py",
+    "path": "retinal_c1/test_core.py",
+    "kind": "source",
+    "source_sha256": "757a417a7834203802efe63209e52ae0135ba1a534ff17b296181388ecbd4ca6",
+    "size": 6452,
+    "public_sha256": "757a417a7834203802efe63209e52ae0135ba1a534ff17b296181388ecbd4ca6",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_batchstudy/__init__.py",
+    "path": "retinal_batchstudy/__init__.py",
+    "kind": "source",
+    "source_sha256": "fa5413a56194d7c54e158bdd4d2dc851c70a57298a29a782f530ee92702c61f9",
+    "size": 86,
+    "public_sha256": "fa5413a56194d7c54e158bdd4d2dc851c70a57298a29a782f530ee92702c61f9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_batchstudy/compare_gpu.py",
+    "path": "retinal_batchstudy/compare_gpu.py",
+    "kind": "source",
+    "source_sha256": "9907163e2b3b782cb3d32082ceb8724bb7bcd6df6352bff2cce0c3f8fa765424",
+    "size": 3237,
+    "public_sha256": "9907163e2b3b782cb3d32082ceb8724bb7bcd6df6352bff2cce0c3f8fa765424",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_batchstudy/run.py",
+    "path": "retinal_batchstudy/run.py",
+    "kind": "source",
+    "source_sha256": "7a0cb3197a7bf91b9cd60bd6d8327baeef3f2eedc1c8470bc3dc050546c6c542",
+    "size": 19420,
+    "public_sha256": "7a0cb3197a7bf91b9cd60bd6d8327baeef3f2eedc1c8470bc3dc050546c6c542",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/retinal_batchstudy/summarize.py",
+    "path": "retinal_batchstudy/summarize.py",
+    "kind": "source",
+    "source_sha256": "ccfc0c11601cd0ccc698bddbb603ff640e5afa996837c27c5bcdd1e8e815544d",
+    "size": 8024,
+    "public_sha256": "ccfc0c11601cd0ccc698bddbb603ff640e5afa996837c27c5bcdd1e8e815544d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_cpu_pipeline.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_cpu_pipeline.py",
+    "kind": "source",
+    "source_sha256": "9dcaba41ea3aa8344e510c668174eff2badc54fe1218e26ccae64558f911f60d",
+    "size": 2601,
+    "public_sha256": "3d1abdfd8b048583ac3eea2de1715dd8c4605afe555f5e67f24291ce99885d5e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_bounded_engineering.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_bounded_engineering.py",
+    "kind": "source",
+    "source_sha256": "38031de302c64dc5c07ac06d97591efb6d10b0ac7c5942f792cba11e66726f22",
+    "size": 11620,
+    "public_sha256": "50933e28ae32021a851760077e32f129bb49c8acd538d67d62021b3cba6f072e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_engineering_supervisor.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_engineering_supervisor.py",
+    "kind": "source",
+    "source_sha256": "e03a105ddae789907772999f0281196589f60e3deda043aebd6a785859712386",
+    "size": 9070,
+    "public_sha256": "8c6fa3d8e9cf753064a20b4efb61e85467e6d22afdef51510636129887f14d85",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_cpu_gate.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_cpu_gate.py",
+    "kind": "source",
+    "source_sha256": "cba3a7ccc4bddafe7dd448afc27f96a6c7b8a1b3a42f21ae9743de54a162a8e3",
+    "size": 7110,
+    "public_sha256": "e6c34c3efa8142a7a8f5666ccdcef63f022dea72ec17e4881d30a9ac85c1eada",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_verify_engineering.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_verify_engineering.py",
+    "kind": "source",
+    "source_sha256": "302df0f5eafa3f3da9d745abae427bf4405d757831da296cfd16cb53ecdd0a1b",
+    "size": 11490,
+    "public_sha256": "20e663ca9627833ff105c92ec3a552432075639a57fe62f1dda8312aad5baaf1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_validation_probe.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_validation_probe.py",
+    "kind": "source",
+    "source_sha256": "217d376d84c450fe3f165c34882a94a1233a7c6743d88733b22b16382c8d116a",
+    "size": 4324,
+    "public_sha256": "3a61848c66bb096e3a4583eb04ffecbb5a469dbc1d052f1239f683bf1f381a27",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_validation_probe_supervisor.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_validation_probe_supervisor.py",
+    "kind": "source",
+    "source_sha256": "2d21f70ac0be2d7266011a723a2a3ee9f4da37c407db19f62367e1d7beab70ea",
+    "size": 3898,
+    "public_sha256": "0778824d9fdc506888b61a878b3ff4f2e0167b1ca9ee874201b99464c5ee2281",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_lock_environment.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_lock_environment.py",
+    "kind": "source",
+    "source_sha256": "d31c7556f2eaee6bb98746402788e67482e8c2df281209eb5a06ecc9e66d50c0",
+    "size": 2020,
+    "public_sha256": "bb0648746c00824eeb7d9b238261342d7749079b5d873439709808c8d0ee08af",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_finalize_evidence.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_finalize_evidence.py",
+    "kind": "source",
+    "source_sha256": "7670f6aec7719073d8f1c19ad2020ee622a4ee455a2154c7a75796134b2471cf",
+    "size": 8755,
+    "public_sha256": "6bc88419b50c23a6e8878936f43dec286f2ca687bb6ebbf85391891893216e77",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_runtime.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_runtime.py",
+    "kind": "source",
+    "source_sha256": "eec3f849679e3df3aaf13ef5fc402da7287b8a7dc8527cd3170c8a3ef78e19b8",
+    "size": 8702,
+    "public_sha256": "1cadff34db1611c428f3bbc115d0af6afb80ad5d2d20e6003b71d3cc9b118ebd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_preflight.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_preflight.py",
+    "kind": "source",
+    "source_sha256": "338a02e407d6596364fceb952bd01b20f9d756eb90454669599db1602ca37be0",
+    "size": 23434,
+    "public_sha256": "f5a67e0b6dcd43e4d7aa3cbfdb9b830fc590cd9d256111adf335036848eb75c1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_train.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_train.py",
+    "kind": "source",
+    "source_sha256": "b165d517bb0454ef22afcf7697b7eef1a879892fb64548dcb61d365cabd687fe",
+    "size": 7275,
+    "public_sha256": "ae85889905258258f9909267f96518edc8854ead1598928a40257269a768de40",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_infer_eval.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_infer_eval.py",
+    "kind": "source",
+    "source_sha256": "02c2cc336efea90d6b266c2a5fccf45802f0052326fed220735f4404737c20d7",
+    "size": 16972,
+    "public_sha256": "aeb8630de614116199e141c78eaaa55b6c6452bc0831e74e4581702b02fbe5e9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_supervisor.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_supervisor.py",
+    "kind": "source",
+    "source_sha256": "a625a6cf8aa28f994196988853bf489e209c3dfbc3ec7c9f910306d677aabd81",
+    "size": 14878,
+    "public_sha256": "ec446c4d8098a3db799e05c86f26eced61790c68c13ebc5d773af692cc2a574e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_constructor.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_constructor.py",
+    "kind": "source",
+    "source_sha256": "0501e267e38adcc22cf44ba1d278d31ae0c99cec5ca3233f729109862c058ed2",
+    "size": 6485,
+    "public_sha256": "47c841841994802d4b2e8d31f21222bb401f930f5b78e0edb0886e0b8390797b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/test_nnunet2d_scientific_constructor.py",
+    "path": "research_branches/nnunet2d_20261020/test_nnunet2d_scientific_constructor.py",
+    "kind": "source",
+    "source_sha256": "0b6ae9f65dbeb13bafbf07b4b08be77bdaa081519aec3140e84d30fe53506a05",
+    "size": 4233,
+    "public_sha256": "0b6ae9f65dbeb13bafbf07b4b08be77bdaa081519aec3140e84d30fe53506a05",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nnunet2d_scientific_restart_job.py",
+    "path": "research_branches/nnunet2d_20261020/nnunet2d_scientific_restart_job.py",
+    "kind": "source",
+    "source_sha256": "5de8acab7144db5615f651879dd3aebd7dd0c438aefda3032a84686a4e1c292d",
+    "size": 3315,
+    "public_sha256": "44f3087b759a2a2e398277cfc6ae675fc5da31ac059d1627db5efdc5532d40fb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/test_nnunet2d_restart_guards.py",
+    "path": "research_branches/nnunet2d_20261020/test_nnunet2d_restart_guards.py",
+    "kind": "source",
+    "source_sha256": "a60d93da23355c17b7335a9eee817166df11949007241b4e079326bfa59dfca5",
+    "size": 2884,
+    "public_sha256": "a60d93da23355c17b7335a9eee817166df11949007241b4e079326bfa59dfca5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_constructor.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_constructor.py",
+    "kind": "source",
+    "source_sha256": "0501e267e38adcc22cf44ba1d278d31ae0c99cec5ca3233f729109862c058ed2",
+    "size": 6485,
+    "public_sha256": "47c841841994802d4b2e8d31f21222bb401f930f5b78e0edb0886e0b8390797b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_infer_eval.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_infer_eval.py",
+    "kind": "source",
+    "source_sha256": "c18cba71199d3372e3527b3e86b894e95ab056a4d4db6ac474a3bc1fd5facf12",
+    "size": 17037,
+    "public_sha256": "f5c5d134ad786bcb368ec6732baf2fd93d277d69f99ae9ead177579c3e0d803c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_preflight.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_preflight.py",
+    "kind": "source",
+    "source_sha256": "31d08780a24a2fe7a497e02302ae0040d72e0767619844bd7468ea533255eedd",
+    "size": 24170,
+    "public_sha256": "e35b80a8e0f1c81db108f2e0dbd8f57580aa8b86bc7f3fc94c38a1262ddd1986",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_restart_job.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_restart_job.py",
+    "kind": "source",
+    "source_sha256": "c5a48269a8c298aad73ddb3835f2e11f4002b7e16edad383b2bc98eee4e09d98",
+    "size": 4877,
+    "public_sha256": "64055bf03e0018175c970b367e07b3a14a1d6ccfd9768af8dce80920e0dfeb9a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_runtime.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_runtime.py",
+    "kind": "source",
+    "source_sha256": "7925dd65cefa7ed7e5e7167ad8c510465963a1493dff4e9c7424f195f1becd5d",
+    "size": 8667,
+    "public_sha256": "97d37df31169d82cb6331f2d29ed09d5e097da772271dc60a941d844412784ae",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_supervisor.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_supervisor.py",
+    "kind": "source",
+    "source_sha256": "591009a33310cc327d599ecc42f500c94788f6e0280fa51914fdce6ab4102bb8",
+    "size": 15195,
+    "public_sha256": "462c94b871ef20b9ea054f870c3875e22a1fea5d0270aef421b6018a6fdfca71",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_train.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/nnunet2d_scientific_train.py",
+    "kind": "source",
+    "source_sha256": "527e3476a605071f831a1c289b295ba87ce2c8ca4f9138d02fe7ef793eef355f",
+    "size": 7661,
+    "public_sha256": "f8f2f4603842e39bb7c26b4a24e1414c87aa6b1fa053127f2e4bb842f46503ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/no_wall_limit_restart_02/test_nnunet2d_no_wall_guards.py",
+    "path": "research_branches/nnunet2d_20261020/no_wall_limit_restart_02/test_nnunet2d_no_wall_guards.py",
+    "kind": "source",
+    "source_sha256": "198fb73df1b307bf5b80a26ad9a332f9b6b52dc8da061b46030f951dec1faa5a",
+    "size": 5508,
+    "public_sha256": "198fb73df1b307bf5b80a26ad9a332f9b6b52dc8da061b46030f951dec1faa5a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_policy.py",
+    "path": "research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_policy.py",
+    "kind": "source",
+    "source_sha256": "50ea67beaef7a6edbed4d1daac9cba596a0be123d3fa7ed896ddfc7e1a1cdb74",
+    "size": 8430,
+    "public_sha256": "50ea67beaef7a6edbed4d1daac9cba596a0be123d3fa7ed896ddfc7e1a1cdb74",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_recovery.py",
+    "path": "research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_recovery.py",
+    "kind": "source",
+    "source_sha256": "6447cf5ec9617c690548334323477690767727e48f3d833e0ba7a2541f9f389c",
+    "size": 4081,
+    "public_sha256": "6447cf5ec9617c690548334323477690767727e48f3d833e0ba7a2541f9f389c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_runtime.py",
+    "path": "research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/revised_runtime.py",
+    "kind": "source",
+    "source_sha256": "9a209943e0f8ae0eb1a52c0a08fbf7782331ab308f635c78f78e9b0d58f1629d",
+    "size": 4570,
+    "public_sha256": "9a209943e0f8ae0eb1a52c0a08fbf7782331ab308f635c78f78e9b0d58f1629d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/run_cpu_review.py",
+    "path": "research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/run_cpu_review.py",
+    "kind": "source",
+    "source_sha256": "db95a86007fc5ea706e5e972f5abeb3e165b40c1b538ddb8a244e0f33c8ef9e8",
+    "size": 6550,
+    "public_sha256": "a3cd48375cd098576a29d628065b9347b0aae38d32ffd488a132b1c33adeb33c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/test_amp_recovery_revision.py",
+    "path": "research_branches/nnunet2d_20261020/amp_recovery_revision_20261021/test_amp_recovery_revision.py",
+    "kind": "source",
+    "source_sha256": "96728a360b7cd30ab4f86332d412194d8c871f73029ccfe1da4125b2f5317184",
+    "size": 13872,
+    "public_sha256": "96728a360b7cd30ab4f86332d412194d8c871f73029ccfe1da4125b2f5317184",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp_observer_v2.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp_observer_v2.py",
+    "kind": "source",
+    "source_sha256": "c4cfa4a177f4f3fe9eb6634cf644505929857e1692a0267e84362af91f6c11ca",
+    "size": 14692,
+    "public_sha256": "c4cfa4a177f4f3fe9eb6634cf644505929857e1692a0267e84362af91f6c11ca",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/test_amp_observer_v2.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/test_amp_observer_v2.py",
+    "kind": "source",
+    "source_sha256": "7f789a9190ea0795f529e1ea1cba6364b94e6cf4c80d6c494e652c7077e631c9",
+    "size": 9179,
+    "public_sha256": "7f789a9190ea0795f529e1ea1cba6364b94e6cf4c80d6c494e652c7077e631c9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp32_gate.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp32_gate.py",
+    "kind": "source",
+    "source_sha256": "6641e295db0dac8bde2c98d9195ad3612837105acaf833825f486e13d7ee0803",
+    "size": 4889,
+    "public_sha256": "9f6a6c211c094439e83f8c5af5b2a0f3350bd6422447fa86765a3095075636d7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp32_runner.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/amp32_runner.py",
+    "kind": "source",
+    "source_sha256": "8016512c5b77b78d322faacb409cc4ae1dd6787ff1c2303ef82a3e7924d3740b",
+    "size": 9952,
+    "public_sha256": "8016512c5b77b78d322faacb409cc4ae1dd6787ff1c2303ef82a3e7924d3740b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/prepare_amp32.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/prepare_amp32.py",
+    "kind": "source",
+    "source_sha256": "44a439e6c6dbe881e68cf84ed9aa289edc068b0429fce3fae39906c9e3770c58",
+    "size": 3924,
+    "public_sha256": "51186a7e55c5bd4b5533d7f442f8c22c2aab3220ccf7e591426a9a3083be9ce1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_engineering32_20261025/cpu_review_amp32.py",
+    "path": "research_branches/nnunet2d_20261020/amp_engineering32_20261025/cpu_review_amp32.py",
+    "kind": "source",
+    "source_sha256": "f8cd8328f8c0066d0d0c72b725ee343a0ee14e4e996808cae3bfe45757107dea",
+    "size": 5396,
+    "public_sha256": "f8cd8328f8c0066d0d0c72b725ee343a0ee14e4e996808cae3bfe45757107dea",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/cpu_review_science100.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/cpu_review_science100.py",
+    "kind": "source",
+    "source_sha256": "e1ac1503294a77b49d07e63d005a853069d9552a3d21f02c75c2961bc54398c8",
+    "size": 9213,
+    "public_sha256": "e1ac1503294a77b49d07e63d005a853069d9552a3d21f02c75c2961bc54398c8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/fast_observer.py",
+    "kind": "source",
+    "source_sha256": "3a301d89383cda321a29db00c95e3aa72a83ec4ae053066cd094fdb01e38203f",
+    "size": 7580,
+    "public_sha256": "a070b09b857214a8c138bb5dd8d0d70e4cab67ccb6d67698879efc7147621864",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/prepare_science100.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/prepare_science100.py",
+    "kind": "source",
+    "source_sha256": "6e406153fe8421c1a0b18f182924fc40ade4c394c1a6b8c3ec2eb9f103818a7a",
+    "size": 11956,
+    "public_sha256": "506191af3acfe91fa58701d07ed2f5547c2c72140c2939be3d42ff2c87de0e20",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_analysis.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_analysis.py",
+    "kind": "source",
+    "source_sha256": "490750c5d7c1653b5f389d0206133fe2e379a2ccbd45cfb319eadbb7c4b03b45",
+    "size": 5335,
+    "public_sha256": "490750c5d7c1653b5f389d0206133fe2e379a2ccbd45cfb319eadbb7c4b03b45",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_controller.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_controller.py",
+    "kind": "source",
+    "source_sha256": "77175c030885bf18171a164564c5e91fe71277c8c647b0994dd989418309b640",
+    "size": 7945,
+    "public_sha256": "77175c030885bf18171a164564c5e91fe71277c8c647b0994dd989418309b640",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_gate.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_gate.py",
+    "kind": "source",
+    "source_sha256": "a3883a51df2b4599b57d7e29bc6ae97fc6f4bd8a991547e38b81c20c19e2813b",
+    "size": 5095,
+    "public_sha256": "569e215eab02a77abc271802121ddfe0d809cb60b6d1bd4db376d29f791a54cc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_infer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_infer.py",
+    "kind": "source",
+    "source_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "size": 7206,
+    "public_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_train.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/science100_train.py",
+    "kind": "source",
+    "source_sha256": "13e47b8ebb9c9602880314d3f6fe89a1e6411fa16f02aef650ea421e1429f6db",
+    "size": 7645,
+    "public_sha256": "13e47b8ebb9c9602880314d3f6fe89a1e6411fa16f02aef650ea421e1429f6db",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/test_fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_amp_v3_20261025/test_fast_observer.py",
+    "kind": "source",
+    "source_sha256": "184859784501b2e22fb79f000bcc46d91a55d010ae4715bd63c4a8b325a27f9f",
+    "size": 3385,
+    "public_sha256": "0da0e637b8696f793910cc121d437d7e6081ca68e101c6284e2d36418ba62d8a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/fast_observer.py",
+    "kind": "source",
+    "source_sha256": "3a301d89383cda321a29db00c95e3aa72a83ec4ae053066cd094fdb01e38203f",
+    "size": 7580,
+    "public_sha256": "a070b09b857214a8c138bb5dd8d0d70e4cab67ccb6d67698879efc7147621864",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_gate.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_gate.py",
+    "kind": "source",
+    "source_sha256": "9f85e4cfc71f80d09401e913b8ad51694767ddd96306d61e58b9a3b06a655470",
+    "size": 5107,
+    "public_sha256": "c3243b4ce71f136ea7e640ac30999cb01e56dde330a64d33ea7a6a1160bffb6d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_train.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_train.py",
+    "kind": "source",
+    "source_sha256": "9e27c089d4786165ed38b92df1ffb6681d05740451b38f06181d9dfc9cf05862",
+    "size": 8140,
+    "public_sha256": "9e27c089d4786165ed38b92df1ffb6681d05740451b38f06181d9dfc9cf05862",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_controller.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_controller.py",
+    "kind": "source",
+    "source_sha256": "77175c030885bf18171a164564c5e91fe71277c8c647b0994dd989418309b640",
+    "size": 7945,
+    "public_sha256": "77175c030885bf18171a164564c5e91fe71277c8c647b0994dd989418309b640",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_infer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_infer.py",
+    "kind": "source",
+    "source_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "size": 7206,
+    "public_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_analysis.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/science100_analysis.py",
+    "kind": "source",
+    "source_sha256": "490750c5d7c1653b5f389d0206133fe2e379a2ccbd45cfb319eadbb7c4b03b45",
+    "size": 5335,
+    "public_sha256": "490750c5d7c1653b5f389d0206133fe2e379a2ccbd45cfb319eadbb7c4b03b45",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/test_fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/test_fast_observer.py",
+    "kind": "source",
+    "source_sha256": "184859784501b2e22fb79f000bcc46d91a55d010ae4715bd63c4a8b325a27f9f",
+    "size": 3385,
+    "public_sha256": "0da0e637b8696f793910cc121d437d7e6081ca68e101c6284e2d36418ba62d8a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/prefix_contract.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/prefix_contract.py",
+    "kind": "source",
+    "source_sha256": "b5dd95272571917db1e6903b1785d7ba4af5cd7a0ee2140c56245d682ddbb1c1",
+    "size": 2323,
+    "public_sha256": "b5dd95272571917db1e6903b1785d7ba4af5cd7a0ee2140c56245d682ddbb1c1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/test_prefix_contract.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/test_prefix_contract.py",
+    "kind": "source",
+    "source_sha256": "9748f341d6e6261fd88f709b6319648b2513cdf31e5d8d5958aaefbed147ddd5",
+    "size": 2443,
+    "public_sha256": "9748f341d6e6261fd88f709b6319648b2513cdf31e5d8d5958aaefbed147ddd5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/prepare_v4.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/prepare_v4.py",
+    "kind": "source",
+    "source_sha256": "6e7159cbba3f69ddf771fc78374be04e32d16f4778c1e3e8617d103733b9312f",
+    "size": 6823,
+    "public_sha256": "b59802e203745807e2342447059982a1b1f9f9130365e47ae9a277cf743ab6e3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/cpu_admission_v4.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_prefix_v4_20261025/cpu_admission_v4.py",
+    "kind": "source",
+    "source_sha256": "6087288e62fa8930ac05d7d91801e6d58d8a8462ad57d035de92545942151f48",
+    "size": 4697,
+    "public_sha256": "6087288e62fa8930ac05d7d91801e6d58d8a8462ad57d035de92545942151f48",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_gate.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_gate.py",
+    "kind": "source",
+    "source_sha256": "d8d72da450d8fd4a293108926b39c6b30d46d75fd5dcabda4877451ddbec2453",
+    "size": 5244,
+    "public_sha256": "b0620f49398438ed3f505740e53e049655adc479cd629c88603f0e60f7b64e49",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_train.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_train.py",
+    "kind": "source",
+    "source_sha256": "05aa057a969318f9d2b2ed0a690c8ce69e8a80fec0a7630102ca6334797572ca",
+    "size": 8809,
+    "public_sha256": "05aa057a969318f9d2b2ed0a690c8ce69e8a80fec0a7630102ca6334797572ca",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_controller.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_controller.py",
+    "kind": "source",
+    "source_sha256": "b17cd62826af51e986b7d89db17e0541c4d0d0e565843f60e4c54ff8d5fde5ec",
+    "size": 8879,
+    "public_sha256": "b17cd62826af51e986b7d89db17e0541c4d0d0e565843f60e4c54ff8d5fde5ec",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_infer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_infer.py",
+    "kind": "source",
+    "source_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "size": 7206,
+    "public_sha256": "4dc214c66ba68589d256192c8e5f997b28a5e60f9b62ba87941535e12d45127e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_analysis.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/science100_analysis.py",
+    "kind": "source",
+    "source_sha256": "f2ccba4ea386acfe6a2d37d6c1079a48e38db0ec766d07cd7539f7a7dc1c8a2e",
+    "size": 5596,
+    "public_sha256": "f2ccba4ea386acfe6a2d37d6c1079a48e38db0ec766d07cd7539f7a7dc1c8a2e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/fast_observer.py",
+    "kind": "source",
+    "source_sha256": "930a021719086a788b97a84d27d411a74ff78e7d676b6d25289644215058ee68",
+    "size": 7827,
+    "public_sha256": "91dda1d80ad77c1b466f14db5966b08da1f26a2774dbd358f34779e8c5e10809",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/resume_support.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/resume_support.py",
+    "kind": "source",
+    "source_sha256": "2b81aa157bf6b5fe57a6c5ee41b7e8075d6570f9a2da43b5444b5b56b25936a9",
+    "size": 2634,
+    "public_sha256": "4888102c429b2b635e1ee26566cba1ba03777c0ef2c4236eb7259c4e5c5fa418",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/progress_watchdog.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/progress_watchdog.py",
+    "kind": "source",
+    "source_sha256": "5f48682144815e0a2c7203d650558e839d3fe6e95620e653b370872da492fbbb",
+    "size": 1324,
+    "public_sha256": "5f48682144815e0a2c7203d650558e839d3fe6e95620e653b370872da492fbbb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/test_fast_observer.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/test_fast_observer.py",
+    "kind": "source",
+    "source_sha256": "184859784501b2e22fb79f000bcc46d91a55d010ae4715bd63c4a8b325a27f9f",
+    "size": 3385,
+    "public_sha256": "0da0e637b8696f793910cc121d437d7e6081ca68e101c6284e2d36418ba62d8a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/test_resume_support.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/test_resume_support.py",
+    "kind": "source",
+    "source_sha256": "255b568cd910ba12030822f6bd9e57ee1b62ad084927d6431169d209966e61bc",
+    "size": 4677,
+    "public_sha256": "255b568cd910ba12030822f6bd9e57ee1b62ad084927d6431169d209966e61bc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/prepare_v5.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/prepare_v5.py",
+    "kind": "source",
+    "source_sha256": "ba63fb5fcb8f9a8c5155acf5203c376c517c078a3fe4ec627e6f8095f425a224",
+    "size": 7808,
+    "public_sha256": "ffbf22c78b93baa4f860b016df49680448cec394cca75e72303c89cba8087d77",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/cpu_admission_v5.py",
+    "path": "research_branches/nnunet2d_20261020/scientific_resume_v5_20261025/cpu_admission_v5.py",
+    "kind": "source",
+    "source_sha256": "8c72d5271dfec50fd0a09eaf7eb387d27453910b6a84be4ccb0c118fecd09b05",
+    "size": 7464,
+    "public_sha256": "8c72d5271dfec50fd0a09eaf7eb387d27453910b6a84be4ccb0c118fecd09b05",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/seeded_runtime.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/seeded_runtime.py",
+    "kind": "source",
+    "source_sha256": "016e48821bb825b8eb0ce6ffb4863b2ad632b93291ddd130bdbe4c1e8642a1c8",
+    "size": 1837,
+    "public_sha256": "016e48821bb825b8eb0ce6ffb4863b2ad632b93291ddd130bdbe4c1e8642a1c8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_gate.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_gate.py",
+    "kind": "source",
+    "source_sha256": "59877548466b0376b56cf44806a167155c2ae9480ba66fa176df4ffd50e3554e",
+    "size": 6291,
+    "public_sha256": "f89bd26e527866fdb8e71f6125bb27095d10c0fad7d4c56dd0718c48a1669a59",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/freeze_replication.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/freeze_replication.py",
+    "kind": "source",
+    "source_sha256": "e80511cbf54b7948d598011d915bc8bdf090caf312692c652e2316c45b6d3ce3",
+    "size": 11598,
+    "public_sha256": "589a2fb6ae1b0db9a17a7a0b9757b153963c2e16e5efc96d40e22922987ac588",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_replication.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_replication.py",
+    "kind": "source",
+    "source_sha256": "b87fb70672969ef8bd511708c1fb8c37fc809b09804e788981c3c68652daa546",
+    "size": 4313,
+    "public_sha256": "b87fb70672969ef8bd511708c1fb8c37fc809b09804e788981c3c68652daa546",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/analysis_runner.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/analysis_runner.py",
+    "kind": "source",
+    "source_sha256": "35b993f836838f177a7b00525d00ac67bd09a7d43ee0a89e231b26ed47565099",
+    "size": 618,
+    "public_sha256": "35b993f836838f177a7b00525d00ac67bd09a7d43ee0a89e231b26ed47565099",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_controller.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_controller.py",
+    "kind": "source",
+    "source_sha256": "44cc93bf00d51c443ef4b1f18ac339ac645a6832a379c42990dbf1c46fba6389",
+    "size": 13121,
+    "public_sha256": "44cc93bf00d51c443ef4b1f18ac339ac645a6832a379c42990dbf1c46fba6389",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/cpu_prepare.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/cpu_prepare.py",
+    "kind": "source",
+    "source_sha256": "8631d5b98e202a5e6961260e672da38805de0beb652324807df65c0e9955bfaa",
+    "size": 8611,
+    "public_sha256": "8631d5b98e202a5e6961260e672da38805de0beb652324807df65c0e9955bfaa",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_train.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_train.py",
+    "kind": "source",
+    "source_sha256": "5a3097e52b15918bdca99a9e5cb8feb7829c369ffc04df48862709f643292497",
+    "size": 7326,
+    "public_sha256": "5a3097e52b15918bdca99a9e5cb8feb7829c369ffc04df48862709f643292497",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_infer.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_infer.py",
+    "kind": "source",
+    "source_sha256": "9f019536fd8f29354a3373fe00a47254ed23a66d703b6fbd432bb7e25f191bd8",
+    "size": 7207,
+    "public_sha256": "9f019536fd8f29354a3373fe00a47254ed23a66d703b6fbd432bb7e25f191bd8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_analysis.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/replication_analysis.py",
+    "kind": "source",
+    "source_sha256": "90fd988921e3c55af172675047aff6320fa10ea08d444d941ac8edf64c136a35",
+    "size": 5464,
+    "public_sha256": "90fd988921e3c55af172675047aff6320fa10ea08d444d941ac8edf64c136a35",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/progress_watchdog.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/progress_watchdog.py",
+    "kind": "source",
+    "source_sha256": "5f48682144815e0a2c7203d650558e839d3fe6e95620e653b370872da492fbbb",
+    "size": 1324,
+    "public_sha256": "5f48682144815e0a2c7203d650558e839d3fe6e95620e653b370872da492fbbb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_controller_cpu.py",
+    "path": "research_branches/nnunet2d_20261020/replication_seeds_2027_2028_v1_20261026/test_controller_cpu.py",
+    "kind": "source",
+    "source_sha256": "dc0303b9d3f06b4c58c4f30260527aced44c5f0faf49df7b3572ba1b1c591242",
+    "size": 4877,
+    "public_sha256": "dc0303b9d3f06b4c58c4f30260527aced44c5f0faf49df7b3572ba1b1c591242",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/analysis.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/analysis.py",
+    "kind": "source",
+    "source_sha256": "90b1f81987e072dcd51df122b9a7dd39a038614551326b08b426d383ed25b20f",
+    "size": 5912,
+    "public_sha256": "90b1f81987e072dcd51df122b9a7dd39a038614551326b08b426d383ed25b20f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/common.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/common.py",
+    "kind": "source",
+    "source_sha256": "ec557fdbebac8544652d05d1217cc6054d6ce4f3ebcacfae625d40e5bf62957a",
+    "size": 9746,
+    "public_sha256": "81301ffc2b3eee4cc599425d816f8bc086971c55a155c6f0149f17ed3f0e1d03",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/engineering.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/engineering.py",
+    "kind": "source",
+    "source_sha256": "be44d7bd129971a6416ddea8e84aee683b755e0b4a828cae8328617f992fdce3",
+    "size": 16520,
+    "public_sha256": "be44d7bd129971a6416ddea8e84aee683b755e0b4a828cae8328617f992fdce3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/fusion_model.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/fusion_model.py",
+    "kind": "source",
+    "source_sha256": "4d0679a100b62a497db216544f10ac218cbbf45d1afbfb48404d6a174d824772",
+    "size": 5375,
+    "public_sha256": "4d0679a100b62a497db216544f10ac218cbbf45d1afbfb48404d6a174d824772",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/inference.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/inference.py",
+    "kind": "source",
+    "source_sha256": "830c3eece2109c859b5cf1e7b567e9b23a9478a4d2e868fd606c1ec1491c3333",
+    "size": 6338,
+    "public_sha256": "830c3eece2109c859b5cf1e7b567e9b23a9478a4d2e868fd606c1ec1491c3333",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/prepare.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/prepare.py",
+    "kind": "source",
+    "source_sha256": "df77362a1888da8684884c519178545d2cb056bb904afa452270dd1c52951a60",
+    "size": 23170,
+    "public_sha256": "6ea4b6d905d2c09c766aa0ce9e451741ec4784a816c89ca11b17c4fc98283008",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/science.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/science.py",
+    "kind": "source",
+    "source_sha256": "bb3c88b8465ddaae7956cf61989e8d90592b8cc24e1af1608775ea5367e75ea4",
+    "size": 11160,
+    "public_sha256": "bb3c88b8465ddaae7956cf61989e8d90592b8cc24e1af1608775ea5367e75ea4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/review.py",
+    "path": "research_branches/nnunet2d_20261020/multiscale_capacity_ablation_v1_20261027/review.py",
+    "kind": "source",
+    "source_sha256": "819821fbed52fb55180f44e620325e7dce80ff826df6336785c4c99634ad4bd2",
+    "size": 8802,
+    "public_sha256": "819821fbed52fb55180f44e620325e7dce80ff826df6336785c4c99634ad4bd2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/common.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/common.py",
+    "kind": "source",
+    "source_sha256": "17a5f616444eaccc113d223af205a21d2588ff573c44b93a72e2db9d47dd8acb",
+    "size": 9871,
+    "public_sha256": "d5f99d102a661e658bc60652cdf770f71242d697c38e7c0cad75dd89325f1e1c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering.py",
+    "kind": "source",
+    "source_sha256": "5d39fcdde495d296a4e9b303c1c1932f34527c6add2815327f98d03706d7e877",
+    "size": 18641,
+    "public_sha256": "5d39fcdde495d296a4e9b303c1c1932f34527c6add2815327f98d03706d7e877",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/candidate.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/candidate.py",
+    "kind": "source",
+    "source_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "size": 2135,
+    "public_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/prepare_engineering.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/prepare_engineering.py",
+    "kind": "source",
+    "source_sha256": "a830e4a1c24c7bb55629a32c340d29fe748dcc1e18876670cb04dbd7847ba091",
+    "size": 12329,
+    "public_sha256": "a830e4a1c24c7bb55629a32c340d29fe748dcc1e18876670cb04dbd7847ba091",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/common.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/common.py",
+    "kind": "source",
+    "source_sha256": "a3d4974e335c43c00f2db8f7e88b48f61d965379047ec9c9e206b8f4532b73e2",
+    "size": 10100,
+    "public_sha256": "a65ebc3174886d13af7c3c5247d1a99ad53a6f8f2f4b70c8c0df55c5ce464cca",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/candidate.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/candidate.py",
+    "kind": "source",
+    "source_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "size": 2135,
+    "public_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/engineering.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/engineering.py",
+    "kind": "source",
+    "source_sha256": "bda600a1fd0129a511d55602a740fd04e7991cf145d99cbad98636beaf8448bd",
+    "size": 19714,
+    "public_sha256": "bda600a1fd0129a511d55602a740fd04e7991cf145d99cbad98636beaf8448bd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/common.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/common.py",
+    "kind": "source",
+    "source_sha256": "e3b269b3d3d40fe5a41b671f50e9943629b255952d9fcf48d69850f7eaea4c3e",
+    "size": 10238,
+    "public_sha256": "11a566059d8cd3e67132c8214a7f079a88d46e71b524725b179cf66bd086c950",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/candidate.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/candidate.py",
+    "kind": "source",
+    "source_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "size": 2135,
+    "public_sha256": "141dab30103ce481f33b1bf42757760f9f0d98827aa483b02427cbbe5c5837db",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/science.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/science.py",
+    "kind": "source",
+    "source_sha256": "1164285daa745a342290b42438ca76715102c155735e14123bfbc8f3a371570e",
+    "size": 11105,
+    "public_sha256": "1164285daa745a342290b42438ca76715102c155735e14123bfbc8f3a371570e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/inference.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/inference.py",
+    "kind": "source",
+    "source_sha256": "d248d115b6e44d7741863a55ab71411851cdf1dded9dc4fca39872f7908afdda",
+    "size": 6462,
+    "public_sha256": "d248d115b6e44d7741863a55ab71411851cdf1dded9dc4fca39872f7908afdda",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/verify_science_start.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/verify_science_start.py",
+    "kind": "source",
+    "source_sha256": "4f0134472e29347d326f9706bedc8d1b9043120b551c7b96026ad8834ec70474",
+    "size": 4768,
+    "public_sha256": "040ec0bfd73dd70c4db0da27ef1423edec7b818feceb8c310ab050e782bf9a03",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/analysis.py",
+    "path": "research_branches/nnunet2d_20261020/deep_supervision_ablation_20261028/science100_v1/analysis.py",
+    "kind": "source",
+    "source_sha256": "f3da4c1ff0bc499e3aebe6d9ee4c18711632d1c404d86c19146bab46ca9e7c6e",
+    "size": 6079,
+    "public_sha256": "f3da4c1ff0bc499e3aebe6d9ee4c18711632d1c404d86c19146bab46ca9e7c6e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/aux_loss.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/aux_loss.py",
+    "kind": "source",
+    "source_sha256": "3e12d29abe1123c490c47aaaa6d11420582d242eaeec2afc12b122d2ee466738",
+    "size": 3909,
+    "public_sha256": "3e12d29abe1123c490c47aaaa6d11420582d242eaeec2afc12b122d2ee466738",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/test_aux.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/test_aux.py",
+    "kind": "source",
+    "source_sha256": "02e16f4bb4e3484ff9322534e955e48fec8f8deaefd04b724a0fcc4cba06ffe2",
+    "size": 6484,
+    "public_sha256": "02e16f4bb4e3484ff9322534e955e48fec8f8deaefd04b724a0fcc4cba06ffe2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/replay.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/replay.py",
+    "kind": "source",
+    "source_sha256": "3ee11aa0b73f20f6919afe6705faa4a5ac998597dfba7de1f773c03926f1f4be",
+    "size": 19217,
+    "public_sha256": "23e8e5177349dd5eee2e09acdcece7f3cc7dda725e4447b3de5c3703dc5c59e7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/render_atlas.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/render_atlas.py",
+    "kind": "source",
+    "source_sha256": "643f8c18115f6a59dea3399ac4823ea2515dfdc64518285b03250e0412ed533e",
+    "size": 6916,
+    "public_sha256": "63182619fbe8fd1521f1d81ead7d01903bbdb76c4d121225f9582eb39c79f70f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/test_selection.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/test_selection.py",
+    "kind": "source",
+    "source_sha256": "cb53ad4b9edd9c032e35840f01e098f5770515cef474348e8c239d3ab8c5fc15",
+    "size": 2205,
+    "public_sha256": "cb53ad4b9edd9c032e35840f01e098f5770515cef474348e8c239d3ab8c5fc15",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/verify_cpu.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v1_20261031/verify_cpu.py",
+    "kind": "source",
+    "source_sha256": "b6c4669cb42de78e3f06501c77c9acb50013d94559e0f0c94600b79d1a3ce966",
+    "size": 14684,
+    "public_sha256": "9d271d9b46491c0a94c83fee214ef7342469a377bbc0c64f34e21b49ac5cb460",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/aux_loss.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/aux_loss.py",
+    "kind": "source",
+    "source_sha256": "b2ca089a4c4aeb8078b2274a37e226b0f6ef544a528f4f95e262736b968f81b5",
+    "size": 3800,
+    "public_sha256": "b2ca089a4c4aeb8078b2274a37e226b0f6ef544a528f4f95e262736b968f81b5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/test_aux.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/test_aux.py",
+    "kind": "source",
+    "source_sha256": "397c395769a0621347422f172db7507c22fa71257c39303382359648ac735ead",
+    "size": 6512,
+    "public_sha256": "397c395769a0621347422f172db7507c22fa71257c39303382359648ac735ead",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/test_selection.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/test_selection.py",
+    "kind": "source",
+    "source_sha256": "cb53ad4b9edd9c032e35840f01e098f5770515cef474348e8c239d3ab8c5fc15",
+    "size": 2205,
+    "public_sha256": "cb53ad4b9edd9c032e35840f01e098f5770515cef474348e8c239d3ab8c5fc15",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/replay.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/replay.py",
+    "kind": "source",
+    "source_sha256": "e63ad7503218a91d67dd196db4538a7c86211102383c4cc68713402d15d74273",
+    "size": 21687,
+    "public_sha256": "6fdbd0443cf53f80fb93f5295c5a45bbdbcb41e9c5e75a54902a11ed7f45b6cf",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/verify_cpu.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/verify_cpu.py",
+    "kind": "source",
+    "source_sha256": "fb6409bfac333b2813914aeec5c47ada9673b25855836325a1accf9753637f6c",
+    "size": 14765,
+    "public_sha256": "ce55a5c5e550d297e97a496cc0fe6d78a62f39757e8a676ed60d5c9bbf29e3cc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/render_atlas.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_v2_alltargets_20261031/render_atlas.py",
+    "kind": "source",
+    "source_sha256": "0008101e117a437f10fc0fd4e028afd06c214bfc2abef3fdaaabf5471f68f8ca",
+    "size": 6927,
+    "public_sha256": "d39e5c03f5393db74832b4ef3d9f99bc122dc689d2b78544a8c0251df27a37bb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/prepare_fixtures.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/prepare_fixtures.py",
+    "kind": "source",
+    "source_sha256": "f6d118bfc75e0f181caabb101d176155e36d49f159a88b5c08da92d6daf4a3ae",
+    "size": 2359,
+    "public_sha256": "a1602dfeaa2cec737c74c35ae58192de19efe30ff06bcd9b124e2c6cd9fa97d2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/common.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/common.py",
+    "kind": "source",
+    "source_sha256": "7ad07170a3ee9a175311524b652fc30b6c2dbd2f059179bbfc92dbe586e5ca27",
+    "size": 3981,
+    "public_sha256": "161bdad816ade3ce47ef0bf13732096e6304bba78b76a6a84a5f691d2b390dd1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/worker.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/worker.py",
+    "kind": "source",
+    "source_sha256": "cc58d1ae5d118ba8f59a2424f10ccdb1d09c54ea66519e460baa5d3274655b57",
+    "size": 11441,
+    "public_sha256": "cc58d1ae5d118ba8f59a2424f10ccdb1d09c54ea66519e460baa5d3274655b57",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/controller.py",
+    "kind": "source",
+    "source_sha256": "de4d138931915aab93129524830418a6b1ef1b891578af79a33ae510bf8d46d3",
+    "size": 3915,
+    "public_sha256": "de4d138931915aab93129524830418a6b1ef1b891578af79a33ae510bf8d46d3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/gpu_aux.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/gpu_aux.py",
+    "kind": "source",
+    "source_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "size": 3801,
+    "public_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/repair_probe.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_v1_20261031/repair_probe.py",
+    "kind": "source",
+    "source_sha256": "bc0292606f0965b8970b383cae90b02e88359ba3ff5521db9b24da5fa5b76673",
+    "size": 7561,
+    "public_sha256": "bc0292606f0965b8970b383cae90b02e88359ba3ff5521db9b24da5fa5b76673",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/common.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/common.py",
+    "kind": "source",
+    "source_sha256": "f8cc4e93b527483707308c17a1d6bb17af40cad0dcaa818ef6c10d6e792844a1",
+    "size": 3991,
+    "public_sha256": "d9d0b7a606fe0a8a04c26840337faacf528750f0b097d800bef448ebb2fc3b00",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/worker.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/worker.py",
+    "kind": "source",
+    "source_sha256": "e1b81b6f9ed3c9b23f9b1cd1864e850553ac0d0f4d4710065abe32152edec1de",
+    "size": 12268,
+    "public_sha256": "e1b81b6f9ed3c9b23f9b1cd1864e850553ac0d0f4d4710065abe32152edec1de",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/controller.py",
+    "kind": "source",
+    "source_sha256": "9559af3545035fb6a8479c48e87f5468339ab0fdaa722a461f5172bdad678c4b",
+    "size": 4033,
+    "public_sha256": "9559af3545035fb6a8479c48e87f5468339ab0fdaa722a461f5172bdad678c4b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/gpu_aux.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_engineering_repair_v2_20261031/gpu_aux.py",
+    "kind": "source",
+    "source_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "size": 3801,
+    "public_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/geometry.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/geometry.py",
+    "kind": "source",
+    "source_sha256": "30b6957b9996a575fca4c3e31d3eb68313772661633e91cb3c99b21c67bc96ee",
+    "size": 4753,
+    "public_sha256": "99de746c1bcb21b46423169cef8c925d2628b3a614953806bf4af35c572fcd28",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/aux_loss.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/aux_loss.py",
+    "kind": "source",
+    "source_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "size": 3801,
+    "public_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/selection.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/selection.py",
+    "kind": "source",
+    "source_sha256": "a81fb058c23cc6132e4d00b5fb71e584be07510910603f8ce8d61d1c67bfdc61",
+    "size": 712,
+    "public_sha256": "a81fb058c23cc6132e4d00b5fb71e584be07510910603f8ce8d61d1c67bfdc61",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/sidecar.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/sidecar.py",
+    "kind": "source",
+    "source_sha256": "ba5ef0103dc034dd40be0387cde14d0373a6808e973d91d238578cdfbf22fee7",
+    "size": 3108,
+    "public_sha256": "ba5ef0103dc034dd40be0387cde14d0373a6808e973d91d238578cdfbf22fee7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/common.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/common.py",
+    "kind": "source",
+    "source_sha256": "f91496219e2424cbed2326d00a8fb4371a2c989a1028f641241bc96370c18e34",
+    "size": 5217,
+    "public_sha256": "25ffb05fae2e7fe573f42720a4238cf3f78da46109254cb5e8ce668f4d5ec0d0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/cpu_integration.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/cpu_integration.py",
+    "kind": "source",
+    "source_sha256": "6e204530a15abd92bf34f96e59042edd35c2adf3b7a2ec74beafa2713ceefdf4",
+    "size": 4010,
+    "public_sha256": "6e204530a15abd92bf34f96e59042edd35c2adf3b7a2ec74beafa2713ceefdf4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/nl_observer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/nl_observer.py",
+    "kind": "source",
+    "source_sha256": "b394bdd55eeb10053d72e0bb7932eb3d11cee0f6e852239b893529b0a47ada46",
+    "size": 5393,
+    "public_sha256": "b394bdd55eeb10053d72e0bb7932eb3d11cee0f6e852239b893529b0a47ada46",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/train.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/train.py",
+    "kind": "source",
+    "source_sha256": "ad37a475ee38bb68fa2bfca414c1625f3e5ffee3ab307ebfd591fc01e7b34fd8",
+    "size": 8265,
+    "public_sha256": "ad37a475ee38bb68fa2bfca414c1625f3e5ffee3ab307ebfd591fc01e7b34fd8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/infer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/infer.py",
+    "kind": "source",
+    "source_sha256": "59c603593330f34e35edfa81d373ff230752df6da6fb20cb2133fbe06c23f4c2",
+    "size": 7668,
+    "public_sha256": "59c603593330f34e35edfa81d373ff230752df6da6fb20cb2133fbe06c23f4c2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/controller.py",
+    "kind": "source",
+    "source_sha256": "ad25a9828ad26136350f09a52d8064c3b1d2e9d043ba6170e0f56023dd20538f",
+    "size": 5367,
+    "public_sha256": "ad25a9828ad26136350f09a52d8064c3b1d2e9d043ba6170e0f56023dd20538f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/analyze.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/analyze.py",
+    "kind": "source",
+    "source_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "size": 6578,
+    "public_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/cpu_checks.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/cpu_checks.py",
+    "kind": "source",
+    "source_sha256": "7a0b77a4cdd34ed4582d9b35447ed61a2cc62a29c0f5aef0c743e987fe0f7f01",
+    "size": 8303,
+    "public_sha256": "7a0b77a4cdd34ed4582d9b35447ed61a2cc62a29c0f5aef0c743e987fe0f7f01",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/diagnostic.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/diagnostic.py",
+    "kind": "source",
+    "source_sha256": "e2b0343673cb346faa92953e6ff0f1558b5f631ac241ee9ae3b307ffed4620c9",
+    "size": 2153,
+    "public_sha256": "e2b0343673cb346faa92953e6ff0f1558b5f631ac241ee9ae3b307ffed4620c9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/paths.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/paths.py",
+    "kind": "source",
+    "source_sha256": "a0b031aa6454127925f7c3fa897a43222d0f3906e8d7df0f3ebb364fe1d5cec2",
+    "size": 177,
+    "public_sha256": "a0b031aa6454127925f7c3fa897a43222d0f3906e8d7df0f3ebb364fe1d5cec2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_replay.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_replay.py",
+    "kind": "source",
+    "source_sha256": "06e2aae110284bece133a6fde2bded68988803217b6a0a031b12bff5b58f24e5",
+    "size": 8559,
+    "public_sha256": "06e2aae110284bece133a6fde2bded68988803217b6a0a031b12bff5b58f24e5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/recovery.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/recovery.py",
+    "kind": "source",
+    "source_sha256": "f9ac736b6cdd3a040713448b6a41db77809c1b5a05f421e2f56c234882bba4ce",
+    "size": 3680,
+    "public_sha256": "f9ac736b6cdd3a040713448b6a41db77809c1b5a05f421e2f56c234882bba4ce",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_tests.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_tests.py",
+    "kind": "source",
+    "source_sha256": "c553408a53d8fe029c7b7afdf41a2c24a8b763e13feb3b5461d7b2fc600ba6b3",
+    "size": 9615,
+    "public_sha256": "c553408a53d8fe029c7b7afdf41a2c24a8b763e13feb3b5461d7b2fc600ba6b3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/nl_observer_repaired.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/nl_observer_repaired.py",
+    "kind": "source",
+    "source_sha256": "2c861b10596986f9e1c86b50f01fd63d166de4e5e0cd037f0ef184f301d3706e",
+    "size": 5996,
+    "public_sha256": "2c861b10596986f9e1c86b50f01fd63d166de4e5e0cd037f0ef184f301d3706e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_restore.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_restore.py",
+    "kind": "source",
+    "source_sha256": "e328aafe18417437b6d537c6c768701b5910476f49eddee90bf7cae1fd317eb4",
+    "size": 3691,
+    "public_sha256": "e328aafe18417437b6d537c6c768701b5910476f49eddee90bf7cae1fd317eb4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_watch.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/cpu_watch.py",
+    "kind": "source",
+    "source_sha256": "125d611304a60151565fdf8d4f270e1023dbadf2a0bb30783f70432c82be1306",
+    "size": 5778,
+    "public_sha256": "125d611304a60151565fdf8d4f270e1023dbadf2a0bb30783f70432c82be1306",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/support.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/support.py",
+    "kind": "source",
+    "source_sha256": "093a6e3c41cb7cdb71a97d9e5c56750e9c45e136b191032170e83c4be14e3e10",
+    "size": 2934,
+    "public_sha256": "bd824b84dc27f4c146884bfb3820dd2191331ed415c6d6808102fdaaadd04268",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/worker.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/worker.py",
+    "kind": "source",
+    "source_sha256": "8bc4cc7208b82b878822c5d7f52036c2f6694acf7ac659a4d78238b8fc4c83de",
+    "size": 9834,
+    "public_sha256": "8bc4cc7208b82b878822c5d7f52036c2f6694acf7ac659a4d78238b8fc4c83de",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/controller.py",
+    "kind": "source",
+    "source_sha256": "2838e388fe9b9b9b98206f56ac1872fcd144de1bb56666b7f6faec024b293c54",
+    "size": 3731,
+    "public_sha256": "cc04ff398abdda8b53bb68dcc61a5a62b8756c4c632a38ce41efcd5f5075d9b9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/cpu_entry_tests.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/gpu_verification_v1/cpu_entry_tests.py",
+    "kind": "source",
+    "source_sha256": "4ec3e27576274a16bacd1bd4cee90d72327162d4f0b6cf9c5ffd605c96ae72c8",
+    "size": 3352,
+    "public_sha256": "4ec3e27576274a16bacd1bd4cee90d72327162d4f0b6cf9c5ffd605c96ae72c8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/support.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/support.py",
+    "kind": "source",
+    "source_sha256": "de0100c444f81ead405d27223573ae84cec8eea3b7127f6760dc337345f6af8c",
+    "size": 2645,
+    "public_sha256": "5b054f4c0144176808a1cb154aac17b215fda28bbc30d8fc8a1c138796f53f0c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/journal.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/journal.py",
+    "kind": "source",
+    "source_sha256": "976adc0b98a068cabb4f3c9bc8e610832d445b406cd5cc13e906a2ebdd474238",
+    "size": 3713,
+    "public_sha256": "976adc0b98a068cabb4f3c9bc8e610832d445b406cd5cc13e906a2ebdd474238",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/resume_loop.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/resume_loop.py",
+    "kind": "source",
+    "source_sha256": "0a9aef5eab79fd8661493f17b9b15121495f99d29603395f30b500f6866ca1ca",
+    "size": 1474,
+    "public_sha256": "0a9aef5eab79fd8661493f17b9b15121495f99d29603395f30b500f6866ca1ca",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/observer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/observer.py",
+    "kind": "source",
+    "source_sha256": "908490dbbe262bcb749c03423227c67434e9a91545878300d834e77b9ba73104",
+    "size": 2074,
+    "public_sha256": "908490dbbe262bcb749c03423227c67434e9a91545878300d834e77b9ba73104",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/worker.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/worker.py",
+    "kind": "source",
+    "source_sha256": "925b6d81360beef091a8d15c6f9c9e75ed21b94a23346a1a5b1d8a3958dc2156",
+    "size": 11249,
+    "public_sha256": "925b6d81360beef091a8d15c6f9c9e75ed21b94a23346a1a5b1d8a3958dc2156",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/controller.py",
+    "kind": "source",
+    "source_sha256": "d3ae5bbfb9e78e8fef4ea5d42b435f2c33ae00398b3e05cea8597bd1773f355f",
+    "size": 7581,
+    "public_sha256": "dd09fb95895f66d35dd582e6e5037ff0b7e958b2403fcaf92132581db9e8de07",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/cpu_tests.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/amp_diagnostic_repair_v1_20261102/resume_science_v1/cpu_tests.py",
+    "kind": "source",
+    "source_sha256": "f11ba56de30ad67b0e5c4d7d95b3e0bc63cb4ec1a3537e5da4edad88fe6f9920",
+    "size": 9769,
+    "public_sha256": "f11ba56de30ad67b0e5c4d7d95b3e0bc63cb4ec1a3537e5da4edad88fe6f9920",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/common.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/common.py",
+    "kind": "source",
+    "source_sha256": "4dff5e9d5c0bcfbe0fd893aaed97a8c8504e5565a43c0197ae500297366f579f",
+    "size": 3663,
+    "public_sha256": "0682bdd8371e491017f7beb473255cc01d1fc1d42f98e555de2ec2a2f41515f0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/infer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/infer.py",
+    "kind": "source",
+    "source_sha256": "1d6de769141bc5f20801ff29337b4c3e0434e697a8801bf739d737c5f3d3d3a0",
+    "size": 7455,
+    "public_sha256": "1d6de769141bc5f20801ff29337b4c3e0434e697a8801bf739d737c5f3d3d3a0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/analyze.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/analyze.py",
+    "kind": "source",
+    "source_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "size": 6578,
+    "public_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/controller.py",
+    "kind": "source",
+    "source_sha256": "ac8b1ea8dfe98b5ff31830104b27e604045f7ad24761600e03bf3428237aafb4",
+    "size": 5456,
+    "public_sha256": "ac8b1ea8dfe98b5ff31830104b27e604045f7ad24761600e03bf3428237aafb4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/cpu_review.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_science100_v1_20261101/terminal_evaluation_20261103/cpu_review.py",
+    "kind": "source",
+    "source_sha256": "3b56f9c6471ed698181827dd235ae54b3b772609f70603c52c7d1b8ae0f61a7f",
+    "size": 4287,
+    "public_sha256": "3b56f9c6471ed698181827dd235ae54b3b772609f70603c52c7d1b8ae0f61a7f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/geometry.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/geometry.py",
+    "kind": "source",
+    "source_sha256": "30b6957b9996a575fca4c3e31d3eb68313772661633e91cb3c99b21c67bc96ee",
+    "size": 4753,
+    "public_sha256": "99de746c1bcb21b46423169cef8c925d2628b3a614953806bf4af35c572fcd28",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/aux_loss.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/aux_loss.py",
+    "kind": "source",
+    "source_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "size": 3801,
+    "public_sha256": "e0716807ee1176cf31ab028f95302ca66143333e5239d437797847529b1de30e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/selection.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/selection.py",
+    "kind": "source",
+    "source_sha256": "a81fb058c23cc6132e4d00b5fb71e584be07510910603f8ce8d61d1c67bfdc61",
+    "size": 712,
+    "public_sha256": "a81fb058c23cc6132e4d00b5fb71e584be07510910603f8ce8d61d1c67bfdc61",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/sidecar.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/sidecar.py",
+    "kind": "source",
+    "source_sha256": "ba5ef0103dc034dd40be0387cde14d0373a6808e973d91d238578cdfbf22fee7",
+    "size": 3108,
+    "public_sha256": "ba5ef0103dc034dd40be0387cde14d0373a6808e973d91d238578cdfbf22fee7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/nl_observer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/nl_observer.py",
+    "kind": "source",
+    "source_sha256": "b394bdd55eeb10053d72e0bb7932eb3d11cee0f6e852239b893529b0a47ada46",
+    "size": 5393,
+    "public_sha256": "b394bdd55eeb10053d72e0bb7932eb3d11cee0f6e852239b893529b0a47ada46",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/train.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/train.py",
+    "kind": "source",
+    "source_sha256": "855bfb988db7194ea23cdd0091871f147cc2b1f72b0583b1279d8d21d843b3c5",
+    "size": 8352,
+    "public_sha256": "855bfb988db7194ea23cdd0091871f147cc2b1f72b0583b1279d8d21d843b3c5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/infer.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/infer.py",
+    "kind": "source",
+    "source_sha256": "59c603593330f34e35edfa81d373ff230752df6da6fb20cb2133fbe06c23f4c2",
+    "size": 7668,
+    "public_sha256": "59c603593330f34e35edfa81d373ff230752df6da6fb20cb2133fbe06c23f4c2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/analyze.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/analyze.py",
+    "kind": "source",
+    "source_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "size": 6578,
+    "public_sha256": "d725fc50578c7632578622ab53a7de1aecfa07494221cbedec02dda152786458",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/common.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/common.py",
+    "kind": "source",
+    "source_sha256": "6ed28de2c8cedd5dbf7018615bffd5dda557c3eae99b52738e62bfb1c9f2ba2e",
+    "size": 5266,
+    "public_sha256": "aed94c1b661a3e40cd858a38ddc64dabe28e5e7220409f2b503c00c947ae8825",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/controller.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/controller.py",
+    "kind": "source",
+    "source_sha256": "4a257df3c6257ae119f9999aa04a546c74461ac4360754ca91a5b3624643f9ca",
+    "size": 8101,
+    "public_sha256": "4a257df3c6257ae119f9999aa04a546c74461ac4360754ca91a5b3624643f9ca",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/cpu_checks.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/cpu_checks.py",
+    "kind": "source",
+    "source_sha256": "fdd3e100f02624dae74aae4c987e7f1d92a88f543c469b2a4a0d040b0b71764a",
+    "size": 5042,
+    "public_sha256": "9f840fc389cd747fdebcdc1121b0f15ffc58b52c07c7e2f68f8ac89796edfe16",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/queue_handoff_guard.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/queue_handoff_guard.py",
+    "kind": "source",
+    "source_sha256": "0d90718d9ea17ff42e0ab77df4375b20b838935d09215ef830a11ddb8e989add",
+    "size": 6524,
+    "public_sha256": "0d90718d9ea17ff42e0ab77df4375b20b838935d09215ef830a11ddb8e989add",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/queue_handoff_cpu.py",
+    "path": "research_branches/nnunet2d_20261020/nl_absolute_ce_parallel_gpu1_20261101/queue_handoff_cpu.py",
+    "kind": "source",
+    "source_sha256": "6184b70b0ea6169feb3e5adfe5daf3156280422e293a67261ab628964a67114c",
+    "size": 2704,
+    "public_sha256": "6184b70b0ea6169feb3e5adfe5daf3156280422e293a67261ab628964a67114c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/build_scse.py",
+    "path": "research_branches/scse_single_module_20261026/build_scse.py",
+    "kind": "source",
+    "source_sha256": "c44a60c9530adf0fec54aee7dc4478fd262036cd4a6e32a7b07891baf0e717d9",
+    "size": 12169,
+    "public_sha256": "5f8a3f16bf9746b329d132d562739a007333d9488568738199af39d2e5080cb2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_gate.py",
+    "path": "research_branches/scse_single_module_20261026/scse_gate.py",
+    "kind": "source",
+    "source_sha256": "df325f20128a3d3e63804eb799c335d1e9d7eb7bbbd66ddba5c4324481aad26b",
+    "size": 5134,
+    "public_sha256": "d75ce204de234610d6474de6b5181ab4b219cff73cae6e9b8eb6a77f7b56b36c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_model.py",
+    "path": "research_branches/scse_single_module_20261026/scse_model.py",
+    "kind": "source",
+    "source_sha256": "4e4e880a72f82eb2df8b5416d1d3266b80d67d20388bbd40f47f1df50b377f72",
+    "size": 2412,
+    "public_sha256": "4e4e880a72f82eb2df8b5416d1d3266b80d67d20388bbd40f47f1df50b377f72",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_worker.py",
+    "path": "research_branches/scse_single_module_20261026/scse_worker.py",
+    "kind": "source",
+    "source_sha256": "67b044b90fd326dc7473f8f990e585a0c68403fb1ff7f59723aecd035ecd741a",
+    "size": 8730,
+    "public_sha256": "67b044b90fd326dc7473f8f990e585a0c68403fb1ff7f59723aecd035ecd741a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_controller.py",
+    "path": "research_branches/scse_single_module_20261026/scse_controller.py",
+    "kind": "source",
+    "source_sha256": "bbc1b4685040809e509bfd91819922bcb43098aa4407b490d3ed1f32355cc17c",
+    "size": 10880,
+    "public_sha256": "bbc1b4685040809e509bfd91819922bcb43098aa4407b490d3ed1f32355cc17c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/test_scse.py",
+    "path": "research_branches/scse_single_module_20261026/test_scse.py",
+    "kind": "source",
+    "source_sha256": "97f4e8ddd69894cccaf18f0fdbee90a8083e4a21004e8c18ba91bbc78ebe2b11",
+    "size": 6354,
+    "public_sha256": "97f4e8ddd69894cccaf18f0fdbee90a8083e4a21004e8c18ba91bbc78ebe2b11",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/cpu_preflight.py",
+    "path": "research_branches/scse_single_module_20261026/cpu_preflight.py",
+    "kind": "source",
+    "source_sha256": "832bb4fd9a8cf05d983b395a99f6c8f34a18e84b032e528028d02dd42dc82a07",
+    "size": 4981,
+    "public_sha256": "832bb4fd9a8cf05d983b395a99f6c8f34a18e84b032e528028d02dd42dc82a07",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_core.py",
+    "path": "research_branches/scse_single_module_20261026/scse_core.py",
+    "kind": "source",
+    "source_sha256": "b83cae6e048825b0e428faa99c0c6a49a1dbb06d8accf8b73106f5b79295b2b2",
+    "size": 22231,
+    "public_sha256": "b83cae6e048825b0e428faa99c0c6a49a1dbb06d8accf8b73106f5b79295b2b2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_evaluation.py",
+    "path": "research_branches/scse_single_module_20261026/scse_evaluation.py",
+    "kind": "source",
+    "source_sha256": "602caa5523dc84cbaf7ec19bb6fc62e1ffab390935ac3447f0c12e1f202f4d34",
+    "size": 9853,
+    "public_sha256": "602caa5523dc84cbaf7ec19bb6fc62e1ffab390935ac3447f0c12e1f202f4d34",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/research_branches/scse_single_module_20261026/scse_analysis.py",
+    "path": "research_branches/scse_single_module_20261026/scse_analysis.py",
+    "kind": "source",
+    "source_sha256": "c20edba25d5f8c368da7376cceb917cc5896610a9b4524b07c479deab242cec3",
+    "size": 5362,
+    "public_sha256": "c20edba25d5f8c368da7376cceb917cc5896610a9b4524b07c479deab242cec3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_batch_study.py",
+    "path": "tests/test_batch_study.py",
+    "kind": "source",
+    "source_sha256": "dfe54f17375ba46c7829ce6d9aa8650126d9de0e0e8f6c60db1d39b41ebe06e2",
+    "size": 2373,
+    "public_sha256": "dfe54f17375ba46c7829ce6d9aa8650126d9de0e0e8f6c60db1d39b41ebe06e2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_data_contract.py",
+    "path": "tests/test_data_contract.py",
+    "kind": "source",
+    "source_sha256": "35401f87293580cc3b741662953904bd657a0ef57f2065af7be7a1828f69e8f9",
+    "size": 4165,
+    "public_sha256": "35401f87293580cc3b741662953904bd657a0ef57f2065af7be7a1828f69e8f9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_m0.py",
+    "path": "tests/test_m0.py",
+    "kind": "source",
+    "source_sha256": "ee6faddca6d41c07a0540dd4dd57f059b8c2dad458196716174ba7a90c8c3a68",
+    "size": 3820,
+    "public_sha256": "ee6faddca6d41c07a0540dd4dd57f059b8c2dad458196716174ba7a90c8c3a68",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_m1_pretrial.py",
+    "path": "tests/test_m1_pretrial.py",
+    "kind": "source",
+    "source_sha256": "422bbb9e0a53c514cf2a76a3f491aa369c9211b485e37575b122780d143191dd",
+    "size": 6153,
+    "public_sha256": "422bbb9e0a53c514cf2a76a3f491aa369c9211b485e37575b122780d143191dd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_prefetch.py",
+    "path": "tests/test_prefetch.py",
+    "kind": "source",
+    "source_sha256": "25c5e138a0411adf195cd88edf150f0f97bf7060a13ff9039aa3ebf2e5f85784",
+    "size": 1632,
+    "public_sha256": "25c5e138a0411adf195cd88edf150f0f97bf7060a13ff9039aa3ebf2e5f85784",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_release.py",
+    "path": "tests/test_release.py",
+    "kind": "source",
+    "source_sha256": "b431a6eab861502784a1743ce10e35fb653439e7c1d4c1c7eaf82581e3b239b8",
+    "size": 4434,
+    "public_sha256": "d0d7cff4045b0fb9e4f1b4140b824362d2b1ff68c3f4865ead77a2b203f2f6f1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_t0.py",
+    "path": "tests/test_maples_t0.py",
+    "kind": "source",
+    "source_sha256": "0f046f4ee4a2105ba7e849e7dc7498023b0ba99e1444690ffd743414c743263b",
+    "size": 2347,
+    "public_sha256": "0f046f4ee4a2105ba7e849e7dc7498023b0ba99e1444690ffd743414c743263b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_evaluation.py",
+    "path": "tests/test_maples_evaluation.py",
+    "kind": "source",
+    "source_sha256": "b2310909e88971315c12a7d4188d978983fc9fb7a0be81e40874c8d96d741334",
+    "size": 4353,
+    "public_sha256": "b2310909e88971315c12a7d4188d978983fc9fb7a0be81e40874c8d96d741334",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_protocol.py",
+    "path": "tests/test_maples_protocol.py",
+    "kind": "source",
+    "source_sha256": "2a7da119b08c8f6780323d5ed8abc1cfd82cbb2c3b7f807bf44839b93fe636f4",
+    "size": 1874,
+    "public_sha256": "2a7da119b08c8f6780323d5ed8abc1cfd82cbb2c3b7f807bf44839b93fe636f4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_calibration.py",
+    "path": "tests/test_maples_calibration.py",
+    "kind": "source",
+    "source_sha256": "c7ce8c05014e2f6522d27468562d564992c064b49f08789d81517e516307c55d",
+    "size": 3132,
+    "public_sha256": "c7ce8c05014e2f6522d27468562d564992c064b49f08789d81517e516307c55d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_reliability.py",
+    "path": "tests/test_maples_reliability.py",
+    "kind": "source",
+    "source_sha256": "a8ac42ad17ac5ce8bf9b6bcf12a9e69d0c5ddb31fbf89a588e24cff6e9453acb",
+    "size": 2328,
+    "public_sha256": "a8ac42ad17ac5ce8bf9b6bcf12a9e69d0c5ddb31fbf89a588e24cff6e9453acb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_core.py",
+    "path": "tests/test_maples_core.py",
+    "kind": "source",
+    "source_sha256": "875acc0d7dd6413a559f59cc2418c5a7da7c86671ccb26c79d9324990243a3fd",
+    "size": 3729,
+    "public_sha256": "875acc0d7dd6413a559f59cc2418c5a7da7c86671ccb26c79d9324990243a3fd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_weight_ablation.py",
+    "path": "tests/test_maples_weight_ablation.py",
+    "kind": "source",
+    "source_sha256": "d9bcdda08eb04685205fed3165a182f756538088c67ccd9cb3c330ea78afded9",
+    "size": 2879,
+    "public_sha256": "d9bcdda08eb04685205fed3165a182f756538088c67ccd9cb3c330ea78afded9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_class_split.py",
+    "path": "tests/test_maples_class_split.py",
+    "kind": "source",
+    "source_sha256": "27ccfb194d713556031eeaac53b211f0e2214038e9fc1d4519c84520aa47d210",
+    "size": 5637,
+    "public_sha256": "27ccfb194d713556031eeaac53b211f0e2214038e9fc1d4519c84520aa47d210",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_budget_extension.py",
+    "path": "tests/test_maples_budget_extension.py",
+    "kind": "source",
+    "source_sha256": "cbdd475773bf39bbd9e323ac35762031a26e5762e96f86f4e5e4882d8fa9245b",
+    "size": 2772,
+    "public_sha256": "cbdd475773bf39bbd9e323ac35762031a26e5762e96f86f4e5e4882d8fa9245b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_thin_skeleton_bce.py",
+    "path": "tests/test_maples_thin_skeleton_bce.py",
+    "kind": "source",
+    "source_sha256": "37588ba5816ed3d8533076e0b0d1a9d6fefeba1e92ec35ce61cae90fcade292a",
+    "size": 1387,
+    "public_sha256": "37588ba5816ed3d8533076e0b0d1a9d6fefeba1e92ec35ce61cae90fcade292a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_branch_bce.py",
+    "path": "tests/test_maples_branch_bce.py",
+    "kind": "source",
+    "source_sha256": "6a4e976cc476f706d461aea87ea6a3a5dd4867dc50e32730116fef0ebd35441c",
+    "size": 8679,
+    "public_sha256": "6a4e976cc476f706d461aea87ea6a3a5dd4867dc50e32730116fef0ebd35441c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g1_entry.py",
+    "path": "tests/test_maples_g1_entry.py",
+    "kind": "source",
+    "source_sha256": "418af05e37933ebdbb979e9227e9ce5368bbc29a2f5dd380706219e33484ddd5",
+    "size": 17663,
+    "public_sha256": "418af05e37933ebdbb979e9227e9ce5368bbc29a2f5dd380706219e33484ddd5",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g1_safety.py",
+    "path": "tests/test_maples_g1_safety.py",
+    "kind": "source",
+    "source_sha256": "44009c7af4e2cb3f91291d92748018eb6de2b59df2be4d393e80746cfa6a1bae",
+    "size": 9037,
+    "public_sha256": "44009c7af4e2cb3f91291d92748018eb6de2b59df2be4d393e80746cfa6a1bae",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g1_diagnostics.py",
+    "path": "tests/test_maples_g1_diagnostics.py",
+    "kind": "source",
+    "source_sha256": "52a40e1fb3736101632dea06b14de0ed2671898d205f723f67c91a6d580aeb09",
+    "size": 3224,
+    "public_sha256": "52a40e1fb3736101632dea06b14de0ed2671898d205f723f67c91a6d580aeb09",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g1_runtime.py",
+    "path": "tests/test_maples_g1_runtime.py",
+    "kind": "source",
+    "source_sha256": "b073571063dfc13cabfa0a0f48e7b8e1522bad1f128cdcf993aea1d87bfb3a45",
+    "size": 9516,
+    "public_sha256": "b073571063dfc13cabfa0a0f48e7b8e1522bad1f128cdcf993aea1d87bfb3a45",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g2_engineering.py",
+    "path": "tests/test_maples_g2_engineering.py",
+    "kind": "source",
+    "source_sha256": "16f87f327c047e19a94bd1b336b0eb2f71caec1f322b5f69191d80a0a11bb70a",
+    "size": 12797,
+    "public_sha256": "16f87f327c047e19a94bd1b336b0eb2f71caec1f322b5f69191d80a0a11bb70a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g2_repaired.py",
+    "path": "tests/test_maples_g2_repaired.py",
+    "kind": "source",
+    "source_sha256": "5351c9d5bb683fbed32b7ebe855f33795ad321908e3aa97c7f5d04b51759b9bf",
+    "size": 13875,
+    "public_sha256": "5351c9d5bb683fbed32b7ebe855f33795ad321908e3aa97c7f5d04b51759b9bf",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_g2_v4.py",
+    "path": "tests/test_maples_g2_v4.py",
+    "kind": "source",
+    "source_sha256": "9549b65e5b4af9dea6a3860f84ea890ba8ddb9941ee4affd722805b70839d7f7",
+    "size": 11992,
+    "public_sha256": "9549b65e5b4af9dea6a3860f84ea890ba8ddb9941ee4affd722805b70839d7f7",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_branch_science.py",
+    "path": "tests/test_maples_branch_science.py",
+    "kind": "source",
+    "source_sha256": "3b84799afd436fbfb4f02a44baf918ddd3440c49cef9f7a254681f1bb03e80b1",
+    "size": 36657,
+    "public_sha256": "024b29c9c0fdcca4f5ed2ae2836c267fce32acf12ce1fbdf963f7da48c602467",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_soft_cldice.py",
+    "path": "tests/test_maples_soft_cldice.py",
+    "kind": "source",
+    "source_sha256": "0c8b0695115a74c50b4a0706a6b4be23594ff38cb4daab97286651963dcaae2b",
+    "size": 7494,
+    "public_sha256": "0c8b0695115a74c50b4a0706a6b4be23594ff38cb4daab97286651963dcaae2b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_soft_cldice_gpu_diag.py",
+    "path": "tests/test_maples_soft_cldice_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "d1a2fe6d47f4db2977b518afbe3e2a902800c248e3e10fc3d315acfb94bdd5fa",
+    "size": 9987,
+    "public_sha256": "d1a2fe6d47f4db2977b518afbe3e2a902800c248e3e10fc3d315acfb94bdd5fa",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_soft_cldice_engineering.py",
+    "path": "tests/test_maples_soft_cldice_engineering.py",
+    "kind": "source",
+    "source_sha256": "969716aecd0763cf4d9f5eae9beb7b3557bc1f4b11fdc5099aab0a8ae829f0b9",
+    "size": 6843,
+    "public_sha256": "969716aecd0763cf4d9f5eae9beb7b3557bc1f4b11fdc5099aab0a8ae829f0b9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_soft_cldice_science.py",
+    "path": "tests/test_maples_soft_cldice_science.py",
+    "kind": "source",
+    "source_sha256": "865d2aa1d1ae4fed1135cc99ffe61a3837f02bc11e69205e00fe165ae8e0ccb7",
+    "size": 14409,
+    "public_sha256": "d60bbf6ad9b887c98ff3ebe04fbc43a127eeac345debe6db9d31c0bd12a0000f",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_focal_dice.py",
+    "path": "tests/test_maples_focal_dice.py",
+    "kind": "source",
+    "source_sha256": "340e4995d42c580984caf4ad64e40d780a204bfa35b4c88f00a2b81204c47791",
+    "size": 7400,
+    "public_sha256": "340e4995d42c580984caf4ad64e40d780a204bfa35b4c88f00a2b81204c47791",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_focal_dice_gpu_diag.py",
+    "path": "tests/test_maples_focal_dice_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "d71b727b9fe1a5076d07ca33f8066ccfbf9596423f30a81114f3a0662c74a987",
+    "size": 10655,
+    "public_sha256": "d71b727b9fe1a5076d07ca33f8066ccfbf9596423f30a81114f3a0662c74a987",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_focal_dice_engineering.py",
+    "path": "tests/test_maples_focal_dice_engineering.py",
+    "kind": "source",
+    "source_sha256": "70f83bcbfcb1506c3941ffeafc91befcda8b76c63d2235dd01713972567d4c7c",
+    "size": 14148,
+    "public_sha256": "70f83bcbfcb1506c3941ffeafc91befcda8b76c63d2235dd01713972567d4c7c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_focal_dice_science.py",
+    "path": "tests/test_maples_focal_dice_science.py",
+    "kind": "source",
+    "source_sha256": "e45f8a5607c6e19563e46b72028a6306350dd0d8df6d75d3ac4e882fab8a2f7b",
+    "size": 18515,
+    "public_sha256": "bacec5df8a4004e0b23b55355f7312eda474dfdad371074b816a34a2f79e443b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_ufl.py",
+    "path": "tests/test_maples_ufl.py",
+    "kind": "source",
+    "source_sha256": "ceb932d613b3857f3c7cd4990e51d70dcc7ddf50116dbedb92ee1372bb961368",
+    "size": 6397,
+    "public_sha256": "ceb932d613b3857f3c7cd4990e51d70dcc7ddf50116dbedb92ee1372bb961368",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_ufl_engineering.py",
+    "path": "tests/test_maples_ufl_engineering.py",
+    "kind": "source",
+    "source_sha256": "22e5e2a7d1dd1632ee5ccb9078b913a2041db038675791150a134f91b012996a",
+    "size": 14435,
+    "public_sha256": "22e5e2a7d1dd1632ee5ccb9078b913a2041db038675791150a134f91b012996a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_ufl_gpu_diag.py",
+    "path": "tests/test_maples_ufl_gpu_diag.py",
+    "kind": "source",
+    "source_sha256": "4539db710a98f336a94439072a0746564beb73e8854fdd3ff7adfa1632bfa98d",
+    "size": 9980,
+    "public_sha256": "4539db710a98f336a94439072a0746564beb73e8854fdd3ff7adfa1632bfa98d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_ufl_science.py",
+    "path": "tests/test_maples_ufl_science.py",
+    "kind": "source",
+    "source_sha256": "4e63a650afc3a82fc301b518c970a18c868e1ea32b8c32a56c6ba63cd8c51442",
+    "size": 18435,
+    "public_sha256": "bbc2296f05fb388e72781f1adedbb3ef447bb9fb6ff0987618cb9487102a357b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/tests/test_maples_stratified_science.py",
+    "path": "tests/test_maples_stratified_science.py",
+    "kind": "source",
+    "source_sha256": "d62eb25dedc07a86d812af5f0e813f8379d9ce102dddd6255e66cb026566c02f",
+    "size": 18659,
+    "public_sha256": "d90642e10d89b56ff3096dc6536bcaaf18bc066cec6b5d31e4de31fcfa9f8e71",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/configs/batch_study_v1.json",
+    "path": "configs/batch_study_v1.json",
+    "kind": "configuration",
+    "source_sha256": "f18719106e6b3079994f3ddda84dd307bdf5fac7be0003f46df059d704bc5e66",
+    "size": 1347,
+    "public_sha256": "f18719106e6b3079994f3ddda84dd307bdf5fac7be0003f46df059d704bc5e66",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/configs/data_trial_v1.json",
+    "path": "configs/data_trial_v1.json",
+    "kind": "configuration",
+    "source_sha256": "4d9c5371bd6ce5712e250ecd5113c53bd86f7bfb024d9edf476f9da803c6dc3e",
+    "size": 1028,
+    "public_sha256": "4d9c5371bd6ce5712e250ecd5113c53bd86f7bfb024d9edf476f9da803c6dc3e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/configs/development_v1.json",
+    "path": "configs/development_v1.json",
+    "kind": "configuration",
+    "source_sha256": "f6eaba4ea4be4622974dd6eeb7baf2c79c1181e738a59e0fd46fe56b0ed749eb",
+    "size": 1525,
+    "public_sha256": "f6eaba4ea4be4622974dd6eeb7baf2c79c1181e738a59e0fd46fe56b0ed749eb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/configs/m0_pilot_v1.json",
+    "path": "configs/m0_pilot_v1.json",
+    "kind": "configuration",
+    "source_sha256": "d0e40ae19f298bf9cff042e3705159d0892fe3eb8889c212b783ba8be9da609b",
+    "size": 1056,
+    "public_sha256": "d0e40ae19f298bf9cff042e3705159d0892fe3eb8889c212b783ba8be9da609b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/configs/m1_pretrial_v1.json",
+    "path": "configs/m1_pretrial_v1.json",
+    "kind": "configuration",
+    "source_sha256": "c6f31a81d9fbfa19439db3ed965368f4cc94991c3ea66decba06844a1542b1f6",
+    "size": 865,
+    "public_sha256": "c6f31a81d9fbfa19439db3ed965368f4cc94991c3ea66decba06844a1542b1f6",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/environment/requirements-direct.txt",
+    "path": "environment/requirements-direct.txt",
+    "kind": "configuration",
+    "source_sha256": "b779a8581e66a1b7dfd7bde3c28bdfd408c727c2df45671bcc9d3c608d0b99ef",
+    "size": 215,
+    "public_sha256": "b779a8581e66a1b7dfd7bde3c28bdfd408c727c2df45671bcc9d3c608d0b99ef",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/environment/requirements-runtime.lock.txt",
+    "path": "environment/requirements-runtime.lock.txt",
+    "kind": "configuration",
+    "source_sha256": "2b900d3c894cd85d9152d3b3f0ad7dd43422fb1aa996e621f416d9dd63179253",
+    "size": 1034,
+    "public_sha256": "2b900d3c894cd85d9152d3b3f0ad7dd43422fb1aa996e621f416d9dd63179253",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/environment/requirements-torch.lock.txt",
+    "path": "environment/requirements-torch.lock.txt",
+    "kind": "configuration",
+    "source_sha256": "678691547dc83b5ecbb7bab0becf918cb972138f56feebcdf3f6111682243752",
+    "size": 125,
+    "public_sha256": "678691547dc83b5ecbb7bab0becf918cb972138f56feebcdf3f6111682243752",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/environment/installed-packages.json",
+    "path": "environment/installed-packages.json",
+    "kind": "configuration",
+    "source_sha256": "43c83c29db6333720fa18623b3a87a1a304c0832e0caca21c1828f3e878586ce",
+    "size": 2797,
+    "public_sha256": "43c83c29db6333720fa18623b3a87a1a304c0832e0caca21c1828f3e878586ce",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_core_protocol_20261016/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_core_protocol_20261016/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+    "size": 27619,
+    "public_sha256": "eb4eedf1685ec5dc2c4e5df3aa1ef0920927f310b021912807ec2dc85fbeffc2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_weight_ablation_20261017/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_weight_ablation_20261017/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "a2de7e7bb0c3bee647bc9ab8a7e41ffc0d5dc1a0433d29d0a34b0e8986d1f4b7",
+    "size": 31223,
+    "public_sha256": "69a2ccac58ef3b8a679f1f9ab4f7b63d3b121a8a91227b8408b6f953e71062e2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_weight_ablation_20261017/review_evidence.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_weight_ablation_20261017/review_evidence.json",
+    "kind": "protocol",
+    "source_sha256": "945b3e12b11a3f365baf09706503a958659ea00f9bdbdb14d63f5eb74b25e7dc",
+    "size": 74072,
+    "public_sha256": "bb6fcbab3b68abb84f925f9812f6921b5b6365f4e492975a5f361acb4d40062e",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_class_split_20261018/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_class_split_20261018/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "b486512cd3c3d9605fdb8f498b4e62c46c0666adcdf7544d0c7e901c8344775a",
+    "size": 33471,
+    "public_sha256": "60176c4cdab6d5ce1295d77190e5469c4cd10c35b0b1de44c9afed9d67c6501a",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_budget_extension_20261018/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_budget_extension_20261018/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "ca415da2f467698748a429c04b5d064369274a9efca5b4c8be293f24b22cdf63",
+    "size": 27405,
+    "public_sha256": "378d324e0745b63650ab7bac53d753c7126e3a0f40af9fd3f403dce0758b19be",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/t0_tw_budget_extension_20261018/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_tw_budget_extension_20261018/report.md",
+    "kind": "protocol",
+    "source_sha256": "2c0ca69c6692cec59ce8c0b2d89c3faf22ab1dded750db4d5334e71d57135302",
+    "size": 4171,
+    "public_sha256": "87eae880c7a52cc668806848e3b8c6a998723ab22e7588d941cdc63f05d35197",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/plan_b_error_analysis_20261019/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/plan_b_error_analysis_20261019/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "5822922a71e2f05ccc15fb68bde4a370c14738ebca5757ab6a93811b744b0b26",
+    "size": 37037,
+    "public_sha256": "fcf4b848e771603a3a0b72f720ae9e91712dcd7848d8433284cb20d3a38ff2aa",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/plan_b_error_analysis_20261019/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/plan_b_error_analysis_20261019/report.md",
+    "kind": "protocol",
+    "source_sha256": "7b5df87cf2bd0ae689148471b8d6ad7fd6443acd5843b7ca6f62d3046ec7dc5e",
+    "size": 4993,
+    "public_sha256": "da8dd85f0e9c4dedd2d55c568e0c611cefabbd297b26fc14d2ed07126ae2c0ed",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "429fe51a8117df85116e8409ee57e77bd3a949c2773fa6bd2cfc2b92df8aa509",
+    "size": 33706,
+    "public_sha256": "826e76edc0312c171f676516a343df26fd71a23b616fc42ccfcf0bad0f22b5cc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/train_manifest.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/train_manifest.json",
+    "kind": "protocol",
+    "source_sha256": "b76145167581be445ff2d5271a9f54672029253256dfb59b32419355855258fe",
+    "size": 89460,
+    "public_sha256": "e6351135de4c00dfcfe4554825b9f6f5a4caf2db776fa1b449b9ef5ec8b9f298",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/dev_reference_manifest.json",
+    "kind": "protocol",
+    "source_sha256": "739d78606fabf1667dacc8234e50f49257a83c579c69aee7d0b4a7a35c267d93",
+    "size": 57555,
+    "public_sha256": "381a0e3ab3aa8be1c8e2a40b397cc8c1a8c67e30dbc44abe89b47728c70cc5b9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/report.md",
+    "kind": "protocol",
+    "source_sha256": "ea74e972b7264d14a4872772dc5be7b0884f77a273f9f882cfc551271f5c4726",
+    "size": 7401,
+    "public_sha256": "7d18254f4891414a1802208b4e5458656f4c6599458bec44a2e5cf883df0ae46",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/AUTHORIZATION.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/AUTHORIZATION.md",
+    "kind": "protocol",
+    "source_sha256": "4ade23f3e561190c580080da22dd19fee2bec16d63192c381f68dd520973b9e9",
+    "size": 984,
+    "public_sha256": "50bb2a76759731ad0f65c60dd5241259a52ff24feeb203235d0195383c14f1ac",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/prior_cpu_analysis_summary.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/prior_cpu_analysis_summary.json",
+    "kind": "protocol",
+    "source_sha256": "5314e78c9d7563607786f270a46bf0ea266f9024caa359cd47878840b814bfdf",
+    "size": 73785,
+    "public_sha256": "5314e78c9d7563607786f270a46bf0ea266f9024caa359cd47878840b814bfdf",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/prior_confidence_analysis_summary.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/prior_confidence_analysis_summary.json",
+    "kind": "protocol",
+    "source_sha256": "db25201d4da2a1af382f86fc0bdb44dccf857caaa8f0a604e458129e58b24b34",
+    "size": 4790,
+    "public_sha256": "db25201d4da2a1af382f86fc0bdb44dccf857caaa8f0a604e458129e58b24b34",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/review_spec.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/review_spec.json",
+    "kind": "protocol",
+    "source_sha256": "2176e0351c193d9be7fe4198075b3c1f05a0d1e88bc30af15cfc7b3c75fe6202",
+    "size": 9690,
+    "public_sha256": "a0e385439dd0a81573d32352559485e8dc1e19d0bd6957e2cb100ba3280d19cc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/report.md",
+    "kind": "protocol",
+    "source_sha256": "71cf655a5f5ea8f66a455e7209ad6eb8e5facb5cb6ef769126341833afd4f716",
+    "size": 6848,
+    "public_sha256": "0fffc912f41e08883d30060d818c945eb385130b610793fc473a0c70db782679",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/gates_amendment_v2.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/gates_amendment_v2.json",
+    "kind": "protocol",
+    "source_sha256": "2867b31f4df2b6098af622ab64b72cfb0f5caecb0d00723a7b121f93a2874b5d",
+    "size": 10430,
+    "public_sha256": "57557069236a26e201de9eb656b2ed32cb0263bee12f2964009d578df43eb388",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATES_AMENDMENT_V2.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATES_AMENDMENT_V2.md",
+    "kind": "protocol",
+    "source_sha256": "b5326b0da92a73bb4b5a092bf5c54502e7144aec058582ae664361fe17593beb",
+    "size": 7475,
+    "public_sha256": "3c718a59c98fcb2cecf671064d1fdb33b995b8ea0b579c0c470d937dc5239f5d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATE_REASSESSMENT_PROPOSAL.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATE_REASSESSMENT_PROPOSAL.md",
+    "kind": "protocol",
+    "source_sha256": "89b5b23ec3a3fb647782210740c4d6b7f1f575b4ceb567ba1070e83f6fc3a9e9",
+    "size": 11699,
+    "public_sha256": "165096aedc540ddff72e6820583e3f10c7d1b45dd07f853214ccc22d421a7a24",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/gates_amendment_v3.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/gates_amendment_v3.json",
+    "kind": "protocol",
+    "source_sha256": "7333078e1ebafcc169905f32f10e03fa7ef5d503747665afc0e3c16eb2594d0c",
+    "size": 11152,
+    "public_sha256": "16ede97a4f247bbd8e2bf3591a508981f4737d8c0deccb915d37fdefd8d0d2bd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATES_AMENDMENT_V3.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/GATES_AMENDMENT_V3.md",
+    "kind": "protocol",
+    "source_sha256": "b45bf2033ae619d642bc955474ec752678f38b17661b5cb58abb5642150813c0",
+    "size": 8068,
+    "public_sha256": "c99574ea024175d154a360c8af1c0c18be873584abb829373a6a00b9aa491418",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/G2_EXCEPTION_01.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/G2_EXCEPTION_01.md",
+    "kind": "protocol",
+    "source_sha256": "4bb1a6ce22525b2fd541b9d316502d8f8f70fbaf491a9ba47745e2ac25f21700",
+    "size": 5149,
+    "public_sha256": "86cd91ba159315139e797a2c210e38fb40dc22d49eb5f5ad40377f6ed03d7924",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/g2_exception_01.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/g2_exception_01.json",
+    "kind": "protocol",
+    "source_sha256": "d083de28136d82b1c0cdd762afd995efff1ef644eeeff304c4ccce492d731aae",
+    "size": 7032,
+    "public_sha256": "19fa4012341cd529db6fa762f9eb0d474a3434bd9eacc1c9447abfb95653a6e8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/g2_lambda003_revision_v4.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/g2_lambda003_revision_v4.json",
+    "kind": "protocol",
+    "source_sha256": "e8557fe1f59fa2e4a81681a3b6442b273b4a735c366fdcd385ac94be470dc4da",
+    "size": 2840,
+    "public_sha256": "e8557fe1f59fa2e4a81681a3b6442b273b4a735c366fdcd385ac94be470dc4da",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/scientific_b1_b2_2000_v1_20261022.json",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/scientific_b1_b2_2000_v1_20261022.json",
+    "kind": "protocol",
+    "source_sha256": "72fb5a23d11ac1d2750aeb0aa9addf7dfa4f9753bd10ebc21233b7d0b886dfbf",
+    "size": 37878,
+    "public_sha256": "5c9ca8e51f214fdf23881977ad6756ba59801ffa84024d3476883eb99b730031",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/scientific_b1_b2_2000_v1_20261022.md",
+    "path": "docs/research/a7_protocol_archive_20261119/full_fov_thin_skeleton_bce_20261019/branch_review_20261021/scientific_b1_b2_2000_v1_20261022.md",
+    "kind": "protocol",
+    "source_sha256": "a4614fb0852a8a3410d7ed3b0b494d4546a79e966aada2ef99d4fc5e3ab25243",
+    "size": 15887,
+    "public_sha256": "80e388c1d55a152dbd672ed412fc845de436b50fdbf27c9c64435c599f6bb4b4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "4541e03ba04c397764f363322108f6e4bc0246a67dbf7f5af93096a2a7d64983",
+    "size": 16748,
+    "public_sha256": "3dd67787e460f55dce380dc208e62cacc659e63ff7b3edaaea90c1fd8f8e8b7b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/sol_engineering_review.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/sol_engineering_review.json",
+    "kind": "protocol",
+    "source_sha256": "2dae36ae806557b18001a3de41a0ee48c0bd961491f78c31b60049239b353022",
+    "size": 1914,
+    "public_sha256": "2dae36ae806557b18001a3de41a0ee48c0bd961491f78c31b60049239b353022",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/report.md",
+    "kind": "protocol",
+    "source_sha256": "d637bb9f6b7b222361dc9d1e07449a0b9345d141ab3ccaccf7b2290e0157d399",
+    "size": 4620,
+    "public_sha256": "4694854356de20810e1ad312d5bce82db48d09a7c39ab937e742e854ba4d9060",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/prior_trajectory_accounting.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/prior_trajectory_accounting.json",
+    "kind": "protocol",
+    "source_sha256": "08cd9e30677770221493f496483adce7fbe5329db5b70243fc555479b0e32621",
+    "size": 999,
+    "public_sha256": "0c8788a7931769eff119888e4349f198b8087fa0aa0718649b434167b10889e2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/protocol.json",
+    "kind": "protocol",
+    "source_sha256": "6e095d04c29178eea076c6026119f40c2d8d92a41eb52d1612cf2c49732cb975",
+    "size": 17779,
+    "public_sha256": "ef28a4410f7de606d8efc94961af013e6428a9279cc3c017a0d16ea48e4a2366",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/operational_amendment.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/operational_amendment.md",
+    "kind": "protocol",
+    "source_sha256": "a055b013180236b8edd39c36b00d43facf73d5127f9200d87b9599d9c95c5ab4",
+    "size": 1173,
+    "public_sha256": "09a79d527d5f0c0293ca3d7207080bde92231981d785fc366805ca680b02ad82",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/authorization.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/authorization.json",
+    "kind": "protocol",
+    "source_sha256": "cde4f5de8940f5ce6819c729219cb7ab7d433ca4aa1408d276e83bfb3fe52d25",
+    "size": 956,
+    "public_sha256": "cde4f5de8940f5ce6819c729219cb7ab7d433ca4aa1408d276e83bfb3fe52d25",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/sol_prelaunch_review.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/sol_prelaunch_review.json",
+    "kind": "protocol",
+    "source_sha256": "c259b75ff8e4d430902d7278ab5676895e431a320ea51a6cd992470a1ce6f27f",
+    "size": 898,
+    "public_sha256": "79ab03270ef83aee4e89d55828b8ec6737923b83dc94ad65700a66ac40a1198b",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/report.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/report.md",
+    "kind": "protocol",
+    "source_sha256": "f4892a48affc060b615ee5b3a5ab3a58817a49f47d0da17a1f4bc45fb2baf755",
+    "size": 4046,
+    "public_sha256": "b043f231524dfe5e1dc6b964fea0ce7f022424124a9a2ab62fbb877d93072761",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/revision_plan.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/revision_plan.json",
+    "kind": "protocol",
+    "source_sha256": "6aed7cc2a1ebc9118b7f03665b3e418cc09cd742ee56b519c19d91fb8892de18",
+    "size": 4503,
+    "public_sha256": "8c326866c7891619b6dd64be68076713b38d1e1f080378f6abc7550b154837aa",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/next_complete_run_proposal_20261025.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/next_complete_run_proposal_20261025.json",
+    "kind": "protocol",
+    "source_sha256": "af5e61a280ce858777e9400ac6051451ae4bc4ac63bb6547b1f08645c8f0a327",
+    "size": 8667,
+    "public_sha256": "e86564a39ea61651d7afb483b2004e40f436496a291192b1ec00a82fc681d2ae",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/next_complete_run_proposal_20261025.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021/next_complete_run_proposal_20261025.md",
+    "kind": "protocol",
+    "source_sha256": "2e8c694efb33756b23f436ea2a11a5e7bd008e62b9ed108cdb558ccf42fe80e7",
+    "size": 4865,
+    "public_sha256": "b35b1c4e7723f8152d1869092bfa94c3ecdcc5472f5479f62991a1266d4bd0e2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "docs/nnunet2d_feasibility_20261020.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet2d_feasibility_20261020.md",
+    "kind": "protocol",
+    "source_sha256": "b95521e4dbcea28faaa5cef5c3d9c30948767e381a02bd8d58e9dce8e01b00ff",
+    "size": 9349,
+    "public_sha256": "af8d508cbaafbdcceceffe0f28d8339b0cfff9aa5cb7d868f00478875f364232",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "code/retinal-vessel-study/项目全局状态与研究决策.md",
+    "path": "docs/research/a7_protocol_archive_20261119/research_decisions_snapshot.md",
+    "kind": "decision",
+    "source_sha256": "4085ec4e9845bbe8f5318bcc50f2364b70e1b2c1eae0f57cb27aed2956582c13",
+    "size": 256804,
+    "public_sha256": "bf877eb92413c9935bb149eedabffc4071b44ce19292da325ad0329de3b47349",
+    "unchanged_in_base": false
+  },
+  {
+    "source": "code/retinal-vessel-study/STATUS.md",
+    "path": "docs/research/a7_protocol_archive_20261119/status_snapshot.md",
+    "kind": "decision",
+    "source_sha256": "bf5e15fb56e7f447546fe0bb8964861735288bd9e1a0713754d8db2b6d8f51d9",
+    "size": 445489,
+    "public_sha256": "65159c558a3d2f5096fa983f9bb1594384812fc199d286f51989275da0a03eab",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/preprocessed/Dataset501_MAPLES/nnUNetPlans_8GBtarget.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/Dataset501_MAPLES_bdde2aa372_nnUNetPlans_8GBtarget.json",
+    "kind": "protocol",
+    "source_sha256": "26507b98404e6f6855708567d224675805f3d2fd7680df8abd8caf74c7eb1fe9",
+    "size": 7008,
+    "public_sha256": "26507b98404e6f6855708567d224675805f3d2fd7680df8abd8caf74c7eb1fe9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/amp_engineering32_20261025/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/amp_engineering32_20261025_d13673ccc7_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "8e65525ec31a16a384b92a15603baf12562f21002242834fbb59445203d5f661",
+    "size": 4611,
+    "public_sha256": "6e031366a1769865bd000ec7d6e68f72b8e54f72b2eb8e6e286980be32c10828",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v3_amp_20261025/SCIENTIFIC_PROTOCOL.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v3_amp_20261025_5a1554339e_SCIENTIFIC_PROTOCOL.md",
+    "kind": "protocol",
+    "source_sha256": "53d3f75938ec06e74cd52aec02ae02519bbad0af8cdd4b3e98980658b99725db",
+    "size": 2995,
+    "public_sha256": "34448626218a1e421dbc80a48a9f808fe72084ef2a4ee85ec45d6199e97901f3",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v3_amp_20261025/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v3_amp_20261025_da3f2e8e32_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "d73e43eeb4a2a101e5b6df680433c157ca38353d97b2b98e54e25afd353b7755",
+    "size": 22534,
+    "public_sha256": "4a7261ef836681fd9ca074616580a128291083540df4212f613d3f08a8f0cc02",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v4_prefixfix_20261025/SCIENTIFIC_PROTOCOL.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v4_prefixfix_20261025_f932cc972f_SCIENTIFIC_PROTOCOL.md",
+    "kind": "protocol",
+    "source_sha256": "43f2b69804246d27babb3971a5534e7ac21419575222fcddc1c34555e3190018",
+    "size": 3842,
+    "public_sha256": "8b8fdcd5eb883d1182a744d278cc0d3bc5043aeee104fe327278e3acca076353",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v4_prefixfix_20261025/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v4_prefixfix_20261025_2c4b3366c5_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "0e9586b9a443e9b66929f45ab8b618a28ff8ecb25bb6ff1eac6a6fe2e25567c6",
+    "size": 24114,
+    "public_sha256": "b84a8782e069f6ef4f41e5e8c06fc526d7532be3edca245ee584e03c2d2cc31d",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/SCIENTIFIC_PROTOCOL.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v5_resume1000_20261025_27d30e6793_SCIENTIFIC_PROTOCOL.md",
+    "kind": "protocol",
+    "source_sha256": "82a676b1f1a36c5285ed56a9b0a8e03a3a1689e3d8f3bde825a31ab2b2e0b32c",
+    "size": 4770,
+    "public_sha256": "052806262dc7856de4c20f592a1f5b600e13b4674ba8179265fdb89db4a3c8b0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v5_resume1000_20261025/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/scientific_seed2026_100epochs_v5_resume1000_20261025_04133bf741_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "ad0e1ee89e0e8dafe75e8bbf22a67922f3389b437e5f35b9b55f50efbaffe123",
+    "size": 26451,
+    "public_sha256": "c523df529531c00286711aff057cd6b6805ddf07e83a23ce4605cd3f44bafaa8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/SCIENTIFIC_PROTOCOL.md",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/replication_seed2027_2028_100epochs_v1_20261026_9aeea3ecac_SCIENTIFIC_PROTOCOL.md",
+    "kind": "protocol",
+    "source_sha256": "b4157b3010917201a1dce5ab04125e73db4c8111c912e93f601eaf44283d0dc0",
+    "size": 4054,
+    "public_sha256": "e4fa22cf68ec3ac16469d60218559d9ccfe0280ccabf55b7587fbd25b1fa14e2",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/replication_seed2027_2028_100epochs_v1_20261026_a80d01deb7_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "07d3038812dd7afd2216d71f46ec884ab0c7a37370e387e58013be011d73d43e",
+    "size": 1473,
+    "public_sha256": "056caea3a52c32a3655e3b4a39c80d9a845ab6e820dd0200c3285b6a0b9f9ea4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2027/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/seed_2027_68d78aff96_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "5cb0b2b84e27b0cdbfe94b58365c862a77759eee0b8982281eb5de923a1ce957",
+    "size": 22341,
+    "public_sha256": "3135f78c5d65f28f328bf2be71b6a0312d86f1cc69c1c5392cea1d4d4a1786bd",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/replication_seed2027_2028_100epochs_v1_20261026/runs/seed_2028/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/seed_2028_943f5046ab_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "d7745705d058a01fdde86891484f6b0d337a5c928321474b57d2e1ed8a2e1813",
+    "size": 22341,
+    "public_sha256": "ad29a22bd3322ad619d1a1dac0e65154633d3030083bcfc0fbb4b4637a1efea8",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/multiscale_capacity_ablation_v1_20261027/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/multiscale_capacity_ablation_v1_20261027_9f5955bcde_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "8381c416042fffff85e62b469c2384e36e655f72021d3f1afcf97788cc0b6c1b",
+    "size": 11011,
+    "public_sha256": "86fa97e849f5523652fa4aab462ff2d1572c3d57b9cc8a5e3428d9c661994573",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/ENGINEERING_PROTOCOL.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/deep_supervision_ablation_20261028_7ee450872e_ENGINEERING_PROTOCOL.json",
+    "kind": "protocol",
+    "source_sha256": "7730a86f0cd51d752d25b0939bef63429380f79770fb00f4db116afaaa0d77e7",
+    "size": 4674,
+    "public_sha256": "2a9b2753b4be7710897d066b612df5499d42102a96f44c60fe8fa3b3956f8edc",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/engineering_revision_v2/ENGINEERING_PROTOCOL.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/engineering_revision_v2_9781f393e7_ENGINEERING_PROTOCOL.json",
+    "kind": "protocol",
+    "source_sha256": "797c698f356217a4c31ca6ecfee485bd5f5367662008621d6bfd12b6ae540e48",
+    "size": 5908,
+    "public_sha256": "5b2cc6a9739f3d4f41778c64ea14c7918af2f635d47d9de1b062f9233fb3bba1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/science100_v1_bb63b69e70_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3",
+    "size": 10934,
+    "public_sha256": "369e1eb9ed147dbacf78a03789179cb03f5fa903dac16c8e2256a5f0a8f77941",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/d0_probability_fp_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/d0_probability_fp_v1_c8be20534c_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "713cd0b3351e528ce3e9d583c92ee5a4f371bafb38b445d6ea8fa56a4419bbf0",
+    "size": 1699,
+    "public_sha256": "713cd0b3351e528ce3e9d583c92ee5a4f371bafb38b445d6ea8fa56a4419bbf0",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/train_pairing_cpu_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/train_pairing_cpu_v1_a3565c1c41_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "7ea42bdf9263a1a884dc2772805da5440d77f9e06402703bb9f08c44bc987536",
+    "size": 2395,
+    "public_sha256": "7ea42bdf9263a1a884dc2772805da5440d77f9e06402703bb9f08c44bc987536",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/train_pairing_cpu_v2/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/train_pairing_cpu_v2_2ec6f99bc4_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "4eec8c9062b76b348af93768d6f60b2780ec91caef58bff0854e3710e40b5ad6",
+    "size": 3057,
+    "public_sha256": "4eec8c9062b76b348af93768d6f60b2780ec91caef58bff0854e3710e40b5ad6",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v1_20261031/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/nl_absolute_ce_cpu_v1_20261031_3dd970190f_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "8baef44ca204127414370420d7ff64d8a69a98b755bfcbc5e167e89960e39b28",
+    "size": 11528,
+    "public_sha256": "8baef44ca204127414370420d7ff64d8a69a98b755bfcbc5e167e89960e39b28",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/nl_absolute_ce_cpu_v2_alltargets_20261031_a1fcff92ba_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "ab44297abfd51c9111103ca847c7d32dc1b3032e2d6a6f6bfc3678747ebee7b1",
+    "size": 12087,
+    "public_sha256": "ab44297abfd51c9111103ca847c7d32dc1b3032e2d6a6f6bfc3678747ebee7b1",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/engineering_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/engineering_v1_5935e5506c_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "8381f7d88be5e903413826338c5395561e95b672d3c8296a58222c53b969e182",
+    "size": 1054,
+    "public_sha256": "32b8caa7af086a0ca5bcc6374db7d22be9411a159132474cd11d3eba4d9f84c4",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/engineering_v1/repair_v2/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/repair_v2_1b0daf4b7a_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "4f82394be87a71c407891eaea7864c27a38db96ae1dd3d8395fffcb464d27157",
+    "size": 1725,
+    "public_sha256": "06b4c8d6c6dc0b432b0533d6e32967fdad1d7d7ef17415fb1f6b1612c52fdeeb",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/science100_v1_4c2c904285_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "39bec6505a9496f4ae753f5ce84187f931b74f3dad4d7e2da91f451a94f8eef6",
+    "size": 14287,
+    "public_sha256": "a7a4a5f6d4ea55acdd9c40d12cc0e89083a18477fb6ed88812a43be24eda8f57",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/nnunet2d_branch_20261020/deep_supervision_ablation_20261028/science100_v1/analysis/nl_absolute_ce_cpu_v2_alltargets_20261031/science100_v1/parallel_gpu1_v1/protocol.json",
+    "path": "docs/research/a7_protocol_archive_20261119/nnunet_protocols/parallel_gpu1_v1_6326f86484_protocol.json",
+    "kind": "protocol",
+    "source_sha256": "0b574c212662d7332e9959deff4b0a89b2dfa9f0710c98cd836fbe3290735a7d",
+    "size": 15099,
+    "public_sha256": "6538fb411c51ea92231918608c8e868254760ff21dd6d12116bd45590414f8f9",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/a15_2_z0_t0_calibration_20261015/train_config.json",
+    "path": "docs/research/a7_protocol_archive_20261119/t0_inherited_train_config.json",
+    "kind": "protocol",
+    "source_sha256": "59300ee20096b633f1854978846e4e0be34280b487ecedf79d8e9739c0253787",
+    "size": 1577,
+    "public_sha256": "b910cee7928d7c305b566c5c3d6f36724cfef94cd3dbac6d58ddeb3d2b851e5c",
+    "unchanged_in_base": true
+  },
+  {
+    "source": "experiments/full_fov_thin_skeleton_bce_20261019/target_definition_review_v1/review_definition_v2.py",
+    "path": "docs/research/a7_protocol_archive_20261119/target_definition/review_definition_v2.py",
+    "kind": "source",
+    "source_sha256": "9359f5824729a92f09aabf88aa75ecfa83b11d139353e1ea6a45e849f76da6cd",
+    "size": 35857,
+    "public_sha256": "495ce89c1279a94c9a80ad2f084c704953b62334566e30dab95434ebcf872389",
+    "unchanged_in_base": true
+  }
+]

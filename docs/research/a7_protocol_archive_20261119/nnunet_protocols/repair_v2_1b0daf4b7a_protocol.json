@@ -1,0 +1,31 @@
+{
+  "phase": "NL_ENGINEERING_REPAIR_V2",
+  "user_approval": "怎么故障了，修复啊",
+  "approved_scope": "40 diagnostic forwards,128 update attempts,7200 seconds cumulative GPU engineering; no science",
+  "GPU_UUID": "${GPU_UUID}",
+  "limits": {
+    "diagnostics": 40,
+    "updates": 128,
+    "wall_seconds": 7200
+  },
+  "lambda": null,
+  "ratio_stop_gt": 2,
+  "base_clip": 12,
+  "AMP_stop": {
+    "consecutive": 5,
+    "cumulative": 25
+  },
+  "scientific_training_authorized": false,
+  "Test_allowed": false,
+  "diagnostics": "32 fixed nonempty Train batches at seed2027 original initialization; remaining8 edge/smoke checks; no parameters updated",
+  "updates": "N0/zero each16 for2027 and2028=64;NLcont32 versus split16+16=64; all attempts persist, no budget resets",
+  "recovery": "Fixed fixture/model/optimizer/scaler/scheduler/RNG only; native async queues unsupported",
+  "failure": "Stop on nonfinite forward/unscaled diagnostic gradients, ratio>2, unknown/OOM/source mismatch; no automatic lambda adjustment or rerun",
+  "repair": {
+    "only_gradient_measurement": "Base uses unchanged training scale; unweighted auxiliary diagnostic uses128 then divides128. True training total backward/GradScaler unchanged. Stops on remaining nonfinite or ratio>2.",
+    "all_original_checks_retained": "32calibration batches including probe first;8edge checks including probe empty AMP.31+7 newforward+2carried=40 total.128updates unchanged.",
+    "FP32_edge_memory": "CPU saved-tensor offload for fullFP32 diagnostic graph only; no recompute/model extra forward, native training never uses offload.",
+    "no_scientific_loss_change": true,
+    "prior_GPU_wall_seconds": 70.3366763968952
+  }
+}

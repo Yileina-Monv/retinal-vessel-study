@@ -1,0 +1,1416 @@
+{
+  "classification": "post_formal_review_before_exploratory_implementation",
+  "date": "2026-10-17",
+  "formal_review": {
+    "review_recomputed_all_7_metrics": {
+      "near_thin_recall_d1": {
+        "mean": -0.006001371742112483,
+        "ci95": [
+          -0.015260631001371741,
+          0
+        ],
+        "seed_deltas": [
+          -0.013888888888888888,
+          0,
+          -0.004115226337448559
+        ],
+        "seed_sd": 0.007133965727954293,
+        "n": 9
+      },
+      "precision": {
+        "mean": 0.0006048458001502536,
+        "ci95": [
+          0.00016190278005649925,
+          0.0011982904719690373
+        ],
+        "seed_deltas": [
+          -4.203190156518155e-05,
+          0.0006428820115020448,
+          0.0012136872905138976
+        ],
+        "seed_sd": 0.0006287231007124141,
+        "n": 28
+      },
+      "fp_density": {
+        "mean": -0.00012149390255466256,
+        "ci95": [
+          -0.0002495380554324809,
+          -3.545483347412e-05
+        ],
+        "seed_deltas": [
+          -9.431884934832664e-06,
+          -0.00012235726790292195,
+          -0.00023269255482623305
+        ],
+        "seed_sd": 0.00011163283894035235,
+        "n": 28
+      },
+      "far_recall": {
+        "mean": -0.0004053731211476024,
+        "ci95": [
+          -0.0007010705529110179,
+          -0.00017552470291770406
+        ],
+        "seed_deltas": [
+          0.00018635941313378614,
+          -0.0007512507389364843,
+          -0.000651228037640109
+        ],
+        "seed_sd": 0.0005148899681378168,
+        "n": 28
+      },
+      "dice": {
+        "mean": 7.679813742123538e-05,
+        "ci95": [
+          -0.00014439987411762537,
+          0.0003909913707122996
+        ],
+        "seed_deltas": [
+          7.709829914996438e-05,
+          -9.034074463704078e-05,
+          0.00024363685775078255
+        ],
+        "seed_sd": 0.00016698900352112202,
+        "n": 28
+      },
+      "recall": {
+        "mean": -0.00046806437754035295,
+        "ci95": [
+          -0.000776131008828492,
+          -0.00021262430658557977
+        ],
+        "seed_deltas": [
+          7.962672642138664e-05,
+          -0.0007532837201907379,
+          -0.0007305361388517077
+        ],
+        "seed_sd": 0.00047445075838627946,
+        "n": 28
+      },
+      "near_pixel_recall": {
+        "mean": -0.002658181967254432,
+        "ci95": [
+          -0.0052222913720442726,
+          -0.0011077434736717
+        ],
+        "seed_deltas": [
+          -0.0016151971486241302,
+          -0.0007572499893292512,
+          -0.005602098763809914
+        ],
+        "seed_sd": 0.0025853438670352265,
+        "n": 18
+      }
+    },
+    "six_trajectories_reusable_preconditions_checked": true,
+    "paired_full_logs_identical_all_three_seeds": true,
+    "protocol_and_15_bound_sources_unchanged": true,
+    "receipt_last_checkpoint_field_means_step_002000_not_last_dot_pt": true,
+    "timing": [
+      {
+        "seed": 2026,
+        "method": "T0",
+        "training_seconds": 1219.904131512012,
+        "evaluation_span_seconds": 367.4400124549866,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "2aeaf5ff7b4d85edad5ff2bb85dc65206bf270575f3b659e8c58bfe045fb6984"
+        }
+      },
+      {
+        "seed": 2026,
+        "method": "TW",
+        "training_seconds": 1566.8214783220028,
+        "evaluation_span_seconds": 378.28501296043396,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "2aeaf5ff7b4d85edad5ff2bb85dc65206bf270575f3b659e8c58bfe045fb6984"
+        }
+      },
+      {
+        "seed": 2027,
+        "method": "T0",
+        "training_seconds": 1166.6824800769973,
+        "evaluation_span_seconds": 391.725013256073,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "69ff1cda1b1620d0392b777d99dc3e38130824724becc2640e4b2364759f7ac2"
+        }
+      },
+      {
+        "seed": 2027,
+        "method": "TW",
+        "training_seconds": 1563.7158853139845,
+        "evaluation_span_seconds": 392.2380132675171,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "69ff1cda1b1620d0392b777d99dc3e38130824724becc2640e4b2364759f7ac2"
+        }
+      },
+      {
+        "seed": 2028,
+        "method": "T0",
+        "training_seconds": 1169.943866770016,
+        "evaluation_span_seconds": 382.0540130138397,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "056925b7cb2d2ca334dfc044d28221b500c0abcad8587b8744c67f4ab2c32d7c"
+        }
+      },
+      {
+        "seed": 2028,
+        "method": "TW",
+        "training_seconds": 1567.2336234659888,
+        "evaluation_span_seconds": 394.88201332092285,
+        "initial": {
+          "initial_model": "05fdb9e2981e5af7232b1cbac4a173bbc7ccb85068e897468f6a92d50a9aad74",
+          "initial_optimizer": "547cb8e42cf969dac80de27cad2f60f799471ae70fec2c7ef07ca29ec8533873",
+          "initial_scaler": "19b8daf76378f7b85e105ef5271dc122878729ce9404555cdbfe36351fa1cc81",
+          "initial_rng": "056925b7cb2d2ca334dfc044d28221b500c0abcad8587b8744c67f4ab2c32d7c"
+        }
+      }
+    ]
+  },
+  "training_coverage": {
+    "scope": "read-only native TRAIN110 and existing TW24000 draws; no forward, gradients, updates or official Test",
+    "region_counts_match_all_24000_logged_draws": true,
+    "edt_equivalent_to_frozen_disk_examples": [
+      "20051019_38557_0100_PP",
+      "20051020_55346_0100_PP",
+      "20051020_58214_0100_PP"
+    ],
+    "native110": {
+      "FOV_pixels": 118466647,
+      "weighted_pixels": 2418307,
+      "weighted_vessel_pixels": 213602,
+      "weighted_background_pixels": 2204705,
+      "weighted_fraction": 0.020413399562156934,
+      "weighted_background_fraction": 0.9116729182853955,
+      "Rin_pixels": 464328,
+      "Rin_vessel_pixels": 25598,
+      "Rnear_pixels": 1953979,
+      "Rnear_vessel_pixels": 188004
+    },
+    "seeds": {
+      "2026": {
+        "FOV_pixel_exposures": 1552355940,
+        "weighted_pixel_exposures": 24313476,
+        "weighted_vessel_exposures": 2192464,
+        "weighted_background_exposures": 22121012,
+        "weighted_fraction_pooled": 0.015662307447349994,
+        "weighted_background_fraction": 0.9098251521090608,
+        "weighted_crop_mean_fraction": 0.01636071118908038,
+        "zero_region_draws": 4980,
+        "Rin_pixel_exposures": 4371498,
+        "Rin_vessel_exposures": 275344,
+        "Rnear_pixel_exposures": 19941978,
+        "Rnear_vessel_exposures": 1917120,
+        "mean_normalized_region_coefficient_mass_by_w": {
+          "1": 0.01636071118908038,
+          "2": 0.028331378330328612,
+          "3": 0.03823389415890227,
+          "1.5": 0.022680690198114653
+        },
+        "q_max": 0.7848169034192305
+      },
+      "2027": {
+        "FOV_pixel_exposures": 1546427995,
+        "weighted_pixel_exposures": 22888434,
+        "weighted_vessel_exposures": 2042052,
+        "weighted_background_exposures": 20846382,
+        "weighted_fraction_pooled": 0.014800840436156227,
+        "weighted_background_fraction": 0.9107823628300652,
+        "weighted_crop_mean_fraction": 0.015763257099685565,
+        "zero_region_draws": 5019,
+        "Rin_pixel_exposures": 4023020,
+        "Rin_vessel_exposures": 244252,
+        "Rnear_pixel_exposures": 18865414,
+        "Rnear_vessel_exposures": 1797800,
+        "mean_normalized_region_coefficient_mass_by_w": {
+          "1": 0.015763257099685565,
+          "2": 0.02748226008565436,
+          "3": 0.03725910429130195,
+          "1.5": 0.02193380666362431
+        },
+        "q_max": 0.7930652826994801
+      },
+      "2028": {
+        "FOV_pixel_exposures": 1557058984,
+        "weighted_pixel_exposures": 23573702,
+        "weighted_vessel_exposures": 2068850,
+        "weighted_background_exposures": 21504852,
+        "weighted_fraction_pooled": 0.015139890166164701,
+        "weighted_background_fraction": 0.9122390704692882,
+        "weighted_crop_mean_fraction": 0.01575629743915833,
+        "zero_region_draws": 5030,
+        "Rin_pixel_exposures": 4081436,
+        "Rin_vessel_exposures": 248802,
+        "Rnear_pixel_exposures": 19492266,
+        "Rnear_vessel_exposures": 1820048,
+        "mean_normalized_region_coefficient_mass_by_w": {
+          "1": 0.01575629743915833,
+          "2": 0.027576831299501062,
+          "3": 0.03739778103807185,
+          "1.5": 0.021985639080925563
+        },
+        "q_max": 0.8276047912259664
+      }
+    },
+    "per_training_image": [
+      {
+        "filename": "20051019_38557_0100_PP",
+        "nF": 1496433,
+        "nA": 25197,
+        "A_V": 2573,
+        "Rin": 5270,
+        "Rin_V": 536
+      },
+      {
+        "filename": "20051020_55346_0100_PP",
+        "nF": 1496159,
+        "nA": 443067,
+        "A_V": 29543,
+        "Rin": 111503,
+        "Rin_V": 4634
+      },
+      {
+        "filename": "20051020_55701_0100_PP",
+        "nF": 1499350,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051020_58065_0100_PP",
+        "nF": 1496918,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051020_58214_0100_PP",
+        "nF": 1501653,
+        "nA": 42914,
+        "A_V": 4060,
+        "Rin": 7421,
+        "Rin_V": 642
+      },
+      {
+        "filename": "20051020_58276_0100_PP",
+        "nF": 1499787,
+        "nA": 64871,
+        "A_V": 5205,
+        "Rin": 8229,
+        "Rin_V": 155
+      },
+      {
+        "filename": "20051020_62385_0100_PP",
+        "nF": 1499866,
+        "nA": 76629,
+        "A_V": 4918,
+        "Rin": 17543,
+        "Rin_V": 514
+      },
+      {
+        "filename": "20051020_64007_0100_PP",
+        "nF": 1496360,
+        "nA": 134095,
+        "A_V": 15352,
+        "Rin": 17975,
+        "Rin_V": 384
+      },
+      {
+        "filename": "20051020_64945_0100_PP",
+        "nF": 1498890,
+        "nA": 3308,
+        "A_V": 50,
+        "Rin": 273,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051020_65230_0100_PP",
+        "nF": 1504580,
+        "nA": 20401,
+        "A_V": 2021,
+        "Rin": 3267,
+        "Rin_V": 313
+      },
+      {
+        "filename": "20051021_39661_0100_PP",
+        "nF": 1498588,
+        "nA": 23382,
+        "A_V": 2972,
+        "Rin": 2410,
+        "Rin_V": 118
+      },
+      {
+        "filename": "20051116_43995_0400_PP",
+        "nF": 651249,
+        "nA": 1816,
+        "A_V": 25,
+        "Rin": 235,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051116_44051_0400_PP",
+        "nF": 650889,
+        "nA": 2140,
+        "A_V": 4,
+        "Rin": 374,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051116_44126_0400_PP",
+        "nF": 649676,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051116_44690_0400_PP",
+        "nF": 1656811,
+        "nA": 9122,
+        "A_V": 472,
+        "Rin": 1073,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051116_54454_0400_PP",
+        "nF": 649150,
+        "nA": 17955,
+        "A_V": 1537,
+        "Rin": 2822,
+        "Rin_V": 394
+      },
+      {
+        "filename": "20051116_55593_0400_PP",
+        "nF": 1661347,
+        "nA": 22519,
+        "A_V": 3360,
+        "Rin": 2570,
+        "Rin_V": 411
+      },
+      {
+        "filename": "20051116_55643_0400_PP",
+        "nF": 1662871,
+        "nA": 7757,
+        "A_V": 641,
+        "Rin": 1871,
+        "Rin_V": 24
+      },
+      {
+        "filename": "20051116_55656_0400_PP",
+        "nF": 1657853,
+        "nA": 22532,
+        "A_V": 4737,
+        "Rin": 1914,
+        "Rin_V": 31
+      },
+      {
+        "filename": "20051201_37462_0400_PP",
+        "nF": 1661061,
+        "nA": 5888,
+        "A_V": 591,
+        "Rin": 457,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051202_37349_0400_PP",
+        "nF": 1658811,
+        "nA": 14628,
+        "A_V": 1021,
+        "Rin": 1982,
+        "Rin_V": 347
+      },
+      {
+        "filename": "20051202_40508_0400_PP",
+        "nF": 649808,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051202_41034_0400_PP",
+        "nF": 650774,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051202_41143_0400_PP",
+        "nF": 649760,
+        "nA": 4612,
+        "A_V": 445,
+        "Rin": 442,
+        "Rin_V": 64
+      },
+      {
+        "filename": "20051202_48264_0400_PP",
+        "nF": 649449,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051202_48586_0400_PP",
+        "nF": 649687,
+        "nA": 5112,
+        "A_V": 754,
+        "Rin": 490,
+        "Rin_V": 66
+      },
+      {
+        "filename": "20051202_55834_0400_PP",
+        "nF": 652701,
+        "nA": 9931,
+        "A_V": 912,
+        "Rin": 1191,
+        "Rin_V": 103
+      },
+      {
+        "filename": "20051205_31388_0400_PP",
+        "nF": 1657315,
+        "nA": 17250,
+        "A_V": 2407,
+        "Rin": 2372,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051205_32981_0400_PP",
+        "nF": 650859,
+        "nA": 15198,
+        "A_V": 1472,
+        "Rin": 2156,
+        "Rin_V": 282
+      },
+      {
+        "filename": "20051205_35354_0400_PP",
+        "nF": 651253,
+        "nA": 3819,
+        "A_V": 9,
+        "Rin": 555,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051205_35392_0400_PP",
+        "nF": 650160,
+        "nA": 3347,
+        "A_V": 273,
+        "Rin": 945,
+        "Rin_V": 138
+      },
+      {
+        "filename": "20051205_57988_0400_PP",
+        "nF": 1661133,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051205_58125_0400_PP",
+        "nF": 1657665,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051205_59538_0400_PP",
+        "nF": 1657014,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051207_55266_0400_PP",
+        "nF": 653150,
+        "nA": 2646,
+        "A_V": 258,
+        "Rin": 204,
+        "Rin_V": 1
+      },
+      {
+        "filename": "20051207_56227_0400_PP",
+        "nF": 655701,
+        "nA": 29204,
+        "A_V": 1353,
+        "Rin": 6576,
+        "Rin_V": 418
+      },
+      {
+        "filename": "20051208_39243_0400_PP",
+        "nF": 1666738,
+        "nA": 4044,
+        "A_V": 57,
+        "Rin": 447,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051208_39438_0400_PP",
+        "nF": 1673334,
+        "nA": 3296,
+        "A_V": 0,
+        "Rin": 239,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051208_39498_0400_PP",
+        "nF": 1658010,
+        "nA": 5793,
+        "A_V": 0,
+        "Rin": 909,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051208_39524_0400_PP",
+        "nF": 1663350,
+        "nA": 31190,
+        "A_V": 4415,
+        "Rin": 4858,
+        "Rin_V": 329
+      },
+      {
+        "filename": "20051208_40972_0400_PP",
+        "nF": 1666498,
+        "nA": 16598,
+        "A_V": 146,
+        "Rin": 2914,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051208_42314_0400_PP",
+        "nF": 1655356,
+        "nA": 220802,
+        "A_V": 27878,
+        "Rin": 32311,
+        "Rin_V": 2988
+      },
+      {
+        "filename": "20051208_42322_0400_PP",
+        "nF": 1655047,
+        "nA": 63414,
+        "A_V": 4159,
+        "Rin": 8761,
+        "Rin_V": 625
+      },
+      {
+        "filename": "20051208_42552_0400_PP",
+        "nF": 1662694,
+        "nA": 42805,
+        "A_V": 4781,
+        "Rin": 5422,
+        "Rin_V": 189
+      },
+      {
+        "filename": "20051212_41169_0400_PP",
+        "nF": 1662496,
+        "nA": 86905,
+        "A_V": 7947,
+        "Rin": 19646,
+        "Rin_V": 728
+      },
+      {
+        "filename": "20051214_57260_0100_PP",
+        "nF": 1490909,
+        "nA": 5958,
+        "A_V": 82,
+        "Rin": 1293,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051214_57940_0100_PP",
+        "nF": 1497509,
+        "nA": 191656,
+        "A_V": 15203,
+        "Rin": 37929,
+        "Rin_V": 4425
+      },
+      {
+        "filename": "20051216_44832_0200_PP",
+        "nF": 642841,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20051216_47514_0200_PP",
+        "nF": 643711,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060407_41330_0200_PP",
+        "nF": 643796,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060407_41831_0200_PP",
+        "nF": 643947,
+        "nA": 1316,
+        "A_V": 0,
+        "Rin": 98,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060407_45107_0200_PP",
+        "nF": 643511,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060407_46422_0200_PP",
+        "nF": 643963,
+        "nA": 16950,
+        "A_V": 939,
+        "Rin": 2593,
+        "Rin_V": 7
+      },
+      {
+        "filename": "20060410_40481_0200_PP",
+        "nF": 643085,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060410_41767_0200_PP",
+        "nF": 643400,
+        "nA": 1885,
+        "A_V": 300,
+        "Rin": 283,
+        "Rin_V": 4
+      },
+      {
+        "filename": "20060410_44248_0200_PP",
+        "nF": 643859,
+        "nA": 18215,
+        "A_V": 979,
+        "Rin": 1931,
+        "Rin_V": 77
+      },
+      {
+        "filename": "20060410_46874_0200_PP",
+        "nF": 643200,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060410_46893_0200_PP",
+        "nF": 643064,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060410_47166_0200_PP",
+        "nF": 643080,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060410_47331_0200_PP",
+        "nF": 644010,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060411_58238_0200_PP",
+        "nF": 643589,
+        "nA": 10858,
+        "A_V": 1013,
+        "Rin": 1865,
+        "Rin_V": 147
+      },
+      {
+        "filename": "20060411_58303_0200_PP",
+        "nF": 643690,
+        "nA": 12899,
+        "A_V": 2599,
+        "Rin": 1448,
+        "Rin_V": 240
+      },
+      {
+        "filename": "20060411_58328_0200_PP",
+        "nF": 642696,
+        "nA": 11791,
+        "A_V": 1026,
+        "Rin": 2000,
+        "Rin_V": 90
+      },
+      {
+        "filename": "20060411_58571_0200_PP",
+        "nF": 643685,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060411_58971_0200_PP",
+        "nF": 643380,
+        "nA": 3993,
+        "A_V": 1062,
+        "Rin": 294,
+        "Rin_V": 17
+      },
+      {
+        "filename": "20060411_58993_0200_PP",
+        "nF": 643268,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060411_59190_0200_PP",
+        "nF": 642826,
+        "nA": 6797,
+        "A_V": 614,
+        "Rin": 1425,
+        "Rin_V": 79
+      },
+      {
+        "filename": "20060411_59919_0200_PP",
+        "nF": 644215,
+        "nA": 3738,
+        "A_V": 359,
+        "Rin": 601,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060411_60283_0200_PP",
+        "nF": 644006,
+        "nA": 1749,
+        "A_V": 928,
+        "Rin": 184,
+        "Rin_V": 12
+      },
+      {
+        "filename": "20060411_61060_0200_PP",
+        "nF": 643760,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060411_61548_0200_PP",
+        "nF": 644389,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_51952_0200_PP",
+        "nF": 643713,
+        "nA": 21398,
+        "A_V": 1353,
+        "Rin": 3989,
+        "Rin_V": 341
+      },
+      {
+        "filename": "20060412_52020_0200_PP",
+        "nF": 643291,
+        "nA": 2135,
+        "A_V": 771,
+        "Rin": 361,
+        "Rin_V": 236
+      },
+      {
+        "filename": "20060412_52038_0200_PP",
+        "nF": 643308,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_52840_0200_PP",
+        "nF": 642972,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_58471_0200_PP",
+        "nF": 642875,
+        "nA": 3394,
+        "A_V": 85,
+        "Rin": 434,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_58497_0200_PP",
+        "nF": 642967,
+        "nA": 8503,
+        "A_V": 551,
+        "Rin": 1069,
+        "Rin_V": 116
+      },
+      {
+        "filename": "20060412_58668_0200_PP",
+        "nF": 642602,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_59012_0200_PP",
+        "nF": 643106,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_59100_0200_PP",
+        "nF": 643572,
+        "nA": 4570,
+        "A_V": 198,
+        "Rin": 802,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_59717_0200_PP",
+        "nF": 643730,
+        "nA": 7869,
+        "A_V": 231,
+        "Rin": 1419,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_60337_0200_PP",
+        "nF": 642965,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_60396_0200_PP",
+        "nF": 642966,
+        "nA": 1149,
+        "A_V": 0,
+        "Rin": 60,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_60573_0200_PP",
+        "nF": 643487,
+        "nA": 2484,
+        "A_V": 224,
+        "Rin": 156,
+        "Rin_V": 15
+      },
+      {
+        "filename": "20060412_61081_0200_PP",
+        "nF": 643946,
+        "nA": 6318,
+        "A_V": 1209,
+        "Rin": 685,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_61251_0200_PP",
+        "nF": 644196,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_61365_0200_PP",
+        "nF": 643541,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_61433_0200_PP",
+        "nF": 643308,
+        "nA": 1203,
+        "A_V": 165,
+        "Rin": 72,
+        "Rin_V": 8
+      },
+      {
+        "filename": "20060412_61501_0200_PP",
+        "nF": 643683,
+        "nA": 3632,
+        "A_V": 220,
+        "Rin": 486,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060412_63032_0200_PP",
+        "nF": 643105,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060522_45967_0100_PP",
+        "nF": 1505301,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_43016_0100_PP",
+        "nF": 1498673,
+        "nA": 6099,
+        "A_V": 0,
+        "Rin": 1088,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_45235_0100_PP",
+        "nF": 1496273,
+        "nA": 3275,
+        "A_V": 60,
+        "Rin": 280,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_45389_0100_PP",
+        "nF": 1505937,
+        "nA": 14875,
+        "A_V": 76,
+        "Rin": 2267,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_48199_0100_PP",
+        "nF": 1496172,
+        "nA": 39337,
+        "A_V": 5107,
+        "Rin": 7227,
+        "Rin_V": 274
+      },
+      {
+        "filename": "20060523_48425_0100_PP",
+        "nF": 1494601,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_49681_0100_PP",
+        "nF": 1495430,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_50408_0100_PP",
+        "nF": 1497635,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060523_50489_0100_PP",
+        "nF": 1498630,
+        "nA": 346176,
+        "A_V": 27613,
+        "Rin": 89769,
+        "Rin_V": 3853
+      },
+      {
+        "filename": "20060530_36860_0100_PP",
+        "nF": 1504912,
+        "nA": 35307,
+        "A_V": 2548,
+        "Rin": 8712,
+        "Rin_V": 95
+      },
+      {
+        "filename": "20060530_53233_0100_PP",
+        "nF": 1498151,
+        "nA": 14362,
+        "A_V": 3498,
+        "Rin": 1627,
+        "Rin_V": 262
+      },
+      {
+        "filename": "20060530_53522_0100_PP",
+        "nF": 1502729,
+        "nA": 17568,
+        "A_V": 1075,
+        "Rin": 2855,
+        "Rin_V": 45
+      },
+      {
+        "filename": "20060530_53540_0100_PP",
+        "nF": 1502475,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060530_53954_0100_PP",
+        "nF": 1504796,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060530_54117_0100_PP",
+        "nF": 1496435,
+        "nA": 8876,
+        "A_V": 603,
+        "Rin": 1281,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060530_54529_0100_PP",
+        "nF": 1496806,
+        "nA": 10967,
+        "A_V": 993,
+        "Rin": 1066,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060530_54718_0100_PP",
+        "nF": 1502225,
+        "nA": 7381,
+        "A_V": 1163,
+        "Rin": 767,
+        "Rin_V": 75
+      },
+      {
+        "filename": "20060530_55180_0100_PP",
+        "nF": 1501343,
+        "nA": 0,
+        "A_V": 0,
+        "Rin": 0,
+        "Rin_V": 0
+      },
+      {
+        "filename": "20060530_55746_0100_PP",
+        "nF": 1501920,
+        "nA": 50565,
+        "A_V": 3554,
+        "Rin": 7016,
+        "Rin_V": 473
+      },
+      {
+        "filename": "20060530_55837_0100_PP",
+        "nF": 1501227,
+        "nA": 8872,
+        "A_V": 853,
+        "Rin": 1269,
+        "Rin_V": 273
+      }
+    ],
+    "source_hashes": {
+      "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/train.jsonl": "24b60a7e93831c8074703c6aeba22ff083b01609cf6ce7ecf21d81699c74d63e",
+      "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2027/TW/train.jsonl": "35c44fbecd46f3492dff442ed2b6f1bfb44081e7e20b4d5166ce75744c0ece91",
+      "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2028/TW/train.jsonl": "5d2b176158011ed33dcacd5eb9bb962180928a529aac595fe3cb7a444e2d575b",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051019_38557_0100_PP.png": "836350db3e2c3e7593775cdb40f705271fb45130f77dc2f22a55af462d105aec",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051019_38557_0100_PP.png": "058097eec1b4dbc33cc827312c28bfe659ae2a1aa59f3dd08fca235d7cac0fe3",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051019_38557_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_55346_0100_PP.png": "2b99f901f2cf4b530b5620a922c08b2e0e438fd4c3dda920f7db8ba02b659d9b",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_55346_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_55346_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_55701_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_58065_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_58214_0100_PP.png": "09090e53b03d63198df93455f4008b17f9721424a2cf5b8cc8d3eb3f4938bff6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_58214_0100_PP.png": "1d1ea6a5f2dbfd49468d4884f62c7c77eabb19dcd107c5f1ab747771333f8d3e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_58214_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_58276_0100_PP.png": "9225bd1917b3589fee0ad21001a2a9c719debe029dd5c68090c446a07308169e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_58276_0100_PP.png": "1fe2437db15db81f0c5f7765ff03eac1f1ac082b563accbe9d5bbdc232e50ac7",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_58276_0100_PP.png": "71bfa95d88ef3a598d904c3723a31ff7a7d3ed0a1a362b637389771603779aa4",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_62385_0100_PP.png": "c7ee5a11214afb84b852569defe53436b106451d6d8db1c4e68d0801a5138281",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_62385_0100_PP.png": "80528a2226be394f71648e6fffd0988897a58bf0a44c3292bea6f430b4dbd73d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_62385_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_64007_0100_PP.png": "7ccd07363f12c47764b63cdaeb7374da1c8528f67c5b1b6f8eb2b44c833be4d0",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_64007_0100_PP.png": "48ff12b74448af6c40ddbbbfa0af691a651d2d19c31d4bad53b4556d5b008bb4",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_64007_0100_PP.png": "79dd0bea926edf2be0da6cd8af30b7ba92c22842327785a913adfec5ca2621d7",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_64945_0100_PP.png": "c8a3224ffe77069b041410784302a50d3d2ac70866efd2a797d4aae887be3665",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_64945_0100_PP.png": "958ba6cbe78526860e7978e2a9d9975056df413a8547ab26a451aac570c14c46",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_64945_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051020_65230_0100_PP.png": "4c15646f99680da4ee80fb6aa26ef4f5e656927f2a37d3c5f481f5e83b9b25b8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051020_65230_0100_PP.png": "3af72a89d5c41916c96da6760fac1e7e19a148fb82cbc07a83cdbf57978e351e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051020_65230_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051021_39661_0100_PP.png": "a105b0db0ca4b552f488dc1b35a08843ab7632092890d92574acf17ea06b161f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051021_39661_0100_PP.png": "e2661c9f49d126b443874f6ad83df57f8793d30ff5bbe5b9499f17cb6dd2f813",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051021_39661_0100_PP.png": "204d44c7aafcf06e91b86c6a2d49ca18ed2d7cbe394c91e2219488ff1eec799d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_43995_0400_PP.png": "0ebfed3b4861d26c07b95a0a009b86314f34b69aee18ed165c96b25571d15dae",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_43995_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_43995_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_44051_0400_PP.png": "fe0ee7cc01d75ff551d1b01c156b35ed4732f3a6265ad38302dc7d076564364d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_44051_0400_PP.png": "5e7659a981479a0da5a6af30d4a190e094a4ab25bb23229ff67babebd23c1d5c",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_44051_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_44126_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_44690_0400_PP.png": "c88710eedd03ddb2205dff9168b938d2cbe62d8e06eba8aec9c9870b6676be0b",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_44690_0400_PP.png": "0c16fa5f25a6c098922f2500abd22fa28057df0bf50e7c24063fa04924be7064",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_44690_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_54454_0400_PP.png": "db9cfdfa01c929736cf6fdec9996f4ef731ea5a3f541a58b80aedec43482b557",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_54454_0400_PP.png": "2d6f8fae0caee2c30aa13ec2ec557590b37a81a20fa22cd87c65be3c4c777368",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_54454_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_55593_0400_PP.png": "e11c381cf60499350be741d66b790ef0d9d0467020a884cc2a95864c512cb16f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_55593_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_55593_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_55643_0400_PP.png": "837a829616c539d90814e4d542516195c795fc831a2c6a1838eb7755f7af6ccc",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_55643_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_55643_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051116_55656_0400_PP.png": "6e404ed58713e2bbabc1157a4bf05bcceab778fbc1904e607d130161b85650a6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051116_55656_0400_PP.png": "cf266d5c70e058f8543fc82b586bc22314a655f86367460faa8557c949704e65",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051116_55656_0400_PP.png": "ab72e4ea02abd909249d90a7dbe614dcde840590d9743f4ddc0d36c735265cb1",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051201_37462_0400_PP.png": "d37cbc4c99b19b554e48b968f130f4f38cd842c1b728fae303e0b4ccbc766937",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051201_37462_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051201_37462_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_37349_0400_PP.png": "250516b58ff38f2d68c3cd1e78e7b4a4baabc2f38c4d58824434fcd3cb79ad71",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051202_37349_0400_PP.png": "881e20c26e3fa0d10b312be137b2ac247a24a0cb1fab54bc8944cf1b0cb5197a",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051202_37349_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_40508_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_41034_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_41143_0400_PP.png": "3f3b2fd7588f510aae523916c3278baaa8c5828287c3aaef9ad5d1dfe0ad6616",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051202_41143_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051202_41143_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_48264_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_48586_0400_PP.png": "8adeb6d507d57c831d08e1921cf0bba84c96fdb301eb5e6ed7a65afa0c2162c8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051202_48586_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051202_48586_0400_PP.png": "b5df427371480301691f5883e6c0fec9bd72b9b88a5f8638d6d045b03ac3ec7f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051202_55834_0400_PP.png": "91f928912a960f49af3e65d42db8bedd0376b6d39aac0b83062010cb0ff077ca",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051202_55834_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051202_55834_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_31388_0400_PP.png": "d7347de8c402c9a362a6c05464efb34007be3a505a1f3a1cbbab112e9956cc87",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051205_31388_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051205_31388_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_32981_0400_PP.png": "d9f81ed5b4e72370ad12f7c466227aa6665e1fba72f916f76fa289ac2c60fb4a",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051205_32981_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051205_32981_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_35354_0400_PP.png": "d0b4022e9a710dcb1b81efa77506ac682c1e599fb947b5cd97ecc9e358fa290b",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051205_35354_0400_PP.png": "6db0e46c8a485d44cfac973c17f54c86cddeec897def7874a83b42f7a7708d49",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051205_35354_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_35392_0400_PP.png": "37a10e3e1dd7c99aef4970d340bd4ba99c2aaa4f934477bf964ca68f40882230",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051205_35392_0400_PP.png": "71708014770d87184191d41cc632391859789ee2e93fed491aa0213c982d8945",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051205_35392_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_57988_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_58125_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051205_59538_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051207_55266_0400_PP.png": "4bc558c4f6b243330ae97d98cf2d19f50d2dd13d105da73672b8c41567b6f610",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051207_55266_0400_PP.png": "3c552cda7f4bbec625dcb8cec64ef6dc6e004b4944afec5c5fd12b0dac58d2ae",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051207_55266_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051207_56227_0400_PP.png": "41f7004b94b6a6b44e7df5342d62d7ad83ac70084d021831578c003663e819ce",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051207_56227_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051207_56227_0400_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_39243_0400_PP.png": "f78078632212fe3b651f36d5af5dd4579b35fbb4b83755380d01cf6a5dae74b8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_39243_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_39243_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_39438_0400_PP.png": "b7a1787dd40f8813a8e53dfd7f38117e2592d21fba54540c1a0f4c4568ed4de5",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_39438_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_39438_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_39498_0400_PP.png": "1bfead8ae2de8323dd6b4b45563ddc8b7c2ca98b451fa89f34c84489712be7c3",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_39498_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_39498_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_39524_0400_PP.png": "7134c8c1d9cc36a0e57371c7f60fbe1e155fa06037b2dc223db571c4e59498df",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_39524_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_39524_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_40972_0400_PP.png": "c4a0fb91b95ee818bac75478fadf029b71e6d0af7b10a151d92c3832a6668eb6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_40972_0400_PP.png": "af3f2eace1d4e8b6436076315141bf8a63dcab74c253a32dcdbc1dd276fabed8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_40972_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_42314_0400_PP.png": "8b7b7f9fc2593c6eaa9891a1c1edcadfbc190aab5457b0123a2e3d649983cb77",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_42314_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_42314_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_42322_0400_PP.png": "b70451976722523ab7dad7f222741a73aa1f9803bab196147ab2b6ddfb559732",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_42322_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_42322_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051208_42552_0400_PP.png": "894a05acc4010813e9ba95d6b000a49a27b36d035df63c64063726230f11749e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051208_42552_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051208_42552_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051212_41169_0400_PP.png": "b729f7f1f6e8acb91e5b67bd779d528257610feae23dafe3565f94f4462890d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051212_41169_0400_PP.png": "6f77b5f297a09bd2bc74fb16e724de84b57b4a35a25526a5488e1b6ac7b3747b",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051212_41169_0400_PP.png": "d37fa004c2ccac312d7fdf18dc99b9586764a6720addbc42667576054d46ad8e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051214_57260_0100_PP.png": "a2801210824c4d36e14657a40c2f8aa7691d780c3707e436eaa721cc0dfcd4bd",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051214_57260_0100_PP.png": "f7c7bbc005ebaa07763524037b5c957c84ebdc2efaf1c8f3561cdcf35dc6aa67",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051214_57260_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051214_57940_0100_PP.png": "d7c81fa9d8f22d4085973a20824ea155338a9e0e1399e2a1cf43b8fde1c714dc",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20051214_57940_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20051214_57940_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051216_44832_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20051216_47514_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060407_41330_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060407_41831_0200_PP.png": "aaac5a0d59caa52c2ba43af80b45572067ab5ef847936182338117e7a1f67668",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060407_41831_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060407_41831_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060407_45107_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060407_46422_0200_PP.png": "ad6ab658403fda484e7195eba6ca4ce41380f7ceab05a62f4bb85526b0c53662",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060407_46422_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060407_46422_0200_PP.png": "21d6ad9c8b68f08dbbd07d762866884dddf6e90bdf66e1470ab49ac33934746f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_40481_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_41767_0200_PP.png": "0ea4f1553a89099f95f28e96feee3315d3a2d6beb1e824a3d4ef41235ee17219",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060410_41767_0200_PP.png": "2933f4ff04884b10361d5d93973eb76e42ed6f4869480f345920495b73b6cf33",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060410_41767_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_44248_0200_PP.png": "e8606a0027fbade6a39f6c377e0baaebc2e6b78454f54b1f16d263538178fb9a",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060410_44248_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060410_44248_0200_PP.png": "8c98d160928d8032c6bd57ae2fa64d798f99f8e62888bf47804876b2affd7907",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_46874_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_46893_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_47166_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060410_47331_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58238_0200_PP.png": "114c6a28fd45eb47a491663430e54e6972282aee71cab3db6fa89c1b6c5a0831",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_58238_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_58238_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58303_0200_PP.png": "4415c9477065bbd3739e7740deb693d48905e6319e22fb4b73c9ad3728e37570",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_58303_0200_PP.png": "346bebfa78336f1d1c7d89f621c1cf671816ff60a8929547586c0cfdfad64a79",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_58303_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58328_0200_PP.png": "f04e79610b0fad8b37b31ccca1f2ea23af50463135a65f929cbb584aff0adc90",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_58328_0200_PP.png": "db61bc32635140a3b3769d5aa2222a84aa899c79216be7e9125bac8cb550336f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_58328_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58571_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58971_0200_PP.png": "2cd24f25570e4cf98ede3493865b79fb2d8a0ebc509481f3b73ee5312e9ef829",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_58971_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_58971_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_58993_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_59190_0200_PP.png": "1685ebbc6cd394fb409171b98b9d9852a892fbb420f331c133a6ac4f6875862f",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_59190_0200_PP.png": "d5580288b2643204a2428956f521a3ea6b30fa0986f81e2267ceca442b3a6728",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_59190_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_59919_0200_PP.png": "4a675a9f9d155cede91f76f279dcc24773ded99fd09973127876bb95021f75b8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_59919_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_59919_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_60283_0200_PP.png": "6933ff7c424da5a12680e9d46fb81de62eb4e2f65a54adf5847accce8cd899fa",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060411_60283_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060411_60283_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_61060_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060411_61548_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_51952_0200_PP.png": "3d5211ef26ded0ea7e7108613a61439d1924dff8e4bcae8aa550e3f7d27c48b4",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_51952_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_51952_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_52020_0200_PP.png": "2f9eeac36ba4baa75720eaee9c50251a59c6b64749679fb59cfbab338ec2a283",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_52020_0200_PP.png": "f17e27cbdb2ce760dbec1ad3d3ed49d6df2e7bc310f76440037ff64654477759",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_52020_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_52038_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_52840_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_58471_0200_PP.png": "950ba8b423f0a69ac17307d19a3a7f1472f1e9fd7c56ba3b7e2024255263e280",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_58471_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_58471_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_58497_0200_PP.png": "d825858e3e2be46db7e3fede52a82dd55de37a11b9bbb58f37e87a433dd2ef70",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_58497_0200_PP.png": "6f3dace42044c723fad2c704361276937394a4d408ec84bf4fc94fb3a3e0ae00",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_58497_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_58668_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_59012_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_59100_0200_PP.png": "eed23e7aa645250135cc3b4521f5ae1721a7802748c9d0e7f08a915bc22bc8b9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_59100_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_59100_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_59717_0200_PP.png": "03d5224588c7bf6404657236217354f9ee5e647c25858435f62f85f32437a9e6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_59717_0200_PP.png": "aff9618a87cf77ff94abb73b53cff438dcd9e161b6ad882c950e5ec0284c8463",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_59717_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_60337_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_60396_0200_PP.png": "d6ab085d6080197ea507ea95074afc09d798250c13aeae77a676d08571aaa8e3",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_60396_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_60396_0200_PP.png": "331554beb1b1d38c24dc7d9842e1ba933093d878322dd9f12c86f28fbc64b19c",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_60573_0200_PP.png": "70f596fd26d86f8cde8379bc79f0fcc585c18ce44d829c795238fa4e31bc8e7d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_60573_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_60573_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_61081_0200_PP.png": "f5a88f52d218bf655279af85baf2269a466069ea483dc84ad1b953263f8d3bd1",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_61081_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_61081_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_61251_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_61365_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_61433_0200_PP.png": "053435efc07db9f39fb710a8829dfdf6e9faf7decbcfc5ad938bb77b426ae7ca",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_61433_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_61433_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_61501_0200_PP.png": "157dc058158313679251c7146dc504613b469b91235636f2531fa6bf3503f29e",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060412_61501_0200_PP.png": "5ffc33dea1a4d20a8cacdae0db3bd4054c99d0bfffe5e31f73b66442744dcabf",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060412_61501_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060412_63032_0200_PP.png": "26ec83738ba466e09c3ac63b400a3de5ee8ed445023f97acd5ce34d72246d1d9",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060522_45967_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_43016_0100_PP.png": "bf1026a1ace13a6173956f0ab8a3a012278e2dd3acd222e84efa4cbfccfb4c88",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060523_43016_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060523_43016_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_45235_0100_PP.png": "7251f3156ab9a60b10cabae2dc5be3e691c49cbfd5bc1938b4aa48053b49a086",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060523_45235_0100_PP.png": "0af7d62bf33dfefa88f9d803e045162096f7b78b4e4669a93c1cad7a3f353e94",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060523_45235_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_45389_0100_PP.png": "28a025d2536e86594e192d397a2fb9a9f2f7ff5ef2f3ed480da427b8eb36c4dd",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060523_45389_0100_PP.png": "ac0213daf0b35637ba1d2fefc413df55f08f9f79e451351efc6f75a34320915d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060523_45389_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_48199_0100_PP.png": "6ca1ae64280e42d08ab1e8342e48a07c7b30806418679acab4fe279ebec0c367",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060523_48199_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060523_48199_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_48425_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_49681_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_50408_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060523_50489_0100_PP.png": "f087600b1d131bdaf3ea86e379f378b018ebe924525c3d045e387e8548d10458",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060523_50489_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060523_50489_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_36860_0100_PP.png": "15434cda0fd2ca71869b95a5323c09fc3a9a5cfa2d336a556c859eda0e5d8ad7",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_36860_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_36860_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_53233_0100_PP.png": "91c4bd4985ba73d126a3ca88e3ba36ddbd6c3ea3ccf67a79ef97ca8f404172fb",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_53233_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_53233_0100_PP.png": "931cf4592d609ddefb7d5fe8b5f52f40817d1a3a9d5b6318167c5980019111c8",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_53522_0100_PP.png": "efcff4925047417b467f84ac19ade9f3c58293e02c98bc5c180f4c491dd4e6ad",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_53522_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_53522_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_53540_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_53954_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_54117_0100_PP.png": "23595bd1a4856e72ef7e6388a32b049fc0a2a0d7dbe3752ca599d124b9d9ec50",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_54117_0100_PP.png": "4a6744c2e423996ae791de0e7969bd3c3388c280ad70591a1c0ac1baf75bc875",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_54117_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_54529_0100_PP.png": "281ee6793ff1b9fe1075d7a2fe29c3d35a54fb65c5695f84b9f0286a522e5373",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_54529_0100_PP.png": "9eb5db45303fef9d547f4020d1dbf88dc91f8cc394e60d328f3483f7754744a6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_54529_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_54718_0100_PP.png": "d203b0224083c77a9a09002c2e0b2c33d5125a975296ffc5d7321fc5851800b1",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_54718_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_54718_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_55180_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_55746_0100_PP.png": "2d48ed6cb06273a2a59e7a2d2668e0aa3323c1c1e55827e3adddcc079c1a2d9a",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_55746_0100_PP.png": "ca96720482fcc69fb3cc1ea6d70d2ce868c76e009fb66f14491f9844d4f4ef6d",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_55746_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/Hemorrhages/20060530_55837_0100_PP.png": "62de89c801f145d9941b3755b925cde3d5f3694d2f1ee32d4f052a5dcad931d5",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/BrightUncertains/20060530_55837_0100_PP.png": "6160ede8a316506c52dc14d6281bac2dd59dc9468469a9eace70bf1c06206922",
+      "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/labels/RedUncertains/20060530_55837_0100_PP.png": "6142cc72b4b2c8fc7afc1eafa28d7234d9de0dda96c03759d184129234d561d6"
+    },
+    "elapsed_seconds": 60.171762154001044,
+    "source_files_unchanged": true
+  },
+  "interpretation": "这些是对原正式记录的只读复核和训练标签计数，不是新权重gate通过证据，也不是独立Test。"
+}

@@ -213,6 +213,11 @@ def main():
     if not output.is_relative_to(ROOT / "runs"):
         raise ValueError("Run output must be within the project's runs directory")
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    if config.get("scope") == "interface_validation_110_train_only":
+        from .maples_interface import run as run_maples_interface
+
+        run_maples_interface(config_path, output, config, args)
+        return
     stop_at = args.stop_at or config["total_optimizer_steps"]
     if not 0 < stop_at <= config["total_optimizer_steps"]:
         raise ValueError("Invalid stop step")

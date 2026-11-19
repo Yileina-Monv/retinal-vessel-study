@@ -1,0 +1,470 @@
+{
+  "protocol_id": "maples_t0_tw_seed2026_budget_extension_v1_20261018",
+  "status": "FROZEN_USER_APPROVED_BEFORE_CONTINUATION",
+  "date": "2026-10-18",
+  "authority": "User explicitly approved only seed=2026 T0 and original region-weighted TW 2/2, each continuing its own existing complete step-2000 checkpoint to step 4000, 2000 new successful updates each; Luna implements and executes after the targeted gate passes. No further startup confirmation is needed inside this scope.",
+  "project_root": "${RETINA_PROJECT_ROOT}",
+  "purpose": "Post-hoc exploratory budget diagnosis: distinguish continued optimization, whole-image Dice change and hemorrhage-neighborhood thin-skeleton recall; do not rewrite the completed 2000-step formal negative result.",
+  "parent_protocol": {
+    "path": "${RETINA_PROJECT_ROOT}/docs/t0_tw_core_protocol_20261016/protocol.json",
+    "sha256": "bc0aefe0d2d8d5ab6d8c950b33993d2ba824e8fd344773d3dfeb07d269317cdd",
+    "scope": "Inherit scientific model/data/loss/evaluation rules only. Override prior fresh starts, three-seed budget, step-2000 endpoint and three-seed aggregation solely as explicitly specified here."
+  },
+  "source_manifest": {
+    "path": "${RETINA_PROJECT_ROOT}/docs/t0_tw_budget_extension_20261018/source_manifest.json",
+    "sha256": "5485458e8f8adbb80ecebeee61f8bf746e10cbddc16541ffad22d84805cb6b23"
+  },
+  "authorization": {
+    "executor": "Luna in the existing engineering conversation; handoff through the existing server STATUS.md",
+    "planner_reviewer": "Sol",
+    "seeds": [
+      2026
+    ],
+    "methods": [
+      "T0",
+      "TW"
+    ],
+    "new_updates_each": 2000,
+    "new_updates_total": 4000,
+    "new_draws_each": 8000,
+    "new_draws_total": 16000,
+    "gpu": {
+      "physical_gpu": 0,
+      "gpu_uuid": "${GPU_UUID}",
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "lock": "${RETINA_PROJECT_ROOT}/experiments/a14_gpu0.lock",
+      "readiness": "仅使用既有GPU0，在原显存/利用率/无其他计算进程条件满足时运行；繁忙则等待或记录阻塞，不杀他人任务"
+    },
+    "extra_parameter_updates_for_engineering": 0,
+    "after_gate": "Allowed to execute exactly these two continuation trajectories and necessary evaluation/analysis/records.",
+    "forbidden": [
+      "Other seeds, 2/1 or any other weighting variant",
+      "Architecture, loss, coefficient, masks, split, normalization or augmentation changes",
+      "Official Test data access, including engineering checks",
+      "Restarting from M0 or reinitializing optimizer/scaler/RNG",
+      "Overwriting old experiment files or frozen code/protocols",
+      "Other projects, GitHub changes, synchronization or cleanup",
+      "Additional trajectories or budget beyond global step 4000"
+    ]
+  },
+  "resume": {
+    "sources": {
+      "T0": {
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/T0/step_002000.pt",
+        "checkpoint_sha256": "23f4a78cb763b5ba10ae3231f86ff93a4d43869cd4a11aa04d59411228fd2163",
+        "parent_config_sha256": "f295d2348045c29991f7190d62f1807cc92931a29de0ffb43e9490c54c92f828",
+        "parent_binding": {
+          "execution_binding_sha256": "2c90d8afb9faa2c434522a46235075385251e5e5c0ba1d4e45c362902794fcd2",
+          "config_sha256": "f295d2348045c29991f7190d62f1807cc92931a29de0ffb43e9490c54c92f828",
+          "source_m0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79"
+        },
+        "state_digests": {
+          "model": "50c4b026104d3d20aad3cf5ca809cc09277a5b981f045713e2a4991369d5be7e",
+          "optimizer": "a48d57fdaaeecd9afd160106953b9d2f041136a4d82c08ba92d6fa780d72ef80",
+          "scaler": "0b30468a2fd0cb5c6e19fc358ec16afea1f11ad6234b2017d97a3a94396165fb",
+          "rng": "2aeaf5ff7b4d85edad5ff2bb85dc65206bf270575f3b659e8c58bfe045fb6984"
+        }
+      },
+      "TW": {
+        "checkpoint": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_core_20261016/runs/seed_2026/TW/step_002000.pt",
+        "checkpoint_sha256": "a064da51729b1a20e155d176a97429f51796474da45b8a0bc4c239a3558506a4",
+        "parent_config_sha256": "74929c2f71e8a3b3b6f5b5de4a24061b43a3ba6d0981da6a9b0d0bbe1044bef2",
+        "parent_binding": {
+          "execution_binding_sha256": "2c90d8afb9faa2c434522a46235075385251e5e5c0ba1d4e45c362902794fcd2",
+          "config_sha256": "74929c2f71e8a3b3b6f5b5de4a24061b43a3ba6d0981da6a9b0d0bbe1044bef2",
+          "source_m0_sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79"
+        },
+        "state_digests": {
+          "model": "16692046df12a67d64049d00ba41cda222539e7809a9c3933c04d8afa50fd504",
+          "optimizer": "a06478040836bf116e5b49a5e0c2a77ae1bae6a667577eb01bc299ff66e89330",
+          "scaler": "0b30468a2fd0cb5c6e19fc358ec16afea1f11ad6234b2017d97a3a94396165fb",
+          "rng": "2aeaf5ff7b4d85edad5ff2bb85dc65206bf270575f3b659e8c58bfe045fb6984"
+        }
+      }
+    },
+    "start_global_step": 2000,
+    "end_global_step": 4000,
+    "first_new_step": 2001,
+    "next_global_draw_at_start": 8000,
+    "draw_range_inclusive": [
+      8000,
+      15999
+    ],
+    "next_global_draw_at_end": 16000,
+    "epoch_state_at_start": {
+      "epoch": 18,
+      "position_in_epoch": 80,
+      "draws_per_epoch": 440
+    },
+    "epoch_state_at_end": {
+      "epoch": 36,
+      "position_in_epoch": 160
+    },
+    "required_restoration": [
+      "Each method restores its OWN model, full AdamW first/second moments and step counters, AMP scaler, Python/NumPy/Torch CPU/CUDA RNG, sampling cursor and configuration lineage.",
+      "Parent optimizer states differ between T0 and TW as expected; restore each exactly, do not require optimizer/model equality between methods.",
+      "Restore state after model/optimizer construction and validate digests before forward/backward. DataLoader uses the same private seeded generator; evaluation in separate processes does not perturb training RNG.",
+      "On interruption resume only from the last complete child checkpoint; retain and align discarded log tails by the proven prior mechanism, record discarded attempts, never count uncheckpointed replays as extra unique successful updates.",
+      "If state, source binding, cursor, same-input pairing or numerical continuation cannot be guaranteed, stop and report; do not silently restart or relax the protocol."
+    ],
+    "learning_rate": {
+      "rule": "Continue constant 0.0001 from the saved optimizer state for global steps 2001 through 4000.",
+      "scheduler": null,
+      "allowed_changes": [],
+      "no_warmup_restart_decay_or_lr_reset": true
+    },
+    "configuration_rule": {
+      "scientific_values": "All numerical training fields must match the method-specific parent config and checkpoint, including optimizer values and initial AMP configuration; runtime scaler state is restored as saved (scale 2048, growth tracker 0), not initialized anew.",
+      "allowed_metadata_overrides": [
+        "kind",
+        "phase",
+        "max_steps",
+        "protocol_sha256",
+        "execution_binding_id"
+      ],
+      "max_steps": 4000,
+      "additional_metadata": "Parent path/hash, start step/draw, parent config/binding and new execution binding may be stored separately with explicit lineage. Never alter or relabel the original checkpoint/config.",
+      "child_binding": "New child checkpoints bind the new implementation/protocol/config plus immutable parent checkpoint/config/binding hashes."
+    }
+  },
+  "data_and_regions": {
+    "train_images": 110,
+    "development_images": 28,
+    "data_root": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008",
+    "manifest": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/data_manifest.csv",
+    "split": "${RETINA_PROJECT_ROOT}/data/maples_handoff_20261008/split_record.json",
+    "input": "RGB only；H/U/V只用于既定训练权重或监督/评价，不增加模型输入通道",
+    "V": "既定 Vessels 标注，按原原生尺寸读取器解释",
+    "H": "确定 Hemorrhages",
+    "U": "BrightUncertains ∪ RedUncertains",
+    "FOV": "沿用已绑定的 RGB candidate_fov；不得用标签修补",
+    "native_region_order": [
+      "读取完整原图RGB、V、H、U和既定FOV，不resize",
+      "r=max(1,ceil(native_RGB_width/100))；对完整原图 H 做欧氏圆盘膨胀 D",
+      "Omega=FOV & ~U；Rin=H & Omega；Rnear=(D & ~H) & Omega；Rfar=Omega & ~D",
+      "在完整原图生成w，再按同一裁剪/翻转/逆时针90度旋转同步处理RGB/V/FOV/w；不得按裁块重建邻域"
+    ],
+    "weight_T0": "FOV内所有位置 w=1",
+    "weight_TW": "Rin∪Rnear 内 w=2；其余 FOV内 w=1（包括U）；FOV外不计入损失",
+    "U_training": "不忽略U；U与普通区域一样按1参与BCE和原Dice；仅从区域评价及额外加权排除",
+    "empty_fov": "error_no_resampling"
+  },
+  "loss": {
+    "computation_dtype": "float32 after existing autocast forward",
+    "per_image_BCE_T0": "sum(F*BCEWithLogits(z,V))/sum(F)",
+    "per_image_BCE_TW": "sum(F*w*BCEWithLogits(z,V))/sum(F*w)",
+    "per_image_Dice": "1-(2*sum(sigmoid(z)*V*F)+1e-6)/(sum(sigmoid(z)*F)+sum(V*F)+1e-6)",
+    "batch_loss": "mean_i(BCE_i + Dice_i), batch_size=4",
+    "normalization": "每张裁块分别归一化，再批平均。TW分母使用实际FOV内权重和，不能沿用未加权像素数或跨批统一分母。w作用于该位置的正/负标签BCE，不只作用于血管正类。",
+    "invariants": [
+      "Dice不加权且系数1、epsilon=1e-6",
+      "U不排除、FOV外不计",
+      "w全1时损失值和logits梯度与既有 masked_loss 一致",
+      "不能把F*w代入整套masked_loss从而连Dice也改变"
+    ]
+  },
+  "training": {
+    "seed": 2026,
+    "methods": [
+      "T0",
+      "TW"
+    ],
+    "numeric_settings": {
+      "batch_size": 4,
+      "patch": 512,
+      "crops_per_image": 4,
+      "amp": true,
+      "amp_dtype": "float16",
+      "amp_initial_scale": 1024,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "clip_norm": 1,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "scheduler": null,
+      "accumulation": 1,
+      "num_workers": 0,
+      "safe_stop_seconds": 7200,
+      "photometric": false,
+      "resize": false
+    },
+    "architecture": "原5层UNet，通道32/64/128/256/512，GroupNorm8，不更改",
+    "sampling": "manifest_order_four_round_robin_passes_per_epoch；每轮440draw；每图4次裁剪；继承原 draw_geometry SeedSequence([seed,global_draw]) 与裁剪/翻转/旋转顺序，原相同概率不变",
+    "determinism": "沿用确定性算法、cudnn deterministic=true benchmark=false、TF32=false、threads=2、AdamW foreach=false；DataLoader私有seed发生器；评价独立进程且不改变训练随机状态。",
+    "run_order": [
+      "T0 continuation 2001-4000",
+      "TW continuation 2001-4000"
+    ],
+    "successful_update_semantics": "仅成功优化器更新计步；溢出时沿用原同一批重试与有限次数保护，记录实际scaler/重试；不同方法损失/梯度/权重及相应优化轨迹不同是预期，不要求TW与T0参数相等。",
+    "checkpoint_every_global_steps": 200,
+    "checkpoint_steps": [
+      2200,
+      2400,
+      2600,
+      2800,
+      3000,
+      3200,
+      3400,
+      3600,
+      3800,
+      4000
+    ],
+    "runtime_safety": "沿用原GPU安全锁和7200秒安全分段/恢复保护；不是总预算缩减或新科研停止规则。",
+    "pairing": "Same filename order, global draws, geometry and RGB/V/FOV tensors for all 8000 new draws. Log every successful update with its four global draws and input tensor digests; compare all 2000 paired update rows. Only the pre-existing BCE weight maps and resulting optimization trajectories differ.",
+    "primary_endpoint": 4000,
+    "no_best_selection_or_performance_early_stop": true
+  },
+  "evaluation": {
+    "definition_source": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/evaluation_protocol_v1.json",
+    "definition_scope": "原评价配置中主/补充指标、掩码、分母、推理、NA规则沿用；selection、calibration_max_updates等校准专属项只适用旧阶段。本协议明确覆盖正式选模、保护参照和统计规则，不能整份旧配置盲拷冒充正式协议。",
+    "development_manifest": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/dev_manifest.json",
+    "primary": {
+      "name": "near_thin_recall_d1_diameter_le3",
+      "contrast": "TW(4000)-T0(4000), seed=2026 only",
+      "threshold": 0.5,
+      "diameter_max": 3,
+      "d1_tolerance": 1,
+      "match_support": "Omega",
+      "aggregation": "每图比率后宏平均，不按77点池化",
+      "valid_n": 9,
+      "target_points": 77,
+      "primary_ids": [
+        "20051117_37130_0400_PP",
+        "20051205_35276_0400_PP",
+        "20060411_61214_0200_PP",
+        "20060411_61478_0200_PP",
+        "20060412_58889_0200_PP",
+        "20060412_60913_0200_PP",
+        "20060522_45248_0100_PP",
+        "20060522_45583_0100_PP",
+        "20060530_54390_0100_PP"
+      ],
+      "denominators": [
+        13,
+        8,
+        3,
+        27,
+        6,
+        1,
+        1,
+        14,
+        4
+      ],
+      "NA_other_images": 19
+    },
+    "inference": {
+      "native": true,
+      "patch": 512,
+      "stride": 256,
+      "batch_size": 4,
+      "amp": false,
+      "gaussian_blend": "existing_tiled_probability",
+      "TTA": false,
+      "resize": false,
+      "normalization": "同原M0/FIVES冻结归一化；FOV外输入0",
+      "probability": "原尺寸float32；概率>=阈值；保存来源模型/图像及推理绑定摘要"
+    },
+    "new_fixed_threshold_steps": [
+      2200,
+      2400,
+      2600,
+      2800,
+      3000,
+      3200,
+      3400,
+      3600,
+      3800,
+      4000
+    ],
+    "reuse_baseline_step": 2000,
+    "reuse_rule": "Reuse seed-2026 T0/TW 2000-step metrics/per-image counts and endpoint probability maps read-only, with source hashes. Do not rerun 0-2000 training or count reused evaluations as new evidence.",
+    "new_evaluation_points": 20,
+    "dev_images_per_evaluation": 28,
+    "supplementary_metrics": [
+      "dice",
+      "precision",
+      "recall",
+      "fp_density",
+      "far_recall",
+      "near_pixel_recall",
+      "original diameter <=2/4/5 thin skeleton supplements at endpoints"
+    ],
+    "NA": "沿用既有计数/分母0=>NA，报告每项有效图ID与n；固定参考图，不按方法更换有效集合；任何预期n/分母改变或预测异常均暂停对比查明，不事后填0。",
+    "storage": "Retain all 20 new complete checkpoints, fixed-0.5 per-image counts/denominators/NA and aggregate metrics. Save 56 native float32 endpoint probability maps (28 per method at step 4000) with binding.",
+    "main_endpoint": "Global step 4000 only; intermediate evaluations are curves, never best-model candidates."
+  },
+  "comparisons": {
+    "primary": "At fixed 0.5, per-image TW(4000)-T0(4000), original diameter <=3 near thin-skeleton d1 recall.",
+    "budget_changes": [
+      "Per-image T0(4000)-T0(2000)",
+      "Per-image TW(4000)-TW(2000)"
+    ],
+    "relationship_change": "Per-image [TW(4000)-T0(4000)]-[TW(2000)-T0(2000)]; report this paired difference of differences with its interval.",
+    "report_all_metrics": [
+      "near_thin_recall_d1",
+      "dice",
+      "precision",
+      "fp_density",
+      "far_recall",
+      "recall",
+      "near_pixel_recall"
+    ],
+    "absolute_reference": "Report T0/TW absolute values and changes relative to the same Z0@0.5 without reinterpreting the original calibration or formal outcomes.",
+    "curve_analysis": "Show 2000-4000 loss and fixed-threshold curves separately. Train-loss plots summarize integer 110-update sampling cycles, preserving raw values. Total training losses across T0 and TW have different objectives and are not directly comparable. Do not invent BCE/Dice historical components absent from original logs."
+  },
+  "same_FP": {
+    "role": "终点描述性补充，不用于选模或拯救主结果；同一开发集拟合和评价，不是独立Test",
+    "target_source": "${RETINA_PROJECT_ROOT}/experiments/a15_2_z0_t0_calibration_20261015/protection_rules.json::baseline.fp_density",
+    "target_macro_FP_per_FOV": 0.011634106399528646,
+    "reference": "同一Z0@0.5的全部28图宏平均FP/FOV，不是各seed T0各自目标",
+    "grid": "np.linspace(0,1,1001,dtype=np.float32)，含两端，保存网格数值与实现",
+    "selection": "对每个method/seed终点各选一个全局阈值；全部28图宏平均FP/FOV<=共同目标的最小可行阈值；不增加科学容忍epsilon；无可行=>NA并报告原因",
+    "report": [
+      "全部网格FP密度与可行标记",
+      "所选阈值、实际误报、相对目标差距、有效图n",
+      "所选全局阈值下逐图/逐点计数与指标、TW−T0配对补充差",
+      "逐图误报增减，不能将宏均值不超目标称为每图误报受控"
+    ],
+    "not_allowed": [
+      "按图调阈值",
+      "固定0.798或0.8替代既定网格",
+      "多次尝试选最有利网格/目标",
+      "把留一图开发敏感性描述为独立验证"
+    ],
+    "steps": [
+      2000,
+      4000
+    ],
+    "reuse_2000": "Reuse existing seed-2026 2000 endpoint probabilities/grids read-only where compatible; compute only required supplementary outputs into the new experiment.",
+    "scope": "Two methods, seed 2026; report method and temporal contrasts. No intermediate-checkpoint threshold fitting."
+  },
+  "protection": {
+    "contrast": "TW(4000)-paired T0(4000), fixed threshold 0.5; also report the observed 2000-step paired protection and each method temporal costs.",
+    "allowed_degradation": 0,
+    "metrics": {
+      "precision": {
+        "direction": "higher",
+        "valid_n": 28
+      },
+      "fp_density": {
+        "direction": "lower",
+        "valid_n": 28
+      },
+      "far_recall": {
+        "direction": "higher",
+        "valid_n": 28
+      }
+    },
+    "clear_support": "Precision and far_recall paired-image 95% interval lower bounds >=0, FP/FOV upper bound <=0, all three required.",
+    "report_costs": "Report any mean degradation and all per-image deterioration; an interval crossing a protection boundary is insufficient support, not proof of non-inferiority.",
+    "calibration": "Original Z0-based calibration and completed formal three-seed conclusions remain unchanged."
+  },
+  "statistics": {
+    "seeds": [
+      2026
+    ],
+    "aggregation": "Per-image ratios and differences then image macro mean. Do not average nonexistent seeds or report single-seed SD as 0.",
+    "bootstrap": {
+      "resamples": 1000,
+      "unit": "整图配对，有放回，样本量保持该指标有效n",
+      "generator": "numpy.random.Generator(numpy.random.PCG64(20261016))",
+      "seed": 20261016,
+      "indices": "Use dev_manifest fixed effective-ID order. For each n initialize PCG64(20261016), draw a (1000,n) integer index table; reuse for every metric/contrast of the same n. Save indices and estimates. There is one seed, no three-seed aggregation.",
+      "interval": "np.quantile(bootstrap_estimates,[0.025,0.975],method='linear')"
+    },
+    "interval_scope": "Descriptive paired-image intervals conditional on seed 2026; not training-seed or patient-general uncertainty.",
+    "use_same_indices": "All metrics sharing the same valid n and all temporal/method/interaction contrasts reuse the exact frozen index table; build effective IDs in dev_manifest order.",
+    "NA": "指标固定有效集合按原分母确定；若预期有效图中某方法产生额外NA，不能pairwise删除/更换样本，应记录不可比较并排查；不伪造置信区间。",
+    "report": [
+      "All 28 image identities, original 9 primary IDs/77 positions and 19 NA",
+      "Per-image values, numerators/denominators, absolute and paired changes",
+      "Macro estimates, 1000 bootstrap indices/estimates and 95% linear-quantile intervals",
+      "Single paired seed explicitly labeled; seed variation NA, not a three-seed result"
+    ],
+    "limits": [
+      "Post-hoc development-set budget exploration after observing 2000-step curves",
+      "Seed 2026 and development images reused from calibration and formal work",
+      "Small primary sample of 9 images/77 positions; patient independence unknown",
+      "Do not treat checkpoints, image-by-time observations or skeleton positions as independent replicates"
+    ]
+  },
+  "interpretation": {
+    "primary_support": "Positive point estimate and primary paired-image 95% lower bound >0 may support a within-seed exploratory signal only; require all protection intervals before describing a protected signal. Never claim that the original three-seed success criterion was met.",
+    "budget_support": "Evaluate T0 and TW temporal primary changes, seeds being fixed, jointly with Dice and observed precision/FP/far-recall costs. A falling train loss or rising global Dice alone is insufficient to establish primary convergence or useful fine-vessel gains.",
+    "no_result_contingent_design": "No extra seeds, duration, threshold selection or rule changes to rescue unfavorable results. Any further research decision returns to user and Sol."
+  },
+  "implementation": {
+    "code_root": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study",
+    "new_entry": "retinal_m0/maples_budget_extension.py and necessary new same-scope helpers/tests; Luna binds exact paths/hashes.",
+    "reuse": "Read-only reuse of bound CorePatches, weighted_masked_loss, UNet, state/geometry, tiled inference and metric primitives.",
+    "old_entry_warning": "Old core worker caps target at parent max_steps=2000 and binds output/config to the old experiment. Implement an explicit child continuation entry; do not mutate old globals, monkeypatch hardcoded roots or modify old checkpoint configs to fool checks. The old evaluation save-probability condition step==2000 must not be blindly reused for the new 4000 endpoint.",
+    "cli": "No default implicit training. Require explicit continuation operation, seed/method/source and validated new output root/protocol/binding.",
+    "outputs": "${RETINA_PROJECT_ROOT}/experiments/t0_tw_budget_extension_20261018",
+    "layout": {
+      "runs": "runs/seed_2026/{T0,TW}/",
+      "gate": "implementation_gate/verification.json plus restoration and real-input evidence",
+      "analysis": "analysis/ with fixed per-image tables, all method/temporal/interaction contrasts, same-FP grid and bootstrap indices",
+      "root_files": [
+        "execution_binding.json",
+        "reuse_manifest.json",
+        "completion_verification.json",
+        "report.html"
+      ]
+    },
+    "new_run_logs": "Only global steps 2001-4000, 2000 unique successful updates and 8000 draws per method. Reused old logs stay separate, never duplicated as new updates.",
+    "execution_binding": "Luna generates exact new implementation/config/environment bindings to frozen protocol/source manifest and parent states; changed new code invalidates the gate and requires rechecking the affected checks without extra GPU training.",
+    "handoff": "Only existing server STATUS current handoff; no parallel project status or model memory."
+  },
+  "engineering_gate": {
+    "required_before_any_new_parameter_update": true,
+    "Sol_completed": "CPU source/hash/config/optimizer/cursor checks and exact model/optimizer reload; terminal RNG/scaler equality; 12 future real-input samples per method. This is not the Luna implementation gate.",
+    "required_checks": [
+      "Verify frozen protocol/source hashes, original checkpoint SHA and all protected files. No new source may be imported under an old binding.",
+      "Restore each own model/AdamW/AMP scaler/Python/NumPy/Torch CPU/CUDA RNG on GPU0; compare actual restored-state digests with its source checkpoint before any update; optimizer counters=2000 and learning rate=0.0001 with scheduler=None.",
+      "Assert start cursor=8000, epoch=18, position=80, first new step=2001; compute all 8000 planned future filename/geometry records and verify both methods use the same continuation sequence without reset.",
+      "Verify real RGB/V/FOV/geometry digests for all 12 source_manifest future-input samples and their full-image mask rules; bind their sources. Ensure loss weighting does not consume sampling RNG.",
+      "Check new continuation config against its parent with exactly the allowed metadata overrides. T0/TW config differences remain only original method/loss plus lineage metadata.",
+      "Use existing validated loss implementation, inspect its use in the new entry and run targeted CPU no-update tests for continuation boundary, source rejection, logging, max-step guard, endpoint probability saving and evaluation/statistics schema. No extra GPU short-training or optimizer updates.",
+      "Validate per-method recovery and source-vs-child lineage without writing old files; preserve full state and maintain global step/draw counters.",
+      "Write actual checks/evidence/code/config/protocol hashes and all_passed before either training worker may update parameters."
+    ],
+    "runtime_checks": [
+      "Validate actual full paired 2000 update rows/8000 draws, not only a prefix.",
+      "GPU0 readiness and existing project lock; busy means wait/report, never kill another job.",
+      "Each method reaches step=4000, next_draw=16000, optimizer step=4000, with exactly 2000 new successful updates."
+    ],
+    "failure": "Stop and report if scientific equivalence, LR continuation, source identity, full-state restore, pair fairness or data/protocol integrity cannot be guaranteed; no fresh retraining fallback."
+  },
+  "acceptance": {
+    "new_trajectories": 2,
+    "new_successful_updates_each": 2000,
+    "new_successful_updates_total": 4000,
+    "new_draws_each": 8000,
+    "new_complete_checkpoints": 20,
+    "new_fixed_0p5_evaluations": 20,
+    "new_endpoint_probability_maps": 56,
+    "criteria": [
+      "Gate passed for exact executing binding before updates; only seed 2026 T0 and original TW.",
+      "Full restore and all new paired input/draw rows verified; old outputs, protocols and bound source hashes unchanged.",
+      "All 28 fixed development images/9 primary images/77 positions/19 NA retained.",
+      "Primary, temporal and difference-of-differences statistics and guardrail costs reproducible from actual outputs.",
+      "Same-FP only supplementary; full grid and selected global thresholds reproducible.",
+      "No official Test access, best-checkpoint selection or unauthorized extra training.",
+      "All required reports/manifests/closure evidence really exist; any issue explicitly recorded rather than claimed complete.",
+      "Negative, positive or inconclusive outcomes equally satisfy engineering acceptance when complete, fair and reproducible.",
+      "Luna writes real implementation/validation/results/limitations into existing STATUS then stops for Sol scientific review."
+    ]
+  },
+  "resource_estimate": {
+    "hardware": "A7 GPU0 GTX 1080 Ti",
+    "gpu_hours_reserved": [
+      1.0,
+      1.5
+    ],
+    "basis": "Prior paired seed-2026 runs: about 0.774 training hours plus 20 evaluations at about 40 seconds each, excluding engineering/debug overhead. Estimate, not a training or wall-time stop rule."
+  }
+}

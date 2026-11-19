@@ -1,0 +1,23 @@
+{
+  "status": "APPROVED_PRELAUNCH_GATES_PASSED",
+  "cpu_tests_passed": 15,
+  "preflight_checks_passed": 20,
+  "preflight_total": 20,
+  "old_source_and_freeze_protected_count": 23,
+  "old_protected_mismatches": [],
+  "model_optimizer_or_CUDA_initialized_in_preflight": false,
+  "protocol_sha256": "6e095d04c29178eea076c6026119f40c2d8d92a41eb52d1612cf2c49732cb975",
+  "preflight_sha256": "a743fdccc8b45a25c145eb2c179c9a8fd67247e2f4f86b34283290ac18896360",
+  "binding_sha256": "a250cd268e7e60b41d94f3320018149b8c7707527bbcbd0daf7481c23e5d7fb1",
+  "authorization_sha256": "cde4f5de8940f5ce6819c729219cb7ab7d433ca4aa1408d276e83bfb3fe52d25",
+  "GPU0_UUID": "${GPU_UUID}",
+  "GPU1_reserved_for_separately_approved_mainline": true,
+  "scientific_sections_equal_to_parent": [
+    "data",
+    "recipe",
+    "randomness",
+    "monitoring",
+    "evaluation",
+    "statistics"
+  ]
+}

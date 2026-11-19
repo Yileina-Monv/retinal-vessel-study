@@ -1,0 +1,55 @@
+{
+  "phase": "D0_PROBABILITY_FP_V1",
+  "user_authorization": "Implement the plan: first probability and false-positive diagnosis only",
+  "date": "2026-10-29",
+  "code_sha256": "dd8b751de17f41a1fe34d513adc820b4143ece464edb9983e30b0a7ec8ff21f9",
+  "seeds": [
+    2027,
+    2028
+  ],
+  "model": "existing standard nnU-Net final100epochs",
+  "threshold": 0.5,
+  "points": 77,
+  "point_rows": 154,
+  "images": 28,
+  "image_rows": 56,
+  "thin_valid_images": 9,
+  "NA_images": 19,
+  "expected_hits_each_seed": 59,
+  "expected_shared_misses": 17,
+  "background": {
+    "GT_distance_inclusive_native_px": [
+      2,
+      8
+    ],
+    "target_distance_inclusive_native_px": 12,
+    "domain": "same frozen near & Omega & ~GT",
+    "selection": "all legal background; no hard mining or sampling",
+    "empty": "NA, never replace"
+  },
+  "probability_clip": [
+    1e-06,
+    0.999999
+  ],
+  "gap": "logit(target center) minus mean(logit(all legal backgrounds))",
+  "qualifying": "original d1 miss AND nonempty legal background AND gap<1",
+  "gate": "each seed at least3 valid images with qualifying misses; allows only proposal for next Train pairing CPU check",
+  "CPU_threads": 2,
+  "CPU_wall_cap_seconds": 3600,
+  "CPU_RSS_cap_GiB": 8,
+  "new_model_forward": false,
+  "Train_matching_or_replay": false,
+  "GPU": false,
+  "Test_allowed": false,
+  "medical_review": "UNKNOWN; no new signed reviews",
+  "outputs": [
+    "points_154.csv",
+    "image_regions_56.csv",
+    "point_index_77.csv",
+    "summary.json",
+    "atlas.html",
+    "9 overviews +77 point images",
+    "one-page Chinese conclusion"
+  ],
+  "frozen_science_protocol_sha256": "2ffe96c056c35a2d294867018bde710214c7e79f37da56e1af00ceaf3a6fa9e3"
+}

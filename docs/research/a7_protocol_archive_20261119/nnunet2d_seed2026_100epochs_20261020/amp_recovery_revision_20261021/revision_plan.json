@@ -1,0 +1,106 @@
+{
+  "revision_id": "nnunet_amp_counter_recovery_cpu_revision_20261021",
+  "status": "CPU_REVISION_VERIFIED_SCIENTIFIC_AMENDMENT_DRAFT_NOT_FROZEN",
+  "authority": {
+    "user_message": "可以，先修订",
+    "executor": "Sol",
+    "approved": [
+      "AMP/counter/recovery CPU revision",
+      "CPU scalar regression probes",
+      "preserved checkpoint CPU audit",
+      "update existing STATUS and research decisions"
+    ],
+    "not_authorized": [
+      "GPU update",
+      "retinal model forward",
+      "new Dev inference",
+      "official Test",
+      "fresh scientific restart",
+      "non-exact continuation",
+      "strict resume claim",
+      "B1/B2 GPU"
+    ]
+  },
+  "parent_protocol": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_seed2026_100epochs_20261020/no_wall_limit_restart_02/protocol.json",
+  "parent_frozen_bundle_unchanged": true,
+  "amp_policy": {
+    "single_handled_overflow": "continue only if finite forward loss/model/optimizer state, zero actual optimizer.step calls, valid decreasing scaler; log skip separately",
+    "nonfinite_forward_or_corrupt_parameters": "stop",
+    "inconsistent_update_or_unhandled_grad": "stop",
+    "proposed_pause_limits": {
+      "max_consecutive_skips": 5,
+      "max_total_skips": 25,
+      "status": "PROPOSED_ENGINEERING_THRESHOLDS_REQUIRE_CONFIRMATION; no runtime implicit defaults"
+    },
+    "threshold_basis": "Conservative technical pause limits, not selected using Dev outcomes; require explicit approved configuration before GPU."
+  },
+  "budget_proposal": {
+    "epochs": 100,
+    "attempts_per_epoch": 250,
+    "planned_attempt_cap": 25000,
+    "count_successes_separately": true,
+    "automatically_replace_skipped_updates": false,
+    "wall_clock_hard_stop": null,
+    "status": "PENDING_USER_CONFIRMATION: replaces old requirement attempts=successes=25000 and AMP_skips=0; not retroactive"
+  },
+  "legacy_checkpoint": {
+    "attempts": 6527,
+    "successful_updates": 6526,
+    "amp_skips": 1,
+    "completed_epochs": 26,
+    "zero_based_current_epoch": 26,
+    "next_train_iteration_zero_based": 27,
+    "remaining_attempts_current_epoch": 223,
+    "remaining_attempts_under_fixed_25000": 18473,
+    "remaining_internal_train_monitor_batches": 3700,
+    "native_saved_epoch": 27,
+    "native_epoch_marker_incorrect_for_mid_epoch": true,
+    "model_and_optimizer_finite": true,
+    "missing": [
+      "historical main RNG",
+      "native augmentation producer RNG/queues/in-flight state",
+      "native explicit scheduler state"
+    ],
+    "strict_resume_supported": false,
+    "old_checkpoint_rewritten": false,
+    "non_exact_continuation_authorized": false
+  },
+  "implemented": [
+    "finite-update versus handled-AMP-skip versus fatal classification",
+    "actual optimizer.step pre-hook observation without extra updates",
+    "separate attempts/successes/skips/fatal/invocation counters",
+    "fixed-attempt cap without supplemental steps",
+    "train/monitor/finalize cursor; no unconditional epoch+1",
+    "candidate snapshot bundle storing explicit cursor/counters/RNG/scheduler/partial-epoch fields",
+    "strict native-queue resume refusal",
+    "CPU audit of old checkpoint and real CPU GradScaler probes"
+  ],
+  "not_yet_implemented_or_authorized": [
+    "native nnU-Net worker-queue serialization",
+    "revision-aware complete GPU training loop integration",
+    "GPU full-state recovery verification",
+    "new scientific launch or final-model inference"
+  ],
+  "invariants": [
+    "Train110/Dev28 split",
+    "official Test sealed",
+    "U-Net B1/B2 remains CPU-only",
+    "only physical GPU0 may be scheduled; GPU1 belongs to another user",
+    "nnU-Net architecture/plans/batch/patch/standard loss/optimizer/Poly100 unchanged",
+    "fixed threshold0.5 and original metrics/protection/NA unchanged",
+    "previous T0/TW negative conclusions preserved",
+    "no historical failed trajectory relabeled complete"
+  ],
+  "paths": {
+    "code": "${RETINA_PROJECT_ROOT}/code/retinal-vessel-study/research_branches/nnunet2d_20261020/amp_recovery_revision_20261021",
+    "evidence": "${RETINA_PROJECT_ROOT}/experiments/nnunet2d_branch_20261020/scientific_seed2026_100epochs_v2_no_wall_limit/repair_amp_cpu_20261021/attempt_01",
+    "docs": "${RETINA_PROJECT_ROOT}/docs/nnunet2d_seed2026_100epochs_20261020/amp_recovery_revision_20261021"
+  },
+  "acceptance": {
+    "CPU_tests": 37,
+    "retinal_model_calls": 0,
+    "GPU_updates": 0,
+    "launch_authorized": false,
+    "old_sources_and_outputs_unchanged": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "reviewer": "Sol",
+  "date": "2026-10-20",
+  "status": "REVIEW_ACCEPTED_WITH_DOCUMENTED_LIMITATIONS_CONDITIONAL_ON_SCIENTIFIC_PREFLIGHT",
+  "scope": "Readonly independent artifact and source audit; no new model or GPU execution.",
+  "independently_verified": {
+    "source_hashes_match_engineering_binding": true,
+    "verification_cpu_gate_plans_fingerprint_environment_hashes_match": true,
+    "each_phase_update_success_events_match_declared_counts": true,
+    "all_four_checkpoint_hashes_match": true,
+    "T0_28_probability_hashes_match": true,
+    "attempts": 100,
+    "phase_seconds": 222.73695581004722,
+    "train_probe_seconds": 24.021517599991057,
+    "aggregate_declared_seconds": 246.77146886801347,
+    "within_engineering_caps": true
+  },
+  "discrepancy": {
+    "binding_declared_sha256": "09fb49d1268ec821dfa31eaf9f43a48951a9bb9879743bc107c5213911818aac",
+    "actual_ledger_sha256": "e7caae63331075ddaf5fd600299b23080d647de13773dc5987bbf2dfb89271f3",
+    "treatment": "Preserve originals; reconcile with new scientific preflight supplementary binding before any GPU update, no engineering rerun"
+  },
+  "limitations": [
+    "Explicit worker seeds are not yet plumbed in engineering loader (seeds=None); scientific preflight must bind deterministic seed plumbing without changing recipe.",
+    "Restore proof only fixed transformed Train input; no automatic native augmentation queue resume.",
+    "Environment prefix shares base site-packages read-only, not physically self-contained.",
+    "10,275MiB is point telemetry, not measured backward high-water mark; no OOM occurred.",
+    "CPU coordinate check was nearest-neighbor identity markers, not vessel-probability inverse export."
+  ],
+  "decision": "Enough evidence for scoped conditional scientific launch after CPU/source/seed/export/metadata gates; not evidence of segmentation superiority. Preserve all original engineering files."
+}

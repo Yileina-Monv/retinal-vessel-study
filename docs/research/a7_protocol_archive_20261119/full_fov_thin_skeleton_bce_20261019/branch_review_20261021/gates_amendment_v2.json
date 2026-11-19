@@ -1,0 +1,64 @@
+{
+  "amendment_id": "b1_b2_tiered_review_gates_v2_20261021",
+  "status": "USER_APPROVED_GATE_DIRECTION_SPECIFIED_NOT_EXECUTED",
+  "user_authorization_verbatim": "批准这种分层审核方向,要明确写出门槛变更及 GPU 验收标准",
+  "parent_review_spec_sha256": "2176e0351c193d9be7fe4198075b3c1f05a0d1e88bc30af15cfc7b3c75fe6202",
+  "parent_review_report_sha256": "71cf655a5f5ea8f66a455e7209ad6eb8e5facb5cb6ef769126341833afd4f716",
+  "precedence": {
+    "supersedes_only": "The parent review's blanket all26-human-before-ANY-GPU condition and its phase-insensitive human-incomplete stop condition. Use phase-specific conditions below for B1/B2 engineering only.",
+    "old_records_immutable": true,
+    "old_S3_H1_released": false,
+    "does_not_change": ["original frozen S3/formal protocols or conclusions", "B1/B2 target bytes, graph, relative6/20 pilot rules and manual uncertainty", "single-pixel positive BCE lambda0.1 with original BCE+Dice", "M0/seed2026/draws/augmentation/batch/optimizer/lr/AMP/retry rules", "G1 diagnostic cap32 and G2 successful-update cap400", "evaluation threshold, official Test seal, scientific launch permission"]
+  },
+  "authorization_now": {
+    "write_records_and_handoff": true,
+    "gpu_started_in_this_turn": false,
+    "immediate_gpu_launch_released": false,
+    "scientific_training_authorized": false,
+    "new_inference_on_Dev_or_Test_authorized": false,
+    "conditional_engineering": "Existing Luna may prepare the engineering entry. Actual G1/G2 execution requires Sol's phase-specific evidence-bound release in the existing STATUS; this amendment itself is not such a release. Scientific training remains separately unauthorized."
+  },
+  "tier_0_preflight_and_G1": {
+    "purpose": "Numerical/implementation diagnosis on provisional Train-only targets, NOT semantic acceptance or scientific evidence",
+    "human_requirement": "No minimum human case count for zero-update G1; full26 and H_key9 are not G1 prerequisites",
+    "before_release": ["Read current AGENTS/STATUS, this amendment and parent review; exact source/target/environment/config binding", "Existing C0 and26 CPU regression evidence still matches current sources; any newly implemented runner/budget guards have real CPU tests", "Pin all110 candidate-mask bytes to existing artifact hashes and Train whitelist, no target regeneration; validate target subset GT&FOV on loaded data", "Fixed32 draws from G1_fixed_batches.json: regenerate real RGB/V/FOV/geometry and compare original T0 fingerprints plus target counts/crop hashes", "Explicit phase=G1, successful-update budget0, optimizer-step calls prohibited and observed; no scientific/Dev entry", "GPU0 UUID ${GPU_UUID} idle, exclusive project lock, sufficient disk; do not use or interfere with GPU1", "Sol writes G1-only release bound to amendment/source/preflight hashes; preserve actual remaining counters if any attempts already exist"],
+    "fixed_batch_steps_one_based": [115, 1442, 1660, 1, 4, 3, 66, 400],
+    "diagnostic_combinations": "8 fixed batches x B1/B2 x FP32/AMP",
+    "max_network_forwards_total": 32,
+    "parameter_updates": 0,
+    "counting": "At most32 diagnostic forwards including failed attempts. Decompose base/aux/combined gradients using the same forward graph; log all autograd/backward calls, do not represent multiple backwards as one. No hidden warmup, replay or extra model forward.",
+    "state": "Identical fresh M0 and paired RNG state, original train-mode configuration; restore RNG between comparisons, verify model parameters/buffers unchanged; no optimizer.step or engineering-to-science continuation",
+    "pass_checks": ["All scheduled combinations completed within cap; original input/target pairing and GT/FOV subsets exact", "Base remains bound BCE+Dice; lambda0 loss and logits/parameter gradients match the bound A0 computation exactly within the SAME precision", "FP32 auxiliary analytic logits gradient rtol1e-5/atol1e-7; target-exterior and empty-target auxiliary gradient exactly zero, empty crop kept in batch4 mean", "Actual unscaled base/weighted-aux/combined parameter gradients, losses and norms finite; preclip/per-layer L2, gradient directions, clip fraction, scaler, memory and runtime retained", "For every fixed combination weighted-aux full-parameter L2<=base L2; base0+aux0 ratio NA with explanation, base0+aux>0 blocks", "FP32 and AMP use identical masks/formula; report cross-precision loss/gradient deltas without a false bitwise-equality claim. An unexplained discrepancy remains REVIEW_REQUIRED, not automatic PASS based only on finiteness", "Observed optimizer calls0 and exact before/after model/buffer equality; diagnostic counter complete and no Dev/Test access"],
+    "failure_policy": "Any failed/missing check prevents G1 PASS and G2 release. A gradient-ratio>1 triggers scientific review, not automatic method rejection; do not alter lambda/normalization/target or rerun outside remaining cap. G1 nonfinite loss/gradient or OOM stops immediately."
+  },
+  "tier_1_H_key9_and_G2": {
+    "purpose": "Limited engineering update/recovery verification, NOT approval of target semantics for scientific training",
+    "case_ids": ["CASE_01", "CASE_05", "CASE_07", "CASE_09", "CASE_13", "CASE_16", "CASE_21", "CASE_22", "CASE_25"],
+    "strata": {
+      "native_1488x2240": {"scale_path_root": "CASE_01", "complex": "CASE_05", "short": "CASE_07"},
+      "native_1536x2304": {"scale_path_control": "CASE_09", "complex": "CASE_13", "short": "CASE_16"},
+      "native_960x1440": {"long_path_root": "CASE_21", "complex": "CASE_22", "short": "CASE_25"}
+    },
+    "selection": "Fixed from existing atlas strata and known coverage/width risks before GPU results, not an outcome-based favorable selection. CASE09 is a scale/control example, not asserted to have a coarse root.",
+    "H_key_pass": ["All9 actually reviewed with real reviewer/date, per-case scope-limited engineering verdict and uncertainty retained; no AI substituted signature", "Reviewer explicitly accepts temporary engineering use of this exact provisional6/20/full-path definition, including root retention, short-path exclusion and no cross-junction anatomical pairing", "No unresolved systematic GT/FOV/source/scale/target bug. A pause/uncertain target-policy verdict blocks G2 until reviewer clarification; low RGB visibility may remain unknown if explicitly accepted only for numerical engineering", "Do not revise the unsigned source CSV or manufacture all26 acceptance; bind separate real submitted evidence and Sol's interpretation"],
+    "other_preconditions": ["G1 PASS, gradient/difference review resolved without silently weakening criteria", "Runner/budget/pairing/recovery CPU checks passed and source hashes unchanged", "Sol writes a separate G2-only release bound to G1,H_key and source hashes; G1 release alone never authorizes updates"],
+    "max_successful_updates_total": 400,
+    "allocations": {"lambda0_replay_against_original_T0_step200": 200, "B1_continuous50": 50, "B1_independent25plus25": 50, "B2_continuous50": 50, "B2_independent25plus25": 50},
+    "pass_checks": ["lambda0 fresh replay200 matches original T0 step200 complete model/AdamW/scaler/RNG/next_global_draw state and original first200 input fingerprints; not a new scientific A0", "Each B1/B2 continuous50 and independent-process25+25 has identical final complete model/optimizer/scaler/all RNG/draw state; resume does not reseed/rebuild a different stream", "B1/B2 have same M0 initialization, seed2026 and sample/crop/augmentation stream; auxiliary target is the only intended difference", "Successful updates are observed actual optimizer.step events. Log attempts, retries, success and nextdraw separately; all failed subrun successful updates remain charged to total400", "Original U-Net AMP same-batch scaler backoff, no failed-draw advance, more than8 retries stops. Only finite-loss/model-state controlled overflow may retry; nonfinite loss/model state is fatal; no nnU-Net skip-count rule", "Loss/parameter state finite after every successful step; original lr/optimizer/clip/AMP maintained, all losses and crop target denominators reproducible", "Complete counters/checkpoints/inputs/recovery comparisons and negative/failure evidence preserved; no Dev score/checkpoint selection, scientific initialization or Test access"],
+    "failure_policy": "Strict state/input mismatch, OOM, exhausted retry/update budget, source drift or target-policy conflict stops. No tolerance relaxation, automatic configuration change, new subrun allowance or budget reset. G2 completion does not launch scientific training."
+  },
+  "tier_2_scientific_gate_not_released": {
+    "human_requirement": "All existing26 genuinely reviewed: critical9 plus remaining17; no remaining-case silent waiver",
+    "remaining17_includes": ["tip-only and normal/long candidates", "GT gaps/fragments", "FOV-boundary cases", "loops and additional scope/scale examples"],
+    "requirements": ["Resolve root/short/complex/scale policy; unknown visibility is not confirmed anatomy, and case-specific failure cannot be deleted to pass", "Freeze target rule/source bytes separately with user acceptance; original protocols stay immutable", "G1/G2 verified and exact scientific controls ready; no engineering checkpoint as initialization", "Freeze GT-only Dev branch IDs/denominators/NA, primary/protection/statistical rules before candidate scoring; connectivity corridor/endpoints/ownership must be defined if used", "User separately authorizes specific scientific arms/seed/budget; this amendment grants no2000-step run"],
+    "interpretation": "Coverage is not connectivity; all Dice/Precision/FP-FOV/whole and coarse Recall/far/original lesion guards retained. Reused Dev and one seed are exploratory, not independent validation."
+  },
+  "cost_and_resources": {
+    "G1_plus_G2_estimated_GPU_minutes": [15, 30],
+    "wall_clock_kill": false,
+    "meaning": "Estimate only; count and report all attempts, diagnostics, peak VRAM and elapsed time. Unexpected cost or missing capacity pauses for review, not an unapproved extra run or silent budget increase.",
+    "GPU0_only": true,
+    "GPU1_owned_by_others": true
+  },
+  "actual_state_at_amendment": {"real_human_signed": 0, "H_key_signed": 0, "G1_status": "NOT_RUN", "G2_status": "NOT_RUN", "current_phase": "CPU_PREPARATION", "gpu_release": false, "scientific_release": false}
+}

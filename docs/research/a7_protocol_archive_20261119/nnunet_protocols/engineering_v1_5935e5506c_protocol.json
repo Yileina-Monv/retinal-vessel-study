@@ -1,0 +1,24 @@
+{
+  "phase": "NL_ALLTARGETS_GPU_ENGINEERING_V1",
+  "user_approval": "开始吧",
+  "approved_scope": "40 diagnostic forwards,128 update attempts,7200 seconds cumulative GPU engineering; no science",
+  "GPU_UUID": "${GPU_UUID}",
+  "limits": {
+    "diagnostics": 40,
+    "updates": 128,
+    "wall_seconds": 7200
+  },
+  "lambda": null,
+  "ratio_stop_gt": 2,
+  "base_clip": 12,
+  "AMP_stop": {
+    "consecutive": 5,
+    "cumulative": 25
+  },
+  "scientific_training_authorized": false,
+  "Test_allowed": false,
+  "diagnostics": "32 fixed nonempty Train batches at seed2027 original initialization; remaining8 edge/smoke checks; no parameters updated",
+  "updates": "N0/zero each16 for2027 and2028=64;NLcont32 versus split16+16=64; all attempts persist, no budget resets",
+  "recovery": "Fixed fixture/model/optimizer/scaler/scheduler/RNG only; native async queues unsupported",
+  "failure": "Stop on nonfinite forward/unscaled diagnostic gradients, ratio>2, unknown/OOM/source mismatch; no automatic lambda adjustment or rerun"
+}
