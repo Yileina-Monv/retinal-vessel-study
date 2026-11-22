@@ -1,0 +1,49 @@
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': (np.int64(512), np.int64(640)), 'median_image_size_in_voxels': array([ 866., 1024.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['RGBTo01Normalization', 'RGBTo01Normalization', 'RGBTo01Normalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Preprocessing dataset Dataset871_RefinedVessel
+Configuration: 2d...
+
+  0%|          | 0/36 [00:00<?, ?it/s]
+  0%|          | 0/36 [00:04<?, ?it/s]
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+    return list(itertools.starmap(args[0], args[1]))
+    nnUNetDatasetBlosc2.save_case(data, seg, properties, output_filename_truncated,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  chunks=chunk_size_data, blocks=block_size_data,
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  chunks_seg=chunk_size_seg, blocks_seg=block_size_seg)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    blosc2.asarray(np.ascontiguousarray(data), urlpath=output_filename_truncated + '.b2nd', chunks=chunks,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   blocks=blocks, cparams=cparams)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    return blosc2_ext.asarray(array, chunks, blocks, **kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "blosc2/blosc2_ext.pyx", line 8373, in blosc2.blosc2_ext.asarray
+    _check_rc(rc, "Error while creating the NDArray")
+    ^^^^^^^
+  File "blosc2/blosc2_ext.pyx", line 6527, in blosc2.blosc2_ext._check_rc
+    raise RuntimeError(message)
+    ^^^
+RuntimeError: Error while creating the NDArray
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+    if __name__=="__main__": main()
+                             ~~~~^^
+    preprocess_dataset(871+fold,configurations=["2d"],num_processes=[1])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    preprocessor.run(dataset_id, c, plans_identifier, num_processes=n)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    _ = [r[i].get() for i in done]
+         ~~~~~~~~^^
+    raise self._value
+RuntimeError: Error while creating the NDArray

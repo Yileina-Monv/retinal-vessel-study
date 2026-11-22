@@ -1,0 +1,4 @@
+extra-continue [('path_d1', np.float64(1.37)), ('thin_d1', np.float64(1.99)), ('near_fp_density', np.float64(0.03)), ('dice', np.float64(0.56)), ('precision', np.float64(-1.88)), ('fp_fov', np.float64(0.4)), ('far_recall', np.float64(3.34))]
+correction-extra [('path_d1', np.float64(0.9)), ('thin_d1', np.float64(1.15)), ('near_fp_density', np.float64(0.04)), ('dice', np.float64(0.06)), ('precision', np.float64(0.89)), ('fp_fov', np.float64(-0.18)), ('far_recall', np.float64(-0.98))]
+correction-continue [('path_d1', np.float64(2.27)), ('thin_d1', np.float64(3.14)), ('near_fp_density', np.float64(0.06)), ('dice', np.float64(0.62)), ('precision', np.float64(-1.0)), ('fp_fov', np.float64(0.23)), ('far_recall', np.float64(2.36))]
+correction-A [('path_d1', np.float64(5.2)), ('thin_d1', np.float64(5.45)), ('near_fp_density', np.float64(0.02)), ('dice', np.float64(2.29)), ('precision', np.float64(-2.16)), ('fp_fov', np.float64(0.53)), ('far_recall', np.float64(6.82))]

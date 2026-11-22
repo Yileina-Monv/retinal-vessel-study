@@ -1,0 +1,55 @@
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': (np.int64(512), np.int64(640)), 'median_image_size_in_voxels': array([ 866., 1024.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['RGBTo01Normalization', 'RGBTo01Normalization', 'RGBTo01Normalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Prepared fold 0
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+  0%|          | 0/36 [00:00<?, ?it/s]
+  3%|��         | 1/36 [00:03<01:55,  3.31s/it]
+  8%|��         | 3/36 [00:03<00:29,  1.12it/s]
+ 14%|����        | 5/36 [00:03<00:14,  2.17it/s]
+ 19%|����        | 7/36 [00:03<00:08,  3.48it/s]
+ 25%|������       | 9/36 [00:03<00:05,  5.05it/s]
+ 33%|��������      | 12/36 [00:03<00:02,  8.04it/s]
+ 42%|����������     | 15/36 [00:03<00:01, 11.24it/s]
+ 50%|����������     | 18/36 [00:04<00:01, 12.33it/s]
+ 58%|������������    | 21/36 [00:04<00:00, 15.38it/s]
+ 67%|��������������   | 24/36 [00:04<00:00, 18.27it/s]
+ 75%|����������������  | 27/36 [00:04<00:00, 17.06it/s]
+ 83%|������������������ | 30/36 [00:04<00:00, 19.70it/s]
+ 92%|��������������������| 33/36 [00:04<00:00, 22.00it/s]
+100%|��������������������| 36/36 [00:04<00:00, 19.22it/s]
+100%|��������������������| 36/36 [00:05<00:00,  7.17it/s]
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': (np.int64(512), np.int64(640)), 'median_image_size_in_voxels': array([ 866., 1024.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['RGBTo01Normalization', 'RGBTo01Normalization', 'RGBTo01Normalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Prepared fold 1
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+  0%|          | 0/36 [00:00<?, ?it/s]
+  3%|��         | 1/36 [00:03<02:06,  3.61s/it]
+  8%|��         | 3/36 [00:03<00:32,  1.03it/s]
+ 14%|����        | 5/36 [00:03<00:15,  2.00it/s]
+ 19%|����        | 7/36 [00:03<00:08,  3.24it/s]
+ 25%|������       | 9/36 [00:04<00:05,  4.73it/s]
+ 31%|������       | 11/36 [00:04<00:03,  6.45it/s]
+ 36%|��������      | 13/36 [00:04<00:02,  8.32it/s]
+ 42%|����������     | 15/36 [00:04<00:02, 10.25it/s]
+ 47%|����������     | 17/36 [00:04<00:01, 12.10it/s]
+ 53%|������������    | 19/36 [00:04<00:01, 13.77it/s]
+ 58%|������������    | 21/36 [00:04<00:00, 15.21it/s]
+ 64%|��������������   | 23/36 [00:04<00:00, 16.39it/s]
+ 69%|��������������   | 25/36 [00:04<00:00, 17.31it/s]
+ 75%|����������������  | 27/36 [00:04<00:00, 18.02it/s]
+ 81%|����������������  | 29/36 [00:05<00:00, 18.54it/s]
+ 86%|������������������ | 31/36 [00:05<00:00, 18.93it/s]
+ 92%|��������������������| 33/36 [00:05<00:00, 19.21it/s]
+ 97%|��������������������| 35/36 [00:05<00:00, 19.41it/s]
+100%|��������������������| 36/36 [00:05<00:00,  6.64it/s]
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': (np.int64(512), np.int64(640)), 'median_image_size_in_voxels': array([ 866., 1024.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['RGBTo01Normalization', 'RGBTo01Normalization', 'RGBTo01Normalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Prepared fold 2

@@ -1,0 +1,20 @@
+[
+  {
+    "image": "IDRiD_01",
+    "fold": 0,
+    "seed": 2027,
+    "sha256": "5a2a29c423f278813232c895a06a21425c225de95d459cdc75b88fc1f2d2d7db"
+  },
+  {
+    "image": "IDRiD_03",
+    "fold": 1,
+    "seed": 2028,
+    "sha256": "aa25dc9079bdf85f50241ce9d52caa0afdf3429b06bacbae786085280444730a"
+  },
+  {
+    "image": "IDRiD_02",
+    "fold": 2,
+    "seed": 2029,
+    "sha256": "9102c978679074f6483657c0daeda51e76ee58989656ada37145c7822faac841"
+  }
+]

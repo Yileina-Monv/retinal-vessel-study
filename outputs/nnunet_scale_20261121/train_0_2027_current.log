@@ -1,0 +1,37 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-11-21 18:54:03.392993: do_dummy_2d_data_aug: False
+  warnings.warn('Warning! No annotated pixels in image!')
+0 2027 standard 50 loss 0.1252 seconds 7
+0 2027 standard 100 loss -0.1373 seconds 13
+0 2027 standard 150 loss -0.3047 seconds 19
+0 2027 standard 200 loss -0.3491 seconds 24
+0 2027 standard 250 loss -0.3971 seconds 29
+0 2027 standard 300 loss -0.436 seconds 35
+0 2027 standard 350 loss -0.4599 seconds 40
+0 2027 standard 400 loss -0.4875 seconds 45
+0 2027 standard 450 loss -0.4969 seconds 51
+0 2027 standard 500 loss -0.5094 seconds 56
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-11-21 18:55:00.095470: do_dummy_2d_data_aug: False
+0 2027 mix 50 loss 0.144 seconds 6
+0 2027 mix 100 loss -0.0454 seconds 11
+0 2027 mix 150 loss -0.2099 seconds 17
+0 2027 mix 200 loss -0.235 seconds 22
+0 2027 mix 250 loss -0.295 seconds 28
+0 2027 mix 300 loss -0.3463 seconds 33
+0 2027 mix 350 loss -0.3652 seconds 39
+0 2027 mix 400 loss -0.4005 seconds 44
+0 2027 mix 450 loss -0.406 seconds 50
+0 2027 mix 500 loss -0.4294 seconds 55

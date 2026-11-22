@@ -1,0 +1,32 @@
+[
+  {
+    "image": "IDRiD_18",
+    "x": 175,
+    "y": 681,
+    "size": 96,
+    "whole_gains": 8,
+    "whole_losses": 0,
+    "crop_gains": 5,
+    "crop_losses": 0
+  },
+  {
+    "image": "IDRiD_05",
+    "x": 505,
+    "y": 396,
+    "size": 96,
+    "whole_gains": 2,
+    "whole_losses": 0,
+    "crop_gains": 2,
+    "crop_losses": 0
+  },
+  {
+    "image": "IDRiD_54",
+    "x": 777,
+    "y": 492,
+    "size": 96,
+    "whole_gains": 0,
+    "whole_losses": 8,
+    "crop_gains": 0,
+    "crop_losses": 7
+  }
+]

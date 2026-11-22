@@ -1,0 +1,90 @@
+{
+  "correction_native-extra_native": {
+    "all_far_thin": {
+      "images": 51,
+      "near_pp": 0.9013314259258929,
+      "far_pp": -0.577600494407812,
+      "region_difference_pp": 1.4789319203337044,
+      "ci": [
+        0.9251847161175349,
+        2.079724802081554
+      ]
+    },
+    "far_same_branches": {
+      "images": 51,
+      "near_pp": 0.9013314259258929,
+      "far_pp": -0.27186022080881633,
+      "region_difference_pp": 1.173191646734709,
+      "ci": [
+        0.4613047946615305,
+        1.9332973021405617
+      ]
+    }
+  },
+  "correction_dual-extra_dual": {
+    "all_far_thin": {
+      "images": 51,
+      "near_pp": -0.9666560368197933,
+      "far_pp": -0.7832296194137268,
+      "region_difference_pp": -0.18342641740606644,
+      "ci": [
+        -2.134034474826448,
+        1.2360903941063652
+      ]
+    },
+    "far_same_branches": {
+      "images": 51,
+      "near_pp": -0.9666560368197933,
+      "far_pp": -0.40036906081421764,
+      "region_difference_pp": -0.5662869760055758,
+      "ci": [
+        -2.57986748927305,
+        0.8892234144777604
+      ]
+    }
+  },
+  "extra_native-continue_native": {
+    "all_far_thin": {
+      "images": 51,
+      "near_pp": 1.3721803919188338,
+      "far_pp": 3.789262733439708,
+      "region_difference_pp": -2.417082341520875,
+      "ci": [
+        -4.28533106766734,
+        -1.042186113815561
+      ]
+    },
+    "far_same_branches": {
+      "images": 51,
+      "near_pp": 1.3721803919188338,
+      "far_pp": 3.1300857905870147,
+      "region_difference_pp": -1.757905398668181,
+      "ci": [
+        -3.585988423682596,
+        -0.3332832674668686
+      ]
+    }
+  },
+  "correction_native-standard_native": {
+    "all_far_thin": {
+      "images": 51,
+      "near_pp": 5.199096771155051,
+      "far_pp": 8.130487766664276,
+      "region_difference_pp": -2.9313909955092257,
+      "ci": [
+        -4.940063284717015,
+        -1.1948357159084517
+      ]
+    },
+    "far_same_branches": {
+      "images": 51,
+      "near_pp": 5.199096771155051,
+      "far_pp": 7.351813528471364,
+      "region_difference_pp": -2.152716757316313,
+      "ci": [
+        -3.8500596574016357,
+        -0.5080763172063645
+      ]
+    }
+  }
+}

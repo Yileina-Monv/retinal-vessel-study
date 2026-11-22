@@ -1,0 +1,1382 @@
+{
+  "summary": {
+    "total_far": 806,
+    "pairs": 87,
+    "images": 24,
+    "miss": 1.8147877585377585,
+    "hit": 3.9679548460798464,
+    "delta": -2.1531670875420876,
+    "ci": [
+      -3.554992371632997,
+      -0.9008538510101015
+    ],
+    "lower_images": 19,
+    "equal_images": 2
+  },
+  "by_image": {
+    "IDRiD_02": {
+      "n": 8,
+      "miss_mean": 2.625,
+      "hit_mean": 3.375,
+      "delta": -0.75
+    },
+    "IDRiD_03": {
+      "n": 1,
+      "miss_mean": 0.0,
+      "hit_mean": 5.5,
+      "delta": -5.5
+    },
+    "IDRiD_04": {
+      "n": 2,
+      "miss_mean": 1.5,
+      "hit_mean": 6.5,
+      "delta": -5.0
+    },
+    "IDRiD_05": {
+      "n": 2,
+      "miss_mean": 1.5,
+      "hit_mean": 3.75,
+      "delta": -2.25
+    },
+    "IDRiD_09": {
+      "n": 1,
+      "miss_mean": 3.0,
+      "hit_mean": 4.0,
+      "delta": -1.0
+    },
+    "IDRiD_11": {
+      "n": 1,
+      "miss_mean": 2.0,
+      "hit_mean": 2.0,
+      "delta": 0.0
+    },
+    "IDRiD_14": {
+      "n": 2,
+      "miss_mean": 3.0,
+      "hit_mean": 4.5,
+      "delta": -1.5
+    },
+    "IDRiD_18": {
+      "n": 1,
+      "miss_mean": 3.0,
+      "hit_mean": 4.0,
+      "delta": -1.0
+    },
+    "IDRiD_19": {
+      "n": 3,
+      "miss_mean": 3.1666666666666665,
+      "hit_mean": 3.1666666666666665,
+      "delta": 0.0
+    },
+    "IDRiD_21": {
+      "n": 1,
+      "miss_mean": 0.0,
+      "hit_mean": 1.0,
+      "delta": -1.0
+    },
+    "IDRiD_22": {
+      "n": 5,
+      "miss_mean": 4.6,
+      "hit_mean": 4.3,
+      "delta": 0.3
+    },
+    "IDRiD_25": {
+      "n": 11,
+      "miss_mean": 1.3636363636363635,
+      "hit_mean": 2.409090909090909,
+      "delta": -1.0454545454545454
+    },
+    "IDRiD_26": {
+      "n": 1,
+      "miss_mean": -1.0,
+      "hit_mean": 1.0,
+      "delta": -2.0
+    },
+    "IDRiD_28": {
+      "n": 2,
+      "miss_mean": 3.0,
+      "hit_mean": 1.0,
+      "delta": 2.0
+    },
+    "IDRiD_30": {
+      "n": 2,
+      "miss_mean": 2.0,
+      "hit_mean": 4.0,
+      "delta": -2.0
+    },
+    "IDRiD_33": {
+      "n": 7,
+      "miss_mean": 1.2857142857142858,
+      "hit_mean": 5.785714285714286,
+      "delta": -4.5
+    },
+    "IDRiD_34": {
+      "n": 4,
+      "miss_mean": 1.25,
+      "hit_mean": 5.25,
+      "delta": -4.0
+    },
+    "IDRiD_35": {
+      "n": 1,
+      "miss_mean": -4.0,
+      "hit_mean": 8.0,
+      "delta": -12.0
+    },
+    "IDRiD_36": {
+      "n": 12,
+      "miss_mean": 1.375,
+      "hit_mean": 3.3333333333333335,
+      "delta": -1.9583333333333333
+    },
+    "IDRiD_39": {
+      "n": 1,
+      "miss_mean": 1.0,
+      "hit_mean": 3.0,
+      "delta": -2.0
+    },
+    "IDRiD_42": {
+      "n": 6,
+      "miss_mean": -0.16666666666666666,
+      "hit_mean": 1.6666666666666667,
+      "delta": -1.8333333333333333
+    },
+    "IDRiD_46": {
+      "n": 2,
+      "miss_mean": 11.0,
+      "hit_mean": 6.0,
+      "delta": 5.0
+    },
+    "IDRiD_48": {
+      "n": 9,
+      "miss_mean": 2.5555555555555554,
+      "hit_mean": 3.4444444444444446,
+      "delta": -0.8888888888888888
+    },
+    "IDRiD_49": {
+      "n": 2,
+      "miss_mean": -0.5,
+      "hit_mean": 8.25,
+      "delta": -8.75
+    }
+  },
+  "rows": [
+    {
+      "image": "IDRiD_09",
+      "miss": [
+        178,
+        212
+      ],
+      "hit": [
+        164,
+        221
+      ],
+      "separation": 16.64331697709324,
+      "green_miss": 3.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_18",
+      "miss": [
+        774,
+        610
+      ],
+      "hit": [
+        785,
+        624
+      ],
+      "separation": 17.804493814764857,
+      "green_miss": 3.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_28",
+      "miss": [
+        518,
+        777
+      ],
+      "hit": [
+        518,
+        753
+      ],
+      "separation": 24.0,
+      "green_miss": 3.0,
+      "green_hit": 0.0
+    },
+    {
+      "image": "IDRiD_28",
+      "miss": [
+        520,
+        778
+      ],
+      "hit": [
+        519,
+        753
+      ],
+      "separation": 25.019992006393608,
+      "green_miss": 3.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        341,
+        522
+      ],
+      "hit": [
+        359,
+        542
+      ],
+      "separation": 26.90724809414742,
+      "green_miss": 3.0,
+      "green_hit": 8.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        342,
+        500
+      ],
+      "hit": [
+        341,
+        490
+      ],
+      "separation": 10.04987562112089,
+      "green_miss": 4.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        345,
+        599
+      ],
+      "hit": [
+        351,
+        623
+      ],
+      "separation": 24.73863375370596,
+      "green_miss": 1.0,
+      "green_hit": 8.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        524,
+        348
+      ],
+      "hit": [
+        506,
+        379
+      ],
+      "separation": 35.84689665786984,
+      "green_miss": 1.0,
+      "green_hit": 6.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        524,
+        349
+      ],
+      "hit": [
+        505,
+        381
+      ],
+      "separation": 37.21558813185679,
+      "green_miss": -1.0,
+      "green_hit": 3.5
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        524,
+        351
+      ],
+      "hit": [
+        506,
+        377
+      ],
+      "separation": 31.622776601683793,
+      "green_miss": -2.0,
+      "green_hit": 7.0
+    },
+    {
+      "image": "IDRiD_33",
+      "miss": [
+        524,
+        352
+      ],
+      "hit": [
+        506,
+        378
+      ],
+      "separation": 31.622776601683793,
+      "green_miss": 3.0,
+      "green_hit": 7.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        323,
+        741
+      ],
+      "hit": [
+        325,
+        749
+      ],
+      "separation": 8.246211251235321,
+      "green_miss": 0.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        323,
+        742
+      ],
+      "hit": [
+        324,
+        748
+      ],
+      "separation": 6.082762530298219,
+      "green_miss": -1.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        434,
+        953
+      ],
+      "hit": [
+        451,
+        961
+      ],
+      "separation": 18.788294228055936,
+      "green_miss": 2.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        435,
+        953
+      ],
+      "hit": [
+        454,
+        961
+      ],
+      "separation": 20.615528128088304,
+      "green_miss": 3.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        435,
+        956
+      ],
+      "hit": [
+        453,
+        961
+      ],
+      "separation": 18.681541692269406,
+      "green_miss": 2.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        436,
+        953
+      ],
+      "hit": [
+        455,
+        961
+      ],
+      "separation": 20.615528128088304,
+      "green_miss": 5.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        436,
+        957
+      ],
+      "hit": [
+        452,
+        961
+      ],
+      "separation": 16.492422502470642,
+      "green_miss": 2.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        437,
+        953
+      ],
+      "hit": [
+        456,
+        961
+      ],
+      "separation": 20.615528128088304,
+      "green_miss": 5.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_48",
+      "miss": [
+        437,
+        958
+      ],
+      "hit": [
+        450,
+        961
+      ],
+      "separation": 13.341664064126334,
+      "green_miss": 5.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_03",
+      "miss": [
+        810,
+        492
+      ],
+      "hit": [
+        801,
+        481
+      ],
+      "separation": 14.212670403551895,
+      "green_miss": 0.0,
+      "green_hit": 5.5
+    },
+    {
+      "image": "IDRiD_04",
+      "miss": [
+        618,
+        295
+      ],
+      "hit": [
+        631,
+        311
+      ],
+      "separation": 20.615528128088304,
+      "green_miss": 1.0,
+      "green_hit": 5.0
+    },
+    {
+      "image": "IDRiD_04",
+      "miss": [
+        619,
+        294
+      ],
+      "hit": [
+        632,
+        311
+      ],
+      "separation": 21.400934559032695,
+      "green_miss": 2.0,
+      "green_hit": 8.0
+    },
+    {
+      "image": "IDRiD_05",
+      "miss": [
+        450,
+        566
+      ],
+      "hit": [
+        443,
+        547
+      ],
+      "separation": 20.248456731316587,
+      "green_miss": 1.0,
+      "green_hit": 3.5
+    },
+    {
+      "image": "IDRiD_05",
+      "miss": [
+        451,
+        567
+      ],
+      "hit": [
+        443,
+        546
+      ],
+      "separation": 22.47220505424423,
+      "green_miss": 2.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_11",
+      "miss": [
+        445,
+        937
+      ],
+      "hit": [
+        423,
+        945
+      ],
+      "separation": 23.40939982143925,
+      "green_miss": 2.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_14",
+      "miss": [
+        723,
+        99
+      ],
+      "hit": [
+        729,
+        96
+      ],
+      "separation": 6.708203932499369,
+      "green_miss": 2.0,
+      "green_hit": 5.0
+    },
+    {
+      "image": "IDRiD_14",
+      "miss": [
+        736,
+        90
+      ],
+      "hit": [
+        714,
+        102
+      ],
+      "separation": 25.059928172283335,
+      "green_miss": 4.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_21",
+      "miss": [
+        694,
+        707
+      ],
+      "hit": [
+        706,
+        692
+      ],
+      "separation": 19.209372712298546,
+      "green_miss": 0.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_22",
+      "miss": [
+        115,
+        743
+      ],
+      "hit": [
+        131,
+        740
+      ],
+      "separation": 16.278820596099706,
+      "green_miss": 6.0,
+      "green_hit": 6.0
+    },
+    {
+      "image": "IDRiD_22",
+      "miss": [
+        117,
+        742
+      ],
+      "hit": [
+        132,
+        739
+      ],
+      "separation": 15.297058540778355,
+      "green_miss": 4.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_22",
+      "miss": [
+        118,
+        742
+      ],
+      "hit": [
+        133,
+        739
+      ],
+      "separation": 15.297058540778355,
+      "green_miss": 4.0,
+      "green_hit": 5.0
+    },
+    {
+      "image": "IDRiD_22",
+      "miss": [
+        119,
+        742
+      ],
+      "hit": [
+        134,
+        739
+      ],
+      "separation": 15.297058540778355,
+      "green_miss": 4.0,
+      "green_hit": 4.5
+    },
+    {
+      "image": "IDRiD_22",
+      "miss": [
+        120,
+        742
+      ],
+      "hit": [
+        130,
+        740
+      ],
+      "separation": 10.198039027185569,
+      "green_miss": 5.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        691,
+        716
+      ],
+      "hit": [
+        687,
+        722
+      ],
+      "separation": 7.211102550927978,
+      "green_miss": 0.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        691,
+        717
+      ],
+      "hit": [
+        685,
+        726
+      ],
+      "separation": 10.816653826391969,
+      "green_miss": 0.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        692,
+        714
+      ],
+      "hit": [
+        681,
+        730
+      ],
+      "separation": 19.4164878389476,
+      "green_miss": 0.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        694,
+        712
+      ],
+      "hit": [
+        684,
+        727
+      ],
+      "separation": 18.027756377319946,
+      "green_miss": 1.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        695,
+        710
+      ],
+      "hit": [
+        683,
+        728
+      ],
+      "separation": 21.633307652783937,
+      "green_miss": 1.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        695,
+        711
+      ],
+      "hit": [
+        686,
+        725
+      ],
+      "separation": 16.64331697709324,
+      "green_miss": 1.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        696,
+        708
+      ],
+      "hit": [
+        680,
+        731
+      ],
+      "separation": 28.0178514522438,
+      "green_miss": 1.0,
+      "green_hit": 1.5
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        696,
+        709
+      ],
+      "hit": [
+        686,
+        724
+      ],
+      "separation": 18.027756377319946,
+      "green_miss": 2.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        697,
+        706
+      ],
+      "hit": [
+        679,
+        732
+      ],
+      "separation": 31.622776601683793,
+      "green_miss": 1.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        697,
+        707
+      ],
+      "hit": [
+        682,
+        729
+      ],
+      "separation": 26.627053911388696,
+      "green_miss": 3.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_25",
+      "miss": [
+        697,
+        828
+      ],
+      "hit": [
+        689,
+        833
+      ],
+      "separation": 9.433981132056603,
+      "green_miss": 5.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_34",
+      "miss": [
+        265,
+        190
+      ],
+      "hit": [
+        258,
+        188
+      ],
+      "separation": 7.280109889280518,
+      "green_miss": 2.0,
+      "green_hit": 7.0
+    },
+    {
+      "image": "IDRiD_34",
+      "miss": [
+        457,
+        947
+      ],
+      "hit": [
+        462,
+        898
+      ],
+      "separation": 49.25444142409901,
+      "green_miss": -1.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_34",
+      "miss": [
+        457,
+        948
+      ],
+      "hit": [
+        462,
+        899
+      ],
+      "separation": 49.25444142409901,
+      "green_miss": 0.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_34",
+      "miss": [
+        672,
+        210
+      ],
+      "hit": [
+        702,
+        230
+      ],
+      "separation": 36.05551275463989,
+      "green_miss": 4.0,
+      "green_hit": 9.0
+    },
+    {
+      "image": "IDRiD_35",
+      "miss": [
+        449,
+        7
+      ],
+      "hit": [
+        484,
+        58
+      ],
+      "separation": 61.85466837676846,
+      "green_miss": -4.0,
+      "green_hit": 8.0
+    },
+    {
+      "image": "IDRiD_49",
+      "miss": [
+        658,
+        170
+      ],
+      "hit": [
+        666,
+        174
+      ],
+      "separation": 8.94427190999916,
+      "green_miss": -1.0,
+      "green_hit": 7.5
+    },
+    {
+      "image": "IDRiD_49",
+      "miss": [
+        790,
+        325
+      ],
+      "hit": [
+        800,
+        339
+      ],
+      "separation": 17.204650534085253,
+      "green_miss": 0.0,
+      "green_hit": 9.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        300,
+        621
+      ],
+      "hit": [
+        298,
+        610
+      ],
+      "separation": 11.180339887498949,
+      "green_miss": 2.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        300,
+        622
+      ],
+      "hit": [
+        298,
+        609
+      ],
+      "separation": 13.152946437965905,
+      "green_miss": 3.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        301,
+        625
+      ],
+      "hit": [
+        297,
+        605
+      ],
+      "separation": 20.396078054371138,
+      "green_miss": 1.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        302,
+        626
+      ],
+      "hit": [
+        297,
+        604
+      ],
+      "separation": 22.561028345356956,
+      "green_miss": 2.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        302,
+        627
+      ],
+      "hit": [
+        297,
+        603
+      ],
+      "separation": 24.515301344262525,
+      "green_miss": 3.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        546,
+        836
+      ],
+      "hit": [
+        562,
+        831
+      ],
+      "separation": 16.76305461424021,
+      "green_miss": 3.0,
+      "green_hit": 5.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        547,
+        835
+      ],
+      "hit": [
+        561,
+        831
+      ],
+      "separation": 14.560219778561036,
+      "green_miss": 3.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_02",
+      "miss": [
+        548,
+        835
+      ],
+      "hit": [
+        556,
+        832
+      ],
+      "separation": 8.54400374531753,
+      "green_miss": 4.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_19",
+      "miss": [
+        587,
+        658
+      ],
+      "hit": [
+        581,
+        673
+      ],
+      "separation": 16.15549442140351,
+      "green_miss": 6.0,
+      "green_hit": 4.5
+    },
+    {
+      "image": "IDRiD_19",
+      "miss": [
+        701,
+        87
+      ],
+      "hit": [
+        711,
+        108
+      ],
+      "separation": 23.259406699226016,
+      "green_miss": 1.5,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_19",
+      "miss": [
+        702,
+        89
+      ],
+      "hit": [
+        711,
+        107
+      ],
+      "separation": 20.12461179749811,
+      "green_miss": 2.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_26",
+      "miss": [
+        460,
+        721
+      ],
+      "hit": [
+        455,
+        720
+      ],
+      "separation": 5.0990195135927845,
+      "green_miss": -1.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_30",
+      "miss": [
+        412,
+        279
+      ],
+      "hit": [
+        403,
+        279
+      ],
+      "separation": 9.0,
+      "green_miss": 2.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_30",
+      "miss": [
+        413,
+        279
+      ],
+      "hit": [
+        402,
+        279
+      ],
+      "separation": 11.0,
+      "green_miss": 2.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        195,
+        490
+      ],
+      "hit": [
+        185,
+        510
+      ],
+      "separation": 22.360679774997898,
+      "green_miss": 6.0,
+      "green_hit": 4.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        195,
+        491
+      ],
+      "hit": [
+        185,
+        511
+      ],
+      "separation": 22.360679774997898,
+      "green_miss": 6.0,
+      "green_hit": 5.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        519
+      ],
+      "hit": [
+        650,
+        483
+      ],
+      "separation": 50.20956084253277,
+      "green_miss": -3.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        520
+      ],
+      "hit": [
+        650,
+        482
+      ],
+      "separation": 51.66236541235796,
+      "green_miss": -4.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        523
+      ],
+      "hit": [
+        665,
+        549
+      ],
+      "separation": 32.802438933713454,
+      "green_miss": -2.0,
+      "green_hit": -1.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        524
+      ],
+      "hit": [
+        665,
+        550
+      ],
+      "separation": 32.802438933713454,
+      "green_miss": -2.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        525
+      ],
+      "hit": [
+        665,
+        551
+      ],
+      "separation": 32.802438933713454,
+      "green_miss": -1.0,
+      "green_hit": 2.5
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        685,
+        531
+      ],
+      "hit": [
+        648,
+        480
+      ],
+      "separation": 63.00793600809346,
+      "green_miss": 1.0,
+      "green_hit": 8.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        686,
+        498
+      ],
+      "hit": [
+        653,
+        485
+      ],
+      "separation": 35.4682957019364,
+      "green_miss": 4.0,
+      "green_hit": 6.5
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        686,
+        499
+      ],
+      "hit": [
+        650,
+        484
+      ],
+      "separation": 39.0,
+      "green_miss": 4.5,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        686,
+        500
+      ],
+      "hit": [
+        652,
+        485
+      ],
+      "separation": 37.16180835212409,
+      "green_miss": 3.0,
+      "green_hit": 6.0
+    },
+    {
+      "image": "IDRiD_36",
+      "miss": [
+        686,
+        501
+      ],
+      "hit": [
+        651,
+        485
+      ],
+      "separation": 38.48376280978771,
+      "green_miss": 4.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_39",
+      "miss": [
+        299,
+        499
+      ],
+      "hit": [
+        313,
+        548
+      ],
+      "separation": 50.96076922496363,
+      "green_miss": 1.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        612,
+        66
+      ],
+      "hit": [
+        608,
+        71
+      ],
+      "separation": 6.4031242374328485,
+      "green_miss": 0.0,
+      "green_hit": 2.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        613,
+        65
+      ],
+      "hit": [
+        605,
+        75
+      ],
+      "separation": 12.806248474865697,
+      "green_miss": 0.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        614,
+        62
+      ],
+      "hit": [
+        606,
+        73
+      ],
+      "separation": 13.601470508735444,
+      "green_miss": -1.0,
+      "green_hit": 0.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        614,
+        63
+      ],
+      "hit": [
+        604,
+        76
+      ],
+      "separation": 16.401219466856727,
+      "green_miss": -1.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        614,
+        64
+      ],
+      "hit": [
+        602,
+        77
+      ],
+      "separation": 17.69180601295413,
+      "green_miss": 1.0,
+      "green_hit": 1.0
+    },
+    {
+      "image": "IDRiD_42",
+      "miss": [
+        617,
+        59
+      ],
+      "hit": [
+        603,
+        77
+      ],
+      "separation": 22.80350850198276,
+      "green_miss": 0.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_46",
+      "miss": [
+        407,
+        366
+      ],
+      "hit": [
+        407,
+        361
+      ],
+      "separation": 5.0,
+      "green_miss": 9.0,
+      "green_hit": 3.0
+    },
+    {
+      "image": "IDRiD_46",
+      "miss": [
+        407,
+        367
+      ],
+      "hit": [
+        407,
+        360
+      ],
+      "separation": 7.0,
+      "green_miss": 13.0,
+      "green_hit": 9.0
+    }
+  ]
+}

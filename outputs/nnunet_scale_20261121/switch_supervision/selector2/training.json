@@ -1,0 +1,179 @@
+{
+  "examples": [
+    {
+      "image": "IDRiD_03",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_04",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_05",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_06",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_10",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_11",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_14",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_21",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_22",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_25",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_27",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_29",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_34",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_35",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_38",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_49",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_52",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_54",
+      "expert_group": 0
+    },
+    {
+      "image": "IDRiD_01",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_08",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_09",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_13",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_18",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_23",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_24",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_28",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_31",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_33",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_41",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_44",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_45",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_47",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_48",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_50",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_51",
+      "expert_group": 1
+    },
+    {
+      "image": "IDRiD_53",
+      "expert_group": 1
+    }
+  ],
+  "scored": [
+    "IDRiD_02",
+    "IDRiD_07",
+    "IDRiD_12",
+    "IDRiD_15",
+    "IDRiD_16",
+    "IDRiD_17",
+    "IDRiD_19",
+    "IDRiD_20",
+    "IDRiD_26",
+    "IDRiD_30",
+    "IDRiD_32",
+    "IDRiD_36",
+    "IDRiD_37",
+    "IDRiD_39",
+    "IDRiD_40",
+    "IDRiD_42",
+    "IDRiD_43",
+    "IDRiD_46"
+  ],
+  "event_candidates": [
+    177,
+    122,
+    3677,
+    2479,
+    143685,
+    37641
+  ],
+  "points_gained": 141,
+  "points_lost": 75,
+  "fitted_examples": 17013
+}

@@ -1,0 +1,3828 @@
+{
+  "per_image": [
+    {
+      "image": "IDRiD_01",
+      "thin": 33,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 2.0202020202020203,
+          "robust_gains": 1,
+          "fp_delta": 4.943502824858757
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 3,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 15,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 8,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 2,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 4,
+        "on_zero_hit_path": 4,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_08",
+      "thin": 15,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 24.444444444444443,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 28.888888888888886,
+          "robust_gains": 1,
+          "fp_delta": 6.756555644849243
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_09",
+      "thin": 33,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 3.0303030303030303,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 3.0303030303030303,
+          "robust_gains": 1,
+          "fp_delta": 2.961082910321489
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 16,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 13,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_13",
+      "thin": 95,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 1.4035087719298245,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 1.4035087719298245,
+          "robust_gains": 0,
+          "fp_delta": 3.1655932758432486
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 2,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 1,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 57,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 48,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 5,
+          "higher_union_rescued": 6,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 9,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 37,
+        "on_zero_hit_path": 3,
+        "connected_ge_five": 37,
+        "clusters_ge_five": 3,
+        "singleton": 2
+      }
+    },
+    {
+      "image": "IDRiD_18",
+      "thin": 127,
+      "gain": 3,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 10.761154855643044,
+          "robust_gains": 8,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 11.023622047244094,
+          "robust_gains": 8,
+          "fp_delta": 5.6152400399099704
+        }
+      },
+      "recoverable": 8,
+      "recovered": {
+        "learned_add": 3,
+        "all_add": 6,
+        "shuffled_add": 3
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 46,
+      "strata": {
+        "close": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 23,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 6,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 21,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 8,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 7,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 16,
+        "clusters_ge_five": 2,
+        "singleton": 2
+      }
+    },
+    {
+      "image": "IDRiD_23",
+      "thin": 101,
+      "gain": 3,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 6.6006600660066,
+          "robust_gains": 7,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 6.6006600660066,
+          "robust_gains": 7,
+          "fp_delta": 4.0589867133888164
+        }
+      },
+      "recoverable": 7,
+      "recovered": {
+        "learned_add": 3,
+        "all_add": 6,
+        "shuffled_add": 3
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 44,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 36,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 8,
+          "rescued": 2,
+          "union_rescued": 3,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 5,
+          "true_rescued": 3
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 36,
+        "on_zero_hit_path": 27,
+        "connected_ge_five": 36,
+        "clusters_ge_five": 4,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_24",
+      "thin": 3,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 1.9190851055496807
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_28",
+      "thin": 82,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 3.6585365853658534,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 4.878048780487805,
+          "robust_gains": 1,
+          "fp_delta": 3.320616080259997
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 1,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 24,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 14,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 7,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 5,
+        "clusters_ge_five": 1,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_31",
+      "thin": 62,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.1505376344086025,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 2.1505376344086025,
+          "robust_gains": 1,
+          "fp_delta": 5.194236412210397
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 18,
+      "strata": {
+        "close": {
+          "points": 4,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 13,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 3,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_33",
+      "thin": 283,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 4.122497055359246,
+          "robust_gains": 12,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 4.7114252061248525,
+          "robust_gains": 14,
+          "fp_delta": 5.130013343565706
+        }
+      },
+      "recoverable": 14,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 7,
+        "shuffled_add": 3
+      },
+      "at_risk": 8,
+      "preserved": {
+        "learned_add": 8,
+        "all_add": 7,
+        "shuffled_add": 8
+      },
+      "baseline_consistent_missed": 149,
+      "strata": {
+        "close": {
+          "points": 15,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 5,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 58,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 76,
+          "rescued": 0,
+          "union_rescued": 7,
+          "higher_base_rescued": 5,
+          "higher_union_rescued": 10,
+          "true_rescued": 6
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 34,
+        "on_zero_hit_path": 26,
+        "connected_ge_five": 34,
+        "clusters_ge_five": 4,
+        "singleton": 12
+      }
+    },
+    {
+      "image": "IDRiD_41",
+      "thin": 1,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.743975184920067
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_44",
+      "thin": 0,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": 3.1351472399507334
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_45",
+      "thin": 0,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": 1.1695906432748537
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_47",
+      "thin": 23,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 1.4492753623188406,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 4.3478260869565215,
+          "robust_gains": 0,
+          "fp_delta": 3.9471981364048143
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_48",
+      "thin": 170,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.9803921568627451,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.9803921568627451,
+          "robust_gains": 1,
+          "fp_delta": 5.427889146347512
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 6,
+      "preserved": {
+        "learned_add": 5,
+        "all_add": 4,
+        "shuffled_add": 5
+      },
+      "baseline_consistent_missed": 83,
+      "strata": {
+        "close": {
+          "points": 8,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 39,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 36,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 31,
+        "on_zero_hit_path": 21,
+        "connected_ge_five": 25,
+        "clusters_ge_five": 2,
+        "singleton": 3
+      }
+    },
+    {
+      "image": "IDRiD_50",
+      "thin": 24,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 3.4954152601211423
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 17,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 10,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 7,
+        "clusters_ge_five": 1,
+        "singleton": 3
+      }
+    },
+    {
+      "image": "IDRiD_51",
+      "thin": 17,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 4.895700297999149
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_53",
+      "thin": 83,
+      "gain": 2,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 7.228915662650602,
+          "robust_gains": 6,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 8.433734939759036,
+          "robust_gains": 7,
+          "fp_delta": 4.635580004455641
+        }
+      },
+      "recoverable": 7,
+      "recovered": {
+        "learned_add": 2,
+        "all_add": 3,
+        "shuffled_add": 2
+      },
+      "at_risk": 3,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 2,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 49,
+      "strata": {
+        "close": {
+          "points": 8,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 4,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 8,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 33,
+          "rescued": 1,
+          "union_rescued": 5,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 8,
+          "true_rescued": 5
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 7,
+        "on_zero_hit_path": 7,
+        "connected_ge_five": 7,
+        "clusters_ge_five": 1,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_03",
+      "thin": 266,
+      "gain": 2,
+      "loss": 1,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 6.8922305764411025,
+          "robust_gains": 8,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 8.145363408521304,
+          "robust_gains": 9,
+          "fp_delta": 2.9868002697755083
+        }
+      },
+      "recoverable": 9,
+      "recovered": {
+        "learned_add": 2,
+        "all_add": 3,
+        "shuffled_add": 2
+      },
+      "at_risk": 3,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 154,
+      "strata": {
+        "close": {
+          "points": 4,
+          "rescued": 1,
+          "union_rescued": 1,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 3,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 69,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 81,
+          "rescued": 1,
+          "union_rescued": 4,
+          "higher_base_rescued": 7,
+          "higher_union_rescued": 23,
+          "true_rescued": 4
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 53,
+        "on_zero_hit_path": 9,
+        "connected_ge_five": 44,
+        "clusters_ge_five": 6,
+        "singleton": 6
+      }
+    },
+    {
+      "image": "IDRiD_04",
+      "thin": 59,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 1.1299435028248588,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 1.1299435028248588,
+          "robust_gains": 1,
+          "fp_delta": 3.72656340980552
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 6,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 2,
+        "on_zero_hit_path": 2,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_05",
+      "thin": 24,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 9.722222222222223,
+          "robust_gains": 2,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 9.722222222222223,
+          "robust_gains": 2,
+          "fp_delta": 3.3585222502099077
+        }
+      },
+      "recoverable": 2,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 1,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 20,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 8,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 12,
+          "rescued": 0,
+          "union_rescued": 2,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 3,
+          "true_rescued": 2
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 8,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 7,
+        "clusters_ge_five": 1,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_06",
+      "thin": 5,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.99184978850717
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_10",
+      "thin": 34,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 5.88235294117647,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 5.88235294117647,
+          "robust_gains": 1,
+          "fp_delta": 2.452134337727558
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 8,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 2,
+        "on_zero_hit_path": 1,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 2
+      }
+    },
+    {
+      "image": "IDRiD_11",
+      "thin": 35,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.857142857142857,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 2.857142857142857,
+          "robust_gains": 1,
+          "fp_delta": 2.8451067307994595
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 7,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 2,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 3
+      }
+    },
+    {
+      "image": "IDRiD_14",
+      "thin": 33,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.0202020202020203,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 2.0202020202020203,
+          "robust_gains": 0,
+          "fp_delta": 3.467993551155805
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 16,
+      "strata": {
+        "close": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 7,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 6,
+        "clusters_ge_five": 1,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_21",
+      "thin": 110,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 3.0303030303030303,
+          "robust_gains": 2,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 3.0303030303030303,
+          "robust_gains": 2,
+          "fp_delta": 3.283229079139825
+        }
+      },
+      "recoverable": 2,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 68,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 49,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 19,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 5,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 24,
+        "on_zero_hit_path": 9,
+        "connected_ge_five": 34,
+        "clusters_ge_five": 3,
+        "singleton": 3
+      }
+    },
+    {
+      "image": "IDRiD_22",
+      "thin": 91,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.197802197802198,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 4.395604395604396,
+          "robust_gains": 2,
+          "fp_delta": 3.816004229787821
+        }
+      },
+      "recoverable": 2,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 2,
+        "shuffled_add": 1
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 60,
+      "strata": {
+        "close": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 2,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 40,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 18,
+          "rescued": 1,
+          "union_rescued": 2,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 11,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 40,
+        "on_zero_hit_path": 28,
+        "connected_ge_five": 35,
+        "clusters_ge_five": 2,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_25",
+      "thin": 227,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.4405286343612335,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.5873715124816447,
+          "robust_gains": 1,
+          "fp_delta": 2.598262849039529
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "at_risk": 8,
+      "preserved": {
+        "learned_add": 7,
+        "all_add": 5,
+        "shuffled_add": 7
+      },
+      "baseline_consistent_missed": 130,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 66,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 61,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 56,
+        "on_zero_hit_path": 13,
+        "connected_ge_five": 38,
+        "clusters_ge_five": 6,
+        "singleton": 6
+      }
+    },
+    {
+      "image": "IDRiD_27",
+      "thin": 17,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.979723909956468
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 1,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_29",
+      "thin": 28,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.236600367441489
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_34",
+      "thin": 149,
+      "gain": 2,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 3.131991051454139,
+          "robust_gains": 4,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 3.131991051454139,
+          "robust_gains": 4,
+          "fp_delta": 3.34095664942467
+        }
+      },
+      "recoverable": 4,
+      "recovered": {
+        "learned_add": 2,
+        "all_add": 3,
+        "shuffled_add": 2
+      },
+      "at_risk": 9,
+      "preserved": {
+        "learned_add": 7,
+        "all_add": 7,
+        "shuffled_add": 7
+      },
+      "baseline_consistent_missed": 67,
+      "strata": {
+        "close": {
+          "points": 6,
+          "rescued": 1,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 2,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 29,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 32,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 2,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 21,
+        "on_zero_hit_path": 8,
+        "connected_ge_five": 5,
+        "clusters_ge_five": 1,
+        "singleton": 4
+      }
+    },
+    {
+      "image": "IDRiD_35",
+      "thin": 96,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.3472222222222222,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.3472222222222222,
+          "robust_gains": 0,
+          "fp_delta": 4.7736269585176805
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 12,
+      "preserved": {
+        "learned_add": 11,
+        "all_add": 8,
+        "shuffled_add": 11
+      },
+      "baseline_consistent_missed": 51,
+      "strata": {
+        "close": {
+          "points": 5,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 2,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 22,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 24,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 9,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 2
+      }
+    },
+    {
+      "image": "IDRiD_38",
+      "thin": 44,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 5.614900027389756
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 4,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 4,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_49",
+      "thin": 83,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.8032128514056224,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.8032128514056224,
+          "robust_gains": 0,
+          "fp_delta": 3.3258210620746995
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 3,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 0,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 27,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 15,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 9,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 14,
+        "on_zero_hit_path": 8,
+        "connected_ge_five": 7,
+        "clusters_ge_five": 1,
+        "singleton": 4
+      }
+    },
+    {
+      "image": "IDRiD_52",
+      "thin": 3,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.9618026930475406
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 3,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 3,
+        "on_zero_hit_path": 3,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_54",
+      "thin": 40,
+      "gain": 0,
+      "loss": 1,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.8333333333333334,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.8333333333333334,
+          "robust_gains": 0,
+          "fp_delta": 2.0276631182562097
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 8,
+      "preserved": {
+        "learned_add": 6,
+        "all_add": 5,
+        "shuffled_add": 6
+      },
+      "baseline_consistent_missed": 11,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 5,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 6,
+        "clusters_ge_five": 1,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_02",
+      "thin": 73,
+      "gain": 0,
+      "loss": 1,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.73972602739726,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 4.10958904109589,
+          "robust_gains": 1,
+          "fp_delta": 4.119138149556401
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 4,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 0,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 43,
+      "strata": {
+        "close": {
+          "points": 4,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 27,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 12,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 5,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 27,
+        "on_zero_hit_path": 15,
+        "connected_ge_five": 27,
+        "clusters_ge_five": 3,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_07",
+      "thin": 18,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 5.555555555555555,
+          "robust_gains": 1,
+          "fp_delta": 2.8344244613339353
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 1,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 2,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 2,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_12",
+      "thin": 13,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 25.64102564102564,
+          "robust_gains": 4,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 28.205128205128204,
+          "robust_gains": 4,
+          "fp_delta": 1.4293006636038796
+        }
+      },
+      "recoverable": 4,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 3,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 9,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 5,
+          "rescued": 0,
+          "union_rescued": 3,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 4,
+          "true_rescued": 3
+        },
+        "other": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 3,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 5,
+        "on_zero_hit_path": 5,
+        "connected_ge_five": 5,
+        "clusters_ge_five": 1,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_15",
+      "thin": 3,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 3,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_16",
+      "thin": 33,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 4.040404040404041,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 7.07070707070707,
+          "robust_gains": 2,
+          "fp_delta": 3.663003663003663
+        }
+      },
+      "recoverable": 2,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 1
+      },
+      "at_risk": 2,
+      "preserved": {
+        "learned_add": 1,
+        "all_add": 0,
+        "shuffled_add": 1
+      },
+      "baseline_consistent_missed": 9,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 1,
+          "union_rescued": 1,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 2,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 4,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 1,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_17",
+      "thin": 50,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.7713561540818317
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 2,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 2,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 23,
+      "strata": {
+        "close": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 10,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 10,
+        "on_zero_hit_path": 9,
+        "connected_ge_five": 9,
+        "clusters_ge_five": 1,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_19",
+      "thin": 92,
+      "gain": 2,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 6.521739130434782,
+          "robust_gains": 7,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 8.333333333333332,
+          "robust_gains": 8,
+          "fp_delta": 3.495984342309509
+        }
+      },
+      "recoverable": 8,
+      "recovered": {
+        "learned_add": 2,
+        "all_add": 5,
+        "shuffled_add": 2
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 62,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 39,
+          "rescued": 0,
+          "union_rescued": 4,
+          "higher_base_rescued": 7,
+          "higher_union_rescued": 9,
+          "true_rescued": 4
+        },
+        "other": {
+          "points": 20,
+          "rescued": 0,
+          "union_rescued": 2,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 6,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 38,
+        "on_zero_hit_path": 37,
+        "connected_ge_five": 37,
+        "clusters_ge_five": 2,
+        "singleton": 2
+      }
+    },
+    {
+      "image": "IDRiD_20",
+      "thin": 66,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.5050505050505051,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.5050505050505051,
+          "robust_gains": 0,
+          "fp_delta": 1.330588993534169
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 3,
+      "preserved": {
+        "learned_add": 3,
+        "all_add": 1,
+        "shuffled_add": 3
+      },
+      "baseline_consistent_missed": 30,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 24,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 24,
+        "on_zero_hit_path": 24,
+        "connected_ge_five": 24,
+        "clusters_ge_five": 3,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_26",
+      "thin": 80,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 7.083333333333333,
+          "robust_gains": 7,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 9.583333333333334,
+          "robust_gains": 9,
+          "fp_delta": 2.0478485327839704
+        }
+      },
+      "recoverable": 9,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 7,
+        "shuffled_add": 1
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 34,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 11,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 22,
+          "rescued": 0,
+          "union_rescued": 2,
+          "higher_base_rescued": 6,
+          "higher_union_rescued": 7,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 6,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 6
+      }
+    },
+    {
+      "image": "IDRiD_30",
+      "thin": 55,
+      "gain": 0,
+      "loss": 3,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.6060606060606061,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.6060606060606061,
+          "robust_gains": 0,
+          "fp_delta": 3.4914766892585747
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 12,
+      "preserved": {
+        "learned_add": 9,
+        "all_add": 5,
+        "shuffled_add": 9
+      },
+      "baseline_consistent_missed": 11,
+      "strata": {
+        "close": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 2,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 2,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_32",
+      "thin": 33,
+      "gain": 1,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 3.0303030303030303,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 6.0606060606060606,
+          "robust_gains": 1,
+          "fp_delta": 3.220806409404755
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 1,
+        "all_add": 1,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 11,
+      "strata": {
+        "close": {
+          "points": 4,
+          "rescued": 1,
+          "union_rescued": 1,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 3,
+          "true_rescued": 1
+        },
+        "far": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 1,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_36",
+      "thin": 104,
+      "gain": 3,
+      "loss": 1,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 2.564102564102564,
+          "robust_gains": 3,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 9.294871794871796,
+          "robust_gains": 10,
+          "fp_delta": 3.785271851342051
+        }
+      },
+      "recoverable": 10,
+      "recovered": {
+        "learned_add": 3,
+        "all_add": 7,
+        "shuffled_add": 3
+      },
+      "at_risk": 4,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 2,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 64,
+      "strata": {
+        "close": {
+          "points": 3,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 47,
+          "rescued": 0,
+          "union_rescued": 2,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 14,
+          "rescued": 2,
+          "union_rescued": 7,
+          "higher_base_rescued": 7,
+          "higher_union_rescued": 10,
+          "true_rescued": 3
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 40,
+        "on_zero_hit_path": 31,
+        "connected_ge_five": 41,
+        "clusters_ge_five": 4,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_37",
+      "thin": 21,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.07580018749163
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 7,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 3,
+          "higher_union_rescued": 3,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_39",
+      "thin": 187,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.7130124777183601,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.7130124777183601,
+          "robust_gains": 0,
+          "fp_delta": 2.179628820773704
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 2,
+      "preserved": {
+        "learned_add": 2,
+        "all_add": 2,
+        "shuffled_add": 2
+      },
+      "baseline_consistent_missed": 115,
+      "strata": {
+        "close": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 5,
+          "higher_union_rescued": 6,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 55,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 53,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 4,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 52,
+        "on_zero_hit_path": 45,
+        "connected_ge_five": 37,
+        "clusters_ge_five": 4,
+        "singleton": 8
+      }
+    },
+    {
+      "image": "IDRiD_40",
+      "thin": 12,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 0.0,
+          "robust_gains": 0,
+          "fp_delta": 2.229654403567447
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 8,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 7,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_42",
+      "thin": 25,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 5.333333333333334,
+          "robust_gains": 1,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 5.333333333333334,
+          "robust_gains": 1,
+          "fp_delta": 6.69002867155145
+        }
+      },
+      "recoverable": 1,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 16,
+      "strata": {
+        "close": {
+          "points": 1,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 11,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 2,
+          "higher_union_rescued": 3,
+          "true_rescued": 1
+        },
+        "other": {
+          "points": 4,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 9,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 8,
+        "clusters_ge_five": 1,
+        "singleton": 1
+      }
+    },
+    {
+      "image": "IDRiD_43",
+      "thin": 0,
+      "gain": 0,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": null
+        },
+        "union": {
+          "delta": null,
+          "robust_gains": 0,
+          "fp_delta": null
+        }
+      },
+      "recoverable": 0,
+      "recovered": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "at_risk": 0,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 0,
+      "strata": {
+        "close": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "far": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 0,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 0,
+          "higher_union_rescued": 0,
+          "true_rescued": 0
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 0,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 0
+      }
+    },
+    {
+      "image": "IDRiD_46",
+      "thin": 271,
+      "gain": 6,
+      "loss": 0,
+      "support": {
+        "true_vessel_additions": {
+          "delta": 4.551045510455105,
+          "robust_gains": 8,
+          "fp_delta": 0.0
+        },
+        "union": {
+          "delta": 5.781057810578106,
+          "robust_gains": 12,
+          "fp_delta": 2.181580932574877
+        }
+      },
+      "recoverable": 12,
+      "recovered": {
+        "learned_add": 6,
+        "all_add": 9,
+        "shuffled_add": 3
+      },
+      "at_risk": 1,
+      "preserved": {
+        "learned_add": 0,
+        "all_add": 0,
+        "shuffled_add": 0
+      },
+      "baseline_consistent_missed": 61,
+      "strata": {
+        "close": {
+          "points": 14,
+          "rescued": 1,
+          "union_rescued": 4,
+          "higher_base_rescued": 5,
+          "higher_union_rescued": 9,
+          "true_rescued": 2
+        },
+        "far": {
+          "points": 6,
+          "rescued": 0,
+          "union_rescued": 0,
+          "higher_base_rescued": 1,
+          "higher_union_rescued": 1,
+          "true_rescued": 0
+        },
+        "other": {
+          "points": 41,
+          "rescued": 0,
+          "union_rescued": 1,
+          "higher_base_rescued": 4,
+          "higher_union_rescued": 9,
+          "true_rescued": 1
+        }
+      },
+      "far_geometry": {
+        "on_qualified_path": 4,
+        "on_zero_hit_path": 0,
+        "connected_ge_five": 0,
+        "clusters_ge_five": 0,
+        "singleton": 2
+      }
+    }
+  ],
+  "contrasts": {
+    "learned_add__base": {
+      "m0matched": {
+        "delta": 0.5407261207122286,
+        "ci": [
+          -0.1291035522160866,
+          1.2437840048834017
+        ],
+        "up": 21,
+        "tie": 18,
+        "down": 12,
+        "best": "IDRiD_12",
+        "without_best": 0.3976944892803194,
+        "fp_delta": 0.003702114367440501,
+        "seeds": [
+          0.14000748750876213,
+          0.9965854076451379,
+          0.48558546698278576
+        ]
+      },
+      "matched": {
+        "delta": 0.4163228115500721,
+        "ci": [
+          -0.061041037106218436,
+          0.8952386139343746
+        ],
+        "up": 22,
+        "tie": 16,
+        "down": 13,
+        "best": "IDRiD_53",
+        "without_best": 0.3202315970983427,
+        "fp_delta": 0.07772605081674655,
+        "seeds": [
+          0.37250728865479166,
+          0.7439635999746909,
+          0.13249754602073419
+        ]
+      }
+    },
+    "learned_add__regional": {
+      "m0matched": {
+        "delta": -0.4436649761419077,
+        "ci": [
+          -1.9833860221944468,
+          0.767720902353981
+        ],
+        "up": 16,
+        "tie": 17,
+        "down": 18,
+        "best": "IDRiD_54",
+        "without_best": -0.6692049423314126,
+        "fp_delta": -0.15173027351382729,
+        "seeds": [
+          0.4732737125594142,
+          -0.7132707212376297,
+          -1.0909979197475073
+        ]
+      },
+      "matched": {
+        "delta": 0.28381513021956206,
+        "ci": [
+          -0.7097536670902445,
+          1.2158165377889236
+        ],
+        "up": 17,
+        "tie": 14,
+        "down": 20,
+        "best": "IDRiD_30",
+        "without_best": 0.09555203888455935,
+        "fp_delta": -0.1792398949524241,
+        "seeds": [
+          0.9542829892410543,
+          0.6816064527553836,
+          -0.7844440513377519
+        ]
+      }
+    },
+    "learned_add__shuffled_add": {
+      "m0matched": {
+        "delta": -0.080226088756689,
+        "ci": [
+          -0.5257577069766003,
+          0.26058775414369173
+        ],
+        "up": 7,
+        "tie": 38,
+        "down": 6,
+        "best": "IDRiD_32",
+        "without_best": -0.1626386913399037,
+        "fp_delta": -0.030947663887189947,
+        "seeds": [
+          0.05351949366667921,
+          -0.37891695264252423,
+          0.08471919270577799
+        ]
+      },
+      "matched": {
+        "delta": 0.024801313142897394,
+        "ci": [
+          -0.04268888040961325,
+          0.09295308715680949
+        ],
+        "up": 10,
+        "tie": 35,
+        "down": 6,
+        "best": "IDRiD_54",
+        "without_best": 0.008630672739088662,
+        "fp_delta": 0.007933622920944572,
+        "seeds": [
+          0.08162567658851616,
+          0.047237802991949684,
+          -0.05445954015177357
+        ]
+      }
+    },
+    "learned_add__all_add": {
+      "m0matched": {
+        "delta": -0.2885631579847444,
+        "ci": [
+          -1.2330748194741763,
+          0.5495378797074973
+        ],
+        "up": 20,
+        "tie": 15,
+        "down": 16,
+        "best": "IDRiD_30",
+        "without_best": -0.40342533023534843,
+        "fp_delta": -0.05610146049542486,
+        "seeds": [
+          -0.18795351671113847,
+          -0.84424669314434,
+          0.16651073590124543
+        ]
+      },
+      "matched": {
+        "delta": -0.11812807422601869,
+        "ci": [
+          -0.6667163665319744,
+          0.3958627926520991
+        ],
+        "up": 13,
+        "tie": 23,
+        "down": 15,
+        "best": "IDRiD_01",
+        "without_best": -0.22150073672064008,
+        "fp_delta": -0.03371026995741744,
+        "seeds": [
+          0.12446596411486771,
+          0.08022692397202547,
+          -0.5590771107649491
+        ]
+      }
+    },
+    "all_add__base": {
+      "m0matched": {
+        "delta": 0.8292892786969731,
+        "ci": [
+          -0.48690288976199414,
+          2.1856798056181375
+        ],
+        "up": 20,
+        "tie": 12,
+        "down": 19,
+        "best": "IDRiD_12",
+        "without_best": 0.48690070529655366,
+        "fp_delta": 0.05980357486286536,
+        "seeds": [
+          0.3279610042199006,
+          1.840832100789478,
+          0.31907473108154033
+        ]
+      },
+      "matched": {
+        "delta": 0.5344508857760908,
+        "ci": [
+          -0.38261283451242106,
+          1.482378018305278
+        ],
+        "up": 24,
+        "tie": 15,
+        "down": 12,
+        "best": "IDRiD_08",
+        "without_best": 0.278473236824946,
+        "fp_delta": 0.11143632077416399,
+        "seeds": [
+          0.24804132453992395,
+          0.6637366760026654,
+          0.6915746567856833
+        ]
+      }
+    },
+    "learned_signed__base": {
+      "m0matched": {
+        "delta": 1.1404170352288225,
+        "ci": [
+          -0.2305168515673943,
+          2.574600023626692
+        ],
+        "up": 27,
+        "tie": 12,
+        "down": 12,
+        "best": "IDRiD_08",
+        "without_best": 0.7187809314889546,
+        "fp_delta": 0.05139937927494742,
+        "seeds": [
+          -0.06778583240554659,
+          2.316431820684281,
+          1.1726051174077332
+        ]
+      },
+      "matched": {
+        "delta": 0.6952693634987273,
+        "ci": [
+          -0.36458461842541995,
+          1.7318034371930187
+        ],
+        "up": 25,
+        "tie": 13,
+        "down": 13,
+        "best": "IDRiD_08",
+        "without_best": 0.48695252854647963,
+        "fp_delta": 0.21085794179088424,
+        "seeds": [
+          0.32175877400420305,
+          1.0661936661096982,
+          0.6978556503822805
+        ]
+      }
+    },
+    "learned_signed__shuffled_signed": {
+      "m0matched": {
+        "delta": -0.0027596974317643007,
+        "ci": [
+          -0.3321047647096242,
+          0.3153895452843178
+        ],
+        "up": 10,
+        "tie": 30,
+        "down": 11,
+        "best": "IDRiD_08",
+        "without_best": -0.09170378026928844,
+        "fp_delta": -0.0004124594937504611,
+        "seeds": [
+          -0.30967984022279443,
+          0.24571421201917643,
+          0.055686535908325174
+        ]
+      },
+      "matched": {
+        "delta": 0.026712685935240454,
+        "ci": [
+          -0.16106868661958795,
+          0.2049004305457348
+        ],
+        "up": 13,
+        "tie": 29,
+        "down": 9,
+        "best": "IDRiD_10",
+        "without_best": -0.011968746620564548,
+        "fp_delta": 0.0969299406487778,
+        "seeds": [
+          -0.1296310912506401,
+          0.279985083932794,
+          -0.0702159348764323
+        ]
+      }
+    }
+  },
+  "matched_18": {
+    "regional": {
+      "base": 57.59620322903487,
+      "candidate": 58.05902843921407,
+      "delta": 0.4628252101791972,
+      "ci": [
+        -0.860629562604949,
+        1.9244965412988144
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.3900459127406325
+      ]
+    },
+    "learned_add": {
+      "base": 57.59620322903487,
+      "candidate": 58.05326018730634,
+      "delta": 0.4570569582714725,
+      "ci": [
+        -0.07130517814105453,
+        1.027065406733672
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.40803590584848015
+      ]
+    },
+    "shuffled_add": {
+      "base": 57.59620322903487,
+      "candidate": 58.076434798766776,
+      "delta": 0.48023156973190595,
+      "ci": [
+        -0.10158535987611295,
+        1.1177799506576527
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.40635850505295523
+      ]
+    },
+    "all_add": {
+      "base": 57.59620322903487,
+      "candidate": 58.22849599856703,
+      "delta": 0.6322927695321567,
+      "ci": [
+        -0.3908534906215184,
+        1.744571020574206
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.40282231753462766
+      ]
+    },
+    "learned_signed": {
+      "base": 57.59620322903487,
+      "candidate": 58.44738215720342,
+      "delta": 0.8511789281685509,
+      "ci": [
+        -0.27921425093588326,
+        2.042212222584749
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.3989795852836531
+      ]
+    },
+    "shuffled_signed": {
+      "base": 57.59620322903487,
+      "candidate": 58.47339766504347,
+      "delta": 0.877194436008601,
+      "ci": [
+        -0.31069275592289713,
+        2.1090503251769945
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.40324020354325096
+      ]
+    },
+    "zoom_control": {
+      "base": 57.59620322903487,
+      "candidate": 57.94200066718159,
+      "delta": 0.34579743814671815,
+      "ci": [
+        -1.6636978020363467,
+        2.352262978341213
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.38739466015877105
+      ]
+    }
+  }
+}

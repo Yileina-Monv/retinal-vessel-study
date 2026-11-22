@@ -1,0 +1,14282 @@
+[
+ {
+  "id": "IDRiD_01_p0_1",
+  "image": "IDRiD_01",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    145,
+    341
+   ],
+   [
+    146,
+    342
+   ],
+   [
+    147,
+    343
+   ],
+   [
+    148,
+    344
+   ]
+  ],
+  "center": [
+   146,
+   342
+  ],
+  "control": [
+   617,
+   190
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   1,
+   1,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   1,
+   1,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   1,
+   1,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.21240563690662384
+ },
+ {
+  "id": "IDRiD_01_p235_1",
+  "image": "IDRiD_01",
+  "path": 235,
+  "points": 2,
+  "yx": [
+   [
+    753,
+    298
+   ],
+   [
+    754,
+    298
+   ]
+  ],
+  "center": [
+   753,
+   298
+  ],
+  "control": [
+   670,
+   218
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3428576588630676
+ },
+ {
+  "id": "IDRiD_01_p235_2",
+  "image": "IDRiD_01",
+  "path": 235,
+  "points": 2,
+  "yx": [
+   [
+    757,
+    299
+   ],
+   [
+    758,
+    299
+   ]
+  ],
+  "center": [
+   757,
+   299
+  ],
+  "control": [
+   670,
+   218
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3439435660839081
+ },
+ {
+  "id": "IDRiD_08_p214_1",
+  "image": "IDRiD_08",
+  "path": 214,
+  "points": 6,
+  "yx": [
+   [
+    609,
+    382
+   ],
+   [
+    609,
+    383
+   ],
+   [
+    609,
+    384
+   ],
+   [
+    609,
+    385
+   ],
+   [
+    609,
+    386
+   ],
+   [
+    609,
+    387
+   ]
+  ],
+  "center": [
+   609,
+   384
+  ],
+  "control": [
+   612,
+   391
+  ],
+  "mid_seeds_per_point": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   2
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.18308041989803314
+ },
+ {
+  "id": "IDRiD_13_p0_1",
+  "image": "IDRiD_13",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    527,
+    843
+   ]
+  ],
+  "center": [
+   527,
+   843
+  ],
+  "control": [
+   703,
+   567
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34992852807044983
+ },
+ {
+  "id": "IDRiD_13_p0_2",
+  "image": "IDRiD_13",
+  "path": 0,
+  "points": 10,
+  "yx": [
+   [
+    639,
+    172
+   ],
+   [
+    640,
+    173
+   ],
+   [
+    641,
+    174
+   ],
+   [
+    641,
+    175
+   ],
+   [
+    642,
+    176
+   ],
+   [
+    642,
+    177
+   ],
+   [
+    642,
+    178
+   ],
+   [
+    642,
+    179
+   ],
+   [
+    642,
+    180
+   ],
+   [
+    642,
+    181
+   ]
+  ],
+  "center": [
+   642,
+   176
+  ],
+  "control": [
+   652,
+   229
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.21015802025794983
+ },
+ {
+  "id": "IDRiD_13_p13_1",
+  "image": "IDRiD_13",
+  "path": 13,
+  "points": 10,
+  "yx": [
+   [
+    101,
+    697
+   ],
+   [
+    102,
+    696
+   ],
+   [
+    103,
+    696
+   ],
+   [
+    104,
+    694
+   ],
+   [
+    104,
+    695
+   ],
+   [
+    105,
+    693
+   ],
+   [
+    106,
+    692
+   ],
+   [
+    107,
+    689
+   ],
+   [
+    107,
+    690
+   ],
+   [
+    107,
+    691
+   ]
+  ],
+  "center": [
+   105,
+   693
+  ],
+  "control": [
+   110,
+   683
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3093554377555847
+ },
+ {
+  "id": "IDRiD_13_p68_1",
+  "image": "IDRiD_13",
+  "path": 68,
+  "points": 13,
+  "yx": [
+   [
+    230,
+    730
+   ],
+   [
+    230,
+    731
+   ],
+   [
+    230,
+    732
+   ],
+   [
+    231,
+    733
+   ],
+   [
+    232,
+    734
+   ],
+   [
+    233,
+    735
+   ],
+   [
+    234,
+    736
+   ],
+   [
+    235,
+    737
+   ],
+   [
+    236,
+    738
+   ],
+   [
+    236,
+    739
+   ],
+   [
+    237,
+    740
+   ],
+   [
+    237,
+    741
+   ],
+   [
+    237,
+    742
+   ]
+  ],
+  "center": [
+   234,
+   736
+  ],
+  "control": [
+   110,
+   683
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3222402334213257
+ },
+ {
+  "id": "IDRiD_13_p68_2",
+  "image": "IDRiD_13",
+  "path": 68,
+  "points": 4,
+  "yx": [
+   [
+    238,
+    744
+   ],
+   [
+    238,
+    745
+   ],
+   [
+    238,
+    746
+   ],
+   [
+    238,
+    747
+   ]
+  ],
+  "center": [
+   238,
+   745
+  ],
+  "control": [
+   110,
+   683
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.31887418031692505
+ },
+ {
+  "id": "IDRiD_13_p243_1",
+  "image": "IDRiD_13",
+  "path": 243,
+  "points": 1,
+  "yx": [
+   [
+    641,
+    231
+   ]
+  ],
+  "center": [
+   641,
+   231
+  ],
+  "control": [
+   652,
+   229
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.19377632439136505
+ },
+ {
+  "id": "IDRiD_13_p262_1",
+  "image": "IDRiD_13",
+  "path": 262,
+  "points": 2,
+  "yx": [
+   [
+    645,
+    193
+   ],
+   [
+    646,
+    193
+   ]
+  ],
+  "center": [
+   645,
+   193
+  ],
+  "control": [
+   652,
+   229
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3016549348831177
+ },
+ {
+  "id": "IDRiD_18_p0_1",
+  "image": "IDRiD_18",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    602,
+    1005
+   ]
+  ],
+  "center": [
+   602,
+   1005
+  ],
+  "control": [
+   785,
+   625
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3426854908466339
+ },
+ {
+  "id": "IDRiD_18_p0_2",
+  "image": "IDRiD_18",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    604,
+    1007
+   ],
+   [
+    605,
+    1007
+   ],
+   [
+    606,
+    1008
+   ],
+   [
+    607,
+    1008
+   ]
+  ],
+  "center": [
+   605,
+   1007
+  ],
+  "control": [
+   785,
+   625
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.33084532618522644
+ },
+ {
+  "id": "IDRiD_18_p0_3",
+  "image": "IDRiD_18",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    612,
+    1010
+   ]
+  ],
+  "center": [
+   612,
+   1010
+  ],
+  "control": [
+   785,
+   625
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.30499792098999023
+ },
+ {
+  "id": "IDRiD_18_p0_4",
+  "image": "IDRiD_18",
+  "path": 0,
+  "points": 10,
+  "yx": [
+   [
+    774,
+    610
+   ],
+   [
+    775,
+    611
+   ],
+   [
+    776,
+    612
+   ],
+   [
+    777,
+    613
+   ],
+   [
+    778,
+    613
+   ],
+   [
+    779,
+    614
+   ],
+   [
+    780,
+    615
+   ],
+   [
+    781,
+    616
+   ],
+   [
+    782,
+    617
+   ],
+   [
+    783,
+    618
+   ]
+  ],
+  "center": [
+   779,
+   614
+  ],
+  "control": [
+   785,
+   624
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3496287763118744
+ },
+ {
+  "id": "IDRiD_18_p60_1",
+  "image": "IDRiD_18",
+  "path": 60,
+  "points": 1,
+  "yx": [
+   [
+    247,
+    326
+   ]
+  ],
+  "center": [
+   247,
+   326
+  ],
+  "control": [
+   246,
+   337
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.11752700805664062
+ },
+ {
+  "id": "IDRiD_18_p221_1",
+  "image": "IDRiD_18",
+  "path": 221,
+  "points": 5,
+  "yx": [
+   [
+    711,
+    227
+   ],
+   [
+    712,
+    227
+   ],
+   [
+    713,
+    227
+   ],
+   [
+    714,
+    227
+   ],
+   [
+    715,
+    227
+   ]
+  ],
+  "center": [
+   713,
+   227
+  ],
+  "control": [
+   616,
+   259
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   2,
+   3
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   3,
+   3,
+   3
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.05624109506607056
+ },
+ {
+  "id": "IDRiD_18_p221_2",
+  "image": "IDRiD_18",
+  "path": 221,
+  "points": 3,
+  "yx": [
+   [
+    717,
+    226
+   ],
+   [
+    718,
+    226
+   ],
+   [
+    719,
+    226
+   ]
+  ],
+  "center": [
+   718,
+   226
+  ],
+  "control": [
+   616,
+   259
+  ],
+  "mid_seeds_per_point": [
+   2,
+   2,
+   0
+  ],
+  "high_seeds_per_point": [
+   3,
+   3,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   3,
+   3,
+   3
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": 0.037786662578582764
+ },
+ {
+  "id": "IDRiD_18_p221_3",
+  "image": "IDRiD_18",
+  "path": 221,
+  "points": 2,
+  "yx": [
+   [
+    721,
+    225
+   ],
+   [
+    722,
+    225
+   ]
+  ],
+  "center": [
+   721,
+   225
+  ],
+  "control": [
+   616,
+   259
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2,
+   2
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.07669593393802643
+ },
+ {
+  "id": "IDRiD_18_p221_4",
+  "image": "IDRiD_18",
+  "path": 221,
+  "points": 1,
+  "yx": [
+   [
+    738,
+    220
+   ]
+  ],
+  "center": [
+   738,
+   220
+  ],
+  "control": [
+   616,
+   259
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.031191855669021606
+ },
+ {
+  "id": "IDRiD_23_p315_1",
+  "image": "IDRiD_23",
+  "path": 315,
+  "points": 7,
+  "yx": [
+   [
+    822,
+    169
+   ],
+   [
+    823,
+    168
+   ],
+   [
+    824,
+    168
+   ],
+   [
+    825,
+    168
+   ],
+   [
+    826,
+    167
+   ],
+   [
+    827,
+    167
+   ],
+   [
+    828,
+    168
+   ]
+  ],
+  "center": [
+   825,
+   168
+  ],
+  "control": [
+   793,
+   608
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3032224476337433
+ },
+ {
+  "id": "IDRiD_23_p316_1",
+  "image": "IDRiD_23",
+  "path": 316,
+  "points": 13,
+  "yx": [
+   [
+    812,
+    188
+   ],
+   [
+    813,
+    189
+   ],
+   [
+    814,
+    189
+   ],
+   [
+    815,
+    190
+   ],
+   [
+    816,
+    190
+   ],
+   [
+    817,
+    191
+   ],
+   [
+    818,
+    191
+   ],
+   [
+    819,
+    192
+   ],
+   [
+    820,
+    193
+   ],
+   [
+    821,
+    193
+   ],
+   [
+    822,
+    194
+   ],
+   [
+    823,
+    194
+   ],
+   [
+    824,
+    195
+   ]
+  ],
+  "center": [
+   818,
+   191
+  ],
+  "control": [
+   793,
+   608
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3495522141456604
+ },
+ {
+  "id": "IDRiD_23_p320_1",
+  "image": "IDRiD_23",
+  "path": 320,
+  "points": 11,
+  "yx": [
+   [
+    852,
+    695
+   ],
+   [
+    852,
+    696
+   ],
+   [
+    852,
+    697
+   ],
+   [
+    852,
+    698
+   ],
+   [
+    852,
+    699
+   ],
+   [
+    853,
+    700
+   ],
+   [
+    853,
+    701
+   ],
+   [
+    853,
+    702
+   ],
+   [
+    853,
+    703
+   ],
+   [
+    853,
+    704
+   ],
+   [
+    853,
+    705
+   ]
+  ],
+  "center": [
+   853,
+   700
+  ],
+  "control": [
+   850,
+   727
+  ],
+  "mid_seeds_per_point": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.13334807753562927
+ },
+ {
+  "id": "IDRiD_23_p327_1",
+  "image": "IDRiD_23",
+  "path": 327,
+  "points": 7,
+  "yx": [
+   [
+    865,
+    761
+   ],
+   [
+    866,
+    761
+   ],
+   [
+    867,
+    760
+   ],
+   [
+    868,
+    759
+   ],
+   [
+    869,
+    759
+   ],
+   [
+    870,
+    758
+   ],
+   [
+    871,
+    757
+   ]
+  ],
+  "center": [
+   868,
+   759
+  ],
+  "control": [
+   846,
+   733
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3499584496021271
+ },
+ {
+  "id": "IDRiD_28_p118_1",
+  "image": "IDRiD_28",
+  "path": 118,
+  "points": 7,
+  "yx": [
+   [
+    375,
+    597
+   ],
+   [
+    376,
+    595
+   ],
+   [
+    376,
+    596
+   ],
+   [
+    377,
+    594
+   ],
+   [
+    378,
+    593
+   ],
+   [
+    379,
+    592
+   ],
+   [
+    380,
+    591
+   ]
+  ],
+  "center": [
+   377,
+   594
+  ],
+  "control": [
+   519,
+   753
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.33017805218696594
+ },
+ {
+  "id": "IDRiD_28_p118_2",
+  "image": "IDRiD_28",
+  "path": 118,
+  "points": 1,
+  "yx": [
+   [
+    381,
+    589
+   ]
+  ],
+  "center": [
+   381,
+   589
+  ],
+  "control": [
+   519,
+   753
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3160775303840637
+ },
+ {
+  "id": "IDRiD_31_p0_1",
+  "image": "IDRiD_31",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    455,
+    467
+   ],
+   [
+    456,
+    466
+   ]
+  ],
+  "center": [
+   455,
+   467
+  ],
+  "control": [
+   352,
+   303
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3490517735481262
+ },
+ {
+  "id": "IDRiD_31_p59_1",
+  "image": "IDRiD_31",
+  "path": 59,
+  "points": 2,
+  "yx": [
+   [
+    326,
+    334
+   ],
+   [
+    327,
+    333
+   ]
+  ],
+  "center": [
+   326,
+   334
+  ],
+  "control": [
+   352,
+   303
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3286551833152771
+ },
+ {
+  "id": "IDRiD_31_p85_1",
+  "image": "IDRiD_31",
+  "path": 85,
+  "points": 1,
+  "yx": [
+   [
+    381,
+    72
+   ]
+  ],
+  "center": [
+   381,
+   72
+  ],
+  "control": [
+   376,
+   61
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33121249079704285
+ },
+ {
+  "id": "IDRiD_31_p179_1",
+  "image": "IDRiD_31",
+  "path": 179,
+  "points": 1,
+  "yx": [
+   [
+    630,
+    280
+   ]
+  ],
+  "center": [
+   630,
+   280
+  ],
+  "control": [
+   639,
+   292
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.35012227296829224
+ },
+ {
+  "id": "IDRiD_33_p0_1",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    291,
+    965
+   ]
+  ],
+  "center": [
+   291,
+   965
+  ],
+  "control": [
+   453,
+   897
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.2895593047142029
+ },
+ {
+  "id": "IDRiD_33_p0_2",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 11,
+  "yx": [
+   [
+    341,
+    496
+   ],
+   [
+    341,
+    497
+   ],
+   [
+    342,
+    498
+   ],
+   [
+    342,
+    499
+   ],
+   [
+    342,
+    500
+   ],
+   [
+    342,
+    501
+   ],
+   [
+    342,
+    502
+   ],
+   [
+    342,
+    503
+   ],
+   [
+    342,
+    504
+   ],
+   [
+    342,
+    505
+   ],
+   [
+    342,
+    506
+   ]
+  ],
+  "center": [
+   342,
+   501
+  ],
+  "control": [
+   359,
+   542
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34879183769226074
+ },
+ {
+  "id": "IDRiD_33_p0_3",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 7,
+  "yx": [
+   [
+    410,
+    700
+   ],
+   [
+    411,
+    700
+   ],
+   [
+    412,
+    700
+   ],
+   [
+    413,
+    701
+   ],
+   [
+    414,
+    701
+   ],
+   [
+    415,
+    701
+   ],
+   [
+    416,
+    701
+   ]
+  ],
+  "center": [
+   413,
+   701
+  ],
+  "control": [
+   463,
+   638
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.35115930438041687
+ },
+ {
+  "id": "IDRiD_33_p0_4",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    420,
+    705
+   ]
+  ],
+  "center": [
+   420,
+   705
+  ],
+  "control": [
+   463,
+   638
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.27836915850639343
+ },
+ {
+  "id": "IDRiD_33_p0_5",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    422,
+    707
+   ]
+  ],
+  "center": [
+   422,
+   707
+  ],
+  "control": [
+   463,
+   638
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3459765911102295
+ },
+ {
+  "id": "IDRiD_33_p0_6",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    423,
+    709
+   ]
+  ],
+  "center": [
+   423,
+   709
+  ],
+  "control": [
+   463,
+   638
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34667283296585083
+ },
+ {
+  "id": "IDRiD_33_p0_7",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    694,
+    566
+   ]
+  ],
+  "center": [
+   694,
+   566
+  ],
+  "control": [
+   726,
+   563
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3502062261104584
+ },
+ {
+  "id": "IDRiD_33_p0_8",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    776,
+    491
+   ]
+  ],
+  "center": [
+   776,
+   491
+  ],
+  "control": [
+   726,
+   561
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.32850009202957153
+ },
+ {
+  "id": "IDRiD_33_p0_9",
+  "image": "IDRiD_33",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    778,
+    492
+   ]
+  ],
+  "center": [
+   778,
+   492
+  ],
+  "control": [
+   726,
+   561
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3425273895263672
+ },
+ {
+  "id": "IDRiD_33_p48_1",
+  "image": "IDRiD_33",
+  "path": 48,
+  "points": 7,
+  "yx": [
+   [
+    293,
+    962
+   ],
+   [
+    294,
+    962
+   ],
+   [
+    295,
+    962
+   ],
+   [
+    296,
+    962
+   ],
+   [
+    297,
+    961
+   ],
+   [
+    298,
+    960
+   ],
+   [
+    299,
+    959
+   ]
+  ],
+  "center": [
+   296,
+   962
+  ],
+  "control": [
+   453,
+   897
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.32188016176223755
+ },
+ {
+  "id": "IDRiD_33_p48_2",
+  "image": "IDRiD_33",
+  "path": 48,
+  "points": 3,
+  "yx": [
+   [
+    301,
+    957
+   ],
+   [
+    302,
+    957
+   ],
+   [
+    303,
+    957
+   ]
+  ],
+  "center": [
+   302,
+   957
+  ],
+  "control": [
+   453,
+   897
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3434928357601166
+ },
+ {
+  "id": "IDRiD_33_p49_1",
+  "image": "IDRiD_33",
+  "path": 49,
+  "points": 1,
+  "yx": [
+   [
+    327,
+    710
+   ]
+  ],
+  "center": [
+   327,
+   710
+  ],
+  "control": [
+   256,
+   703
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.35147398710250854
+ },
+ {
+  "id": "IDRiD_33_p49_2",
+  "image": "IDRiD_33",
+  "path": 49,
+  "points": 2,
+  "yx": [
+   [
+    330,
+    706
+   ],
+   [
+    330,
+    707
+   ]
+  ],
+  "center": [
+   330,
+   706
+  ],
+  "control": [
+   256,
+   703
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3421328663825989
+ },
+ {
+  "id": "IDRiD_33_p62_1",
+  "image": "IDRiD_33",
+  "path": 62,
+  "points": 12,
+  "yx": [
+   [
+    341,
+    519
+   ],
+   [
+    341,
+    520
+   ],
+   [
+    341,
+    521
+   ],
+   [
+    341,
+    522
+   ],
+   [
+    341,
+    523
+   ],
+   [
+    341,
+    524
+   ],
+   [
+    341,
+    525
+   ],
+   [
+    341,
+    526
+   ],
+   [
+    341,
+    527
+   ],
+   [
+    341,
+    528
+   ],
+   [
+    341,
+    529
+   ],
+   [
+    341,
+    530
+   ]
+  ],
+  "center": [
+   341,
+   524
+  ],
+  "control": [
+   359,
+   542
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.35071861743927
+ },
+ {
+  "id": "IDRiD_33_p64_1",
+  "image": "IDRiD_33",
+  "path": 64,
+  "points": 4,
+  "yx": [
+   [
+    345,
+    599
+   ],
+   [
+    345,
+    600
+   ],
+   [
+    345,
+    601
+   ],
+   [
+    345,
+    602
+   ]
+  ],
+  "center": [
+   345,
+   600
+  ],
+  "control": [
+   351,
+   621
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.326315701007843
+ },
+ {
+  "id": "IDRiD_33_p68_1",
+  "image": "IDRiD_33",
+  "path": 68,
+  "points": 3,
+  "yx": [
+   [
+    354,
+    675
+   ],
+   [
+    354,
+    676
+   ],
+   [
+    354,
+    677
+   ]
+  ],
+  "center": [
+   354,
+   676
+  ],
+  "control": [
+   351,
+   625
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.24160107970237732
+ },
+ {
+  "id": "IDRiD_33_p86_1",
+  "image": "IDRiD_33",
+  "path": 86,
+  "points": 1,
+  "yx": [
+   [
+    412,
+    61
+   ]
+  ],
+  "center": [
+   412,
+   61
+  ],
+  "control": [
+   399,
+   50
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34900742769241333
+ },
+ {
+  "id": "IDRiD_33_p115_1",
+  "image": "IDRiD_33",
+  "path": 115,
+  "points": 2,
+  "yx": [
+   [
+    482,
+    161
+   ],
+   [
+    482,
+    162
+   ]
+  ],
+  "center": [
+   482,
+   161
+  ],
+  "control": [
+   399,
+   50
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.28048938512802124
+ },
+ {
+  "id": "IDRiD_33_p115_2",
+  "image": "IDRiD_33",
+  "path": 115,
+  "points": 2,
+  "yx": [
+   [
+    483,
+    164
+   ],
+   [
+    483,
+    165
+   ]
+  ],
+  "center": [
+   483,
+   164
+  ],
+  "control": [
+   399,
+   50
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   2,
+   3
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.17448526620864868
+ },
+ {
+  "id": "IDRiD_33_p122_1",
+  "image": "IDRiD_33",
+  "path": 122,
+  "points": 5,
+  "yx": [
+   [
+    524,
+    348
+   ],
+   [
+    524,
+    349
+   ],
+   [
+    524,
+    350
+   ],
+   [
+    524,
+    351
+   ],
+   [
+    524,
+    352
+   ]
+  ],
+  "center": [
+   524,
+   350
+  ],
+  "control": [
+   506,
+   377
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   true
+  ],
+  "high_dual_delta_median": -0.3019421100616455
+ },
+ {
+  "id": "IDRiD_33_p122_2",
+  "image": "IDRiD_33",
+  "path": 122,
+  "points": 1,
+  "yx": [
+   [
+    528,
+    341
+   ]
+  ],
+  "center": [
+   528,
+   341
+  ],
+  "control": [
+   506,
+   377
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.32634642720222473
+ },
+ {
+  "id": "IDRiD_33_p127_1",
+  "image": "IDRiD_33",
+  "path": 127,
+  "points": 1,
+  "yx": [
+   [
+    534,
+    42
+   ]
+  ],
+  "center": [
+   534,
+   42
+  ],
+  "control": [
+   399,
+   50
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34958094358444214
+ },
+ {
+  "id": "IDRiD_33_p155_1",
+  "image": "IDRiD_33",
+  "path": 155,
+  "points": 1,
+  "yx": [
+   [
+    594,
+    767
+   ]
+  ],
+  "center": [
+   594,
+   767
+  ],
+  "control": [
+   524,
+   788
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3484925329685211
+ },
+ {
+  "id": "IDRiD_33_p222_1",
+  "image": "IDRiD_33",
+  "path": 222,
+  "points": 2,
+  "yx": [
+   [
+    881,
+    783
+   ],
+   [
+    882,
+    783
+   ]
+  ],
+  "center": [
+   881,
+   783
+  ],
+  "control": [
+   908,
+   773
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3497414290904999
+ },
+ {
+  "id": "IDRiD_33_p222_2",
+  "image": "IDRiD_33",
+  "path": 222,
+  "points": 1,
+  "yx": [
+   [
+    888,
+    780
+   ]
+  ],
+  "center": [
+   888,
+   780
+  ],
+  "control": [
+   908,
+   773
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3497296869754791
+ },
+ {
+  "id": "IDRiD_48_p0_1",
+  "image": "IDRiD_48",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    434,
+    953
+   ],
+   [
+    435,
+    953
+   ],
+   [
+    436,
+    953
+   ],
+   [
+    437,
+    953
+   ]
+  ],
+  "center": [
+   435,
+   953
+  ],
+  "control": [
+   450,
+   961
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.31514406204223633
+ },
+ {
+  "id": "IDRiD_48_p0_2",
+  "image": "IDRiD_48",
+  "path": 0,
+  "points": 3,
+  "yx": [
+   [
+    435,
+    956
+   ],
+   [
+    436,
+    957
+   ],
+   [
+    437,
+    958
+   ]
+  ],
+  "center": [
+   436,
+   957
+  ],
+  "control": [
+   450,
+   961
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.30573606491088867
+ },
+ {
+  "id": "IDRiD_48_p4_1",
+  "image": "IDRiD_48",
+  "path": 4,
+  "points": 17,
+  "yx": [
+   [
+    131,
+    545
+   ],
+   [
+    132,
+    545
+   ],
+   [
+    133,
+    545
+   ],
+   [
+    134,
+    545
+   ],
+   [
+    135,
+    545
+   ],
+   [
+    136,
+    545
+   ],
+   [
+    137,
+    545
+   ],
+   [
+    138,
+    545
+   ],
+   [
+    139,
+    545
+   ],
+   [
+    140,
+    545
+   ],
+   [
+    141,
+    545
+   ],
+   [
+    142,
+    545
+   ],
+   [
+    143,
+    545
+   ],
+   [
+    144,
+    545
+   ],
+   [
+    145,
+    545
+   ],
+   [
+    146,
+    546
+   ],
+   [
+    147,
+    546
+   ]
+  ],
+  "center": [
+   139,
+   545
+  ],
+  "control": [
+   173,
+   670
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   1,
+   3,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.21311363577842712
+ },
+ {
+  "id": "IDRiD_48_p67_1",
+  "image": "IDRiD_48",
+  "path": 67,
+  "points": 8,
+  "yx": [
+   [
+    322,
+    735
+   ],
+   [
+    322,
+    736
+   ],
+   [
+    322,
+    737
+   ],
+   [
+    323,
+    738
+   ],
+   [
+    323,
+    739
+   ],
+   [
+    323,
+    740
+   ],
+   [
+    323,
+    741
+   ],
+   [
+    323,
+    742
+   ]
+  ],
+  "center": [
+   323,
+   738
+  ],
+  "control": [
+   324,
+   747
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.35039785504341125
+ },
+ {
+  "id": "IDRiD_48_p67_2",
+  "image": "IDRiD_48",
+  "path": 67,
+  "points": 2,
+  "yx": [
+   [
+    340,
+    861
+   ],
+   [
+    340,
+    862
+   ]
+  ],
+  "center": [
+   340,
+   861
+  ],
+  "control": [
+   349,
+   855
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3372538685798645
+ },
+ {
+  "id": "IDRiD_48_p146_1",
+  "image": "IDRiD_48",
+  "path": 146,
+  "points": 1,
+  "yx": [
+   [
+    624,
+    833
+   ]
+  ],
+  "center": [
+   624,
+   833
+  ],
+  "control": [
+   634,
+   852
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3294757902622223
+ },
+ {
+  "id": "IDRiD_48_p161_1",
+  "image": "IDRiD_48",
+  "path": 161,
+  "points": 1,
+  "yx": [
+   [
+    769,
+    677
+   ]
+  ],
+  "center": [
+   769,
+   677
+  ],
+  "control": [
+   735,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33599114418029785
+ },
+ {
+  "id": "IDRiD_50_p0_1",
+  "image": "IDRiD_50",
+  "path": 0,
+  "points": 8,
+  "yx": [
+   [
+    672,
+    890
+   ],
+   [
+    673,
+    890
+   ],
+   [
+    674,
+    890
+   ],
+   [
+    675,
+    890
+   ],
+   [
+    676,
+    889
+   ],
+   [
+    677,
+    889
+   ],
+   [
+    678,
+    889
+   ],
+   [
+    679,
+    889
+   ]
+  ],
+  "center": [
+   675,
+   890
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3485339283943176
+ },
+ {
+  "id": "IDRiD_50_p0_2",
+  "image": "IDRiD_50",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    688,
+    886
+   ],
+   [
+    689,
+    885
+   ]
+  ],
+  "center": [
+   688,
+   886
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3299733102321625
+ },
+ {
+  "id": "IDRiD_50_p0_3",
+  "image": "IDRiD_50",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    756,
+    238
+   ]
+  ],
+  "center": [
+   756,
+   238
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34981441497802734
+ },
+ {
+  "id": "IDRiD_50_p0_4",
+  "image": "IDRiD_50",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    767,
+    249
+   ]
+  ],
+  "center": [
+   767,
+   249
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.14446693658828735
+ },
+ {
+  "id": "IDRiD_53_p46_1",
+  "image": "IDRiD_53",
+  "path": 46,
+  "points": 24,
+  "yx": [
+   [
+    441,
+    1002
+   ],
+   [
+    442,
+    1002
+   ],
+   [
+    443,
+    1001
+   ],
+   [
+    444,
+    1001
+   ],
+   [
+    445,
+    1001
+   ],
+   [
+    446,
+    1001
+   ],
+   [
+    447,
+    1001
+   ],
+   [
+    448,
+    1000
+   ],
+   [
+    449,
+    1000
+   ],
+   [
+    450,
+    1000
+   ],
+   [
+    451,
+    1000
+   ],
+   [
+    452,
+    999
+   ],
+   [
+    453,
+    999
+   ],
+   [
+    454,
+    999
+   ],
+   [
+    455,
+    999
+   ],
+   [
+    456,
+    998
+   ],
+   [
+    457,
+    998
+   ],
+   [
+    458,
+    997
+   ],
+   [
+    459,
+    997
+   ],
+   [
+    460,
+    997
+   ],
+   [
+    461,
+    997
+   ],
+   [
+    462,
+    997
+   ],
+   [
+    463,
+    997
+   ],
+   [
+    464,
+    997
+   ]
+  ],
+  "center": [
+   452,
+   999
+  ],
+  "control": [
+   589,
+   873
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3132731318473816
+ },
+ {
+  "id": "IDRiD_53_p68_1",
+  "image": "IDRiD_53",
+  "path": 68,
+  "points": 8,
+  "yx": [
+   [
+    488,
+    687
+   ],
+   [
+    489,
+    688
+   ],
+   [
+    490,
+    689
+   ],
+   [
+    491,
+    690
+   ],
+   [
+    492,
+    691
+   ],
+   [
+    493,
+    692
+   ],
+   [
+    493,
+    693
+   ],
+   [
+    494,
+    694
+   ]
+  ],
+  "center": [
+   491,
+   690
+  ],
+  "control": [
+   633,
+   730
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3159179985523224
+ },
+ {
+  "id": "IDRiD_53_p114_1",
+  "image": "IDRiD_53",
+  "path": 114,
+  "points": 13,
+  "yx": [
+   [
+    604,
+    699
+   ],
+   [
+    605,
+    699
+   ],
+   [
+    606,
+    699
+   ],
+   [
+    607,
+    699
+   ],
+   [
+    608,
+    699
+   ],
+   [
+    609,
+    699
+   ],
+   [
+    610,
+    698
+   ],
+   [
+    611,
+    698
+   ],
+   [
+    612,
+    698
+   ],
+   [
+    613,
+    698
+   ],
+   [
+    614,
+    697
+   ],
+   [
+    615,
+    697
+   ],
+   [
+    616,
+    696
+   ]
+  ],
+  "center": [
+   610,
+   698
+  ],
+  "control": [
+   633,
+   730
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34586212038993835
+ },
+ {
+  "id": "IDRiD_03_p0_1",
+  "image": "IDRiD_03",
+  "path": 0,
+  "points": 9,
+  "yx": [
+   [
+    202,
+    432
+   ],
+   [
+    202,
+    433
+   ],
+   [
+    202,
+    434
+   ],
+   [
+    202,
+    435
+   ],
+   [
+    202,
+    436
+   ],
+   [
+    202,
+    437
+   ],
+   [
+    202,
+    438
+   ],
+   [
+    202,
+    439
+   ],
+   [
+    202,
+    440
+   ]
+  ],
+  "center": [
+   202,
+   436
+  ],
+  "control": [
+   207,
+   458
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.36968564987182617
+ },
+ {
+  "id": "IDRiD_03_p0_2",
+  "image": "IDRiD_03",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    203,
+    446
+   ],
+   [
+    203,
+    447
+   ]
+  ],
+  "center": [
+   203,
+   446
+  ],
+  "control": [
+   207,
+   458
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3003315329551697
+ },
+ {
+  "id": "IDRiD_03_p0_3",
+  "image": "IDRiD_03",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    206,
+    829
+   ]
+  ],
+  "center": [
+   206,
+   829
+  ],
+  "control": [
+   220,
+   817
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3193705081939697
+ },
+ {
+  "id": "IDRiD_03_p0_4",
+  "image": "IDRiD_03",
+  "path": 0,
+  "points": 7,
+  "yx": [
+   [
+    214,
+    809
+   ],
+   [
+    215,
+    809
+   ],
+   [
+    216,
+    809
+   ],
+   [
+    217,
+    809
+   ],
+   [
+    218,
+    809
+   ],
+   [
+    219,
+    809
+   ],
+   [
+    220,
+    809
+   ]
+  ],
+  "center": [
+   217,
+   809
+  ],
+  "control": [
+   222,
+   815
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3696292042732239
+ },
+ {
+  "id": "IDRiD_03_p0_5",
+  "image": "IDRiD_03",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    573,
+    778
+   ]
+  ],
+  "center": [
+   573,
+   778
+  ],
+  "control": [
+   592,
+   805
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.39410874247550964
+ },
+ {
+  "id": "IDRiD_03_p54_1",
+  "image": "IDRiD_03",
+  "path": 54,
+  "points": 1,
+  "yx": [
+   [
+    213,
+    759
+   ]
+  ],
+  "center": [
+   213,
+   759
+  ],
+  "control": [
+   225,
+   813
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3898060619831085
+ },
+ {
+  "id": "IDRiD_03_p54_2",
+  "image": "IDRiD_03",
+  "path": 54,
+  "points": 1,
+  "yx": [
+   [
+    215,
+    760
+   ]
+  ],
+  "center": [
+   215,
+   760
+  ],
+  "control": [
+   225,
+   813
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3850833773612976
+ },
+ {
+  "id": "IDRiD_03_p54_3",
+  "image": "IDRiD_03",
+  "path": 54,
+  "points": 1,
+  "yx": [
+   [
+    217,
+    761
+   ]
+  ],
+  "center": [
+   217,
+   761
+  ],
+  "control": [
+   225,
+   813
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.39329344034194946
+ },
+ {
+  "id": "IDRiD_03_p87_1",
+  "image": "IDRiD_03",
+  "path": 87,
+  "points": 4,
+  "yx": [
+   [
+    376,
+    706
+   ],
+   [
+    377,
+    706
+   ],
+   [
+    378,
+    705
+   ],
+   [
+    379,
+    704
+   ]
+  ],
+  "center": [
+   378,
+   705
+  ],
+  "control": [
+   386,
+   702
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.38190728425979614
+ },
+ {
+  "id": "IDRiD_03_p126_1",
+  "image": "IDRiD_03",
+  "path": 126,
+  "points": 4,
+  "yx": [
+   [
+    395,
+    765
+   ],
+   [
+    395,
+    766
+   ],
+   [
+    395,
+    767
+   ],
+   [
+    395,
+    768
+   ]
+  ],
+  "center": [
+   395,
+   766
+  ],
+  "control": [
+   447,
+   776
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3527931571006775
+ },
+ {
+  "id": "IDRiD_03_p202_1",
+  "image": "IDRiD_03",
+  "path": 202,
+  "points": 3,
+  "yx": [
+   [
+    546,
+    747
+   ],
+   [
+    547,
+    748
+   ],
+   [
+    548,
+    749
+   ]
+  ],
+  "center": [
+   547,
+   748
+  ],
+  "control": [
+   592,
+   805
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.36527442932128906
+ },
+ {
+  "id": "IDRiD_03_p224_1",
+  "image": "IDRiD_03",
+  "path": 224,
+  "points": 7,
+  "yx": [
+   [
+    582,
+    791
+   ],
+   [
+    583,
+    792
+   ],
+   [
+    583,
+    793
+   ],
+   [
+    584,
+    794
+   ],
+   [
+    584,
+    795
+   ],
+   [
+    585,
+    796
+   ],
+   [
+    586,
+    797
+   ]
+  ],
+  "center": [
+   584,
+   794
+  ],
+  "control": [
+   592,
+   805
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3918178081512451
+ },
+ {
+  "id": "IDRiD_03_p249_1",
+  "image": "IDRiD_03",
+  "path": 249,
+  "points": 3,
+  "yx": [
+   [
+    703,
+    441
+   ],
+   [
+    704,
+    440
+   ],
+   [
+    705,
+    439
+   ]
+  ],
+  "center": [
+   704,
+   440
+  ],
+  "control": [
+   711,
+   435
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3510875403881073
+ },
+ {
+  "id": "IDRiD_03_p275_1",
+  "image": "IDRiD_03",
+  "path": 275,
+  "points": 2,
+  "yx": [
+   [
+    778,
+    388
+   ],
+   [
+    779,
+    388
+   ]
+  ],
+  "center": [
+   778,
+   388
+  ],
+  "control": [
+   810,
+   384
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3588970899581909
+ },
+ {
+  "id": "IDRiD_03_p275_2",
+  "image": "IDRiD_03",
+  "path": 275,
+  "points": 3,
+  "yx": [
+   [
+    825,
+    385
+   ],
+   [
+    826,
+    385
+   ],
+   [
+    827,
+    385
+   ]
+  ],
+  "center": [
+   826,
+   385
+  ],
+  "control": [
+   838,
+   387
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   3,
+   3,
+   2
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.13136616349220276
+ },
+ {
+  "id": "IDRiD_03_p294_1",
+  "image": "IDRiD_03",
+  "path": 294,
+  "points": 3,
+  "yx": [
+   [
+    791,
+    474
+   ],
+   [
+    792,
+    474
+   ],
+   [
+    793,
+    475
+   ]
+  ],
+  "center": [
+   792,
+   474
+  ],
+  "control": [
+   711,
+   435
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.29633015394210815
+ },
+ {
+  "id": "IDRiD_03_p294_2",
+  "image": "IDRiD_03",
+  "path": 294,
+  "points": 3,
+  "yx": [
+   [
+    809,
+    491
+   ],
+   [
+    810,
+    492
+   ],
+   [
+    811,
+    493
+   ]
+  ],
+  "center": [
+   810,
+   492
+  ],
+  "control": [
+   810,
+   384
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39164066314697266
+ },
+ {
+  "id": "IDRiD_03_p310_1",
+  "image": "IDRiD_03",
+  "path": 310,
+  "points": 9,
+  "yx": [
+   [
+    854,
+    858
+   ],
+   [
+    855,
+    858
+   ],
+   [
+    856,
+    858
+   ],
+   [
+    857,
+    858
+   ],
+   [
+    858,
+    858
+   ],
+   [
+    859,
+    858
+   ],
+   [
+    860,
+    858
+   ],
+   [
+    861,
+    858
+   ],
+   [
+    862,
+    858
+   ]
+  ],
+  "center": [
+   858,
+   858
+  ],
+  "control": [
+   735,
+   909
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3239934742450714
+ },
+ {
+  "id": "IDRiD_03_p311_1",
+  "image": "IDRiD_03",
+  "path": 311,
+  "points": 5,
+  "yx": [
+   [
+    836,
+    341
+   ],
+   [
+    836,
+    342
+   ],
+   [
+    836,
+    343
+   ],
+   [
+    836,
+    344
+   ],
+   [
+    836,
+    345
+   ]
+  ],
+  "center": [
+   836,
+   343
+  ],
+  "control": [
+   838,
+   387
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.38430464267730713
+ },
+ {
+  "id": "IDRiD_04_p233_1",
+  "image": "IDRiD_04",
+  "path": 233,
+  "points": 2,
+  "yx": [
+   [
+    618,
+    295
+   ],
+   [
+    619,
+    294
+   ]
+  ],
+  "center": [
+   618,
+   295
+  ],
+  "control": [
+   631,
+   311
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3939027786254883
+ },
+ {
+  "id": "IDRiD_05_p115_1",
+  "image": "IDRiD_05",
+  "path": 115,
+  "points": 14,
+  "yx": [
+   [
+    444,
+    554
+   ],
+   [
+    444,
+    555
+   ],
+   [
+    444,
+    556
+   ],
+   [
+    444,
+    557
+   ],
+   [
+    445,
+    558
+   ],
+   [
+    445,
+    559
+   ],
+   [
+    445,
+    560
+   ],
+   [
+    446,
+    561
+   ],
+   [
+    447,
+    562
+   ],
+   [
+    447,
+    563
+   ],
+   [
+    448,
+    564
+   ],
+   [
+    449,
+    565
+   ],
+   [
+    450,
+    566
+   ],
+   [
+    451,
+    567
+   ]
+  ],
+  "center": [
+   446,
+   561
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.38322627544403076
+ },
+ {
+  "id": "IDRiD_05_p115_2",
+  "image": "IDRiD_05",
+  "path": 115,
+  "points": 1,
+  "yx": [
+   [
+    453,
+    568
+   ]
+  ],
+  "center": [
+   453,
+   568
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3738495111465454
+ },
+ {
+  "id": "IDRiD_10_p44_1",
+  "image": "IDRiD_10",
+  "path": 44,
+  "points": 1,
+  "yx": [
+   [
+    391,
+    778
+   ]
+  ],
+  "center": [
+   391,
+   778
+  ],
+  "control": [
+   414,
+   675
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.37834009528160095
+ },
+ {
+  "id": "IDRiD_11_p0_1",
+  "image": "IDRiD_11",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    445,
+    937
+   ]
+  ],
+  "center": [
+   445,
+   937
+  ],
+  "control": [
+   423,
+   944
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.346333771944046
+ },
+ {
+  "id": "IDRiD_11_p50_1",
+  "image": "IDRiD_11",
+  "path": 50,
+  "points": 1,
+  "yx": [
+   [
+    329,
+    849
+   ]
+  ],
+  "center": [
+   329,
+   849
+  ],
+  "control": [
+   427,
+   816
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.341106116771698
+ },
+ {
+  "id": "IDRiD_11_p50_2",
+  "image": "IDRiD_11",
+  "path": 50,
+  "points": 1,
+  "yx": [
+   [
+    331,
+    850
+   ]
+  ],
+  "center": [
+   331,
+   850
+  ],
+  "control": [
+   427,
+   816
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3940493166446686
+ },
+ {
+  "id": "IDRiD_11_p59_1",
+  "image": "IDRiD_11",
+  "path": 59,
+  "points": 2,
+  "yx": [
+   [
+    408,
+    932
+   ],
+   [
+    409,
+    933
+   ]
+  ],
+  "center": [
+   408,
+   932
+  ],
+  "control": [
+   404,
+   929
+  ],
+  "mid_seeds_per_point": [
+   0,
+   1
+  ],
+  "high_seeds_per_point": [
+   0,
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   1
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true
+  ],
+  "high_dual_delta_median": -0.29768770933151245
+ },
+ {
+  "id": "IDRiD_14_p264_1",
+  "image": "IDRiD_14",
+  "path": 264,
+  "points": 6,
+  "yx": [
+   [
+    734,
+    92
+   ],
+   [
+    735,
+    91
+   ],
+   [
+    736,
+    90
+   ],
+   [
+    737,
+    89
+   ],
+   [
+    738,
+    87
+   ],
+   [
+    738,
+    88
+   ]
+  ],
+  "center": [
+   736,
+   90
+  ],
+  "control": [
+   714,
+   102
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3897936940193176
+ },
+ {
+  "id": "IDRiD_21_p0_1",
+  "image": "IDRiD_21",
+  "path": 0,
+  "points": 7,
+  "yx": [
+   [
+    595,
+    738
+   ],
+   [
+    596,
+    738
+   ],
+   [
+    597,
+    738
+   ],
+   [
+    598,
+    738
+   ],
+   [
+    599,
+    738
+   ],
+   [
+    600,
+    738
+   ],
+   [
+    601,
+    738
+   ]
+  ],
+  "center": [
+   598,
+   738
+  ],
+  "control": [
+   707,
+   691
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.30813464522361755
+ },
+ {
+  "id": "IDRiD_21_p0_2",
+  "image": "IDRiD_21",
+  "path": 0,
+  "points": 7,
+  "yx": [
+   [
+    601,
+    730
+   ],
+   [
+    601,
+    731
+   ],
+   [
+    601,
+    732
+   ],
+   [
+    601,
+    733
+   ],
+   [
+    602,
+    734
+   ],
+   [
+    602,
+    735
+   ],
+   [
+    602,
+    736
+   ]
+  ],
+  "center": [
+   601,
+   733
+  ],
+  "control": [
+   707,
+   691
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.37623855471611023
+ },
+ {
+  "id": "IDRiD_21_p37_1",
+  "image": "IDRiD_21",
+  "path": 37,
+  "points": 2,
+  "yx": [
+   [
+    216,
+    249
+   ],
+   [
+    216,
+    250
+   ]
+  ],
+  "center": [
+   216,
+   249
+  ],
+  "control": [
+   508,
+   538
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3203605115413666
+ },
+ {
+  "id": "IDRiD_21_p37_2",
+  "image": "IDRiD_21",
+  "path": 37,
+  "points": 2,
+  "yx": [
+   [
+    218,
+    246
+   ],
+   [
+    218,
+    247
+   ]
+  ],
+  "center": [
+   218,
+   246
+  ],
+  "control": [
+   508,
+   538
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.28732937574386597
+ },
+ {
+  "id": "IDRiD_21_p37_3",
+  "image": "IDRiD_21",
+  "path": 37,
+  "points": 2,
+  "yx": [
+   [
+    220,
+    243
+   ],
+   [
+    220,
+    244
+   ]
+  ],
+  "center": [
+   220,
+   243
+  ],
+  "control": [
+   508,
+   538
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.08139178156852722
+ },
+ {
+  "id": "IDRiD_21_p37_4",
+  "image": "IDRiD_21",
+  "path": 37,
+  "points": 5,
+  "yx": [
+   [
+    222,
+    240
+   ],
+   [
+    222,
+    241
+   ],
+   [
+    223,
+    239
+   ],
+   [
+    224,
+    237
+   ],
+   [
+    224,
+    238
+   ]
+  ],
+  "center": [
+   223,
+   239
+  ],
+  "control": [
+   508,
+   538
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3680926263332367
+ },
+ {
+  "id": "IDRiD_21_p37_5",
+  "image": "IDRiD_21",
+  "path": 37,
+  "points": 1,
+  "yx": [
+   [
+    226,
+    235
+   ]
+  ],
+  "center": [
+   226,
+   235
+  ],
+  "control": [
+   508,
+   538
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3441672623157501
+ },
+ {
+  "id": "IDRiD_21_p94_1",
+  "image": "IDRiD_21",
+  "path": 94,
+  "points": 2,
+  "yx": [
+   [
+    377,
+    786
+   ],
+   [
+    378,
+    786
+   ]
+  ],
+  "center": [
+   377,
+   786
+  ],
+  "control": [
+   379,
+   645
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.33925023674964905
+ },
+ {
+  "id": "IDRiD_21_p94_2",
+  "image": "IDRiD_21",
+  "path": 94,
+  "points": 1,
+  "yx": [
+   [
+    380,
+    787
+   ]
+  ],
+  "center": [
+   380,
+   787
+  ],
+  "control": [
+   380,
+   645
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3655751943588257
+ },
+ {
+  "id": "IDRiD_21_p240_1",
+  "image": "IDRiD_21",
+  "path": 240,
+  "points": 3,
+  "yx": [
+   [
+    694,
+    707
+   ],
+   [
+    695,
+    707
+   ],
+   [
+    696,
+    706
+   ]
+  ],
+  "center": [
+   695,
+   707
+  ],
+  "control": [
+   707,
+   691
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39484214782714844
+ },
+ {
+  "id": "IDRiD_21_p261_1",
+  "image": "IDRiD_21",
+  "path": 261,
+  "points": 1,
+  "yx": [
+   [
+    757,
+    597
+   ]
+  ],
+  "center": [
+   757,
+   597
+  ],
+  "control": [
+   730,
+   670
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.2034468650817871
+ },
+ {
+  "id": "IDRiD_22_p10_1",
+  "image": "IDRiD_22",
+  "path": 10,
+  "points": 4,
+  "yx": [
+   [
+    107,
+    744
+   ],
+   [
+    108,
+    744
+   ],
+   [
+    109,
+    743
+   ],
+   [
+    110,
+    743
+   ]
+  ],
+  "center": [
+   108,
+   744
+  ],
+  "control": [
+   130,
+   740
+  ],
+  "mid_seeds_per_point": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "high_seeds_per_point": [
+   0,
+   1,
+   1,
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.1790882647037506
+ },
+ {
+  "id": "IDRiD_22_p10_2",
+  "image": "IDRiD_22",
+  "path": 10,
+  "points": 7,
+  "yx": [
+   [
+    114,
+    743
+   ],
+   [
+    115,
+    743
+   ],
+   [
+    116,
+    742
+   ],
+   [
+    117,
+    742
+   ],
+   [
+    118,
+    742
+   ],
+   [
+    119,
+    742
+   ],
+   [
+    120,
+    742
+   ]
+  ],
+  "center": [
+   117,
+   742
+  ],
+  "control": [
+   130,
+   740
+  ],
+  "mid_seeds_per_point": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.18875518441200256
+ },
+ {
+  "id": "IDRiD_22_p14_1",
+  "image": "IDRiD_22",
+  "path": 14,
+  "points": 2,
+  "yx": [
+   [
+    161,
+    240
+   ],
+   [
+    162,
+    240
+   ]
+  ],
+  "center": [
+   161,
+   240
+  ],
+  "control": [
+   284,
+   201
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3457677364349365
+ },
+ {
+  "id": "IDRiD_22_p35_1",
+  "image": "IDRiD_22",
+  "path": 35,
+  "points": 28,
+  "yx": [
+   [
+    198,
+    344
+   ],
+   [
+    199,
+    344
+   ],
+   [
+    200,
+    345
+   ],
+   [
+    201,
+    346
+   ],
+   [
+    202,
+    347
+   ],
+   [
+    203,
+    347
+   ],
+   [
+    204,
+    348
+   ],
+   [
+    205,
+    349
+   ],
+   [
+    206,
+    349
+   ],
+   [
+    207,
+    350
+   ],
+   [
+    208,
+    351
+   ],
+   [
+    209,
+    351
+   ],
+   [
+    210,
+    352
+   ],
+   [
+    211,
+    353
+   ],
+   [
+    212,
+    353
+   ],
+   [
+    213,
+    354
+   ],
+   [
+    214,
+    354
+   ],
+   [
+    215,
+    355
+   ],
+   [
+    216,
+    355
+   ],
+   [
+    217,
+    356
+   ],
+   [
+    218,
+    356
+   ],
+   [
+    219,
+    357
+   ],
+   [
+    220,
+    357
+   ],
+   [
+    221,
+    358
+   ],
+   [
+    222,
+    358
+   ],
+   [
+    223,
+    359
+   ],
+   [
+    224,
+    359
+   ],
+   [
+    225,
+    359
+   ]
+  ],
+  "center": [
+   211,
+   353
+  ],
+  "control": [
+   326,
+   290
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.37519896030426025
+ },
+ {
+  "id": "IDRiD_22_p37_1",
+  "image": "IDRiD_22",
+  "path": 37,
+  "points": 1,
+  "yx": [
+   [
+    223,
+    319
+   ]
+  ],
+  "center": [
+   223,
+   319
+  ],
+  "control": [
+   326,
+   290
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   3
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.035427361726760864
+ },
+ {
+  "id": "IDRiD_22_p182_1",
+  "image": "IDRiD_22",
+  "path": 182,
+  "points": 9,
+  "yx": [
+   [
+    554,
+    964
+   ],
+   [
+    555,
+    964
+   ],
+   [
+    556,
+    964
+   ],
+   [
+    557,
+    964
+   ],
+   [
+    558,
+    964
+   ],
+   [
+    559,
+    964
+   ],
+   [
+    560,
+    963
+   ],
+   [
+    561,
+    963
+   ],
+   [
+    562,
+    962
+   ]
+  ],
+  "center": [
+   558,
+   964
+  ],
+  "control": [
+   308,
+   830
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3444977104663849
+ },
+ {
+  "id": "IDRiD_25_p0_1",
+  "image": "IDRiD_25",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    431,
+    398
+   ],
+   [
+    432,
+    399
+   ],
+   [
+    433,
+    399
+   ],
+   [
+    434,
+    399
+   ]
+  ],
+  "center": [
+   432,
+   399
+  ],
+  "control": [
+   335,
+   512
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.36248579621315
+ },
+ {
+  "id": "IDRiD_25_p0_2",
+  "image": "IDRiD_25",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    666,
+    840
+   ],
+   [
+    667,
+    840
+   ]
+  ],
+  "center": [
+   666,
+   840
+  ],
+  "control": [
+   689,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.2782641053199768
+ },
+ {
+  "id": "IDRiD_25_p86_1",
+  "image": "IDRiD_25",
+  "path": 86,
+  "points": 8,
+  "yx": [
+   [
+    434,
+    379
+   ],
+   [
+    434,
+    380
+   ],
+   [
+    435,
+    381
+   ],
+   [
+    435,
+    382
+   ],
+   [
+    435,
+    383
+   ],
+   [
+    435,
+    384
+   ],
+   [
+    435,
+    385
+   ],
+   [
+    435,
+    386
+   ]
+  ],
+  "center": [
+   435,
+   382
+  ],
+  "control": [
+   557,
+   282
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.23252429068088531
+ },
+ {
+  "id": "IDRiD_25_p127_1",
+  "image": "IDRiD_25",
+  "path": 127,
+  "points": 4,
+  "yx": [
+   [
+    561,
+    330
+   ],
+   [
+    561,
+    331
+   ],
+   [
+    561,
+    332
+   ],
+   [
+    561,
+    333
+   ]
+  ],
+  "center": [
+   561,
+   331
+  ],
+  "control": [
+   557,
+   282
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3768102526664734
+ },
+ {
+  "id": "IDRiD_25_p131_1",
+  "image": "IDRiD_25",
+  "path": 131,
+  "points": 1,
+  "yx": [
+   [
+    604,
+    851
+   ]
+  ],
+  "center": [
+   604,
+   851
+  ],
+  "control": [
+   594,
+   920
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.2777148187160492
+ },
+ {
+  "id": "IDRiD_25_p131_2",
+  "image": "IDRiD_25",
+  "path": 131,
+  "points": 2,
+  "yx": [
+   [
+    607,
+    850
+   ],
+   [
+    608,
+    850
+   ]
+  ],
+  "center": [
+   607,
+   850
+  ],
+  "control": [
+   594,
+   920
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3652806282043457
+ },
+ {
+  "id": "IDRiD_25_p131_3",
+  "image": "IDRiD_25",
+  "path": 131,
+  "points": 1,
+  "yx": [
+   [
+    610,
+    849
+   ]
+  ],
+  "center": [
+   610,
+   849
+  ],
+  "control": [
+   594,
+   920
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3632606863975525
+ },
+ {
+  "id": "IDRiD_25_p131_4",
+  "image": "IDRiD_25",
+  "path": 131,
+  "points": 2,
+  "yx": [
+   [
+    633,
+    843
+   ],
+   [
+    634,
+    843
+   ]
+  ],
+  "center": [
+   633,
+   843
+  ],
+  "control": [
+   689,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3513577878475189
+ },
+ {
+  "id": "IDRiD_25_p131_5",
+  "image": "IDRiD_25",
+  "path": 131,
+  "points": 5,
+  "yx": [
+   [
+    636,
+    842
+   ],
+   [
+    637,
+    842
+   ],
+   [
+    638,
+    842
+   ],
+   [
+    639,
+    842
+   ],
+   [
+    640,
+    841
+   ]
+  ],
+  "center": [
+   638,
+   842
+  ],
+  "control": [
+   689,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.382443368434906
+ },
+ {
+  "id": "IDRiD_25_p132_1",
+  "image": "IDRiD_25",
+  "path": 132,
+  "points": 1,
+  "yx": [
+   [
+    691,
+    716
+   ]
+  ],
+  "center": [
+   691,
+   716
+  ],
+  "control": [
+   687,
+   722
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.38178637623786926
+ },
+ {
+  "id": "IDRiD_25_p132_2",
+  "image": "IDRiD_25",
+  "path": 132,
+  "points": 1,
+  "yx": [
+   [
+    692,
+    714
+   ]
+  ],
+  "center": [
+   692,
+   714
+  ],
+  "control": [
+   687,
+   722
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.390696257352829
+ },
+ {
+  "id": "IDRiD_25_p132_3",
+  "image": "IDRiD_25",
+  "path": 132,
+  "points": 7,
+  "yx": [
+   [
+    694,
+    712
+   ],
+   [
+    695,
+    710
+   ],
+   [
+    695,
+    711
+   ],
+   [
+    696,
+    708
+   ],
+   [
+    696,
+    709
+   ],
+   [
+    697,
+    706
+   ],
+   [
+    697,
+    707
+   ]
+  ],
+  "center": [
+   696,
+   709
+  ],
+  "control": [
+   687,
+   722
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.36935877799987793
+ },
+ {
+  "id": "IDRiD_25_p132_4",
+  "image": "IDRiD_25",
+  "path": 132,
+  "points": 1,
+  "yx": [
+   [
+    699,
+    704
+   ]
+  ],
+  "center": [
+   699,
+   704
+  ],
+  "control": [
+   687,
+   722
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.35646766424179077
+ },
+ {
+  "id": "IDRiD_25_p147_1",
+  "image": "IDRiD_25",
+  "path": 147,
+  "points": 3,
+  "yx": [
+   [
+    676,
+    838
+   ],
+   [
+    677,
+    837
+   ],
+   [
+    678,
+    837
+   ]
+  ],
+  "center": [
+   677,
+   837
+  ],
+  "control": [
+   689,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   1,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.2822493314743042
+ },
+ {
+  "id": "IDRiD_25_p147_2",
+  "image": "IDRiD_25",
+  "path": 147,
+  "points": 5,
+  "yx": [
+   [
+    696,
+    829
+   ],
+   [
+    697,
+    828
+   ],
+   [
+    698,
+    828
+   ],
+   [
+    699,
+    827
+   ],
+   [
+    700,
+    826
+   ]
+  ],
+  "center": [
+   698,
+   828
+  ],
+  "control": [
+   689,
+   833
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3860114812850952
+ },
+ {
+  "id": "IDRiD_34_p0_1",
+  "image": "IDRiD_34",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    671,
+    211
+   ],
+   [
+    672,
+    210
+   ]
+  ],
+  "center": [
+   671,
+   211
+  ],
+  "control": [
+   741,
+   104
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39299285411834717
+ },
+ {
+  "id": "IDRiD_34_p0_2",
+  "image": "IDRiD_34",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    686,
+    856
+   ],
+   [
+    687,
+    855
+   ]
+  ],
+  "center": [
+   686,
+   856
+  ],
+  "control": [
+   815,
+   717
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.37359750270843506
+ },
+ {
+  "id": "IDRiD_34_p0_3",
+  "image": "IDRiD_34",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    757,
+    709
+   ]
+  ],
+  "center": [
+   757,
+   709
+  ],
+  "control": [
+   815,
+   717
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.35657307505607605
+ },
+ {
+  "id": "IDRiD_34_p6_1",
+  "image": "IDRiD_34",
+  "path": 6,
+  "points": 2,
+  "yx": [
+   [
+    130,
+    676
+   ],
+   [
+    131,
+    675
+   ]
+  ],
+  "center": [
+   130,
+   676
+  ],
+  "control": [
+   330,
+   325
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.37982338666915894
+ },
+ {
+  "id": "IDRiD_34_p6_2",
+  "image": "IDRiD_34",
+  "path": 6,
+  "points": 1,
+  "yx": [
+   [
+    135,
+    671
+   ]
+  ],
+  "center": [
+   135,
+   671
+  ],
+  "control": [
+   330,
+   325
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.35305628180503845
+ },
+ {
+  "id": "IDRiD_34_p99_1",
+  "image": "IDRiD_34",
+  "path": 99,
+  "points": 5,
+  "yx": [
+   [
+    459,
+    917
+   ],
+   [
+    459,
+    918
+   ],
+   [
+    459,
+    919
+   ],
+   [
+    459,
+    920
+   ],
+   [
+    459,
+    921
+   ]
+  ],
+  "center": [
+   459,
+   919
+  ],
+  "control": [
+   559,
+   565
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39143696427345276
+ },
+ {
+  "id": "IDRiD_34_p99_2",
+  "image": "IDRiD_34",
+  "path": 99,
+  "points": 3,
+  "yx": [
+   [
+    461,
+    902
+   ],
+   [
+    461,
+    903
+   ],
+   [
+    462,
+    901
+   ]
+  ],
+  "center": [
+   461,
+   902
+  ],
+  "control": [
+   559,
+   565
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   2
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   3
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   true
+  ],
+  "high_dual_delta_median": -0.1552235633134842
+ },
+ {
+  "id": "IDRiD_34_p102_1",
+  "image": "IDRiD_34",
+  "path": 102,
+  "points": 4,
+  "yx": [
+   [
+    457,
+    947
+   ],
+   [
+    457,
+    948
+   ],
+   [
+    457,
+    949
+   ],
+   [
+    457,
+    950
+   ]
+  ],
+  "center": [
+   457,
+   948
+  ],
+  "control": [
+   559,
+   565
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3945532441139221
+ },
+ {
+  "id": "IDRiD_34_p102_2",
+  "image": "IDRiD_34",
+  "path": 102,
+  "points": 1,
+  "yx": [
+   [
+    457,
+    962
+   ]
+  ],
+  "center": [
+   457,
+   962
+  ],
+  "control": [
+   559,
+   565
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3927084505558014
+ },
+ {
+  "id": "IDRiD_34_p102_3",
+  "image": "IDRiD_34",
+  "path": 102,
+  "points": 3,
+  "yx": [
+   [
+    459,
+    938
+   ],
+   [
+    459,
+    939
+   ],
+   [
+    459,
+    940
+   ]
+  ],
+  "center": [
+   459,
+   939
+  ],
+  "control": [
+   559,
+   565
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3900846838951111
+ },
+ {
+  "id": "IDRiD_34_p135_1",
+  "image": "IDRiD_34",
+  "path": 135,
+  "points": 1,
+  "yx": [
+   [
+    662,
+    213
+   ]
+  ],
+  "center": [
+   662,
+   213
+  ],
+  "control": [
+   741,
+   104
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3520984947681427
+ },
+ {
+  "id": "IDRiD_34_p156_1",
+  "image": "IDRiD_34",
+  "path": 156,
+  "points": 1,
+  "yx": [
+   [
+    664,
+    849
+   ]
+  ],
+  "center": [
+   664,
+   849
+  ],
+  "control": [
+   815,
+   717
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33984243869781494
+ },
+ {
+  "id": "IDRiD_34_p156_2",
+  "image": "IDRiD_34",
+  "path": 156,
+  "points": 4,
+  "yx": [
+   [
+    666,
+    850
+   ],
+   [
+    667,
+    850
+   ],
+   [
+    668,
+    850
+   ],
+   [
+    669,
+    850
+   ]
+  ],
+  "center": [
+   667,
+   850
+  ],
+  "control": [
+   815,
+   717
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   1,
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.3482733368873596
+ },
+ {
+  "id": "IDRiD_35_p0_1",
+  "image": "IDRiD_35",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    172,
+    588
+   ],
+   [
+    172,
+    589
+   ],
+   [
+    172,
+    590
+   ],
+   [
+    172,
+    591
+   ]
+  ],
+  "center": [
+   172,
+   589
+  ],
+  "control": [
+   212,
+   613
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3579061031341553
+ },
+ {
+  "id": "IDRiD_35_p0_2",
+  "image": "IDRiD_35",
+  "path": 0,
+  "points": 4,
+  "yx": [
+   [
+    283,
+    118
+   ],
+   [
+    283,
+    119
+   ],
+   [
+    284,
+    116
+   ],
+   [
+    284,
+    117
+   ]
+  ],
+  "center": [
+   283,
+   118
+  ],
+  "control": [
+   372,
+   133
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.392022043466568
+ },
+ {
+  "id": "IDRiD_35_p0_3",
+  "image": "IDRiD_35",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    359,
+    64
+   ]
+  ],
+  "center": [
+   359,
+   64
+  ],
+  "control": [
+   362,
+   71
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.2271428406238556
+ },
+ {
+  "id": "IDRiD_35_p0_4",
+  "image": "IDRiD_35",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    418,
+    514
+   ],
+   [
+    419,
+    514
+   ]
+  ],
+  "center": [
+   418,
+   514
+  ],
+  "control": [
+   407,
+   524
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39495640993118286
+ },
+ {
+  "id": "IDRiD_35_p0_5",
+  "image": "IDRiD_35",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    449,
+    7
+   ],
+   [
+    450,
+    6
+   ]
+  ],
+  "center": [
+   449,
+   7
+  ],
+  "control": [
+   484,
+   58
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3944091796875
+ },
+ {
+  "id": "IDRiD_35_p53_1",
+  "image": "IDRiD_35",
+  "path": 53,
+  "points": 2,
+  "yx": [
+   [
+    411,
+    655
+   ],
+   [
+    412,
+    654
+   ]
+  ],
+  "center": [
+   411,
+   655
+  ],
+  "control": [
+   407,
+   524
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3153834640979767
+ },
+ {
+  "id": "IDRiD_35_p53_2",
+  "image": "IDRiD_35",
+  "path": 53,
+  "points": 1,
+  "yx": [
+   [
+    413,
+    652
+   ]
+  ],
+  "center": [
+   413,
+   652
+  ],
+  "control": [
+   407,
+   524
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.37566643953323364
+ },
+ {
+  "id": "IDRiD_35_p71_1",
+  "image": "IDRiD_35",
+  "path": 71,
+  "points": 3,
+  "yx": [
+   [
+    468,
+    809
+   ],
+   [
+    469,
+    809
+   ],
+   [
+    470,
+    809
+   ]
+  ],
+  "center": [
+   469,
+   809
+  ],
+  "control": [
+   458,
+   885
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.30419328808784485
+ },
+ {
+  "id": "IDRiD_35_p72_1",
+  "image": "IDRiD_35",
+  "path": 72,
+  "points": 3,
+  "yx": [
+   [
+    494,
+    725
+   ],
+   [
+    495,
+    725
+   ],
+   [
+    496,
+    725
+   ]
+  ],
+  "center": [
+   495,
+   725
+  ],
+  "control": [
+   458,
+   885
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.18391378223896027
+ },
+ {
+  "id": "IDRiD_49_p0_1",
+  "image": "IDRiD_49",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    790,
+    325
+   ]
+  ],
+  "center": [
+   790,
+   325
+  ],
+  "control": [
+   800,
+   338
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3381935954093933
+ },
+ {
+  "id": "IDRiD_49_p49_1",
+  "image": "IDRiD_49",
+  "path": 49,
+  "points": 1,
+  "yx": [
+   [
+    316,
+    185
+   ]
+  ],
+  "center": [
+   316,
+   185
+  ],
+  "control": [
+   448,
+   198
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3946891129016876
+ },
+ {
+  "id": "IDRiD_49_p49_2",
+  "image": "IDRiD_49",
+  "path": 49,
+  "points": 7,
+  "yx": [
+   [
+    319,
+    190
+   ],
+   [
+    320,
+    191
+   ],
+   [
+    321,
+    192
+   ],
+   [
+    322,
+    193
+   ],
+   [
+    323,
+    194
+   ],
+   [
+    324,
+    195
+   ],
+   [
+    324,
+    196
+   ]
+  ],
+  "center": [
+   322,
+   193
+  ],
+  "control": [
+   448,
+   198
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39319220185279846
+ },
+ {
+  "id": "IDRiD_49_p78_1",
+  "image": "IDRiD_49",
+  "path": 78,
+  "points": 1,
+  "yx": [
+   [
+    446,
+    451
+   ]
+  ],
+  "center": [
+   446,
+   451
+  ],
+  "control": [
+   427,
+   448
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3545147180557251
+ },
+ {
+  "id": "IDRiD_49_p163_1",
+  "image": "IDRiD_49",
+  "path": 163,
+  "points": 5,
+  "yx": [
+   [
+    656,
+    169
+   ],
+   [
+    657,
+    170
+   ],
+   [
+    658,
+    170
+   ],
+   [
+    659,
+    171
+   ],
+   [
+    660,
+    172
+   ]
+  ],
+  "center": [
+   658,
+   170
+  ],
+  "control": [
+   665,
+   174
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.39437606930732727
+ },
+ {
+  "id": "IDRiD_52_p130_1",
+  "image": "IDRiD_52",
+  "path": 130,
+  "points": 3,
+  "yx": [
+   [
+    462,
+    814
+   ],
+   [
+    462,
+    815
+   ],
+   [
+    462,
+    816
+   ]
+  ],
+  "center": [
+   462,
+   815
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   3,
+   2,
+   1
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.0412275493144989
+ },
+ {
+  "id": "IDRiD_54_p0_1",
+  "image": "IDRiD_54",
+  "path": 0,
+  "points": 6,
+  "yx": [
+   [
+    404,
+    805
+   ],
+   [
+    405,
+    806
+   ],
+   [
+    406,
+    807
+   ],
+   [
+    406,
+    808
+   ],
+   [
+    406,
+    809
+   ],
+   [
+    406,
+    810
+   ]
+  ],
+  "center": [
+   406,
+   807
+  ],
+  "control": [
+   438,
+   779
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3862875699996948
+ },
+ {
+  "id": "IDRiD_54_p84_1",
+  "image": "IDRiD_54",
+  "path": 84,
+  "points": 1,
+  "yx": [
+   [
+    432,
+    770
+   ]
+  ],
+  "center": [
+   432,
+   770
+  ],
+  "control": [
+   438,
+   779
+  ],
+  "mid_seeds_per_point": [
+   1
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   3
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.1133945882320404
+ },
+ {
+  "id": "IDRiD_02_p53_1",
+  "image": "IDRiD_02",
+  "path": 53,
+  "points": 7,
+  "yx": [
+   [
+    300,
+    621
+   ],
+   [
+    300,
+    622
+   ],
+   [
+    301,
+    623
+   ],
+   [
+    301,
+    624
+   ],
+   [
+    301,
+    625
+   ],
+   [
+    302,
+    626
+   ],
+   [
+    302,
+    627
+   ]
+  ],
+  "center": [
+   301,
+   624
+  ],
+  "control": [
+   298,
+   612
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.33643919229507446
+ },
+ {
+  "id": "IDRiD_02_p122_1",
+  "image": "IDRiD_02",
+  "path": 122,
+  "points": 14,
+  "yx": [
+   [
+    427,
+    847
+   ],
+   [
+    428,
+    847
+   ],
+   [
+    429,
+    847
+   ],
+   [
+    430,
+    847
+   ],
+   [
+    431,
+    847
+   ],
+   [
+    432,
+    848
+   ],
+   [
+    433,
+    848
+   ],
+   [
+    434,
+    848
+   ],
+   [
+    435,
+    849
+   ],
+   [
+    436,
+    850
+   ],
+   [
+    437,
+    851
+   ],
+   [
+    438,
+    852
+   ],
+   [
+    439,
+    852
+   ],
+   [
+    440,
+    852
+   ]
+  ],
+  "center": [
+   433,
+   848
+  ],
+  "control": [
+   527,
+   887
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3469756841659546
+ },
+ {
+  "id": "IDRiD_12_p141_1",
+  "image": "IDRiD_12",
+  "path": 141,
+  "points": 5,
+  "yx": [
+   [
+    531,
+    646
+   ],
+   [
+    532,
+    646
+   ],
+   [
+    533,
+    646
+   ],
+   [
+    534,
+    646
+   ],
+   [
+    535,
+    646
+   ]
+  ],
+  "center": [
+   533,
+   646
+  ],
+  "control": [
+   291,
+   776
+  ],
+  "mid_seeds_per_point": [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   3,
+   3,
+   3,
+   2,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   3,
+   3,
+   3,
+   3,
+   1
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": 0.04334023594856262
+ },
+ {
+  "id": "IDRiD_15_p0_1",
+  "image": "IDRiD_15",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    350,
+    220
+   ]
+  ],
+  "center": [
+   350,
+   220
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.18706002831459045
+ },
+ {
+  "id": "IDRiD_15_p0_2",
+  "image": "IDRiD_15",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    351,
+    224
+   ],
+   [
+    352,
+    223
+   ]
+  ],
+  "center": [
+   351,
+   224
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3354409337043762
+ },
+ {
+  "id": "IDRiD_16_p14_1",
+  "image": "IDRiD_16",
+  "path": 14,
+  "points": 1,
+  "yx": [
+   [
+    283,
+    683
+   ]
+  ],
+  "center": [
+   283,
+   683
+  ],
+  "control": [
+   320,
+   753
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3293951749801636
+ },
+ {
+  "id": "IDRiD_17_p19_1",
+  "image": "IDRiD_17",
+  "path": 19,
+  "points": 9,
+  "yx": [
+   [
+    233,
+    878
+   ],
+   [
+    234,
+    878
+   ],
+   [
+    235,
+    878
+   ],
+   [
+    236,
+    878
+   ],
+   [
+    237,
+    878
+   ],
+   [
+    238,
+    878
+   ],
+   [
+    239,
+    878
+   ],
+   [
+    240,
+    878
+   ],
+   [
+    241,
+    878
+   ]
+  ],
+  "center": [
+   237,
+   878
+  ],
+  "control": [
+   441,
+   564
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   true,
+   true,
+   true,
+   false,
+   false,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.33788734674453735
+ },
+ {
+  "id": "IDRiD_17_p74_1",
+  "image": "IDRiD_17",
+  "path": 74,
+  "points": 1,
+  "yx": [
+   [
+    455,
+    611
+   ]
+  ],
+  "center": [
+   455,
+   611
+  ],
+  "control": [
+   441,
+   564
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3495406210422516
+ },
+ {
+  "id": "IDRiD_19_p0_1",
+  "image": "IDRiD_19",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    272,
+    447
+   ],
+   [
+    273,
+    447
+   ]
+  ],
+  "center": [
+   272,
+   447
+  ],
+  "control": [
+   277,
+   458
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3488644063472748
+ },
+ {
+  "id": "IDRiD_19_p0_2",
+  "image": "IDRiD_19",
+  "path": 0,
+  "points": 3,
+  "yx": [
+   [
+    584,
+    663
+   ],
+   [
+    585,
+    662
+   ],
+   [
+    586,
+    661
+   ]
+  ],
+  "center": [
+   585,
+   662
+  ],
+  "control": [
+   579,
+   674
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2,
+   1,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.22558602690696716
+ },
+ {
+  "id": "IDRiD_19_p0_3",
+  "image": "IDRiD_19",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    587,
+    658
+   ],
+   [
+    587,
+    659
+   ]
+  ],
+  "center": [
+   587,
+   658
+  ],
+  "control": [
+   579,
+   674
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.32244306802749634
+ },
+ {
+  "id": "IDRiD_19_p70_1",
+  "image": "IDRiD_19",
+  "path": 70,
+  "points": 1,
+  "yx": [
+   [
+    233,
+    258
+   ]
+  ],
+  "center": [
+   233,
+   258
+  ],
+  "control": [
+   227,
+   256
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.2487764060497284
+ },
+ {
+  "id": "IDRiD_19_p279_1",
+  "image": "IDRiD_19",
+  "path": 279,
+  "points": 19,
+  "yx": [
+   [
+    693,
+    73
+   ],
+   [
+    693,
+    74
+   ],
+   [
+    693,
+    75
+   ],
+   [
+    693,
+    76
+   ],
+   [
+    694,
+    77
+   ],
+   [
+    695,
+    78
+   ],
+   [
+    695,
+    79
+   ],
+   [
+    696,
+    80
+   ],
+   [
+    697,
+    81
+   ],
+   [
+    698,
+    82
+   ],
+   [
+    698,
+    83
+   ],
+   [
+    699,
+    84
+   ],
+   [
+    700,
+    85
+   ],
+   [
+    700,
+    86
+   ],
+   [
+    701,
+    87
+   ],
+   [
+    701,
+    88
+   ],
+   [
+    702,
+    89
+   ],
+   [
+    703,
+    90
+   ],
+   [
+    703,
+    91
+   ]
+  ],
+  "center": [
+   698,
+   82
+  ],
+  "control": [
+   710,
+   102
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3276422917842865
+ },
+ {
+  "id": "IDRiD_19_p355_1",
+  "image": "IDRiD_19",
+  "path": 355,
+  "points": 17,
+  "yx": [
+   [
+    846,
+    640
+   ],
+   [
+    846,
+    641
+   ],
+   [
+    846,
+    642
+   ],
+   [
+    846,
+    643
+   ],
+   [
+    846,
+    644
+   ],
+   [
+    846,
+    645
+   ],
+   [
+    846,
+    646
+   ],
+   [
+    846,
+    647
+   ],
+   [
+    846,
+    648
+   ],
+   [
+    846,
+    649
+   ],
+   [
+    846,
+    650
+   ],
+   [
+    847,
+    651
+   ],
+   [
+    847,
+    652
+   ],
+   [
+    847,
+    653
+   ],
+   [
+    847,
+    654
+   ],
+   [
+    848,
+    655
+   ],
+   [
+    849,
+    656
+   ]
+  ],
+  "center": [
+   846,
+   648
+  ],
+  "control": [
+   579,
+   674
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.20088689029216766
+ },
+ {
+  "id": "IDRiD_20_p0_1",
+  "image": "IDRiD_20",
+  "path": 0,
+  "points": 3,
+  "yx": [
+   [
+    170,
+    338
+   ],
+   [
+    171,
+    338
+   ],
+   [
+    172,
+    338
+   ]
+  ],
+  "center": [
+   171,
+   338
+  ],
+  "control": [
+   184,
+   332
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1,
+   2
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.22883814573287964
+ },
+ {
+  "id": "IDRiD_20_p90_1",
+  "image": "IDRiD_20",
+  "path": 90,
+  "points": 6,
+  "yx": [
+   [
+    447,
+    182
+   ],
+   [
+    448,
+    183
+   ],
+   [
+    449,
+    183
+   ],
+   [
+    450,
+    184
+   ],
+   [
+    451,
+    184
+   ],
+   [
+    452,
+    185
+   ]
+  ],
+  "center": [
+   449,
+   183
+  ],
+  "control": [
+   402,
+   199
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   3,
+   2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.28244441747665405
+ },
+ {
+  "id": "IDRiD_20_p106_1",
+  "image": "IDRiD_20",
+  "path": 106,
+  "points": 10,
+  "yx": [
+   [
+    514,
+    210
+   ],
+   [
+    515,
+    209
+   ],
+   [
+    516,
+    209
+   ],
+   [
+    517,
+    209
+   ],
+   [
+    518,
+    208
+   ],
+   [
+    519,
+    208
+   ],
+   [
+    520,
+    207
+   ],
+   [
+    521,
+    207
+   ],
+   [
+    522,
+    206
+   ],
+   [
+    523,
+    206
+   ]
+  ],
+  "center": [
+   518,
+   208
+  ],
+  "control": [
+   402,
+   199
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.33331024646759033
+ },
+ {
+  "id": "IDRiD_20_p131_1",
+  "image": "IDRiD_20",
+  "path": 131,
+  "points": 9,
+  "yx": [
+   [
+    513,
+    922
+   ],
+   [
+    513,
+    923
+   ],
+   [
+    513,
+    924
+   ],
+   [
+    513,
+    925
+   ],
+   [
+    514,
+    926
+   ],
+   [
+    514,
+    927
+   ],
+   [
+    514,
+    928
+   ],
+   [
+    514,
+    929
+   ],
+   [
+    514,
+    930
+   ]
+  ],
+  "center": [
+   514,
+   926
+  ],
+  "control": [
+   389,
+   494
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3488098084926605
+ },
+ {
+  "id": "IDRiD_26_p0_1",
+  "image": "IDRiD_26",
+  "path": 0,
+  "points": 3,
+  "yx": [
+   [
+    328,
+    625
+   ],
+   [
+    328,
+    626
+   ],
+   [
+    328,
+    627
+   ]
+  ],
+  "center": [
+   328,
+   626
+  ],
+  "control": [
+   376,
+   588
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.24909812211990356
+ },
+ {
+  "id": "IDRiD_26_p62_1",
+  "image": "IDRiD_26",
+  "path": 62,
+  "points": 4,
+  "yx": [
+   [
+    321,
+    606
+   ],
+   [
+    321,
+    607
+   ],
+   [
+    322,
+    605
+   ],
+   [
+    323,
+    604
+   ]
+  ],
+  "center": [
+   322,
+   605
+  ],
+  "control": [
+   376,
+   588
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3330482840538025
+ },
+ {
+  "id": "IDRiD_26_p62_2",
+  "image": "IDRiD_26",
+  "path": 62,
+  "points": 5,
+  "yx": [
+   [
+    322,
+    612
+   ],
+   [
+    323,
+    613
+   ],
+   [
+    324,
+    613
+   ],
+   [
+    325,
+    614
+   ],
+   [
+    325,
+    615
+   ]
+  ],
+  "center": [
+   324,
+   613
+  ],
+  "control": [
+   376,
+   588
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.14567367732524872
+ },
+ {
+  "id": "IDRiD_26_p67_1",
+  "image": "IDRiD_26",
+  "path": 67,
+  "points": 1,
+  "yx": [
+   [
+    459,
+    720
+   ]
+  ],
+  "center": [
+   459,
+   720
+  ],
+  "control": [
+   377,
+   588
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33008873462677
+ },
+ {
+  "id": "IDRiD_26_p98_1",
+  "image": "IDRiD_26",
+  "path": 98,
+  "points": 1,
+  "yx": [
+   [
+    476,
+    914
+   ]
+  ],
+  "center": [
+   476,
+   914
+  ],
+  "control": [
+   551,
+   853
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34864842891693115
+ },
+ {
+  "id": "IDRiD_26_p98_2",
+  "image": "IDRiD_26",
+  "path": 98,
+  "points": 1,
+  "yx": [
+   [
+    478,
+    913
+   ]
+  ],
+  "center": [
+   478,
+   913
+  ],
+  "control": [
+   551,
+   853
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34913042187690735
+ },
+ {
+  "id": "IDRiD_26_p98_3",
+  "image": "IDRiD_26",
+  "path": 98,
+  "points": 1,
+  "yx": [
+   [
+    480,
+    912
+   ]
+  ],
+  "center": [
+   480,
+   912
+  ],
+  "control": [
+   551,
+   853
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3491666913032532
+ },
+ {
+  "id": "IDRiD_26_p138_1",
+  "image": "IDRiD_26",
+  "path": 138,
+  "points": 1,
+  "yx": [
+   [
+    544,
+    853
+   ]
+  ],
+  "center": [
+   544,
+   853
+  ],
+  "control": [
+   551,
+   853
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.2620718777179718
+ },
+ {
+  "id": "IDRiD_30_p46_1",
+  "image": "IDRiD_30",
+  "path": 46,
+  "points": 4,
+  "yx": [
+   [
+    412,
+    279
+   ],
+   [
+    413,
+    279
+   ],
+   [
+    414,
+    280
+   ],
+   [
+    415,
+    280
+   ]
+  ],
+  "center": [
+   413,
+   279
+  ],
+  "control": [
+   428,
+   282
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.32967066764831543
+ },
+ {
+  "id": "IDRiD_32_p0_1",
+  "image": "IDRiD_32",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    673,
+    54
+   ],
+   [
+    674,
+    53
+   ]
+  ],
+  "center": [
+   673,
+   54
+  ],
+  "control": [
+   220,
+   208
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.29929298162460327
+ },
+ {
+  "id": "IDRiD_32_p85_1",
+  "image": "IDRiD_32",
+  "path": 85,
+  "points": 1,
+  "yx": [
+   [
+    442,
+    825
+   ]
+  ],
+  "center": [
+   442,
+   825
+  ],
+  "control": [
+   794,
+   719
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3228161334991455
+ },
+ {
+  "id": "IDRiD_32_p189_1",
+  "image": "IDRiD_32",
+  "path": 189,
+  "points": 1,
+  "yx": [
+   [
+    785,
+    734
+   ]
+  ],
+  "center": [
+   785,
+   734
+  ],
+  "control": [
+   794,
+   719
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34921330213546753
+ },
+ {
+  "id": "IDRiD_32_p189_2",
+  "image": "IDRiD_32",
+  "path": 189,
+  "points": 1,
+  "yx": [
+   [
+    787,
+    728
+   ]
+  ],
+  "center": [
+   787,
+   728
+  ],
+  "control": [
+   794,
+   719
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.30713605880737305
+ },
+ {
+  "id": "IDRiD_36_p0_1",
+  "image": "IDRiD_36",
+  "path": 0,
+  "points": 5,
+  "yx": [
+   [
+    530,
+    121
+   ],
+   [
+    530,
+    122
+   ],
+   [
+    530,
+    123
+   ],
+   [
+    530,
+    124
+   ],
+   [
+    530,
+    125
+   ]
+  ],
+  "center": [
+   530,
+   123
+  ],
+  "control": [
+   584,
+   203
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3350432515144348
+ },
+ {
+  "id": "IDRiD_36_p0_2",
+  "image": "IDRiD_36",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    530,
+    128
+   ],
+   [
+    530,
+    129
+   ]
+  ],
+  "center": [
+   530,
+   128
+  ],
+  "control": [
+   584,
+   203
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.32813239097595215
+ },
+ {
+  "id": "IDRiD_36_p39_1",
+  "image": "IDRiD_36",
+  "path": 39,
+  "points": 10,
+  "yx": [
+   [
+    195,
+    490
+   ],
+   [
+    195,
+    491
+   ],
+   [
+    195,
+    492
+   ],
+   [
+    195,
+    493
+   ],
+   [
+    196,
+    484
+   ],
+   [
+    196,
+    485
+   ],
+   [
+    196,
+    486
+   ],
+   [
+    196,
+    487
+   ],
+   [
+    196,
+    488
+   ],
+   [
+    196,
+    489
+   ]
+  ],
+  "center": [
+   196,
+   488
+  ],
+  "control": [
+   185,
+   511
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.22966128587722778
+ },
+ {
+  "id": "IDRiD_36_p39_2",
+  "image": "IDRiD_36",
+  "path": 39,
+  "points": 1,
+  "yx": [
+   [
+    198,
+    480
+   ]
+  ],
+  "center": [
+   198,
+   480
+  ],
+  "control": [
+   185,
+   511
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33997830748558044
+ },
+ {
+  "id": "IDRiD_36_p138_1",
+  "image": "IDRiD_36",
+  "path": 138,
+  "points": 13,
+  "yx": [
+   [
+    501,
+    186
+   ],
+   [
+    502,
+    185
+   ],
+   [
+    503,
+    182
+   ],
+   [
+    503,
+    183
+   ],
+   [
+    503,
+    184
+   ],
+   [
+    504,
+    181
+   ],
+   [
+    505,
+    181
+   ],
+   [
+    506,
+    181
+   ],
+   [
+    507,
+    179
+   ],
+   [
+    507,
+    180
+   ],
+   [
+    508,
+    178
+   ],
+   [
+    509,
+    176
+   ],
+   [
+    509,
+    177
+   ]
+  ],
+  "center": [
+   505,
+   181
+  ],
+  "control": [
+   584,
+   203
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34372857213020325
+ },
+ {
+  "id": "IDRiD_36_p160_1",
+  "image": "IDRiD_36",
+  "path": 160,
+  "points": 2,
+  "yx": [
+   [
+    532,
+    138
+   ],
+   [
+    533,
+    138
+   ]
+  ],
+  "center": [
+   532,
+   138
+  ],
+  "control": [
+   584,
+   203
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.17784152925014496
+ },
+ {
+  "id": "IDRiD_36_p173_1",
+  "image": "IDRiD_36",
+  "path": 173,
+  "points": 1,
+  "yx": [
+   [
+    553,
+    1014
+   ]
+  ],
+  "center": [
+   553,
+   1014
+  ],
+  "control": [
+   785,
+   902
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   3
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.004311412572860718
+ },
+ {
+  "id": "IDRiD_36_p226_1",
+  "image": "IDRiD_36",
+  "path": 226,
+  "points": 18,
+  "yx": [
+   [
+    684,
+    533
+   ],
+   [
+    684,
+    534
+   ],
+   [
+    684,
+    535
+   ],
+   [
+    685,
+    519
+   ],
+   [
+    685,
+    520
+   ],
+   [
+    685,
+    521
+   ],
+   [
+    685,
+    522
+   ],
+   [
+    685,
+    523
+   ],
+   [
+    685,
+    524
+   ],
+   [
+    685,
+    525
+   ],
+   [
+    685,
+    526
+   ],
+   [
+    685,
+    527
+   ],
+   [
+    685,
+    528
+   ],
+   [
+    685,
+    529
+   ],
+   [
+    685,
+    530
+   ],
+   [
+    685,
+    531
+   ],
+   [
+    685,
+    532
+   ],
+   [
+    686,
+    518
+   ]
+  ],
+  "center": [
+   685,
+   526
+  ],
+  "control": [
+   665,
+   550
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3425835967063904
+ },
+ {
+  "id": "IDRiD_36_p232_1",
+  "image": "IDRiD_36",
+  "path": 232,
+  "points": 5,
+  "yx": [
+   [
+    686,
+    498
+   ],
+   [
+    686,
+    499
+   ],
+   [
+    686,
+    500
+   ],
+   [
+    686,
+    501
+   ],
+   [
+    686,
+    502
+   ]
+  ],
+  "center": [
+   686,
+   500
+  ],
+  "control": [
+   653,
+   485
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3376365303993225
+ },
+ {
+  "id": "IDRiD_39_p0_1",
+  "image": "IDRiD_39",
+  "path": 0,
+  "points": 3,
+  "yx": [
+   [
+    716,
+    863
+   ],
+   [
+    716,
+    864
+   ],
+   [
+    716,
+    865
+   ]
+  ],
+  "center": [
+   716,
+   864
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3464888334274292
+ },
+ {
+  "id": "IDRiD_39_p32_1",
+  "image": "IDRiD_39",
+  "path": 32,
+  "points": 6,
+  "yx": [
+   [
+    299,
+    499
+   ],
+   [
+    299,
+    500
+   ],
+   [
+    299,
+    501
+   ],
+   [
+    299,
+    502
+   ],
+   [
+    299,
+    503
+   ],
+   [
+    299,
+    504
+   ]
+  ],
+  "center": [
+   299,
+   501
+  ],
+  "control": [
+   368,
+   524
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3036462664604187
+ },
+ {
+  "id": "IDRiD_39_p37_1",
+  "image": "IDRiD_39",
+  "path": 37,
+  "points": 2,
+  "yx": [
+   [
+    309,
+    541
+   ],
+   [
+    310,
+    542
+   ]
+  ],
+  "center": [
+   309,
+   541
+  ],
+  "control": [
+   365,
+   541
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   2
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   true
+  ],
+  "high_dual_delta_median": -0.25646525621414185
+ },
+ {
+  "id": "IDRiD_39_p37_2",
+  "image": "IDRiD_39",
+  "path": 37,
+  "points": 1,
+  "yx": [
+   [
+    313,
+    548
+   ]
+  ],
+  "center": [
+   313,
+   548
+  ],
+  "control": [
+   365,
+   542
+  ],
+  "mid_seeds_per_point": [
+   1
+  ],
+  "high_seeds_per_point": [
+   3
+  ],
+  "high_native_seeds_per_point": [
+   3
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": 0.0668753981590271
+ },
+ {
+  "id": "IDRiD_39_p42_1",
+  "image": "IDRiD_39",
+  "path": 42,
+  "points": 12,
+  "yx": [
+   [
+    427,
+    242
+   ],
+   [
+    428,
+    242
+   ],
+   [
+    429,
+    242
+   ],
+   [
+    430,
+    242
+   ],
+   [
+    431,
+    241
+   ],
+   [
+    432,
+    241
+   ],
+   [
+    433,
+    241
+   ],
+   [
+    434,
+    241
+   ],
+   [
+    435,
+    241
+   ],
+   [
+    436,
+    241
+   ],
+   [
+    437,
+    241
+   ],
+   [
+    438,
+    240
+   ]
+  ],
+  "center": [
+   432,
+   241
+  ],
+  "control": [
+   452,
+   185
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   3,
+   3,
+   3,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "high_dual_delta_median": -0.29644501209259033
+ },
+ {
+  "id": "IDRiD_39_p54_1",
+  "image": "IDRiD_39",
+  "path": 54,
+  "points": 1,
+  "yx": [
+   [
+    380,
+    78
+   ]
+  ],
+  "center": [
+   380,
+   78
+  ],
+  "control": [
+   388,
+   153
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.33746156096458435
+ },
+ {
+  "id": "IDRiD_39_p82_1",
+  "image": "IDRiD_39",
+  "path": 82,
+  "points": 4,
+  "yx": [
+   [
+    429,
+    374
+   ],
+   [
+    430,
+    374
+   ],
+   [
+    431,
+    373
+   ],
+   [
+    432,
+    373
+   ]
+  ],
+  "center": [
+   430,
+   374
+  ],
+  "control": [
+   330,
+   422
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3312785029411316
+ },
+ {
+  "id": "IDRiD_39_p85_1",
+  "image": "IDRiD_39",
+  "path": 85,
+  "points": 3,
+  "yx": [
+   [
+    425,
+    223
+   ],
+   [
+    426,
+    224
+   ],
+   [
+    426,
+    225
+   ]
+  ],
+  "center": [
+   426,
+   224
+  ],
+  "control": [
+   452,
+   185
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   2,
+   2,
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   2,
+   2,
+   1
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   true
+  ],
+  "high_dual_delta_median": 0.031330108642578125
+ },
+ {
+  "id": "IDRiD_39_p99_1",
+  "image": "IDRiD_39",
+  "path": 99,
+  "points": 3,
+  "yx": [
+   [
+    510,
+    149
+   ],
+   [
+    510,
+    150
+   ],
+   [
+    511,
+    151
+   ]
+  ],
+  "center": [
+   510,
+   150
+  ],
+  "control": [
+   504,
+   142
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34321483969688416
+ },
+ {
+  "id": "IDRiD_39_p146_1",
+  "image": "IDRiD_39",
+  "path": 146,
+  "points": 1,
+  "yx": [
+   [
+    706,
+    856
+   ]
+  ],
+  "center": [
+   706,
+   856
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3446858823299408
+ },
+ {
+  "id": "IDRiD_39_p146_2",
+  "image": "IDRiD_39",
+  "path": 146,
+  "points": 1,
+  "yx": [
+   [
+    710,
+    859
+   ]
+  ],
+  "center": [
+   710,
+   859
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34568098187446594
+ },
+ {
+  "id": "IDRiD_39_p146_3",
+  "image": "IDRiD_39",
+  "path": 146,
+  "points": 1,
+  "yx": [
+   [
+    714,
+    863
+   ]
+  ],
+  "center": [
+   714,
+   863
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3482923209667206
+ },
+ {
+  "id": "IDRiD_39_p156_1",
+  "image": "IDRiD_39",
+  "path": 156,
+  "points": 1,
+  "yx": [
+   [
+    716,
+    866
+   ]
+  ],
+  "center": [
+   716,
+   866
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3480968177318573
+ },
+ {
+  "id": "IDRiD_39_p156_2",
+  "image": "IDRiD_39",
+  "path": 156,
+  "points": 8,
+  "yx": [
+   [
+    717,
+    870
+   ],
+   [
+    717,
+    871
+   ],
+   [
+    718,
+    872
+   ],
+   [
+    719,
+    873
+   ],
+   [
+    719,
+    874
+   ],
+   [
+    720,
+    875
+   ],
+   [
+    720,
+    876
+   ],
+   [
+    721,
+    877
+   ]
+  ],
+  "center": [
+   719,
+   873
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.330318808555603
+ },
+ {
+  "id": "IDRiD_39_p156_3",
+  "image": "IDRiD_39",
+  "path": 156,
+  "points": 1,
+  "yx": [
+   [
+    723,
+    885
+   ]
+  ],
+  "center": [
+   723,
+   885
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3139544427394867
+ },
+ {
+  "id": "IDRiD_39_p156_4",
+  "image": "IDRiD_39",
+  "path": 156,
+  "points": 1,
+  "yx": [
+   [
+    723,
+    887
+   ]
+  ],
+  "center": [
+   723,
+   887
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3139544427394867
+ },
+ {
+  "id": "IDRiD_39_p157_1",
+  "image": "IDRiD_39",
+  "path": 157,
+  "points": 1,
+  "yx": [
+   [
+    735,
+    859
+   ]
+  ],
+  "center": [
+   735,
+   859
+  ],
+  "control": [
+   686,
+   845
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34696218371391296
+ },
+ {
+  "id": "IDRiD_39_p160_1",
+  "image": "IDRiD_39",
+  "path": 160,
+  "points": 1,
+  "yx": [
+   [
+    857,
+    192
+   ]
+  ],
+  "center": [
+   857,
+   192
+  ],
+  "control": [
+   761,
+   414
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.34389257431030273
+ },
+ {
+  "id": "IDRiD_40_p12_1",
+  "image": "IDRiD_40",
+  "path": 12,
+  "points": 1,
+  "yx": [
+   [
+    109,
+    468
+   ]
+  ],
+  "center": [
+   109,
+   468
+  ],
+  "control": null,
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3470792770385742
+ },
+ {
+  "id": "IDRiD_42_p0_1",
+  "image": "IDRiD_42",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    601,
+    63
+   ],
+   [
+    601,
+    64
+   ]
+  ],
+  "center": [
+   601,
+   63
+  ],
+  "control": [
+   604,
+   76
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3473811745643616
+ },
+ {
+  "id": "IDRiD_42_p156_1",
+  "image": "IDRiD_42",
+  "path": 156,
+  "points": 14,
+  "yx": [
+   [
+    607,
+    72
+   ],
+   [
+    608,
+    71
+   ],
+   [
+    609,
+    69
+   ],
+   [
+    609,
+    70
+   ],
+   [
+    610,
+    68
+   ],
+   [
+    611,
+    67
+   ],
+   [
+    612,
+    66
+   ],
+   [
+    613,
+    65
+   ],
+   [
+    614,
+    62
+   ],
+   [
+    614,
+    63
+   ],
+   [
+    614,
+    64
+   ],
+   [
+    615,
+    61
+   ],
+   [
+    616,
+    60
+   ],
+   [
+    617,
+    59
+   ]
+  ],
+  "center": [
+   612,
+   66
+  ],
+  "control": [
+   604,
+   76
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   true,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.333660751581192
+ },
+ {
+  "id": "IDRiD_42_p160_1",
+  "image": "IDRiD_42",
+  "path": 160,
+  "points": 3,
+  "yx": [
+   [
+    607,
+    58
+   ],
+   [
+    607,
+    59
+   ],
+   [
+    607,
+    60
+   ]
+  ],
+  "center": [
+   607,
+   59
+  ],
+  "control": [
+   604,
+   76
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34499266743659973
+ },
+ {
+  "id": "IDRiD_46_p0_1",
+  "image": "IDRiD_46",
+  "path": 0,
+  "points": 5,
+  "yx": [
+   [
+    405,
+    469
+   ],
+   [
+    405,
+    470
+   ],
+   [
+    405,
+    471
+   ],
+   [
+    406,
+    472
+   ],
+   [
+    407,
+    473
+   ]
+  ],
+  "center": [
+   405,
+   471
+  ],
+  "control": [
+   426,
+   477
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   true,
+   true
+  ],
+  "high_dual_delta_median": -0.2651008665561676
+ },
+ {
+  "id": "IDRiD_46_p0_2",
+  "image": "IDRiD_46",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    410,
+    476
+   ]
+  ],
+  "center": [
+   410,
+   476
+  ],
+  "control": [
+   426,
+   477
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   3
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.022751688957214355
+ },
+ {
+  "id": "IDRiD_46_p0_3",
+  "image": "IDRiD_46",
+  "path": 0,
+  "points": 1,
+  "yx": [
+   [
+    411,
+    478
+   ]
+  ],
+  "center": [
+   411,
+   478
+  ],
+  "control": [
+   426,
+   477
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.14102330803871155
+ },
+ {
+  "id": "IDRiD_46_p0_4",
+  "image": "IDRiD_46",
+  "path": 0,
+  "points": 2,
+  "yx": [
+   [
+    433,
+    465
+   ],
+   [
+    433,
+    466
+   ]
+  ],
+  "center": [
+   433,
+   465
+  ],
+  "control": [
+   430,
+   473
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34014344215393066
+ },
+ {
+  "id": "IDRiD_46_p89_1",
+  "image": "IDRiD_46",
+  "path": 89,
+  "points": 1,
+  "yx": [
+   [
+    355,
+    547
+   ]
+  ],
+  "center": [
+   355,
+   547
+  ],
+  "control": [
+   350,
+   528
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   3
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.09508824348449707
+ },
+ {
+  "id": "IDRiD_46_p92_1",
+  "image": "IDRiD_46",
+  "path": 92,
+  "points": 1,
+  "yx": [
+   [
+    392,
+    394
+   ]
+  ],
+  "center": [
+   392,
+   394
+  ],
+  "control": [
+   378,
+   392
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   false
+  ],
+  "high_dual_delta_median": -0.3138063848018646
+ },
+ {
+  "id": "IDRiD_46_p118_1",
+  "image": "IDRiD_46",
+  "path": 118,
+  "points": 4,
+  "yx": [
+   [
+    407,
+    366
+   ],
+   [
+    407,
+    367
+   ],
+   [
+    407,
+    368
+   ],
+   [
+    407,
+    369
+   ]
+  ],
+  "center": [
+   407,
+   367
+  ],
+  "control": [
+   407,
+   361
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.34079694747924805
+ },
+ {
+  "id": "IDRiD_46_p123_1",
+  "image": "IDRiD_46",
+  "path": 123,
+  "points": 3,
+  "yx": [
+   [
+    416,
+    590
+   ],
+   [
+    416,
+    591
+   ],
+   [
+    416,
+    592
+   ]
+  ],
+  "center": [
+   416,
+   591
+  ],
+  "control": [
+   415,
+   580
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   1,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   true,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.30497217178344727
+ },
+ {
+  "id": "IDRiD_46_p123_2",
+  "image": "IDRiD_46",
+  "path": 123,
+  "points": 5,
+  "yx": [
+   [
+    417,
+    594
+   ],
+   [
+    417,
+    595
+   ],
+   [
+    417,
+    596
+   ],
+   [
+    417,
+    597
+   ],
+   [
+    417,
+    598
+   ]
+  ],
+  "center": [
+   417,
+   596
+  ],
+  "control": [
+   415,
+   580
+  ],
+  "mid_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_native_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_large_seeds_per_point": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "high_any_view_any_seed": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "high_dual_delta_median": -0.3284004330635071
+ },
+ {
+  "id": "IDRiD_46_p123_3",
+  "image": "IDRiD_46",
+  "path": 123,
+  "points": 1,
+  "yx": [
+   [
+    417,
+    604
+   ]
+  ],
+  "center": [
+   417,
+   604
+  ],
+  "control": [
+   415,
+   580
+  ],
+  "mid_seeds_per_point": [
+   0
+  ],
+  "high_seeds_per_point": [
+   1
+  ],
+  "high_native_seeds_per_point": [
+   2
+  ],
+  "high_large_seeds_per_point": [
+   0
+  ],
+  "high_any_view_any_seed": [
+   true
+  ],
+  "high_dual_delta_median": -0.0400787889957428
+ }
+]

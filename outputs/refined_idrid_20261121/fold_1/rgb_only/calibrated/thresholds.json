@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 2027,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.013450249281923283,
+    "train_fp": 0.013450249281923283
+  },
+  {
+    "seed": 2027,
+    "method": "local",
+    "threshold": 0.709,
+    "train_target": 0.013450249281923283,
+    "train_fp": 0.013449631409820093
+  },
+  {
+    "seed": 2028,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.016301684061740984,
+    "train_fp": 0.016301684061740984
+  },
+  {
+    "seed": 2028,
+    "method": "local",
+    "threshold": 0.668,
+    "train_target": 0.016301684061740984,
+    "train_fp": 0.016298585179865644
+  },
+  {
+    "seed": 2029,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.013100580274439746,
+    "train_fp": 0.013100580274439746
+  },
+  {
+    "seed": 2029,
+    "method": "local",
+    "threshold": 0.7,
+    "train_target": 0.013100580274439746,
+    "train_fp": 0.01309685431140013
+  }
+]

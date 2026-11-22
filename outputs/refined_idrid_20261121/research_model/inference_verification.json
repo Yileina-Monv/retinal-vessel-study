@@ -1,0 +1,12 @@
+{
+  "heldout": {
+    "image": "IDRiD_01",
+    "foreground": 91801,
+    "mask_sha256": "a040c911e773886a573f456c2b2b6852310153c378312d5d779a877cccbd9952"
+  },
+  "refit": {
+    "image": "IDRiD_01",
+    "foreground": 81199,
+    "mask_sha256": "cc6d892d1bef264678506fb8cc74f40bd9ba3ac5c1413eb4596ded62d8d8a761"
+  }
+}

@@ -1,0 +1,1876 @@
+{
+  "appearance_fusion_cycle/raw": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 55.02087709284103,
+      "delta": -2.575326136193837,
+      "ci": [
+        -4.467451548810445,
+        -1.1479552527039996
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.4168829352814564
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -1.3076433367166997,
+        -2.216713875989237,
+        -0.4135557438688602
+      ],
+      "near_minus_far_thin_delta": [
+        -0.13218960585178127,
+        -1.8794270824046684,
+        1.271934401046654
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 2,
+          "hard_base": 33,
+          "hard_cand": 14,
+          "hard_gained": 2,
+          "hard_lost": 21,
+          "gains": 36,
+          "losses": 106
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 20,
+          "hard_cand": 20,
+          "hard_gained": 7,
+          "hard_lost": 7,
+          "gains": 41,
+          "losses": 93
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 0,
+          "hard_base": 21,
+          "hard_cand": 13,
+          "hard_gained": 0,
+          "hard_lost": 8,
+          "gains": 29,
+          "losses": 99
+        }
+      ],
+      "wins_no_added_fp": 1,
+      "leave_one_out_range": [
+        -2.5419692997674783,
+        -1.7214564792546576
+      ],
+      "delta_at_least_ten_points": -2.5957860281753526
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 4,
+          "hard_base": 113,
+          "hard_cand": 77,
+          "hard_gained": 6,
+          "hard_lost": 42,
+          "gains": 42,
+          "losses": 119
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 3,
+          "hard_base": 60,
+          "hard_cand": 47,
+          "hard_gained": 3,
+          "hard_lost": 16,
+          "gains": 41,
+          "losses": 116
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 4,
+          "hard_base": 105,
+          "hard_cand": 72,
+          "hard_gained": 4,
+          "hard_lost": 37,
+          "gains": 39,
+          "losses": 118
+        }
+      ],
+      "wins_no_added_fp": 4,
+      "leave_one_out_range": [
+        -3.170943240429019,
+        -1.912823582309361
+      ],
+      "delta_at_least_ten_points": -3.3351947150705614
+    }
+  },
+  "appearance_fusion_cycle/eight": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 56.39120004839332,
+      "delta": -1.2050031806415475,
+      "ci": [
+        -2.316996638141098,
+        -0.3788600055868194
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.41747501429405603
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -0.8201894607580464,
+        -1.5538099490191617,
+        -0.025485929174319716
+      ],
+      "near_minus_far_thin_delta": [
+        -0.4468173723129875,
+        -1.746478825038577,
+        0.5189935241956768
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 2,
+          "hard_base": 33,
+          "hard_cand": 19,
+          "hard_gained": 2,
+          "hard_lost": 16,
+          "gains": 22,
+          "losses": 54
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 0,
+          "hard_base": 20,
+          "hard_cand": 18,
+          "hard_gained": 0,
+          "hard_lost": 2,
+          "gains": 19,
+          "losses": 60
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 0,
+          "hard_base": 21,
+          "hard_cand": 15,
+          "hard_gained": 0,
+          "hard_lost": 6,
+          "gains": 19,
+          "losses": 48
+        }
+      ],
+      "wins_no_added_fp": 4,
+      "leave_one_out_range": [
+        -1.4494276053179402,
+        -0.8605387164290511
+      ],
+      "delta_at_least_ten_points": -1.5150783149591138
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 1,
+          "hard_base": 113,
+          "hard_cand": 89,
+          "hard_gained": 1,
+          "hard_lost": 25,
+          "gains": 21,
+          "losses": 57
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 1,
+          "hard_base": 60,
+          "hard_cand": 48,
+          "hard_gained": 1,
+          "hard_lost": 13,
+          "gains": 23,
+          "losses": 51
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 2,
+          "hard_base": 105,
+          "hard_cand": 82,
+          "hard_gained": 2,
+          "hard_lost": 25,
+          "gains": 25,
+          "losses": 58
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -1.221829490852201,
+        -0.6748209438436539
+      ],
+      "delta_at_least_ten_points": -1.2165928133566286
+    }
+  },
+  "appearance_fusion_cycle/m0_two_thirds": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.29385428379631,
+      "delta": -0.30234894523856326,
+      "ci": [
+        -1.452724031244331,
+        0.657957037998246
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.430605238918219
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -1.2438014428645514,
+        -2.965354040071612,
+        0.05719354095109549
+      ],
+      "near_minus_far_thin_delta": [
+        -0.4037974776501684,
+        -1.7966570560486594,
+        0.6963222495463883
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 18,
+          "hard_base": 33,
+          "hard_cand": 49,
+          "hard_gained": 18,
+          "hard_lost": 2,
+          "gains": 64,
+          "losses": 63
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 12,
+          "hard_base": 20,
+          "hard_cand": 33,
+          "hard_gained": 14,
+          "hard_lost": 1,
+          "gains": 69,
+          "losses": 61
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 13,
+          "hard_base": 21,
+          "hard_cand": 34,
+          "hard_gained": 13,
+          "hard_lost": 0,
+          "gains": 55,
+          "losses": 85
+        }
+      ],
+      "wins_no_added_fp": 8,
+      "leave_one_out_range": [
+        -0.70266413495915,
+        -0.02589645819147336
+      ],
+      "delta_at_least_ten_points": -0.6429924172261294
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 31,
+          "hard_base": 113,
+          "hard_cand": 138,
+          "hard_gained": 31,
+          "hard_lost": 6,
+          "gains": 63,
+          "losses": 64
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 26,
+          "hard_base": 60,
+          "hard_cand": 82,
+          "hard_gained": 28,
+          "hard_lost": 6,
+          "gains": 82,
+          "losses": 56
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 29,
+          "hard_base": 105,
+          "hard_cand": 112,
+          "hard_gained": 29,
+          "hard_lost": 22,
+          "gains": 67,
+          "losses": 104
+        }
+      ],
+      "wins_no_added_fp": 6,
+      "leave_one_out_range": [
+        -0.5112289339758869,
+        0.04288362013666727
+      ],
+      "delta_at_least_ten_points": -0.34864428641271344
+    }
+  },
+  "appearance_fusion_cycle/m0_supported": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.768318648691945,
+      "delta": 0.1721154196570751,
+      "ci": [
+        -0.3815113031712407,
+        0.775850570571385
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.4063042065240761
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -0.12522231341165366,
+        -0.7203024255478463,
+        0.45735242893587524
+      ],
+      "near_minus_far_thin_delta": [
+        0.28267512432219744,
+        -0.29120149219958197,
+        0.902441945988896
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 19,
+          "hard_base": 33,
+          "hard_cand": 45,
+          "hard_gained": 19,
+          "hard_lost": 7,
+          "gains": 61,
+          "losses": 48
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 12,
+          "hard_base": 20,
+          "hard_cand": 30,
+          "hard_gained": 12,
+          "hard_lost": 2,
+          "gains": 42,
+          "losses": 32
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 14,
+          "hard_base": 21,
+          "hard_cand": 33,
+          "hard_gained": 15,
+          "hard_lost": 3,
+          "gains": 31,
+          "losses": 24
+        }
+      ],
+      "wins_no_added_fp": 5,
+      "leave_one_out_range": [
+        0.007004639802672408,
+        0.37064100343903605
+      ],
+      "delta_at_least_ten_points": 0.24915963263575502
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 29,
+          "hard_base": 113,
+          "hard_cand": 139,
+          "hard_gained": 29,
+          "hard_lost": 3,
+          "gains": 40,
+          "losses": 26
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 11,
+          "hard_base": 60,
+          "hard_cand": 62,
+          "hard_gained": 11,
+          "hard_lost": 9,
+          "gains": 34,
+          "losses": 23
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 19,
+          "hard_base": 105,
+          "hard_cand": 115,
+          "hard_gained": 20,
+          "hard_lost": 10,
+          "gains": 24,
+          "losses": 26
+        }
+      ],
+      "wins_no_added_fp": 6,
+      "leave_one_out_range": [
+        -0.004682111299722536,
+        0.3201042134866023
+      ],
+      "delta_at_least_ten_points": 0.2364566423070649
+    }
+  },
+  "evidence_scale_cycle/odds": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.57428329540897,
+      "delta": -0.021919933625902388,
+      "ci": [
+        -0.550415726272373,
+        0.4638466802898522
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.42598672647583363
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -0.20826080637617042,
+        -0.6088786660159716,
+        0.1329174902104927
+      ],
+      "near_minus_far_thin_delta": [
+        -0.15768500147365808,
+        -0.8043142814751357,
+        0.2793783926715148
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 1,
+          "hard_base": 33,
+          "hard_cand": 33,
+          "hard_gained": 2,
+          "hard_lost": 2,
+          "gains": 13,
+          "losses": 18
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 20,
+          "hard_cand": 21,
+          "hard_gained": 4,
+          "hard_lost": 3,
+          "gains": 23,
+          "losses": 25
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 0,
+          "hard_base": 21,
+          "hard_cand": 22,
+          "hard_gained": 1,
+          "hard_lost": 0,
+          "gains": 21,
+          "losses": 28
+        }
+      ],
+      "wins_no_added_fp": 7,
+      "leave_one_out_range": [
+        -0.29991377117830126,
+        0.018268047003516905
+      ],
+      "delta_at_least_ten_points": -0.26560675611168
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 4,
+          "hard_base": 113,
+          "hard_cand": 113,
+          "hard_gained": 8,
+          "hard_lost": 8,
+          "gains": 28,
+          "losses": 34
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 0,
+          "hard_base": 60,
+          "hard_cand": 66,
+          "hard_gained": 10,
+          "hard_lost": 4,
+          "gains": 29,
+          "losses": 28
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 6,
+          "hard_base": 105,
+          "hard_cand": 101,
+          "hard_gained": 10,
+          "hard_lost": 14,
+          "gains": 53,
+          "losses": 54
+        }
+      ],
+      "wins_no_added_fp": 13,
+      "leave_one_out_range": [
+        -0.17190214592447847,
+        0.20416623014389765
+      ],
+      "delta_at_least_ten_points": -0.019626078346004973
+    }
+  },
+  "evidence_scale_cycle/aligned_odds": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.68933814911148,
+      "delta": 0.09313492007660784,
+      "ci": [
+        -0.38416305479542634,
+        0.7078110511472853
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.4175375194163974
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        0.024448161139143512,
+        -0.46070463552629914,
+        0.5661427307899651
+      ],
+      "near_minus_far_thin_delta": [
+        0.1909136419065878,
+        -0.374851925078445,
+        0.8027912950468372
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 1,
+          "hard_base": 33,
+          "hard_cand": 34,
+          "hard_gained": 3,
+          "hard_lost": 2,
+          "gains": 12,
+          "losses": 17
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 20,
+          "hard_cand": 21,
+          "hard_gained": 6,
+          "hard_lost": 5,
+          "gains": 28,
+          "losses": 29
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 0,
+          "hard_base": 21,
+          "hard_cand": 17,
+          "hard_gained": 0,
+          "hard_lost": 4,
+          "gains": 25,
+          "losses": 23
+        }
+      ],
+      "wins_no_added_fp": 8,
+      "leave_one_out_range": [
+        -0.10557051870224728,
+        0.24097182784009927
+      ],
+      "delta_at_least_ten_points": 0.10821487654995429
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 1,
+          "hard_base": 113,
+          "hard_cand": 108,
+          "hard_gained": 5,
+          "hard_lost": 10,
+          "gains": 28,
+          "losses": 32
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 0,
+          "hard_base": 60,
+          "hard_cand": 61,
+          "hard_gained": 11,
+          "hard_lost": 10,
+          "gains": 28,
+          "losses": 43
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 4,
+          "hard_base": 105,
+          "hard_cand": 100,
+          "hard_gained": 12,
+          "hard_lost": 17,
+          "gains": 57,
+          "losses": 54
+        }
+      ],
+      "wins_no_added_fp": 8,
+      "leave_one_out_range": [
+        -0.18659194868216872,
+        0.07392087183065192
+      ],
+      "delta_at_least_ten_points": -0.035593255256537774
+    }
+  },
+  "family_scale_ablation/native_native": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 44.96397938186162,
+      "delta": -12.63222384717325,
+      "ci": [
+        -17.51629015506844,
+        -8.484161175556372
+      ],
+      "valid_bootstraps": 9994,
+      "weights": [
+        0.4118215677073228,
+        0.40343900907966
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -5.615058438096354,
+        -7.679181178578267,
+        -3.683762755531228
+      ],
+      "near_minus_far_thin_delta": [
+        -1.339607311343017,
+        -6.474254539516503,
+        3.0245497317132344
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 6,
+          "hard_base": 33,
+          "hard_cand": 21,
+          "hard_gained": 17,
+          "hard_lost": 29,
+          "gains": 88,
+          "losses": 413
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 10,
+          "hard_base": 20,
+          "hard_cand": 17,
+          "hard_gained": 13,
+          "hard_lost": 16,
+          "gains": 78,
+          "losses": 460
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 8,
+          "hard_base": 21,
+          "hard_cand": 19,
+          "hard_gained": 14,
+          "hard_lost": 16,
+          "gains": 88,
+          "losses": 414
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -13.281310188527465,
+        -11.156310188527465
+      ],
+      "delta_at_least_ten_points": -12.126424117964637
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 12,
+          "hard_base": 113,
+          "hard_cand": 58,
+          "hard_gained": 19,
+          "hard_lost": 74,
+          "gains": 105,
+          "losses": 409
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 10,
+          "hard_base": 60,
+          "hard_cand": 33,
+          "hard_gained": 16,
+          "hard_lost": 43,
+          "gains": 95,
+          "losses": 442
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 9,
+          "hard_base": 105,
+          "hard_cand": 53,
+          "hard_gained": 18,
+          "hard_lost": 70,
+          "gains": 98,
+          "losses": 428
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -12.438148951330298,
+        -10.52148228466363
+      ],
+      "delta_at_least_ten_points": -11.436393787677856
+    }
+  },
+  "family_scale_ablation/native_large": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 54.96631589842102,
+      "delta": -2.6298873306138475,
+      "ci": [
+        -4.316079983172186,
+        -1.009597791264738
+      ],
+      "valid_bootstraps": 9997,
+      "weights": [
+        0.4118215677073228,
+        0.426761249151274
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        0.6127758380725561,
+        -1.463516535644637,
+        2.472447847509407
+      ],
+      "near_minus_far_thin_delta": [
+        3.8174270615951817,
+        1.7833909917528086,
+        5.6759193176125216
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 1,
+          "hard_base": 33,
+          "hard_cand": 24,
+          "hard_gained": 16,
+          "hard_lost": 25,
+          "gains": 105,
+          "losses": 189
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 5,
+          "hard_base": 20,
+          "hard_cand": 22,
+          "hard_gained": 17,
+          "hard_lost": 15,
+          "gains": 89,
+          "losses": 236
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 21,
+          "hard_cand": 12,
+          "hard_gained": 8,
+          "hard_lost": 17,
+          "gains": 108,
+          "losses": 202
+        }
+      ],
+      "wins_no_added_fp": 7,
+      "leave_one_out_range": [
+        -2.4797291994388444,
+        -1.506665226374871
+      ],
+      "delta_at_least_ten_points": -2.322059626091849
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 4,
+          "hard_base": 113,
+          "hard_cand": 68,
+          "hard_gained": 17,
+          "hard_lost": 62,
+          "gains": 78,
+          "losses": 252
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 3,
+          "hard_base": 60,
+          "hard_cand": 45,
+          "hard_gained": 22,
+          "hard_lost": 37,
+          "gains": 100,
+          "losses": 263
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 6,
+          "hard_base": 105,
+          "hard_cand": 76,
+          "hard_gained": 30,
+          "hard_lost": 59,
+          "gains": 89,
+          "losses": 268
+        }
+      ],
+      "wins_no_added_fp": 5,
+      "leave_one_out_range": [
+        -3.948764127813646,
+        -3.3932085722580907
+      ],
+      "delta_at_least_ten_points": -4.292134921536571
+    }
+  },
+  "family_scale_ablation/native_dual": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 49.75072358576243,
+      "delta": -7.845479643272441,
+      "ci": [
+        -10.773971120003953,
+        -5.019043575270509
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.41827385642328985
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -3.8256655471241503,
+        -5.996422931238672,
+        -1.7207299251617287
+      ],
+      "near_minus_far_thin_delta": [
+        0.2736491646017116,
+        -3.3889391464071235,
+        3.5851968963528598
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 5,
+          "hard_base": 33,
+          "hard_cand": 16,
+          "hard_gained": 12,
+          "hard_lost": 29,
+          "gains": 73,
+          "losses": 299
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 10,
+          "hard_base": 20,
+          "hard_cand": 16,
+          "hard_gained": 10,
+          "hard_lost": 14,
+          "gains": 70,
+          "losses": 344
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 5,
+          "hard_base": 21,
+          "hard_cand": 12,
+          "hard_gained": 9,
+          "hard_lost": 18,
+          "gains": 65,
+          "losses": 310
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -9.248355499030897,
+        -7.741411054586451
+      ],
+      "delta_at_least_ten_points": -8.414577233246144
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 12,
+          "hard_base": 113,
+          "hard_cand": 64,
+          "hard_gained": 16,
+          "hard_lost": 65,
+          "gains": 69,
+          "losses": 292
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 10,
+          "hard_base": 60,
+          "hard_cand": 35,
+          "hard_gained": 15,
+          "hard_lost": 40,
+          "gains": 71,
+          "losses": 335
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 10,
+          "hard_base": 105,
+          "hard_cand": 51,
+          "hard_gained": 10,
+          "hard_lost": 64,
+          "gains": 60,
+          "losses": 269
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -6.786647556240535,
+        -5.581092000684979
+      ],
+      "delta_at_least_ten_points": -6.984278744705894
+    }
+  },
+  "family_scale_ablation/large_native": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 55.93307533379761,
+      "delta": -1.6631278952372597,
+      "ci": [
+        -3.0530561262006146,
+        -0.3762990978623881
+      ],
+      "valid_bootstraps": 9993,
+      "weights": [
+        0.4118215677073228,
+        0.36947871875737076
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        0.09730003108224741,
+        -0.9323616102566503,
+        1.1090571237848745
+      ],
+      "near_minus_far_thin_delta": [
+        -3.0213149112604563,
+        -4.397146376748523,
+        -1.600163750507781
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 30,
+          "hard_base": 33,
+          "hard_cand": 71,
+          "hard_gained": 43,
+          "hard_lost": 5,
+          "gains": 125,
+          "losses": 129
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 28,
+          "hard_base": 20,
+          "hard_cand": 68,
+          "hard_gained": 49,
+          "hard_lost": 1,
+          "gains": 148,
+          "losses": 97
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 26,
+          "hard_base": 21,
+          "hard_cand": 54,
+          "hard_gained": 34,
+          "hard_lost": 1,
+          "gains": 115,
+          "losses": 115
+        }
+      ],
+      "wins_no_added_fp": 4,
+      "leave_one_out_range": [
+        -1.4159937368972775,
+        -0.8654886863922271
+      ],
+      "delta_at_least_ten_points": -1.3579642067724034
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 31,
+          "hard_base": 113,
+          "hard_cand": 146,
+          "hard_gained": 57,
+          "hard_lost": 24,
+          "gains": 129,
+          "losses": 124
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 36,
+          "hard_base": 60,
+          "hard_cand": 100,
+          "hard_gained": 52,
+          "hard_lost": 12,
+          "gains": 134,
+          "losses": 112
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 29,
+          "hard_base": 105,
+          "hard_cand": 125,
+          "hard_gained": 51,
+          "hard_lost": 31,
+          "gains": 126,
+          "losses": 166
+        }
+      ],
+      "wins_no_added_fp": 6,
+      "leave_one_out_range": [
+        -1.6298405261481628,
+        -0.8790712953789318
+      ],
+      "delta_at_least_ten_points": -1.5686672385668434
+    }
+  },
+  "family_scale_ablation/large_large": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 56.60047609443798,
+      "delta": -0.9957271345968906,
+      "ci": [
+        -4.088255039286846,
+        2.0993136447495986
+      ],
+      "valid_bootstraps": 9997,
+      "weights": [
+        0.4118215677073228,
+        0.4013880061902208
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        4.096253375388741,
+        1.5644490172097187,
+        7.510024177142242
+      ],
+      "near_minus_far_thin_delta": [
+        -0.7625371616624372,
+        -3.4983041949595273,
+        2.426153688724971
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 12,
+          "hard_base": 33,
+          "hard_cand": 74,
+          "hard_gained": 46,
+          "hard_lost": 5,
+          "gains": 177,
+          "losses": 236
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 15,
+          "hard_base": 20,
+          "hard_cand": 78,
+          "hard_gained": 63,
+          "hard_lost": 5,
+          "gains": 197,
+          "losses": 229
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 18,
+          "hard_base": 21,
+          "hard_cand": 68,
+          "hard_gained": 51,
+          "hard_lost": 4,
+          "gains": 222,
+          "losses": 216
+        }
+      ],
+      "wins_no_added_fp": 9,
+      "leave_one_out_range": [
+        -1.0167389387240913,
+        0.6101841381989856
+      ],
+      "delta_at_least_ten_points": 0.06541754152063685
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 20,
+          "hard_base": 113,
+          "hard_cand": 130,
+          "hard_gained": 43,
+          "hard_lost": 26,
+          "gains": 129,
+          "losses": 264
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 22,
+          "hard_base": 60,
+          "hard_cand": 106,
+          "hard_gained": 61,
+          "hard_lost": 15,
+          "gains": 155,
+          "losses": 243
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 14,
+          "hard_base": 105,
+          "hard_cand": 128,
+          "hard_gained": 49,
+          "hard_lost": 26,
+          "gains": 149,
+          "losses": 247
+        }
+      ],
+      "wins_no_added_fp": 11,
+      "leave_one_out_range": [
+        -2.8340460358436355,
+        -1.7229349247325245
+      ],
+      "delta_at_least_ten_points": -3.0804848215691685
+    }
+  },
+  "family_scale_ablation/large_dual": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.94200066718159,
+      "delta": 0.34579743814671815,
+      "ci": [
+        -1.6636978020363467,
+        2.352262978341213
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.38739466015877105
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        2.9496358570098615,
+        0.7169130496752658,
+        6.135387927994341
+      ],
+      "near_minus_far_thin_delta": [
+        -1.9749445756977206,
+        -3.9866885654806428,
+        0.11733810229873332
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 24,
+          "hard_base": 33,
+          "hard_cand": 84,
+          "hard_gained": 52,
+          "hard_lost": 1,
+          "gains": 145,
+          "losses": 143
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 25,
+          "hard_base": 20,
+          "hard_cand": 85,
+          "hard_gained": 65,
+          "hard_lost": 0,
+          "gains": 165,
+          "losses": 122
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 24,
+          "hard_base": 21,
+          "hard_cand": 63,
+          "hard_gained": 43,
+          "hard_lost": 1,
+          "gains": 156,
+          "losses": 106
+        }
+      ],
+      "wins_no_added_fp": 9,
+      "leave_one_out_range": [
+        0.38245578561384996,
+        1.3935668967249613
+      ],
+      "delta_at_least_ten_points": 1.0437321341213346
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 31,
+          "hard_base": 113,
+          "hard_cand": 145,
+          "hard_gained": 55,
+          "hard_lost": 23,
+          "gains": 120,
+          "losses": 120
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 37,
+          "hard_base": 60,
+          "hard_cand": 114,
+          "hard_gained": 66,
+          "hard_lost": 12,
+          "gains": 141,
+          "losses": 122
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 28,
+          "hard_base": 105,
+          "hard_cand": 137,
+          "hard_gained": 48,
+          "hard_lost": 16,
+          "gains": 132,
+          "losses": 103
+        }
+      ],
+      "wins_no_added_fp": 9,
+      "leave_one_out_range": [
+        -0.44890332459340343,
+        0.3177633420732631
+      ],
+      "delta_at_least_ten_points": -0.053155787601525735
+    }
+  },
+  "family_scale_ablation/dual_native": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 51.81545288992797,
+      "delta": -5.780750339106902,
+      "ci": [
+        -8.534534746262452,
+        -3.4434861061129154
+      ],
+      "valid_bootstraps": 9994,
+      "weights": [
+        0.4118215677073228,
+        0.3885175757877189
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -3.338488987293142,
+        -5.125748569501223,
+        -1.7717372109772656
+      ],
+      "near_minus_far_thin_delta": [
+        -1.2169831750590925,
+        -4.347519696548473,
+        1.298674852222207
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 11,
+          "hard_base": 33,
+          "hard_cand": 33,
+          "hard_gained": 18,
+          "hard_lost": 18,
+          "gains": 83,
+          "losses": 186
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 20,
+          "hard_cand": 18,
+          "hard_gained": 6,
+          "hard_lost": 8,
+          "gains": 67,
+          "losses": 248
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 21,
+          "hard_cand": 22,
+          "hard_gained": 8,
+          "hard_lost": 7,
+          "gains": 74,
+          "losses": 202
+        }
+      ],
+      "wins_no_added_fp": 4,
+      "leave_one_out_range": [
+        -6.254756468146977,
+        -4.754756468146977
+      ],
+      "delta_at_least_ten_points": -5.168213552333672
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 10,
+          "hard_base": 113,
+          "hard_cand": 87,
+          "hard_gained": 25,
+          "hard_lost": 51,
+          "gains": 96,
+          "losses": 190
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 6,
+          "hard_base": 60,
+          "hard_cand": 44,
+          "hard_gained": 14,
+          "hard_lost": 30,
+          "gains": 76,
+          "losses": 219
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 4,
+          "hard_base": 105,
+          "hard_cand": 75,
+          "hard_gained": 14,
+          "hard_lost": 44,
+          "gains": 87,
+          "losses": 217
+        }
+      ],
+      "wins_no_added_fp": 5,
+      "leave_one_out_range": [
+        -5.14358045798171,
+        -4.0371313515326035
+      ],
+      "delta_at_least_ten_points": -5.261467559729789
+    }
+  },
+  "family_scale_ablation/dual_large": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.41545757559273,
+      "delta": -0.18074565344213767,
+      "ci": [
+        -2.348287815977656,
+        2.11970531914137
+      ],
+      "valid_bootstraps": 9997,
+      "weights": [
+        0.4118215677073228,
+        0.40802566840138205
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        4.101813257778002,
+        1.8201094605575971,
+        7.369161983843055
+      ],
+      "near_minus_far_thin_delta": [
+        1.3966389991127244,
+        -0.6530429265086598,
+        3.7922814787458754
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 5,
+          "hard_base": 33,
+          "hard_cand": 50,
+          "hard_gained": 29,
+          "hard_lost": 12,
+          "gains": 123,
+          "losses": 157
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 20,
+          "hard_cand": 54,
+          "hard_gained": 41,
+          "hard_lost": 7,
+          "gains": 141,
+          "losses": 177
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 3,
+          "hard_base": 21,
+          "hard_cand": 33,
+          "hard_gained": 22,
+          "hard_lost": 10,
+          "gains": 156,
+          "losses": 157
+        }
+      ],
+      "wins_no_added_fp": 7,
+      "leave_one_out_range": [
+        -0.24093382491288254,
+        0.9068517228726654
+      ],
+      "delta_at_least_ten_points": 0.6299771691303673
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 1,
+          "hard_base": 113,
+          "hard_cand": 105,
+          "hard_gained": 25,
+          "hard_lost": 33,
+          "gains": 99,
+          "losses": 202
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 0,
+          "hard_base": 60,
+          "hard_cand": 75,
+          "hard_gained": 34,
+          "hard_lost": 19,
+          "gains": 109,
+          "losses": 204
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 0,
+          "hard_base": 105,
+          "hard_cand": 108,
+          "hard_gained": 31,
+          "hard_lost": 28,
+          "gains": 117,
+          "losses": 193
+        }
+      ],
+      "wins_no_added_fp": 11,
+      "leave_one_out_range": [
+        -1.6546608905057623,
+        -0.7935497793946511
+      ],
+      "delta_at_least_ten_points": -2.040090339921721
+    }
+  },
+  "local_scale_gate/regional": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 58.05902843921407,
+      "delta": 0.4628252101791972,
+      "ci": [
+        -0.860629562604949,
+        1.9244965412988144
+      ],
+      "valid_bootstraps": 9995,
+      "weights": [
+        0.4118215677073228,
+        0.3900459127406325
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        0.6888071433123846,
+        0.02743084037493398,
+        1.3698457073309052
+      ],
+      "near_minus_far_thin_delta": [
+        0.18768397207836227,
+        -1.1979132849569838,
+        1.7936761714389082
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 9,
+          "hard_base": 33,
+          "hard_cand": 55,
+          "hard_gained": 22,
+          "hard_lost": 0,
+          "gains": 67,
+          "losses": 69
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 6,
+          "hard_base": 20,
+          "hard_cand": 44,
+          "hard_gained": 24,
+          "hard_lost": 0,
+          "gains": 85,
+          "losses": 60
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 8,
+          "hard_base": 21,
+          "hard_cand": 32,
+          "hard_gained": 12,
+          "hard_lost": 1,
+          "gains": 84,
+          "losses": 45
+        }
+      ],
+      "wins_no_added_fp": 10,
+      "leave_one_out_range": [
+        0.4263011410134414,
+        1.304078918791219
+      ],
+      "delta_at_least_ten_points": 1.0913901291208898
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 11,
+          "hard_base": 113,
+          "hard_cand": 121,
+          "hard_gained": 19,
+          "hard_lost": 11,
+          "gains": 45,
+          "losses": 59
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 8,
+          "hard_base": 60,
+          "hard_cand": 74,
+          "hard_gained": 18,
+          "hard_lost": 4,
+          "gains": 51,
+          "losses": 53
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 9,
+          "hard_base": 105,
+          "hard_cand": 116,
+          "hard_gained": 19,
+          "hard_lost": 8,
+          "gains": 73,
+          "losses": 53
+        }
+      ],
+      "wins_no_added_fp": 9,
+      "leave_one_out_range": [
+        -0.26484216504287955,
+        0.3684911682904537
+      ],
+      "delta_at_least_ten_points": 0.14691069017078304
+    }
+  },
+  "local_scale_gate/rotated": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.40147282480832,
+      "delta": -0.1947304042265472,
+      "ci": [
+        -0.6850604531855993,
+        0.2199046490283104
+      ],
+      "valid_bootstraps": 9997,
+      "weights": [
+        0.4118215677073228,
+        0.41124522876190756
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        -0.08982900656125789,
+        -0.38890510059777217,
+        0.20812989373830715
+      ],
+      "near_minus_far_thin_delta": [
+        -0.44666999194741935,
+        -0.8696624461149032,
+        -0.007925894433610926
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 1,
+          "hard_base": 33,
+          "hard_cand": 34,
+          "hard_gained": 1,
+          "hard_lost": 0,
+          "gains": 5,
+          "losses": 27
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 7,
+          "hard_base": 20,
+          "hard_cand": 27,
+          "hard_gained": 7,
+          "hard_lost": 0,
+          "gains": 19,
+          "losses": 16
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 2,
+          "hard_base": 21,
+          "hard_cand": 23,
+          "hard_gained": 2,
+          "hard_lost": 0,
+          "gains": 17,
+          "losses": 18
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -0.32742273160659624,
+        -0.13216129369809948
+      ],
+      "delta_at_least_ten_points": -0.24932990860904533
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 4,
+          "hard_base": 113,
+          "hard_cand": 119,
+          "hard_gained": 6,
+          "hard_lost": 0,
+          "gains": 15,
+          "losses": 16
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 7,
+          "hard_base": 60,
+          "hard_cand": 68,
+          "hard_gained": 8,
+          "hard_lost": 0,
+          "gains": 21,
+          "losses": 17
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 5,
+          "hard_base": 105,
+          "hard_cand": 110,
+          "hard_gained": 5,
+          "hard_lost": 0,
+          "gains": 10,
+          "losses": 18
+        }
+      ],
+      "wins_no_added_fp": 3,
+      "leave_one_out_range": [
+        -0.3008938781778562,
+        0.052280724996746936
+      ],
+      "delta_at_least_ten_points": -0.15452578200836684
+    }
+  },
+  "local_scale_gate/annotation_diagnostic": {
+    "matched_18_diagnostic": {
+      "base": 57.59620322903487,
+      "candidate": 57.97406226459418,
+      "delta": 0.377859035559311,
+      "ci": [
+        -1.4650208615231017,
+        2.2288662748086505
+      ],
+      "valid_bootstraps": 9996,
+      "weights": [
+        0.4118215677073228,
+        0.3927339675323829
+      ]
+    },
+    "geometry": {
+      "neighbor_only_delta": [
+        1.9034914721274943,
+        0.416380110246611,
+        3.6997801451943615
+      ],
+      "near_minus_far_thin_delta": [
+        0.6045019770302327,
+        -1.3789045732862169,
+        2.6072885609249914
+      ]
+    },
+    "m0matched": {
+      "seed_counts": [
+        {
+          "m0_only": 50,
+          "m0_rescued": 23,
+          "hard_base": 33,
+          "hard_cand": 82,
+          "hard_gained": 50,
+          "hard_lost": 1,
+          "gains": 133,
+          "losses": 127
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 25,
+          "hard_base": 20,
+          "hard_cand": 81,
+          "hard_gained": 61,
+          "hard_lost": 0,
+          "gains": 157,
+          "losses": 115
+        },
+        {
+          "m0_only": 44,
+          "m0_rescued": 23,
+          "hard_base": 21,
+          "hard_cand": 58,
+          "hard_gained": 38,
+          "hard_lost": 1,
+          "gains": 146,
+          "losses": 98
+        }
+      ],
+      "wins_no_added_fp": 10,
+      "leave_one_out_range": [
+        0.280424416898415,
+        1.2582021946761928
+      ],
+      "delta_at_least_ten_points": 0.9328284724741225
+    },
+    "matched": {
+      "seed_counts": [
+        {
+          "m0_only": 57,
+          "m0_rescued": 29,
+          "hard_base": 113,
+          "hard_cand": 140,
+          "hard_gained": 49,
+          "hard_lost": 22,
+          "gains": 110,
+          "losses": 107
+        },
+        {
+          "m0_only": 49,
+          "m0_rescued": 37,
+          "hard_base": 60,
+          "hard_cand": 112,
+          "hard_gained": 63,
+          "hard_lost": 11,
+          "gains": 133,
+          "losses": 109
+        },
+        {
+          "m0_only": 50,
+          "m0_rescued": 27,
+          "hard_base": 105,
+          "hard_cand": 133,
+          "hard_gained": 44,
+          "hard_lost": 16,
+          "gains": 119,
+          "losses": 97
+        }
+      ],
+      "wins_no_added_fp": 7,
+      "leave_one_out_range": [
+        -0.31469263449938006,
+        0.4047518099450643
+      ],
+      "delta_at_least_ten_points": 0.09272539728328238
+    }
+  },
+  "regional_check": {
+    "coverage": {
+      "fov": 10.185955238045642,
+      "near": 22.94296312533986,
+      "thin": 37.21865839282578,
+      "rotated_thin": 11.235262701984416
+    },
+    "regional_minus_rotated": {
+      "thin_d1": {
+        "delta": 1.20927689677602,
+        "ci": [
+          -0.10955615689908277,
+          2.7456963609609386
+        ]
+      },
+      "near_fp_density": {
+        "delta": 0.18097185023198425,
+        "ci": [
+          -0.09881986203375669,
+          0.4839776815903211
+        ]
+      },
+      "far_recall": {
+        "delta": -0.3378625819264643,
+        "ci": [
+          -0.6819028494030583,
+          -0.041755169541525416
+        ]
+      },
+      "dice": {
+        "delta": -0.2971228759760581,
+        "ci": [
+          -0.52240861569814,
+          -0.10896417643695164
+        ]
+      }
+    }
+  }
+}

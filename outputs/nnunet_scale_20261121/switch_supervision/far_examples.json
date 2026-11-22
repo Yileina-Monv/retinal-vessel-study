@@ -1,0 +1,26 @@
+[
+  {
+    "image": "IDRiD_22",
+    "group": 0,
+    "x": 304,
+    "y": 164,
+    "points": 28,
+    "shown": 28
+  },
+  {
+    "image": "IDRiD_19",
+    "group": 1,
+    "x": 596,
+    "y": 798,
+    "points": 4,
+    "shown": 4
+  },
+  {
+    "image": "IDRiD_13",
+    "group": 2,
+    "x": 795,
+    "y": 479,
+    "points": 1,
+    "shown": 1
+  }
+]
