@@ -1,0 +1,31 @@
+{
+  "files": 3671,
+  "tracked": 1584,
+  "weights": 47,
+  "routers": 6,
+  "archives": {
+    "control-fold0-2027.zip": 373683347,
+    "control-fold0-2028.zip": 373684505,
+    "control-fold0-2029.zip": 373682666,
+    "control-fold1-2027.zip": 373683886,
+    "control-fold1-2028.zip": 373681174,
+    "control-fold1-2029.zip": 373685257,
+    "control-fold2-2027.zip": 373683060,
+    "control-fold2-2028.zip": 373682278,
+    "control-fold2-2029.zip": 373682785,
+    "core-fold0-2027.zip": 201318683,
+    "core-fold0-2028.zip": 201317755,
+    "core-fold0-2029.zip": 201318300,
+    "core-fold1-2027.zip": 201318887,
+    "core-fold1-2028.zip": 201319055,
+    "core-fold1-2029.zip": 201318925,
+    "core-fold2-2027.zip": 201316363,
+    "core-fold2-2028.zip": 201319201,
+    "core-fold2-2029.zip": 201318540,
+    "nnunet-evaluation-arrays.zip": 196071483,
+    "routing-models.zip": 4514039,
+    "switch-arrays.zip": 47688171,
+    "unet-evaluation-arrays.zip": 9812674,
+    "unet-refit-54.zip": 57902365
+  }
+}

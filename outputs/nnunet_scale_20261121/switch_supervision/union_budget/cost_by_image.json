@@ -1,0 +1,100 @@
+{
+  "m0matched_union_vs_previous": {
+    "fp_quantiles": [
+      0.0,
+      2.452134337727558,
+      3.2832290791398244,
+      3.9471981364048134,
+      6.756555644849243
+    ],
+    "best": "IDRiD_08",
+    "worst": "IDRiD_24",
+    "without_best": 3.6723633043310273,
+    "improve_no_added_fp": 0,
+    "improve_with_added_fp": 38
+  },
+  "m0matched_lower_vs_previous": {
+    "fp_quantiles": [
+      0.0,
+      2.59966400568983,
+      3.2066396302933136,
+      4.0171642472382,
+      6.816084769473465
+    ],
+    "best": "IDRiD_08",
+    "worst": "IDRiD_24",
+    "without_best": 3.4228066950939096,
+    "improve_no_added_fp": 0,
+    "improve_with_added_fp": 41
+  },
+  "m0matched_union_vs_lower": {
+    "fp_quantiles": [
+      -2.585670649620735,
+      -0.5518154729058603,
+      0.05668813729867047,
+      0.8507939454409051,
+      4.035255389189764
+    ],
+    "best": "IDRiD_12",
+    "worst": "IDRiD_35",
+    "without_best": 0.15724891692942664,
+    "improve_no_added_fp": 6,
+    "improve_with_added_fp": 11
+  },
+  "matched_union_vs_previous": {
+    "fp_quantiles": [
+      0.2142245072836332,
+      3.854533266297972,
+      4.558579134519863,
+      5.837711617046118,
+      9.026229160029734
+    ],
+    "best": "IDRiD_08",
+    "worst": "IDRiD_01",
+    "without_best": 2.8134976312194278,
+    "improve_no_added_fp": 0,
+    "improve_with_added_fp": 33
+  },
+  "matched_lower_vs_previous": {
+    "fp_quantiles": [
+      0.6426735218508998,
+      3.8837551895004707,
+      4.733350500925822,
+      5.544839220403904,
+      7.393324883819179
+    ],
+    "best": "IDRiD_09",
+    "worst": "IDRiD_24",
+    "without_best": 2.558502482383796,
+    "improve_no_added_fp": 0,
+    "improve_with_added_fp": 42
+  },
+  "matched_union_vs_lower": {
+    "fp_quantiles": [
+      -3.6231884057971038,
+      -0.47680826763358874,
+      0.10044194455604653,
+      1.1833770332041655,
+      5.09716470213444
+    ],
+    "best": "IDRiD_08",
+    "worst": "IDRiD_09",
+    "without_best": 0.16206585590633843,
+    "improve_no_added_fp": 9,
+    "improve_with_added_fp": 12
+  },
+  "expected_18": {
+    "base": 57.97293639432356,
+    "candidate": 58.44228159298553,
+    "delta": 0.4693451986619692,
+    "ci": [
+      -0.6700384144620646,
+      1.6521404644163784
+    ],
+    "valid_bootstraps": 6171,
+    "weights": [
+      0.03833893558566766,
+      0.03376159350950286
+    ]
+  }
+}

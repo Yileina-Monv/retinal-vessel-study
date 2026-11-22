@@ -1,0 +1,20 @@
+{
+  "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "nnunetv2": "2.6.2",
+    "dynamic-network-architectures": "0.4.4",
+    "batchgenerators": "0.25.6",
+    "batchgeneratorsv2": "0.3.8",
+    "torch": "2.12.1+cu130",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "simpleitk": "2.5.8",
+    "acvl-utils": "0.2.7",
+    "blosc2": "4.15.0",
+    "pillow": "12.3.0"
+  },
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "driver": "616.64"
+}

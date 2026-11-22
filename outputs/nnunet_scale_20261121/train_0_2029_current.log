@@ -1,0 +1,26 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-11-21 19:11:48.526850: do_dummy_2d_data_aug: False
+  warnings.warn('Warning! No annotated pixels in image!')
+0 2029 50 {'standard': 0.0815, 'mix': 0.1245} seconds 9
+0 2029 100 {'standard': -0.1285, 'mix': -0.0398} seconds 17
+0 2029 150 {'standard': -0.2704, 'mix': -0.1501} seconds 25
+0 2029 200 {'standard': -0.3656, 'mix': -0.2571} seconds 33
+0 2029 250 {'standard': -0.3849, 'mix': -0.2805} seconds 41
+0 2029 300 {'standard': -0.4132, 'mix': -0.322} seconds 49
+0 2029 350 {'standard': -0.4572, 'mix': -0.3381} seconds 58
+0 2029 400 {'standard': -0.4855, 'mix': -0.3697} seconds 67
+0 2029 450 {'standard': -0.501, 'mix': -0.3887} seconds 75
+0 2029 500 {'standard': -0.5203, 'mix': -0.3986} seconds 83

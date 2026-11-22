@@ -1,0 +1,17 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+Traceback (most recent call last):
+    for method in ("standard","mix"): train(args.fold,args.seed,method)
+                                      ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    t=trainer(fold,seed)
+    t.initialize()
+    ~~~~~~~~~~~~^^
+    self.dataset_class = infer_dataset_class(self.preprocessed_dataset_folder)
+                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    assert len(file_endings) == 1, (f'Found more than one file ending in the folder {folder}. '
+           ^^^^^^^^^^^^^^^^^^^^^^

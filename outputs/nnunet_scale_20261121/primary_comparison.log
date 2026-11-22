@@ -1,0 +1,4 @@
+B-A [('path_d1', np.float64(3.34)), ('thin_d1', np.float64(6.82)), ('near_fp_density', np.float64(-0.05)), ('dice', np.float64(-2.46)), ('precision', np.float64(1.1)), ('fp_fov', np.float64(-0.31)), ('far_recall', np.float64(-5.54))]
+C-A [('path_d1', np.float64(-14.26)), ('thin_d1', np.float64(-14.69)), ('near_fp_density', np.float64(-0.16)), ('dice', np.float64(-3.84)), ('precision', np.float64(-1.08)), ('fp_fov', np.float64(-0.05)), ('far_recall', np.float64(-6.16))]
+D-B [('path_d1', np.float64(-8.84)), ('thin_d1', np.float64(-11.93)), ('near_fp_density', np.float64(-0.08)), ('dice', np.float64(-0.36)), ('precision', np.float64(0.15)), ('fp_fov', np.float64(-0.04)), ('far_recall', np.float64(-0.75))]
+D-A [('path_d1', np.float64(-5.49)), ('thin_d1', np.float64(-5.11)), ('near_fp_density', np.float64(-0.13)), ('dice', np.float64(-2.82)), ('precision', np.float64(1.24)), ('fp_fov', np.float64(-0.35)), ('far_recall', np.float64(-6.28))]

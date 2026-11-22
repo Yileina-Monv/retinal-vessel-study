@@ -1,0 +1,4052 @@
+[
+  {
+    "image": "IDRiD_01",
+    "seed": 2027,
+    "thin_den": 33,
+    "ring_area": 12272,
+    "fov_area": 759506,
+    "base": {
+      "thin_d1": 13,
+      "thin_d0": 11,
+      "near_fp": 161,
+      "fp": 12749,
+      "dice": 0.7925559099800856,
+      "precision": 0.8410487862655379,
+      "far_recall": 0.7514152737687677
+    },
+    "candidate": {
+      "thin_d1": 13,
+      "thin_d0": 11,
+      "near_fp": 202,
+      "fp": 18563,
+      "dice": 0.8066008704444542,
+      "precision": 0.7981273245318311,
+      "far_recall": 0.8172674587724598
+    }
+  },
+  {
+    "image": "IDRiD_01",
+    "seed": 2028,
+    "thin_den": 33,
+    "ring_area": 12272,
+    "fov_area": 759506,
+    "base": {
+      "thin_d1": 12,
+      "thin_d0": 8,
+      "near_fp": 111,
+      "fp": 8042,
+      "dice": 0.7832118373297764,
+      "precision": 0.8869918356449279,
+      "far_recall": 0.7033630932402497
+    },
+    "candidate": {
+      "thin_d1": 13,
+      "thin_d0": 11,
+      "near_fp": 130,
+      "fp": 11615,
+      "dice": 0.8067203212229013,
+      "precision": 0.8554035380382686,
+      "far_recall": 0.7653890044975499
+    }
+  },
+  {
+    "image": "IDRiD_01",
+    "seed": 2029,
+    "thin_den": 33,
+    "ring_area": 12272,
+    "fov_area": 759506,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 12,
+      "near_fp": 94,
+      "fp": 9827,
+      "dice": 0.7751669825381345,
+      "precision": 0.8654185896821375,
+      "far_recall": 0.7043364435792442
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 14,
+      "near_fp": 118,
+      "fp": 13410,
+      "dice": 0.7998700454840806,
+      "precision": 0.8371505598329002,
+      "far_recall": 0.7681636123604305
+    }
+  },
+  {
+    "image": "IDRiD_08",
+    "seed": 2027,
+    "thin_den": 15,
+    "ring_area": 11199,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 6,
+      "thin_d0": 3,
+      "near_fp": 256,
+      "fp": 8916,
+      "dice": 0.8055326050368738,
+      "precision": 0.8806840992425662,
+      "far_recall": 0.7420667301328256
+    },
+    "candidate": {
+      "thin_d1": 6,
+      "thin_d0": 3,
+      "near_fp": 315,
+      "fp": 14189,
+      "dice": 0.8165474868691285,
+      "precision": 0.8333803048451114,
+      "far_recall": 0.8000135998912009
+    }
+  },
+  {
+    "image": "IDRiD_08",
+    "seed": 2028,
+    "thin_den": 15,
+    "ring_area": 11199,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 6,
+      "thin_d0": 2,
+      "near_fp": 191,
+      "fp": 6679,
+      "dice": 0.7983111727266998,
+      "precision": 0.9046143299867183,
+      "far_recall": 0.7154449431071218
+    },
+    "candidate": {
+      "thin_d1": 6,
+      "thin_d0": 2,
+      "near_fp": 241,
+      "fp": 9641,
+      "dice": 0.8156277859431849,
+      "precision": 0.8753474781169596,
+      "far_recall": 0.7642572192755791
+    }
+  },
+  {
+    "image": "IDRiD_08",
+    "seed": 2029,
+    "thin_den": 15,
+    "ring_area": 11199,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 6,
+      "thin_d0": 3,
+      "near_fp": 181,
+      "fp": 7399,
+      "dice": 0.7909511374004972,
+      "precision": 0.8946701591549697,
+      "far_recall": 0.7088943288453692
+    },
+    "candidate": {
+      "thin_d1": 6,
+      "thin_d0": 3,
+      "near_fp": 251,
+      "fp": 10369,
+      "dice": 0.809682343184741,
+      "precision": 0.8666143535253483,
+      "far_recall": 0.7595199238406093
+    }
+  },
+  {
+    "image": "IDRiD_09",
+    "seed": 2027,
+    "thin_den": 33,
+    "ring_area": 25216,
+    "fov_area": 759920,
+    "base": {
+      "thin_d1": 20,
+      "thin_d0": 16,
+      "near_fp": 636,
+      "fp": 19165,
+      "dice": 0.7334231824003111,
+      "precision": 0.7405085571923743,
+      "far_recall": 0.7290895632864545
+    },
+    "candidate": {
+      "thin_d1": 20,
+      "thin_d0": 16,
+      "near_fp": 728,
+      "fp": 23990,
+      "dice": 0.7512123327735533,
+      "precision": 0.7134085153151432,
+      "far_recall": 0.7960567929479847
+    }
+  },
+  {
+    "image": "IDRiD_09",
+    "seed": 2028,
+    "thin_den": 33,
+    "ring_area": 25216,
+    "fov_area": 759920,
+    "base": {
+      "thin_d1": 18,
+      "thin_d0": 12,
+      "near_fp": 475,
+      "fp": 13729,
+      "dice": 0.7202829374892173,
+      "precision": 0.7849096805527268,
+      "far_recall": 0.6680304151806743
+    },
+    "candidate": {
+      "thin_d1": 18,
+      "thin_d0": 12,
+      "near_fp": 516,
+      "fp": 16891,
+      "dice": 0.7533693542606356,
+      "precision": 0.7673223682397994,
+      "far_recall": 0.742655272188951
+    }
+  },
+  {
+    "image": "IDRiD_09",
+    "seed": 2029,
+    "thin_den": 33,
+    "ring_area": 25216,
+    "fov_area": 759920,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 14,
+      "near_fp": 467,
+      "fp": 16391,
+      "dice": 0.7135459788664206,
+      "precision": 0.7562277844703222,
+      "far_recall": 0.6779086198775318
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 14,
+      "near_fp": 539,
+      "fp": 19764,
+      "dice": 0.7412910616263748,
+      "precision": 0.739054660681278,
+      "far_recall": 0.7462889442164053
+    }
+  },
+  {
+    "image": "IDRiD_13",
+    "seed": 2027,
+    "thin_den": 95,
+    "ring_area": 27483,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 38,
+      "thin_d0": 26,
+      "near_fp": 244,
+      "fp": 6346,
+      "dice": 0.8336181267911187,
+      "precision": 0.9245942156420067,
+      "far_recall": 0.7610850703101626
+    },
+    "candidate": {
+      "thin_d1": 40,
+      "thin_d0": 28,
+      "near_fp": 370,
+      "fp": 10106,
+      "dice": 0.850061768099074,
+      "precision": 0.8917604721154155,
+      "far_recall": 0.813832651840032
+    }
+  },
+  {
+    "image": "IDRiD_13",
+    "seed": 2028,
+    "thin_den": 95,
+    "ring_area": 27483,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 32,
+      "thin_d0": 27,
+      "near_fp": 156,
+      "fp": 4305,
+      "dice": 0.815583494090778,
+      "precision": 0.9447148415929317,
+      "far_recall": 0.7189787573551412
+    },
+    "candidate": {
+      "thin_d1": 32,
+      "thin_d0": 27,
+      "near_fp": 231,
+      "fp": 6220,
+      "dice": 0.8404154359625085,
+      "precision": 0.9268536484976774,
+      "far_recall": 0.7699611050164555
+    }
+  },
+  {
+    "image": "IDRiD_13",
+    "seed": 2029,
+    "thin_den": 95,
+    "ring_area": 27483,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 35,
+      "thin_d0": 26,
+      "near_fp": 208,
+      "fp": 5117,
+      "dice": 0.8263462607804442,
+      "precision": 0.936754545342183,
+      "far_recall": 0.7410292211030218
+    },
+    "candidate": {
+      "thin_d1": 38,
+      "thin_d0": 28,
+      "near_fp": 331,
+      "fp": 7361,
+      "dice": 0.845738534904729,
+      "precision": 0.9162351923711551,
+      "far_recall": 0.7869153286127456
+    }
+  },
+  {
+    "image": "IDRiD_18",
+    "seed": 2027,
+    "thin_den": 127,
+    "ring_area": 43097,
+    "fov_area": 759940,
+    "base": {
+      "thin_d1": 68,
+      "thin_d0": 51,
+      "near_fp": 880,
+      "fp": 8601,
+      "dice": 0.8294602367970638,
+      "precision": 0.8912820901748132,
+      "far_recall": 0.7789029630292722
+    },
+    "candidate": {
+      "thin_d1": 69,
+      "thin_d0": 54,
+      "near_fp": 1075,
+      "fp": 13035,
+      "dice": 0.8409919603929483,
+      "precision": 0.8526385999819119,
+      "far_recall": 0.8327253603079402
+    }
+  },
+  {
+    "image": "IDRiD_18",
+    "seed": 2028,
+    "thin_den": 127,
+    "ring_area": 43097,
+    "fov_area": 759940,
+    "base": {
+      "thin_d1": 51,
+      "thin_d0": 40,
+      "near_fp": 652,
+      "fp": 5517,
+      "dice": 0.8253130939038058,
+      "precision": 0.9246949305233272,
+      "far_recall": 0.7494964640587235
+    },
+    "candidate": {
+      "thin_d1": 51,
+      "thin_d0": 41,
+      "near_fp": 778,
+      "fp": 8089,
+      "dice": 0.8388704806028795,
+      "precision": 0.8983908854526498,
+      "far_recall": 0.7906185659296392
+    }
+  },
+  {
+    "image": "IDRiD_18",
+    "seed": 2029,
+    "thin_den": 127,
+    "ring_area": 43097,
+    "fov_area": 759940,
+    "base": {
+      "thin_d1": 48,
+      "thin_d0": 40,
+      "near_fp": 546,
+      "fp": 6825,
+      "dice": 0.8215170717296016,
+      "precision": 0.9089429375742132,
+      "far_recall": 0.7538604422164533
+    },
+    "candidate": {
+      "thin_d1": 48,
+      "thin_d0": 40,
+      "near_fp": 692,
+      "fp": 9631,
+      "dice": 0.8356226257759659,
+      "precision": 0.8822356997872393,
+      "far_recall": 0.7976680691075105
+    }
+  },
+  {
+    "image": "IDRiD_23",
+    "seed": 2027,
+    "thin_den": 101,
+    "ring_area": 22830,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 46,
+      "thin_d0": 31,
+      "near_fp": 264,
+      "fp": 8127,
+      "dice": 0.8111865540018675,
+      "precision": 0.8964647429772596,
+      "far_recall": 0.7415040349805485
+    },
+    "candidate": {
+      "thin_d1": 46,
+      "thin_d0": 33,
+      "near_fp": 361,
+      "fp": 13334,
+      "dice": 0.8226849386526403,
+      "precision": 0.850238670185882,
+      "far_recall": 0.7974150403498055
+    }
+  },
+  {
+    "image": "IDRiD_23",
+    "seed": 2028,
+    "thin_den": 101,
+    "ring_area": 22830,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 48,
+      "thin_d0": 33,
+      "near_fp": 213,
+      "fp": 5874,
+      "dice": 0.7963654587325641,
+      "precision": 0.9191076223920678,
+      "far_recall": 0.7040049727250319
+    },
+    "candidate": {
+      "thin_d1": 48,
+      "thin_d0": 39,
+      "near_fp": 280,
+      "fp": 8867,
+      "dice": 0.8151063502113315,
+      "precision": 0.889601334694589,
+      "far_recall": 0.7529713103773484
+    }
+  },
+  {
+    "image": "IDRiD_23",
+    "seed": 2029,
+    "thin_den": 101,
+    "ring_area": 22830,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 55,
+      "thin_d0": 40,
+      "near_fp": 239,
+      "fp": 6822,
+      "dice": 0.7918723303274798,
+      "precision": 0.9072606408287,
+      "far_recall": 0.7034048162556666
+    },
+    "candidate": {
+      "thin_d1": 55,
+      "thin_d0": 47,
+      "near_fp": 321,
+      "fp": 9761,
+      "dice": 0.8118879255104992,
+      "precision": 0.880009342577568,
+      "far_recall": 0.7540323012785476
+    }
+  },
+  {
+    "image": "IDRiD_24",
+    "seed": 2027,
+    "thin_den": 3,
+    "ring_area": 8511,
+    "fov_area": 759856,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 3,
+      "near_fp": 16,
+      "fp": 7358,
+      "dice": 0.8009278678106133,
+      "precision": 0.8954398829063108,
+      "far_recall": 0.7243354113132756
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 3,
+      "near_fp": 23,
+      "fp": 12462,
+      "dice": 0.8114455779263854,
+      "precision": 0.8449074074074074,
+      "far_recall": 0.7803832547849233
+    }
+  },
+  {
+    "image": "IDRiD_24",
+    "seed": 2028,
+    "thin_den": 3,
+    "ring_area": 8511,
+    "fov_area": 759856,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 3,
+      "near_fp": 4,
+      "fp": 5097,
+      "dice": 0.7916297564912695,
+      "precision": 0.9220856644960103,
+      "far_recall": 0.6935690169733704
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 3,
+      "near_fp": 12,
+      "fp": 8338,
+      "dice": 0.8086194074157401,
+      "precision": 0.8858308686603132,
+      "far_recall": 0.7438784093658897
+    }
+  },
+  {
+    "image": "IDRiD_24",
+    "seed": 2029,
+    "thin_den": 3,
+    "ring_area": 8511,
+    "fov_area": 759856,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 9,
+      "fp": 5387,
+      "dice": 0.7899280764040822,
+      "precision": 0.9179848667082807,
+      "far_recall": 0.6932118041551917
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 12,
+      "fp": 8362,
+      "dice": 0.807193794570249,
+      "precision": 0.8852650210617308,
+      "far_recall": 0.7417697014392219
+    }
+  },
+  {
+    "image": "IDRiD_28",
+    "seed": 2027,
+    "thin_den": 82,
+    "ring_area": 18872,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 56,
+      "thin_d0": 46,
+      "near_fp": 282,
+      "fp": 6970,
+      "dice": 0.8389185543252207,
+      "precision": 0.9145791460365704,
+      "far_recall": 0.7748058580231282
+    },
+    "candidate": {
+      "thin_d1": 59,
+      "thin_d0": 51,
+      "near_fp": 420,
+      "fp": 11704,
+      "dice": 0.846996285384911,
+      "precision": 0.8714608913392053,
+      "far_recall": 0.8239533215159957
+    }
+  },
+  {
+    "image": "IDRiD_28",
+    "seed": 2028,
+    "thin_den": 82,
+    "ring_area": 18872,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 50,
+      "thin_d0": 35,
+      "near_fp": 201,
+      "fp": 4952,
+      "dice": 0.8231588978372788,
+      "precision": 0.9346563918505225,
+      "far_recall": 0.7352388790411074
+    },
+    "candidate": {
+      "thin_d1": 52,
+      "thin_d0": 36,
+      "near_fp": 258,
+      "fp": 7630,
+      "dice": 0.8381536810690274,
+      "precision": 0.907643890334685,
+      "far_recall": 0.7786992487549591
+    }
+  },
+  {
+    "image": "IDRiD_28",
+    "seed": 2029,
+    "thin_den": 82,
+    "ring_area": 18872,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 41,
+      "thin_d0": 30,
+      "near_fp": 173,
+      "fp": 5068,
+      "dice": 0.8237928394087756,
+      "precision": 0.9333806556773667,
+      "far_recall": 0.7370747868658732
+    },
+    "candidate": {
+      "thin_d1": 42,
+      "thin_d0": 32,
+      "near_fp": 224,
+      "fp": 7760,
+      "dice": 0.840594886648471,
+      "precision": 0.9067487021726591,
+      "far_recall": 0.783573900565544
+    }
+  },
+  {
+    "image": "IDRiD_31",
+    "seed": 2027,
+    "thin_den": 62,
+    "ring_area": 38055,
+    "fov_area": 759709,
+    "base": {
+      "thin_d1": 37,
+      "thin_d0": 26,
+      "near_fp": 691,
+      "fp": 17818,
+      "dice": 0.7735533179667596,
+      "precision": 0.7815939790640092,
+      "far_recall": 0.7690160069487529
+    },
+    "candidate": {
+      "thin_d1": 38,
+      "thin_d0": 27,
+      "near_fp": 862,
+      "fp": 23560,
+      "dice": 0.7800469309338799,
+      "precision": 0.7435590434621706,
+      "far_recall": 0.823414815733962
+    }
+  },
+  {
+    "image": "IDRiD_31",
+    "seed": 2028,
+    "thin_den": 62,
+    "ring_area": 38055,
+    "fov_area": 759709,
+    "base": {
+      "thin_d1": 39,
+      "thin_d0": 27,
+      "near_fp": 605,
+      "fp": 15596,
+      "dice": 0.7512124886329191,
+      "precision": 0.7922583051389296,
+      "far_recall": 0.7169624022831617
+    },
+    "candidate": {
+      "thin_d1": 39,
+      "thin_d0": 27,
+      "near_fp": 683,
+      "fp": 18942,
+      "dice": 0.7648846383886228,
+      "precision": 0.7696881269378077,
+      "far_recall": 0.7629234396327088
+    }
+  },
+  {
+    "image": "IDRiD_31",
+    "seed": 2029,
+    "thin_den": 62,
+    "ring_area": 38055,
+    "fov_area": 759709,
+    "base": {
+      "thin_d1": 31,
+      "thin_d0": 24,
+      "near_fp": 676,
+      "fp": 16051,
+      "dice": 0.7559226717934908,
+      "precision": 0.7899221255153459,
+      "far_recall": 0.7280183645613599
+    },
+    "candidate": {
+      "thin_d1": 32,
+      "thin_d0": 27,
+      "near_fp": 821,
+      "fp": 19776,
+      "dice": 0.769526515942998,
+      "precision": 0.76520035618878,
+      "far_recall": 0.7771807916614965
+    }
+  },
+  {
+    "image": "IDRiD_33",
+    "seed": 2027,
+    "thin_den": 283,
+    "ring_area": 96426,
+    "fov_area": 760414,
+    "base": {
+      "thin_d1": 124,
+      "thin_d0": 83,
+      "near_fp": 2485,
+      "fp": 24465,
+      "dice": 0.6589386713553296,
+      "precision": 0.633834226359745,
+      "far_recall": 0.7007430758838099
+    },
+    "candidate": {
+      "thin_d1": 132,
+      "thin_d0": 102,
+      "near_fp": 3116,
+      "fp": 30107,
+      "dice": 0.6646308212455011,
+      "precision": 0.6028728961114336,
+      "far_recall": 0.7546117471809883
+    }
+  },
+  {
+    "image": "IDRiD_33",
+    "seed": 2028,
+    "thin_den": 283,
+    "ring_area": 96426,
+    "fov_area": 760414,
+    "base": {
+      "thin_d1": 104,
+      "thin_d0": 68,
+      "near_fp": 1868,
+      "fp": 20719,
+      "dice": 0.6648744503915075,
+      "precision": 0.6645999935247839,
+      "far_recall": 0.6798538097795022
+    },
+    "candidate": {
+      "thin_d1": 110,
+      "thin_d0": 84,
+      "near_fp": 2291,
+      "fp": 24728,
+      "dice": 0.6739017057307645,
+      "precision": 0.639853774340601,
+      "far_recall": 0.7265342178649992
+    }
+  },
+  {
+    "image": "IDRiD_33",
+    "seed": 2029,
+    "thin_den": 283,
+    "ring_area": 96426,
+    "fov_area": 760414,
+    "base": {
+      "thin_d1": 114,
+      "thin_d0": 81,
+      "near_fp": 2009,
+      "fp": 22180,
+      "dice": 0.6566277598988104,
+      "precision": 0.6490006488265734,
+      "far_recall": 0.6799057731280204
+    },
+    "candidate": {
+      "thin_d1": 122,
+      "thin_d0": 90,
+      "near_fp": 2393,
+      "fp": 26473,
+      "dice": 0.6642535307258339,
+      "precision": 0.6235994995165786,
+      "far_recall": 0.7260145843798175
+    }
+  },
+  {
+    "image": "IDRiD_41",
+    "seed": 2027,
+    "thin_den": 1,
+    "ring_area": 2794,
+    "fov_area": 760229,
+    "base": {
+      "thin_d1": 1,
+      "thin_d0": 1,
+      "near_fp": 56,
+      "fp": 16112,
+      "dice": 0.7841303951692461,
+      "precision": 0.7947725072604066,
+      "far_recall": 0.7737074048786543
+    },
+    "candidate": {
+      "thin_d1": 1,
+      "thin_d0": 1,
+      "near_fp": 64,
+      "fp": 21014,
+      "dice": 0.7920167318273105,
+      "precision": 0.7602865519090152,
+      "far_recall": 0.8264415616659425
+    }
+  },
+  {
+    "image": "IDRiD_41",
+    "seed": 2028,
+    "thin_den": 1,
+    "ring_area": 2794,
+    "fov_area": 760229,
+    "base": {
+      "thin_d1": 1,
+      "thin_d0": 0,
+      "near_fp": 29,
+      "fp": 13281,
+      "dice": 0.7830413600082927,
+      "precision": 0.8198282528183631,
+      "far_recall": 0.7494010303519335
+    },
+    "candidate": {
+      "thin_d1": 1,
+      "thin_d0": 1,
+      "near_fp": 44,
+      "fp": 16319,
+      "dice": 0.7927107912414939,
+      "precision": 0.7959665924833087,
+      "far_recall": 0.7894357892123394
+    }
+  },
+  {
+    "image": "IDRiD_41",
+    "seed": 2029,
+    "thin_den": 1,
+    "ring_area": 2794,
+    "fov_area": 760229,
+    "base": {
+      "thin_d1": 1,
+      "thin_d0": 0,
+      "near_fp": 40,
+      "fp": 14025,
+      "dice": 0.7774247707606871,
+      "precision": 0.8110373075005726,
+      "far_recall": 0.7465210104897275
+    },
+    "candidate": {
+      "thin_d1": 1,
+      "thin_d0": 1,
+      "near_fp": 55,
+      "fp": 17209,
+      "dice": 0.7864114998697707,
+      "precision": 0.7865285616820691,
+      "far_recall": 0.7863323195332381
+    }
+  },
+  {
+    "image": "IDRiD_44",
+    "seed": 2027,
+    "thin_den": 0,
+    "ring_area": 2977,
+    "fov_area": 760367,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 94,
+      "fp": 14690,
+      "dice": 0.8192919326755659,
+      "precision": 0.8277277418144291,
+      "far_recall": 0.8110263363515191
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 95,
+      "fp": 20129,
+      "dice": 0.8219327176781003,
+      "precision": 0.7878746364287822,
+      "far_recall": 0.8590683458197361
+    }
+  },
+  {
+    "image": "IDRiD_44",
+    "seed": 2028,
+    "thin_den": 0,
+    "ring_area": 2977,
+    "fov_area": 760367,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 12,
+      "fp": 11970,
+      "dice": 0.8120762686441797,
+      "precision": 0.8497099666022148,
+      "far_recall": 0.7776347842073815
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 12,
+      "fp": 14761,
+      "dice": 0.822996825910744,
+      "precision": 0.8282306394367837,
+      "far_recall": 0.8178287447717976
+    }
+  },
+  {
+    "image": "IDRiD_44",
+    "seed": 2029,
+    "thin_den": 0,
+    "ring_area": 2977,
+    "fov_area": 760367,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 7,
+      "fp": 12735,
+      "dice": 0.811021792113841,
+      "precision": 0.8423593488890264,
+      "far_recall": 0.7819322516891115
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 8,
+      "fp": 16386,
+      "dice": 0.8189423313023566,
+      "precision": 0.8139920311488995,
+      "far_recall": 0.823953210461001
+    }
+  },
+  {
+    "image": "IDRiD_45",
+    "seed": 2027,
+    "thin_den": 0,
+    "ring_area": 3705,
+    "fov_area": 759513,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 2,
+      "fp": 26315,
+      "dice": 0.6211180124223602,
+      "precision": 0.6192577588077841,
+      "far_recall": 0.6235467233893761
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 13,
+      "fp": 30333,
+      "dice": 0.6358671322410243,
+      "precision": 0.6034694624555532,
+      "far_recall": 0.6725429062618374
+    }
+  },
+  {
+    "image": "IDRiD_45",
+    "seed": 2028,
+    "thin_den": 0,
+    "ring_area": 3705,
+    "fov_area": 759513,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 22669,
+      "dice": 0.6141677346943418,
+      "precision": 0.6410974953294702,
+      "far_recall": 0.58995017337335
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 2,
+      "fp": 24970,
+      "dice": 0.630090307484187,
+      "precision": 0.6330854909336703,
+      "far_recall": 0.6276989422768728
+    }
+  },
+  {
+    "image": "IDRiD_45",
+    "seed": 2029,
+    "thin_den": 0,
+    "ring_area": 3705,
+    "fov_area": 759513,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 24287,
+      "dice": 0.6117775273014996,
+      "precision": 0.6278766892409524,
+      "far_recall": 0.597001660887555
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 5,
+      "fp": 27128,
+      "dice": 0.6243719675002153,
+      "precision": 0.6158758478116194,
+      "far_recall": 0.6336577406101577
+    }
+  },
+  {
+    "image": "IDRiD_47",
+    "seed": 2027,
+    "thin_den": 23,
+    "ring_area": 15454,
+    "fov_area": 759913,
+    "base": {
+      "thin_d1": 22,
+      "thin_d0": 15,
+      "near_fp": 244,
+      "fp": 19601,
+      "dice": 0.7565730956701178,
+      "precision": 0.764964746510624,
+      "far_recall": 0.7485781990521327
+    },
+    "candidate": {
+      "thin_d1": 23,
+      "thin_d0": 20,
+      "near_fp": 347,
+      "fp": 24537,
+      "dice": 0.7748868715161727,
+      "precision": 0.7388986432561852,
+      "far_recall": 0.8145379146919431
+    }
+  },
+  {
+    "image": "IDRiD_47",
+    "seed": 2028,
+    "thin_den": 23,
+    "ring_area": 15454,
+    "fov_area": 759913,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 13,
+      "near_fp": 72,
+      "fp": 15120,
+      "dice": 0.7416341729459999,
+      "precision": 0.7964239551917277,
+      "far_recall": 0.695521327014218
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 13,
+      "near_fp": 117,
+      "fp": 17899,
+      "dice": 0.7748181143281366,
+      "precision": 0.7846840452790241,
+      "far_recall": 0.7664810426540284
+    }
+  },
+  {
+    "image": "IDRiD_47",
+    "seed": 2029,
+    "thin_den": 23,
+    "ring_area": 15454,
+    "fov_area": 759913,
+    "base": {
+      "thin_d1": 15,
+      "thin_d0": 10,
+      "near_fp": 151,
+      "fp": 17530,
+      "dice": 0.7419086324242276,
+      "precision": 0.775653331285674,
+      "far_recall": 0.7125
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 14,
+      "near_fp": 232,
+      "fp": 21107,
+      "dice": 0.7650245304380643,
+      "precision": 0.7573601259929417,
+      "far_recall": 0.7737677725118484
+    }
+  },
+  {
+    "image": "IDRiD_48",
+    "seed": 2027,
+    "thin_den": 170,
+    "ring_area": 47041,
+    "fov_area": 759929,
+    "base": {
+      "thin_d1": 80,
+      "thin_d0": 56,
+      "near_fp": 1750,
+      "fp": 26752,
+      "dice": 0.6559622927692471,
+      "precision": 0.6005494833661829,
+      "far_recall": 0.7274964117285216
+    },
+    "candidate": {
+      "thin_d1": 90,
+      "thin_d0": 65,
+      "near_fp": 2080,
+      "fp": 32429,
+      "dice": 0.6599934586334629,
+      "precision": 0.5722557838921571,
+      "far_recall": 0.7839953771879136
+    }
+  },
+  {
+    "image": "IDRiD_48",
+    "seed": 2028,
+    "thin_den": 170,
+    "ring_area": 47041,
+    "fov_area": 759929,
+    "base": {
+      "thin_d1": 72,
+      "thin_d0": 49,
+      "near_fp": 1491,
+      "fp": 21718,
+      "dice": 0.658605296233693,
+      "precision": 0.6362631473169424,
+      "far_recall": 0.6881279475087144
+    },
+    "candidate": {
+      "thin_d1": 80,
+      "thin_d0": 56,
+      "near_fp": 1712,
+      "fp": 25883,
+      "dice": 0.6741571206738156,
+      "precision": 0.615659895462105,
+      "far_recall": 0.7507968758737674
+    }
+  },
+  {
+    "image": "IDRiD_48",
+    "seed": 2029,
+    "thin_den": 170,
+    "ring_area": 47041,
+    "fov_area": 759929,
+    "base": {
+      "thin_d1": 77,
+      "thin_d0": 61,
+      "near_fp": 1314,
+      "fp": 23576,
+      "dice": 0.6582276337403261,
+      "precision": 0.6224517575466411,
+      "far_recall": 0.7030588849329878
+    },
+    "candidate": {
+      "thin_d1": 82,
+      "thin_d0": 64,
+      "near_fp": 1523,
+      "fp": 28177,
+      "dice": 0.6668574927048796,
+      "precision": 0.5981144454586946,
+      "far_recall": 0.7582716647715623
+    }
+  },
+  {
+    "image": "IDRiD_50",
+    "seed": 2027,
+    "thin_den": 24,
+    "ring_area": 13923,
+    "fov_area": 760715,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 126,
+      "fp": 25075,
+      "dice": 0.648876583285596,
+      "precision": 0.6192276737582191,
+      "far_recall": 0.6820972679972563
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 2,
+      "near_fp": 180,
+      "fp": 30483,
+      "dice": 0.6625796850358722,
+      "precision": 0.5947918328282022,
+      "far_recall": 0.7483981061683369
+    }
+  },
+  {
+    "image": "IDRiD_50",
+    "seed": 2028,
+    "thin_den": 24,
+    "ring_area": 13923,
+    "fov_area": 760715,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 108,
+      "fp": 20274,
+      "dice": 0.6492032712250232,
+      "precision": 0.6550574223734581,
+      "far_recall": 0.6440031452327974
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 150,
+      "fp": 24482,
+      "dice": 0.6738961192151929,
+      "precision": 0.6363879399970296,
+      "far_recall": 0.7167115587305305
+    }
+  },
+  {
+    "image": "IDRiD_50",
+    "seed": 2029,
+    "thin_den": 24,
+    "ring_area": 13923,
+    "fov_area": 760715,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 0,
+      "near_fp": 133,
+      "fp": 20529,
+      "dice": 0.6498097294209558,
+      "precision": 0.6532614937675235,
+      "far_recall": 0.6469308885282653
+    },
+    "candidate": {
+      "thin_d1": 6,
+      "thin_d0": 2,
+      "near_fp": 145,
+      "fp": 24576,
+      "dice": 0.6670403941509017,
+      "precision": 0.6321894128739692,
+      "far_recall": 0.7064728221772372
+    }
+  },
+  {
+    "image": "IDRiD_51",
+    "seed": 2027,
+    "thin_den": 17,
+    "ring_area": 15660,
+    "fov_area": 759541,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 15,
+      "near_fp": 321,
+      "fp": 16283,
+      "dice": 0.7963748026405758,
+      "precision": 0.7973263962360438,
+      "far_recall": 0.7949378485856489
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 17,
+      "near_fp": 498,
+      "fp": 21648,
+      "dice": 0.8024845448419325,
+      "precision": 0.7597922815738666,
+      "far_recall": 0.8496986219143136
+    }
+  },
+  {
+    "image": "IDRiD_51",
+    "seed": 2028,
+    "thin_den": 17,
+    "ring_area": 15660,
+    "fov_area": 759541,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 14,
+      "near_fp": 204,
+      "fp": 11943,
+      "dice": 0.8049339958517217,
+      "precision": 0.8391081772868113,
+      "far_recall": 0.7729284946102093
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 16,
+      "near_fp": 275,
+      "fp": 15181,
+      "dice": 0.8145111347816394,
+      "precision": 0.8124482660637733,
+      "far_recall": 0.8159717880099042
+    }
+  },
+  {
+    "image": "IDRiD_51",
+    "seed": 2029,
+    "thin_den": 17,
+    "ring_area": 15660,
+    "fov_area": 759541,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 14,
+      "near_fp": 229,
+      "fp": 13593,
+      "dice": 0.7916530267727048,
+      "precision": 0.8193861280892905,
+      "far_recall": 0.7651626941450116
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 16,
+      "near_fp": 328,
+      "fp": 16976,
+      "dice": 0.8026964470994161,
+      "precision": 0.7938504881721474,
+      "far_recall": 0.8111322311982593
+    }
+  },
+  {
+    "image": "IDRiD_53",
+    "seed": 2027,
+    "thin_den": 83,
+    "ring_area": 38902,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 23,
+      "thin_d0": 16,
+      "near_fp": 1115,
+      "fp": 18451,
+      "dice": 0.7806595371644512,
+      "precision": 0.7517724771629603,
+      "far_recall": 0.8129683167148505
+    },
+    "candidate": {
+      "thin_d1": 24,
+      "thin_d0": 17,
+      "near_fp": 1333,
+      "fp": 24070,
+      "dice": 0.7769073793693635,
+      "precision": 0.7102792489167068,
+      "far_recall": 0.8584134757212815
+    }
+  },
+  {
+    "image": "IDRiD_53",
+    "seed": 2028,
+    "thin_den": 83,
+    "ring_area": 38902,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 21,
+      "thin_d0": 16,
+      "near_fp": 839,
+      "fp": 15445,
+      "dice": 0.783085209305012,
+      "precision": 0.7783311326712211,
+      "far_recall": 0.7886010974098767
+    },
+    "candidate": {
+      "thin_d1": 21,
+      "thin_d0": 18,
+      "near_fp": 950,
+      "fp": 19127,
+      "dice": 0.7873185258716963,
+      "precision": 0.7490948682967783,
+      "far_recall": 0.8304619741577675
+    }
+  },
+  {
+    "image": "IDRiD_53",
+    "seed": 2029,
+    "thin_den": 83,
+    "ring_area": 38902,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 21,
+      "thin_d0": 16,
+      "near_fp": 798,
+      "fp": 14466,
+      "dice": 0.7816967844318822,
+      "precision": 0.786985908026682,
+      "far_recall": 0.77802525222727
+    },
+    "candidate": {
+      "thin_d1": 22,
+      "thin_d0": 20,
+      "near_fp": 898,
+      "fp": 17677,
+      "dice": 0.7876617779988929,
+      "precision": 0.7607368606272249,
+      "far_recall": 0.8182931146380318
+    }
+  },
+  {
+    "image": "IDRiD_03",
+    "seed": 2027,
+    "thin_den": 266,
+    "ring_area": 51895,
+    "fov_area": 758346,
+    "base": {
+      "thin_d1": 85,
+      "thin_d0": 59,
+      "near_fp": 507,
+      "fp": 8628,
+      "dice": 0.7861539681668162,
+      "precision": 0.8819052833287708,
+      "far_recall": 0.7110768351899457
+    },
+    "candidate": {
+      "thin_d1": 89,
+      "thin_d0": 63,
+      "near_fp": 763,
+      "fp": 14057,
+      "dice": 0.8043647967178552,
+      "precision": 0.833916207849902,
+      "far_recall": 0.7793773207654956
+    }
+  },
+  {
+    "image": "IDRiD_03",
+    "seed": 2028,
+    "thin_den": 266,
+    "ring_area": 51895,
+    "fov_area": 758346,
+    "base": {
+      "thin_d1": 90,
+      "thin_d0": 61,
+      "near_fp": 708,
+      "fp": 13167,
+      "dice": 0.8037030648036341,
+      "precision": 0.8414626804570575,
+      "far_recall": 0.7734361610968294
+    },
+    "candidate": {
+      "thin_d1": 98,
+      "thin_d0": 68,
+      "near_fp": 1081,
+      "fp": 20814,
+      "dice": 0.8053063735323224,
+      "precision": 0.7833860627757888,
+      "far_recall": 0.8329505855469865
+    }
+  },
+  {
+    "image": "IDRiD_03",
+    "seed": 2029,
+    "thin_den": 266,
+    "ring_area": 51895,
+    "fov_area": 758346,
+    "base": {
+      "thin_d1": 66,
+      "thin_d0": 51,
+      "near_fp": 447,
+      "fp": 9621,
+      "dice": 0.8114387106313766,
+      "precision": 0.8769976220307346,
+      "far_recall": 0.7591202513567552
+    },
+    "candidate": {
+      "thin_d1": 68,
+      "thin_d0": 51,
+      "near_fp": 664,
+      "fp": 14459,
+      "dice": 0.8229890195859294,
+      "precision": 0.8358759563213694,
+      "far_recall": 0.814830048557555
+    }
+  },
+  {
+    "image": "IDRiD_04",
+    "seed": 2027,
+    "thin_den": 59,
+    "ring_area": 8587,
+    "fov_area": 704951,
+    "base": {
+      "thin_d1": 53,
+      "thin_d0": 52,
+      "near_fp": 74,
+      "fp": 6226,
+      "dice": 0.812669404064963,
+      "precision": 0.8988366047055765,
+      "far_recall": 0.7412460514819544
+    },
+    "candidate": {
+      "thin_d1": 53,
+      "thin_d0": 52,
+      "near_fp": 92,
+      "fp": 9030,
+      "dice": 0.8221084434928975,
+      "precision": 0.8660157872870794,
+      "far_recall": 0.7821762215202634
+    }
+  },
+  {
+    "image": "IDRiD_04",
+    "seed": 2028,
+    "thin_den": 59,
+    "ring_area": 8587,
+    "fov_area": 704951,
+    "base": {
+      "thin_d1": 53,
+      "thin_d0": 51,
+      "near_fp": 76,
+      "fp": 9171,
+      "dice": 0.8134623284275536,
+      "precision": 0.862295229658103,
+      "far_recall": 0.7697829155185161
+    },
+    "candidate": {
+      "thin_d1": 53,
+      "thin_d0": 51,
+      "near_fp": 99,
+      "fp": 13563,
+      "dice": 0.8161546983583442,
+      "precision": 0.8175544794188861,
+      "far_recall": 0.8147859399153169
+    }
+  },
+  {
+    "image": "IDRiD_04",
+    "seed": 2029,
+    "thin_den": 59,
+    "ring_area": 8587,
+    "fov_area": 704951,
+    "base": {
+      "thin_d1": 53,
+      "thin_d0": 51,
+      "near_fp": 91,
+      "fp": 8048,
+      "dice": 0.8135296355583631,
+      "precision": 0.8756374200327596,
+      "far_recall": 0.7595402916862692
+    },
+    "candidate": {
+      "thin_d1": 53,
+      "thin_d0": 51,
+      "near_fp": 108,
+      "fp": 11228,
+      "dice": 0.8197589267910309,
+      "precision": 0.8414975013410881,
+      "far_recall": 0.799112843605081
+    }
+  },
+  {
+    "image": "IDRiD_05",
+    "seed": 2027,
+    "thin_den": 24,
+    "ring_area": 4764,
+    "fov_area": 760089,
+    "base": {
+      "thin_d1": 1,
+      "thin_d0": 0,
+      "near_fp": 83,
+      "fp": 6464,
+      "dice": 0.7559284889052991,
+      "precision": 0.9075660293718093,
+      "far_recall": 0.6483346639644619
+    },
+    "candidate": {
+      "thin_d1": 1,
+      "thin_d0": 0,
+      "near_fp": 112,
+      "fp": 9114,
+      "dice": 0.7923845390582717,
+      "precision": 0.8851982012621396,
+      "far_recall": 0.7176810170116072
+    }
+  },
+  {
+    "image": "IDRiD_05",
+    "seed": 2028,
+    "thin_den": 24,
+    "ring_area": 4764,
+    "fov_area": 760089,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 105,
+      "fp": 8868,
+      "dice": 0.769809061656334,
+      "precision": 0.8829059603348562,
+      "far_recall": 0.6827161252021535
+    },
+    "candidate": {
+      "thin_d1": 5,
+      "thin_d0": 2,
+      "near_fp": 143,
+      "fp": 12933,
+      "dice": 0.8009944870824776,
+      "precision": 0.8514011926510634,
+      "far_recall": 0.7565252103420745
+    }
+  },
+  {
+    "image": "IDRiD_05",
+    "seed": 2029,
+    "thin_den": 24,
+    "ring_area": 4764,
+    "fov_area": 760089,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 103,
+      "fp": 7854,
+      "dice": 0.753036675738404,
+      "precision": 0.8905686140641763,
+      "far_recall": 0.6526029191999836
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 140,
+      "fp": 10959,
+      "dice": 0.7827670580874384,
+      "precision": 0.8647354324294302,
+      "far_recall": 0.7151630534913713
+    }
+  },
+  {
+    "image": "IDRiD_06",
+    "seed": 2027,
+    "thin_den": 5,
+    "ring_area": 9693,
+    "fov_area": 757659,
+    "base": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 92,
+      "fp": 8028,
+      "dice": 0.7552658613482589,
+      "precision": 0.8690994472435553,
+      "far_recall": 0.6664778876890937
+    },
+    "candidate": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 101,
+      "fp": 10793,
+      "dice": 0.7801860502685747,
+      "precision": 0.8430017746487068,
+      "far_recall": 0.7249112738805407
+    }
+  },
+  {
+    "image": "IDRiD_06",
+    "seed": 2028,
+    "thin_den": 5,
+    "ring_area": 9693,
+    "fov_area": 757659,
+    "base": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 112,
+      "fp": 10285,
+      "dice": 0.7728086842230713,
+      "precision": 0.8465497948526669,
+      "far_recall": 0.7097711998791815
+    },
+    "candidate": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 143,
+      "fp": 14389,
+      "dice": 0.7900253027987207,
+      "precision": 0.810416611768426,
+      "far_recall": 0.7696770620956983
+    }
+  },
+  {
+    "image": "IDRiD_06",
+    "seed": 2029,
+    "thin_den": 5,
+    "ring_area": 9693,
+    "fov_area": 757659,
+    "base": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 92,
+      "fp": 8409,
+      "dice": 0.7485993106480759,
+      "precision": 0.8625666002026607,
+      "far_recall": 0.6599713055954088
+    },
+    "candidate": {
+      "thin_d1": 5,
+      "thin_d0": 5,
+      "near_fp": 109,
+      "fp": 11141,
+      "dice": 0.7745442787276181,
+      "precision": 0.8376657438438001,
+      "far_recall": 0.7191220519016336
+    }
+  },
+  {
+    "image": "IDRiD_10",
+    "seed": 2027,
+    "thin_den": 34,
+    "ring_area": 33984,
+    "fov_area": 758495,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 12,
+      "near_fp": 555,
+      "fp": 12384,
+      "dice": 0.750830456588289,
+      "precision": 0.7882859780490307,
+      "far_recall": 0.7181435659109464
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 12,
+      "near_fp": 669,
+      "fp": 16596,
+      "dice": 0.7673490525802718,
+      "precision": 0.7522023471795025,
+      "far_recall": 0.7843214218426175
+    }
+  },
+  {
+    "image": "IDRiD_10",
+    "seed": 2028,
+    "thin_den": 34,
+    "ring_area": 33984,
+    "fov_area": 758495,
+    "base": {
+      "thin_d1": 29,
+      "thin_d0": 22,
+      "near_fp": 1066,
+      "fp": 23810,
+      "dice": 0.7315612992358282,
+      "precision": 0.6810192379829592,
+      "far_recall": 0.7912767694529925
+    },
+    "candidate": {
+      "thin_d1": 29,
+      "thin_d0": 22,
+      "near_fp": 1276,
+      "fp": 31041,
+      "dice": 0.7244324071287659,
+      "precision": 0.6356903937562349,
+      "far_recall": 0.8429787100420775
+    }
+  },
+  {
+    "image": "IDRiD_10",
+    "seed": 2029,
+    "thin_den": 34,
+    "ring_area": 33984,
+    "fov_area": 758495,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 17,
+      "near_fp": 834,
+      "fp": 16207,
+      "dice": 0.7642961258151132,
+      "precision": 0.7545137837019085,
+      "far_recall": 0.7751365948627771
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 17,
+      "near_fp": 989,
+      "fp": 21559,
+      "dice": 0.7660335612895811,
+      "precision": 0.7120783140575336,
+      "far_recall": 0.8297117377378634
+    }
+  },
+  {
+    "image": "IDRiD_11",
+    "seed": 2027,
+    "thin_den": 35,
+    "ring_area": 21206,
+    "fov_area": 757248,
+    "base": {
+      "thin_d1": 26,
+      "thin_d0": 20,
+      "near_fp": 340,
+      "fp": 12889,
+      "dice": 0.6973565691230003,
+      "precision": 0.7842050629520493,
+      "far_recall": 0.6274512468573759
+    },
+    "candidate": {
+      "thin_d1": 26,
+      "thin_d0": 22,
+      "near_fp": 423,
+      "fp": 16249,
+      "dice": 0.7329916675382631,
+      "precision": 0.7638569975294288,
+      "far_recall": 0.7045049942243664
+    }
+  },
+  {
+    "image": "IDRiD_11",
+    "seed": 2028,
+    "thin_den": 35,
+    "ring_area": 21206,
+    "fov_area": 757248,
+    "base": {
+      "thin_d1": 24,
+      "thin_d0": 18,
+      "near_fp": 615,
+      "fp": 21058,
+      "dice": 0.6914122346246443,
+      "precision": 0.705906177115484,
+      "far_recall": 0.6777740028538425
+    },
+    "candidate": {
+      "thin_d1": 25,
+      "thin_d0": 21,
+      "near_fp": 724,
+      "fp": 25678,
+      "dice": 0.7126948775055679,
+      "precision": 0.6837606837606838,
+      "far_recall": 0.7447713528572399
+    }
+  },
+  {
+    "image": "IDRiD_11",
+    "seed": 2029,
+    "thin_den": 35,
+    "ring_area": 21206,
+    "fov_area": 757248,
+    "base": {
+      "thin_d1": 23,
+      "thin_d0": 16,
+      "near_fp": 360,
+      "fp": 16119,
+      "dice": 0.6982710380945548,
+      "precision": 0.7511924056494559,
+      "far_recall": 0.6526330094448597
+    },
+    "candidate": {
+      "thin_d1": 24,
+      "thin_d0": 17,
+      "near_fp": 442,
+      "fp": 19612,
+      "dice": 0.7230786953899532,
+      "precision": 0.7312099117372951,
+      "far_recall": 0.7159611333831624
+    }
+  },
+  {
+    "image": "IDRiD_14",
+    "seed": 2027,
+    "thin_den": 33,
+    "ring_area": 28739,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 11,
+      "thin_d0": 8,
+      "near_fp": 209,
+      "fp": 5977,
+      "dice": 0.7803611621199997,
+      "precision": 0.9189647224707829,
+      "far_recall": 0.6781695805797957
+    },
+    "candidate": {
+      "thin_d1": 11,
+      "thin_d0": 8,
+      "near_fp": 274,
+      "fp": 8385,
+      "dice": 0.8123756542709161,
+      "precision": 0.8983587083010085,
+      "far_recall": 0.7419023083894224
+    }
+  },
+  {
+    "image": "IDRiD_14",
+    "seed": 2028,
+    "thin_den": 33,
+    "ring_area": 28739,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 18,
+      "thin_d0": 12,
+      "near_fp": 278,
+      "fp": 7830,
+      "dice": 0.8062837082073602,
+      "precision": 0.9028957648663731,
+      "far_recall": 0.7276874357225045
+    },
+    "candidate": {
+      "thin_d1": 18,
+      "thin_d0": 12,
+      "near_fp": 370,
+      "fp": 11476,
+      "dice": 0.827592374379261,
+      "precision": 0.872682694121171,
+      "far_recall": 0.7863288767603124
+    }
+  },
+  {
+    "image": "IDRiD_14",
+    "seed": 2029,
+    "thin_den": 33,
+    "ring_area": 28739,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 13,
+      "near_fp": 222,
+      "fp": 6693,
+      "dice": 0.8003621904649423,
+      "precision": 0.914024766211078,
+      "far_recall": 0.7112425794495301
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 13,
+      "near_fp": 291,
+      "fp": 9154,
+      "dice": 0.8231163746379977,
+      "precision": 0.8928955866523143,
+      "far_recall": 0.7629904181982954
+    }
+  },
+  {
+    "image": "IDRiD_21",
+    "seed": 2027,
+    "thin_den": 110,
+    "ring_area": 42844,
+    "fov_area": 758128,
+    "base": {
+      "thin_d1": 29,
+      "thin_d0": 23,
+      "near_fp": 446,
+      "fp": 7335,
+      "dice": 0.7920415724390126,
+      "precision": 0.8997663264051162,
+      "far_recall": 0.7080293565156611
+    },
+    "candidate": {
+      "thin_d1": 29,
+      "thin_d0": 23,
+      "near_fp": 515,
+      "fp": 10660,
+      "dice": 0.8177814243144226,
+      "precision": 0.8706687372609919,
+      "far_recall": 0.7718754095496047
+    }
+  },
+  {
+    "image": "IDRiD_21",
+    "seed": 2028,
+    "thin_den": 110,
+    "ring_area": 42844,
+    "fov_area": 758128,
+    "base": {
+      "thin_d1": 41,
+      "thin_d0": 29,
+      "near_fp": 857,
+      "fp": 10519,
+      "dice": 0.8012542376803545,
+      "precision": 0.8681317303714475,
+      "far_recall": 0.7445284172819012
+    },
+    "candidate": {
+      "thin_d1": 42,
+      "thin_d0": 29,
+      "near_fp": 1016,
+      "fp": 15354,
+      "dice": 0.8195766591011762,
+      "precision": 0.8306120647809011,
+      "far_recall": 0.809816084924206
+    }
+  },
+  {
+    "image": "IDRiD_21",
+    "seed": 2029,
+    "thin_den": 110,
+    "ring_area": 42844,
+    "fov_area": 758128,
+    "base": {
+      "thin_d1": 45,
+      "thin_d0": 36,
+      "near_fp": 714,
+      "fp": 8483,
+      "dice": 0.8002268002268003,
+      "precision": 0.8887139727393181,
+      "far_recall": 0.7281355117731859
+    },
+    "candidate": {
+      "thin_d1": 45,
+      "thin_d0": 36,
+      "near_fp": 809,
+      "fp": 11820,
+      "dice": 0.8219539584503088,
+      "precision": 0.8609657119331883,
+      "far_recall": 0.787066969551352
+    }
+  },
+  {
+    "image": "IDRiD_22",
+    "seed": 2027,
+    "thin_den": 91,
+    "ring_area": 43501,
+    "fov_area": 758275,
+    "base": {
+      "thin_d1": 24,
+      "thin_d0": 17,
+      "near_fp": 425,
+      "fp": 8287,
+      "dice": 0.8034834574648294,
+      "precision": 0.8972104042371094,
+      "far_recall": 0.7287686877076412
+    },
+    "candidate": {
+      "thin_d1": 25,
+      "thin_d0": 20,
+      "near_fp": 582,
+      "fp": 11580,
+      "dice": 0.8230616723741266,
+      "precision": 0.8701968345065686,
+      "far_recall": 0.7821013289036545
+    }
+  },
+  {
+    "image": "IDRiD_22",
+    "seed": 2028,
+    "thin_den": 91,
+    "ring_area": 43501,
+    "fov_area": 758275,
+    "base": {
+      "thin_d1": 28,
+      "thin_d0": 18,
+      "near_fp": 512,
+      "fp": 9749,
+      "dice": 0.8238506907974469,
+      "precision": 0.8869353435778486,
+      "far_recall": 0.7721760797342193
+    },
+    "candidate": {
+      "thin_d1": 28,
+      "thin_d0": 24,
+      "near_fp": 719,
+      "fp": 14132,
+      "dice": 0.8349389061586285,
+      "precision": 0.8520457305582311,
+      "far_recall": 0.8214804817275747
+    }
+  },
+  {
+    "image": "IDRiD_22",
+    "seed": 2029,
+    "thin_den": 91,
+    "ring_area": 43501,
+    "fov_area": 758275,
+    "base": {
+      "thin_d1": 29,
+      "thin_d0": 19,
+      "near_fp": 417,
+      "fp": 8788,
+      "dice": 0.8178709924081053,
+      "precision": 0.8949557733683959,
+      "far_recall": 0.75625
+    },
+    "candidate": {
+      "thin_d1": 30,
+      "thin_d0": 21,
+      "near_fp": 565,
+      "fp": 11939,
+      "dice": 0.8313850996852046,
+      "precision": 0.86904683558188,
+      "far_recall": 0.7998857973421927
+    }
+  },
+  {
+    "image": "IDRiD_25",
+    "seed": 2027,
+    "thin_den": 227,
+    "ring_area": 71458,
+    "fov_area": 760149,
+    "base": {
+      "thin_d1": 96,
+      "thin_d0": 65,
+      "near_fp": 1331,
+      "fp": 15381,
+      "dice": 0.6734132747846647,
+      "precision": 0.7641746649903407,
+      "far_recall": 0.5961770388909782
+    },
+    "candidate": {
+      "thin_d1": 96,
+      "thin_d0": 73,
+      "near_fp": 1671,
+      "fp": 18779,
+      "dice": 0.7107901616874381,
+      "precision": 0.748893494684763,
+      "far_recall": 0.6716895983815958
+    }
+  },
+  {
+    "image": "IDRiD_25",
+    "seed": 2028,
+    "thin_den": 227,
+    "ring_area": 71458,
+    "fov_area": 760149,
+    "base": {
+      "thin_d1": 88,
+      "thin_d0": 57,
+      "near_fp": 1836,
+      "fp": 20981,
+      "dice": 0.6854964345876661,
+      "precision": 0.720636991864506,
+      "far_recall": 0.6469855925719399
+    },
+    "candidate": {
+      "thin_d1": 93,
+      "thin_d0": 71,
+      "near_fp": 2310,
+      "fp": 25874,
+      "dice": 0.7051471464315501,
+      "precision": 0.6958039902653514,
+      "far_recall": 0.7094004901897216
+    }
+  },
+  {
+    "image": "IDRiD_25",
+    "seed": 2029,
+    "thin_den": 227,
+    "ring_area": 71458,
+    "fov_area": 760149,
+    "base": {
+      "thin_d1": 78,
+      "thin_d0": 47,
+      "near_fp": 1569,
+      "fp": 16009,
+      "dice": 0.6973911438627944,
+      "precision": 0.7676858556689062,
+      "far_recall": 0.6341083863939933
+    },
+    "candidate": {
+      "thin_d1": 86,
+      "thin_d0": 58,
+      "near_fp": 1910,
+      "fp": 19649,
+      "dice": 0.7225197478755837,
+      "precision": 0.746771657602392,
+      "far_recall": 0.6959786287655778
+    }
+  },
+  {
+    "image": "IDRiD_27",
+    "seed": 2027,
+    "thin_den": 17,
+    "ring_area": 28638,
+    "fov_area": 758134,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 15,
+      "near_fp": 402,
+      "fp": 11836,
+      "dice": 0.7299925845644858,
+      "precision": 0.8122044870370958,
+      "far_recall": 0.6625598007733141
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 15,
+      "near_fp": 520,
+      "fp": 15564,
+      "dice": 0.7562031662622823,
+      "precision": 0.7837612537512504,
+      "far_recall": 0.730178910806737
+    }
+  },
+  {
+    "image": "IDRiD_27",
+    "seed": 2028,
+    "thin_den": 17,
+    "ring_area": 28638,
+    "fov_area": 758134,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 15,
+      "near_fp": 565,
+      "fp": 14173,
+      "dice": 0.7525591679633118,
+      "precision": 0.7955129129995672,
+      "far_recall": 0.7142932040107478
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 15,
+      "near_fp": 685,
+      "fp": 18916,
+      "dice": 0.7714150617883477,
+      "precision": 0.7614026236125127,
+      "far_recall": 0.7820040631758307
+    }
+  },
+  {
+    "image": "IDRiD_27",
+    "seed": 2029,
+    "thin_den": 17,
+    "ring_area": 28638,
+    "fov_area": 758134,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 14,
+      "near_fp": 436,
+      "fp": 12731,
+      "dice": 0.7443746510329425,
+      "precision": 0.8072754246268431,
+      "far_recall": 0.6909364964938725
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 14,
+      "near_fp": 569,
+      "fp": 16017,
+      "dice": 0.7707205811584936,
+      "precision": 0.7849345417925478,
+      "far_recall": 0.7575594730978439
+    }
+  },
+  {
+    "image": "IDRiD_29",
+    "seed": 2027,
+    "thin_den": 28,
+    "ring_area": 4173,
+    "fov_area": 760709,
+    "base": {
+      "thin_d1": 26,
+      "thin_d0": 22,
+      "near_fp": 63,
+      "fp": 13820,
+      "dice": 0.7835830907701551,
+      "precision": 0.8293532215444644,
+      "far_recall": 0.7427097577516149
+    },
+    "candidate": {
+      "thin_d1": 28,
+      "thin_d0": 25,
+      "near_fp": 96,
+      "fp": 17214,
+      "dice": 0.7941061167799819,
+      "precision": 0.8046327927273552,
+      "far_recall": 0.7837107694360137
+    }
+  },
+  {
+    "image": "IDRiD_29",
+    "seed": 2028,
+    "thin_den": 28,
+    "ring_area": 4173,
+    "fov_area": 760709,
+    "base": {
+      "thin_d1": 28,
+      "thin_d0": 26,
+      "near_fp": 72,
+      "fp": 15162,
+      "dice": 0.79958398217716,
+      "precision": 0.8226811839966318,
+      "far_recall": 0.7776962500972774
+    },
+    "candidate": {
+      "thin_d1": 28,
+      "thin_d0": 27,
+      "near_fp": 110,
+      "fp": 20289,
+      "dice": 0.8034232365145229,
+      "precision": 0.7856214537039972,
+      "far_recall": 0.8218879587321705
+    }
+  },
+  {
+    "image": "IDRiD_29",
+    "seed": 2029,
+    "thin_den": 28,
+    "ring_area": 4173,
+    "fov_area": 760709,
+    "base": {
+      "thin_d1": 24,
+      "thin_d0": 20,
+      "near_fp": 83,
+      "fp": 15105,
+      "dice": 0.7897702842925364,
+      "precision": 0.8201485961946039,
+      "far_recall": 0.7617427653448064
+    },
+    "candidate": {
+      "thin_d1": 24,
+      "thin_d0": 22,
+      "near_fp": 116,
+      "fp": 18800,
+      "dice": 0.7935040696197638,
+      "precision": 0.7926112232628432,
+      "far_recall": 0.7943723665632747
+    }
+  },
+  {
+    "image": "IDRiD_34",
+    "seed": 2027,
+    "thin_den": 149,
+    "ring_area": 65151,
+    "fov_area": 760582,
+    "base": {
+      "thin_d1": 56,
+      "thin_d0": 43,
+      "near_fp": 816,
+      "fp": 14280,
+      "dice": 0.7297869030953492,
+      "precision": 0.7666590411451355,
+      "far_recall": 0.7101096993133927
+    },
+    "candidate": {
+      "thin_d1": 64,
+      "thin_d0": 51,
+      "near_fp": 1105,
+      "fp": 17519,
+      "dice": 0.7484558574229403,
+      "precision": 0.7434692204064898,
+      "far_recall": 0.766411490805777
+    }
+  },
+  {
+    "image": "IDRiD_34",
+    "seed": 2028,
+    "thin_den": 149,
+    "ring_area": 65151,
+    "fov_area": 760582,
+    "base": {
+      "thin_d1": 64,
+      "thin_d0": 51,
+      "near_fp": 853,
+      "fp": 17356,
+      "dice": 0.7377311694212106,
+      "precision": 0.7404943107908075,
+      "far_recall": 0.7474706021624181
+    },
+    "candidate": {
+      "thin_d1": 69,
+      "thin_d0": 57,
+      "near_fp": 1185,
+      "fp": 21816,
+      "dice": 0.7499491980295843,
+      "precision": 0.7103904206879157,
+      "far_recall": 0.8073395943493016
+    }
+  },
+  {
+    "image": "IDRiD_34",
+    "seed": 2029,
+    "thin_den": 149,
+    "ring_area": 65151,
+    "fov_area": 760582,
+    "base": {
+      "thin_d1": 71,
+      "thin_d0": 53,
+      "near_fp": 949,
+      "fp": 15642,
+      "dice": 0.7429748062015504,
+      "precision": 0.7582903235775875,
+      "far_recall": 0.7434614473995739
+    },
+    "candidate": {
+      "thin_d1": 73,
+      "thin_d0": 59,
+      "near_fp": 1273,
+      "fp": 19248,
+      "dice": 0.7525200161281033,
+      "precision": 0.7308197913461807,
+      "far_recall": 0.7893141819903717
+    }
+  },
+  {
+    "image": "IDRiD_35",
+    "seed": 2027,
+    "thin_den": 96,
+    "ring_area": 60122,
+    "fov_area": 760419,
+    "base": {
+      "thin_d1": 26,
+      "thin_d0": 11,
+      "near_fp": 848,
+      "fp": 15605,
+      "dice": 0.7086371481912008,
+      "precision": 0.7205408309455588,
+      "far_recall": 0.7034469202866179
+    },
+    "candidate": {
+      "thin_d1": 34,
+      "thin_d0": 14,
+      "near_fp": 1049,
+      "fp": 19014,
+      "dice": 0.7317250555789717,
+      "precision": 0.6995401608646872,
+      "far_recall": 0.7735646766613655
+    }
+  },
+  {
+    "image": "IDRiD_35",
+    "seed": 2028,
+    "thin_den": 96,
+    "ring_area": 60122,
+    "fov_area": 760419,
+    "base": {
+      "thin_d1": 28,
+      "thin_d0": 15,
+      "near_fp": 1251,
+      "fp": 20204,
+      "dice": 0.7071404275794556,
+      "precision": 0.678398038934785,
+      "far_recall": 0.7451887854475279
+    },
+    "candidate": {
+      "thin_d1": 37,
+      "thin_d0": 27,
+      "near_fp": 1569,
+      "fp": 24870,
+      "dice": 0.7212028305538781,
+      "precision": 0.6519049351958123,
+      "far_recall": 0.8141629290781409
+    }
+  },
+  {
+    "image": "IDRiD_35",
+    "seed": 2029,
+    "thin_den": 96,
+    "ring_area": 60122,
+    "fov_area": 760419,
+    "base": {
+      "thin_d1": 27,
+      "thin_d0": 15,
+      "near_fp": 962,
+      "fp": 17400,
+      "dice": 0.7229839429460316,
+      "precision": 0.7096467368631836,
+      "far_recall": 0.7428300841627504
+    },
+    "candidate": {
+      "thin_d1": 32,
+      "thin_d0": 18,
+      "near_fp": 1181,
+      "fp": 21046,
+      "dice": 0.7353767601676273,
+      "precision": 0.6851569278640457,
+      "far_recall": 0.7996890802851885
+    }
+  },
+  {
+    "image": "IDRiD_38",
+    "seed": 2027,
+    "thin_den": 44,
+    "ring_area": 7302,
+    "fov_area": 759403,
+    "base": {
+      "thin_d1": 39,
+      "thin_d0": 35,
+      "near_fp": 97,
+      "fp": 12735,
+      "dice": 0.7647208453357349,
+      "precision": 0.8136850421348315,
+      "far_recall": 0.721718955696615
+    },
+    "candidate": {
+      "thin_d1": 39,
+      "thin_d0": 36,
+      "near_fp": 112,
+      "fp": 16109,
+      "dice": 0.7806636013421151,
+      "precision": 0.7874465614609173,
+      "far_recall": 0.774429426102371
+    }
+  },
+  {
+    "image": "IDRiD_38",
+    "seed": 2028,
+    "thin_den": 44,
+    "ring_area": 7302,
+    "fov_area": 759403,
+    "base": {
+      "thin_d1": 39,
+      "thin_d0": 34,
+      "near_fp": 92,
+      "fp": 14851,
+      "dice": 0.7819268011603725,
+      "precision": 0.7989875610779497,
+      "far_recall": 0.7661526830984997
+    },
+    "candidate": {
+      "thin_d1": 39,
+      "thin_d0": 34,
+      "near_fp": 122,
+      "fp": 19424,
+      "dice": 0.7887924814766019,
+      "precision": 0.7639510013610733,
+      "far_recall": 0.8159434835312366
+    }
+  },
+  {
+    "image": "IDRiD_38",
+    "seed": 2029,
+    "thin_den": 44,
+    "ring_area": 7302,
+    "fov_area": 759403,
+    "base": {
+      "thin_d1": 41,
+      "thin_d0": 33,
+      "near_fp": 82,
+      "fp": 13565,
+      "dice": 0.7737022911087668,
+      "precision": 0.8083254440378121,
+      "far_recall": 0.7422218167125038
+    },
+    "candidate": {
+      "thin_d1": 41,
+      "thin_d0": 34,
+      "near_fp": 106,
+      "fp": 17179,
+      "dice": 0.7821751485404288,
+      "precision": 0.779005595934907,
+      "far_recall": 0.7856910102840161
+    }
+  },
+  {
+    "image": "IDRiD_49",
+    "seed": 2027,
+    "thin_den": 83,
+    "ring_area": 45703,
+    "fov_area": 760377,
+    "base": {
+      "thin_d1": 48,
+      "thin_d0": 36,
+      "near_fp": 824,
+      "fp": 14365,
+      "dice": 0.7744444516703844,
+      "precision": 0.805634107729985,
+      "far_recall": 0.7453876919107212
+    },
+    "candidate": {
+      "thin_d1": 50,
+      "thin_d0": 40,
+      "near_fp": 983,
+      "fp": 17896,
+      "dice": 0.7931060026173485,
+      "precision": 0.7821174637187104,
+      "far_recall": 0.8046445619920011
+    }
+  },
+  {
+    "image": "IDRiD_49",
+    "seed": 2028,
+    "thin_den": 83,
+    "ring_area": 45703,
+    "fov_area": 760377,
+    "base": {
+      "thin_d1": 52,
+      "thin_d0": 40,
+      "near_fp": 948,
+      "fp": 16778,
+      "dice": 0.7944812444644038,
+      "precision": 0.7914895732359009,
+      "far_recall": 0.7987098438911108
+    },
+    "candidate": {
+      "thin_d1": 56,
+      "thin_d0": 46,
+      "near_fp": 1167,
+      "fp": 21992,
+      "dice": 0.798263208816103,
+      "precision": 0.7546849901838301,
+      "far_recall": 0.8487162946716553
+    }
+  },
+  {
+    "image": "IDRiD_49",
+    "seed": 2029,
+    "thin_den": 83,
+    "ring_area": 45703,
+    "fov_area": 760377,
+    "base": {
+      "thin_d1": 48,
+      "thin_d0": 37,
+      "near_fp": 857,
+      "fp": 14888,
+      "dice": 0.7846198249045955,
+      "precision": 0.8042469265663007,
+      "far_recall": 0.7664817442910592
+    },
+    "candidate": {
+      "thin_d1": 50,
+      "thin_d0": 39,
+      "near_fp": 1015,
+      "fp": 18697,
+      "dice": 0.7951908854198502,
+      "precision": 0.7767415757170492,
+      "far_recall": 0.815623790478648
+    }
+  },
+  {
+    "image": "IDRiD_52",
+    "seed": 2027,
+    "thin_den": 3,
+    "ring_area": 2426,
+    "fov_area": 760489,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 11627,
+      "dice": 0.7664717539696132,
+      "precision": 0.8434769731970976,
+      "far_recall": 0.7025396647418288
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 14764,
+      "dice": 0.7915666641484435,
+      "precision": 0.82184143839749,
+      "far_recall": 0.7636485956158546
+    }
+  },
+  {
+    "image": "IDRiD_52",
+    "seed": 2028,
+    "thin_den": 3,
+    "ring_area": 2426,
+    "fov_area": 760489,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 6,
+      "fp": 12668,
+      "dice": 0.7949254790631654,
+      "precision": 0.8413942482252632,
+      "far_recall": 0.7535235745921399
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 6,
+      "fp": 17371,
+      "dice": 0.8103184613839062,
+      "precision": 0.8069137998110376,
+      "far_recall": 0.813970959242025
+    }
+  },
+  {
+    "image": "IDRiD_52",
+    "seed": 2029,
+    "thin_den": 3,
+    "ring_area": 2426,
+    "fov_area": 760489,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 13096,
+      "dice": 0.7794315029677573,
+      "precision": 0.8330145614974626,
+      "far_recall": 0.7325222851376353
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 16523,
+      "dice": 0.7929723620671941,
+      "precision": 0.8078385764959004,
+      "far_recall": 0.778852946123227
+    }
+  },
+  {
+    "image": "IDRiD_54",
+    "seed": 2027,
+    "thin_den": 40,
+    "ring_area": 27618,
+    "fov_area": 760374,
+    "base": {
+      "thin_d1": 18,
+      "thin_d0": 14,
+      "near_fp": 269,
+      "fp": 11262,
+      "dice": 0.786309516672462,
+      "precision": 0.8534376179383402,
+      "far_recall": 0.7304932634562181
+    },
+    "candidate": {
+      "thin_d1": 20,
+      "thin_d0": 15,
+      "near_fp": 346,
+      "fp": 14617,
+      "dice": 0.8111137637415732,
+      "precision": 0.829965683708486,
+      "far_recall": 0.79429361883983
+    }
+  },
+  {
+    "image": "IDRiD_54",
+    "seed": 2028,
+    "thin_den": 40,
+    "ring_area": 27618,
+    "fov_area": 760374,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 10,
+      "near_fp": 435,
+      "fp": 13518,
+      "dice": 0.8104494769513737,
+      "precision": 0.8391078208500459,
+      "far_recall": 0.7852515801075148
+    },
+    "candidate": {
+      "thin_d1": 21,
+      "thin_d0": 14,
+      "near_fp": 534,
+      "fp": 18165,
+      "dice": 0.8255726807650949,
+      "precision": 0.8071103182440827,
+      "far_recall": 0.8459816909961988
+    }
+  },
+  {
+    "image": "IDRiD_54",
+    "seed": 2029,
+    "thin_den": 40,
+    "ring_area": 27618,
+    "fov_area": 760374,
+    "base": {
+      "thin_d1": 21,
+      "thin_d0": 11,
+      "near_fp": 292,
+      "fp": 12033,
+      "dice": 0.809454885023929,
+      "precision": 0.8521363005197902,
+      "far_recall": 0.7721046357317979
+    },
+    "candidate": {
+      "thin_d1": 23,
+      "thin_d0": 16,
+      "near_fp": 359,
+      "fp": 15686,
+      "dice": 0.822756599547587,
+      "precision": 0.8247785435819528,
+      "far_recall": 0.8216559076902314
+    }
+  },
+  {
+    "image": "IDRiD_02",
+    "seed": 2027,
+    "thin_den": 73,
+    "ring_area": 12624,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 25,
+      "thin_d0": 19,
+      "near_fp": 327,
+      "fp": 11616,
+      "dice": 0.7120662992188429,
+      "precision": 0.7944434613342771,
+      "far_recall": 0.6447957571981279
+    },
+    "candidate": {
+      "thin_d1": 25,
+      "thin_d0": 19,
+      "near_fp": 405,
+      "fp": 14978,
+      "dice": 0.7298561826442868,
+      "precision": 0.7643857165329558,
+      "far_recall": 0.6983089652374259
+    }
+  },
+  {
+    "image": "IDRiD_02",
+    "seed": 2028,
+    "thin_den": 73,
+    "ring_area": 12624,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 28,
+      "thin_d0": 19,
+      "near_fp": 308,
+      "fp": 14488,
+      "dice": 0.7336496460310288,
+      "precision": 0.7707413561199462,
+      "far_recall": 0.6999463853588558
+    },
+    "candidate": {
+      "thin_d1": 28,
+      "thin_d0": 19,
+      "near_fp": 367,
+      "fp": 18220,
+      "dice": 0.7424810953253895,
+      "precision": 0.739948332215292,
+      "far_recall": 0.7453884163394241
+    }
+  },
+  {
+    "image": "IDRiD_02",
+    "seed": 2029,
+    "thin_den": 73,
+    "ring_area": 12624,
+    "fov_area": 760124,
+    "base": {
+      "thin_d1": 31,
+      "thin_d0": 19,
+      "near_fp": 312,
+      "fp": 12989,
+      "dice": 0.7163798597833014,
+      "precision": 0.7801195131447531,
+      "far_recall": 0.6622712321224152
+    },
+    "candidate": {
+      "thin_d1": 31,
+      "thin_d0": 19,
+      "near_fp": 359,
+      "fp": 16030,
+      "dice": 0.730247009706866,
+      "precision": 0.7543972543972544,
+      "far_recall": 0.7079306197562707
+    }
+  },
+  {
+    "image": "IDRiD_07",
+    "seed": 2027,
+    "thin_den": 18,
+    "ring_area": 13289,
+    "fov_area": 760094,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 13,
+      "near_fp": 107,
+      "fp": 9801,
+      "dice": 0.7525588090457972,
+      "precision": 0.8351886728997108,
+      "far_recall": 0.6852333757820719
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 13,
+      "near_fp": 118,
+      "fp": 13029,
+      "dice": 0.7673467035500231,
+      "precision": 0.803451553048017,
+      "far_recall": 0.7348568739272465
+    }
+  },
+  {
+    "image": "IDRiD_07",
+    "seed": 2028,
+    "thin_den": 18,
+    "ring_area": 13289,
+    "fov_area": 760094,
+    "base": {
+      "thin_d1": 15,
+      "thin_d0": 13,
+      "near_fp": 161,
+      "fp": 11789,
+      "dice": 0.7626699538473956,
+      "precision": 0.815103513174404,
+      "far_recall": 0.7169730358230442
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 13,
+      "near_fp": 180,
+      "fp": 15401,
+      "dice": 0.7723068115972382,
+      "precision": 0.7822072008371751,
+      "far_recall": 0.7629976191794474
+    }
+  },
+  {
+    "image": "IDRiD_07",
+    "seed": 2029,
+    "thin_den": 18,
+    "ring_area": 13289,
+    "fov_area": 760094,
+    "base": {
+      "thin_d1": 8,
+      "thin_d0": 7,
+      "near_fp": 98,
+      "fp": 8799,
+      "dice": 0.7454337899543378,
+      "precision": 0.8459585791565274,
+      "far_recall": 0.6668789103593378
+    },
+    "candidate": {
+      "thin_d1": 8,
+      "thin_d0": 7,
+      "near_fp": 104,
+      "fp": 11307,
+      "dice": 0.7625612564208537,
+      "precision": 0.8204354523654497,
+      "far_recall": 0.7129727036155251
+    }
+  },
+  {
+    "image": "IDRiD_12",
+    "seed": 2027,
+    "thin_den": 13,
+    "ring_area": 6530,
+    "fov_area": 703158,
+    "base": {
+      "thin_d1": 4,
+      "thin_d0": 3,
+      "near_fp": 31,
+      "fp": 4609,
+      "dice": 0.7864960733164948,
+      "precision": 0.9251700680272109,
+      "far_recall": 0.6837065730541096
+    },
+    "candidate": {
+      "thin_d1": 4,
+      "thin_d0": 3,
+      "near_fp": 39,
+      "fp": 6790,
+      "dice": 0.8048256376925016,
+      "precision": 0.8993552212258208,
+      "far_recall": 0.7280474518823387
+    }
+  },
+  {
+    "image": "IDRiD_12",
+    "seed": 2028,
+    "thin_den": 13,
+    "ring_area": 6530,
+    "fov_area": 703158,
+    "base": {
+      "thin_d1": 4,
+      "thin_d0": 3,
+      "near_fp": 41,
+      "fp": 5539,
+      "dice": 0.8022996407653786,
+      "precision": 0.9148605859387009,
+      "far_recall": 0.714102408909333
+    },
+    "candidate": {
+      "thin_d1": 4,
+      "thin_d0": 3,
+      "near_fp": 54,
+      "fp": 8311,
+      "dice": 0.8142357965575255,
+      "precision": 0.8833167197832282,
+      "far_recall": 0.7549328168502603
+    }
+  },
+  {
+    "image": "IDRiD_12",
+    "seed": 2029,
+    "thin_den": 13,
+    "ring_area": 6530,
+    "fov_area": 703158,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 2,
+      "near_fp": 39,
+      "fp": 5542,
+      "dice": 0.7935751478245521,
+      "precision": 0.9133927176121269,
+      "far_recall": 0.7013920832828955
+    },
+    "candidate": {
+      "thin_d1": 4,
+      "thin_d0": 3,
+      "near_fp": 55,
+      "fp": 8250,
+      "dice": 0.8079752125291292,
+      "precision": 0.8826675010311038,
+      "far_recall": 0.7447766614211354
+    }
+  },
+  {
+    "image": "IDRiD_15",
+    "seed": 2027,
+    "thin_den": 3,
+    "ring_area": 1556,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 6697,
+      "dice": 0.7395910035358875,
+      "precision": 0.8833681644026472,
+      "far_recall": 0.6374216764387629
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 1,
+      "fp": 8888,
+      "dice": 0.7668366388635747,
+      "precision": 0.8611336791450535,
+      "far_recall": 0.6925941770049574
+    }
+  },
+  {
+    "image": "IDRiD_15",
+    "seed": 2028,
+    "thin_den": 3,
+    "ring_area": 1556,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 12,
+      "fp": 8689,
+      "dice": 0.754319118216713,
+      "precision": 0.8603952442159383,
+      "far_recall": 0.6729031933365208
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 12,
+      "fp": 11198,
+      "dice": 0.7793131681912445,
+      "precision": 0.8383147073262295,
+      "far_recall": 0.7294597247036916
+    }
+  },
+  {
+    "image": "IDRiD_15",
+    "seed": 2029,
+    "thin_den": 3,
+    "ring_area": 1556,
+    "fov_area": 758137,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 6353,
+      "dice": 0.757398413878205,
+      "precision": 0.8920145499048137,
+      "far_recall": 0.6599687963964871
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 8200,
+      "dice": 0.7854913550240291,
+      "precision": 0.8739992931667665,
+      "far_recall": 0.7150783864717281
+    }
+  },
+  {
+    "image": "IDRiD_16",
+    "seed": 2027,
+    "thin_den": 33,
+    "ring_area": 7735,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 17,
+      "thin_d0": 10,
+      "near_fp": 57,
+      "fp": 6985,
+      "dice": 0.7179053801397012,
+      "precision": 0.8729584227565385,
+      "far_recall": 0.6111714983567564
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 11,
+      "near_fp": 67,
+      "fp": 8803,
+      "dice": 0.7484630122101169,
+      "precision": 0.8560472265829409,
+      "far_recall": 0.6664535352114477
+    }
+  },
+  {
+    "image": "IDRiD_16",
+    "seed": 2028,
+    "thin_den": 33,
+    "ring_area": 7735,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 11,
+      "near_fp": 121,
+      "fp": 9987,
+      "dice": 0.7275504496364184,
+      "precision": 0.8355074612115821,
+      "far_recall": 0.6460568549469942
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 11,
+      "near_fp": 130,
+      "fp": 12063,
+      "dice": 0.7538857436953165,
+      "precision": 0.8199364112668488,
+      "far_recall": 0.6995869512397856
+    }
+  },
+  {
+    "image": "IDRiD_16",
+    "seed": 2029,
+    "thin_den": 33,
+    "ring_area": 7735,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 14,
+      "thin_d0": 8,
+      "near_fp": 74,
+      "fp": 6783,
+      "dice": 0.7165980054478738,
+      "precision": 0.8756120371898554,
+      "far_recall": 0.6086906482180079
+    },
+    "candidate": {
+      "thin_d1": 14,
+      "thin_d0": 8,
+      "near_fp": 77,
+      "fp": 8317,
+      "dice": 0.7476315505520987,
+      "precision": 0.8620340726241229,
+      "far_recall": 0.6625788053555672
+    }
+  },
+  {
+    "image": "IDRiD_17",
+    "seed": 2027,
+    "thin_den": 50,
+    "ring_area": 71806,
+    "fov_area": 758391,
+    "base": {
+      "thin_d1": 20,
+      "thin_d0": 17,
+      "near_fp": 2961,
+      "fp": 24879,
+      "dice": 0.4938457831830133,
+      "precision": 0.4865121462921302,
+      "far_recall": 0.5089679438846619
+    },
+    "candidate": {
+      "thin_d1": 20,
+      "thin_d0": 17,
+      "near_fp": 3410,
+      "fp": 29489,
+      "dice": 0.5122904593364708,
+      "precision": 0.4718261928643072,
+      "far_recall": 0.568853245595997
+    }
+  },
+  {
+    "image": "IDRiD_17",
+    "seed": 2028,
+    "thin_den": 50,
+    "ring_area": 71806,
+    "fov_area": 758391,
+    "base": {
+      "thin_d1": 25,
+      "thin_d0": 19,
+      "near_fp": 3507,
+      "fp": 30644,
+      "dice": 0.4877559564959154,
+      "precision": 0.4497495106929306,
+      "far_recall": 0.5357689583476135
+    },
+    "candidate": {
+      "thin_d1": 25,
+      "thin_d0": 19,
+      "near_fp": 4146,
+      "fp": 35574,
+      "dice": 0.49799941801251274,
+      "precision": 0.4349386873371879,
+      "far_recall": 0.587177553864784
+    }
+  },
+  {
+    "image": "IDRiD_17",
+    "seed": 2029,
+    "thin_den": 50,
+    "ring_area": 71806,
+    "fov_area": 758391,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 16,
+      "near_fp": 3279,
+      "fp": 24196,
+      "dice": 0.4973410990124082,
+      "precision": 0.4934260112218407,
+      "far_recall": 0.5045125322731738
+    },
+    "candidate": {
+      "thin_d1": 20,
+      "thin_d0": 16,
+      "near_fp": 3787,
+      "fp": 28413,
+      "dice": 0.5135001970831691,
+      "precision": 0.478354263053536,
+      "far_recall": 0.5586172230219115
+    }
+  },
+  {
+    "image": "IDRiD_19",
+    "seed": 2027,
+    "thin_den": 92,
+    "ring_area": 24695,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 21,
+      "thin_d0": 11,
+      "near_fp": 192,
+      "fp": 4031,
+      "dice": 0.8141679130350072,
+      "precision": 0.9463034501132277,
+      "far_recall": 0.7146945390391006
+    },
+    "candidate": {
+      "thin_d1": 23,
+      "thin_d0": 15,
+      "near_fp": 310,
+      "fp": 6114,
+      "dice": 0.8336519442633458,
+      "precision": 0.925034025282931,
+      "far_recall": 0.758513519057974
+    }
+  },
+  {
+    "image": "IDRiD_19",
+    "seed": 2028,
+    "thin_den": 92,
+    "ring_area": 24695,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 19,
+      "thin_d0": 12,
+      "near_fp": 209,
+      "fp": 4617,
+      "dice": 0.8231981090464935,
+      "precision": 0.9403526903946774,
+      "far_recall": 0.7334242809666435
+    },
+    "candidate": {
+      "thin_d1": 19,
+      "thin_d0": 13,
+      "near_fp": 320,
+      "fp": 7041,
+      "dice": 0.8409927070861,
+      "precision": 0.9164798405750685,
+      "far_recall": 0.7782689861732245
+    }
+  },
+  {
+    "image": "IDRiD_19",
+    "seed": 2029,
+    "thin_den": 92,
+    "ring_area": 24695,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 23,
+      "thin_d0": 15,
+      "near_fp": 198,
+      "fp": 4314,
+      "dice": 0.8222627095075119,
+      "precision": 0.9437915309446254,
+      "far_recall": 0.7286238870881714
+    },
+    "candidate": {
+      "thin_d1": 24,
+      "thin_d0": 20,
+      "near_fp": 358,
+      "fp": 6604,
+      "dice": 0.8386704632570364,
+      "precision": 0.9206087782359377,
+      "far_recall": 0.7701247281828253
+    }
+  },
+  {
+    "image": "IDRiD_20",
+    "seed": 2027,
+    "thin_den": 66,
+    "ring_area": 32066,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 32,
+      "thin_d0": 28,
+      "near_fp": 183,
+      "fp": 4633,
+      "dice": 0.8001108497101987,
+      "precision": 0.9360806821003835,
+      "far_recall": 0.6984566391574478
+    },
+    "candidate": {
+      "thin_d1": 32,
+      "thin_d0": 28,
+      "near_fp": 236,
+      "fp": 6540,
+      "dice": 0.8202831584458152,
+      "precision": 0.916809769128029,
+      "far_recall": 0.7421557098106963
+    }
+  },
+  {
+    "image": "IDRiD_20",
+    "seed": 2028,
+    "thin_den": 66,
+    "ring_area": 32066,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 35,
+      "thin_d0": 31,
+      "near_fp": 213,
+      "fp": 6205,
+      "dice": 0.8068846458079528,
+      "precision": 0.9184411146161935,
+      "far_recall": 0.7192602691254982
+    },
+    "candidate": {
+      "thin_d1": 35,
+      "thin_d0": 33,
+      "near_fp": 288,
+      "fp": 8382,
+      "dice": 0.8229367726963371,
+      "precision": 0.8979559537867813,
+      "far_recall": 0.7594938026204873
+    }
+  },
+  {
+    "image": "IDRiD_20",
+    "seed": 2029,
+    "thin_den": 66,
+    "ring_area": 32066,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 32,
+      "thin_d0": 28,
+      "near_fp": 212,
+      "fp": 5539,
+      "dice": 0.8046576618537494,
+      "precision": 0.9257934434575245,
+      "far_recall": 0.7115798894774636
+    },
+    "candidate": {
+      "thin_d1": 32,
+      "thin_d0": 29,
+      "near_fp": 275,
+      "fp": 7569,
+      "dice": 0.8219791596336057,
+      "precision": 0.9061092848725423,
+      "far_recall": 0.7521776686197171
+    }
+  },
+  {
+    "image": "IDRiD_26",
+    "seed": 2027,
+    "thin_den": 80,
+    "ring_area": 27183,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 31,
+      "thin_d0": 28,
+      "near_fp": 333,
+      "fp": 8583,
+      "dice": 0.756115025491207,
+      "precision": 0.8601684560368844,
+      "far_recall": 0.6762560777957861
+    },
+    "candidate": {
+      "thin_d1": 33,
+      "thin_d0": 29,
+      "near_fp": 408,
+      "fp": 11257,
+      "dice": 0.7776951063844311,
+      "precision": 0.8349945765295652,
+      "far_recall": 0.7292832122131019
+    }
+  },
+  {
+    "image": "IDRiD_26",
+    "seed": 2028,
+    "thin_den": 80,
+    "ring_area": 27183,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 32,
+      "thin_d0": 25,
+      "near_fp": 417,
+      "fp": 10098,
+      "dice": 0.7597468212310888,
+      "precision": 0.842791088692728,
+      "far_recall": 0.694058137711089
+    },
+    "candidate": {
+      "thin_d1": 34,
+      "thin_d0": 25,
+      "near_fp": 509,
+      "fp": 13106,
+      "dice": 0.7771599858153181,
+      "precision": 0.815880419207103,
+      "far_recall": 0.7446149422282637
+    }
+  },
+  {
+    "image": "IDRiD_26",
+    "seed": 2029,
+    "thin_den": 80,
+    "ring_area": 27183,
+    "fov_area": 758125,
+    "base": {
+      "thin_d1": 39,
+      "thin_d0": 34,
+      "near_fp": 347,
+      "fp": 8392,
+      "dice": 0.7619,
+      "precision": 0.8640421223167274,
+      "far_recall": 0.6843859465676791
+    },
+    "candidate": {
+      "thin_d1": 39,
+      "thin_d0": 34,
+      "near_fp": 400,
+      "fp": 10740,
+      "dice": 0.7819346187003107,
+      "precision": 0.8417866034205913,
+      "far_recall": 0.7332174413133267
+    }
+  },
+  {
+    "image": "IDRiD_30",
+    "seed": 2027,
+    "thin_den": 55,
+    "ring_area": 16230,
+    "fov_area": 760650,
+    "base": {
+      "thin_d1": 45,
+      "thin_d0": 30,
+      "near_fp": 202,
+      "fp": 11684,
+      "dice": 0.7384519469944208,
+      "precision": 0.8324225865209471,
+      "far_recall": 0.6662951999535667
+    },
+    "candidate": {
+      "thin_d1": 48,
+      "thin_d0": 37,
+      "near_fp": 273,
+      "fp": 14420,
+      "dice": 0.7710493145893266,
+      "precision": 0.8159423064649945,
+      "far_recall": 0.7334262000116083
+    }
+  },
+  {
+    "image": "IDRiD_30",
+    "seed": 2028,
+    "thin_den": 55,
+    "ring_area": 16230,
+    "fov_area": 760650,
+    "base": {
+      "thin_d1": 37,
+      "thin_d0": 29,
+      "near_fp": 196,
+      "fp": 13382,
+      "dice": 0.7534685956899801,
+      "precision": 0.8199916600529991,
+      "far_recall": 0.7015381043589297
+    },
+    "candidate": {
+      "thin_d1": 39,
+      "thin_d0": 33,
+      "near_fp": 260,
+      "fp": 17039,
+      "dice": 0.779615692273558,
+      "precision": 0.7966730707270796,
+      "far_recall": 0.7679609959951245
+    }
+  },
+  {
+    "image": "IDRiD_30",
+    "seed": 2029,
+    "thin_den": 55,
+    "ring_area": 16230,
+    "fov_area": 760650,
+    "base": {
+      "thin_d1": 36,
+      "thin_d0": 21,
+      "near_fp": 123,
+      "fp": 12851,
+      "dice": 0.740604972601106,
+      "precision": 0.8211288189853156,
+      "far_recall": 0.6781008764292762
+    },
+    "candidate": {
+      "thin_d1": 38,
+      "thin_d0": 27,
+      "near_fp": 175,
+      "fp": 15769,
+      "dice": 0.773878239388109,
+      "precision": 0.805147785686042,
+      "far_recall": 0.7486795519182773
+    }
+  },
+  {
+    "image": "IDRiD_32",
+    "seed": 2027,
+    "thin_den": 33,
+    "ring_area": 16559,
+    "fov_area": 760561,
+    "base": {
+      "thin_d1": 14,
+      "thin_d0": 7,
+      "near_fp": 310,
+      "fp": 13557,
+      "dice": 0.7317812406084749,
+      "precision": 0.8084601364811597,
+      "far_recall": 0.6718727764337555
+    },
+    "candidate": {
+      "thin_d1": 16,
+      "thin_d0": 10,
+      "near_fp": 354,
+      "fp": 16622,
+      "dice": 0.7588894419287874,
+      "precision": 0.7899512219779109,
+      "far_recall": 0.7340970542194393
+    }
+  },
+  {
+    "image": "IDRiD_32",
+    "seed": 2028,
+    "thin_den": 33,
+    "ring_area": 16559,
+    "fov_area": 760561,
+    "base": {
+      "thin_d1": 15,
+      "thin_d0": 9,
+      "near_fp": 337,
+      "fp": 16208,
+      "dice": 0.7388525564803805,
+      "precision": 0.7863432639071974,
+      "far_recall": 0.7004885916227883
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 11,
+      "near_fp": 409,
+      "fp": 19856,
+      "dice": 0.7553635913049636,
+      "precision": 0.7632357149670895,
+      "far_recall": 0.7514823774963237
+    }
+  },
+  {
+    "image": "IDRiD_32",
+    "seed": 2029,
+    "thin_den": 33,
+    "ring_area": 16559,
+    "fov_area": 760561,
+    "base": {
+      "thin_d1": 16,
+      "thin_d0": 10,
+      "near_fp": 248,
+      "fp": 14731,
+      "dice": 0.7324987999898946,
+      "precision": 0.797428492849285,
+      "far_recall": 0.6808619135714624
+    },
+    "candidate": {
+      "thin_d1": 17,
+      "thin_d0": 12,
+      "near_fp": 307,
+      "fp": 17798,
+      "dice": 0.7542989995603124,
+      "precision": 0.77867313312193,
+      "far_recall": 0.7348323134576159
+    }
+  },
+  {
+    "image": "IDRiD_36",
+    "seed": 2027,
+    "thin_den": 104,
+    "ring_area": 11624,
+    "fov_area": 760666,
+    "base": {
+      "thin_d1": 30,
+      "thin_d0": 23,
+      "near_fp": 201,
+      "fp": 13339,
+      "dice": 0.760184981281656,
+      "precision": 0.8191297509118768,
+      "far_recall": 0.7104720358472225
+    },
+    "candidate": {
+      "thin_d1": 30,
+      "thin_d0": 25,
+      "near_fp": 222,
+      "fp": 16368,
+      "dice": 0.7860596606360534,
+      "precision": 0.8006989175301666,
+      "far_recall": 0.7733350719552384
+    }
+  },
+  {
+    "image": "IDRiD_36",
+    "seed": 2028,
+    "thin_den": 104,
+    "ring_area": 11624,
+    "fov_area": 760666,
+    "base": {
+      "thin_d1": 26,
+      "thin_d0": 19,
+      "near_fp": 180,
+      "fp": 14972,
+      "dice": 0.780665071857709,
+      "precision": 0.8107134278164785,
+      "far_recall": 0.7546646435429953
+    },
+    "candidate": {
+      "thin_d1": 29,
+      "thin_d0": 20,
+      "near_fp": 215,
+      "fp": 18818,
+      "dice": 0.7947504128400499,
+      "precision": 0.7846886119978489,
+      "far_recall": 0.8068707176557054
+    }
+  },
+  {
+    "image": "IDRiD_36",
+    "seed": 2029,
+    "thin_den": 104,
+    "ring_area": 11624,
+    "fov_area": 760666,
+    "base": {
+      "thin_d1": 29,
+      "thin_d0": 16,
+      "near_fp": 176,
+      "fp": 14388,
+      "dice": 0.7643682796532875,
+      "precision": 0.8106468381917483,
+      "far_recall": 0.7248630835249769
+    },
+    "candidate": {
+      "thin_d1": 30,
+      "thin_d0": 18,
+      "near_fp": 213,
+      "fp": 17706,
+      "dice": 0.7864720625092142,
+      "precision": 0.7901859247058266,
+      "far_recall": 0.784501766281799
+    }
+  },
+  {
+    "image": "IDRiD_37",
+    "seed": 2027,
+    "thin_den": 21,
+    "ring_area": 9956,
+    "fov_area": 760314,
+    "base": {
+      "thin_d1": 10,
+      "thin_d0": 10,
+      "near_fp": 187,
+      "fp": 13752,
+      "dice": 0.7606156083373727,
+      "precision": 0.8202775817454716,
+      "far_recall": 0.709649062721191
+    },
+    "candidate": {
+      "thin_d1": 10,
+      "thin_d0": 10,
+      "near_fp": 232,
+      "fp": 16913,
+      "dice": 0.7834259307336829,
+      "precision": 0.800575410628589,
+      "far_recall": 0.7669132588990113
+    }
+  },
+  {
+    "image": "IDRiD_37",
+    "seed": 2028,
+    "thin_den": 21,
+    "ring_area": 9956,
+    "fov_area": 760314,
+    "base": {
+      "thin_d1": 8,
+      "thin_d0": 5,
+      "near_fp": 172,
+      "fp": 15272,
+      "dice": 0.768637593128648,
+      "precision": 0.8092478329294797,
+      "far_recall": 0.7326186725118159
+    },
+    "candidate": {
+      "thin_d1": 10,
+      "thin_d0": 5,
+      "near_fp": 216,
+      "fp": 18471,
+      "dice": 0.7862393647192286,
+      "precision": 0.7895714188065347,
+      "far_recall": 0.7832385779847935
+    }
+  },
+  {
+    "image": "IDRiD_37",
+    "seed": 2029,
+    "thin_den": 21,
+    "ring_area": 9956,
+    "fov_area": 760314,
+    "base": {
+      "thin_d1": 14,
+      "thin_d0": 12,
+      "near_fp": 200,
+      "fp": 15529,
+      "dice": 0.7621302338308161,
+      "precision": 0.8048900001256424,
+      "far_recall": 0.7239422791515401
+    },
+    "candidate": {
+      "thin_d1": 14,
+      "thin_d0": 12,
+      "near_fp": 243,
+      "fp": 18429,
+      "dice": 0.7814629144354563,
+      "precision": 0.7882162311245949,
+      "far_recall": 0.7746306824668356
+    }
+  },
+  {
+    "image": "IDRiD_39",
+    "seed": 2027,
+    "thin_den": 187,
+    "ring_area": 77842,
+    "fov_area": 760523,
+    "base": {
+      "thin_d1": 66,
+      "thin_d0": 51,
+      "near_fp": 1106,
+      "fp": 17373,
+      "dice": 0.6947876412852193,
+      "precision": 0.6879232607016472,
+      "far_recall": 0.7065525972531267
+    },
+    "candidate": {
+      "thin_d1": 71,
+      "thin_d0": 55,
+      "near_fp": 1354,
+      "fp": 21430,
+      "dice": 0.7020477174525643,
+      "precision": 0.6573228648640005,
+      "far_recall": 0.758574388091767
+    }
+  },
+  {
+    "image": "IDRiD_39",
+    "seed": 2028,
+    "thin_den": 187,
+    "ring_area": 77842,
+    "fov_area": 760523,
+    "base": {
+      "thin_d1": 64,
+      "thin_d0": 49,
+      "near_fp": 1400,
+      "fp": 20486,
+      "dice": 0.689602192871422,
+      "precision": 0.6584755934915978,
+      "far_recall": 0.7287078953425918
+    },
+    "candidate": {
+      "thin_d1": 67,
+      "thin_d0": 55,
+      "near_fp": 1702,
+      "fp": 25404,
+      "dice": 0.69033055753437,
+      "precision": 0.6239675538056189,
+      "far_recall": 0.7782743804189366
+    }
+  },
+  {
+    "image": "IDRiD_39",
+    "seed": 2029,
+    "thin_den": 187,
+    "ring_area": 77842,
+    "fov_area": 760523,
+    "base": {
+      "thin_d1": 71,
+      "thin_d0": 53,
+      "near_fp": 1025,
+      "fp": 16985,
+      "dice": 0.6915600742413576,
+      "precision": 0.6900773666155755,
+      "far_recall": 0.697575385559733
+    },
+    "candidate": {
+      "thin_d1": 72,
+      "thin_d0": 57,
+      "near_fp": 1262,
+      "fp": 20888,
+      "dice": 0.6996674076754726,
+      "precision": 0.6602969636845615,
+      "far_recall": 0.7488490754239239
+    }
+  },
+  {
+    "image": "IDRiD_40",
+    "seed": 2027,
+    "thin_den": 12,
+    "ring_area": 2392,
+    "fov_area": 759521,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 39,
+      "fp": 14292,
+      "dice": 0.7756254088912428,
+      "precision": 0.8132594663809549,
+      "far_recall": 0.741708734619837
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 44,
+      "fp": 17225,
+      "dice": 0.7825051137047286,
+      "precision": 0.7906004206226674,
+      "far_recall": 0.7750170061938348
+    }
+  },
+  {
+    "image": "IDRiD_40",
+    "seed": 2028,
+    "thin_den": 12,
+    "ring_area": 2392,
+    "fov_area": 759521,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 39,
+      "fp": 15281,
+      "dice": 0.778762913239031,
+      "precision": 0.8055011073492351,
+      "far_recall": 0.7541202725764682
+    },
+    "candidate": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 39,
+      "fp": 18226,
+      "dice": 0.784898480929873,
+      "precision": 0.7836265640952584,
+      "far_recall": 0.7866170205148402
+    }
+  },
+  {
+    "image": "IDRiD_40",
+    "seed": 2029,
+    "thin_den": 12,
+    "ring_area": 2392,
+    "fov_area": 759521,
+    "base": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 41,
+      "fp": 16288,
+      "dice": 0.7712851688657102,
+      "precision": 0.7943849727327813,
+      "far_recall": 0.7497165634360865
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 44,
+      "fp": 19274,
+      "dice": 0.7789415166981093,
+      "precision": 0.7735933278515212,
+      "far_recall": 0.7846478822813362
+    }
+  },
+  {
+    "image": "IDRiD_42",
+    "seed": 2027,
+    "thin_den": 25,
+    "ring_area": 3139,
+    "fov_area": 760299,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 80,
+      "fp": 12474,
+      "dice": 0.7699804294932826,
+      "precision": 0.8235718427789486,
+      "far_recall": 0.7239840994903364
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 88,
+      "fp": 15353,
+      "dice": 0.7852247824379616,
+      "precision": 0.8014895075057215,
+      "far_recall": 0.7707385761816347
+    }
+  },
+  {
+    "image": "IDRiD_42",
+    "seed": 2028,
+    "thin_den": 25,
+    "ring_area": 3139,
+    "fov_area": 760299,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 93,
+      "fp": 13654,
+      "dice": 0.776985796266002,
+      "precision": 0.8142287650172111,
+      "far_recall": 0.7441214220737953
+    },
+    "candidate": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 104,
+      "fp": 16739,
+      "dice": 0.7875721282668029,
+      "precision": 0.7905871167102448,
+      "far_recall": 0.785816645690289
+    }
+  },
+  {
+    "image": "IDRiD_42",
+    "seed": 2029,
+    "thin_den": 25,
+    "ring_area": 3139,
+    "fov_area": 760299,
+    "base": {
+      "thin_d1": 2,
+      "thin_d0": 0,
+      "near_fp": 59,
+      "fp": 13290,
+      "dice": 0.7691026196004355,
+      "precision": 0.8152139152681415,
+      "far_recall": 0.7291555034953706
+    },
+    "candidate": {
+      "thin_d1": 3,
+      "thin_d0": 1,
+      "near_fp": 78,
+      "fp": 15981,
+      "dice": 0.784529273621316,
+      "precision": 0.795858668437995,
+      "far_recall": 0.7747635484554325
+    }
+  },
+  {
+    "image": "IDRiD_43",
+    "seed": 2027,
+    "thin_den": 0,
+    "ring_area": 0,
+    "fov_area": 760257,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 12146,
+      "dice": 0.7417236196160026,
+      "precision": 0.8048270985987916,
+      "far_recall": 0.6877961027725519
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 15770,
+      "dice": 0.758394999439399,
+      "precision": 0.7743371063062547,
+      "far_recall": 0.7430960849205587
+    }
+  },
+  {
+    "image": "IDRiD_43",
+    "seed": 2028,
+    "thin_den": 0,
+    "ring_area": 0,
+    "fov_area": 760257,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 13722,
+      "dice": 0.7611583497952991,
+      "precision": 0.7948725614769415,
+      "far_recall": 0.7301877205751088
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 17735,
+      "dice": 0.7704632012002635,
+      "precision": 0.7618823845327605,
+      "far_recall": 0.779239505087818
+    }
+  },
+  {
+    "image": "IDRiD_43",
+    "seed": 2029,
+    "thin_den": 0,
+    "ring_area": 0,
+    "fov_area": 760257,
+    "base": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 12632,
+      "dice": 0.7455151355001615,
+      "precision": 0.8008042261294647,
+      "far_recall": 0.6973675176116779
+    },
+    "candidate": {
+      "thin_d1": 0,
+      "thin_d0": 0,
+      "near_fp": 0,
+      "fp": 15916,
+      "dice": 0.7598336885503651,
+      "precision": 0.7735473222924136,
+      "far_recall": 0.7465978220568242
+    }
+  },
+  {
+    "image": "IDRiD_46",
+    "seed": 2027,
+    "thin_den": 271,
+    "ring_area": 49047,
+    "fov_area": 760455,
+    "base": {
+      "thin_d1": 166,
+      "thin_d0": 112,
+      "near_fp": 985,
+      "fp": 13261,
+      "dice": 0.761782182179512,
+      "precision": 0.8115692849835171,
+      "far_recall": 0.7182274578013204
+    },
+    "candidate": {
+      "thin_d1": 168,
+      "thin_d0": 119,
+      "near_fp": 1163,
+      "fp": 16891,
+      "dice": 0.7724160749281006,
+      "precision": 0.7823016149196407,
+      "far_recall": 0.7642935262415833
+    }
+  },
+  {
+    "image": "IDRiD_46",
+    "seed": 2028,
+    "thin_den": 271,
+    "ring_area": 49047,
+    "fov_area": 760455,
+    "base": {
+      "thin_d1": 177,
+      "thin_d0": 118,
+      "near_fp": 996,
+      "fp": 14075,
+      "dice": 0.7674550216501493,
+      "precision": 0.8055590092143617,
+      "far_recall": 0.733855134337405
+    },
+    "candidate": {
+      "thin_d1": 180,
+      "thin_d0": 127,
+      "near_fp": 1189,
+      "fp": 18177,
+      "dice": 0.7738237101892851,
+      "precision": 0.7724091301789224,
+      "far_recall": 0.7771408994478923
+    }
+  },
+  {
+    "image": "IDRiD_46",
+    "seed": 2029,
+    "thin_den": 271,
+    "ring_area": 49047,
+    "fov_area": 760455,
+    "base": {
+      "thin_d1": 172,
+      "thin_d0": 123,
+      "near_fp": 1111,
+      "fp": 15270,
+      "dice": 0.7591498714602508,
+      "precision": 0.7916666666666666,
+      "far_recall": 0.7303369305978311
+    },
+    "candidate": {
+      "thin_d1": 174,
+      "thin_d0": 128,
+      "near_fp": 1326,
+      "fp": 19242,
+      "dice": 0.7682671453144866,
+      "precision": 0.7620831633220817,
+      "far_recall": 0.7767192420708648
+    }
+  }
+]

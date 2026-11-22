@@ -1,0 +1,50 @@
+{
+  "tested_at": "2026-11-21T05:07:12.230486+00:00",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.12.1+cu130",
+  "cuda": "13.0",
+  "source_sha256": {
+    "near_path_aux.py": "04cd640c1ce00917c8664772a8e98bfbbbd2fd8c208111146ddede9ea8446da2",
+    "probe_aux_device.py": "b96a6b1377f84e40dcc75bfa6a0318f468d7737c9532fb48e695aaf014bf5de6"
+  },
+  "results": [
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "shape": [
+        2,
+        2,
+        1024,
+        1536
+      ],
+      "loss": 0.6931471824645996,
+      "verified_target_pixels": 39,
+      "verified_background_pixels": 1961,
+      "optimizer_updates": 0,
+      "synthetic": true,
+      "cpu_loss": 0.6931472420692444,
+      "cpu_gpu_abs_delta": 5.960464477539063e-08,
+      "peak_allocated_MiB": 142.49365234375,
+      "peak_reserved_MiB": 186.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "shape": [
+        2,
+        2,
+        1024,
+        1536
+      ],
+      "loss": 0.6931471824645996,
+      "verified_target_pixels": 39,
+      "verified_background_pixels": 1961,
+      "optimizer_updates": 0,
+      "synthetic": true,
+      "cpu_loss": 0.6931472420692444,
+      "cpu_gpu_abs_delta": 5.960464477539063e-08,
+      "peak_allocated_MiB": 112.5009765625,
+      "peak_reserved_MiB": 150.0
+    }
+  ]
+}

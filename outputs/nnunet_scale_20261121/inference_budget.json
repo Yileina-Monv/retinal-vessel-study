@@ -1,0 +1,1345 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.12.1+cu130",
+  "fold": 0,
+  "seed": 2027,
+  "repeats": 2,
+  "unit": "decoded 1024px RGB to CPU uint8 mask, warm weights, one photo at a time",
+  "structural_counts_image": "IDRiD_01",
+  "summary": {
+    "UNet_native": {
+      "median_ms": 92.22024993505329,
+      "mean_ms": 91.42830000039086,
+      "p90_ms": 98.99515000870451,
+      "max_extra_peak_MiB": 958.07080078125,
+      "stored_parameters": 7763041,
+      "tiles": 9,
+      "conv_macs": 434563448832
+    },
+    "UNet_dual": {
+      "median_ms": 469.59450002759695,
+      "mean_ms": 471.67679999256507,
+      "p90_ms": 489.32649998459965,
+      "max_extra_peak_MiB": 958.07080078125,
+      "stored_parameters": 7763041,
+      "tiles": 58,
+      "conv_macs": 2800520003584
+    },
+    "nnUNet_native": {
+      "median_ms": 101.33159998804331,
+      "mean_ms": 104.18772222409542,
+      "p90_ms": 119.91445004241541,
+      "max_extra_peak_MiB": 202.3642578125,
+      "stored_parameters": 46325134,
+      "tiles": 9,
+      "conv_macs": 672116244480
+    },
+    "nnUNet_dual": {
+      "median_ms": 386.5551000344567,
+      "mean_ms": 395.7062527737839,
+      "p90_ms": 425.6078999605961,
+      "max_extra_peak_MiB": 248.3251953125,
+      "stored_parameters": 46325134,
+      "tiles": 45,
+      "conv_macs": 3360581222400
+    }
+  },
+  "records": [
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_53",
+      "repeat": 0,
+      "ms": 432.7569999732077,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77694
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_53",
+      "repeat": 0,
+      "ms": 87.41759997792542,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 74975
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_53",
+      "repeat": 0,
+      "ms": 470.29460000339895,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 79474
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_53",
+      "repeat": 0,
+      "ms": 107.94709995388985,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 104013
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_51",
+      "repeat": 0,
+      "ms": 90.66320001147687,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 85682
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_51",
+      "repeat": 0,
+      "ms": 460.8981000492349,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 90146
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_51",
+      "repeat": 0,
+      "ms": 386.7888000095263,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87124
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_51",
+      "repeat": 0,
+      "ms": 96.28239995799959,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 105216
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_45",
+      "repeat": 0,
+      "ms": 473.140399903059,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 79653
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_45",
+      "repeat": 0,
+      "ms": 94.07490002922714,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 75026
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_45",
+      "repeat": 0,
+      "ms": 120.71780010592192,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 88978
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_45",
+      "repeat": 0,
+      "ms": 412.3157999711111,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77829
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_31",
+      "repeat": 0,
+      "ms": 88.29799992963672,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 88538
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_31",
+      "repeat": 0,
+      "ms": 441.9008999830112,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87506
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_31",
+      "repeat": 0,
+      "ms": 105.55929993279278,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 98207
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_31",
+      "repeat": 0,
+      "ms": 482.92599990963936,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 93726
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_08",
+      "repeat": 0,
+      "ms": 392.58890005294234,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83981
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_08",
+      "repeat": 0,
+      "ms": 469.07530003227293,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 81511
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_08",
+      "repeat": 0,
+      "ms": 92.97990007326007,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 76863
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_08",
+      "repeat": 0,
+      "ms": 107.73240006528795,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 102338
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_18",
+      "repeat": 0,
+      "ms": 95.17570002935827,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 94276
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_18",
+      "repeat": 0,
+      "ms": 96.40899999067187,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 83770
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_18",
+      "repeat": 0,
+      "ms": 484.20679999981076,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89291
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_18",
+      "repeat": 0,
+      "ms": 385.25859999936074,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83025
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_28",
+      "repeat": 0,
+      "ms": 100.2149999840185,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89767
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_28",
+      "repeat": 0,
+      "ms": 108.69470005854964,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 95746
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_28",
+      "repeat": 0,
+      "ms": 469.16189999319613,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 93686
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_28",
+      "repeat": 0,
+      "ms": 376.86900002881885,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 84622
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_33",
+      "repeat": 0,
+      "ms": 457.8118999488652,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 63313
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_33",
+      "repeat": 0,
+      "ms": 105.92719994019717,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 96643
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_33",
+      "repeat": 0,
+      "ms": 369.1767998971045,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 72142
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_33",
+      "repeat": 0,
+      "ms": 86.84550004545599,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 58721
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_44",
+      "repeat": 0,
+      "ms": 86.40600007493049,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 97643
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_44",
+      "repeat": 0,
+      "ms": 382.4117999756709,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 90607
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_44",
+      "repeat": 0,
+      "ms": 490.25949998758733,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 101264
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_44",
+      "repeat": 0,
+      "ms": 101.05659998953342,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 100903
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_50",
+      "repeat": 0,
+      "ms": 380.39079995360225,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 95449
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_50",
+      "repeat": 0,
+      "ms": 99.30260002147406,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 125559
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_50",
+      "repeat": 0,
+      "ms": 459.6208999864757,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 65221
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_50",
+      "repeat": 0,
+      "ms": 92.95879991259426,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 64527
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_47",
+      "repeat": 0,
+      "ms": 448.31740006338805,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 95389
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_47",
+      "repeat": 0,
+      "ms": 90.29299998655915,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 94947
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_47",
+      "repeat": 0,
+      "ms": 101.43519996199757,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 104686
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_47",
+      "repeat": 0,
+      "ms": 453.66769994143397,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 88993
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_24",
+      "repeat": 0,
+      "ms": 93.09810004197061,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 108807
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_24",
+      "repeat": 0,
+      "ms": 98.69970008730888,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 77619
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_24",
+      "repeat": 0,
+      "ms": 387.5234000151977,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77163
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_24",
+      "repeat": 0,
+      "ms": 460.3110000025481,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 81078
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_23",
+      "repeat": 0,
+      "ms": 399.852899950929,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 84733
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_23",
+      "repeat": 0,
+      "ms": 473.22099993471056,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 91230
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_23",
+      "repeat": 0,
+      "ms": 97.89550001733005,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 98930
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_23",
+      "repeat": 0,
+      "ms": 106.0622000368312,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 86649
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_41",
+      "repeat": 0,
+      "ms": 107.87439998239279,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 94552
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_41",
+      "repeat": 0,
+      "ms": 409.4977000495419,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 82671
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_41",
+      "repeat": 0,
+      "ms": 473.0204000370577,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 87385
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_41",
+      "repeat": 0,
+      "ms": 86.07390010729432,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 83604
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_01",
+      "repeat": 0,
+      "ms": 418.4587999479845,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87284
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_01",
+      "repeat": 0,
+      "ms": 101.22800001408905,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 106927
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_01",
+      "repeat": 0,
+      "ms": 93.98979996331036,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 86581
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_01",
+      "repeat": 0,
+      "ms": 457.7675999607891,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 91801
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_09",
+      "repeat": 0,
+      "ms": 458.531100070104,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 69030
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_09",
+      "repeat": 0,
+      "ms": 82.18919998034835,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 70445
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_09",
+      "repeat": 0,
+      "ms": 403.85140001308173,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 90202
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_09",
+      "repeat": 0,
+      "ms": 89.46749998722225,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 106541
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_48",
+      "repeat": 0,
+      "ms": 461.84729994274676,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 62655
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_48",
+      "repeat": 0,
+      "ms": 405.35380004439503,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83594
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_48",
+      "repeat": 0,
+      "ms": 107.84499999135733,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 111847
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_48",
+      "repeat": 0,
+      "ms": 95.8530999487266,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 58980
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_13",
+      "repeat": 0,
+      "ms": 84.85860005021095,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89083
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_13",
+      "repeat": 0,
+      "ms": 96.89459996297956,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 93983
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_13",
+      "repeat": 0,
+      "ms": 376.05750001966953,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87236
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_13",
+      "repeat": 0,
+      "ms": 490.7725000521168,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 94760
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_48",
+      "repeat": 1,
+      "ms": 96.59989993087947,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 58980
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_48",
+      "repeat": 1,
+      "ms": 106.84180003590882,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 111847
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_48",
+      "repeat": 1,
+      "ms": 370.55650004185736,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83594
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_48",
+      "repeat": 1,
+      "ms": 488.39349998161197,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 62655
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_09",
+      "repeat": 1,
+      "ms": 410.10729991830885,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 90202
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_09",
+      "repeat": 1,
+      "ms": 84.21469992026687,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 70445
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_09",
+      "repeat": 1,
+      "ms": 104.75110006518662,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 106541
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_09",
+      "repeat": 1,
+      "ms": 459.261899930425,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 69030
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_33",
+      "repeat": 1,
+      "ms": 90.37570003420115,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 58721
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_33",
+      "repeat": 1,
+      "ms": 466.7139999801293,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 63313
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_33",
+      "repeat": 1,
+      "ms": 95.91240005102009,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 96643
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_33",
+      "repeat": 1,
+      "ms": 381.3198000425473,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 72142
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_08",
+      "repeat": 1,
+      "ms": 91.52729995548725,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 102338
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_08",
+      "repeat": 1,
+      "ms": 379.157799994573,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83981
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_08",
+      "repeat": 1,
+      "ms": 96.51499998290092,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 76863
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_08",
+      "repeat": 1,
+      "ms": 485.84129998926073,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 81511
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_44",
+      "repeat": 1,
+      "ms": 382.5986000010744,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 90607
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_44",
+      "repeat": 1,
+      "ms": 110.7344999909401,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 100903
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_44",
+      "repeat": 1,
+      "ms": 91.48169995751232,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 97643
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_44",
+      "repeat": 1,
+      "ms": 477.9290999285877,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 101264
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_13",
+      "repeat": 1,
+      "ms": 88.56379997450858,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89083
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_13",
+      "repeat": 1,
+      "ms": 393.004099954851,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87236
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_13",
+      "repeat": 1,
+      "ms": 479.0579000255093,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 94760
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_13",
+      "repeat": 1,
+      "ms": 116.5103999665007,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 93983
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_28",
+      "repeat": 1,
+      "ms": 95.11009999550879,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89767
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_28",
+      "repeat": 1,
+      "ms": 381.36060000397265,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 84622
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_28",
+      "repeat": 1,
+      "ms": 95.3076999867335,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 95746
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_28",
+      "repeat": 1,
+      "ms": 475.81900004297495,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 93686
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_24",
+      "repeat": 1,
+      "ms": 481.14689998328686,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 81078
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_24",
+      "repeat": 1,
+      "ms": 79.34549998026341,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 77619
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_24",
+      "repeat": 1,
+      "ms": 107.03239997383207,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 108807
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_24",
+      "repeat": 1,
+      "ms": 378.80019994918257,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77163
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_51",
+      "repeat": 1,
+      "ms": 95.73099995031953,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 85682
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_51",
+      "repeat": 1,
+      "ms": 456.2102999771014,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 90146
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_51",
+      "repeat": 1,
+      "ms": 407.0027000270784,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87124
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_51",
+      "repeat": 1,
+      "ms": 97.1642000367865,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 105216
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_31",
+      "repeat": 1,
+      "ms": 383.1899999640882,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87506
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_31",
+      "repeat": 1,
+      "ms": 95.13519995380193,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 88538
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_31",
+      "repeat": 1,
+      "ms": 493.81220003124326,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 93726
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_31",
+      "repeat": 1,
+      "ms": 126.786999986507,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 98207
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_45",
+      "repeat": 1,
+      "ms": 502.3713998962194,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 79653
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_45",
+      "repeat": 1,
+      "ms": 83.20069999899715,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 75026
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_45",
+      "repeat": 1,
+      "ms": 119.1110999789089,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 88978
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_45",
+      "repeat": 1,
+      "ms": 377.16070003807545,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77829
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_47",
+      "repeat": 1,
+      "ms": 90.56799998506904,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 104686
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_47",
+      "repeat": 1,
+      "ms": 101.12290002871305,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 94947
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_47",
+      "repeat": 1,
+      "ms": 386.3214000593871,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 88993
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_47",
+      "repeat": 1,
+      "ms": 459.92979989387095,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 95389
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_23",
+      "repeat": 1,
+      "ms": 466.20080003049225,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 91230
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_23",
+      "repeat": 1,
+      "ms": 381.88869995065033,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 84733
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_23",
+      "repeat": 1,
+      "ms": 99.29059993010014,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 86649
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_23",
+      "repeat": 1,
+      "ms": 122.31940007768571,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 98930
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_41",
+      "repeat": 1,
+      "ms": 98.10040006414056,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 83604
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_41",
+      "repeat": 1,
+      "ms": 467.5923000322655,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 87385
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_41",
+      "repeat": 1,
+      "ms": 96.69929998926818,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 94552
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_41",
+      "repeat": 1,
+      "ms": 384.0126999421045,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 82671
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_50",
+      "repeat": 1,
+      "ms": 96.46400006022304,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 64527
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_50",
+      "repeat": 1,
+      "ms": 130.09079999756068,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 125559
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_50",
+      "repeat": 1,
+      "ms": 365.16480008140206,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 95449
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_50",
+      "repeat": 1,
+      "ms": 463.4325000224635,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 65221
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_53",
+      "repeat": 1,
+      "ms": 82.72100007161498,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 74975
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_53",
+      "repeat": 1,
+      "ms": 452.25650002248585,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 77694
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_53",
+      "repeat": 1,
+      "ms": 98.21580001153052,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 104013
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_53",
+      "repeat": 1,
+      "ms": 470.02710006199777,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 79474
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_18",
+      "repeat": 1,
+      "ms": 80.23850002791733,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 83770
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_18",
+      "repeat": 1,
+      "ms": 476.72440006863326,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 89291
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_18",
+      "repeat": 1,
+      "ms": 400.3670000238344,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 83025
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_18",
+      "repeat": 1,
+      "ms": 96.85500001069158,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 94276
+    },
+    {
+      "model": "UNet",
+      "view": "dual",
+      "image": "IDRiD_01",
+      "repeat": 1,
+      "ms": 468.716699979268,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 91801
+    },
+    {
+      "model": "nnUNet",
+      "view": "dual",
+      "image": "IDRiD_01",
+      "repeat": 1,
+      "ms": 416.4341000141576,
+      "extra_peak_bytes": 260387840,
+      "positive_pixels": 87284
+    },
+    {
+      "model": "UNet",
+      "view": "native",
+      "image": "IDRiD_01",
+      "repeat": 1,
+      "ms": 82.9206999624148,
+      "extra_peak_bytes": 1004610048,
+      "positive_pixels": 86581
+    },
+    {
+      "model": "nnUNet",
+      "view": "native",
+      "image": "IDRiD_01",
+      "repeat": 1,
+      "ms": 100.1956999534741,
+      "extra_peak_bytes": 212194304,
+      "positive_pixels": 106927
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+    if __name__=="__main__": main()
+                             ~~~~^^
+    assert np.array_equal(np.packbits(mask&d["f"]),saved[view+"_matched"])
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

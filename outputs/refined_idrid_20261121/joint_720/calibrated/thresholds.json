@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 2027,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.01202589368364308,
+    "train_fp": 0.01202589368364308
+  },
+  {
+    "seed": 2027,
+    "method": "joint",
+    "threshold": 0.745,
+    "train_target": 0.01202589368364308,
+    "train_fp": 0.012015479731490378
+  },
+  {
+    "seed": 2028,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.017599024028972985,
+    "train_fp": 0.017599024028972985
+  },
+  {
+    "seed": 2028,
+    "method": "joint",
+    "threshold": 0.714,
+    "train_target": 0.017599024028972985,
+    "train_fp": 0.017594951505561122
+  },
+  {
+    "seed": 2029,
+    "method": "base",
+    "threshold": 0.5,
+    "train_target": 0.012180614646035159,
+    "train_fp": 0.012180614646035159
+  },
+  {
+    "seed": 2029,
+    "method": "joint",
+    "threshold": 0.771,
+    "train_target": 0.012180614646035159,
+    "train_fp": 0.01216581136439693
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "image": "IDRiD_01",
+    "method": "standard",
+    "view": "dual",
+    "sha256": "d1c486cd2c4651b1f18052ebe48fd45898d04e4f7a836efb3c9b9a22a6f1c5f5",
+    "archived_changed_pixels": 14,
+    "fov": 759506,
+    "max_changed_probability_margin": 0.00024586915969848633,
+    "current": {
+      "path_d1": 0.6370537958773252,
+      "thin_d1": 0.42424242424242425,
+      "near_fp_density": 0.021838331160365057,
+      "far_recall": 0.6913472511243874,
+      "dice": 0.7649627125324071,
+      "precision": 0.858287846334554,
+      "fp_fov": 0.013502197480994226
+    },
+    "archived": {
+      "path_d1": 0.6370537958773252,
+      "thin_d1": 0.42424242424242425,
+      "near_fp_density": 0.021838331160365057,
+      "far_recall": 0.6913696269942494,
+      "dice": 0.7649779233815098,
+      "precision": 0.8582917628200699,
+      "fp_fov": 0.013502197480994226
+    }
+  },
+  {
+    "image": "IDRiD_01",
+    "method": "branch",
+    "view": "native",
+    "sha256": "c3fe3e56f4f4f57ce8e51d0577b6b0caf29a9b51728a7536d184439b6d732ff1",
+    "archived_changed_pixels": 28,
+    "fov": 759506,
+    "max_changed_probability_margin": 0.0006964057683944702,
+    "current": {
+      "path_d1": 0.6259426847662142,
+      "thin_d1": 0.45454545454545453,
+      "near_fp_density": 0.014341590612777053,
+      "far_recall": 0.8331319505045759,
+      "dice": 0.8145829477282872,
+      "precision": 0.7987125288239816,
+      "fp_fov": 0.024825347001867004
+    },
+    "archived": {
+      "path_d1": 0.6259426847662142,
+      "thin_d1": 0.45454545454545453,
+      "near_fp_density": 0.014423076923076924,
+      "far_recall": 0.8331543263744378,
+      "dice": 0.8146047230720656,
+      "precision": 0.798733879921428,
+      "fp_fov": 0.024822713711280753
+    }
+  },
+  {
+    "image": "IDRiD_01",
+    "method": "branch_aux",
+    "view": "dual",
+    "sha256": "197b746b51c4ff3822a0ad9a4439694ede0dc1930d3032f78fd64e5318beeb61",
+    "archived_changed_pixels": 15,
+    "fov": 759506,
+    "max_changed_probability_margin": 0.00037729740142822266,
+    "current": {
+      "path_d1": 0.5997988939165411,
+      "thin_d1": 0.3939393939393939,
+      "near_fp_density": 0.015971316818774447,
+      "far_recall": 0.6794880400975588,
+      "dice": 0.7626962950002187,
+      "precision": 0.8717377330190701,
+      "fp_fov": 0.011822158086967054
+    },
+    "archived": {
+      "path_d1": 0.5997988939165411,
+      "thin_d1": 0.3939393939393939,
+      "near_fp_density": 0.015971316818774447,
+      "far_recall": 0.6795439797722136,
+      "dice": 0.7627063572401555,
+      "precision": 0.871672189213894,
+      "fp_fov": 0.011830057958725803
+    }
+  }
+]

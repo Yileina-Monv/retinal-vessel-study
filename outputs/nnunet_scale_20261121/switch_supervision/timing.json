@@ -1,0 +1,875 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "median_ms": {
+    "base": 820.8001499879174,
+    "regional": 918.2908000657335,
+    "learned_add": 972.462150035426,
+    "all_add": 827.3290499928407
+  },
+  "rows": [
+    {
+      "image": "IDRiD_31",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 830.4603000869974
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 819.1299999598414
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 908.9905999135226
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 970.5541000002995
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 815.9232999896631
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 971.136000007391
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 920.8293999545276
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 823.5112000256777
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 822.1092000603676
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 977.1919000195339
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 839.1571999527514
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 943.0607000831515
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 943.066000007093
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 851.3642000034451
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 978.3628999721259
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 839.5428999792784
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 912.2068999568
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 836.0705999657512
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 832.8375000273809
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 985.3127999231219
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 984.4260000390932
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 915.7367999432608
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 819.7469000006095
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 821.9668000238016
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 913.1929000141099
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 821.3816999923438
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 832.2128000436351
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 957.9227999784052
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 814.2705999780446
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 1004.6723000705242
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 946.4690999593586
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 835.5308000463992
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 912.5018999911845
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 962.6135999569669
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 822.8730999398977
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 824.5929999975488
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 807.6545000076294
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 930.9798999456689
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 830.3609999129549
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 947.4593000486493
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 924.8595999088138
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 827.5479000294581
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 847.6513000205159
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 960.0731000537053
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 908.7303999112919
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 816.5332999778911
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 967.3118999926373
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 841.28390008118
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 984.2058999929577
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 911.8640000233427
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 833.4852999541909
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 852.5019000517204
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 862.3717000009492
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 813.3909999160096
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 923.7355999648571
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 977.6780999964103
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 841.0281999967992
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 925.7318000309169
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 957.687999936752
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 831.741499947384
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 854.9462999217212
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 816.3894000463188
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 922.7115999674425
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 969.9132000096142
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 980.9952999930829
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 941.1351999733597
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 818.0446999613196
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 823.6088000703603
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "learned_add",
+      "repeat": 0,
+      "ms": 961.8591999169439
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "all_add",
+      "repeat": 0,
+      "ms": 827.1101999562234
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "base",
+      "repeat": 0,
+      "ms": 813.3611000375822
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "regional",
+      "repeat": 0,
+      "ms": 927.2427000105381
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 823.8781999098137
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 963.924300041981
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 820.4626999795437
+    },
+    {
+      "image": "IDRiD_01",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 916.9026000890881
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 810.6592999538407
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 915.642200037837
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 983.5778999840841
+    },
+    {
+      "image": "IDRiD_23",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 837.1470000129193
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 955.1835999591276
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 905.5683000478894
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 821.7214000178501
+    },
+    {
+      "image": "IDRiD_53",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 816.8171000434086
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 911.877500009723
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 822.7106999838725
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 820.3210000647232
+    },
+    {
+      "image": "IDRiD_31",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 979.5643999241292
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 915.5551999574527
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 813.1126000080258
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 813.6909999884665
+    },
+    {
+      "image": "IDRiD_48",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 961.7258000653237
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 927.634899970144
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 972.2082000225782
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 819.7144999867305
+    },
+    {
+      "image": "IDRiD_50",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 822.6692999014631
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 1013.9967000577599
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 916.0727000562474
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 838.951800018549
+    },
+    {
+      "image": "IDRiD_44",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 823.7663999898359
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 822.0038000727072
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 841.5510000195354
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 975.5798000842333
+    },
+    {
+      "image": "IDRiD_51",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 913.7922000372782
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 961.746699991636
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 938.7587999226525
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 828.5159000661224
+    },
+    {
+      "image": "IDRiD_18",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 821.6675999574363
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 924.345500068739
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 830.9896000428125
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 833.7615999625996
+    },
+    {
+      "image": "IDRiD_28",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 966.2196000572294
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 815.2791999746114
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 905.343999969773
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 1001.2909000506625
+    },
+    {
+      "image": "IDRiD_09",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 821.0274999728426
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 814.816499943845
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 940.666800015606
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 859.418599982746
+    },
+    {
+      "image": "IDRiD_24",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 972.7161000482738
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 965.2710999362171
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 806.5539000090212
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 819.4626999320462
+    },
+    {
+      "image": "IDRiD_08",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 914.6891999989748
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 916.3265000097454
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 948.8220000639558
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 861.3976999185979
+    },
+    {
+      "image": "IDRiD_41",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 881.160500110127
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 1024.1846001008525
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 970.7546000136063
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 880.202499916777
+    },
+    {
+      "image": "IDRiD_45",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 857.2015999816358
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 983.4108999930322
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 827.8434000676498
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 918.5926000354812
+    },
+    {
+      "image": "IDRiD_33",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 821.1375999962911
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 974.0919000469148
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 917.9890000959858
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 827.1002999972552
+    },
+    {
+      "image": "IDRiD_13",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 819.5320999948308
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "learned_add",
+      "repeat": 1,
+      "ms": 976.114199962467
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "regional",
+      "repeat": 1,
+      "ms": 922.5412000669166
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "all_add",
+      "repeat": 1,
+      "ms": 814.4150999141857
+    },
+    {
+      "image": "IDRiD_47",
+      "mode": "base",
+      "repeat": 1,
+      "ms": 811.8297999026254
+    }
+  ]
+}

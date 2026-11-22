@@ -1,0 +1,1 @@
+{"channel_names": {"0": "rgb_to_0_1", "1": "rgb_to_0_1", "2": "rgb_to_0_1"}, "labels": {"background": 0, "vessel": 1, "ignore": 2}, "numTraining": 36, "file_ending": ".png", "overwrite_image_reader_writer": "NaturalImage2DIO"}
