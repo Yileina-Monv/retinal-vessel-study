@@ -1,0 +1,16 @@
+# Keep Colab's Linux/CUDA torch; do not install Windows torch lock files.
+# Core train/inference packages (allow Colab's compatible preinstalled versions).
+numpy>=1.26
+pillow>=10
+scipy>=1.12
+scikit-image>=0.23
+pandas>=2.2
+matplotlib>=3.8
+psutil>=5.9
+opencv-python-headless>=4.9
+# Original nnU-Net recipe versions recorded at git 0d40d9a runtime.json.
+nnunetv2==2.6.2
+dynamic-network-architectures==0.4.4
+batchgenerators==0.25.6
+batchgeneratorsv2==0.3.8
+acvl-utils==0.2.7
