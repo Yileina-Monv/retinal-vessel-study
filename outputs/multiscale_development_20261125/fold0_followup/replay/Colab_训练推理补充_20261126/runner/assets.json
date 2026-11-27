@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "name": "fold0_inputs_and_reference.zip",
+      "folder": "parent",
+      "bytes": 5764029,
+      "sha256": "6f03298d2cabf34fa6bcec820d32034df5acda8fe5657b2ef068bdd406846a15",
+      "extract": "."
+    },
+    {
+      "name": "weights.pt.part01",
+      "folder": "parent",
+      "bytes": 95000000,
+      "sha256": "43ff583324c6d02fa8926de650d6c061f60276e5a2ea3b87976f43faa3c7657a"
+    },
+    {
+      "name": "weights.pt.part02",
+      "folder": "parent",
+      "bytes": 90409751,
+      "sha256": "33191a4a8e291b61e771245be734a4f590e52bbdbd7cc2d25cf2f05f05918434"
+    },
+    {
+      "name": "unet-idrid-fold0-seed2027.zip",
+      "folder": "parent",
+      "bytes": 28868157,
+      "sha256": "913e43e93f18293275a68f6b059025cf6dc135428386967ed9f87bbeb2b9328f",
+      "extract": "unet-idrid"
+    },
+    {
+      "name": "unet-inference-reference.zip",
+      "folder": "parent",
+      "bytes": 15635,
+      "sha256": "28feea070c195f4af2cfc148e3f1a61950e830e4ce2b6e342cd89da7324e0960",
+      "extract": "unet-reference"
+    },
+    {
+      "name": "unet-maples-seed2027.zip",
+      "folder": "parent",
+      "bytes": 28865796,
+      "sha256": "16394892c1aed64a863b607f7843461d6048f5c23f3b6e0d34b99786aeae5853",
+      "extract": "unet-maples-2027"
+    },
+    {
+      "name": "unet-maples-seed2028.zip",
+      "folder": "parent",
+      "bytes": 28866596,
+      "sha256": "ef86a068da9d3d48dc47b2137167ec22024b9be7f9d588be03ae45fb36b377e9",
+      "extract": "unet-maples-2028"
+    },
+    {
+      "name": "fives-m0-init.pt.part01",
+      "folder": "supplement",
+      "bytes": 90000000,
+      "sha256": "e432e24e4d297917f2dd2a1c81b331967bef579b3a75c02b791a0b0b58bc9742"
+    },
+    {
+      "name": "fives-m0-init.pt.part02",
+      "folder": "supplement",
+      "bytes": 11960699,
+      "sha256": "c20491a8613126d9a50872ebafe1633655ce8b5c771e081e78c5730687ec83b1"
+    },
+    {
+      "name": "maples-dev-01.zip",
+      "folder": "supplement",
+      "bytes": 85698807,
+      "sha256": "808a0d77fa127a87c44c422cc5c0f1e9f0184bf72bfd5a61740c2e884936dfab",
+      "extract": "."
+    },
+    {
+      "name": "maples-dev-02.zip",
+      "folder": "supplement",
+      "bytes": 4785574,
+      "sha256": "27de5906757fe6d5f24721fcb558c1e22afa07fd572d07b24b3e392fd46f0629",
+      "extract": "."
+    },
+    {
+      "name": "maples-train-01.zip",
+      "folder": "supplement",
+      "bytes": 91544442,
+      "sha256": "6c0f00d89f7851d397e7591cb42c0c0c0d23ee347ef7a916af08bcbc0e504786",
+      "extract": "."
+    },
+    {
+      "name": "maples-train-02.zip",
+      "folder": "supplement",
+      "bytes": 91469589,
+      "sha256": "d6b125d6584e9242267d0c227b2bd3ebeaa2c8cb0c87a667638b9e689bac5618",
+      "extract": "."
+    },
+    {
+      "name": "maples-train-03.zip",
+      "folder": "supplement",
+      "bytes": 87165686,
+      "sha256": "e0e2e99e1736a579af0d97410092115c91190d00ef340165c544a565e1df614b",
+      "extract": "."
+    },
+    {
+      "name": "maples-train-04.zip",
+      "folder": "supplement",
+      "bytes": 85456217,
+      "sha256": "b5e89487a71723f2e180b6ffd2d0a91b126c5644c0c8ef3ef97573f317dbebaf",
+      "extract": "."
+    },
+    {
+      "name": "nnunet-python-packages.zip",
+      "folder": "supplement",
+      "bytes": 490434,
+      "sha256": "4b9d92db6b8017beede6efbf3b26fcf0cd1d9b9de02eccb1d4c7049346077d73",
+      "extract": "."
+    }
+  ],
+  "join": [
+    {
+      "path": "outputs/nnunet_scale_20261121/models_paired/fold0/2027/standard/weights.pt",
+      "parts": [
+        "weights.pt.part01",
+        "weights.pt.part02"
+      ],
+      "sha256": "5a9e50bdf1e8beca133c2a787c662fedc1721022e4b1a4d7c2b5aab558727c58"
+    },
+    {
+      "path": "init/m0.pt",
+      "parts": [
+        "fives-m0-init.pt.part01",
+        "fives-m0-init.pt.part02"
+      ],
+      "sha256": "8bce5b8f47c7fe43d553d4467adc46f5387eade014265b7a6a6f4b5211e67d79"
+    }
+  ]
+}
